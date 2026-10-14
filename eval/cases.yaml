@@ -1,0 +1,78 @@
+# Bộ kiểm thử chạy thật (cần mạng và GEMINI_API_KEY). Chạy: python -m eval.run_eval
+# loai: tot (kỳ vọng làm tốt), kho (dữ liệu không rõ ràng), thieu (thiếu dữ liệu), that_bai (dự đoán làm chưa tốt)
+# hoc_duoc: điền sau khi xem kết quả.
+
+- id: TC1
+  loai: tot
+  question: "Doanh thu IAP game mobile Đông Nam Á quý 1/2025 là bao nhiêu?"
+  urls:
+    - https://sensortower.com/blog/southeast-asia-mobile-gaming-2025
+    - https://gamedevreports.substack.com/p/sensor-tower-southeast-asia-mobile
+  use_search: false
+  ky_vong: "Giữ được nhận định 625 triệu USD kèm câu trích, nguồn gốc là Sensor Tower"
+  checks:
+    verified_numbers: ["625"]
+    origin_includes: "Sensor Tower"
+  hoc_duoc: ""
+
+- id: TC2
+  loai: kho
+  question: "Quy mô thị trường game Đông Nam Á năm 2024 là bao nhiêu và các nguồn có khớp nhau không?"
+  urls:
+    - https://gamesbeat.com/southeast-asia-to-reach-6-47-billion-in-revenues-by-2029-niko-partners/
+    - https://allcorrectgames.com/insights/the-gaming-market-in-southeast-asia-2/
+    - https://gamedevreports.substack.com/p/niko-partners-southeast-asia-games
+  use_search: false
+  ky_vong: "Tìm thấy cả 5,37 tỷ (Niko Partners) và 5,89 tỷ (Statista), báo mâu thuẫn dạng khoảng, không chọn một bên, mức tin cậy không phải Cao; hai bài cùng dẫn Niko chỉ tính là một nguồn gốc"
+  checks:
+    verified_numbers: ["5.37", "5.89"]
+    has_conflict: true
+    confidence_not: ["Cao"]
+  hoc_duoc: ""
+
+- id: TC3
+  loai: kho
+  question: "Thể loại game mobile nào tăng trưởng doanh thu nhanh nhất ở Đông Nam Á trong 12 tháng qua?"
+  urls:
+    - https://investgame.net/news/pdf/southeast-asian-mobile-game-market-insights-2025/
+    - https://investgame.net/news/pdf/2026-09-03-socialpetaxgamato_2026_southeast_asia_mobile_game_marketing_report_wp/
+  use_search: true
+  ky_vong: "Cảnh báo số liệu lệch khung 12 tháng (số theo quý, hoặc quý 1/2025 đã cũ) và cảnh báo bảng Shooter +579,4% là của Việt Nam; không đưa ra kết luận mức tin cậy Cao"
+  checks:
+    flag_any: ["ngoài khung", "không phải số của cả", "Việt Nam"]
+    confidence_not: ["Cao"]
+  hoc_duoc: ""
+
+- id: TC4
+  loai: tot
+  question: "Có nên phát hành game MOBA trên mobile tại Việt Nam trong 12 tháng tới không?"
+  urls: []
+  use_search: true
+  ky_vong: "Có khuyến nghị kèm ít nhất 2 lý do, mọi lý do gắn mã nhận định đã kiểm; nguồn được xếp ít nhất 2 hạng khác nhau"
+  checks:
+    min_reasons: 2
+    min_distinct_tiers: 2
+  hoc_duoc: ""
+
+- id: TC5
+  loai: thieu
+  question: "Doanh thu tháng 9/2026 của tựa game Tiếu Ngạo tại Việt Nam là bao nhiêu?"
+  urls: []
+  use_search: true
+  ky_vong: "Không có số công khai, nên trả lời Cần thêm dữ liệu và không bịa số"
+  checks:
+    decision_in: ["Cần thêm dữ liệu"]
+    no_verified_number_for_period: "2026-09"
+  hoc_duoc: ""
+
+- id: TC6
+  loai: that_bai
+  question: "Theo báo cáo Sensor Tower 2025, phân nhánh game mobile nào có doanh thu tăng nhanh nhất ở Đông Nam Á (quý 1/2025 so với quý 4/2024)?"
+  urls:
+    - https://investgame.net/news/pdf/southeast-asian-mobile-game-market-insights-2025/
+  use_search: false
+  ky_vong: "Đáp án đúng theo biểu đồ của báo cáo là Battle Royale +37,6%. Em dự đoán MVP dễ sai ở đây vì số nằm trong biểu đồ, khi đọc ra chữ thì nhãn và số bị xáo trộn"
+  checks:
+    top_growth_genre: "battle royale"
+    verified_numbers: ["37.6"]
+  hoc_duoc: ""

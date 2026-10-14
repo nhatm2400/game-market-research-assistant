@@ -1,0 +1,93 @@
+# Danh sách hạng nguồn. Người dùng sửa file này, code chỉ đọc và áp dụng.
+# A: dữ liệu gốc (hãng dữ liệu, store, báo cáo tài chính)
+# B: nguồn thứ cấp có uy tín (báo chuyên ngành, trang tổng hợp báo cáo, báo lớn)
+# C: ý kiến, blog công ty, cộng đồng
+# D: không dùng làm bằng chứng (trang SEO bán báo cáo, không rõ tác giả hoặc ngày)
+# Tên miền không có trong danh sách được xếp hạng C.
+
+A:
+  - sensortower.com
+  - newzoo.com
+  - nikopartners.com
+  - data.ai
+  - appmagic.rocks
+  - gamerefinery.com
+  - socialpeta.com
+  - play.google.com
+  - apps.apple.com
+  - sec.gov
+  - vng.com.vn
+
+B:
+  - statista.com
+  - gamesindustry.biz
+  - pocketgamer.biz
+  - mobilegamer.biz
+  - gamedeveloper.com
+  - gamesbeat.com
+  - venturebeat.com
+  - gamedevreports.substack.com
+  - investgame.net
+  - techinasia.com
+  - e27.co
+  - reuters.com
+  - bloomberg.com
+  - nikkei.com
+  - vnexpress.net
+  - tuoitre.vn
+  - thanhnien.vn
+  - vietnamnews.vn
+  - vir.com.vn
+  - cafef.vn
+  - ictnews.vn
+  - kr-asia.com
+  - bain.com
+  - temasek.com.sg
+  - economysea.withgoogle.com
+
+C:
+  - medium.com
+  - substack.com
+  - linkedin.com
+  - reddit.com
+  - quora.com
+  - facebook.com
+  - youtube.com
+  - allcorrectgames.com
+  - blogspot.com
+  - wordpress.com
+
+D:
+  - mordorintelligence.com
+  - imarcgroup.com
+  - grandviewresearch.com
+  - expertmarketresearch.com
+  - marketresearchfuture.com
+  - businessresearchinsights.com
+  - verifiedmarketreports.com
+  - verifiedmarketresearch.com
+  - fortunebusinessinsights.com
+  - researchandmarkets.com
+  - alliedmarketresearch.com
+  - kenresearch.com
+  - 6wresearch.com
+  - marketsandmarkets.com
+  - precedenceresearch.com
+
+# Hãng dữ liệu: dùng để truy về nguồn gốc khi một bài báo dẫn lại số liệu.
+# domain là trang chính thức của hãng (nếu có); aliases là các cách viết tên.
+origins:
+  Sensor Tower: {domain: sensortower.com, aliases: ["sensor tower", "sensortower"]}
+  Newzoo: {domain: newzoo.com, aliases: ["newzoo"]}
+  Niko Partners: {domain: nikopartners.com, aliases: ["niko partners", "niko"]}
+  data.ai: {domain: data.ai, aliases: ["data.ai", "data ai", "app annie"]}
+  AppMagic: {domain: appmagic.rocks, aliases: ["appmagic"]}
+  SocialPeta: {domain: socialpeta.com, aliases: ["socialpeta"]}
+  Statista: {domain: statista.com, aliases: ["statista"]}
+  GameRefinery: {domain: gamerefinery.com, aliases: ["gamerefinery"]}
+  Google Temasek Bain: {domain: economysea.withgoogle.com, aliases: ["e-conomy sea", "temasek", "bain & company"]}
+  Mordor Intelligence: {domain: mordorintelligence.com, aliases: ["mordor intelligence"]}
+  IMARC: {domain: imarcgroup.com, aliases: ["imarc"]}
+  Moloco: {domain: moloco.com, aliases: ["moloco"]}
+  AppsFlyer: {domain: appsflyer.com, aliases: ["appsflyer"]}
+  Liftoff: {domain: liftoff.io, aliases: ["liftoff"]}
