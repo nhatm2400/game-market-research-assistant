@@ -1,4 +1,4 @@
-"""Step 6 of the design: compare verified claims, separate "different definition" from
+"""Compare verified claims, separate "different definition" from
 "real conflict", and score confidence with public rules instead of asking the LLM."""
 from __future__ import annotations
 

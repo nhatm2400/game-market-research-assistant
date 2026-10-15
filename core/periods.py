@@ -1,5 +1,5 @@
 """Parse measurement periods ("Q1 2025", "H1 2026", "2024") and compare them with the
-time frame the user asked about. Mismatches become flags, as in step 6 of the design."""
+time frame the user asked about. Mismatches become flags."""
 from __future__ import annotations
 
 import calendar

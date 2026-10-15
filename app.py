@@ -64,7 +64,7 @@ with st.sidebar:
 
 # ---------- input ----------
 st.title("Trợ lý nghiên cứu thị trường game")
-st.caption("Bản MVP. Mỗi nhận định phải có câu trích nguyên văn được code tìm thấy trong nguồn; "
+st.caption("Mỗi nhận định phải có câu trích nguyên văn được code tìm thấy trong nguồn; "
            "hạng nguồn và mức tin cậy tính bằng quy tắc, không do AI tự chấm.")
 
 sample = st.selectbox("Câu hỏi mẫu", ["(tự nhập)"] + SAMPLES)
@@ -117,6 +117,9 @@ if r:
     m1.metric("Khuyến nghị", b["decision"])
     m2.metric("Mức tin cậy", b["confidence"])
     m3.metric("Nhận định giữ / loại", f"{r['stats']['verified']} / {r['stats']['rejected']}")
+    if r["stats"]["sources_failed"]:
+        st.warning(f"{r['stats']['sources_failed']} nguồn bị lỗi khi đọc hoặc khi trích nhận định. "
+                   "Xem lý do ở tab Nguồn.")
     st.write(b["summary"])
     st.caption(f"Khung thời gian dữ liệu: {r['window']['label']}")
     if b["reasons"]:

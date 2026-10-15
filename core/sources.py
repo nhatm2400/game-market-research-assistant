@@ -1,4 +1,4 @@
-"""Rule-based source tiers and origin tracing (section 3.1 of the Mission 1 design)."""
+"""Rule-based source tiers and origin tracing."""
 from __future__ import annotations
 
 import re

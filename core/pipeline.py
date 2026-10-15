@@ -11,7 +11,7 @@ from . import extract
 from .analyze import build_findings, definition_differences, enrich_claim, norm_market
 from .brief import write_brief
 from .fetch import fetch
-from .llm import LLM
+from .llm import LLM, LLMError
 from .models import Claim, Source
 from .periods import question_window
 from .search import search, search_engine_name
@@ -105,7 +105,20 @@ def run(question: str, plan: dict | None = None, extra_urls: list[str] | None = 
     def_notes = definition_differences(findings, claim_map)
 
     progress("Viết bản tóm tắt từ các nhận định đã kiểm")
-    brief = write_brief(llm, question, plan["criteria"], claims, findings, def_notes, window)
+    try:
+        brief = write_brief(llm, question, plan["criteria"], claims, findings, def_notes, window)
+    except LLMError as e:
+        brief = write_brief(None, question, plan["criteria"], claims, findings, def_notes, window)
+        if any(c.verified for c in claims):
+            brief["summary"] = ("Không viết được bản tóm tắt vì lỗi gọi AI. Các nhận định đã kiểm chứng vẫn được "
+                                "liệt kê ở tab Nhận định đã kiểm; có thể bấm viết lại bản tóm tắt sau.")
+            brief["confidence"] = "Chưa đánh giá"
+        brief["guard_log"].append(f"Lỗi khi viết bản tóm tắt: {e}")
+
+    if not any(c.verified for c in claims) and sources and (all(s.error for s in sources) or any("Lỗi khi trích nhận định" in (s.error or "") for s in sources)):
+        brief["summary"] = ("Chưa thể trả lời do gặp lỗi kỹ thuật khi đọc hoặc xử lý nguồn. "
+                            "Vui lòng kiểm tra lại kết nối mạng hoặc thử lại sau.")
+        brief["confidence"] = "Chưa đánh giá"
 
     return {
         "id": uuid.uuid4().hex[:10],
@@ -130,7 +143,7 @@ def run(question: str, plan: dict | None = None, extra_urls: list[str] | None = 
             "rejected": sum(1 for c in claims if not c.verified),
             "llm_calls": llm.calls,
             "seconds": round(time.time() - t0, 1),
-            "model": f"{llm.provider}/{llm.model}",
+            "model": f"{llm.provider}/{', '.join(sorted(getattr(llm, 'models_used', set()) or {llm.model}))}",
             "search": search_engine_name() if use_search else "tắt",
         },
     }

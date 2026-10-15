@@ -1,7 +1,7 @@
 """Deterministic tests for the code-only checks (no network, no API key).
 
 The source texts below are short fixtures written for the tests. The two sentences about
-Sensor Tower and Niko Partners are copied from the public pages cited in the Mission 1 report.
+Sensor Tower and Niko Partners are copied from the public pages of Sensor Tower and Niko Partners.
 """
 from datetime import date
 

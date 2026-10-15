@@ -1,0 +1,741 @@
+{
+ "id": "8f32a9a1f9",
+ "created_at": "2026-10-15T16:42:08",
+ "question": "Doanh thu IAP game mobile Đông Nam Á quý 1/2025 là bao nhiêu?",
+ "today": "2026-10-15",
+ "plan": {
+  "criteria": [
+   "Quy mô doanh thu IAP",
+   "Tăng trưởng doanh thu so với cùng kỳ",
+   "Phân bổ doanh thu theo quốc gia",
+   "Top thể loại game dẫn đầu doanh thu"
+  ],
+  "queries": [
+   "Southeast Asia mobile game IAP revenue Q1 2025 Sensor Tower",
+   "SEA mobile gaming market report Q1 2025 data.ai",
+   "Southeast Asia app revenue Q1 2025 Newzoo",
+   "Top mobile games revenue Southeast Asia Q1 2025 AppMagic"
+  ],
+  "market": "Đông Nam Á",
+  "genre": ""
+ },
+ "window": {
+  "start": "2025-01-01",
+  "end": "2025-03-31",
+  "kind": "specific",
+  "label": "01/2025 đến 03/2025"
+ },
+ "question_market": "Đông Nam Á",
+ "search_log": [],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "Sb4dc9f66",
+   "url": "https://sensortower.com/blog/southeast-asia-mobile-gaming-2025",
+   "title": "Sensor Tower Southeast Asia Mobile Game Market Insights 2025",
+   "domain": "sensortower.com",
+   "published": "2025-05-21",
+   "kind": "html",
+   "text": "<5366 ký tự>",
+   "error": null,
+   "tier": "A",
+   "base_tier": "A",
+   "tier_notes": [
+    "sensortower.com nằm trong danh sách hạng A",
+    "Đăng cách đây 17 tháng (12 đến 24 tháng)"
+   ],
+   "publisher": "Sensor Tower"
+  },
+  {
+   "id": "S80418131",
+   "url": "https://gamedevreports.substack.com/p/sensor-tower-southeast-asia-mobile",
+   "title": "Sensor Tower: Southeast Asia Mobile Game Market in 2025",
+   "domain": "gamedevreports.substack.com",
+   "published": "2025-06-13",
+   "kind": "html",
+   "text": "<5560 ký tự>",
+   "error": null,
+   "tier": "B",
+   "base_tier": "B",
+   "tier_notes": [
+    "gamedevreports.substack.com nằm trong danh sách hạng B",
+    "Đăng cách đây 16 tháng (12 đến 24 tháng)"
+   ],
+   "publisher": "gamedevreports.substack.com"
+  }
+ ],
+ "claims": [
+  {
+   "id": "C1",
+   "source_id": "Sb4dc9f66",
+   "claim_text": "Doanh thu IAP game mobile của Đông Nam Á trong quý 1 năm 2025 đạt 625 triệu USD.",
+   "metric": "revenue",
+   "value_text": "$625 million",
+   "market": "Đông Nam Á",
+   "period": "Q1 2025",
+   "scope": "mobile_iap",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "While SEA currently ranks seventh globally in in-app purchase (IAP) revenue at $625 million in Q1 2025, this figure signals significant untapped monetization potential.",
+   "section_title": "",
+   "attributed_to": "",
+   "criterion": 0,
+   "value": 625000000.0,
+   "unit": "USD",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "as a pivotal growth region in the global mobile gaming industry, presenting significant opportunities for developers and publishers. With a steadily expanding player base and increasing monetization potential, SEA is a dynamic and exciting landscape for the mobile gaming industry.\nIn the first quarter of 2025, Southeast Asia ranked as the second-largest global market for mobile game downloads, hitting an impressive 1.93 billion new installs. This represents a 3% increase from the previous quarter, highlighting the region's highly engaged and growing audience hungry for new gaming experiences. While SEA currently ranks seventh globally in in-app purchase (IAP) revenue at $625 million in Q1 2025, this figure signals significant untapped monetization potential. Factors like a large gaming community, improving digital payment infrastructure, and rising smartphone adoption are key drivers that suggest future revenue growth.\nNote: The download data in this re",
+   "origin": "Sensor Tower",
+   "tier": "A",
+   "flags": [],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C2",
+   "source_id": "Sb4dc9f66",
+   "claim_text": "Thái Lan dẫn đầu về doanh thu IAP tại Đông Nam Á với 162 triệu USD trong quý 1 năm 2025.",
+   "metric": "revenue",
+   "value_text": "$162 million",
+   "market": "Thái Lan",
+   "period": "Q1 2025",
+   "scope": "mobile_iap",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "When it comes to revenue, Thailand takes the lead in the region, generating $162 million in IAP revenue during Q1 2025.",
+   "section_title": "Market-Specific Highlights: Indonesia Leads Downloads, Thailand Tops Revenue",
+   "attributed_to": "",
+   "criterion": 2,
+   "value": 162000000.0,
+   "unit": "USD",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "he download data in this report are based on estimated downloads from the App Store and Google Play, excluding pre-installs, re-downloads, and downloads from third-party Android marketplaces. Google Play is not available in Mainland China.\nMarket-Specific Highlights: Indonesia Leads Downloads, Thailand Tops Revenue\nWithin SEA, individual countries showcase distinct trends. Indonesia stands out as the leader in mobile game downloads, reaching 870 million in Q1 2025, a 9% increase from the prior quarter. The Philippines and Vietnam follow with 366 million and 329 million downloads respectively.\nWhen it comes to revenue, Thailand takes the lead in the region, generating $162 million in IAP revenue during Q1 2025. This is attributed to its strong digital payment systems and a cultural willingness to spend on in-app purchases. Indonesia and Malaysia also show strong revenue figures.\nPopular Genres: Casual Appe",
+   "origin": "Sensor Tower",
+   "tier": "A",
+   "flags": [
+    "Số của thị trường Thái Lan, câu hỏi hỏi về Đông Nam Á"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C3",
+   "source_id": "S80418131",
+   "claim_text": "Doanh thu IAP game mobile tại Đông Nam Á đạt 625 triệu USD trong quý 1 năm 2025.",
+   "metric": "revenue",
+   "value_text": "$625 million",
+   "market": "Đông Nam Á",
+   "period": "Q1 2025",
+   "scope": "mobile_iap",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "Southeast Asian users spent $625 million on games in Q1'25, up 1% QoQ.",
+   "section_title": "General Market Overview",
+   "attributed_to": "Sensor Tower",
+   "criterion": 0,
+   "value": 625000000.0,
+   "unit": "USD",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "General Market Overview\n- In Q1'25, the region ranked second globally by downloads, accounting for 1.93 billion installs. This represents a 3% quarter-over-quarter increase.\n❗️However, Sensor Tower is being a bit misleading here—comparing a region to individual countries isn’t entirely accurate.\n- Southeast Asian users spent $625 million on games in Q1'25, up 1% QoQ. This is the seventh-highest figure worldwide, and again, it’s a region being compared to individual countries.\n- Indonesia leads Southeast Asia in downloads. In Q1'25, Indonesians downloaded games 8",
+   "origin": "Sensor Tower",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Sensor Tower, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C4",
+   "source_id": "S80418131",
+   "claim_text": "Tăng trưởng doanh thu IAP game mobile tại Đông Nam Á trong quý 1 năm 2025 so với quý trước là 1%.",
+   "metric": "growth",
+   "value_text": "1%",
+   "market": "Đông Nam Á",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile_iap",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "Southeast Asian users spent $625 million on games in Q1'25, up 1% QoQ.",
+   "section_title": "General Market Overview",
+   "attributed_to": "Sensor Tower",
+   "criterion": 1,
+   "value": 1.0,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "General Market Overview\n- In Q1'25, the region ranked second globally by downloads, accounting for 1.93 billion installs. This represents a 3% quarter-over-quarter increase.\n❗️However, Sensor Tower is being a bit misleading here—comparing a region to individual countries isn’t entirely accurate.\n- Southeast Asian users spent $625 million on games in Q1'25, up 1% QoQ. This is the seventh-highest figure worldwide, and again, it’s a region being compared to individual countries.\n- Indonesia leads Southeast Asia in downloads. In Q1'25, Indonesians downloaded games 8",
+   "origin": "Sensor Tower",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Sensor Tower, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C5",
+   "source_id": "S80418131",
+   "claim_text": "Doanh thu IAP game mobile tại Thái Lan đạt 162 triệu USD trong quý 1 năm 2025.",
+   "metric": "revenue",
+   "value_text": "$162 million",
+   "market": "Thái Lan",
+   "period": "Q1 2025",
+   "scope": "mobile_iap",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "In terms of revenue, Thailand leads with $162 million (-6% QoQ).",
+   "section_title": "General Market Overview",
+   "attributed_to": "Sensor Tower",
+   "criterion": 2,
+   "value": 162000000.0,
+   "unit": "USD",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "s. This represents a 3% quarter-over-quarter increase.\n❗️However, Sensor Tower is being a bit misleading here—comparing a region to individual countries isn’t entirely accurate.\n- Southeast Asian users spent $625 million on games in Q1'25, up 1% QoQ. This is the seventh-highest figure worldwide, and again, it’s a region being compared to individual countries.\n- Indonesia leads Southeast Asia in downloads. In Q1'25, Indonesians downloaded games 870 million times (+9% QoQ). The Philippines is second with 366 million installs (-1% QoQ), and Vietnam is third with 329 million installs (+2% QoQ).\n- In terms of revenue, Thailand leads with $162 million (-6% QoQ). Indonesia is second with $118 million (+1% QoQ), and Malaysia is third with $103 million (+7% QoQ).\n❗️Note that this is only about IAP purchases. D2C payments, which are quite common in Southeast A",
+   "origin": "Sensor Tower",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Sensor Tower, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc",
+    "Số của thị trường Thái Lan, câu hỏi hỏi về Đông Nam Á"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C6",
+   "source_id": "S80418131",
+   "claim_text": "Tăng trưởng doanh thu IAP game mobile tại Thái Lan trong quý 1 năm 2025 so với quý trước là -6%.",
+   "metric": "growth",
+   "value_text": "-6%",
+   "market": "Thái Lan",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile_iap",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "In terms of revenue, Thailand leads with $162 million (-6% QoQ).",
+   "section_title": "General Market Overview",
+   "attributed_to": "Sensor Tower",
+   "criterion": 2,
+   "value": -6.0,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "s. This represents a 3% quarter-over-quarter increase.\n❗️However, Sensor Tower is being a bit misleading here—comparing a region to individual countries isn’t entirely accurate.\n- Southeast Asian users spent $625 million on games in Q1'25, up 1% QoQ. This is the seventh-highest figure worldwide, and again, it’s a region being compared to individual countries.\n- Indonesia leads Southeast Asia in downloads. In Q1'25, Indonesians downloaded games 870 million times (+9% QoQ). The Philippines is second with 366 million installs (-1% QoQ), and Vietnam is third with 329 million installs (+2% QoQ).\n- In terms of revenue, Thailand leads with $162 million (-6% QoQ). Indonesia is second with $118 million (+1% QoQ), and Malaysia is third with $103 million (+7% QoQ).\n❗️Note that this is only about IAP purchases. D2C payments, which are quite common in Southeast A",
+   "origin": "Sensor Tower",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Sensor Tower, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc",
+    "Số của thị trường Thái Lan, câu hỏi hỏi về Đông Nam Á"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C7",
+   "source_id": "S80418131",
+   "claim_text": "Doanh thu IAP game mobile tại Indonesia đạt 118 triệu USD trong quý 1 năm 2025.",
+   "metric": "revenue",
+   "value_text": "$118 million",
+   "market": "Indonesia",
+   "period": "Q1 2025",
+   "scope": "mobile_iap",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "Indonesia is second with $118 million (+1% QoQ), and Malaysia is third with $103 million (+7% QoQ).",
+   "section_title": "General Market Overview",
+   "attributed_to": "Sensor Tower",
+   "criterion": 2,
+   "value": 118000000.0,
+   "unit": "USD",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": " Sensor Tower is being a bit misleading here—comparing a region to individual countries isn’t entirely accurate.\n- Southeast Asian users spent $625 million on games in Q1'25, up 1% QoQ. This is the seventh-highest figure worldwide, and again, it’s a region being compared to individual countries.\n- Indonesia leads Southeast Asia in downloads. In Q1'25, Indonesians downloaded games 870 million times (+9% QoQ). The Philippines is second with 366 million installs (-1% QoQ), and Vietnam is third with 329 million installs (+2% QoQ).\n- In terms of revenue, Thailand leads with $162 million (-6% QoQ). Indonesia is second with $118 million (+1% QoQ), and Malaysia is third with $103 million (+7% QoQ).\n❗️Note that this is only about IAP purchases. D2C payments, which are quite common in Southeast Asia, aren’t reflected in these stats.\n- Looking at the most popular genres in Southeast Asia, platfo",
+   "origin": "Sensor Tower",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Sensor Tower, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc",
+    "Số của thị trường Indonesia, câu hỏi hỏi về Đông Nam Á"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C8",
+   "source_id": "S80418131",
+   "claim_text": "Tăng trưởng doanh thu IAP game mobile tại Indonesia trong quý 1 năm 2025 so với quý trước là 1%.",
+   "metric": "growth",
+   "value_text": "1%",
+   "market": "Indonesia",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile_iap",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "Indonesia is second with $118 million (+1% QoQ), and Malaysia is third with $103 million (+7% QoQ).",
+   "section_title": "General Market Overview",
+   "attributed_to": "Sensor Tower",
+   "criterion": 2,
+   "value": 1.0,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": " Sensor Tower is being a bit misleading here—comparing a region to individual countries isn’t entirely accurate.\n- Southeast Asian users spent $625 million on games in Q1'25, up 1% QoQ. This is the seventh-highest figure worldwide, and again, it’s a region being compared to individual countries.\n- Indonesia leads Southeast Asia in downloads. In Q1'25, Indonesians downloaded games 870 million times (+9% QoQ). The Philippines is second with 366 million installs (-1% QoQ), and Vietnam is third with 329 million installs (+2% QoQ).\n- In terms of revenue, Thailand leads with $162 million (-6% QoQ). Indonesia is second with $118 million (+1% QoQ), and Malaysia is third with $103 million (+7% QoQ).\n❗️Note that this is only about IAP purchases. D2C payments, which are quite common in Southeast Asia, aren’t reflected in these stats.\n- Looking at the most popular genres in Southeast Asia, platfo",
+   "origin": "Sensor Tower",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Sensor Tower, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc",
+    "Số của thị trường Indonesia, câu hỏi hỏi về Đông Nam Á"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C9",
+   "source_id": "S80418131",
+   "claim_text": "Doanh thu IAP game mobile tại Malaysia đạt 103 triệu USD trong quý 1 năm 2025.",
+   "metric": "revenue",
+   "value_text": "$103 million",
+   "market": "Malaysia",
+   "period": "Q1 2025",
+   "scope": "mobile_iap",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "Indonesia is second with $118 million (+1% QoQ), and Malaysia is third with $103 million (+7% QoQ).",
+   "section_title": "General Market Overview",
+   "attributed_to": "Sensor Tower",
+   "criterion": 2,
+   "value": 103000000.0,
+   "unit": "USD",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": " Sensor Tower is being a bit misleading here—comparing a region to individual countries isn’t entirely accurate.\n- Southeast Asian users spent $625 million on games in Q1'25, up 1% QoQ. This is the seventh-highest figure worldwide, and again, it’s a region being compared to individual countries.\n- Indonesia leads Southeast Asia in downloads. In Q1'25, Indonesians downloaded games 870 million times (+9% QoQ). The Philippines is second with 366 million installs (-1% QoQ), and Vietnam is third with 329 million installs (+2% QoQ).\n- In terms of revenue, Thailand leads with $162 million (-6% QoQ). Indonesia is second with $118 million (+1% QoQ), and Malaysia is third with $103 million (+7% QoQ).\n❗️Note that this is only about IAP purchases. D2C payments, which are quite common in Southeast Asia, aren’t reflected in these stats.\n- Looking at the most popular genres in Southeast Asia, platfo",
+   "origin": "Sensor Tower",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Sensor Tower, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc",
+    "Số của thị trường Malaysia, câu hỏi hỏi về Đông Nam Á"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C10",
+   "source_id": "S80418131",
+   "claim_text": "Tăng trưởng doanh thu IAP game mobile tại Malaysia trong quý 1 năm 2025 so với quý trước là 7%.",
+   "metric": "growth",
+   "value_text": "7%",
+   "market": "Malaysia",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile_iap",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "Indonesia is second with $118 million (+1% QoQ), and Malaysia is third with $103 million (+7% QoQ).",
+   "section_title": "General Market Overview",
+   "attributed_to": "Sensor Tower",
+   "criterion": 2,
+   "value": 7.0,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": " Sensor Tower is being a bit misleading here—comparing a region to individual countries isn’t entirely accurate.\n- Southeast Asian users spent $625 million on games in Q1'25, up 1% QoQ. This is the seventh-highest figure worldwide, and again, it’s a region being compared to individual countries.\n- Indonesia leads Southeast Asia in downloads. In Q1'25, Indonesians downloaded games 870 million times (+9% QoQ). The Philippines is second with 366 million installs (-1% QoQ), and Vietnam is third with 329 million installs (+2% QoQ).\n- In terms of revenue, Thailand leads with $162 million (-6% QoQ). Indonesia is second with $118 million (+1% QoQ), and Malaysia is third with $103 million (+7% QoQ).\n❗️Note that this is only about IAP purchases. D2C payments, which are quite common in Southeast Asia, aren’t reflected in these stats.\n- Looking at the most popular genres in Southeast Asia, platfo",
+   "origin": "Sensor Tower",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Sensor Tower, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc",
+    "Số của thị trường Malaysia, câu hỏi hỏi về Đông Nam Á"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C11",
+   "source_id": "S80418131",
+   "claim_text": "Tăng trưởng doanh thu của thể loại game 4X strategy trong quý 1 năm 2025 tại Đông Nam Á là 17.6%.",
+   "metric": "growth",
+   "value_text": "17.6%",
+   "market": "Đông Nam Á",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile_iap",
+   "genre": "4X strategy",
+   "genre_level": "genre",
+   "quote": "For revenue, 4X strategy games (+17.6% QoQ), MOBA (+20.1% QoQ), and MMORPG (-17.1% QoQ) are on top.",
+   "section_title": "General Market Overview",
+   "attributed_to": "Sensor Tower",
+   "criterion": 3,
+   "value": 17.6,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "es (+9% QoQ). The Philippines is second with 366 million installs (-1% QoQ), and Vietnam is third with 329 million installs (+2% QoQ).\n- In terms of revenue, Thailand leads with $162 million (-6% QoQ). Indonesia is second with $118 million (+1% QoQ), and Malaysia is third with $103 million (+7% QoQ).\n❗️Note that this is only about IAP purchases. D2C payments, which are quite common in Southeast Asia, aren’t reflected in these stats.\n- Looking at the most popular genres in Southeast Asia, platformers/runners (+16% QoQ), simulators (+0.1% QoQ), and arcade games (+12.2% QoQ) lead in downloads.\n- For revenue, 4X strategy games (+17.6% QoQ), MOBA (+20.1% QoQ), and MMORPG (-17.1% QoQ) are on top.\nConsider subscribing to the GameDev Reports Premium tier to support the newsletter. Get access to the list of curated articles & archive of Gaming Reports that I’ve been collecting since 2020.\n- Top",
+   "origin": "Sensor Tower",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Sensor Tower, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C12",
+   "source_id": "S80418131",
+   "claim_text": "Tăng trưởng doanh thu của thể loại game MOBA trong quý 1 năm 2025 tại Đông Nam Á là 20.1%.",
+   "metric": "growth",
+   "value_text": "20.1%",
+   "market": "Đông Nam Á",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile_iap",
+   "genre": "MOBA",
+   "genre_level": "genre",
+   "quote": "For revenue, 4X strategy games (+17.6% QoQ), MOBA (+20.1% QoQ), and MMORPG (-17.1% QoQ) are on top.",
+   "section_title": "General Market Overview",
+   "attributed_to": "Sensor Tower",
+   "criterion": 3,
+   "value": 20.1,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "es (+9% QoQ). The Philippines is second with 366 million installs (-1% QoQ), and Vietnam is third with 329 million installs (+2% QoQ).\n- In terms of revenue, Thailand leads with $162 million (-6% QoQ). Indonesia is second with $118 million (+1% QoQ), and Malaysia is third with $103 million (+7% QoQ).\n❗️Note that this is only about IAP purchases. D2C payments, which are quite common in Southeast Asia, aren’t reflected in these stats.\n- Looking at the most popular genres in Southeast Asia, platformers/runners (+16% QoQ), simulators (+0.1% QoQ), and arcade games (+12.2% QoQ) lead in downloads.\n- For revenue, 4X strategy games (+17.6% QoQ), MOBA (+20.1% QoQ), and MMORPG (-17.1% QoQ) are on top.\nConsider subscribing to the GameDev Reports Premium tier to support the newsletter. Get access to the list of curated articles & archive of Gaming Reports that I’ve been collecting since 2020.\n- Top",
+   "origin": "Sensor Tower",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Sensor Tower, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C13",
+   "source_id": "S80418131",
+   "claim_text": "Tăng trưởng doanh thu của thể loại game MMORPG trong quý 1 năm 2025 tại Đông Nam Á là -17.1%.",
+   "metric": "growth",
+   "value_text": "-17.1%",
+   "market": "Đông Nam Á",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile_iap",
+   "genre": "MMORPG",
+   "genre_level": "genre",
+   "quote": "For revenue, 4X strategy games (+17.6% QoQ), MOBA (+20.1% QoQ), and MMORPG (-17.1% QoQ) are on top.",
+   "section_title": "General Market Overview",
+   "attributed_to": "Sensor Tower",
+   "criterion": 3,
+   "value": -17.1,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "es (+9% QoQ). The Philippines is second with 366 million installs (-1% QoQ), and Vietnam is third with 329 million installs (+2% QoQ).\n- In terms of revenue, Thailand leads with $162 million (-6% QoQ). Indonesia is second with $118 million (+1% QoQ), and Malaysia is third with $103 million (+7% QoQ).\n❗️Note that this is only about IAP purchases. D2C payments, which are quite common in Southeast Asia, aren’t reflected in these stats.\n- Looking at the most popular genres in Southeast Asia, platformers/runners (+16% QoQ), simulators (+0.1% QoQ), and arcade games (+12.2% QoQ) lead in downloads.\n- For revenue, 4X strategy games (+17.6% QoQ), MOBA (+20.1% QoQ), and MMORPG (-17.1% QoQ) are on top.\nConsider subscribing to the GameDev Reports Premium tier to support the newsletter. Get access to the list of curated articles & archive of Gaming Reports that I’ve been collecting since 2020.\n- Top",
+   "origin": "Sensor Tower",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Sensor Tower, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc"
+   ],
+   "excluded_by_user": false
+  }
+ ],
+ "findings": [
+  {
+   "key": "F1",
+   "label": "Doanh thu IAP game mobile, Đông Nam Á, Q1 2025",
+   "claim_ids": [
+    "C1",
+    "C3"
+   ],
+   "origins": [
+    "Sensor Tower"
+   ],
+   "values": [
+    625000000.0
+   ],
+   "unit": "USD",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Trung bình",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Sensor Tower, hạng A)",
+    "2 bài viết nhưng chỉ 1 nguồn gốc"
+   ]
+  },
+  {
+   "key": "F2",
+   "label": "Doanh thu IAP game mobile, Thái Lan, Q1 2025",
+   "claim_ids": [
+    "C2",
+    "C5"
+   ],
+   "origins": [
+    "Sensor Tower"
+   ],
+   "values": [
+    162000000.0
+   ],
+   "unit": "USD",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Trung bình",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Sensor Tower, hạng A)",
+    "2 bài viết nhưng chỉ 1 nguồn gốc"
+   ]
+  },
+  {
+   "key": "F3",
+   "label": "Tăng trưởng IAP game mobile, Đông Nam Á, Q1 2025 vs Q4 2024",
+   "claim_ids": [
+    "C4"
+   ],
+   "origins": [
+    "Sensor Tower"
+   ],
+   "values": [
+    1.0
+   ],
+   "unit": "%",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Trung bình",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Sensor Tower, hạng B)"
+   ]
+  },
+  {
+   "key": "F4",
+   "label": "Tăng trưởng IAP game mobile, Thái Lan, Q1 2025 vs Q4 2024",
+   "claim_ids": [
+    "C6"
+   ],
+   "origins": [
+    "Sensor Tower"
+   ],
+   "values": [
+    -6.0
+   ],
+   "unit": "%",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Trung bình",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Sensor Tower, hạng B)"
+   ]
+  },
+  {
+   "key": "F5",
+   "label": "Doanh thu IAP game mobile, Indonesia, Q1 2025",
+   "claim_ids": [
+    "C7"
+   ],
+   "origins": [
+    "Sensor Tower"
+   ],
+   "values": [
+    118000000.0
+   ],
+   "unit": "USD",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Trung bình",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Sensor Tower, hạng B)"
+   ]
+  },
+  {
+   "key": "F6",
+   "label": "Tăng trưởng IAP game mobile, Indonesia, Q1 2025 vs Q4 2024",
+   "claim_ids": [
+    "C8"
+   ],
+   "origins": [
+    "Sensor Tower"
+   ],
+   "values": [
+    1.0
+   ],
+   "unit": "%",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Trung bình",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Sensor Tower, hạng B)"
+   ]
+  },
+  {
+   "key": "F7",
+   "label": "Doanh thu IAP game mobile, Malaysia, Q1 2025",
+   "claim_ids": [
+    "C9"
+   ],
+   "origins": [
+    "Sensor Tower"
+   ],
+   "values": [
+    103000000.0
+   ],
+   "unit": "USD",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Trung bình",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Sensor Tower, hạng B)"
+   ]
+  },
+  {
+   "key": "F8",
+   "label": "Tăng trưởng IAP game mobile, Malaysia, Q1 2025 vs Q4 2024",
+   "claim_ids": [
+    "C10"
+   ],
+   "origins": [
+    "Sensor Tower"
+   ],
+   "values": [
+    7.0
+   ],
+   "unit": "%",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Trung bình",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Sensor Tower, hạng B)"
+   ]
+  },
+  {
+   "key": "F9",
+   "label": "Tăng trưởng IAP game mobile, 4X strategy, Đông Nam Á, Q1 2025 vs Q4 2024",
+   "claim_ids": [
+    "C11"
+   ],
+   "origins": [
+    "Sensor Tower"
+   ],
+   "values": [
+    17.6
+   ],
+   "unit": "%",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Trung bình",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Sensor Tower, hạng B)"
+   ]
+  },
+  {
+   "key": "F10",
+   "label": "Tăng trưởng IAP game mobile, MOBA, Đông Nam Á, Q1 2025 vs Q4 2024",
+   "claim_ids": [
+    "C12"
+   ],
+   "origins": [
+    "Sensor Tower"
+   ],
+   "values": [
+    20.1
+   ],
+   "unit": "%",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Trung bình",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Sensor Tower, hạng B)"
+   ]
+  },
+  {
+   "key": "F11",
+   "label": "Tăng trưởng IAP game mobile, MMORPG, Đông Nam Á, Q1 2025 vs Q4 2024",
+   "claim_ids": [
+    "C13"
+   ],
+   "origins": [
+    "Sensor Tower"
+   ],
+   "values": [
+    -17.1
+   ],
+   "unit": "%",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Trung bình",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Sensor Tower, hạng B)"
+   ]
+  }
+ ],
+ "brief": {
+  "decision": "Cần thêm dữ liệu",
+  "summary": "Doanh thu IAP game mobile tại Đông Nam Á trong quý 1 năm 2025 đạt 625 triệu USD với mức độ chắc chắn trung bình dựa trên nguồn Sensor Tower. Tuy nhiên, vẫn cần thêm dữ liệu phân bổ chi tiết cho toàn bộ các quốc gia và top thể loại dẫn đầu.",
+  "reasons": [
+   {
+    "text": "Doanh thu IAP game mobile của Đông Nam Á trong quý 1 năm 2025 đạt 625 triệu USD.",
+    "claim_ids": [
+     "C1",
+     "C3"
+    ]
+   },
+   {
+    "text": "Tăng trưởng doanh thu IAP game mobile tại Đông Nam Á trong quý 1 năm 2025 so với quý trước là 1%.",
+    "claim_ids": [
+     "C4"
+    ]
+   },
+   {
+    "text": "Thái Lan dẫn đầu về doanh thu IAP với 162 triệu USD và tăng trưởng -6% trong quý 1 năm 2025 so với quý trước, nhưng đây là số liệu của thị trường Thái Lan chứ không phải toàn bộ Đông Nam Á.",
+    "claim_ids": [
+     "C2",
+     "C5",
+     "C6"
+    ]
+   },
+   {
+    "text": "Indonesia đạt 118 triệu USD với mức tăng trưởng 1% và Malaysia đạt 103 triệu USD với mức tăng trưởng 7% trong quý 1 năm 2025 so với quý trước, nhưng đây chỉ là số liệu riêng của từng thị trường.",
+    "claim_ids": [
+     "C7",
+     "C8",
+     "C9",
+     "C10"
+    ]
+   },
+   {
+    "text": "Tăng trưởng doanh thu theo thể loại tại Đông Nam Á trong quý 1 năm 2025 so với quý trước ghi nhận 4X strategy đạt 17.6%, MOBA đạt 20.1% và MMORPG đạt -17.1%.",
+    "claim_ids": [
+     "C11",
+     "C12",
+     "C13"
+    ]
+   }
+  ],
+  "what_would_change": [
+   "Có thêm dữ liệu chính thức đối chiếu từ các nguồn độc lập khác ngoài Sensor Tower.",
+   "Bổ sung số liệu doanh thu chi tiết của các quốc gia còn lại trong khu vực Đông Nam Á ngoài Thái Lan, Indonesia và Malaysia.",
+   "Có danh sách xếp hạng top thể loại game dẫn đầu doanh thu IAP cụ thể thay vì chỉ có dữ liệu tăng trưởng của một vài thể loại."
+  ],
+  "confidence": "Trung bình",
+  "gaps": [],
+  "conflicts": [],
+  "definition_notes": [],
+  "guard_log": []
+ },
+ "stats": {
+  "sources_read": 2,
+  "sources_failed": 0,
+  "claims": 13,
+  "verified": 13,
+  "rejected": 0,
+  "llm_calls": 4,
+  "seconds": 15.4,
+  "model": "gemini/gemini-3.5-flash-lite",
+  "search": "tắt"
+ }
+}

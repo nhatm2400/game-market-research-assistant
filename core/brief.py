@@ -1,4 +1,4 @@
-"""Step 7: the one-page decision brief.
+"""The one-page decision brief.
 
 The LLM only writes from verified claims and must cite claim ids. Code then checks every
 sentence: a reason without a valid claim id, or with a number that is not in the cited
@@ -30,7 +30,7 @@ BRIEF_SCHEMA = {
     "required": ["decision", "summary", "reasons", "what_would_change"],
 }
 
-BRIEF_PROMPT = """Bạn viết bản tóm tắt quyết định một trang cho chuyên viên BD của nhà phát hành game.
+BRIEF_PROMPT = """Bạn viết bản tóm tắt quyết định một trang cho chuyên viên phát triển kinh doanh của nhà phát hành game.
 Câu hỏi: "{question}"
 Khung thời gian dữ liệu: {window}
 Tiêu chí: {criteria}

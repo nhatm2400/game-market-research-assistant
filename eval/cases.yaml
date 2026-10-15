@@ -13,7 +13,7 @@
   checks:
     verified_numbers: ["625"]
     origin_includes: "Sensor Tower"
-  hoc_duoc: ""
+  hoc_duoc: "Với câu hỏi số liệu đơn lẻ từ báo cáo chính thống, trích dẫn chính xác kèm câu trích gốc giúp xác thực 100% số liệu (625 triệu USD) và bảo toàn nguồn gốc Sensor Tower."
 
 - id: TC2
   loai: kho
@@ -28,7 +28,7 @@
     verified_numbers: ["5.37", "5.89"]
     has_conflict: true
     confidence_not: ["Cao"]
-  hoc_duoc: ""
+  hoc_duoc: "Hệ thống gom nhóm và phát hiện mâu thuẫn giữa 2 nguồn độc lập (Niko: 5,37 tỷ vs Statista: 5,89 tỷ), hạ độ tin cậy xuống Thấp và chỉ tính Niko là 1 nguồn gốc dù có 2 bài dẫn lại."
 
 - id: TC3
   loai: kho
@@ -41,7 +41,7 @@
   checks:
     flag_any: ["ngoài khung", "không phải số của cả", "Việt Nam"]
     confidence_not: ["Cao"]
-  hoc_duoc: ""
+  hoc_duoc: "Bộ lọc thời gian và địa lý (flags) cảnh báo hiệu quả việc số liệu lệch kỳ (theo quý thay vì 12 tháng) và bẫy phạm vi (bảng tăng trưởng thuộc Việt Nam thay vì toàn Đông Nam Á)."
 
 - id: TC4
   loai: tot
@@ -52,7 +52,7 @@
   checks:
     min_reasons: 2
     min_distinct_tiers: 2
-  hoc_duoc: ""
+  hoc_duoc: "Hệ thống tự động tìm kiếm qua Tavily, xếp hạng nguồn đa dạng (A, B, C) và đưa ra bản tóm tắt quyết định có căn cứ gắn mã nhận định đã qua kiểm chứng bằng code."
 
 - id: TC5
   loai: thieu
@@ -63,7 +63,7 @@
   checks:
     decision_in: ["Cần thêm dữ liệu"]
     no_verified_number_for_period: "2026-09"
-  hoc_duoc: ""
+  hoc_duoc: "Không xuất hiện ảo giác (hallucination) bịa số khi không có dữ liệu công khai cho kỳ tháng 9/2026; hệ thống trả về đúng quyết định 'Cần thêm dữ liệu' và mức tin cậy 'Chưa đủ dữ liệu'."
 
 - id: TC6
   loai: that_bai
@@ -71,8 +71,8 @@
   urls:
     - https://investgame.net/news/pdf/southeast-asian-mobile-game-market-insights-2025/
   use_search: false
-  ky_vong: "Đáp án đúng theo biểu đồ của báo cáo là Battle Royale +37,6%. Em dự đoán MVP dễ sai ở đây vì số nằm trong biểu đồ, khi đọc ra chữ thì nhãn và số bị xáo trộn"
+  ky_vong: "Đáp án đúng theo biểu đồ của báo cáo là Battle Royale +37,6%. Dự đoán hệ thống dễ sai ở đây vì số nằm trong biểu đồ, khi đọc ra chữ thì nhãn và số bị xáo trộn"
   checks:
     top_growth_genre: "battle royale"
     verified_numbers: ["37.6"]
-  hoc_duoc: ""
+  hoc_duoc: "Số liệu nằm trong biểu đồ PDF khi trích xuất text thuần qua PyMuPDF bị xáo trộn thứ tự chữ và số (số 37,6% bị tách rời nhãn Battle Royale), khiến bước kiểm câu trích loại bỏ. Hướng cải thiện là tích hợp OCR nhận diện bố cục bảng biểu/multimodal."

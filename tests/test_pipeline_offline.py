@@ -13,7 +13,7 @@ TODAY = date(2026, 10, 13)
 class ScriptedLLM:
     provider, model = "fake", "scripted"
 
-    def __init__(self):
+    def __init__(self, *args, **kwargs):
         self.calls = 0
 
     def json(self, prompt, schema):

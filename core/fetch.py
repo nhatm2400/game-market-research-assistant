@@ -8,6 +8,7 @@ from __future__ import annotations
 import hashlib
 import json
 import re
+import time
 import unicodedata
 from datetime import date
 from pathlib import Path
@@ -51,6 +52,25 @@ def _pdf_date(data: bytes) -> str | None:
     return f"{m.group(1)}-{m.group(2)}-{m.group(3)}" if m else None
 
 
+def _get(url: str, attempts: int = 3) -> requests.Response:
+    """GET with a short retry for timeouts and dropped connections."""
+    headers = {"User-Agent": UA, "Accept-Language": "en-US,en;q=0.9,vi;q=0.8",
+               "Accept": "text/html,application/xhtml+xml,application/pdf;q=0.9,*/*;q=0.8"}
+    for i in range(attempts):
+        try:
+            r = requests.get(url, headers=headers, timeout=(10, 45))
+            if r.status_code in (429, 500, 502, 503, 504) and i < attempts - 1:
+                time.sleep(2 * (i + 1))
+                continue
+            r.raise_for_status()
+            return r
+        except (requests.ConnectTimeout, requests.ReadTimeout, requests.ConnectionError):
+            if i == attempts - 1:
+                raise
+            time.sleep(2 * (i + 1))
+    raise RuntimeError("unreachable")
+
+
 def fetch(url: str, hint_published: str | None = None, use_cache: bool = True) -> Source:
     CACHE_DIR.mkdir(parents=True, exist_ok=True)
     sid = _sid(url)
@@ -60,8 +80,7 @@ def fetch(url: str, hint_published: str | None = None, use_cache: bool = True) -
 
     src = Source(id=sid, url=url, domain=domain_of(url))
     try:
-        r = requests.get(url, headers={"User-Agent": UA}, timeout=30)
-        r.raise_for_status()
+        r = _get(url)
         ctype = r.headers.get("content-type", "").lower()
         if "pdf" in ctype or url.lower().endswith(".pdf"):
             src.kind = "pdf"
@@ -81,7 +100,7 @@ def fetch(url: str, hint_published: str | None = None, use_cache: bool = True) -
         if len(src.text) < 200:
             src.error = "Trang không có nội dung đọc được (có thể bị chặn hoặc chỉ có ảnh)"
     except Exception as e:
-        src.error = f"Không tải được: {e.__class__.__name__}"
+        src.error = f"Không tải được: {e.__class__.__name__} {str(e)[:120]}"
     if not src.error:
         cache.write_text(json.dumps(src.to_dict(with_text=True), ensure_ascii=False), encoding="utf-8")
     return src

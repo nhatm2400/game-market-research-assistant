@@ -1,4 +1,4 @@
-"""LLM steps: plan the question (step 2) and pull atomic claims out of a source (step 4)."""
+"""LLM steps: plan the question and pull atomic claims out of a source."""
 from __future__ import annotations
 
 import re
@@ -21,7 +21,7 @@ PLAN_SCHEMA = {
     "required": ["criteria", "queries", "market", "genre"],
 }
 
-PLAN_PROMPT = """Bạn hỗ trợ chuyên viên BD của một nhà phát hành game ở Việt Nam (Gamota) nghiên cứu thị trường.
+PLAN_PROMPT = """Bạn hỗ trợ chuyên viên phát triển kinh doanh của một nhà phát hành game ở Việt Nam nghiên cứu thị trường.
 Hôm nay là {today}. Câu hỏi của người dùng:
 "{question}"
 

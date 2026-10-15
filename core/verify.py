@@ -1,4 +1,4 @@
-"""Step 5 of the design: check every claim against its source with plain code, no LLM.
+"""Check every claim against its source with plain code, no LLM.
 
 A claim is kept only if
   1. its quote appears in the source text (after normalising whitespace, punctuation,
