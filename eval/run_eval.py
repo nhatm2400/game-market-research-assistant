@@ -2,6 +2,7 @@
 
     python -m eval.run_eval            # all cases
     python -m eval.run_eval TC2 TC6    # some cases
+    python -m eval.run_eval --report   # rebuild the table from eval/results/*.json, no LLM calls
 """
 from __future__ import annotations
 
@@ -82,12 +83,24 @@ def summarize(r: dict, results) -> str:
 
 def main(ids: list[str]) -> None:
     sys.stdout.reconfigure(encoding="utf-8")  # Windows consoles default to cp1252 when redirected
+    report_only = "--report" in ids
+    ids = [i for i in ids if i != "--report"]
     cases = yaml.safe_load((HERE / "cases.yaml").read_text(encoding="utf-8"))
     if ids:
         cases = [c for c in cases if c["id"] in ids]
     OUT.mkdir(exist_ok=True)
-    llm = LLM()
     rows = []
+    if report_only:
+        for case in cases:
+            f = OUT / f"{case['id']}.json"
+            if not f.exists():
+                rows.append((case, None, [("chay", False, "chưa có kết quả trong eval/results")]))
+                continue
+            r = json.loads(f.read_text(encoding="utf-8"))
+            rows.append((case, r, check(r, case.get("checks", {}))))
+        cases = []
+    else:
+        llm = LLM()
     for case in cases:
         print(f"== {case['id']}: {case['question']}")
         try:

@@ -13,7 +13,7 @@
   checks:
     verified_numbers: ["625"]
     origin_includes: "Sensor Tower"
-  hoc_duoc: "Với câu hỏi số liệu đơn lẻ từ báo cáo chính thống, trích dẫn chính xác kèm câu trích gốc giúp xác thực 100% số liệu (625 triệu USD) và bảo toàn nguồn gốc Sensor Tower."
+  hoc_duoc: "Đạt. Giữ 13/13 nhận định; con số 625 triệu USD có câu trích ở cả blog Sensor Tower (hạng A) và bài dẫn lại (hạng B), được truy về cùng một nguồn gốc Sensor Tower nên mức tin cậy là Trung bình chứ không phải Cao. Tuy vậy, khuyến nghị vẫn là 'Cần thêm dữ liệu' dù câu hỏi chỉ hỏi một con số đã tìm được: ba nhãn Nên ưu tiên, Chưa nên, Cần thêm dữ liệu không hợp với câu hỏi tra số liệu, nên cần tách riêng loại câu hỏi này."
 
 - id: TC2
   loai: kho
@@ -28,7 +28,7 @@
     verified_numbers: ["5.37", "5.89"]
     has_conflict: true
     confidence_not: ["Cao"]
-  hoc_duoc: "Hệ thống gom nhóm và phát hiện mâu thuẫn giữa 2 nguồn độc lập (Niko: 5,37 tỷ vs Statista: 5,89 tỷ), hạ độ tin cậy xuống Thấp và chỉ tính Niko là 1 nguồn gốc dù có 2 bài dẫn lại."
+  hoc_duoc: "Đạt. Tìm được cả 5,37 tỷ USD (Niko Partners) và 5,89 tỷ USD (Statista), báo mâu thuẫn lệch 10% dưới dạng khoảng, mức tin cậy Thấp. Có một lỗi nhìn thấy được: ô bảng 'S-5.89 N-6.51' (S là Statista, N là Newzoo) bị đọc thành giá trị -5,89 và gán cho Newzoo, nên con số 6,51 tỷ USD của Newzoo không vào phần mâu thuẫn. Câu trích vẫn có thật, chỉ có giá trị bị đọc sai. Bảng dùng ký hiệu viết tắt cần quy tắc đọc riêng, không nên để AI tự điền giá trị."
 
 - id: TC3
   loai: kho
@@ -41,7 +41,7 @@
   checks:
     flag_any: ["ngoài khung", "không phải số của cả", "Việt Nam"]
     confidence_not: ["Cao"]
-  hoc_duoc: "Bộ lọc thời gian và địa lý (flags) cảnh báo hiệu quả việc số liệu lệch kỳ (theo quý thay vì 12 tháng) và bẫy phạm vi (bảng tăng trưởng thuộc Việt Nam thay vì toàn Đông Nam Á)."
+  hoc_duoc: "Đạt theo điều kiện: có cảnh báo ngoài khung 12 tháng và cảnh báo bảng tăng trưởng là của Việt Nam, mức tin cậy Thấp. Nhưng bản tóm tắt bị rỗng và chỉ còn 1 lý do, vì bộ kiểm bản tóm tắt coi số 12 trong '12 tháng' (lấy từ câu hỏi) là con số không có nguồn, nên bỏ câu tóm tắt và 3 lý do. Cần cho phép các số có trong câu hỏi. Ngoài ra 39/81 nhận định bị loại, trong đó 29 nhận định vì câu trích chỉ là một con số lấy từ biểu đồ PDF."
 
 - id: TC4
   loai: tot
@@ -52,7 +52,7 @@
   checks:
     min_reasons: 2
     min_distinct_tiers: 2
-  hoc_duoc: "Hệ thống tự động tìm kiếm qua Tavily, xếp hạng nguồn đa dạng (A, B, C) và đưa ra bản tóm tắt quyết định có căn cứ gắn mã nhận định đã qua kiểm chứng bằng code."
+  hoc_duoc: "Đạt theo điều kiện: 2 lý do đều gắn mã nhận định đã kiểm, nguồn có đủ hạng A, B, C, 2 nguồn tải lỗi. Khuyến nghị là 'Cần thêm dữ liệu' vì chỉ có số MOBA của Đông Nam Á, Indonesia và Philippines, không có số MOBA riêng cho Việt Nam. Điều kiện chấm chưa kiểm hướng của khuyến nghị. Cả 6 case đều ra 'Cần thêm dữ liệu', nên prompt viết tóm tắt có thể đang quá thận trọng, cần thêm case có đủ dữ liệu để thử nhãn Nên ưu tiên hoặc Chưa nên."
 
 - id: TC5
   loai: thieu
@@ -63,7 +63,7 @@
   checks:
     decision_in: ["Cần thêm dữ liệu"]
     no_verified_number_for_period: "2026-09"
-  hoc_duoc: "Không xuất hiện ảo giác (hallucination) bịa số khi không có dữ liệu công khai cho kỳ tháng 9/2026; hệ thống trả về đúng quyết định 'Cần thêm dữ liệu' và mức tin cậy 'Chưa đủ dữ liệu'."
+  hoc_duoc: "Đạt. Đọc được 6 nguồn (2 nguồn lỗi) nhưng không có nhận định nào, mức tin cậy là 'Chưa đủ dữ liệu', không có số nào cho kỳ 9/2026, và hệ thống không gọi AI viết tóm tắt nên không có chỗ để bịa số. Lưu ý: 'Cần thêm dữ liệu' cũng là khuyến nghị của cả 6 case, nên bằng chứng chính ở đây là 0 nhận định và mức 'Chưa đủ dữ liệu', không phải nhãn khuyến nghị."
 
 - id: TC6
   loai: that_bai
@@ -75,4 +75,4 @@
   checks:
     top_growth_genre: "battle royale"
     verified_numbers: ["37.6"]
-  hoc_duoc: "Số liệu nằm trong biểu đồ PDF khi trích xuất text thuần qua PyMuPDF bị xáo trộn thứ tự chữ và số (số 37,6% bị tách rời nhãn Battle Royale), khiến bước kiểm câu trích loại bỏ. Hướng cải thiện là tích hợp OCR nhận diện bố cục bảng biểu/multimodal."
+  hoc_duoc: "Chưa đạt, đúng như dự đoán. Khi đọc PDF ra chữ, nhãn và số của biểu đồ nằm thành hai khối riêng; Battle Royale đứng thứ 6 ở cả hai khối, ứng với +37,6%. AI chỉ trích 2 cột đầu của biểu đồ Đông Nam Á (4X Strategy +17,6%, MOBA +20,1%) và bỏ qua Battle Royale. Con số +37,6% duy nhất được trích là của FPS / 3PS ở Philippines, khớp với biểu đồ Philippines. Mọi nhận định lấy từ biểu đồ đều bị loại vì câu trích chỉ là con số (29/32). Điều kiện top_growth_genre đạt nhầm: số cao nhất còn lại là Shooter / Battle Royale +50% của Indonesia, chỉ trùng tên thể loại. Bộ kiểm câu trích không để lọt số ghép sai nhưng không tìm ra đáp án; cần đọc biểu đồ theo bố cục trang hoặc bằng mô hình thị giác, và điều kiện chấm phải kiểm cả thị trường lẫn giá trị."
