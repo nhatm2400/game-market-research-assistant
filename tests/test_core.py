@@ -222,7 +222,8 @@ def test_brief_drops_reasons_with_invented_numbers_or_no_citation():
     w = question_window("Quy mô thị trường game Đông Nam Á", TODAY)
     b = write_brief(fake, "Quy mô thị trường game Đông Nam Á", ["Quy mô", "Tăng trưởng"], [c], findings, [], w)
     assert [r["text"] for r in b["reasons"]] == ["Doanh thu IAP quý 1/2025 là 625 triệu USD."]
-    assert len(b["guard_log"]) == 2
+    assert sum(x.startswith("Bỏ") for x in b["guard_log"]) == 2
+    assert b["decision"] == "Cần thêm dữ liệu"      # the only kept reason rests on an out-of-window figure
     assert b["gaps"] == ["Tăng trưởng"]
     assert b["confidence"] in ("Trung bình", "Thấp")
 

@@ -16,6 +16,7 @@ from .periods import Window
 from .textnorm import NUM_RE, fmt_value, normalize
 
 DECISIONS = ["Nên ưu tiên", "Chưa nên", "Đã có câu trả lời", "Cần thêm dữ liệu"]
+UNSURE = "Có số liệu nhưng chưa chắc chắn"     # set by code only, never offered to the LLM
 
 BRIEF_SCHEMA = {
     "type": "object",
@@ -169,6 +170,12 @@ def write_brief(llm: LLM | None, question: str, criteria: list[str], claims: lis
         brief["confidence"] = overall_confidence(findings, cited_findings)
     else:
         brief["decision"] = "Cần thêm dữ liệu"
+    # a firm answer or recommendation needs at least one reason resting on trusted findings
+    if brief["decision"] != "Cần thêm dữ liệu" and not any(x["status"] == "trusted" for x in brief["reasons"]):
+        new = UNSURE if brief["decision"] == "Đã có câu trả lời" else "Cần thêm dữ liệu"
+        brief["guard_log"].append(f"Đổi kết luận \"{brief['decision']}\" thành \"{new}\": "
+                                  "không lý do nào dựa trên nhận định có thể tin")
+        brief["decision"] = new
     if gaps and brief["confidence"] == "Cao":
         brief["confidence"] = "Trung bình"
         brief["guard_log"].append("Hạ mức tin cậy chung xuống Trung bình vì còn tiêu chí chưa có dữ liệu")

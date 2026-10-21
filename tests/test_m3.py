@@ -153,6 +153,22 @@ def test_bare_numbers_from_a_chart_point_to_the_page():
     assert step["url"] == "https://investgame.net/news/r/#:~:text=%2B17.6%25"
 
 
+def test_table_labels_before_a_number_are_not_minus_signs():
+    """M3 TC2: the cell "S-5.89 N-6.51" (S = Statista, N = Newzoo) became -6,51 tỷ USD and a fake
+    "one source says up, another says down" conflict."""
+    assert parse_value("N-6.51 billion USD") == (6.51e9, "USD") and parse_value("S-5.89")[0] == 5.89
+    assert parse_value("year-on-year growth of 5%")[0] == 5
+    assert parse_value("-17.1% QoQ")[0] == -17.1 and parse_value("−3%")[0] == -3 and parse_value("-$2 million")[0] == -2e6
+
+
+def test_value_with_two_numbers_is_rejected():
+    text = "| Total revenue | S-5.35 N-6.17 | S-5.89 N-6.51 | S-6.39 N-6.89 |"
+    s = assess_source(src("S4", "https://allcorrectgames.com/x", text * 20, "2026-05-05"), TODAY)
+    c = claim("C1", s.id, "| Total revenue | S-5.35 N-6.17 | S-5.89 N-6.51 |", "S-5.89 N-6.51 billion USD")
+    verify_claim(c, s)
+    assert not c.verified and "nhiều con số" in c.verify_note
+
+
 def test_revenue_without_currency_is_compared_as_usd():
     """M3 TC2: a copy of Niko's figure written "5.37 billion" was not compared with "$5.89 billion"."""
     s = assess_source(src("S3", "https://gamesbeat.com/niko", NIKO_TEXT.replace("$5.37", "5.37"), "2025-09-30"), TODAY)
@@ -184,6 +200,20 @@ def test_numbers_from_the_question_are_allowed_and_lookup_questions_get_an_answe
     assert b["summary"].startswith("Trong 12 tháng qua")
     assert b["decision"] == "Đã có câu trả lời"
     assert b["reasons"][0]["status"] == "trusted" and b["trusted"]
+
+
+def test_answer_resting_only_on_uncertain_findings_is_not_presented_as_settled():
+    """M3 TC8: the only 2025 figure was a forecast, yet the brief said 'Đã có câu trả lời'."""
+    s = assess_source(src("S2", "https://allcorrectgames.com/x", RELAY_TEXT, "2025-06-13"), TODAY)
+    c = _q1("C2", s, RELAY_Q)
+    fs = build_findings([c], {s.id: s}, TODAY)
+    reason = {"text": "Doanh thu IAP quý 1/2025 là 625 triệu USD.", "claim_ids": ["C2"]}
+    for asked, expected in [("Đã có câu trả lời", "Có số liệu nhưng chưa chắc chắn"), ("Nên ưu tiên", "Cần thêm dữ liệu")]:
+        fake = FakeLLM({"decision": asked, "summary": "", "reasons": [reason], "what_would_change": []})
+        b = write_brief(fake, "Doanh thu IAP game mobile Đông Nam Á quý 1/2025?", ["Doanh thu"], [c], fs, [], W_Q1,
+                        {s.id: s}, "Đông Nam Á")
+        assert b["reasons"][0]["status"] == "uncertain" and b["decision"] == expected
+        assert any("không lý do nào dựa trên nhận định có thể tin" in x for x in b["guard_log"])
 
 
 # ---- follow-up research ----

@@ -88,7 +88,9 @@ def parse_value(value_text: str) -> tuple[float | None, str]:
     num = parse_number(m.group(0))
     if num is None:
         return None, ""
-    if "-" in vt[: m.start()] or "−" in vt[: m.start()]:
+    # a minus sign must sit right before the number: "S-5.89" (table label S) and "year-on-year" are not negative
+    pre = vt[: m.start()].rstrip(" $")
+    if pre.endswith(("-", "−")) and not pre[:-1][-1:].isalnum():
         num = -num
     rest = vt[m.end():]
     if "%" in vt or "percent" in vt or "phần trăm" in vt:
