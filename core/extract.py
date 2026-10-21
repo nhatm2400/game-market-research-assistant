@@ -75,9 +75,14 @@ Tài liệu: "{title}" ({url}), đăng ngày {published}.
 
 Hãy liệt kê tối đa 12 nhận định định lượng liên quan đến câu hỏi hoặc các tiêu chí. Quy tắc bắt buộc:
 1. quote: chép NGUYÊN VĂN một câu hoặc một dòng bảng trong tài liệu chứa con số, không sửa chữ, không dịch,
-   không rút gọn, không ghép hai câu xa nhau. Câu trích phải đủ ý để người đọc hiểu số đó đo cái gì.
+   không rút gọn, không ghép hai câu xa nhau. Câu trích phải đủ ý để người đọc hiểu số đó đo cái gì. Với số trong
+   bảng, chép cả dòng bảng kể cả tên dòng (ví dụ "| Vietnam | 0.776 | 0.817 | +5.28 |"), không chép riêng một ô.
 2. value_text: con số đúng như cách viết trong quote (ví dụ "$625 million", "37.6%", "5,37 tỷ USD").
-   Không đổi đơn vị, không làm tròn, không tự tính.
+   Không đổi đơn vị, không làm tròn, không tự tính. Nếu đơn vị chỉ ghi ở tiêu đề bảng hoặc cột (ví dụ cột
+   "USD billion"), ghi thêm đơn vị đó sau con số, ví dụ "5.89 billion USD". Nếu một ô bảng chứa số của nhiều hãng
+   (ví dụ "S-5.89 N-6.51"), tách thành từng nhận định riêng cho từng hãng, mỗi nhận định vẫn trích cả dòng bảng;
+   ký hiệu như "S-" không phải dấu âm.
+   Nếu cùng một số có cả trong câu văn và trong bảng, ưu tiên trích câu văn.
 3. Chỉ dùng thông tin có trong tài liệu. Không dùng kiến thức có sẵn. Nếu tài liệu không có số liệu liên quan,
    trả về danh sách rỗng.
 4. claim_text: một câu tiếng Việt diễn đạt nhận định, đủ chỉ số, thị trường, kỳ đo.

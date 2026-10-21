@@ -1,23 +1,29 @@
 {
- "id": "857cf1cc3a",
- "created_at": "2026-10-15T16:46:17",
+ "id": "b70dba8f89",
+ "created_at": "2026-10-21T23:17:39",
  "question": "Doanh thu tháng 9/2026 của tựa game Tiếu Ngạo tại Việt Nam là bao nhiêu?",
- "today": "2026-10-15",
+ "parent_id": null,
+ "thread": [
+  {
+   "id": "b70dba8f89",
+   "question": "Doanh thu tháng 9/2026 của tựa game Tiếu Ngạo tại Việt Nam là bao nhiêu?"
+  }
+ ],
+ "today": "2026-10-21",
  "plan": {
   "criteria": [
-   "Quy mô doanh thu tháng 9/2026",
+   "Quy mô doanh thu tháng 9 năm 2026",
    "Thứ hạng doanh thu trên cửa hàng ứng dụng",
-   "Ước tính từ các hãng dữ liệu thị trường"
+   "Biến động doanh thu so với tháng trước"
   ],
   "queries": [
-   "Tieu Ngao mobile revenue September 2026 Vietnam Sensor Tower",
-   "Tieu Ngao game mobile earnings September 2026 AppMagic",
-   "Vietnam mobile gaming market revenue Tieu Ngao September 2026 Niko Partners",
-   "Tieu Ngao mobile game revenue data.ai September 2026",
-   "Doanh thu game Tieu Ngao Viet Nam thang 9 nam 2026"
+   "Tieu Ngao mobile game revenue Vietnam September 2026 Sensor Tower",
+   "Tieu Ngao game Vietnam revenue data.ai AppMagic September 2026",
+   "Vietnam mobile gaming market report September 2026 revenue Niko Partners",
+   "Doanh thu game Tieu Ngao Vietnam thang 9 2026"
   ],
   "market": "Việt Nam",
-  "genre": "MMORPG"
+  "genre": ""
  },
  "window": {
   "start": "2026-09-01",
@@ -28,63 +34,53 @@
  "question_market": "Việt Nam",
  "search_log": [
   {
-   "query": "Tieu Ngao mobile revenue September 2026 Vietnam Sensor Tower",
+   "query": "Tieu Ngao mobile game revenue Vietnam September 2026 Sensor Tower",
    "results": [
-    "https://sensortower.com/blog/state-of-mobile-2026",
-    "https://rocketreach.co/sensor-tower-profile_b5ea178ff42e7882",
+    "https://digitalinasia.com/vietnam-mobile-gaming-market",
     "https://gamedevreports.substack.com/p/sensor-tower-the-state-of-the-mobile",
-    "https://www.prnewswire.com/news-releases/sensor-tower-state-of-ai-2026-report-global-time-spent-on-generative-ai-apps-projected-to-more-than-double-year-over-year-302800844.html",
-    "https://digitalinasia.com/vietnams-gaming-market-in-5-data-points"
+    "https://finance.yahoo.com/news/sensor-tower-acquires-video-game-130000109.html",
+    "https://finance.yahoo.com/news/sensor-tower-acquires-video-game-130000694.html",
+    "https://finance.yahoo.com/news/sensor-tower-acquires-video-game-130000225.html"
    ]
   },
   {
-   "query": "Tieu Ngao game mobile earnings September 2026 AppMagic",
+   "query": "Tieu Ngao game Vietnam revenue data.ai AppMagic September 2026",
    "results": [
     "https://gamedevreports.substack.com/p/appmagic-top-mobile-games-by-revenue-2a7",
-    "https://www.globalgamesforum.com/news-media/the-biggest-mobile-games-of-september-2026",
+    "https://revenuebase.ai/companies/mobile-game-platforms/vietnam",
     "https://www.scribd.com/document/996925600/AppMagic-Mobile-MarketLandscape-2026",
-    "https://www.singular.net/blog/top-mobile-games",
-    "https://appgrowthsummit.com/key-app-trends-report-2026"
+    "https://www.cbinsights.com/company/appmagic/financials",
+    "https://www.pocketgamer.biz/games-revenue-growth-stalls-in-2025-as-strategy-emerges-as-the-fastest-growing-genre"
    ]
   },
   {
-   "query": "Vietnam mobile gaming market revenue Tieu Ngao September 2026 Niko Partners",
+   "query": "Vietnam mobile gaming market report September 2026 revenue Niko Partners",
    "results": [
-    "https://nikopartners.com/asia-mena-market-model-2026",
     "https://digitalinasia.com/vietnam-gaming-market-2026-key-findings",
-    "https://icon-era.com/statistics/southeast-asia-mobile-gaming",
-    "https://www.imarcgroup.com/vietnam-mobile-gaming-market",
-    "https://finance.yahoo.com/news/gaming-growth-unlocked-coda-niko-073000524.html"
+    "https://nikopartners.com/asia-mena-market-model-2026",
+    "https://finance.yahoo.com/news/gaming-growth-unlocked-coda-niko-073000524.html",
+    "https://www.linkedin.com/posts/niko-partners_10-major-trends-to-watch-in-2026-niko-partners-activity-7419574507545350144-jgot",
+    "https://nikopartners.com/reports"
    ]
   },
   {
-   "query": "Tieu Ngao mobile game revenue data.ai September 2026",
+   "query": "Doanh thu game Tieu Ngao Vietnam thang 9 2026",
    "results": [
-    "https://rocketreach.co/ngao-credit-ltd-profile_b5ac6518f67d0130",
-    "https://www.gamesindustry.biz/dataai-global-mobile-game-revenue-declined-by-2-to-107bn-in-2023",
-    "https://www.cnbc.com/2023/01/11/mobile-game-spending-drops-5percent-as-inflation-causes-market-to-cool.html",
-    "https://www.cnbc.com/amp/2023/01/11/mobile-game-spending-drops-5percent-as-inflation-causes-market-to-cool.html",
-    "https://rocketreach.co/ngao-credit-ltd-finance-department_b5ac6518f67d0130"
-   ]
-  },
-  {
-   "query": "Doanh thu game Tieu Ngao Viet Nam thang 9 nam 2026",
-   "results": [
-    "https://gamota.com/gamota-lab/vietnam-game-industry-weekly-updates-august-10-16-2026",
-    "https://www.qdnd.vn/kinh-te/tin-tuc/tong-muc-ban-le-hang-hoa-va-doanh-thu-dich-vu-tieu-dung-tang-13-4-trong-9-thang-nam-2026-1059891",
-    "https://www.facebook.com/VTVIndex/videos/n%C4%83m-ngo%C3%A1i-game-vi%E1%BB%87t-nam-%C4%91%E1%BA%A1t-49-t%E1%BB%B7-l%C6%B0%E1%BB%A3t-t%E1%BA%A3i-to%C3%A0n-c%E1%BA%A7u-%C4%91%E1%BB%A9ng-th%E1%BB%A9-2-th%E1%BA%BF-gi%E1%BB%9Bi-ch%E1%BB%89-sau-/2071705660046152",
-    "https://www.reddit.com/r/Reverse1999/comments/1t1e7io/gacha_revenue_monthly_report_april_2026?tl=vi",
+    "https://www.linkedin.com/pulse/vietnam-game-industry-weekly-updates-august-39-2026-gamota-a704c",
+    "https://www.reddit.com/r/Onmyoji/comments/1wv98s1/gacha_revenue_monthly_report_september_2026?tl=vi",
+    "https://www.youtube.com/shorts/BBpiMIEfUX0",
+    "https://advertisingvietnam.com/article/top-game-mobile-theo-luot-tai-xuong-va-doanh-thu-trong-thang-82026",
     "https://www.facebook.com/Paimoncuteeeee/posts/doanh-thu-c%C3%A1c-game-gacha-th%C3%A1ng-9/122222552252511674"
    ]
   }
  ],
  "skipped": [
   {
-   "url": "https://www.imarcgroup.com/vietnam-mobile-gaming-market",
-   "reason": "Hạng D (trang SEO hoặc bán báo cáo): không dùng làm bằng chứng"
+   "url": "https://finance.yahoo.com/news/sensor-tower-acquires-video-game-130000225.html",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
   },
   {
-   "url": "https://www.globalgamesforum.com/news-media/the-biggest-mobile-games-of-september-2026",
+   "url": "https://revenuebase.ai/companies/mobile-game-platforms/vietnam",
    "reason": "Vượt số nguồn tối đa mỗi lần chạy"
   },
   {
@@ -92,11 +88,7 @@
    "reason": "Vượt số nguồn tối đa mỗi lần chạy"
   },
   {
-   "url": "https://www.singular.net/blog/top-mobile-games",
-   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
-  },
-  {
-   "url": "https://appgrowthsummit.com/key-app-trends-report-2026",
+   "url": "https://www.cbinsights.com/company/appmagic/financials",
    "reason": "Vượt số nguồn tối đa mỗi lần chạy"
   },
   {
@@ -104,43 +96,27 @@
    "reason": "Vượt số nguồn tối đa mỗi lần chạy"
   },
   {
-   "url": "https://icon-era.com/statistics/southeast-asia-mobile-gaming",
-   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
-  },
-  {
    "url": "https://finance.yahoo.com/news/gaming-growth-unlocked-coda-niko-073000524.html",
    "reason": "Vượt số nguồn tối đa mỗi lần chạy"
   },
   {
-   "url": "https://rocketreach.co/ngao-credit-ltd-profile_b5ac6518f67d0130",
+   "url": "https://www.linkedin.com/posts/niko-partners_10-major-trends-to-watch-in-2026-niko-partners-activity-7419574507545350144-jgot",
    "reason": "Vượt số nguồn tối đa mỗi lần chạy"
   },
   {
-   "url": "https://www.cnbc.com/2023/01/11/mobile-game-spending-drops-5percent-as-inflation-causes-market-to-cool.html",
+   "url": "https://www.linkedin.com/pulse/vietnam-game-industry-weekly-updates-august-39-2026-gamota-a704c",
    "reason": "Vượt số nguồn tối đa mỗi lần chạy"
   },
   {
-   "url": "https://www.cnbc.com/amp/2023/01/11/mobile-game-spending-drops-5percent-as-inflation-causes-market-to-cool.html",
+   "url": "https://www.reddit.com/r/Onmyoji/comments/1wv98s1/gacha_revenue_monthly_report_september_2026?tl=vi",
    "reason": "Vượt số nguồn tối đa mỗi lần chạy"
   },
   {
-   "url": "https://rocketreach.co/ngao-credit-ltd-finance-department_b5ac6518f67d0130",
+   "url": "https://www.youtube.com/shorts/BBpiMIEfUX0",
    "reason": "Vượt số nguồn tối đa mỗi lần chạy"
   },
   {
-   "url": "https://gamota.com/gamota-lab/vietnam-game-industry-weekly-updates-august-10-16-2026",
-   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
-  },
-  {
-   "url": "https://www.qdnd.vn/kinh-te/tin-tuc/tong-muc-ban-le-hang-hoa-va-doanh-thu-dich-vu-tieu-dung-tang-13-4-trong-9-thang-nam-2026-1059891",
-   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
-  },
-  {
-   "url": "https://www.facebook.com/VTVIndex/videos/n%C4%83m-ngo%C3%A1i-game-vi%E1%BB%87t-nam-%C4%91%E1%BA%A1t-49-t%E1%BB%B7-l%C6%B0%E1%BB%A3t-t%E1%BA%A3i-to%C3%A0n-c%E1%BA%A7u-%C4%91%E1%BB%A9ng-th%E1%BB%A9-2-th%E1%BA%BF-gi%E1%BB%9Bi-ch%E1%BB%89-sau-/2071705660046152",
-   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
-  },
-  {
-   "url": "https://www.reddit.com/r/Reverse1999/comments/1t1e7io/gacha_revenue_monthly_report_april_2026?tl=vi",
+   "url": "https://advertisingvietnam.com/article/top-game-mobile-theo-luot-tai-xuong-va-doanh-thu-trong-thang-82026",
    "reason": "Vượt số nguồn tối đa mỗi lần chạy"
   },
   {
@@ -150,23 +126,6 @@
  ],
  "sources": [
   {
-   "id": "S1edec7f5",
-   "url": "https://sensortower.com/blog/state-of-mobile-2026",
-   "title": "2026 State of Mobile",
-   "domain": "sensortower.com",
-   "published": "2026-01-21",
-   "kind": "html",
-   "text": "<6581 ký tự>",
-   "error": null,
-   "tier": "A",
-   "base_tier": "A",
-   "tier_notes": [
-    "sensortower.com nằm trong danh sách hạng A",
-    "Đăng cách đây 9 tháng"
-   ],
-   "publisher": "Sensor Tower"
-  },
-  {
    "id": "Sb4534fca",
    "url": "https://nikopartners.com/asia-mena-market-model-2026",
    "title": "",
@@ -174,7 +133,24 @@
    "published": null,
    "kind": "html",
    "text": "<0 ký tự>",
-   "error": "Không tải được: HTTPError 403 Client Error: Forbidden for url: https://nikopartners.com/asia-mena-market-model-2026",
+   "error": "Không tải được: ConnectionError ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+   "tier": "B",
+   "base_tier": "A",
+   "tier_notes": [
+    "nikopartners.com nằm trong danh sách hạng A",
+    "Không rõ ngày đăng: hạ một hạng"
+   ],
+   "publisher": "Niko Partners"
+  },
+  {
+   "id": "Sc1b2a444",
+   "url": "https://nikopartners.com/reports",
+   "title": "",
+   "domain": "nikopartners.com",
+   "published": null,
+   "kind": "html",
+   "text": "<0 ký tự>",
+   "error": "Không tải được: ConnectionError ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
    "tier": "B",
    "base_tier": "A",
    "tier_notes": [
@@ -218,47 +194,30 @@
    "publisher": "gamedevreports.substack.com"
   },
   {
-   "id": "S2339b605",
-   "url": "https://www.gamesindustry.biz/dataai-global-mobile-game-revenue-declined-by-2-to-107bn-in-2023",
-   "title": "Data.ai: Global mobile game revenue declined by 2% to $107bn in 2023",
-   "domain": "gamesindustry.biz",
-   "published": "2024-01-10",
-   "kind": "html",
-   "text": "<1522 ký tự>",
-   "error": null,
-   "tier": "C",
-   "base_tier": "B",
-   "tier_notes": [
-    "gamesindustry.biz nằm trong danh sách hạng B",
-    "Đăng cách đây 33 tháng (quá 24 tháng): hạ một hạng"
-   ],
-   "publisher": "gamesindustry.biz"
-  },
-  {
-   "id": "S04655b2a",
-   "url": "https://rocketreach.co/sensor-tower-profile_b5ea178ff42e7882",
+   "id": "S846bb371",
+   "url": "https://www.pocketgamer.biz/games-revenue-growth-stalls-in-2025-as-strategy-emerges-as-the-fastest-growing-genre",
    "title": "",
-   "domain": "rocketreach.co",
+   "domain": "pocketgamer.biz",
    "published": null,
    "kind": "html",
    "text": "<0 ký tự>",
-   "error": "Không tải được: HTTPError 403 Client Error: Forbidden for url: https://rocketreach.co/sensor-tower-profile_b5ea178ff42e7882",
-   "tier": "D",
-   "base_tier": "C",
+   "error": "Không tải được: HTTPError 403 Client Error: Forbidden for url: https://www.pocketgamer.biz/games-revenue-growth-stalls-in-2025-as-strategy-emerges",
+   "tier": "C",
+   "base_tier": "B",
    "tier_notes": [
-    "Tên miền không có trong danh sách, mặc định hạng C",
+    "pocketgamer.biz nằm trong danh sách hạng B",
     "Không rõ ngày đăng: hạ một hạng"
    ],
-   "publisher": "rocketreach.co"
+   "publisher": "pocketgamer.biz"
   },
   {
-   "id": "S0b038305",
-   "url": "https://www.prnewswire.com/news-releases/sensor-tower-state-of-ai-2026-report-global-time-spent-on-generative-ai-apps-projected-to-more-than-double-year-over-year-302800844.html",
-   "title": "Sensor Tower State of AI 2026 Report: Global Time Spent on Generative AI Apps Projected to More Than Double Year-Over-Year",
-   "domain": "prnewswire.com",
-   "published": "2026-06-16",
+   "id": "Sc53bbc97",
+   "url": "https://digitalinasia.com/vietnam-mobile-gaming-market",
+   "title": "Vietnam Mobile Gaming 2026: The Export Factory",
+   "domain": "digitalinasia.com",
+   "published": "2026-06-23",
    "kind": "html",
-   "text": "<4676 ký tự>",
+   "text": "<6440 ký tự>",
    "error": null,
    "tier": "C",
    "base_tier": "C",
@@ -266,24 +225,41 @@
     "Tên miền không có trong danh sách, mặc định hạng C",
     "Đăng cách đây 4 tháng"
    ],
-   "publisher": "prnewswire.com"
+   "publisher": "digitalinasia.com"
   },
   {
-   "id": "S9488e04f",
-   "url": "https://digitalinasia.com/vietnams-gaming-market-in-5-data-points",
-   "title": "Vietnam's Gaming Market in 2026: 5 Critical Data Points Every Operator Should Know",
-   "domain": "digitalinasia.com",
-   "published": "2026-03-07",
+   "id": "Sf65ef20d",
+   "url": "https://finance.yahoo.com/news/sensor-tower-acquires-video-game-130000109.html",
+   "title": "Sensor Tower acquires Video Game Insights, Adds PC/Console Gaming Data",
+   "domain": "finance.yahoo.com",
+   "published": "2025-03-18",
    "kind": "html",
-   "text": "<7888 ký tự>",
+   "text": "<2822 ký tự>",
    "error": null,
    "tier": "C",
    "base_tier": "C",
    "tier_notes": [
     "Tên miền không có trong danh sách, mặc định hạng C",
-    "Đăng cách đây 7 tháng"
+    "Đăng cách đây 19 tháng (12 đến 24 tháng)"
    ],
-   "publisher": "digitalinasia.com"
+   "publisher": "finance.yahoo.com"
+  },
+  {
+   "id": "S2225998d",
+   "url": "https://finance.yahoo.com/news/sensor-tower-acquires-video-game-130000694.html",
+   "title": "Sensor Tower acquires Video Game Insights, Adds PC/Console Gaming Data",
+   "domain": "finance.yahoo.com",
+   "published": "2025-03-18",
+   "kind": "html",
+   "text": "<2829 ký tự>",
+   "error": null,
+   "tier": "C",
+   "base_tier": "C",
+   "tier_notes": [
+    "Tên miền không có trong danh sách, mặc định hạng C",
+    "Đăng cách đây 19 tháng (12 đến 24 tháng)"
+   ],
+   "publisher": "finance.yahoo.com"
   }
  ],
  "claims": [],
@@ -297,22 +273,49 @@
   ],
   "confidence": "Chưa đủ dữ liệu",
   "gaps": [
-   "Quy mô doanh thu tháng 9/2026",
+   "Quy mô doanh thu tháng 9 năm 2026",
    "Thứ hạng doanh thu trên cửa hàng ứng dụng",
-   "Ước tính từ các hãng dữ liệu thị trường"
+   "Biến động doanh thu so với tháng trước"
   ],
   "conflicts": [],
   "definition_notes": [],
-  "guard_log": []
+  "guard_log": [],
+  "trusted": [],
+  "uncertain": [],
+  "other": [],
+  "next_steps": [
+   {
+    "text": "Chưa có dữ liệu đã kiểm cho tiêu chí \"Quy mô doanh thu tháng 9 năm 2026\"",
+    "query": "",
+    "ask": "Tìm số liệu cho tiêu chí: Quy mô doanh thu tháng 9 năm 2026",
+    "url": "",
+    "findings": []
+   },
+   {
+    "text": "Chưa có dữ liệu đã kiểm cho tiêu chí \"Thứ hạng doanh thu trên cửa hàng ứng dụng\"",
+    "query": "",
+    "ask": "Tìm số liệu cho tiêu chí: Thứ hạng doanh thu trên cửa hàng ứng dụng",
+    "url": "",
+    "findings": []
+   },
+   {
+    "text": "Chưa có dữ liệu đã kiểm cho tiêu chí \"Biến động doanh thu so với tháng trước\"",
+    "query": "",
+    "ask": "Tìm số liệu cho tiêu chí: Biến động doanh thu so với tháng trước",
+    "url": "",
+    "findings": []
+   }
+  ]
  },
  "stats": {
-  "sources_read": 6,
-  "sources_failed": 2,
+  "sources_read": 5,
+  "sources_failed": 3,
   "claims": 0,
   "verified": 0,
   "rejected": 0,
-  "llm_calls": 42,
-  "seconds": 48.9,
+  "carried": 0,
+  "llm_calls": 6,
+  "seconds": 100.8,
   "model": "gemini/gemini-3.5-flash-lite",
   "search": "Tavily"
  }

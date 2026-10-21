@@ -16,6 +16,7 @@ from .models import Claim, Source
 from .periods import Window, question_window
 from .search import search, search_engine_name
 from .sources import assess_claim, assess_source, base_tier, domain_of
+from .textnorm import normalize
 from .verify import verify_claim
 
 TIER_RANK = {"A": 0, "B": 1, "C": 2, "D": 3}
@@ -69,8 +70,11 @@ def _carry(prior: dict, window: Window, q_market: str, today: date) -> tuple[lis
 def run(question: str, plan: dict | None = None, extra_urls: list[str] | None = None,
         uploads: list[Source] | None = None, use_search: bool = True, max_sources: int = 8,
         per_query: int = 5, llm: LLM | None = None, today: date | None = None,
-        upload_tier: str = "B", progress: Callable[[str], None] = _noop, prior: dict | None = None) -> dict:
-    """`prior` is a previous result: its verified claims are carried as context and its pages are not read again."""
+        upload_tier: str = "B", progress: Callable[[str], None] = _noop, prior: dict | None = None,
+        reread: bool = False) -> dict:
+    """`prior` is a previous result: its verified claims are carried as context. Its pages are skipped in
+    search results; with `reread` the pages that gave verified claims are read again (from the local copy)
+    for the new question, since a new angle can need numbers the first reading did not pick up."""
     t0 = time.time()
     today = today or date.today()
     llm = llm or LLM()
@@ -83,7 +87,9 @@ def run(question: str, plan: dict | None = None, extra_urls: list[str] | None = 
 
     old_sources, old_claims = _carry(prior, window, q_market, today) if prior else ([], [])
     read_before = {s.url for s in old_sources}
-    cands, search_log = collect_urls(plan.get("queries", []) if use_search else [], extra_urls or [],
+    useful = {c.source_id for c in old_claims if c.verified}
+    again = [s.url for s in old_sources if reread and s.id in useful and s.url.startswith("http")]
+    cands, search_log = collect_urls(plan.get("queries", []) if use_search else [], again + list(extra_urls or []),
                                      per_query, progress)
     # better sources first: user links, then A, B, C; D pages are listed but never read
     skipped = []
@@ -127,10 +133,12 @@ def run(question: str, plan: dict | None = None, extra_urls: list[str] | None = 
         if c.verified:
             assess_claim(c, s)
             enrich_claim(c, window, q_market, today, s.published)
-    # a page read again on purpose replaces its old copy; claims from both stay, ids never clash
+    # a page read again replaces its old copy; claims from both stay, ids never clash, and a claim found
+    # again (same page, quote and value) keeps its old id
     by_id = {**{s.id: s for s in old_sources}, **by_id}
     sources = list(by_id.values())
-    claims = old_claims + claims
+    seen = {(c.source_id, normalize(c.quote), normalize(c.value_text)) for c in old_claims}
+    claims = old_claims + [c for c in claims if (c.source_id, normalize(c.quote), normalize(c.value_text)) not in seen]
     findings = build_findings(claims, by_id, today)
     claim_map = {c.id: c for c in claims}
     def_notes = definition_differences(findings, claim_map)
@@ -224,7 +232,7 @@ def follow_up(prev: dict, follow_question: str = "", queries: list[str] | None =
         plan = {**prev["plan"], "queries": list(queries or [])}
         question = prev["question"]
     res = run(question, plan=plan, extra_urls=extra_urls, use_search=use_search, max_sources=max_sources,
-              llm=llm, today=today, progress=progress, prior=prev)
+              llm=llm, today=today, progress=progress, prior=prev, reread=bool(follow_question.strip()))
     res["asked"] = follow_question.strip() or "; ".join(queries or [])
     res["stats"]["llm_calls"] = llm.calls - calls0
     return res

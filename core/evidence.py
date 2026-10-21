@@ -156,13 +156,15 @@ def sort_evidence(findings: list[Finding], claims: list[Claim], sources: dict[st
     bare = defaultdict(list)
     for c in claims:
         if not c.verified and "quá ngắn" in c.verify_note:
-            bare[(c.source_id, c.page)].append(c.id)
-    for (sid, page), ids in bare.items():
+            bare[(c.source_id, c.page)].append(c)
+    for (sid, page), cs in bare.items():
         s = sources.get(sid)
-        if s and len(ids) >= CHART_MIN_NUMBERS:
+        if s and len(cs) >= CHART_MIN_NUMBERS:
             where = f"trang {page} của " if page else ""
-            steps.append(_step(f"{len(ids)} con số ở {where}\"{s.title or s.domain}\" chưa kiểm được vì câu trích chỉ có "
-                               "con số (thường là biểu đồ): mở để đọc trực tiếp", url=evidence_url(s.url, s.kind, "", page)))
+            # a web page has no pages: jump to the first of those numbers instead
+            steps.append(_step(f"{len(cs)} con số ở {where}\"{s.title or s.domain}\" chưa kiểm được vì câu trích chỉ có "
+                               "con số (thường là biểu đồ): mở để đọc trực tiếp",
+                               url=evidence_url(s.url, s.kind, cs[0].quote, page)))
     # the same advice for several findings becomes one step listing them all
     merged: dict[str, dict] = {}
     for s in steps + later:

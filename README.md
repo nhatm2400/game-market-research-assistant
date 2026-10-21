@@ -8,6 +8,28 @@ Số liệu thị trường game nằm rải rác, đến từ nhiều hãng v�
 
 Chatbot trả lời nhanh nhưng hay gộp các con số khác bản chất vào một đoạn trôi chảy. Dự án này làm theo hướng ngược lại: AI chỉ đọc và trích, còn việc kiểm chứng do code làm theo quy tắc công khai.
 
+## Mission 3: điều gì có thể tin, điều gì chưa chắc chắn, nên tìm hiểu tiếp ở đâu
+
+Cùng một câu hỏi thường có nhiều nguồn khác nhau về thời điểm, độ tin cậy, thậm chí kết luận trái ngược. Phiên bản Mission 3 trả lời theo ba phần, do code xếp theo quy tắc cố định chứ không để AI tự chấm:
+
+| Phần | Điều kiện (code kiểm) |
+|---|---|
+| Có thể tin | Mức tin cậy Cao hoặc Trung bình theo quy tắc M2, không mâu thuẫn, kỳ đo và thị trường khớp câu hỏi, không phải số dự báo. Số dẫn lại qua nguồn hạng A/B vẫn có thể tin nhưng kèm lưu ý nên đối chiếu bản gốc |
+| Chưa chắc chắn | Có câu trích đã kiểm nhưng còn lý do cụ thể: các nguồn lệch hoặc trái chiều, chỉ có nguồn hạng C/D, số theo quý khi hỏi 12 tháng, số cũ hơn khung câu hỏi, số dự báo hoặc ước tính khi kỳ đo chưa kết thúc lúc đăng bài |
+| Nên tìm hiểu tiếp ở đâu | Mỗi điểm chưa chắc chắn có một bước cụ thể: truy vấn tìm kiếm soạn sẵn, câu hỏi tiếp, hoặc link mở thẳng tới trang biểu đồ chưa đọc được. Bấm "Tìm thêm" để chạy luôn |
+
+Số liệu đã kiểm nhưng thuộc thị trường hoặc kỳ khác câu hỏi được để riêng ở mục "ngoài phạm vi câu hỏi" thay vì trộn vào câu trả lời.
+
+Những thay đổi khác so với M2:
+
+- **Kiểm chứng một cú nhấp**: mỗi nhận định có nút mở nguồn tại đúng câu trích (trang web được cuộn tới và tô sáng câu đó nhờ text fragment) hoặc tại đúng trang của PDF, kèm đoạn văn quanh câu trích ngay trong app.
+- **Nghiên cứu tiếp mà vẫn giữ bối cảnh**: gõ câu hỏi tiếp (ví dụ "Còn riêng Việt Nam thì sao?") hoặc bấm một bước tìm hiểu tiếp. Hệ thống viết lại câu hỏi tiếp thành câu hỏi đầy đủ (giữ chỉ số, kỳ đo; chỉ đổi phần người dùng đổi), giữ mọi nhận định đã kiểm và các nhận định người dùng đã loại, không đọc lại trang đã đọc, và hiện chuỗi nghiên cứu.
+- **Nguồn cũ và số dự báo**: số của một năm chưa kết thúc khi bài được đăng (ví dụ "năm 2025: 5,47 tỷ USD" trong bài tháng 9/2025) và kỳ đo kéo dài tới tương lai (ví dụ tăng trưởng 2024 đến 2029) được gắn cờ dự báo; số cũ đã có bản mới hơn được chỉ ra.
+- **Kết luận hợp với loại câu hỏi**: câu hỏi tra cứu số liệu được trả lời "Đã có câu trả lời" thay vì luôn ra "Cần thêm dữ liệu"; mỗi lý do có dấu cho biết nó dựa trên nhận định có thể tin hay chưa chắc chắn.
+- **Sửa lỗi M2**: số có trong câu hỏi ("12 tháng") không còn bị coi là số bịa làm mất câu tóm tắt (TC3); ô bảng "0.817" không còn bị đọc thành 817; số lượt gọi LLM tính riêng từng lần chạy.
+
+Chi tiết trước và sau cải tiến, quyết định thay đổi gì và không thay đổi gì, bằng chứng và giới hạn còn lại: [docs/mission-3.md](docs/mission-3.md). Bảng so sánh kết quả chạy thật M2 và M3: [eval/so-sanh-m2-m3.md](eval/so-sanh-m2-m3.md).
+
 ## Cách hoạt động
 
 | Bước | Ai làm | Nội dung |
@@ -21,6 +43,11 @@ Chatbot trả lời nhanh nhưng hay gộp các con số khác bản chất vào
 | 7. Viết bản tóm tắt | AI, code kiểm lại | AI chỉ viết từ nhận định đã kiểm và phải ghi mã nhận định. Code bỏ mọi lý do không có mã hợp lệ hoặc có con số không nằm trong nhận định được trích. Mức tin cậy do code tính |
 
 Sau bước 7, người dùng mở từng nhận định để xem câu trích và link, đánh dấu nhận định sai và cho viết lại bản tóm tắt.
+
+| Bước (M3) | Ai làm | Nội dung |
+|---|---|---|
+| 8. Xếp bằng chứng | Code | Mỗi nhóm số liệu vào "có thể tin", "chưa chắc chắn" (kèm lý do) hoặc "ngoài phạm vi câu hỏi"; sinh các bước tìm hiểu tiếp |
+| 9. Nghiên cứu tiếp | AI viết lại câu hỏi, code giữ bối cảnh | Hỏi tiếp hoặc bấm một bước: chạy lại bước 2 đến 8 cho phần còn thiếu, giữ nhận định cũ |
 
 ### Hạng nguồn
 
@@ -92,8 +119,12 @@ python -m pytest -q
 python -m eval.run_eval
 ```
 
-- `pytest` chạy 32 bài test không cần mạng và không cần khóa API: kiểm câu trích (câu bịa, câu bị diễn đạt lại, số bị đổi), đọc giá trị và kỳ đo, hạng nguồn, truy nguồn gốc, phân biệt mâu thuẫn với khác định nghĩa, bẫy bảng của Việt Nam bị ghi là Đông Nam Á, bộ kiểm bản tóm tắt, và xử lý lỗi (thử lại khi mô hình quá tải, chuyển sang mô hình dự phòng, tải trang bị timeout, lỗi khi viết tóm tắt). Có một bài chạy toàn bộ luồng với một LLM giả cố tình trả về một nhận định bịa.
-- `eval.run_eval` chạy 6 tình huống thật trong `eval/cases.yaml` (cần mạng và khóa Gemini), tự chấm theo các điều kiện ghi trong file và sinh bảng `eval/ket-qua-kiem-thu.md` gồm kỳ vọng, kết quả thực tế, đạt hoặc chưa đạt, điều học được. Kết quả chi tiết từng lần chạy nằm trong `eval/results/`.
+- `pytest` chạy 50 bài test không cần mạng và không cần khóa API:
+  - 32 bài từ M2 (giữ nguyên, là test regression): kiểm câu trích (câu bịa, câu bị diễn đạt lại, số bị đổi), đọc giá trị và kỳ đo, hạng nguồn, truy nguồn gốc, phân biệt mâu thuẫn với khác định nghĩa, bẫy bảng của Việt Nam bị ghi là Đông Nam Á, bộ kiểm bản tóm tắt, xử lý lỗi (mô hình quá tải, mô hình dự phòng, tải trang timeout, lỗi khi viết tóm tắt), và một bài chạy toàn bộ luồng với LLM giả cố tình trả về một nhận định bịa.
+  - 17 bài mới trong `tests/test_m3.py`: xếp có thể tin / chưa chắc chắn / ngoài phạm vi, số dẫn lại, mâu thuẫn và trái chiều, số dự báo tại thời điểm đăng, số cũ có bản mới hơn, biểu đồ PDF chỉ tới đúng trang, link mở câu trích, nghiên cứu tiếp giữ bối cảnh (đổi thị trường, giữ năm, giữ nhận định đã loại, không đọc lại trang), số lượt gọi LLM từng lần chạy, và regression cho các lỗi M2 (mất tóm tắt vì "12 tháng", "0.817" bị đọc thành 817).
+  - 1 bài trong `tests/test_app.py` dựng trang Streamlit bằng AppTest với một kết quả có sẵn và kiểm ba phần mới hiển thị.
+- `eval.run_eval` chạy 8 tình huống thật trong `eval/cases.yaml` (cần mạng và khóa Gemini), tự chấm và sinh bảng `eval/ket-qua-kiem-thu.md`. Mỗi case có `checks` (điều kiện M2, giữ nguyên để kiểm regression) và `checks_m3` (điều kiện mới). TC7 hỏi tiếp từ kết quả TC2 để kiểm việc giữ bối cảnh; TC8 là nguồn cũ có số dự báo. Kết quả chi tiết từng lần chạy nằm trong `eval/results/`, kết quả của M2 giữ ở `eval/results_m2/` và `eval/ket-qua-m2.md`.
+- `eval.run_eval --compare` áp cùng bộ điều kiện lên kết quả M2 và M3, sinh `eval/so-sanh-m2-m3.md`. `eval.run_eval --report` dựng lại bảng từ kết quả đã lưu mà không gọi LLM.
 
 ## Hạn chế đã biết
 
@@ -103,25 +134,30 @@ python -m eval.run_eval
 - Truy nguồn gốc dựa trên tên hãng dữ liệu xuất hiện gần câu trích, nên sẽ sót nếu bài viết không nhắc tên hãng.
 - Hạng nguồn dựa trên danh sách tên miền; tên miền chưa có trong danh sách mặc định là hạng C.
 - Nhiều trang chặn tải tự động hoặc nằm sau tường phí. Khi đó hệ thống ghi lỗi ở tab Nguồn, và người dùng có thể tải file lên.
-- Gói miễn phí của Gemini giới hạn số lượt gọi mỗi phút và mỗi ngày theo từng mô hình (xem https://aistudio.google.com/rate-limit). Một lần chạy dùng 3 lượt gọi: lập kế hoạch, trích nhận định từ tất cả nguồn trong một lần gọi, và viết tóm tắt. Hết hạn mức của một mô hình thì hệ thống tự chuyển sang mô hình trong `LLM_FALLBACK_MODELS`.
+- Gói miễn phí của Gemini giới hạn số lượt gọi mỗi phút và mỗi ngày theo từng mô hình (xem https://aistudio.google.com/rate-limit). Một lần chạy dùng 1 lượt lập kế hoạch, 1 lượt cho mỗi đoạn nguồn được đọc (tối đa 3 đoạn mỗi nguồn) và 1 lượt viết tóm tắt, cộng các lượt thử lại. Một lần hỏi tiếp chỉ đọc nguồn mới nên thường ít lượt hơn (TC7: 2 lượt). Hết hạn mức của một mô hình thì hệ thống tự chuyển sang mô hình trong `LLM_FALLBACK_MODELS`.
+- Phân loại "có thể tin" dựa trên quy tắc về nguồn, kỳ đo và thị trường; nó không chứng minh con số đúng với thực tế. Một số do hãng dữ liệu tự công bố vẫn chỉ là ước tính của hãng đó.
+- Nghiên cứu tiếp không đọc lại trang đã đọc, nên số mà lần đọc đầu chưa trích ra sẽ không tự xuất hiện; người dùng thêm lại link đó ở ô "Thêm nguồn" để đọc lại với câu hỏi mới.
+- Lịch sử và chuỗi nghiên cứu lưu trong SQLite trên máy chủ, mất khi Streamlit Community Cloud khởi động lại.
 - Chưa có: đăng nhập, nguồn tiếng Trung, đọc biểu đồ bằng mô hình thị giác, theo dõi theo thời gian.
 
 ## Cấu trúc thư mục
 
 ```
 app.py                  giao diện Streamlit
-core/pipeline.py        ghép các bước
-core/extract.py         prompt lập kế hoạch và trích nhận định (AI)
+core/pipeline.py        ghép các bước, nghiên cứu tiếp giữ bối cảnh (follow_up)
+core/extract.py         prompt lập kế hoạch, kế hoạch cho câu hỏi tiếp, trích nhận định (AI)
 core/verify.py          kiểm câu trích (code)
 core/sources.py         hạng nguồn, truy nguồn gốc (code)
 core/periods.py         đọc kỳ đo, so với khung thời gian câu hỏi (code)
-core/analyze.py         gom nhóm, mâu thuẫn, mức tin cậy (code)
+core/analyze.py         gom nhóm, mâu thuẫn, mức tin cậy, số dự báo, số mới hơn (code)
+core/evidence.py        có thể tin / chưa chắc chắn / ngoài phạm vi, bước tìm hiểu tiếp, link mở câu trích (code)
 core/brief.py           viết bản tóm tắt (AI) và kiểm lại (code)
 core/fetch.py           tải trang web và đọc PDF
 core/search.py          tìm kiếm (Tavily hoặc DuckDuckGo)
 core/store.py           lưu lịch sử chạy vào SQLite
 core/report.py          xuất bản tóm tắt dạng Markdown
 data/source_tiers.yaml  danh sách hạng nguồn và hãng dữ liệu
-eval/                   tình huống kiểm thử chạy thật và kết quả
+eval/                   tình huống kiểm thử chạy thật, kết quả M3, kết quả M2 (results_m2) và bảng so sánh
+docs/mission-3.md       trước và sau cải tiến, quyết định, bằng chứng, giới hạn
 tests/                  bài test không cần mạng
 ```

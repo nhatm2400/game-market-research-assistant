@@ -96,7 +96,9 @@ def test_opposite_directions_are_called_out():
 
 def test_figure_for_a_period_after_publication_is_a_forecast():
     assert stale_forecast_flag("2025", "2024-06-10", TODAY)
+    assert "chưa kết thúc" in stale_forecast_flag("2025", "2025-09-30", TODAY)[0]     # Niko's "2025: $5.47 billion"
     assert not stale_forecast_flag("2024", "2025-05-01", TODAY)
+    assert not stale_forecast_flag("Q1 2025 vs Q4 2024", "2025-05-21", TODAY)
     assert not stale_forecast_flag("2028", "2024-06-10", TODAY)      # still in the future: period_flags says so
 
 
@@ -146,6 +148,16 @@ def test_bare_numbers_from_a_chart_point_to_the_page():
     assert all(not c.verified and c.page == 6 for c in cs)
     step = sort_evidence([], cs, {s.id: s}, W_Q1, "Đông Nam Á", [])["next_steps"][0]
     assert step["url"].endswith("#page=6") and "3 con số" in step["text"]
+    s.kind, s.url = "html", "https://investgame.net/news/r/"        # same chart on a web page: jump to the first number
+    step = sort_evidence([], cs, {s.id: s}, W_Q1, "Đông Nam Á", [])["next_steps"][0]
+    assert step["url"] == "https://investgame.net/news/r/#:~:text=%2B17.6%25"
+
+
+def test_revenue_without_currency_is_compared_as_usd():
+    """M3 TC2: a copy of Niko's figure written "5.37 billion" was not compared with "$5.89 billion"."""
+    s = assess_source(src("S3", "https://gamesbeat.com/niko", NIKO_TEXT.replace("$5.37", "5.37"), "2025-09-30"), TODAY)
+    c = _verified("C1", s, "the Southeast Asia games market generated 5.37 billion in revenue in 2024", "5.37 billion")
+    assert c.unit == "USD" and any("coi là USD" in f for f in c.flags)
 
 
 def test_evidence_link_opens_the_quote():

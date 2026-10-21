@@ -1,5 +1,7 @@
 # Bộ kiểm thử chạy thật (cần mạng và GEMINI_API_KEY). Chạy: python -m eval.run_eval
-# loai: tot (kỳ vọng làm tốt), kho (dữ liệu không rõ ràng), thieu (thiếu dữ liệu), that_bai (dự đoán làm chưa tốt)
+# loai: tot (kỳ vọng làm tốt), kho (dữ liệu không rõ ràng), thieu (thiếu dữ liệu), that_bai (dự đoán làm chưa tốt),
+#       tiep (nghiên cứu tiếp từ case khác, giữ bối cảnh), cu (nguồn cũ, số dự báo)
+# checks: điều kiện của Mission 2, giữ nguyên để kiểm regression. checks_m3: điều kiện mới của Mission 3.
 # hoc_duoc: điền sau khi xem kết quả.
 
 - id: TC1
@@ -13,6 +15,9 @@
   checks:
     verified_numbers: ["625"]
     origin_includes: "Sensor Tower"
+  checks_m3:
+    decision_in: ["Đã có câu trả lời"]
+    trusted_includes_numbers: ["625"]
   hoc_duoc: "Đạt. Giữ 13/13 nhận định; con số 625 triệu USD có câu trích ở cả blog Sensor Tower (hạng A) và bài dẫn lại (hạng B), được truy về cùng một nguồn gốc Sensor Tower nên mức tin cậy là Trung bình chứ không phải Cao. Tuy vậy, khuyến nghị vẫn là 'Cần thêm dữ liệu' dù câu hỏi chỉ hỏi một con số đã tìm được: ba nhãn Nên ưu tiên, Chưa nên, Cần thêm dữ liệu không hợp với câu hỏi tra số liệu, nên cần tách riêng loại câu hỏi này."
 
 - id: TC2
@@ -28,6 +33,10 @@
     verified_numbers: ["5.37", "5.89"]
     has_conflict: true
     confidence_not: ["Cao"]
+  checks_m3:
+    uncertain_reason_any: ["lệch", "trái chiều"]
+    trusted_excludes_numbers: ["5.37", "5.89"]
+    next_steps_min: 1
   hoc_duoc: "Đạt. Tìm được cả 5,37 tỷ USD (Niko Partners) và 5,89 tỷ USD (Statista), báo mâu thuẫn lệch 10% dưới dạng khoảng, mức tin cậy Thấp. Có một lỗi nhìn thấy được: ô bảng 'S-5.89 N-6.51' (S là Statista, N là Newzoo) bị đọc thành giá trị -5,89 và gán cho Newzoo, nên con số 6,51 tỷ USD của Newzoo không vào phần mâu thuẫn. Câu trích vẫn có thật, chỉ có giá trị bị đọc sai. Bảng dùng ký hiệu viết tắt cần quy tắc đọc riêng, không nên để AI tự điền giá trị."
 
 - id: TC3
@@ -41,6 +50,11 @@
   checks:
     flag_any: ["ngoài khung", "không phải số của cả", "Việt Nam"]
     confidence_not: ["Cao"]
+  checks_m3:
+    summary_not_empty: true
+    uncertain_reason_any: ["ngoài khung", "không phải số của cả", "cần xem lại phạm vi"]
+    trusted_excludes_numbers: ["579.4"]
+    next_steps_min: 1
   hoc_duoc: "Đạt theo điều kiện: có cảnh báo ngoài khung 12 tháng và cảnh báo bảng tăng trưởng là của Việt Nam, mức tin cậy Thấp. Nhưng bản tóm tắt bị rỗng và chỉ còn 1 lý do, vì bộ kiểm bản tóm tắt coi số 12 trong '12 tháng' (lấy từ câu hỏi) là con số không có nguồn, nên bỏ câu tóm tắt và 3 lý do. Cần cho phép các số có trong câu hỏi. Ngoài ra 39/81 nhận định bị loại, trong đó 29 nhận định vì câu trích chỉ là một con số lấy từ biểu đồ PDF."
 
 - id: TC4
@@ -52,6 +66,9 @@
   checks:
     min_reasons: 2
     min_distinct_tiers: 2
+  checks_m3:
+    summary_not_empty: true
+    next_steps_min: 1
   hoc_duoc: "Đạt theo điều kiện: 2 lý do đều gắn mã nhận định đã kiểm, nguồn có đủ hạng A, B, C, 2 nguồn tải lỗi. Khuyến nghị là 'Cần thêm dữ liệu' vì chỉ có số MOBA của Đông Nam Á, Indonesia và Philippines, không có số MOBA riêng cho Việt Nam. Điều kiện chấm chưa kiểm hướng của khuyến nghị. Cả 6 case đều ra 'Cần thêm dữ liệu', nên prompt viết tóm tắt có thể đang quá thận trọng, cần thêm case có đủ dữ liệu để thử nhãn Nên ưu tiên hoặc Chưa nên."
 
 - id: TC5
@@ -63,6 +80,8 @@
   checks:
     decision_in: ["Cần thêm dữ liệu"]
     no_verified_number_for_period: "2026-09"
+  checks_m3:
+    next_steps_min: 1
   hoc_duoc: "Đạt. Đọc được 6 nguồn (2 nguồn lỗi) nhưng không có nhận định nào, mức tin cậy là 'Chưa đủ dữ liệu', không có số nào cho kỳ 9/2026, và hệ thống không gọi AI viết tóm tắt nên không có chỗ để bịa số. Lưu ý: 'Cần thêm dữ liệu' cũng là khuyến nghị của cả 6 case, nên bằng chứng chính ở đây là 0 nhận định và mức 'Chưa đủ dữ liệu', không phải nhãn khuyến nghị."
 
 - id: TC6
@@ -75,4 +94,43 @@
   checks:
     top_growth_genre: "battle royale"
     verified_numbers: ["37.6"]
+  checks_m3:
+    top_growth_genre_in_market: "battle royale"
+    chart_step: true
   hoc_duoc: "Chưa đạt, đúng như dự đoán. Khi đọc PDF ra chữ, nhãn và số của biểu đồ nằm thành hai khối riêng; Battle Royale đứng thứ 6 ở cả hai khối, ứng với +37,6%. AI chỉ trích 2 cột đầu của biểu đồ Đông Nam Á (4X Strategy +17,6%, MOBA +20,1%) và bỏ qua Battle Royale. Con số +37,6% duy nhất được trích là của FPS / 3PS ở Philippines, khớp với biểu đồ Philippines. Mọi nhận định lấy từ biểu đồ đều bị loại vì câu trích chỉ là con số (29/32). Điều kiện top_growth_genre đạt nhầm: số cao nhất còn lại là Shooter / Battle Royale +50% của Indonesia, chỉ trùng tên thể loại. Bộ kiểm câu trích không để lọt số ghép sai nhưng không tìm ra đáp án; cần đọc biểu đồ theo bố cục trang hoặc bằng mô hình thị giác, và điều kiện chấm phải kiểm cả thị trường lẫn giá trị."
+
+- id: TC7
+  loai: tiep
+  question: "Còn riêng Việt Nam thì sao? (hỏi tiếp từ TC2)"
+  parent: TC2
+  follow_up: "Còn riêng Việt Nam thì sao?"
+  urls: []
+  use_search: false
+  ky_vong: "Hiểu câu hỏi tiếp là quy mô thị trường game Việt Nam năm 2024 (giữ chỉ số và năm của TC2, chỉ đổi thị trường), giữ toàn bộ nhận định đã kiểm của TC2 mà không đọc lại nguồn, và trả lời bằng số của Việt Nam đã có trong bối cảnh (0,817 tỷ USD theo Newzoo)"
+  checks: {}
+  checks_m3:
+    question_market: "Việt Nam"
+    window_label: "01/2024 đến 12/2024"
+    context_kept: true
+    llm_calls_max: 10
+    verified_numbers: ["0.817"]
+  hoc_duoc: ""
+
+- id: TC8
+  loai: cu
+  question: "Quy mô thị trường game Đông Nam Á năm 2025 là bao nhiêu?"
+  urls:
+    - https://gamesbeat.com/southeast-asia-to-reach-6-47-billion-in-revenues-by-2029-niko-partners/
+    - https://gamedevreports.substack.com/p/niko-partners-southeast-asia-games
+  use_search: false
+  ky_vong: "Số 2025 duy nhất (5,47 tỷ USD) là dự báo của Niko Partners trong bài đăng tháng 9 và 10/2025, khi năm 2025 chưa kết thúc. Hệ thống phải xếp số này vào mục chưa chắc chắn với lý do là số ước tính hoặc dự báo, không đưa vào mục có thể tin, không cho mức tin cậy Cao, và gợi ý tìm số đã đo"
+  checks: {}
+  checks_m3:
+    uncertain_includes_numbers: ["5.47"]
+    trusted_excludes_numbers: ["5.47"]
+    uncertain_reason_any: ["chưa kết thúc", "dự báo"]
+    confidence_not: ["Cao"]
+    next_steps_min: 1
+  hoc_duoc: ""
+
+# TC9: Change Request. Sẽ thêm khi nhận Change Request.

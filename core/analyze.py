@@ -70,10 +70,16 @@ def geo_flags(claim: Claim, question_market: str) -> list[str]:
 
 
 def stale_forecast_flag(period: str, published: str | None, today: date) -> list[str]:
-    """A '2025' figure in an article from 2024 was a forecast when written, even if 2025 is past now."""
+    """A '2025' figure in an article from 2024 was a forecast when written, even if 2025 is past now;
+    one from September 2025 was an estimate for a year not yet over."""
     sp, pub = parse_period(period), parse_date(published)
-    if sp and pub and pub < sp.start <= today:
+    if not (sp and pub) or sp.start > today:
+        return []
+    if pub < sp.start:
         return [f"Số dự báo tại thời điểm đăng (nguồn đăng {pub:%m/%Y}, kỳ đo {period}): chưa chắc là số đã đo"]
+    if pub < sp.end and sp.end <= today:
+        return [f"Kỳ đo {period} chưa kết thúc khi nguồn đăng ({pub:%m/%Y}): là số ước tính hoặc dự báo, "
+                "chưa chắc là số đã đo"]
     return []
 
 
@@ -85,6 +91,10 @@ def context_flags(claim: Claim, window: Window, question_market: str, today: dat
 def enrich_claim(claim: Claim, window: Window, question_market: str, today: date,
                  published: str | None = None) -> Claim:
     claim.value, claim.unit = parse_value(claim.value_text)
+    if claim.metric == "revenue" and not claim.unit and claim.value is not None and abs(claim.value) >= 1e6:
+        # "5.37 billion" in a market report is USD; without this it would not be compared with "$5.89 billion"
+        claim.unit = "USD"
+        claim.flags.append("Không ghi đơn vị tiền, coi là USD để so sánh")
     claim.market = norm_market(claim.market)
     claim.flags += context_flags(claim, window, question_market, today)
     claim.flags += stale_forecast_flag(claim.period, published, today)
