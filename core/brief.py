@@ -9,12 +9,13 @@ from __future__ import annotations
 import re
 
 from .analyze import overall_confidence
+from .evidence import sort_evidence
 from .llm import LLM
-from .models import Claim, Finding
+from .models import Claim, Finding, Source
 from .periods import Window
 from .textnorm import NUM_RE, fmt_value, normalize
 
-DECISIONS = ["Nên ưu tiên", "Chưa nên", "Cần thêm dữ liệu"]
+DECISIONS = ["Nên ưu tiên", "Chưa nên", "Đã có câu trả lời", "Cần thêm dữ liệu"]
 
 BRIEF_SCHEMA = {
     "type": "object",
@@ -47,9 +48,11 @@ Khác biệt định nghĩa đã phát hiện:
 Tiêu chí chưa có dữ liệu: {gaps}
 
 Yêu cầu:
-- decision: một trong "Nên ưu tiên", "Chưa nên", "Cần thêm dữ liệu". Nếu bằng chứng yếu, lệch kỳ đo hoặc thiếu
-  tiêu chí quan trọng thì chọn "Cần thêm dữ liệu".
-- summary: 1 đến 2 câu tiếng Việt trả lời thẳng câu hỏi, nói rõ mức chắc chắn.
+- decision: với câu hỏi có nên làm hay không, chọn "Nên ưu tiên" hoặc "Chưa nên"; với câu hỏi tra cứu một con số
+  hoặc sự kiện, chọn "Đã có câu trả lời" nếu các nhận định trả lời được câu hỏi (kể cả khi còn chưa chắc chắn, khi đó
+  nói rõ trong summary). Chọn "Cần thêm dữ liệu" khi bằng chứng không đủ để trả lời hoặc để quyết định.
+- summary: 1 đến 2 câu tiếng Việt trả lời thẳng câu hỏi, nói rõ điều gì có thể tin và điều gì còn chưa chắc chắn
+  (theo trạng thái code đã gán cho từng nhận định).
 - reasons: 3 đến 5 lý do. Mỗi lý do gắn claim_ids là mã nhận định làm căn cứ (ví dụ ["C3"]). Mọi con số trong
   lý do phải lấy đúng từ nhận định được gắn mã; không tự tính, không thêm số ngoài danh sách. Nếu số liệu có cảnh báo
   (ngoài khung thời gian, số theo quý, phạm vi địa lý, nền nhỏ) thì nói cảnh báo đó trong lý do.
@@ -57,11 +60,12 @@ Yêu cầu:
 Viết tiếng Việt tự nhiên, ngắn gọn."""
 
 
-def _claim_line(c: Claim, finding_of: dict[str, Finding]) -> str:
+def _claim_line(c: Claim, finding_of: dict[str, Finding], status_of: dict[str, str]) -> str:
     f = finding_of.get(c.id)
     warn = f" Cảnh báo: {'; '.join(c.flags)}." if c.flags else ""
+    status = status_of.get(f.key, "chưa chắc chắn") if f else "chưa chắc chắn"
     return (f"[{c.id}] {c.claim_text} Giá trị: {c.value_text}. Kỳ: {c.period}. Thị trường: {c.market}. "
-            f"Nguồn gốc: {c.origin}, hạng {c.tier}. Nhóm {f.key if f else '-'}.{warn}")
+            f"Nguồn gốc: {c.origin}, hạng {c.tier}. Nhóm {f.key if f else '-'}, trạng thái: {status}.{warn}")
 
 
 def _finding_line(f: Finding) -> str:
@@ -69,16 +73,18 @@ def _finding_line(f: Finding) -> str:
     return f"{f.key}: {f.label} | giá trị theo nguồn gốc: {vals} | {f.status} | tin cậy {f.confidence} ({'; '.join(f.reasons)})"
 
 
-def _allowed_numbers(claims: list[Claim]) -> set[str]:
-    allowed = set()
+def _allowed_numbers(claims: list[Claim], extra: str = "") -> set[str]:
+    allowed = {normalize(m.group(0)) for m in NUM_RE.finditer(extra)}
     for c in claims:
         for t in (c.value_text, c.quote, c.period):
             allowed.update(normalize(m.group(0)) for m in NUM_RE.finditer(t or ""))
     return allowed
 
 
-def unsupported_numbers(text: str, claims: list[Claim]) -> list[str]:
-    allowed = _allowed_numbers(claims)
+def unsupported_numbers(text: str, claims: list[Claim], extra: str = "") -> list[str]:
+    """Numbers in `text` that are in none of the claims. `extra` is text whose numbers are also allowed:
+    the question and its time frame, so "12 tháng" is not mistaken for an invented figure."""
+    allowed = _allowed_numbers(claims, extra)
     bad = []
     for m in NUM_RE.finditer(text or ""):
         tok = normalize(m.group(0))
@@ -95,13 +101,18 @@ def criteria_gaps(criteria: list[str], claims: list[Claim]) -> list[str]:
 
 
 def write_brief(llm: LLM | None, question: str, criteria: list[str], claims: list[Claim],
-                findings: list[Finding], def_notes: list[str], window: Window) -> dict:
+                findings: list[Finding], def_notes: list[str], window: Window,
+                sources: dict[str, Source] | None = None, question_market: str = "") -> dict:
     good = [c for c in claims if c.verified and not c.excluded_by_user]
     gaps = criteria_gaps(criteria, claims)
     finding_of = {cid: f for f in findings for cid in f.claim_ids}
+    ev = sort_evidence(findings, claims, sources or {}, window, question_market, gaps)
+    status_of = {x["finding"]: "có thể tin" for x in ev["trusted"]}
+    status_of.update({x["finding"]: "chưa chắc chắn (" + "; ".join(x["why"]) + ")" for x in ev["uncertain"]})
+    asked = f"{question} {window.label}"      # numbers the user wrote are not invented by the LLM
     brief = {"decision": "Cần thêm dữ liệu", "summary": "", "reasons": [], "what_would_change": [],
              "confidence": "Chưa đủ dữ liệu", "gaps": gaps, "conflicts": [], "definition_notes": def_notes,
-             "guard_log": []}
+             "guard_log": [], **ev}
     for f in findings:
         if f.status == "conflict":
             brief["conflicts"].append(
@@ -117,7 +128,7 @@ def write_brief(llm: LLM | None, question: str, criteria: list[str], claims: lis
     out = llm.json(BRIEF_PROMPT.format(
         question=question, window=window.label,
         criteria="; ".join(f"{i}. {c}" for i, c in enumerate(criteria)),
-        claims="\n".join(_claim_line(c, finding_of) for c in good),
+        claims="\n".join(_claim_line(c, finding_of, status_of) for c in good),
         findings="\n".join(_finding_line(f) for f in findings) or "(không có)",
         defs="\n".join(def_notes) or "(không có)",
         gaps="; ".join(gaps) or "(không có)"), BRIEF_SCHEMA)
@@ -130,21 +141,24 @@ def write_brief(llm: LLM | None, question: str, criteria: list[str], claims: lis
         if not ids:
             brief["guard_log"].append(f"Bỏ lý do không gắn mã nhận định hợp lệ: \"{text}\"")
             continue
-        bad = unsupported_numbers(text, [by_id[i] for i in ids])
+        bad = unsupported_numbers(text, [by_id[i] for i in ids], asked)
         if bad:
             brief["guard_log"].append(f"Bỏ lý do có số không nằm trong nhận định được trích ({', '.join(bad)}): \"{text}\"")
             continue
-        brief["reasons"].append({"text": text, "claim_ids": ids})
-        cited_findings.update(finding_of[i].key for i in ids if i in finding_of)
+        keys = {finding_of[i].key for i in ids if i in finding_of}
+        # a reason is only as solid as its weakest cited finding
+        trusted = bool(keys) and all(status_of.get(k) == "có thể tin" for k in keys)
+        brief["reasons"].append({"text": text, "claim_ids": ids, "status": "trusted" if trusted else "uncertain"})
+        cited_findings.update(keys)
 
     summary = out.get("summary", "").strip()
-    bad = unsupported_numbers(summary, good)
+    bad = unsupported_numbers(summary, good, asked)
     if bad:
         brief["guard_log"].append(f"Bỏ câu tóm tắt có số không có trong nhận định ({', '.join(bad)}): \"{summary}\"")
         summary = ""
     brief["summary"] = summary
     for w in out.get("what_would_change", []):
-        if unsupported_numbers(w, good):
+        if unsupported_numbers(w, good, asked):
             brief["guard_log"].append(f"Bỏ ý có số không có nguồn: \"{w}\"")
         else:
             brief["what_would_change"].append(w)

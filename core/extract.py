@@ -95,6 +95,44 @@ Hãy liệt kê tối đa 12 nhận định định lượng liên quan đến c
     thì để trống và ghi "all"."""
 
 
+FOLLOWUP_SCHEMA = {**PLAN_SCHEMA, "properties": {**PLAN_SCHEMA["properties"], "standalone_question": {"type": "string"}},
+                   "required": PLAN_SCHEMA["required"] + ["standalone_question"]}
+
+FOLLOWUP_PROMPT = """Bạn hỗ trợ chuyên viên phát triển kinh doanh của một nhà phát hành game ở Việt Nam nghiên cứu thị trường.
+Hôm nay là {today}. Người dùng đang nghiên cứu tiếp từ một câu hỏi trước.
+
+Câu hỏi trước: "{prev_question}"
+Tiêu chí trước: {prev_criteria}
+Thị trường trước: {prev_market}. Thể loại trước: {prev_genre}.
+Những gì đã có số liệu kiểm chứng: {known}
+
+Câu hỏi tiếp theo của người dùng: "{follow}"
+
+Hãy:
+- standalone_question: viết lại câu hỏi tiếp theo thành một câu hỏi tiếng Việt đầy đủ, tự hiểu được mà không cần
+  câu hỏi trước. Giữ nguyên những gì câu hỏi tiếp theo không đổi (chỉ số, kỳ đo, thị trường, thể loại); chỉ đổi
+  phần người dùng muốn đổi. Không trả lời câu hỏi.
+- criteria: 2 đến 4 tiêu chí đo được cho câu hỏi đầy đủ đó, viết tiếng Việt, ngắn gọn.
+- queries: 3 truy vấn tìm kiếm web tiếng Anh để tìm số liệu CÒN THIẾU (không tìm lại những gì đã có), ưu tiên
+  báo cáo của hãng dữ liệu (Sensor Tower, Newzoo, Niko Partners, data.ai, AppMagic).
+- market, genre: của câu hỏi đầy đủ; để trống nếu không rõ."""
+
+
+def plan_followup(llm: LLM, prev: dict, follow: str, today: date | None = None) -> dict:
+    """Plan a follow-up question in the context of the previous run."""
+    today = today or date.today()
+    known = sorted({f["label"] for f in prev.get("findings", [])})[:15]
+    p = prev["plan"]
+    out = llm.json(FOLLOWUP_PROMPT.format(
+        today=today.isoformat(), prev_question=prev["question"], prev_criteria="; ".join(p.get("criteria", [])),
+        prev_market=p.get("market") or "chưa rõ", prev_genre=p.get("genre") or "không giới hạn",
+        known="; ".join(known) or "(chưa có)", follow=follow), FOLLOWUP_SCHEMA)
+    out["criteria"] = [c for c in out.get("criteria", []) if c.strip()][:5] or list(p.get("criteria", []))
+    out["queries"] = [q for q in out.get("queries", []) if q.strip()][:5]
+    out["standalone_question"] = (out.get("standalone_question") or "").strip() or follow
+    return out
+
+
 def _int(x) -> int:
     try:
         return int(x)

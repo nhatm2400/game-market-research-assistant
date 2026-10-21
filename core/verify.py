@@ -63,6 +63,9 @@ def verify_claim(claim: Claim, source: Source) -> Claim:
         return claim
     if len(normalize(claim.quote)) < MIN_QUOTE_CHARS:
         claim.verify_note = "Câu trích quá ngắn để kiểm"
+        span = find_quote(claim.quote, source)
+        if span:     # still rejected, but the page lets the user open the chart it came from
+            claim.page = page_at(source.text, span[0])
         return claim
 
     span = find_quote(claim.quote, source)

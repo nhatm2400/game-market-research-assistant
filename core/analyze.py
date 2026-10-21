@@ -69,13 +69,28 @@ def geo_flags(claim: Claim, question_market: str) -> list[str]:
     return flags
 
 
-def enrich_claim(claim: Claim, window: Window, question_market: str, today: date) -> Claim:
+def stale_forecast_flag(period: str, published: str | None, today: date) -> list[str]:
+    """A '2025' figure in an article from 2024 was a forecast when written, even if 2025 is past now."""
+    sp, pub = parse_period(period), parse_date(published)
+    if sp and pub and pub < sp.start <= today:
+        return [f"Số dự báo tại thời điểm đăng (nguồn đăng {pub:%m/%Y}, kỳ đo {period}): chưa chắc là số đã đo"]
+    return []
+
+
+def context_flags(claim: Claim, window: Window, question_market: str, today: date) -> list[str]:
+    """Flags that depend on the question asked; recomputed when a follow-up changes the question."""
+    return period_flags(claim.period, window, today) + geo_flags(claim, question_market)
+
+
+def enrich_claim(claim: Claim, window: Window, question_market: str, today: date,
+                 published: str | None = None) -> Claim:
     claim.value, claim.unit = parse_value(claim.value_text)
     claim.market = norm_market(claim.market)
-    claim.flags += period_flags(claim.period, window, today)
-    claim.flags += geo_flags(claim, question_market)
+    claim.flags += context_flags(claim, window, question_market, today)
+    claim.flags += stale_forecast_flag(claim.period, published, today)
     if claim.unit == "%" and claim.metric == "growth" and claim.value is not None and abs(claim.value) >= 100:
         claim.flags.append("Tăng trưởng trên 100%: cần xem giá trị tuyệt đối, có thể do nền nhỏ")
+    claim.flags = list(dict.fromkeys(claim.flags))
     return claim
 
 
@@ -119,7 +134,10 @@ def build_findings(claims: list[Claim], sources: dict[str, Source], today: date)
                 recent.append(c)
         if status == "conflict":
             conf = "Thấp"
-            reasons.append(f"Các nguồn gốc độc lập lệch nhau {spread * 100:.0f}% (ghi dạng khoảng)")
+            if lo < 0 < hi:
+                reasons.append("Các nguồn gốc độc lập trái chiều: có nguồn ghi tăng, có nguồn ghi giảm")
+            else:
+                reasons.append(f"Các nguồn gốc độc lập lệch nhau {spread * 100:.0f}% (ghi dạng khoảng)")
         elif len(good) >= 2 and len(recent) >= 2:
             conf = "Cao"
             reasons.append(f"{len(good)} nguồn gốc độc lập hạng A/B, đăng trong 12 tháng, khớp nhau")
@@ -145,7 +163,24 @@ def build_findings(claims: list[Claim], sources: dict[str, Source], today: date)
             origins=sorted(by_origin), values=vals, unit=cs[0].unit, status=status,
             spread_pct=round(spread * 100, 1), confidence=conf, reasons=reasons,
         ))
+    _mark_newer(findings, {c.id: c for c in claims}, today)
     return findings
+
+
+def _mark_newer(findings: list[Finding], claims: dict[str, Claim], today: date) -> None:
+    """Same metric, market, scope and genre measured over a later period of the same length:
+    the older finding is kept but points to the newer one."""
+    groups: dict[tuple, list[tuple]] = defaultdict(list)
+    for f in findings:
+        c = claims[f.claim_ids[0]]
+        sp = parse_period(c.period)
+        if c.metric in ("revenue", "downloads", "players", "share") and sp and sp.start <= today:
+            groups[(c.metric, c.market, c.scope, (c.genre or "").lower(), c.unit, sp.gran)].append((sp.end, f))
+    for items in groups.values():
+        newest = max(items, key=lambda x: x[0])
+        for end, f in items:
+            if end < newest[0]:
+                f.newer = newest[1].key
 
 
 def definition_differences(findings: list[Finding], claims: dict[str, Claim]) -> list[str]:

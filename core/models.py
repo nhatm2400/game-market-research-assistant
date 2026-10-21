@@ -73,6 +73,7 @@ class Finding:
     spread_pct: float
     confidence: str             # Cao | Trung bình | Thấp
     reasons: list[str]
+    newer: str = ""             # key of a finding with the same measure over a later period
 
     def to_dict(self) -> dict:
         return asdict(self)
