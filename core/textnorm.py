@@ -66,9 +66,10 @@ def number_tokens(text: str) -> list[str]:
 
 def parse_number(s: str) -> float | None:
     s = s.strip()
-    if re.fullmatch(r"\d{1,3}(,\d{3})+(\.\d+)?", s):
+    # a thousands group never starts with 0, so "0.817" is a decimal, not 817
+    if re.fullmatch(r"[1-9]\d{0,2}(,\d{3})+(\.\d+)?", s):
         return float(s.replace(",", ""))
-    if re.fullmatch(r"\d{1,3}(\.\d{3})+(,\d+)?", s):          # 1.234.567,8 (vi style)
+    if re.fullmatch(r"[1-9]\d{0,2}(\.\d{3})+(,\d+)?", s):     # 1.234.567,8 (vi style)
         return float(s.replace(".", "").replace(",", "."))
     if re.fullmatch(r"\d+,\d+", s):                           # decimal comma
         return float(s.replace(",", "."))

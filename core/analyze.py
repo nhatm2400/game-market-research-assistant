@@ -94,10 +94,10 @@ def enrich_claim(claim: Claim, window: Window, question_market: str, today: date
     return claim
 
 
-def _group_key(c: Claim) -> tuple:
+def _base_key(c: Claim) -> tuple:
     sp = parse_period(c.period)
     per = f"{sp.start:%Y-%m}..{sp.end:%Y-%m}" if sp else c.period.lower()
-    return (c.metric, c.market, per, c.scope, (c.genre or "").lower().strip(), c.unit)
+    return (c.metric, c.market, per, (c.genre or "").lower().strip(), c.unit)
 
 
 def _label(c: Claim) -> str:
@@ -106,13 +106,21 @@ def _label(c: Claim) -> str:
 
 
 def build_findings(claims: list[Claim], sources: dict[str, Source], today: date) -> list[Finding]:
+    good = [c for c in claims if c.verified and not c.excluded_by_user and c.value is not None]
+    known: dict[tuple, set[str]] = defaultdict(set)
+    for c in good:
+        if c.scope != "unknown":
+            known[_base_key(c)].add(c.scope)
     groups: dict[tuple, list[Claim]] = defaultdict(list)
-    for c in claims:
-        if c.verified and not c.excluded_by_user and c.value is not None:
-            groups[_group_key(c)].append(c)
+    for c in good:
+        scopes = known[_base_key(c)]
+        # an unlabelled scope joins the only labelled one measuring the same thing, instead of a duplicate group
+        scope = next(iter(scopes)) if c.scope == "unknown" and len(scopes) == 1 else c.scope
+        groups[_base_key(c) + (scope,)].append(c)
 
     findings = []
     for i, (key, cs) in enumerate(groups.items(), 1):
+        cs.sort(key=lambda c: c.scope == "unknown")     # label from a claim whose scope is known
         by_origin: dict[str, list[Claim]] = defaultdict(list)
         for c in cs:
             by_origin[c.origin].append(c)

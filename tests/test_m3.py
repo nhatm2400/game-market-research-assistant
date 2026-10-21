@@ -6,7 +6,8 @@ from core.brief import write_brief
 from core.evidence import evidence_url, sort_evidence
 from core.fetch import from_upload
 from core.models import Source
-from core.periods import question_window
+from core.periods import period_flags, question_window
+from core.textnorm import parse_value
 from core.sources import assess_claim, assess_source
 from core.verify import verify_claim
 from tests.test_core import NIKO_TEXT, ST_TEXT, STATISTA_TEXT, TODAY, FakeLLM, _verified, claim, src
@@ -45,12 +46,30 @@ def test_number_published_by_the_data_firm_itself_can_be_trusted():
     assert [x["finding"] for x in ev["trusted"]] == ["F1"] and not ev["uncertain"]
 
 
-def test_relayed_number_is_uncertain_and_points_to_the_original():
+def test_relayed_number_from_a_reputable_site_is_trusted_with_a_note_and_a_check_step():
     s = assess_source(src("S2", "https://gamedevreports.substack.com/p/x", RELAY_TEXT, "2025-06-13"), TODAY)
     _, ev = _ev([_q1("C2", s, RELAY_Q)], [s])
-    u = ev["uncertain"][0]
-    assert any("dẫn lại" in w for w in u["why"])
-    assert any(x["query"].startswith("Sensor Tower") for x in u["next_steps"])
+    t = ev["trusted"][0]
+    assert any("dẫn lại" in n for n in t["notes"])
+    assert ev["next_steps"][0]["query"].startswith("Sensor Tower") and ev["next_steps"][0]["findings"] == ["F1"]
+
+
+def test_relayed_number_from_a_blog_is_uncertain():
+    s = assess_source(src("S2", "https://allcorrectgames.com/x", RELAY_TEXT, "2025-06-13"), TODAY)
+    _, ev = _ev([_q1("C2", s, RELAY_Q)], [s])
+    assert "Chỉ có nguồn hạng C hoặc D" in ev["uncertain"][0]["why"]
+
+
+def test_figures_for_another_period_are_kept_aside_not_mixed_in():
+    """Asked about 2024: the 2025 figure and the 2029 forecast are listed apart, not as uncertain answers."""
+    text = "Niko Partners: Southeast Asia games revenue was $5.37 billion in 2024, $5.47 billion in 2025 and $6.47 billion in 2029."
+    q = "Southeast Asia games revenue was $5.37 billion in 2024, $5.47 billion in 2025 and $6.47 billion in 2029"
+    s = assess_source(src("S5", "https://nikopartners.com/x", text, "2025-09-01"), TODAY)
+    cs = [_verified("C1", s, q, "$5.37 billion"), _verified("C2", s, q, "$5.47 billion", period="2025"),
+          _verified("C3", s, q, "$6.47 billion", period="2029")]
+    fs, ev = _ev(cs, [s], question_window("Quy mô thị trường game Đông Nam Á năm 2024", TODAY))
+    assert [x["values"] for x in ev["trusted"]] == ["5,37 tỷ USD"]
+    assert len(ev["other"]) == 2 and not ev["uncertain"]
 
 
 def test_conflict_is_uncertain_and_suggests_comparing_methods():
@@ -81,6 +100,30 @@ def test_figure_for_a_period_after_publication_is_a_forecast():
     assert not stale_forecast_flag("2028", "2024-06-10", TODAY)      # still in the future: period_flags says so
 
 
+def test_period_running_into_the_future_is_partly_a_forecast():
+    w = question_window("Quy mô thị trường game Đông Nam Á năm 2024", TODAY)
+    assert any("một phần là số dự báo" in f for f in period_flags("2024-2029", w, TODAY))
+    assert not any("dự báo" in f for f in period_flags("2025", w, TODAY))
+
+
+def test_decimal_with_leading_zero_is_not_read_as_thousands():
+    """M2 read the Newzoo table cell '0.817' (billion USD) as 817."""
+    assert parse_value("0.817")[0] == 0.817 and parse_value("0,894")[0] == 0.894
+    assert parse_value("1.234.567")[0] == 1234567 and parse_value("1,371,171")[0] == 1371171
+
+
+def test_other_market_is_kept_aside_and_asks_for_the_right_market():
+    s = assess_source(src("S2", "https://gamedevreports.substack.com/p/x", RELAY_TEXT, "2025-06-13"), TODAY)
+    c = claim("C1", s.id, RELAY_Q, "$625 million", scope="mobile_iap", period="Q1 2025")
+    verify_claim(c, s)
+    assess_claim(c, s)
+    enrich_claim(c, W_Q1, "Việt Nam", TODAY, s.published)
+    fs = build_findings([c], {s.id: s}, TODAY)
+    ev = sort_evidence(fs, [c], {s.id: s}, W_Q1, "Việt Nam", [])
+    assert not ev["trusted"] and not ev["uncertain"] and "câu hỏi hỏi về Việt Nam" in ev["other"][0]["why"][0]
+    assert ev["next_steps"][0]["query"].startswith("Vietnam")
+
+
 def test_older_period_points_to_the_newer_figure():
     text = "Newzoo: the Southeast Asia games market reached $5.1 billion in 2023 and $5.5 billion in 2024."
     q = "the Southeast Asia games market reached $5.1 billion in 2023 and $5.5 billion in 2024"
@@ -88,8 +131,9 @@ def test_older_period_points_to_the_newer_figure():
     cs = [_verified("C1", s, q, "$5.1 billion", period="2023"), _verified("C2", s, q, "$5.5 billion", period="2024")]
     fs, ev = _ev(cs, [s], question_window("Quy mô thị trường game Đông Nam Á", TODAY))
     assert fs[0].newer == fs[1].key
-    old = next(x for x in ev["uncertain"] if x["finding"] == fs[0].key)
-    assert any("số mới hơn" in w for w in old["why"])
+    old = next(x for x in ev["other"] if x["finding"] == fs[0].key)
+    assert "số mới hơn" in old["why"][0]
+    assert [x["finding"] for x in ev["trusted"]] == [fs[1].key]
 
 
 def test_bare_numbers_from_a_chart_point_to_the_page():

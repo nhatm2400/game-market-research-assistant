@@ -1,6 +1,7 @@
 """Render a run as a Markdown brief that can be downloaded or pasted into a report."""
 from __future__ import annotations
 
+from .evidence import evidence_url
 from .textnorm import fmt_value
 
 
@@ -9,15 +10,41 @@ def brief_markdown(r: dict) -> str:
     claims = {c["id"]: c for c in r["claims"]}
     sources = {s["id"]: s for s in r["sources"]}
     out = [f"# Bản tóm tắt quyết định", "",
-           f"**Câu hỏi:** {r['question']}", "",
-           f"**Khuyến nghị:** {b['decision']}. **Mức tin cậy:** {b['confidence']}.", "",
-           b["summary"] or "", "",
-           f"Khung thời gian dữ liệu: {r['window']['label']}. Ngày chạy: {r['today']}.", ""]
+           f"**Câu hỏi:** {r['question']}", ""]
+    if len(r.get("thread") or []) > 1:
+        out += ["**Chuỗi nghiên cứu:** " + " → ".join(t["question"] for t in r["thread"]), ""]
+    out += [f"**Kết luận:** {b['decision']}. **Mức tin cậy:** {b['confidence']}.", "",
+            b["summary"] or "", "",
+            f"Khung thời gian dữ liệu: {r['window']['label']}. Ngày chạy: {r['today']}.", ""]
     if b["reasons"]:
         out += ["## Lý do chính", ""]
         for i, x in enumerate(b["reasons"], 1):
-            out.append(f"{i}. {x['text']} [{', '.join(x['claim_ids'])}]")
+            mark = {"trusted": " (có thể tin)", "uncertain": " (chưa chắc chắn)"}.get(x.get("status"), "")
+            out.append(f"{i}. {x['text']} [{', '.join(x['claim_ids'])}]{mark}")
         out.append("")
+    if "trusted" in b:
+        out += ["## Có thể tin", ""]
+        for x in b["trusted"]:
+            out.append(f"- **{x['finding']}** {x['label']}: {x['values']} ({', '.join(x['origins'])}), "
+                       f"tin cậy {x['confidence']}. [{', '.join(x['claim_ids'])}]")
+            out += [f"  - Lưu ý: {n}" for n in x.get("notes", [])]
+        out += (["- Chưa có"] if not b["trusted"] else []) + [""]
+        out += ["## Chưa chắc chắn", ""]
+        for x in b["uncertain"]:
+            out.append(f"- **{x['finding']}** {x['label']}: {x['values']} ({', '.join(x['origins'])}). "
+                       f"[{', '.join(x['claim_ids'])}]")
+            out += [f"  - {w}" for w in x["why"]]
+        out += (["- Không có"] if not b["uncertain"] else []) + [""]
+        if b.get("other"):
+            out += ["## Số liệu khác, ngoài phạm vi câu hỏi", ""]
+            out += [f"- **{x['finding']}** {x['label']}: {x['values']} ({', '.join(x['origins'])}). {x['why'][0]}."
+                    for x in b["other"]] + [""]
+        out += ["## Nên tìm hiểu tiếp ở đâu", ""]
+        for s in b["next_steps"]:
+            about = f" ({', '.join(s['findings'])})" if s.get("findings") else ""
+            extra = f" Truy vấn gợi ý: `{s['query']}`." if s["query"] else (f" {s['url']}" if s["url"] else "")
+            out.append(f"- {s['text']}{about}.{extra}")
+        out += (["- Không có"] if not b["next_steps"] else []) + [""]
     if b["conflicts"]:
         out += ["## Mâu thuẫn giữa các nguồn", ""] + [f"- {x}" for x in b["conflicts"]] + [""]
     if b["definition_notes"]:
@@ -33,8 +60,9 @@ def brief_markdown(r: dict) -> str:
             c = claims[cid]
             s = sources.get(c["source_id"], {})
             page = f", trang {c['page']}" if c.get("page") else ""
+            link = evidence_url(s.get("url", ""), s.get("kind", ""), c["quote"], c.get("page")) or s.get("url", "")
             out.append(f"- **{cid}** {c['claim_text']} Giá trị: {c['value_text']} ({fmt_value(c['value'], c['unit'])}). "
-                       f"Nguồn gốc: {c['origin']}, hạng {c['tier']}. Nguồn: {s.get('url', '')}{page}, "
+                       f"Nguồn gốc: {c['origin']}, hạng {c['tier']}. Nguồn: {link}{page}, "
                        f"đăng {s.get('published') or 'không rõ'}.")
             out.append(f"  > {c['quote']}")
             for f in c.get("flags", []):

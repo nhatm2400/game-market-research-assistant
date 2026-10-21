@@ -122,6 +122,8 @@ def period_flags(period: str, window: Window, today: date | None = None) -> list
     if sp.start > today:
         flags.append("Số dự báo, chưa phải số đã đo")
         return flags
+    if sp.end > _end_of_month(today.year, today.month) and sp.gran in ("year", "multi"):
+        flags.append(f"Kỳ đo \"{period}\" kéo dài tới tương lai: một phần là số dự báo")
     if sp.end < window.start or sp.start > window.end:
         flags.append(f"Kỳ đo \"{period}\" nằm ngoài khung thời gian của câu hỏi ({window.label})")
     elif window.kind == "past12" and sp.gran in ("month", "quarter", "half"):

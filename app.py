@@ -17,6 +17,7 @@ except Exception:
     pass
 
 from core import extract, pipeline, store  # noqa: E402
+from core.evidence import evidence_url  # noqa: E402
 from core.fetch import from_upload  # noqa: E402
 from core.llm import LLM, LLMError  # noqa: E402
 from core.report import brief_markdown  # noqa: E402
@@ -41,6 +42,17 @@ ss.setdefault("result", None)
 @st.cache_resource
 def get_llm():
     return LLM()
+
+
+def research_further(prev: dict, follow_question: str = "", queries: list[str] | None = None) -> None:
+    with st.status("Đang nghiên cứu tiếp, giữ bối cảnh lần trước", expanded=True) as status:
+        res = pipeline.follow_up(prev, follow_question, queries, use_search=use_search, max_sources=max_sources,
+                                 llm=llm, progress=st.write)
+        status.update(label="Xong", state="complete", expanded=False)
+    store.save(res)
+    ss.result = res
+    ss.plan = res["plan"]
+    st.rerun()
 
 
 # ---------- sidebar ----------
@@ -111,21 +123,85 @@ if r:
     b = r["brief"]
     claims = {c["id"]: c for c in r["claims"]}
     sources = {s["id"]: s for s in r["sources"]}
+    trusted, uncertain, steps = b.get("trusted", []), b.get("uncertain", []), b.get("next_steps", [])
     st.divider()
+    if len(r.get("thread") or []) > 1:
+        st.caption("Chuỗi nghiên cứu: " + "  →  ".join(t["question"] for t in r["thread"]))
     st.subheader("Bản tóm tắt quyết định")
-    m1, m2, m3 = st.columns(3)
-    m1.metric("Khuyến nghị", b["decision"])
+    m1, m2, m3, m4 = st.columns(4)
+    m1.metric("Kết luận", b["decision"])
     m2.metric("Mức tin cậy", b["confidence"])
-    m3.metric("Nhận định giữ / loại", f"{r['stats']['verified']} / {r['stats']['rejected']}")
+    m3.metric("Có thể tin / Chưa chắc chắn", f"{len(trusted)} / {len(uncertain)}")
+    m4.metric("Nhận định giữ / loại", f"{r['stats']['verified']} / {r['stats']['rejected']}")
     if r["stats"]["sources_failed"]:
         st.warning(f"{r['stats']['sources_failed']} nguồn bị lỗi khi đọc hoặc khi trích nhận định. "
                    "Xem lý do ở tab Nguồn.")
     st.write(b["summary"])
-    st.caption(f"Khung thời gian dữ liệu: {r['window']['label']}")
+    st.caption(f"Khung thời gian dữ liệu: {r['window']['label']}"
+               + (f". Giữ lại {r['stats']['carried']} nhận định đã kiểm từ lần trước." if r["stats"].get("carried") else ""))
     if b["reasons"]:
-        st.markdown("**Lý do chính**")
+        st.markdown("**Lý do chính** (✅ dựa trên nhận định có thể tin, ⚠️ có nhận định chưa chắc chắn)")
         for i, x in enumerate(b["reasons"], 1):
-            st.markdown(f"{i}. {x['text']} `{', '.join(x['claim_ids'])}`")
+            mark = {"trusted": "✅ ", "uncertain": "⚠️ "}.get(x.get("status"), "")
+            st.markdown(f"{i}. {mark}{x['text']} `{', '.join(x['claim_ids'])}`")
+
+    col_t, col_u = st.columns(2)
+    with col_t:
+        st.markdown("#### ✅ Có thể tin")
+        st.caption("Ít nhất một nguồn gốc hạng A/B, không mâu thuẫn, không lệch kỳ đo hay thị trường, "
+                   "không phải số dẫn lại chưa đối chiếu. Do code xếp, không phải AI.")
+        for x in trusted:
+            st.markdown(f"**{x['finding']}. {x['label']}**: {x['values']} ({', '.join(x['origins'])}). "
+                        f"Tin cậy {x['confidence']}. `{', '.join(x['claim_ids'])}`")
+            for n in x.get("notes", []):
+                st.caption(f"Lưu ý: {n}")
+        if not trusted:
+            st.write("Chưa có số liệu nào đủ điều kiện.")
+    with col_u:
+        st.markdown("#### ⚠️ Chưa chắc chắn")
+        st.caption("Có số liệu đã kiểm câu trích nhưng còn lý do để chưa tin hẳn.")
+        for x in uncertain:
+            st.markdown(f"**{x['finding']}. {x['label']}**: {x['values']} ({', '.join(x['origins'])}). "
+                        f"`{', '.join(x['claim_ids'])}`")
+            for w in x["why"]:
+                st.markdown(f"  - {w}")
+        if not uncertain:
+            st.write("Không có.")
+    other = b.get("other", [])
+    if other:
+        with st.expander(f"Số liệu khác đã kiểm nhưng ngoài phạm vi câu hỏi ({len(other)})"):
+            for x in other:
+                st.markdown(f"- **{x['finding']}. {x['label']}**: {x['values']} ({', '.join(x['origins'])}). {x['why'][0]}.")
+
+    st.markdown("#### 🔎 Nên tìm hiểu tiếp ở đâu")
+    st.caption("Bấm để nghiên cứu tiếp: hệ thống giữ câu hỏi, các nhận định đã kiểm và các nhận định bạn đã loại, "
+               "chỉ tìm thêm phần còn thiếu.")
+
+    def show_step(i: int, s: dict) -> None:
+        c_text, c_btn = st.columns([5, 1])
+        about = f" ({', '.join(s['findings'])})" if s.get("findings") else ""
+        c_text.markdown(f"- {s['text']}{about}" + (f"  \n  Truy vấn: `{s['query']}`" if s["query"] else ""))
+        if s["url"]:
+            c_btn.link_button("Mở nguồn", s["url"])
+        elif s["query"] and c_btn.button("Tìm thêm", key=f"q{r['id']}{i}", disabled=llm is None or not use_search):
+            research_further(r, queries=[s["query"]])
+        elif s["ask"] and c_btn.button("Tìm thêm", key=f"a{r['id']}{i}", disabled=llm is None):
+            research_further(r, follow_question=s["ask"])
+
+    for i, s in enumerate(steps[:5]):
+        show_step(i, s)
+    if len(steps) > 5:
+        with st.expander(f"Các bước khác ({len(steps) - 5})"):
+            for i, s in enumerate(steps[5:], 5):
+                show_step(i, s)
+    if not steps:
+        st.write("Không có bước nào cần thêm.")
+    with st.form(f"follow{r['id']}", clear_on_submit=True):
+        fq = st.text_input("Hỏi tiếp, giữ bối cảnh câu hỏi này",
+                           placeholder="Ví dụ: Còn riêng Việt Nam thì sao? Hoặc: Số năm 2025 có chưa?")
+        asked = st.form_submit_button("Hỏi tiếp", disabled=llm is None)
+    if asked and fq.strip():
+        research_further(r, follow_question=fq)
     if b["conflicts"]:
         st.markdown("**Mâu thuẫn giữa các nguồn**")
         for x in b["conflicts"]:
@@ -166,6 +242,13 @@ if r:
                     st.markdown(f"Nguồn: [{s['title'] or s['domain']}]({s['url']}){page}, đăng {s['published'] or 'không rõ'}. "
                                 f"Giá trị chuẩn hóa: {fmt_value(c['value'], c['unit'])}. Kỳ: {c['period']}. "
                                 f"Thị trường: {c['market']}. Phạm vi: {c['scope']}.")
+                    link = evidence_url(s["url"], s["kind"], c["quote"], c.get("page"))
+                    if link:
+                        st.link_button("Mở nguồn tại câu trích" if s["kind"] != "pdf" else f"Mở PDF ở trang {c['page']}",
+                                       link)
+                    if c.get("context"):
+                        st.caption("Đoạn văn quanh câu trích, lấy nguyên từ nguồn (câu trích nằm trong 【 】):")
+                        st.text(c["context"].replace(c["quote"], f"【{c['quote']}】", 1))
                     if c.get("section_title"):
                         st.caption(f"Chương/bảng: {c['section_title']}")
                     for fl in c["flags"]:
