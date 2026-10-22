@@ -1,5 +1,17 @@
 [theme]
 base = "light"
+primaryColor = "#3346A8"
+backgroundColor = "#F6F8F9"
+secondaryBackgroundColor = "#EBF0F3"
+textColor = "#1A2433"
+linkColor = "#3346A8"
+borderColor = "#D5DDE3"
+font = "Be Vietnam Pro:https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap, sans-serif"
+headingFont = "Be Vietnam Pro, sans-serif"
+baseRadius = "0.3rem"
+greenColor = "#17785B"
+orangeColor = "#95600F"
+showSidebarBorder = true
 
 [server]
 maxUploadSize = 50
