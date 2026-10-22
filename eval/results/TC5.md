@@ -18,14 +18,14 @@ Khung thời gian dữ liệu: 09/2026 đến 09/2026. Ngày chạy: 2026-10-22.
 
 ## Nên tìm hiểu tiếp ở đâu
 
-- Chưa có dữ liệu đã kiểm cho tiêu chí "Doanh thu tháng 9/2026 của Tiếu Ngạo tại Việt Nam".
+- Chưa có dữ liệu đã kiểm cho tiêu chí "Doanh thu tháng 9/2026 của game Tiếu Ngạo tại Việt Nam".
 
 ## Tiêu chí chưa có dữ liệu đã kiểm
 
-- Doanh thu tháng 9/2026 của Tiếu Ngạo tại Việt Nam
+- Doanh thu tháng 9/2026 của game Tiếu Ngạo tại Việt Nam
 
 ## Điều gì sẽ làm thay đổi khuyến nghị
 
 - Tải lên báo cáo đã mua hoặc thêm link nguồn gốc của hãng dữ liệu
 
-_Đọc 5 nguồn, trích 0 nhận định, giữ 0, loại 0. 7 lượt gọi gemini/gemini-3.5-flash-lite, 33.7 giây._
+_Đọc 5 nguồn, trích 0 nhận định, giữ 0, loại 0. 6 lượt gọi gemini/gemini-3.5-flash-lite, 32.4 giây._

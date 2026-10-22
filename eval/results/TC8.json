@@ -1,11 +1,11 @@
 {
- "id": "1559919c6d",
- "created_at": "2026-10-22T10:27:31",
+ "id": "62df34cae8",
+ "created_at": "2026-10-22T10:39:14",
  "question": "Quy mô thị trường game Đông Nam Á năm 2025 là bao nhiêu?",
  "parent_id": null,
  "thread": [
   {
-   "id": "1559919c6d",
+   "id": "62df34cae8",
    "question": "Quy mô thị trường game Đông Nam Á năm 2025 là bao nhiêu?"
   }
  ],
@@ -15,10 +15,10 @@
    "Quy mô doanh thu thị trường game Đông Nam Á 2025"
   ],
   "queries": [
-   "Southeast Asia gaming market revenue 2025 Newzoo",
-   "ASEAN games market size 2025 Niko Partners",
-   "Southeast Asia mobile games revenue 2025 Sensor Tower",
-   "Southeast Asia video game market report 2025 forecast"
+   "Southeast Asia games market size 2025 Newzoo report",
+   "SEA gaming industry revenue 2025 Niko Partners",
+   "Southeast Asia mobile games market revenue 2025 Sensor Tower",
+   "gaming market size Southeast Asia 2025 data.ai"
   ],
   "market": "Đông Nam Á",
   "genre": ""
@@ -72,7 +72,7 @@
   {
    "id": "C1",
    "source_id": "S1d4280f7",
-   "claim_text": "Quy mô thị trường game Đông Nam Á dự kiến đạt 5.47 tỷ USD vào năm 2025.",
+   "claim_text": "Quy mô thị trường game Đông Nam Á năm 2025 được dự kiến đạt 5,47 tỷ USD.",
    "metric": "revenue",
    "value_text": "$5.47 billion",
    "market": "Đông Nam Á",
@@ -102,7 +102,7 @@
   {
    "id": "C2",
    "source_id": "Sb1cf0824",
-   "claim_text": "Quy mô doanh thu thị trường game Đông Nam Á (SEA-6) năm 2025 dự kiến đạt 5,47 tỷ USD.",
+   "claim_text": "Quy mô doanh thu thị trường game Đông Nam Á (SEA-6) đạt 5,47 tỷ USD vào năm 2025.",
    "metric": "revenue",
    "value_text": "$5.47 billion",
    "market": "Đông Nam Á",
@@ -157,33 +157,51 @@
   }
  ],
  "brief": {
-  "decision": "Đã có câu trả lời",
-  "summary": "Quy mô doanh thu thị trường game Đông Nam Á năm 2025 dự kiến đạt 5.47 tỷ USD theo dự báo của Niko Partners. Tuy nhiên, mức độ tin cậy còn thấp vì đây là số ước tính khi kỳ đo chưa kết thúc và thông tin được dẫn lại qua các bài viết.",
+  "decision": "Có số liệu nhưng chưa chắc chắn",
+  "summary": "Quy mô doanh thu thị trường game Đông Nam Á năm 2025 được dự báo đạt 5,47 tỷ USD theo dữ liệu từ Niko Partners. Tuy nhiên, đây là con số dự báo chưa kết thúc kỳ đo và cần đối chiếu thêm bản gốc để tăng tính xác thực.",
   "reasons": [
    {
-    "text": "Quy mô thị trường game Đông Nam Á năm 2025 dự kiến đạt 5.47 tỷ USD dựa trên nguồn Niko Partners, hạng B.",
+    "text": "Quy mô thị trường game Đông Nam Á năm 2025 được dự kiến đạt 5,47 tỷ USD theo nguồn Niko Partners (hạng B).",
     "claim_ids": [
      "C1"
     ],
     "status": "uncertain"
    },
    {
-    "text": "Quy mô doanh thu thị trường game Đông Nam Á (SEA-6) năm 2025 dự kiến đạt 5.47 tỷ USD, có cảnh báo kỳ đo chưa kết thúc và dữ liệu dẫn lại chưa đối chiếu bản gốc.",
+    "text": "Quy mô doanh thu thị trường game Đông Nam Á (SEA-6) đạt 5,47 tỷ USD vào năm 2025.",
     "claim_ids": [
+     "C2"
+    ],
+    "status": "uncertain"
+   },
+   {
+    "text": "Số liệu có độ tin cậy thấp do kỳ đo 2025 chưa kết thúc khi nguồn đăng và chỉ là số ước tính hoặc dự báo.",
+    "claim_ids": [
+     "C1",
+     "C2"
+    ],
+    "status": "uncertain"
+   },
+   {
+    "text": "Dữ liệu dựa trên số của Niko Partners dẫn lại qua các bài viết và chưa được đối chiếu trực tiếp bản gốc.",
+    "claim_ids": [
+     "C1",
      "C2"
     ],
     "status": "uncertain"
    }
   ],
   "what_would_change": [
-   "Có số liệu báo cáo gốc chính thức từ Niko Partners thay vì qua bài viết dẫn lại.",
-   "Có số liệu tổng kết thực tế sau khi năm 2025 đã kết thúc thay vì số dự báo."
+   "Có báo cáo gốc chính thức từ Niko Partners thay vì dữ liệu dẫn lại qua các bài viết.",
+   "Số liệu thực tế khi kết thúc toàn bộ kỳ đo năm 2025."
   ],
   "confidence": "Thấp",
   "gaps": [],
   "conflicts": [],
   "definition_notes": [],
-  "guard_log": [],
+  "guard_log": [
+   "Đổi kết luận \"Đã có câu trả lời\" thành \"Có số liệu nhưng chưa chắc chắn\": không lý do nào dựa trên nhận định có thể tin"
+  ],
   "trusted": [],
   "uncertain": [
    {
@@ -264,7 +282,7 @@
   "rejected": 0,
   "carried": 0,
   "llm_calls": 4,
-  "seconds": 5.4,
+  "seconds": 6.1,
   "model": "gemini/gemini-3.5-flash-lite",
   "search": "tắt"
  }

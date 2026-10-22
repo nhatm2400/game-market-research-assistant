@@ -1,26 +1,26 @@
 {
- "id": "c68eed45ce",
- "created_at": "2026-10-22T10:26:06",
+ "id": "9628509fb3",
+ "created_at": "2026-10-22T10:38:09",
  "question": "Có nên phát hành game MOBA trên mobile tại Việt Nam trong 12 tháng tới không?",
  "parent_id": null,
  "thread": [
   {
-   "id": "c68eed45ce",
+   "id": "9628509fb3",
    "question": "Có nên phát hành game MOBA trên mobile tại Việt Nam trong 12 tháng tới không?"
   }
  ],
  "today": "2026-10-22",
  "plan": {
   "criteria": [
-   "Quy mô thị phần game MOBA di động",
-   "Tốc độ tăng trưởng thị trường",
-   "Mức độ cạnh tranh và thống lĩnh của các đối thủ hiện tại"
+   "Quy mô doanh thu thị trường game MOBA mobile tại Việt Nam",
+   "Tốc độ tăng trưởng của thị trường game MOBA mobile",
+   "Mức độ cạnh tranh trong nhóm game MOBA dẫn đầu"
   ],
   "queries": [
-   "Vietnam mobile MOBA game market size revenue Newzoo Sensor Tower",
-   "top mobile MOBA games market share Vietnam data.ai",
-   "Vietnam gaming market report Niko Partners mobile MOBA",
-   "thị trường game MOBA di động Việt Nam doanh thu"
+   "Vietnam mobile MOBA game market revenue Sensor Tower Niko Partners",
+   "Vietnam mobile gaming market report data.ai Newzoo",
+   "top grossing mobile MOBA games in Vietnam market share AppMagic",
+   "thị trường game MOBA di động Việt Nam doanh thu xu hướng"
   ],
   "market": "Việt Nam",
   "genre": "MOBA"
@@ -34,57 +34,57 @@
  "question_market": "Việt Nam",
  "search_log": [
   {
-   "query": "Vietnam mobile MOBA game market size revenue Newzoo Sensor Tower",
+   "query": "Vietnam mobile MOBA game market revenue Sensor Tower Niko Partners",
    "results": [
-    "https://gamedevreports.substack.com/p/sensor-tower-southeast-asia-mobile",
-    "https://investgame.net/wp-content/uploads/2025/06/2025_Southeast_Asia_Mobile_Game_Insights.pdf",
-    "https://www.slideshare.net/slideshow/sensor_tower__state_of_mobile_2025__vietnam-pdf/276760998",
     "https://sensortower.com/blog/southeast-asia-mobile-gaming-2025",
-    "https://tracxn.com/d/trending-business-models/startups-in-mobile-moba-game-developers/__Cd6hKZ-76B4z9EbOKzETE0IaRsZMngGzQrOCWRFZRGA"
-   ]
-  },
-  {
-   "query": "top mobile MOBA games market share Vietnam data.ai",
-   "results": [
-    "https://finance.yahoo.com/news/decade-flappy-bird-vietnam-becomes-220000672.html",
-    "https://digitalinasia.com/vietnam-mobile-gaming-market",
-    "https://onesky.ai/blog/vietnam-mobile-game",
     "https://tracxn.com/d/trending-business-models/startups-in-mobile-moba-game-developers/__Cd6hKZ-76B4z9EbOKzETE0IaRsZMngGzQrOCWRFZRGA",
-    "https://posiel.com/wp-content/uploads/2022/09/dataai__state_of_mobile_2022__en.pdf"
-   ]
-  },
-  {
-   "query": "Vietnam gaming market report Niko Partners mobile MOBA",
-   "results": [
-    "https://finance.yahoo.com/news/vietnam-gaming-market-report-2023-153800498.html",
     "https://nikopartners.com/sea6-games-market-reports",
-    "https://finance.yahoo.com/news/gaming-growth-unlocked-coda-niko-073000524.html",
-    "https://nikopartners.com/wp-content/uploads/2022/08/Southeast-Asias-Games-Market.pdf",
-    "https://services.google.cn/fh/files/misc/asia_mobilegamers_preference_report.pdf"
+    "https://foxreload.com/en/library/business/southeast-asia-mobile-gaming-2026",
+    "https://finance.yahoo.com/news/sensor-tower-acquires-video-game-130000109.html"
    ]
   },
   {
-   "query": "thị trường game MOBA di động Việt Nam doanh thu",
+   "query": "Vietnam mobile gaming market report data.ai Newzoo",
+   "results": [
+    "https://www.imarcgroup.com/vietnam-mobile-gaming-market",
+    "https://gitnux.org/vietnam-gaming-industry-statistics",
+    "https://finance.yahoo.com/news/decade-flappy-bird-vietnam-becomes-220000672.html",
+    "https://www.slideshare.net/slideshow/vietnam-mobile-game-market-landscape/63166372",
+    "https://finance.yahoo.com/news/vietnam-gaming-market-report-2023-153800498.html"
+   ]
+  },
+  {
+   "query": "top grossing mobile MOBA games in Vietnam market share AppMagic",
+   "results": [
+    "https://gamedevreports.substack.com/p/appmagic-mobile-market-landscape",
+    "https://appmagic.rocks/research/casual-report-H12026?hl=en",
+    "https://vgsales.fandom.com/wiki/List_of_highest-grossing_mobile_games",
+    "https://www.singular.net/blog/top-mobile-games",
+    "https://www.scribd.com/document/996925600/AppMagic-Mobile-MarketLandscape-2026"
+   ]
+  },
+  {
+   "query": "thị trường game MOBA di động Việt Nam doanh thu xu hướng",
    "results": [
     "https://blog.tomorrowmarketers.org/buc-tranh-toan-canh-thi-truong-game-mobile-viet-nam",
-    "https://elib.vku.udn.vn/bitstream/123456789/138/1/20181207150113.pdf",
+    "https://fpt.vn/tin-tuc/top-game-mobile-hay-12388.html",
+    "https://vjst.vn/tuong-tac-game-di-dong-tai-viet-nam-tang-manh-86582.html",
     "https://laodong.vn/cong-nghe/nganh-game-viet-nam-vuon-tam-khang-dinh-vi-the-lon-tren-the-gioi-1690320.ldo",
-    "https://www.scribd.com/document/977340477/Bao-Cao-V%E1%BB%81-Th%E1%BB%8B-Tr%C6%B0%E1%BB%9Dng-Game-Mobile",
-    "https://www.cbinsights.com/company/vissan"
+    "https://www.tradingkey.com/vn/analysis/stocks/chung-khoan-my/261794740-apple-achieve-20-growth-china-market-q1-tradingkey"
    ]
   }
  ],
  "skipped": [
   {
-   "url": "https://digitalinasia.com/vietnam-mobile-gaming-market",
+   "url": "https://www.imarcgroup.com/vietnam-mobile-gaming-market",
+   "reason": "Hạng D (trang SEO hoặc bán báo cáo): không dùng làm bằng chứng"
+  },
+  {
+   "url": "https://finance.yahoo.com/news/decade-flappy-bird-vietnam-becomes-220000672.html",
    "reason": "Vượt số nguồn tối đa mỗi lần chạy"
   },
   {
-   "url": "https://onesky.ai/blog/vietnam-mobile-game",
-   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
-  },
-  {
-   "url": "https://posiel.com/wp-content/uploads/2022/09/dataai__state_of_mobile_2022__en.pdf",
+   "url": "https://www.slideshare.net/slideshow/vietnam-mobile-game-market-landscape/63166372",
    "reason": "Vượt số nguồn tối đa mỗi lần chạy"
   },
   {
@@ -92,11 +92,15 @@
    "reason": "Vượt số nguồn tối đa mỗi lần chạy"
   },
   {
-   "url": "https://finance.yahoo.com/news/gaming-growth-unlocked-coda-niko-073000524.html",
+   "url": "https://vgsales.fandom.com/wiki/List_of_highest-grossing_mobile_games",
    "reason": "Vượt số nguồn tối đa mỗi lần chạy"
   },
   {
-   "url": "https://services.google.cn/fh/files/misc/asia_mobilegamers_preference_report.pdf",
+   "url": "https://www.singular.net/blog/top-mobile-games",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://www.scribd.com/document/996925600/AppMagic-Mobile-MarketLandscape-2026",
    "reason": "Vượt số nguồn tối đa mỗi lần chạy"
   },
   {
@@ -104,7 +108,11 @@
    "reason": "Vượt số nguồn tối đa mỗi lần chạy"
   },
   {
-   "url": "https://elib.vku.udn.vn/bitstream/123456789/138/1/20181207150113.pdf",
+   "url": "https://fpt.vn/tin-tuc/top-game-mobile-hay-12388.html",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://vjst.vn/tuong-tac-game-di-dong-tai-viet-nam-tang-manh-86582.html",
    "reason": "Vượt số nguồn tối đa mỗi lần chạy"
   },
   {
@@ -112,11 +120,7 @@
    "reason": "Vượt số nguồn tối đa mỗi lần chạy"
   },
   {
-   "url": "https://www.scribd.com/document/977340477/Bao-Cao-V%E1%BB%81-Th%E1%BB%8B-Tr%C6%B0%E1%BB%9Dng-Game-Mobile",
-   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
-  },
-  {
-   "url": "https://www.cbinsights.com/company/vissan",
+   "url": "https://www.tradingkey.com/vn/analysis/stocks/chung-khoan-my/261794740-apple-achieve-20-growth-china-market-q1-tradingkey",
    "reason": "Vượt số nguồn tối đa mỗi lần chạy"
   }
  ],
@@ -156,72 +160,38 @@
    "publisher": "Niko Partners"
   },
   {
-   "id": "S144fb817",
-   "url": "https://nikopartners.com/wp-content/uploads/2022/08/Southeast-Asias-Games-Market.pdf",
-   "title": "",
-   "domain": "nikopartners.com",
-   "published": null,
+   "id": "Sfcfd692f",
+   "url": "https://appmagic.rocks/research/casual-report-H12026?hl=en",
+   "title": "Casual Games Report H1 2026: Growth Beneath the Still Surface",
+   "domain": "appmagic.rocks",
+   "published": "2026-07-23",
    "kind": "html",
-   "text": "<0 ký tự>",
-   "error": "Không tải được: ConnectionError ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-   "tier": "B",
+   "text": "<41762 ký tự>",
+   "error": null,
+   "tier": "A",
    "base_tier": "A",
    "tier_notes": [
-    "nikopartners.com nằm trong danh sách hạng A",
-    "Không rõ ngày đăng: hạ một hạng"
+    "appmagic.rocks nằm trong danh sách hạng A",
+    "Đăng cách đây 3 tháng"
    ],
-   "publisher": "Niko Partners"
+   "publisher": "AppMagic"
   },
   {
-   "id": "S80418131",
-   "url": "https://gamedevreports.substack.com/p/sensor-tower-southeast-asia-mobile",
-   "title": "Sensor Tower: Southeast Asia Mobile Game Market in 2025",
+   "id": "S05151ffc",
+   "url": "https://gamedevreports.substack.com/p/appmagic-mobile-market-landscape",
+   "title": "AppMagic: Mobile Market Landscape in 2026",
    "domain": "gamedevreports.substack.com",
-   "published": "2025-06-13",
+   "published": "2026-02-06",
    "kind": "html",
-   "text": "<5560 ký tự>",
+   "text": "<9853 ký tự>",
    "error": null,
    "tier": "B",
    "base_tier": "B",
    "tier_notes": [
     "gamedevreports.substack.com nằm trong danh sách hạng B",
-    "Đăng cách đây 16 tháng (12 đến 24 tháng)"
+    "Đăng cách đây 8 tháng"
    ],
    "publisher": "gamedevreports.substack.com"
-  },
-  {
-   "id": "Sfd8d5a99",
-   "url": "https://investgame.net/wp-content/uploads/2025/06/2025_Southeast_Asia_Mobile_Game_Insights.pdf",
-   "title": "2025_Southeast_Asia_Mobile_Game_Insights",
-   "domain": "investgame.net",
-   "published": "2025-05-22",
-   "kind": "pdf",
-   "text": "<55313 ký tự>",
-   "error": null,
-   "tier": "B",
-   "base_tier": "B",
-   "tier_notes": [
-    "investgame.net nằm trong danh sách hạng B",
-    "Đăng cách đây 17 tháng (12 đến 24 tháng)"
-   ],
-   "publisher": "investgame.net"
-  },
-  {
-   "id": "S56615751",
-   "url": "https://www.slideshare.net/slideshow/sensor_tower__state_of_mobile_2025__vietnam-pdf/276760998",
-   "title": "Client Challenge",
-   "domain": "slideshare.net",
-   "published": null,
-   "kind": "html",
-   "text": "<330 ký tự>",
-   "error": null,
-   "tier": "D",
-   "base_tier": "C",
-   "tier_notes": [
-    "Tên miền không có trong danh sách, mặc định hạng C",
-    "Không rõ ngày đăng: hạ một hạng"
-   ],
-   "publisher": "slideshare.net"
   },
   {
    "id": "S93dbe345",
@@ -241,202 +211,62 @@
    "publisher": "tracxn.com"
   },
   {
-   "id": "S73ca2bf7",
-   "url": "https://finance.yahoo.com/news/decade-flappy-bird-vietnam-becomes-220000672.html",
-   "title": "A Decade After Flappy Bird, Vietnam Becomes Gaming Powerhouse",
-   "domain": "finance.yahoo.com",
-   "published": "2023-08-03",
+   "id": "S5b8ad5af",
+   "url": "https://foxreload.com/en/library/business/southeast-asia-mobile-gaming-2026",
+   "title": "Southeast Asia Mobile Gaming 2026 — Indonesia, Philippines, Vietnam",
+   "domain": "foxreload.com",
+   "published": "2026-05-18",
    "kind": "html",
-   "text": "<2621 ký tự>",
+   "text": "<3489 ký tự>",
    "error": null,
-   "tier": "D",
+   "tier": "C",
    "base_tier": "C",
    "tier_notes": [
     "Tên miền không có trong danh sách, mặc định hạng C",
-    "Đăng cách đây 38 tháng (quá 24 tháng): hạ một hạng"
+    "Đăng cách đây 5 tháng"
+   ],
+   "publisher": "foxreload.com"
+  },
+  {
+   "id": "Sf65ef20d",
+   "url": "https://finance.yahoo.com/news/sensor-tower-acquires-video-game-130000109.html",
+   "title": "Sensor Tower acquires Video Game Insights, Adds PC/Console Gaming Data",
+   "domain": "finance.yahoo.com",
+   "published": "2025-03-18",
+   "kind": "html",
+   "text": "<2822 ký tự>",
+   "error": null,
+   "tier": "C",
+   "base_tier": "C",
+   "tier_notes": [
+    "Tên miền không có trong danh sách, mặc định hạng C",
+    "Đăng cách đây 19 tháng (12 đến 24 tháng)"
    ],
    "publisher": "finance.yahoo.com"
+  },
+  {
+   "id": "S2786e0c6",
+   "url": "https://gitnux.org/vietnam-gaming-industry-statistics",
+   "title": "2026 Vietnam Gaming Industry Statistics | 40+ Verified Facts",
+   "domain": "gitnux.org",
+   "published": "2026-02-13",
+   "kind": "html",
+   "text": "<14786 ký tự>",
+   "error": null,
+   "tier": "C",
+   "base_tier": "C",
+   "tier_notes": [
+    "Tên miền không có trong danh sách, mặc định hạng C",
+    "Đăng cách đây 8 tháng"
+   ],
+   "publisher": "gitnux.org"
   }
  ],
  "claims": [
   {
    "id": "C1",
    "source_id": "Sb4dc9f66",
-   "claim_text": "Trong quý 1 năm 2025, khu vực Đông Nam Á đạt 1,93 tỷ lượt cài đặt mới, xếp thứ hai toàn cầu về lượt tải game di động.",
-   "metric": "downloads",
-   "value_text": "1.93 billion",
-   "market": "Đông Nam Á",
-   "period": "Q1 2025",
-   "scope": "mobile",
-   "genre": "",
-   "genre_level": "all",
-   "quote": "In the first quarter of 2025, Southeast Asia ranked as the second-largest global market for mobile game downloads, hitting an impressive 1.93 billion new installs.",
-   "section_title": "Southeast Asian Mobile Game Market Insights 2025",
-   "attributed_to": "Sensor Tower",
-   "criterion": 0,
-   "value": 1930000000.0,
-   "unit": "",
-   "verified": true,
-   "verify_note": "Đã tìm thấy câu trích trong nguồn",
-   "match_score": 100.0,
-   "page": null,
-   "context": "analysis of the App Store and Google Play mobile game markets in Southeast Asia in 2025, covering overall revenue and download trends, revenue shares and trends across top game genres, download and revenue changes across different countries, as well as top mobile games by revenue and downloads.\nSoutheast Asia stands as a pivotal growth region in the global mobile gaming industry, presenting significant opportunities for developers and publishers. With a steadily expanding player base and increasing monetization potential, SEA is a dynamic and exciting landscape for the mobile gaming industry.\nIn the first quarter of 2025, Southeast Asia ranked as the second-largest global market for mobile game downloads, hitting an impressive 1.93 billion new installs. This represents a 3% increase from the previous quarter, highlighting the region's highly engaged and growing audience hungry for new gaming experiences. While SEA currently ranks seventh globally i",
-   "origin": "Sensor Tower",
-   "tier": "A",
-   "flags": [
-    "Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam"
-   ],
-   "excluded_by_user": false
-  },
-  {
-   "id": "C2",
-   "source_id": "Sb4dc9f66",
-   "claim_text": "Lượt tải game di động tại Đông Nam Á trong quý 1 năm 2025 tăng 3% so với quý trước.",
-   "metric": "growth",
-   "value_text": "3%",
-   "market": "Đông Nam Á",
-   "period": "Q1 2025 vs Q4 2024",
-   "scope": "mobile",
-   "genre": "",
-   "genre_level": "all",
-   "quote": "This represents a 3% increase from the previous quarter, highlighting the region's highly engaged and growing audience hungry for new gaming experiences.",
-   "section_title": "Southeast Asian Mobile Game Market Insights 2025",
-   "attributed_to": "Sensor Tower",
-   "criterion": 1,
-   "value": 3.0,
-   "unit": "%",
-   "verified": true,
-   "verify_note": "Đã tìm thấy câu trích trong nguồn",
-   "match_score": 100.0,
-   "page": null,
-   "context": "oss top game genres, download and revenue changes across different countries, as well as top mobile games by revenue and downloads.\nSoutheast Asia stands as a pivotal growth region in the global mobile gaming industry, presenting significant opportunities for developers and publishers. With a steadily expanding player base and increasing monetization potential, SEA is a dynamic and exciting landscape for the mobile gaming industry.\nIn the first quarter of 2025, Southeast Asia ranked as the second-largest global market for mobile game downloads, hitting an impressive 1.93 billion new installs. This represents a 3% increase from the previous quarter, highlighting the region's highly engaged and growing audience hungry for new gaming experiences. While SEA currently ranks seventh globally in in-app purchase (IAP) revenue at $625 million in Q1 2025, this figure signals significant untapped monetization potential. Factors like a large gaming c",
-   "origin": "Sensor Tower",
-   "tier": "A",
-   "flags": [
-    "Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam"
-   ],
-   "excluded_by_user": false
-  },
-  {
-   "id": "C3",
-   "source_id": "Sb4dc9f66",
-   "claim_text": "Doanh thu mua hàng trong ứng dụng (IAP) của thị trường Đông Nam Á đạt 625 triệu USD trong quý 1 năm 2025, đứng thứ bảy toàn cầu.",
-   "metric": "revenue",
-   "value_text": "$625 million",
-   "market": "Đông Nam Á",
-   "period": "Q1 2025",
-   "scope": "mobile_iap",
-   "genre": "",
-   "genre_level": "all",
-   "quote": "While SEA currently ranks seventh globally in in-app purchase (IAP) revenue at $625 million in Q1 2025, this figure signals significant untapped monetization potential.",
-   "section_title": "Southeast Asian Mobile Game Market Insights 2025",
-   "attributed_to": "Sensor Tower",
-   "criterion": 0,
-   "value": 625000000.0,
-   "unit": "USD",
-   "verified": true,
-   "verify_note": "Đã tìm thấy câu trích trong nguồn",
-   "match_score": 100.0,
-   "page": null,
-   "context": "as a pivotal growth region in the global mobile gaming industry, presenting significant opportunities for developers and publishers. With a steadily expanding player base and increasing monetization potential, SEA is a dynamic and exciting landscape for the mobile gaming industry.\nIn the first quarter of 2025, Southeast Asia ranked as the second-largest global market for mobile game downloads, hitting an impressive 1.93 billion new installs. This represents a 3% increase from the previous quarter, highlighting the region's highly engaged and growing audience hungry for new gaming experiences. While SEA currently ranks seventh globally in in-app purchase (IAP) revenue at $625 million in Q1 2025, this figure signals significant untapped monetization potential. Factors like a large gaming community, improving digital payment infrastructure, and rising smartphone adoption are key drivers that suggest future revenue growth.\nNote: The download data in this re",
-   "origin": "Sensor Tower",
-   "tier": "A",
-   "flags": [
-    "Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam"
-   ],
-   "excluded_by_user": false
-  },
-  {
-   "id": "C4",
-   "source_id": "Sb4dc9f66",
-   "claim_text": "Indonesia đạt 870 triệu lượt tải game di động trong quý 1 năm 2025, dẫn đầu khu vực Đông Nam Á.",
-   "metric": "downloads",
-   "value_text": "870 million",
-   "market": "Indonesia",
-   "period": "Q1 2025",
-   "scope": "mobile",
-   "genre": "",
-   "genre_level": "all",
-   "quote": "Indonesia stands out as the leader in mobile game downloads, reaching 870 million in Q1 2025, a 9% increase from the prior quarter.",
-   "section_title": "Market-Specific Highlights: Indonesia Leads Downloads, Thailand Tops Revenue",
-   "attributed_to": "Sensor Tower",
-   "criterion": 0,
-   "value": 870000000.0,
-   "unit": "",
-   "verified": true,
-   "verify_note": "Đã tìm thấy câu trích trong nguồn",
-   "match_score": 100.0,
-   "page": null,
-   "context": "signals significant untapped monetization potential. Factors like a large gaming community, improving digital payment infrastructure, and rising smartphone adoption are key drivers that suggest future revenue growth.\nNote: The download data in this report are based on estimated downloads from the App Store and Google Play, excluding pre-installs, re-downloads, and downloads from third-party Android marketplaces. Google Play is not available in Mainland China.\nMarket-Specific Highlights: Indonesia Leads Downloads, Thailand Tops Revenue\nWithin SEA, individual countries showcase distinct trends. Indonesia stands out as the leader in mobile game downloads, reaching 870 million in Q1 2025, a 9% increase from the prior quarter. The Philippines and Vietnam follow with 366 million and 329 million downloads respectively.\nWhen it comes to revenue, Thailand takes the lead in the region, generating $162 million in IAP revenue du",
-   "origin": "Sensor Tower",
-   "tier": "A",
-   "flags": [
-    "Số của thị trường Indonesia, câu hỏi hỏi về Việt Nam"
-   ],
-   "excluded_by_user": false
-  },
-  {
-   "id": "C5",
-   "source_id": "Sb4dc9f66",
-   "claim_text": "Lượt tải game di động tại Indonesia trong quý 1 năm 2025 tăng 9% so với quý trước.",
-   "metric": "growth",
-   "value_text": "9%",
-   "market": "Indonesia",
-   "period": "Q1 2025 vs Q4 2024",
-   "scope": "mobile",
-   "genre": "",
-   "genre_level": "all",
-   "quote": "Indonesia stands out as the leader in mobile game downloads, reaching 870 million in Q1 2025, a 9% increase from the prior quarter.",
-   "section_title": "Market-Specific Highlights: Indonesia Leads Downloads, Thailand Tops Revenue",
-   "attributed_to": "Sensor Tower",
-   "criterion": 1,
-   "value": 9.0,
-   "unit": "%",
-   "verified": true,
-   "verify_note": "Đã tìm thấy câu trích trong nguồn",
-   "match_score": 100.0,
-   "page": null,
-   "context": "signals significant untapped monetization potential. Factors like a large gaming community, improving digital payment infrastructure, and rising smartphone adoption are key drivers that suggest future revenue growth.\nNote: The download data in this report are based on estimated downloads from the App Store and Google Play, excluding pre-installs, re-downloads, and downloads from third-party Android marketplaces. Google Play is not available in Mainland China.\nMarket-Specific Highlights: Indonesia Leads Downloads, Thailand Tops Revenue\nWithin SEA, individual countries showcase distinct trends. Indonesia stands out as the leader in mobile game downloads, reaching 870 million in Q1 2025, a 9% increase from the prior quarter. The Philippines and Vietnam follow with 366 million and 329 million downloads respectively.\nWhen it comes to revenue, Thailand takes the lead in the region, generating $162 million in IAP revenue du",
-   "origin": "Sensor Tower",
-   "tier": "A",
-   "flags": [
-    "Số của thị trường Indonesia, câu hỏi hỏi về Việt Nam"
-   ],
-   "excluded_by_user": false
-  },
-  {
-   "id": "C6",
-   "source_id": "Sb4dc9f66",
-   "claim_text": "Philippines đạt 366 triệu lượt tải game di động trong quý 1 năm 2025.",
-   "metric": "downloads",
-   "value_text": "366 million",
-   "market": "Philippines",
-   "period": "Q1 2025",
-   "scope": "mobile",
-   "genre": "",
-   "genre_level": "all",
-   "quote": "The Philippines and Vietnam follow with 366 million and 329 million downloads respectively.",
-   "section_title": "Market-Specific Highlights: Indonesia Leads Downloads, Thailand Tops Revenue",
-   "attributed_to": "Sensor Tower",
-   "criterion": 0,
-   "value": 366000000.0,
-   "unit": "",
-   "verified": true,
-   "verify_note": "Đã tìm thấy câu trích trong nguồn",
-   "match_score": 100.0,
-   "page": null,
-   "context": ", and rising smartphone adoption are key drivers that suggest future revenue growth.\nNote: The download data in this report are based on estimated downloads from the App Store and Google Play, excluding pre-installs, re-downloads, and downloads from third-party Android marketplaces. Google Play is not available in Mainland China.\nMarket-Specific Highlights: Indonesia Leads Downloads, Thailand Tops Revenue\nWithin SEA, individual countries showcase distinct trends. Indonesia stands out as the leader in mobile game downloads, reaching 870 million in Q1 2025, a 9% increase from the prior quarter. The Philippines and Vietnam follow with 366 million and 329 million downloads respectively.\nWhen it comes to revenue, Thailand takes the lead in the region, generating $162 million in IAP revenue during Q1 2025. This is attributed to its strong digital payment systems and a cultural willin",
-   "origin": "Sensor Tower",
-   "tier": "A",
-   "flags": [
-    "Số của thị trường Philippines, câu hỏi hỏi về Việt Nam"
-   ],
-   "excluded_by_user": false
-  },
-  {
-   "id": "C7",
-   "source_id": "Sb4dc9f66",
-   "claim_text": "Vietnam đạt 329 triệu lượt tải game di động trong quý 1 năm 2025.",
+   "claim_text": "Việt Nam đạt 329 triệu lượt tải xuống trong Q1 2025.",
    "metric": "downloads",
    "value_text": "329 million",
    "market": "Việt Nam",
@@ -447,7 +277,7 @@
    "quote": "The Philippines and Vietnam follow with 366 million and 329 million downloads respectively.",
    "section_title": "Market-Specific Highlights: Indonesia Leads Downloads, Thailand Tops Revenue",
    "attributed_to": "Sensor Tower",
-   "criterion": 0,
+   "criterion": -1,
    "value": 329000000.0,
    "unit": "",
    "verified": true,
@@ -461,9 +291,9 @@
    "excluded_by_user": false
   },
   {
-   "id": "C8",
+   "id": "C2",
    "source_id": "Sb4dc9f66",
-   "claim_text": "Thái Lan dẫn đầu khu vực Đông Nam Á về doanh thu mua trong ứng dụng, đạt 162 triệu USD trong quý 1 năm 2025.",
+   "claim_text": "Thái Lan dẫn đầu khu vực về doanh thu IAP với 162 triệu USD trong Q1 2025.",
    "metric": "revenue",
    "value_text": "$162 million",
    "market": "Thái Lan",
@@ -474,7 +304,7 @@
    "quote": "When it comes to revenue, Thailand takes the lead in the region, generating $162 million in IAP revenue during Q1 2025.",
    "section_title": "Market-Specific Highlights: Indonesia Leads Downloads, Thailand Tops Revenue",
    "attributed_to": "Sensor Tower",
-   "criterion": 0,
+   "criterion": -1,
    "value": 162000000.0,
    "unit": "USD",
    "verified": true,
@@ -490,236 +320,36 @@
    "excluded_by_user": false
   },
   {
-   "id": "C9",
-   "source_id": "Sb4dc9f66",
-   "claim_text": "Các nhà phát hành game di động tại Đông Nam Á đạt tổng cộng hơn 5,8 tỷ lượt cài đặt, xếp thứ nhất trên toàn thế giới vào năm 2024.",
-   "metric": "downloads",
-   "value_text": "5.8 billion",
-   "market": "Đông Nam Á",
-   "period": "2024",
-   "scope": "mobile",
+   "id": "C3",
+   "source_id": "S05151ffc",
+   "claim_text": "Việt Nam ghi nhận mức tăng trưởng lượng tải ứng dụng đạt 12% YoY trong năm 2025.",
+   "metric": "growth",
+   "value_text": "+12% YoY",
+   "market": "Việt Nam",
+   "period": "2025 vs 2024",
+   "scope": "unknown",
    "genre": "",
    "genre_level": "all",
-   "quote": "In 2024, SEA-based mobile game publishers collectively ranked first worldwide for mobile game downloads, generating over 5.8 billion installs.",
-   "section_title": "The Rise of SEA Publishers on the Global Stage",
-   "attributed_to": "Sensor Tower",
-   "criterion": 0,
-   "value": 5800000000.0,
-   "unit": "",
-   "verified": true,
-   "verify_note": "Đã tìm thấy câu trích trong nguồn",
-   "match_score": 100.0,
-   "page": null,
-   "context": " genres like Arcade and Simulation games drive high download volumes due to their ease of play. However, in-app purchase revenue is primarily dominated by more immersive genres such as Strategy (especially 4X and MOBA), Shooters, and RPGs. These games, often featuring social and competitive elements, encourage sustained engagement and player spending. Puzzle games are also gaining significant traction, particularly those with low barriers to entry and viral potential.\nThe Rise of SEA Publishers on the Global Stage\nPublishers based in Southeast Asia are increasingly making their mark globally. In 2024, SEA-based mobile game publishers collectively ranked first worldwide for mobile game downloads, generating over 5.8 billion installs. Notably, three Vietnamese publishers were among the top 15 globally by downloads, signaling the country's growing influence in game publishing. A majority of these downloads originate from overseas ",
-   "origin": "Sensor Tower",
-   "tier": "A",
-   "flags": [
-    "Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam"
-   ],
-   "excluded_by_user": false
-  },
-  {
-   "id": "C10",
-   "source_id": "S80418131",
-   "claim_text": "Doanh thu dòng game MOBA tại Đông Nam Á tăng 20.1% theo quý trong Q1 2025.",
-   "metric": "growth",
-   "value_text": "+20.1% QoQ",
-   "market": "Đông Nam Á",
-   "period": "Q1 2025 vs Q4 2024",
-   "scope": "mobile_iap",
-   "genre": "MOBA",
-   "genre_level": "genre",
-   "quote": "For revenue, 4X strategy games (+17.6% QoQ), MOBA (+20.1% QoQ), and MMORPG (-17.1% QoQ) are on top.",
-   "section_title": "General Market Overview",
-   "attributed_to": "Sensor Tower",
-   "criterion": 1,
-   "value": 20.1,
+   "quote": "Pakistan (+10% YoY) and Vietnam (+12% YoY) also showed rapid download growth.",
+   "section_title": "State of the Mobile Market",
+   "attributed_to": "",
+   "criterion": -1,
+   "value": 12.0,
    "unit": "%",
    "verified": true,
    "verify_note": "Đã tìm thấy câu trích trong nguồn",
    "match_score": 100.0,
    "page": null,
-   "context": "es (+9% QoQ). The Philippines is second with 366 million installs (-1% QoQ), and Vietnam is third with 329 million installs (+2% QoQ).\n- In terms of revenue, Thailand leads with $162 million (-6% QoQ). Indonesia is second with $118 million (+1% QoQ), and Malaysia is third with $103 million (+7% QoQ).\n❗️Note that this is only about IAP purchases. D2C payments, which are quite common in Southeast Asia, aren’t reflected in these stats.\n- Looking at the most popular genres in Southeast Asia, platformers/runners (+16% QoQ), simulators (+0.1% QoQ), and arcade games (+12.2% QoQ) lead in downloads.\n- For revenue, 4X strategy games (+17.6% QoQ), MOBA (+20.1% QoQ), and MMORPG (-17.1% QoQ) are on top.\nConsider subscribing to the GameDev Reports Premium tier to support the newsletter. Get access to the list of curated articles & archive of Gaming Reports that I’ve been collecting since 2020.\n- Top",
-   "origin": "Sensor Tower",
+   "context": ", more than 1.4 million apps were released on Google Play and the App Store in 2025. Only 10% of them attracted any user attention.\n- According to AppMagic’s methodology, non-gaming apps overtook games in IAP revenue in September 2025 ($4.8 billion vs. $4.5 billion). The biggest contributors to this were ChatGPT, TikTok, YouTube, Tinder, and HBO Max.\n- Indonesia is about to enter the top-3 countries by downloads. The country finished 2025 in 4th place with 10% YoY growth, only slightly behind Brazil (-1.4% YoY). The top two positions remain unchanged: India (+1.9% YoY) and the US (+3.5% YoY). Pakistan (+10% YoY) and Vietnam (+12% YoY) also showed rapid download growth.\n- Looking at revenue trends, growth continues in the US (+7.8% YoY), China (+3.9% YoY, iOS only), and Japan (+4% YoY). Among the top-10 countries, only South Korea (-6.5% YoY) and Taiwan (-3.5% YoY)",
+   "origin": "gamedevreports.substack.com",
    "tier": "B",
-   "flags": [
-    "Số liệu của Sensor Tower, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc",
-    "Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam"
-   ],
-   "excluded_by_user": false
-  },
-  {
-   "id": "C11",
-   "source_id": "S80418131",
-   "claim_text": "Doanh thu dòng game MOBA tại Indonesia tăng 32.7% theo quý trong Q1 2025.",
-   "metric": "growth",
-   "value_text": "+32.7% QoQ",
-   "market": "Indonesia",
-   "period": "Q1 2025 vs Q4 2024",
-   "scope": "mobile_iap",
-   "genre": "MOBA",
-   "genre_level": "genre",
-   "quote": "- For revenue, MOBA (+32.7% QoQ), 4X strategy (+21.1% QoQ), and sports games (-22.6% QoQ) lead. Battle Royale shows significant growth (+50% QoQ).",
-   "section_title": "Indonesia",
-   "attributed_to": "Sensor Tower",
-   "criterion": 1,
-   "value": 32.7,
-   "unit": "%",
-   "verified": true,
-   "verify_note": "Đã tìm thấy câu trích trong nguồn",
-   "match_score": 100.0,
-   "page": null,
-   "context": " the top 10 games are either developed by Chinese companies or owned by them. 9 out of 10 in the top 10 are Asian companies, with the exception being Coin Master from Moon Active.\n❗️Western companies face a cultural barrier when entering the Southeast Asian market. For Asian companies, business in the region is more familiar and accessible. Business relationships in the region are also heavily based on personal connections.\nMajor Southeast Asian Markets\nIndonesia\n- Top genres by downloads in Indonesia: simulators (+4.9% QoQ), platformers/runners (+38.2% QoQ), and arcade projects (+18% QoQ).\n- For revenue, MOBA (+32.7% QoQ), 4X strategy (+21.1% QoQ), and sports games (-22.6% QoQ) lead. Battle Royale shows significant growth (+50% QoQ).\n- New projects in Indonesia in Q1'25: Magic Chess: Go Go entered the download rankings, and Ragnarok M: Classic led in revenue.\nThailand\n- Top genres by downloads: simulators (-14.1% QoQ), platform",
-   "origin": "Sensor Tower",
-   "tier": "B",
-   "flags": [
-    "Số liệu của Sensor Tower, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc",
-    "Số của thị trường Indonesia, câu hỏi hỏi về Việt Nam"
-   ],
-   "excluded_by_user": false
-  },
-  {
-   "id": "C12",
-   "source_id": "S80418131",
-   "claim_text": "Doanh thu dòng game MOBA tại Philippines tăng 19% theo quý trong Q1 2025.",
-   "metric": "growth",
-   "value_text": "+19% QoQ",
-   "market": "Philippines",
-   "period": "Q1 2025 vs Q4 2024",
-   "scope": "mobile_iap",
-   "genre": "MOBA",
-   "genre_level": "genre",
-   "quote": "- For revenue, MMORPG (-19.7% QoQ), 4X strategies (+18.7% QoQ), and MOBA games (+19% QoQ) lead.",
-   "section_title": "Philippines",
-   "attributed_to": "Sensor Tower",
-   "criterion": 1,
-   "value": 19.0,
-   "unit": "%",
-   "verified": true,
-   "verify_note": "Đã tìm thấy câu trích trong nguồn",
-   "match_score": 100.0,
-   "page": null,
-   "context": "s (+3.2% QoQ), simulators (-6.7% QoQ), and other arcade games (+9.1% QoQ) lead in downloads. For revenue, 4X strategies (+51.5% QoQ), MMORPG (+8.2% QoQ), and Squad RPG (-1.8% QoQ) are on top.\n- Vietnam is a unique market for downloads. Roblox leads, and Trò Vẽ Vui Tuổi Thơ—a local casual game—leads download growth. Last War: Survival is also rapidly growing in downloads.\n- For revenue, Last War: Survival and local RPG Big Bang Thời Không are leaders.\nPhilippines\n- Top genres by downloads remain platformers/runners (+6.8% QoQ), simulators (+0.7% QoQ), and various arcade projects (+9.6% QoQ).\n- For revenue, MMORPG (-19.7% QoQ), 4X strategies (+18.7% QoQ), and MOBA games (+19% QoQ) lead.\n- The Philippine market is more dynamic than others. Five new projects entered the download rankings (Magic Chess: Go Go, Hapunan Horror Game, I Am Security, Good Coffee, Great Coffee, Color Game-co",
-   "origin": "Sensor Tower",
-   "tier": "B",
-   "flags": [
-    "Số liệu của Sensor Tower, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc",
-    "Số của thị trường Philippines, câu hỏi hỏi về Việt Nam"
-   ],
-   "excluded_by_user": false
-  },
-  {
-   "id": "C13",
-   "source_id": "Sfd8d5a99",
-   "claim_text": "Doanh thu IAP của subgenre MOBA trong danh mục Strategy tại Đông Nam Á trong Q1 2025 đạt mức tăng trưởng 20.1% so với quý trước.",
-   "metric": "growth",
-   "value_text": "+20.1%",
-   "market": "Southeast Asia",
-   "period": "Q1 2025 vs Q4 2024",
-   "scope": "mobile_iap",
-   "genre": "Strategy | MOBA",
-   "genre_level": "subgenre",
-   "quote": "Strategy | MOBA | +20.1% | Mobile Legends: Bang Bang",
-   "section_title": "Southeast Asia Top Subgenre by IAP Revenue",
-   "attributed_to": "Sensor Tower",
-   "criterion": 1,
-   "value": null,
-   "unit": "",
-   "verified": false,
-   "verify_note": "Không tìm thấy câu trích trong nguồn (đoạn giống nhất 74%)",
-   "match_score": 74.4,
-   "page": null,
-   "context": "",
-   "origin": "",
-   "tier": "D",
    "flags": [],
    "excluded_by_user": false
   },
   {
-   "id": "C14",
-   "source_id": "Sfd8d5a99",
-   "claim_text": "Quy mô doanh thu IAP của subgenre MOBA dẫn đầu tại Đông Nam Á trong Q1 2025 với game tiêu biểu Mobile Legends: Bang Bang.",
-   "metric": "revenue",
-   "value_text": "Mobile Legends: Bang Bang",
-   "market": "Southeast Asia",
-   "period": "Q1 2025",
-   "scope": "mobile_iap",
-   "genre": "Strategy | MOBA",
-   "genre_level": "subgenre",
-   "quote": "Strategy | MOBA | +20.1% | Mobile Legends: Bang Bang",
-   "section_title": "Southeast Asia Top Subgenre by IAP Revenue",
-   "attributed_to": "Sensor Tower",
-   "criterion": 0,
-   "value": null,
-   "unit": "",
-   "verified": false,
-   "verify_note": "Không tìm thấy câu trích trong nguồn (đoạn giống nhất 74%)",
-   "match_score": 74.4,
-   "page": null,
-   "context": "",
-   "origin": "",
-   "tier": "D",
-   "flags": [],
-   "excluded_by_user": false
-  },
-  {
-   "id": "C15",
-   "source_id": "Sfd8d5a99",
-   "claim_text": "Doanh thu dòng game Strategy | MOBA tại Việt Nam đạt mức tăng trưởng +15.8% trong Q1 2025 so với Q4 2024.",
-   "metric": "growth",
-   "value_text": "+15.8%",
-   "market": "Vietnam",
-   "period": "Q1 2025 vs Q4 2024",
-   "scope": "mobile",
-   "genre": "Strategy | MOBA",
-   "genre_level": "subgenre",
-   "quote": "Strategy | MOBA",
-   "section_title": "Vietnam Top Subgenre by Revenue",
-   "attributed_to": "Sensor Tower",
-   "criterion": 1,
-   "value": null,
-   "unit": "",
-   "verified": false,
-   "verify_note": "Câu trích quá ngắn để kiểm",
-   "match_score": 0.0,
-   "page": 12,
-   "context": "",
-   "origin": "",
-   "tier": "D",
-   "flags": [],
-   "excluded_by_user": false
-  },
-  {
-   "id": "C16",
-   "source_id": "Sfd8d5a99",
-   "claim_text": "Doanh thu dòng game Strategy | MOBA tại Philippines đạt mức tăng trưởng +19.0% trong Q1 2025 so với Q4 2024.",
-   "metric": "growth",
-   "value_text": "+19.0%",
-   "market": "Philippines",
-   "period": "Q1 2025 vs Q4 2024",
-   "scope": "mobile",
-   "genre": "Strategy | MOBA",
-   "genre_level": "subgenre",
-   "quote": "Strategy | MOBA",
-   "section_title": "Philippines Top Subgenre by Revenue",
-   "attributed_to": "Sensor Tower",
-   "criterion": 1,
-   "value": null,
-   "unit": "",
-   "verified": false,
-   "verify_note": "Câu trích quá ngắn để kiểm",
-   "match_score": 0.0,
-   "page": 12,
-   "context": "",
-   "origin": "",
-   "tier": "D",
-   "flags": [],
-   "excluded_by_user": false
-  },
-  {
-   "id": "C17",
+   "id": "C4",
    "source_id": "S93dbe345",
-   "claim_text": "Việt Nam có 3 công ty khởi nghiệp phát triển game MOBA trên thiết bị di động.",
+   "claim_text": "Việt Nam có 3 công ty khởi nghiệp phát triển game Mobile MOBA.",
    "metric": "other",
    "value_text": "3",
    "market": "Vietnam",
@@ -744,20 +374,20 @@
    "excluded_by_user": false
   },
   {
-   "id": "C18",
+   "id": "C5",
    "source_id": "S93dbe345",
-   "claim_text": "Các công ty khởi nghiệp phát triển game MOBA trên thiết bị di động tại Việt Nam đã nhận được tổng số vốn đầu tư là 2.14 triệu USD.",
-   "metric": "other",
+   "claim_text": "Các công ty khởi nghiệp phát triển game Mobile MOBA tại Việt Nam đã huy động được tổng số vốn là 2.14 triệu USD trong 10 năm qua.",
+   "metric": "revenue",
    "value_text": "$2.14M",
    "market": "Vietnam",
-   "period": "last 10 years",
+   "period": "2014-2024",
    "scope": "mobile",
    "genre": "MOBA",
    "genre_level": "genre",
    "quote": "| Vietnam | $2.14M |",
    "section_title": "Total funding across countries in Mobile MOBA Game Developers",
    "attributed_to": "",
-   "criterion": 2,
+   "criterion": 0,
    "value": null,
    "unit": "",
    "verified": false,
@@ -771,225 +401,182 @@
    "excluded_by_user": false
   },
   {
-   "id": "C19",
-   "source_id": "S73ca2bf7",
-   "claim_text": "Thị trường game di động toàn cầu được ước tính vượt 300 tỷ USD vào năm tới.",
+   "id": "C6",
+   "source_id": "S93dbe345",
+   "claim_text": "Tổng số vốn đầu tư vào các vòng gọi vốn ICO của mảng phát triển game Mobile MOBA là 2.14 triệu USD.",
    "metric": "revenue",
-   "value_text": "$300 billion",
-   "market": "Toàn cầu",
-   "period": "2024",
+   "value_text": "$2.14M",
+   "market": "Global",
+   "period": "2014-2024",
    "scope": "mobile",
-   "genre": "",
-   "genre_level": "all",
-   "quote": "the global mobile gaming market is estimated to exceed $300 billion next year, with an annual growth rate of over 7% in coming years.",
-   "section_title": "",
+   "genre": "MOBA",
+   "genre_level": "genre",
+   "quote": "| ICO | $2.14M |",
+   "section_title": "Total funding amount raised by stage in Mobile MOBA Game Developers",
    "attributed_to": "",
    "criterion": 0,
-   "value": 300000000000.0,
-   "unit": "USD",
-   "verified": true,
-   "verify_note": "Đã tìm thấy câu trích trong nguồn",
-   "match_score": 100.0,
-   "page": null,
-   "context": "Breaks Away From the US-Led World Order\n- Billionaire Desmarais Family Quietly Reshapes a Financial Empire\nBut when the first-ever Vietnam GameVerse Day was held in Ho Chi Minh City earlier this year, government officials were front and center promoting the country as the region's hottest market for entertainment apps development.\nHanoi now views mobile games as an export asset and a crucial part of its emerging technology sector, as it seeks to shift beyond being a center for outsourced software and sneaker factories. The change is also an acknowledgment of the industry's economic potential: the global mobile gaming market is estimated to exceed $300 billion next year, with an annual growth rate of over 7% in coming years.\nThe country ranked among the world's top five in mobile game production by downloads in the first half of 2023, according to data.ai. While Vietnam is one of the five Communist-ruled countries in th",
-   "origin": "finance.yahoo.com",
-   "tier": "D",
-   "flags": [
-    "Số của thị trường Toàn cầu, câu hỏi hỏi về Việt Nam",
-    "Số dự báo tại thời điểm đăng (nguồn đăng 08/2023, kỳ đo 2024): chưa chắc là số đã đo"
-   ],
-   "excluded_by_user": false
-  },
-  {
-   "id": "C20",
-   "source_id": "S73ca2bf7",
-   "claim_text": "Tốc độ tăng trưởng hàng năm của thị trường game di động toàn cầu đạt trên 7% trong những năm tới.",
-   "metric": "growth",
-   "value_text": "7%",
-   "market": "Toàn cầu",
-   "period": "coming years",
-   "scope": "mobile",
-   "genre": "",
-   "genre_level": "all",
-   "quote": "the global mobile gaming market is estimated to exceed $300 billion next year, with an annual growth rate of over 7% in coming years.",
-   "section_title": "",
-   "attributed_to": "",
-   "criterion": 1,
-   "value": 7.0,
-   "unit": "%",
-   "verified": true,
-   "verify_note": "Đã tìm thấy câu trích trong nguồn",
-   "match_score": 100.0,
-   "page": null,
-   "context": "Breaks Away From the US-Led World Order\n- Billionaire Desmarais Family Quietly Reshapes a Financial Empire\nBut when the first-ever Vietnam GameVerse Day was held in Ho Chi Minh City earlier this year, government officials were front and center promoting the country as the region's hottest market for entertainment apps development.\nHanoi now views mobile games as an export asset and a crucial part of its emerging technology sector, as it seeks to shift beyond being a center for outsourced software and sneaker factories. The change is also an acknowledgment of the industry's economic potential: the global mobile gaming market is estimated to exceed $300 billion next year, with an annual growth rate of over 7% in coming years.\nThe country ranked among the world's top five in mobile game production by downloads in the first half of 2023, according to data.ai. While Vietnam is one of the five Communist-ruled countries in th",
-   "origin": "finance.yahoo.com",
-   "tier": "D",
-   "flags": [
-    "Không xác định được kỳ đo",
-    "Số của thị trường Toàn cầu, câu hỏi hỏi về Việt Nam"
-   ],
-   "excluded_by_user": false
-  },
-  {
-   "id": "C21",
-   "source_id": "S73ca2bf7",
-   "claim_text": "Việt Nam xếp trong top 5 thế giới về sản xuất game di động tính theo lượt tải xuống trong nửa đầu năm 2023.",
-   "metric": "rank",
-   "value_text": "top five",
-   "market": "Vietnam",
-   "period": "H1 2023",
-   "scope": "mobile",
-   "genre": "",
-   "genre_level": "all",
-   "quote": "The country ranked among the world's top five in mobile game production by downloads in the first half of 2023, according to data.ai.",
-   "section_title": "",
-   "attributed_to": "data.ai",
-   "criterion": 2,
    "value": null,
    "unit": "",
    "verified": false,
-   "verify_note": "Giá trị \"top five\" không nằm trong câu trích",
-   "match_score": 100.0,
+   "verify_note": "Câu trích quá ngắn để kiểm",
+   "match_score": 0.0,
    "page": null,
    "context": "",
    "origin": "",
    "tier": "D",
    "flags": [],
    "excluded_by_user": false
+  },
+  {
+   "id": "C7",
+   "source_id": "S5b8ad5af",
+   "claim_text": "Thị trường game tại Việt Nam đạt quy mô GMV 1.8 tỷ USD vào năm 2025.",
+   "metric": "revenue",
+   "value_text": "$1.8B",
+   "market": "Việt Nam",
+   "period": "2025",
+   "scope": "mobile",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "| Vietnam | $1.8B | +33% | 88% | 100M |",
+   "section_title": "Country sizing and growth",
+   "attributed_to": "",
+   "criterion": 0,
+   "value": 1800000000.0,
+   "unit": "USD",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "ted mobile-first gaming region — 92% of regional gaming revenue comes from mobile in 2026, versus 71% global average. The market hit $13.4B GMV in 2025 and is projected to reach $16.6B in 2026. For wholesale distributors, SEA offers six distinct country markets with overlapping but specific payment-rail and platform-dominance patterns. Here's the breakdown.\nCountry sizing and growth\n| Country | 2025 GMV | YoY growth | Mobile share | Population |\n|---|---|---|---|---|\n| Indonesia | $5.2B | +22% | 95% | 280M |\n| Thailand | $2.4B | +18% | 91% | 71M |\n| Philippines | $2.1B | +25% | 96% | 117M |\n| Vietnam | $1.8B | +33% | 88% | 100M |\n| Malaysia | $1.1B | +19% | 92% | 34M |\n| Singapore | $0.8B | +14% | 85% | 6M |\n| Total | $13.4B | +24% blended | 92% avg | 608M |\nIndonesia is the gravitational centre at 40% of regional GMV. Viet",
+   "origin": "foxreload.com",
+   "tier": "C",
+   "flags": [],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C8",
+   "source_id": "S5b8ad5af",
+   "claim_text": "Tốc độ tăng trưởng YoY của thị trường game tại Việt Nam đạt +33% vào năm 2025.",
+   "metric": "growth",
+   "value_text": "+33%",
+   "market": "Việt Nam",
+   "period": "2025",
+   "scope": "mobile",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "| Vietnam | $1.8B | +33% | 88% | 100M |",
+   "section_title": "Country sizing and growth",
+   "attributed_to": "",
+   "criterion": 1,
+   "value": 33.0,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "ted mobile-first gaming region — 92% of regional gaming revenue comes from mobile in 2026, versus 71% global average. The market hit $13.4B GMV in 2025 and is projected to reach $16.6B in 2026. For wholesale distributors, SEA offers six distinct country markets with overlapping but specific payment-rail and platform-dominance patterns. Here's the breakdown.\nCountry sizing and growth\n| Country | 2025 GMV | YoY growth | Mobile share | Population |\n|---|---|---|---|---|\n| Indonesia | $5.2B | +22% | 95% | 280M |\n| Thailand | $2.4B | +18% | 91% | 71M |\n| Philippines | $2.1B | +25% | 96% | 117M |\n| Vietnam | $1.8B | +33% | 88% | 100M |\n| Malaysia | $1.1B | +19% | 92% | 34M |\n| Singapore | $0.8B | +14% | 85% | 6M |\n| Total | $13.4B | +24% blended | 92% avg | 608M |\nIndonesia is the gravitational centre at 40% of regional GMV. Viet",
+   "origin": "foxreload.com",
+   "tier": "C",
+   "flags": [],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C9",
+   "source_id": "S2786e0c6",
+   "claim_text": "Thị trường game Việt Nam được dự báo có tốc độ tăng trưởng CAGR 9,0% trong giai đoạn 2024–2027.",
+   "metric": "growth",
+   "value_text": "9.0%",
+   "market": "Việt Nam",
+   "period": "2024–2027",
+   "scope": "all_games",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "Vietnam’s game market had a 9.0% CAGR forecast 2024–2027 (Newzoo: market forecast figures by country)",
+   "section_title": "Market Size",
+   "attributed_to": "Newzoo",
+   "criterion": 1,
+   "value": 9.0,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "s and the regulatory context shaping what developers and platforms can do next.\nKey Takeaways\n- 3,000,000+ monthly active gamers estimated for Vietnam based on Newzoo’s 2023 country audience sizing (Vietnam has the largest online game audience in Southeast Asia after Indonesia)\n- 1.7 billion hours of game time were generated across tracked Vietnam titles in 2023 (as reported in data released by game intelligence provider data.ai for Vietnam’s mobile ecosystem)\n- 31% of Vietnam’s online gamers are female according to Newzoo’s 2023 gamer demographics dataset referenced in its country profiles\n- Vietnam’s game market had a 9.0% CAGR forecast 2024–2027 (Newzoo: market forecast figures by country)\n- 1.4x growth in Vietnam’s game market revenue from 2023 to 2024 (IDC Games/Entertainment ecosystem growth figures cited by a Vietnam market update)\n- $740 million in 2023 Vietnam consumer spend on ",
+   "origin": "Newzoo",
+   "tier": "C",
+   "flags": [
+    "Số liệu của Newzoo, dẫn lại qua gitnux.org; chưa đối chiếu bản gốc",
+    "Kỳ đo \"2024–2027\" kéo dài tới tương lai: một phần là số dự báo"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C10",
+   "source_id": "S2786e0c6",
+   "claim_text": "Doanh thu thị trường game Việt Nam ghi nhận mức tăng trưởng 1,4x từ năm 2023 đến 2024.",
+   "metric": "growth",
+   "value_text": "1.4x",
+   "market": "Việt Nam",
+   "period": "2023 to 2024",
+   "scope": "all_games",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "1.4x growth in Vietnam’s game market revenue from 2023 to 2024 (IDC Games/Entertainment ecosystem growth figures cited by a Vietnam market update)",
+   "section_title": "Market Size",
+   "attributed_to": "IDC Games/Entertainment",
+   "criterion": 1,
+   "value": 1.4,
+   "unit": "",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "0+ monthly active gamers estimated for Vietnam based on Newzoo’s 2023 country audience sizing (Vietnam has the largest online game audience in Southeast Asia after Indonesia)\n- 1.7 billion hours of game time were generated across tracked Vietnam titles in 2023 (as reported in data released by game intelligence provider data.ai for Vietnam’s mobile ecosystem)\n- 31% of Vietnam’s online gamers are female according to Newzoo’s 2023 gamer demographics dataset referenced in its country profiles\n- Vietnam’s game market had a 9.0% CAGR forecast 2024–2027 (Newzoo: market forecast figures by country)\n- 1.4x growth in Vietnam’s game market revenue from 2023 to 2024 (IDC Games/Entertainment ecosystem growth figures cited by a Vietnam market update)\n- $740 million in 2023 Vietnam consumer spend on mobile games (data.ai: Vietnam mobile gaming market summary)\n- Vietnam’s Decree 147/2020/NĐ-CP covers e-commerce activities; online gaming providers ",
+   "origin": "Newzoo",
+   "tier": "C",
+   "flags": [
+    "Số liệu của Newzoo, dẫn lại qua gitnux.org; chưa đối chiếu bản gốc"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C11",
+   "source_id": "S2786e0c6",
+   "claim_text": "Chi tiêu của người tiêu dùng Việt Nam cho game di động đạt 740 triệu USD trong năm 2023.",
+   "metric": "revenue",
+   "value_text": "$740 million",
+   "market": "Việt Nam",
+   "period": "2023",
+   "scope": "mobile",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "$740 million in 2023 Vietnam consumer spend on mobile games (data.ai: Vietnam mobile gaming market summary)",
+   "section_title": "Market Size",
+   "attributed_to": "data.ai",
+   "criterion": 0,
+   "value": 740000000.0,
+   "unit": "USD",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "st Asia after Indonesia)\n- 1.7 billion hours of game time were generated across tracked Vietnam titles in 2023 (as reported in data released by game intelligence provider data.ai for Vietnam’s mobile ecosystem)\n- 31% of Vietnam’s online gamers are female according to Newzoo’s 2023 gamer demographics dataset referenced in its country profiles\n- Vietnam’s game market had a 9.0% CAGR forecast 2024–2027 (Newzoo: market forecast figures by country)\n- 1.4x growth in Vietnam’s game market revenue from 2023 to 2024 (IDC Games/Entertainment ecosystem growth figures cited by a Vietnam market update)\n- $740 million in 2023 Vietnam consumer spend on mobile games (data.ai: Vietnam mobile gaming market summary)\n- Vietnam’s Decree 147/2020/NĐ-CP covers e-commerce activities; online gaming providers that operate as platforms must comply with platform responsibility clauses (legal basis stated in the decree t",
+   "origin": "data.ai",
+   "tier": "C",
+   "flags": [
+    "Số liệu của data.ai, dẫn lại qua gitnux.org; chưa đối chiếu bản gốc",
+    "Kỳ đo \"2023\" nằm ngoài khung thời gian của câu hỏi (câu hỏi về tương lai, dùng dữ liệu 24 tháng gần nhất)"
+   ],
+   "excluded_by_user": false
   }
  ],
  "findings": [
   {
    "key": "F1",
-   "label": "Lượt tải game mobile, Đông Nam Á, Q1 2025",
-   "claim_ids": [
-    "C1"
-   ],
-   "origins": [
-    "Sensor Tower"
-   ],
-   "values": [
-    1930000000.0
-   ],
-   "unit": "",
-   "status": "single",
-   "spread_pct": 0.0,
-   "confidence": "Trung bình",
-   "reasons": [
-    "Chỉ có một nguồn gốc (Sensor Tower, hạng A)"
-   ],
-   "newer": ""
-  },
-  {
-   "key": "F2",
-   "label": "Tăng trưởng game mobile, Đông Nam Á, Q1 2025 vs Q4 2024",
-   "claim_ids": [
-    "C2"
-   ],
-   "origins": [
-    "Sensor Tower"
-   ],
-   "values": [
-    3.0
-   ],
-   "unit": "%",
-   "status": "single",
-   "spread_pct": 0.0,
-   "confidence": "Trung bình",
-   "reasons": [
-    "Chỉ có một nguồn gốc (Sensor Tower, hạng A)"
-   ],
-   "newer": ""
-  },
-  {
-   "key": "F3",
-   "label": "Doanh thu IAP game mobile, Đông Nam Á, Q1 2025",
-   "claim_ids": [
-    "C3"
-   ],
-   "origins": [
-    "Sensor Tower"
-   ],
-   "values": [
-    625000000.0
-   ],
-   "unit": "USD",
-   "status": "single",
-   "spread_pct": 0.0,
-   "confidence": "Trung bình",
-   "reasons": [
-    "Chỉ có một nguồn gốc (Sensor Tower, hạng A)"
-   ],
-   "newer": ""
-  },
-  {
-   "key": "F4",
-   "label": "Lượt tải game mobile, Indonesia, Q1 2025",
-   "claim_ids": [
-    "C4"
-   ],
-   "origins": [
-    "Sensor Tower"
-   ],
-   "values": [
-    870000000.0
-   ],
-   "unit": "",
-   "status": "single",
-   "spread_pct": 0.0,
-   "confidence": "Trung bình",
-   "reasons": [
-    "Chỉ có một nguồn gốc (Sensor Tower, hạng A)"
-   ],
-   "newer": ""
-  },
-  {
-   "key": "F5",
-   "label": "Tăng trưởng game mobile, Indonesia, Q1 2025 vs Q4 2024",
-   "claim_ids": [
-    "C5"
-   ],
-   "origins": [
-    "Sensor Tower"
-   ],
-   "values": [
-    9.0
-   ],
-   "unit": "%",
-   "status": "single",
-   "spread_pct": 0.0,
-   "confidence": "Trung bình",
-   "reasons": [
-    "Chỉ có một nguồn gốc (Sensor Tower, hạng A)"
-   ],
-   "newer": ""
-  },
-  {
-   "key": "F6",
-   "label": "Lượt tải game mobile, Philippines, Q1 2025",
-   "claim_ids": [
-    "C6"
-   ],
-   "origins": [
-    "Sensor Tower"
-   ],
-   "values": [
-    366000000.0
-   ],
-   "unit": "",
-   "status": "single",
-   "spread_pct": 0.0,
-   "confidence": "Trung bình",
-   "reasons": [
-    "Chỉ có một nguồn gốc (Sensor Tower, hạng A)"
-   ],
-   "newer": ""
-  },
-  {
-   "key": "F7",
    "label": "Lượt tải game mobile, Việt Nam, Q1 2025",
    "claim_ids": [
-    "C7"
+    "C1"
    ],
    "origins": [
     "Sensor Tower"
@@ -1007,10 +594,10 @@
    "newer": ""
   },
   {
-   "key": "F8",
+   "key": "F2",
    "label": "Doanh thu IAP game mobile, Thái Lan, Q1 2025",
    "claim_ids": [
-    "C8"
+    "C2"
    ],
    "origins": [
     "Sensor Tower"
@@ -1028,100 +615,37 @@
    "newer": ""
   },
   {
-   "key": "F9",
-   "label": "Lượt tải game mobile, Đông Nam Á, 2024",
+   "key": "F3",
+   "label": "Tăng trưởng phạm vi chưa rõ, Việt Nam, 2025 vs 2024",
    "claim_ids": [
-    "C9"
+    "C3"
    ],
    "origins": [
-    "Sensor Tower"
+    "gamedevreports.substack.com"
    ],
    "values": [
-    5800000000.0
-   ],
-   "unit": "",
-   "status": "single",
-   "spread_pct": 0.0,
-   "confidence": "Trung bình",
-   "reasons": [
-    "Chỉ có một nguồn gốc (Sensor Tower, hạng A)"
-   ],
-   "newer": ""
-  },
-  {
-   "key": "F10",
-   "label": "Tăng trưởng IAP game mobile, MOBA, Đông Nam Á, Q1 2025 vs Q4 2024",
-   "claim_ids": [
-    "C10"
-   ],
-   "origins": [
-    "Sensor Tower"
-   ],
-   "values": [
-    20.1
+    12.0
    ],
    "unit": "%",
    "status": "single",
    "spread_pct": 0.0,
    "confidence": "Trung bình",
    "reasons": [
-    "Chỉ có một nguồn gốc (Sensor Tower, hạng B)"
+    "Chỉ có một nguồn gốc (gamedevreports.substack.com, hạng B)"
    ],
    "newer": ""
   },
   {
-   "key": "F11",
-   "label": "Tăng trưởng IAP game mobile, MOBA, Indonesia, Q1 2025 vs Q4 2024",
+   "key": "F4",
+   "label": "Doanh thu game mobile, Việt Nam, 2025",
    "claim_ids": [
-    "C11"
+    "C7"
    ],
    "origins": [
-    "Sensor Tower"
+    "foxreload.com"
    ],
    "values": [
-    32.7
-   ],
-   "unit": "%",
-   "status": "single",
-   "spread_pct": 0.0,
-   "confidence": "Trung bình",
-   "reasons": [
-    "Chỉ có một nguồn gốc (Sensor Tower, hạng B)"
-   ],
-   "newer": ""
-  },
-  {
-   "key": "F12",
-   "label": "Tăng trưởng IAP game mobile, MOBA, Philippines, Q1 2025 vs Q4 2024",
-   "claim_ids": [
-    "C12"
-   ],
-   "origins": [
-    "Sensor Tower"
-   ],
-   "values": [
-    19.0
-   ],
-   "unit": "%",
-   "status": "single",
-   "spread_pct": 0.0,
-   "confidence": "Trung bình",
-   "reasons": [
-    "Chỉ có một nguồn gốc (Sensor Tower, hạng B)"
-   ],
-   "newer": ""
-  },
-  {
-   "key": "F13",
-   "label": "Doanh thu game mobile, Toàn cầu, 2024",
-   "claim_ids": [
-    "C19"
-   ],
-   "origins": [
-    "finance.yahoo.com"
-   ],
-   "values": [
-    300000000000.0
+    1800000000.0
    ],
    "unit": "USD",
    "status": "single",
@@ -1133,16 +657,16 @@
    "newer": ""
   },
   {
-   "key": "F14",
-   "label": "Tăng trưởng game mobile, Toàn cầu, coming years",
+   "key": "F5",
+   "label": "Tăng trưởng game mobile, Việt Nam, 2025",
    "claim_ids": [
-    "C20"
+    "C8"
    ],
    "origins": [
-    "finance.yahoo.com"
+    "foxreload.com"
    ],
    "values": [
-    7.0
+    33.0
    ],
    "unit": "%",
    "status": "single",
@@ -1152,68 +676,122 @@
     "Chỉ có nguồn hạng C hoặc D"
    ],
    "newer": ""
+  },
+  {
+   "key": "F6",
+   "label": "Tăng trưởng toàn ngành game, Việt Nam, 2024–2027",
+   "claim_ids": [
+    "C9"
+   ],
+   "origins": [
+    "Newzoo"
+   ],
+   "values": [
+    9.0
+   ],
+   "unit": "%",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Thấp",
+   "reasons": [
+    "Chỉ có nguồn hạng C hoặc D"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F7",
+   "label": "Tăng trưởng toàn ngành game, Việt Nam, 2023 to 2024",
+   "claim_ids": [
+    "C10"
+   ],
+   "origins": [
+    "Newzoo"
+   ],
+   "values": [
+    1.4
+   ],
+   "unit": "",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Thấp",
+   "reasons": [
+    "Chỉ có nguồn hạng C hoặc D"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F8",
+   "label": "Doanh thu game mobile, Việt Nam, 2023",
+   "claim_ids": [
+    "C11"
+   ],
+   "origins": [
+    "data.ai"
+   ],
+   "values": [
+    740000000.0
+   ],
+   "unit": "USD",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Thấp",
+   "reasons": [
+    "Chỉ có nguồn hạng C hoặc D"
+   ],
+   "newer": "F4"
   }
  ],
  "brief": {
   "decision": "Cần thêm dữ liệu",
-  "summary": "Hiện chưa đủ dữ liệu để quyết định có nên phát hành game MOBA trên mobile tại Việt Nam trong 12 tháng tới hay không. Mặc dù dữ liệu ghi nhận thị trường Việt Nam đạt 329 triệu lượt tải game di động trong quý 1 năm 2025, nhưng các tiêu chí quan trọng về quy mô thị phần riêng dòng game MOBA tại Việt Nam và mức độ cạnh tranh của các đối thủ hiện tại vẫn chưa có số liệu.",
+  "summary": "Hiện chưa đủ dữ liệu để quyết định phát hành game MOBA trên mobile tại Việt Nam trong 12 tháng tới do thiếu thông tin về mức độ cạnh tranh của dòng game này. Các dữ liệu về quy mô và tăng trưởng chung của thị trường game di động có thể tin cậy ở mức trung bình và thấp.",
   "reasons": [
    {
-    "text": "Thị trường Việt Nam đạt 329 triệu lượt tải game di động trong quý 1 năm 2025 theo nguồn Sensor Tower hạng A.",
+    "text": "Việt Nam đạt 329 triệu lượt tải xuống trong Q1 2025, phản ánh quy mô thị trường có độ tin cậy trung bình từ nguồn Sensor Tower.",
     "claim_ids": [
-     "C7"
+     "C1"
     ],
     "status": "trusted"
    },
    {
-    "text": "Dữ liệu về quy mô thị phần và tốc độ tăng trưởng của riêng dòng game MOBA tại Việt Nam hiện chưa có, trong khi các số liệu MOBA sẵn có lại thuộc về các thị trường khác như Đông Nam Á, Indonesia hay Philippines.",
+    "text": "Việt Nam ghi nhận mức tăng trưởng lượng tải ứng dụng đạt 12% YoY trong năm 2025 theo nguồn gamedevreports.substack.com.",
     "claim_ids": [
-     "C10",
-     "C11",
-     "C12"
+     "C3"
+    ],
+    "status": "trusted"
+   },
+   {
+    "text": "Thị trường game tại Việt Nam đạt quy mô GMV 1.8 tỷ USD vào năm 2025, tuy nhiên đây là số liệu chưa chắc chắn do chỉ có nguồn hạng C.",
+    "claim_ids": [
+     "C7"
+    ],
+    "status": "uncertain"
+   },
+   {
+    "text": "Tốc độ tăng trưởng YoY của thị trường game tại Việt Nam đạt +33% vào năm 2025 theo nguồn hạng C, thuộc nhóm chưa chắc chắn.",
+    "claim_ids": [
+     "C8"
     ],
     "status": "uncertain"
    }
   ],
   "what_would_change": [
-   "Số liệu thống kê cụ thể về quy mô thị phần và tốc độ tăng trưởng của dòng game MOBA tại riêng thị trường Việt Nam.",
-   "Báo cáo chi tiết về mức độ cạnh tranh, thị phần và sự thống lĩnh của các đối thủ lớn đang vận hành game MOBA tại Việt Nam."
+   "Có số liệu chi tiết về mức độ cạnh tranh trong nhóm game MOBA dẫn đầu tại thị trường Việt Nam.",
+   "Có dữ liệu doanh thu cụ thể và đáng tin cậy dành riêng cho phân khúc game MOBA trên mobile."
   ],
   "confidence": "Trung bình",
   "gaps": [
-   "Mức độ cạnh tranh và thống lĩnh của các đối thủ hiện tại"
+   "Mức độ cạnh tranh trong nhóm game MOBA dẫn đầu"
   ],
   "conflicts": [],
   "definition_notes": [
-   "Lượt tải Đông Nam Á: 1,93 tỷ (game mobile, Q1 2025; Sensor Tower); 5,8 tỷ (game mobile, 2024; Sensor Tower). Các số này khác kỳ đo hoặc phạm vi đo nên không so trực tiếp được."
+   "Doanh thu Việt Nam: 1,8 tỷ USD (game mobile, 2025; foxreload.com); 740 triệu USD (game mobile, 2023; data.ai). Các số này khác kỳ đo hoặc phạm vi đo nên không so trực tiếp được."
   ],
-  "guard_log": [
-   "Bỏ lý do không gắn mã nhận định hợp lệ: \"Thiếu hoàn toàn dữ liệu về mức độ cạnh tranh và sự thống lĩnh của các đối thủ hiện tại trong phân khúc game MOBA tại thị trường Việt Nam.\""
-  ],
+  "guard_log": [],
   "trusted": [
    {
-    "finding": "F7",
+    "finding": "F1",
     "label": "Lượt tải game mobile, Việt Nam, Q1 2025",
     "values": "329 triệu",
-    "origins": [
-     "Sensor Tower"
-    ],
-    "confidence": "Trung bình",
-    "claim_ids": [
-     "C7"
-    ],
-    "why": [
-     "Chỉ có một nguồn gốc (Sensor Tower, hạng A)"
-    ],
-    "notes": []
-   }
-  ],
-  "uncertain": [],
-  "other": [
-   {
-    "finding": "F1",
-    "label": "Lượt tải game mobile, Đông Nam Á, Q1 2025",
-    "values": "1,93 tỷ",
     "origins": [
      "Sensor Tower"
     ],
@@ -1222,13 +800,168 @@
      "C1"
     ],
     "why": [
-     "Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam"
+     "Chỉ có một nguồn gốc (Sensor Tower, hạng A)"
+    ],
+    "notes": []
+   },
+   {
+    "finding": "F3",
+    "label": "Tăng trưởng phạm vi chưa rõ, Việt Nam, 2025 vs 2024",
+    "values": "+12,0%",
+    "origins": [
+     "gamedevreports.substack.com"
+    ],
+    "confidence": "Trung bình",
+    "claim_ids": [
+     "C3"
+    ],
+    "why": [
+     "Chỉ có một nguồn gốc (gamedevreports.substack.com, hạng B)"
+    ],
+    "notes": []
+   }
+  ],
+  "uncertain": [
+   {
+    "finding": "F4",
+    "label": "Doanh thu game mobile, Việt Nam, 2025",
+    "values": "1,8 tỷ USD",
+    "origins": [
+     "foxreload.com"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C7"
+    ],
+    "why": [
+     "Chỉ có nguồn hạng C hoặc D"
+    ],
+    "next_steps": [
+     {
+      "text": "Tìm nguồn hạng A/B (hãng dữ liệu, báo chuyên ngành) cho chỉ số này",
+      "query": "Vietnam mobile games revenue 2025 Sensor Tower Newzoo Niko Partners",
+      "ask": "",
+      "url": "",
+      "findings": [
+       "F4"
+      ]
+     }
     ]
    },
    {
+    "finding": "F5",
+    "label": "Tăng trưởng game mobile, Việt Nam, 2025",
+    "values": "+33,0%",
+    "origins": [
+     "foxreload.com"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C8"
+    ],
+    "why": [
+     "Chỉ có nguồn hạng C hoặc D"
+    ],
+    "next_steps": [
+     {
+      "text": "Tìm nguồn hạng A/B (hãng dữ liệu, báo chuyên ngành) cho chỉ số này",
+      "query": "Vietnam mobile games revenue growth 2025 Sensor Tower Newzoo Niko Partners",
+      "ask": "",
+      "url": "",
+      "findings": [
+       "F5"
+      ]
+     }
+    ]
+   },
+   {
+    "finding": "F6",
+    "label": "Tăng trưởng toàn ngành game, Việt Nam, 2024–2027",
+    "values": "+9,0%",
+    "origins": [
+     "Newzoo"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C9"
+    ],
+    "why": [
+     "Chỉ có nguồn hạng C hoặc D",
+     "Kỳ đo \"2024–2027\" kéo dài tới tương lai: một phần là số dự báo",
+     "Số của Newzoo dẫn lại qua bài viết, chưa đối chiếu bản gốc"
+    ],
+    "next_steps": [
+     {
+      "text": "Tìm nguồn hạng A/B (hãng dữ liệu, báo chuyên ngành) cho chỉ số này",
+      "query": "Vietnam games market revenue growth 2024–2027 Sensor Tower Newzoo Niko Partners",
+      "ask": "",
+      "url": "",
+      "findings": [
+       "F6"
+      ]
+     },
+     {
+      "text": "Đối chiếu bản gốc của Newzoo trên newzoo.com",
+      "query": "Newzoo Vietnam games market revenue growth 2024–2027",
+      "ask": "",
+      "url": "",
+      "findings": [
+       "F6"
+      ]
+     },
+     {
+      "text": "Tìm số đã đo thay cho số dự báo",
+      "query": "Vietnam games market revenue growth 2024–2027 actual",
+      "ask": "",
+      "url": "",
+      "findings": [
+       "F6"
+      ]
+     }
+    ]
+   },
+   {
+    "finding": "F7",
+    "label": "Tăng trưởng toàn ngành game, Việt Nam, 2023 to 2024",
+    "values": "1.4",
+    "origins": [
+     "Newzoo"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C10"
+    ],
+    "why": [
+     "Chỉ có nguồn hạng C hoặc D",
+     "Số của Newzoo dẫn lại qua bài viết, chưa đối chiếu bản gốc"
+    ],
+    "next_steps": [
+     {
+      "text": "Tìm nguồn hạng A/B (hãng dữ liệu, báo chuyên ngành) cho chỉ số này",
+      "query": "Vietnam games market revenue growth 2023 to 2024 Sensor Tower Newzoo Niko Partners",
+      "ask": "",
+      "url": "",
+      "findings": [
+       "F7"
+      ]
+     },
+     {
+      "text": "Đối chiếu bản gốc của Newzoo trên newzoo.com",
+      "query": "Newzoo Vietnam games market revenue growth 2023 to 2024",
+      "ask": "",
+      "url": "",
+      "findings": [
+       "F7"
+      ]
+     }
+    ]
+   }
+  ],
+  "other": [
+   {
     "finding": "F2",
-    "label": "Tăng trưởng game mobile, Đông Nam Á, Q1 2025 vs Q4 2024",
-    "values": "+3,0%",
+    "label": "Doanh thu IAP game mobile, Thái Lan, Q1 2025",
+    "values": "162 triệu USD",
     "origins": [
      "Sensor Tower"
     ],
@@ -1237,194 +970,82 @@
      "C2"
     ],
     "why": [
-     "Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam"
-    ]
-   },
-   {
-    "finding": "F3",
-    "label": "Doanh thu IAP game mobile, Đông Nam Á, Q1 2025",
-    "values": "625 triệu USD",
-    "origins": [
-     "Sensor Tower"
-    ],
-    "confidence": "Trung bình",
-    "claim_ids": [
-     "C3"
-    ],
-    "why": [
-     "Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam"
-    ]
-   },
-   {
-    "finding": "F4",
-    "label": "Lượt tải game mobile, Indonesia, Q1 2025",
-    "values": "870 triệu",
-    "origins": [
-     "Sensor Tower"
-    ],
-    "confidence": "Trung bình",
-    "claim_ids": [
-     "C4"
-    ],
-    "why": [
-     "Số của thị trường Indonesia, câu hỏi hỏi về Việt Nam"
-    ]
-   },
-   {
-    "finding": "F5",
-    "label": "Tăng trưởng game mobile, Indonesia, Q1 2025 vs Q4 2024",
-    "values": "+9,0%",
-    "origins": [
-     "Sensor Tower"
-    ],
-    "confidence": "Trung bình",
-    "claim_ids": [
-     "C5"
-    ],
-    "why": [
-     "Số của thị trường Indonesia, câu hỏi hỏi về Việt Nam"
-    ]
-   },
-   {
-    "finding": "F6",
-    "label": "Lượt tải game mobile, Philippines, Q1 2025",
-    "values": "366 triệu",
-    "origins": [
-     "Sensor Tower"
-    ],
-    "confidence": "Trung bình",
-    "claim_ids": [
-     "C6"
-    ],
-    "why": [
-     "Số của thị trường Philippines, câu hỏi hỏi về Việt Nam"
-    ]
-   },
-   {
-    "finding": "F8",
-    "label": "Doanh thu IAP game mobile, Thái Lan, Q1 2025",
-    "values": "162 triệu USD",
-    "origins": [
-     "Sensor Tower"
-    ],
-    "confidence": "Trung bình",
-    "claim_ids": [
-     "C8"
-    ],
-    "why": [
      "Số của thị trường Thái Lan, câu hỏi hỏi về Việt Nam"
     ]
    },
    {
-    "finding": "F9",
-    "label": "Lượt tải game mobile, Đông Nam Á, 2024",
-    "values": "5,8 tỷ",
+    "finding": "F8",
+    "label": "Doanh thu game mobile, Việt Nam, 2023",
+    "values": "740 triệu USD",
     "origins": [
-     "Sensor Tower"
+     "data.ai"
     ],
-    "confidence": "Trung bình",
-    "claim_ids": [
-     "C9"
-    ],
-    "why": [
-     "Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam"
-    ]
-   },
-   {
-    "finding": "F10",
-    "label": "Tăng trưởng IAP game mobile, MOBA, Đông Nam Á, Q1 2025 vs Q4 2024",
-    "values": "+20,1%",
-    "origins": [
-     "Sensor Tower"
-    ],
-    "confidence": "Trung bình",
-    "claim_ids": [
-     "C10"
-    ],
-    "why": [
-     "Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam"
-    ]
-   },
-   {
-    "finding": "F11",
-    "label": "Tăng trưởng IAP game mobile, MOBA, Indonesia, Q1 2025 vs Q4 2024",
-    "values": "+32,7%",
-    "origins": [
-     "Sensor Tower"
-    ],
-    "confidence": "Trung bình",
+    "confidence": "Thấp",
     "claim_ids": [
      "C11"
     ],
     "why": [
-     "Số của thị trường Indonesia, câu hỏi hỏi về Việt Nam"
-    ]
-   },
-   {
-    "finding": "F12",
-    "label": "Tăng trưởng IAP game mobile, MOBA, Philippines, Q1 2025 vs Q4 2024",
-    "values": "+19,0%",
-    "origins": [
-     "Sensor Tower"
-    ],
-    "confidence": "Trung bình",
-    "claim_ids": [
-     "C12"
-    ],
-    "why": [
-     "Số của thị trường Philippines, câu hỏi hỏi về Việt Nam"
-    ]
-   },
-   {
-    "finding": "F13",
-    "label": "Doanh thu game mobile, Toàn cầu, 2024",
-    "values": "300 tỷ USD",
-    "origins": [
-     "finance.yahoo.com"
-    ],
-    "confidence": "Thấp",
-    "claim_ids": [
-     "C19"
-    ],
-    "why": [
-     "Số của thị trường Toàn cầu, câu hỏi hỏi về Việt Nam"
-    ]
-   },
-   {
-    "finding": "F14",
-    "label": "Tăng trưởng game mobile, Toàn cầu, coming years",
-    "values": "+7,0%",
-    "origins": [
-     "finance.yahoo.com"
-    ],
-    "confidence": "Thấp",
-    "claim_ids": [
-     "C20"
-    ],
-    "why": [
-     "Số của thị trường Toàn cầu, câu hỏi hỏi về Việt Nam"
+     "Đã có số mới hơn cho cùng chỉ số (F4)"
     ]
    }
   ],
   "next_steps": [
    {
-    "text": "Chưa có dữ liệu đã kiểm cho tiêu chí \"Mức độ cạnh tranh và thống lĩnh của các đối thủ hiện tại\"",
-    "query": "",
-    "ask": "Tìm số liệu cho tiêu chí: Mức độ cạnh tranh và thống lĩnh của các đối thủ hiện tại",
+    "text": "Tìm nguồn hạng A/B (hãng dữ liệu, báo chuyên ngành) cho chỉ số này",
+    "query": "Vietnam mobile games revenue 2025 Sensor Tower Newzoo Niko Partners",
+    "ask": "",
     "url": "",
+    "findings": [
+     "F4",
+     "F5",
+     "F6",
+     "F7"
+    ]
+   },
+   {
+    "text": "Đối chiếu bản gốc của Newzoo trên newzoo.com",
+    "query": "Newzoo Vietnam games market revenue growth 2024–2027",
+    "ask": "",
+    "url": "",
+    "findings": [
+     "F6",
+     "F7"
+    ]
+   },
+   {
+    "text": "Tìm số đã đo thay cho số dự báo",
+    "query": "Vietnam games market revenue growth 2024–2027 actual",
+    "ask": "",
+    "url": "",
+    "findings": [
+     "F6"
+    ]
+   },
+   {
+    "text": "Chưa có dữ liệu đã kiểm cho tiêu chí \"Mức độ cạnh tranh trong nhóm game MOBA dẫn đầu\"",
+    "query": "",
+    "ask": "Tìm số liệu cho tiêu chí: Mức độ cạnh tranh trong nhóm game MOBA dẫn đầu",
+    "url": "",
+    "findings": []
+   },
+   {
+    "text": "3 con số ở \"Mobile MOBA Game Developers - 2026 Market & Investments Trends - Tracxn\" chưa kiểm được vì câu trích chỉ có con số hoặc nhãn bị ghép với số (thường là biểu đồ): mở để đọc trực tiếp",
+    "query": "",
+    "ask": "",
+    "url": "https://tracxn.com/d/trending-business-models/startups-in-mobile-moba-game-developers/__Cd6hKZ-76B4z9EbOKzETE0IaRsZMngGzQrOCWRFZRGA#:~:text=Vietnam%203",
     "findings": []
    }
   ]
  },
  "stats": {
-  "sources_read": 6,
-  "sources_failed": 2,
-  "claims": 21,
-  "verified": 14,
-  "rejected": 7,
+  "sources_read": 7,
+  "sources_failed": 1,
+  "claims": 11,
+  "verified": 8,
+  "rejected": 3,
   "carried": 0,
-  "llm_calls": 10,
-  "seconds": 41.6,
+  "llm_calls": 12,
+  "seconds": 48.7,
   "model": "gemini/gemini-3.5-flash-lite",
   "search": "Tavily"
  }

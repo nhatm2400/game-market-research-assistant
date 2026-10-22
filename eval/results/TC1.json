@@ -1,24 +1,24 @@
 {
- "id": "b289d3885d",
- "created_at": "2026-10-22T10:24:21",
+ "id": "c94fa439d8",
+ "created_at": "2026-10-22T10:35:42",
  "question": "Doanh thu IAP game mobile Đông Nam Á quý 1/2025 là bao nhiêu?",
  "parent_id": null,
  "thread": [
   {
-   "id": "b289d3885d",
+   "id": "c94fa439d8",
    "question": "Doanh thu IAP game mobile Đông Nam Á quý 1/2025 là bao nhiêu?"
   }
  ],
  "today": "2026-10-22",
  "plan": {
   "criteria": [
-   "Doanh thu IAP game mobile Đông Nam Á quý 1 2025"
+   "Doanh thu IAP game mobile Đông Nam Á quý 1/2025"
   ],
   "queries": [
    "Southeast Asia mobile game IAP revenue Q1 2025 Sensor Tower",
-   "SEA mobile games market revenue Q1 2025 data.ai AppMagic",
-   "Southeast Asia gaming market Q1 2025 revenue report Newzoo",
-   "mobile games in-app purchase revenue Southeast Asia first quarter 2025 Niko Partners"
+   "SEA mobile gaming market revenue Q1 2025 data.ai AppMagic",
+   "Southeast Asia mobile games quarterly revenue Q1 2025 report Newzoo",
+   "SEA mobile app revenue Q1 2025 Niko Partners"
   ],
   "market": "Đông Nam Á",
   "genre": ""
@@ -72,7 +72,7 @@
   {
    "id": "C1",
    "source_id": "Sb4dc9f66",
-   "claim_text": "Doanh thu IAP game mobile tại Đông Nam Á đạt 625 triệu USD trong quý 1 2025.",
+   "claim_text": "Doanh thu IAP game mobile tại Đông Nam Á trong quý 1/2025 là 625 triệu USD.",
    "metric": "revenue",
    "value_text": "$625 million",
    "market": "Đông Nam Á",
@@ -81,7 +81,7 @@
    "genre": "",
    "genre_level": "all",
    "quote": "While SEA currently ranks seventh globally in in-app purchase (IAP) revenue at $625 million in Q1 2025, this figure signals significant untapped monetization potential.",
-   "section_title": "",
+   "section_title": "Southeast Asian Mobile Game Market Insights 2025",
    "attributed_to": "Sensor Tower",
    "criterion": 0,
    "value": 625000000.0,
@@ -99,15 +99,15 @@
   {
    "id": "C2",
    "source_id": "S80418131",
-   "claim_text": "Doanh thu IAP game mobile tại Đông Nam Á trong quý 1/2025 là 625 triệu USD.",
+   "claim_text": "Người dùng Đông Nam Á đã chi 625 triệu USD cho game trong quý 1 năm 2025 (IAP), tăng 1% so với quý trước.",
    "metric": "revenue",
    "value_text": "$625 million",
    "market": "Đông Nam Á",
-   "period": "Q1 2025",
+   "period": "Q1 2025 vs Q4 2024",
    "scope": "mobile_iap",
    "genre": "",
    "genre_level": "all",
-   "quote": "Southeast Asian users spent $625 million on games in Q1'25, up 1% QoQ. This is the seventh-highest figure worldwide, and again, it’s a region being compared to individual countries.",
+   "quote": "Southeast Asian users spent $625 million on games in Q1'25, up 1% QoQ.",
    "section_title": "General Market Overview",
    "attributed_to": "Sensor Tower",
    "criterion": 0,
@@ -117,7 +117,7 @@
    "verify_note": "Đã tìm thấy câu trích trong nguồn",
    "match_score": 100.0,
    "page": null,
-   "context": "General Market Overview\n- In Q1'25, the region ranked second globally by downloads, accounting for 1.93 billion installs. This represents a 3% quarter-over-quarter increase.\n❗️However, Sensor Tower is being a bit misleading here—comparing a region to individual countries isn’t entirely accurate.\n- Southeast Asian users spent $625 million on games in Q1'25, up 1% QoQ. This is the seventh-highest figure worldwide, and again, it’s a region being compared to individual countries.\n- Indonesia leads Southeast Asia in downloads. In Q1'25, Indonesians downloaded games 870 million times (+9% QoQ). The Philippines is second with 366 million installs (-1% QoQ), and Vietnam is third",
+   "context": "General Market Overview\n- In Q1'25, the region ranked second globally by downloads, accounting for 1.93 billion installs. This represents a 3% quarter-over-quarter increase.\n❗️However, Sensor Tower is being a bit misleading here—comparing a region to individual countries isn’t entirely accurate.\n- Southeast Asian users spent $625 million on games in Q1'25, up 1% QoQ. This is the seventh-highest figure worldwide, and again, it’s a region being compared to individual countries.\n- Indonesia leads Southeast Asia in downloads. In Q1'25, Indonesians downloaded games 8",
    "origin": "Sensor Tower",
    "tier": "B",
    "flags": [
@@ -131,7 +131,27 @@
    "key": "F1",
    "label": "Doanh thu IAP game mobile, Đông Nam Á, Q1 2025",
    "claim_ids": [
-    "C1",
+    "C1"
+   ],
+   "origins": [
+    "Sensor Tower"
+   ],
+   "values": [
+    625000000.0
+   ],
+   "unit": "USD",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Trung bình",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Sensor Tower, hạng A)"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F2",
+   "label": "Doanh thu IAP game mobile, Đông Nam Á, Q1 2025 vs Q4 2024",
+   "claim_ids": [
     "C2"
    ],
    "origins": [
@@ -145,25 +165,31 @@
    "spread_pct": 0.0,
    "confidence": "Trung bình",
    "reasons": [
-    "Chỉ có một nguồn gốc (Sensor Tower, hạng A)",
-    "2 bài viết nhưng chỉ 1 nguồn gốc"
+    "Chỉ có một nguồn gốc (Sensor Tower, hạng B)"
    ],
    "newer": ""
   }
  ],
  "brief": {
   "decision": "Đã có câu trả lời",
-  "summary": "Doanh thu IAP game mobile tại Đông Nam Á trong quý 1 2025 đạt 625 triệu USD dựa trên nguồn Sensor Tower. Tuy nhiên, số liệu này cần lưu ý do chưa đối chiếu trực tiếp bản gốc.",
+  "summary": "Doanh thu IAP game mobile tại Đông Nam Á trong quý 1/2025 đạt 625 triệu USD theo dữ liệu từ Sensor Tower. Số liệu này có thể tin cậy nhưng cần lưu ý một số nguồn được dẫn lại qua bên thứ ba chưa đối chiếu bản gốc.",
   "reasons": [
    {
-    "text": "Doanh thu IAP game mobile tại Đông Nam Á đạt 625 triệu USD trong quý 1 2025 theo nguồn Sensor Tower hạng A.",
+    "text": "Doanh thu IAP game mobile tại Đông Nam Á trong quý 1/2025 đạt 625 triệu USD theo nguồn Sensor Tower hạng A.",
     "claim_ids": [
      "C1"
     ],
     "status": "trusted"
    },
    {
-    "text": "Số liệu 625 triệu USD trong quý 1/2025 cũng được ghi nhận qua nguồn Sensor Tower hạng B nhưng có cảnh báo là dẫn lại qua bài viết và chưa đối chiếu bản gốc.",
+    "text": "Người dùng Đông Nam Á đã chi 625 triệu USD cho game qua IAP trong quý 1 năm 2025, tăng 1% so với quý trước.",
+    "claim_ids": [
+     "C2"
+    ],
+    "status": "trusted"
+   },
+   {
+    "text": "Số liệu của Sensor Tower được dẫn lại qua gamedevreports.substack.com và chưa được đối chiếu bản gốc.",
     "claim_ids": [
      "C2"
     ],
@@ -171,13 +197,15 @@
    }
   ],
   "what_would_change": [
-   "Có báo cáo gốc từ Sensor Tower để đối chiếu trực tiếp",
-   "Có thêm số liệu từ các đơn vị nghiên cứu thị trường khác ngoài Sensor Tower để so sánh"
+   "Có báo cáo gốc trực tiếp từ Sensor Tower không qua trung gian",
+   "Có số liệu đối chiếu từ các bên thứ hai như Data.ai để so sánh"
   ],
   "confidence": "Trung bình",
   "gaps": [],
   "conflicts": [],
-  "definition_notes": [],
+  "definition_notes": [
+   "Doanh thu Đông Nam Á: 625 triệu USD (IAP game mobile, Q1 2025; Sensor Tower); 625 triệu USD (IAP game mobile, Q1 2025 vs Q4 2024; Sensor Tower). Các số này khác kỳ đo hoặc phạm vi đo nên không so trực tiếp được."
+  ],
   "guard_log": [],
   "trusted": [
    {
@@ -189,19 +217,45 @@
     ],
     "confidence": "Trung bình",
     "claim_ids": [
-     "C1",
+     "C1"
+    ],
+    "why": [
+     "Chỉ có một nguồn gốc (Sensor Tower, hạng A)"
+    ],
+    "notes": []
+   },
+   {
+    "finding": "F2",
+    "label": "Doanh thu IAP game mobile, Đông Nam Á, Q1 2025 vs Q4 2024",
+    "values": "625 triệu USD",
+    "origins": [
+     "Sensor Tower"
+    ],
+    "confidence": "Trung bình",
+    "claim_ids": [
      "C2"
     ],
     "why": [
-     "Chỉ có một nguồn gốc (Sensor Tower, hạng A)",
-     "2 bài viết nhưng chỉ 1 nguồn gốc"
+     "Chỉ có một nguồn gốc (Sensor Tower, hạng B)"
     ],
-    "notes": []
+    "notes": [
+     "Số của Sensor Tower dẫn lại qua bài viết, chưa đối chiếu bản gốc"
+    ]
    }
   ],
   "uncertain": [],
   "other": [],
-  "next_steps": []
+  "next_steps": [
+   {
+    "text": "Đối chiếu bản gốc của Sensor Tower trên sensortower.com",
+    "query": "Sensor Tower Southeast Asia mobile games in-app purchase revenue Q1 2025 vs Q4 2024",
+    "ask": "",
+    "url": "",
+    "findings": [
+     "F2"
+    ]
+   }
+  ]
  },
  "stats": {
   "sources_read": 2,
@@ -211,7 +265,7 @@
   "rejected": 0,
   "carried": 0,
   "llm_calls": 4,
-  "seconds": 6.4,
+  "seconds": 6.8,
   "model": "gemini/gemini-3.5-flash-lite",
   "search": "tắt"
  }

@@ -1,25 +1,25 @@
 {
- "id": "baf71e58c6",
- "created_at": "2026-10-22T10:25:24",
+ "id": "1386bbd378",
+ "created_at": "2026-10-22T10:37:21",
  "question": "Thể loại game mobile nào tăng trưởng doanh thu nhanh nhất ở Đông Nam Á trong 12 tháng qua?",
  "parent_id": null,
  "thread": [
   {
-   "id": "baf71e58c6",
+   "id": "1386bbd378",
    "question": "Thể loại game mobile nào tăng trưởng doanh thu nhanh nhất ở Đông Nam Á trong 12 tháng qua?"
   }
  ],
  "today": "2026-10-22",
  "plan": {
   "criteria": [
-   "Tốc độ tăng trưởng doanh thu theo năm của các thể loại game mobile",
-   "Quy mô doanh thu và thị phần của các thể loại game mobile"
+   "Tốc độ tăng trưởng doanh thu",
+   "Quy mô doanh thu"
   ],
   "queries": [
-   "Sensor Tower mobile game revenue growth Southeast Asia by genre report",
-   "Newzoo Southeast Asia mobile games market revenue by genre trends",
-   "data.ai app.mobi highest revenue growth mobile game genres Southeast Asia",
-   "Niko Partners Southeast Asia mobile games revenue growth analysis"
+   "Sensor Tower Southeast Asia mobile game revenue growth by genre 2025 2026",
+   "data.ai top growing mobile game genres Southeast Asia report",
+   "Newzoo Southeast Asia mobile gaming market report revenue by genre",
+   "AppMagic fastest growing mobile game genres in SEA last 12 months"
   ],
   "market": "Đông Nam Á",
   "genre": ""
@@ -33,77 +33,61 @@
  "question_market": "Đông Nam Á",
  "search_log": [
   {
-   "query": "Sensor Tower mobile game revenue growth Southeast Asia by genre report",
+   "query": "Sensor Tower Southeast Asia mobile game revenue growth by genre 2025 2026",
    "results": [
     "https://gamedevreports.substack.com/p/sensor-tower-southeast-asia-mobile",
-    "https://sensortower.com/blog/southeast-asia-mobile-gaming-2025",
+    "https://finance.yahoo.com/news/sensor-tower-state-gaming-gaming-151700611.html",
+    "https://finance.yahoo.com/news/c-o-r-r-e-223500215.html",
     "https://investgame.net/wp-content/uploads/2025/06/2025_Southeast_Asia_Mobile_Game_Insights.pdf",
-    "https://esportsinsider.com/2026/08/southeast-asia-mobile-gaming-powerhouse",
-    "https://sensortower.com/state-of-mobile-games-in-sea-2025-report"
+    "https://sensortower.com/blog/southeast-asia-mobile-gaming-2025"
    ]
   },
   {
-   "query": "Newzoo Southeast Asia mobile games market revenue by genre trends",
+   "query": "data.ai top growing mobile game genres Southeast Asia report",
+   "results": [
+    "https://www.businessofapps.com/insights/2026-southeast-asia-mobile-game-marketing-report",
+    "https://investgame.net/wp-content/uploads/2025/06/2025_Southeast_Asia_Mobile_Game_Insights.pdf",
+    "https://sensortower.com/blog/southeast-asia-mobile-gaming-2025",
+    "https://www.mordorintelligence.com/industry-reports/southeast-asia-gaming-market",
+    "https://finance.yahoo.com/news/southeast-asia-gaming-market-report-092800983.html"
+   ]
+  },
+  {
+   "query": "Newzoo Southeast Asia mobile gaming market report revenue by genre",
    "results": [
     "https://allcorrectgames.com/insights/the-gaming-market-in-southeast-asia-2",
-    "https://finance.yahoo.com/news/southeast-asia-gaming-market-share-174300708.html",
-    "https://finance.yahoo.com/news/2025-southeast-asia-gamer-insights-091000202.html",
-    "https://www.scribd.com/document/934327627/2025-Newzoo-Free-Global-Games-Market-Report",
+    "https://investgame.net/wp-content/uploads/2025/03/Mobile-Game-Genre-Report-Hypercasual.pdf",
+    "https://finance.yahoo.com/news/southeast-asia-gaming-market-revenues-133000314.html",
+    "https://finance.yahoo.com/news/southeast-asia-gaming-market-report-092800983.html",
     "https://finance.yahoo.com/news/southeast-asia-gaming-market-growth-112200285.html"
    ]
   },
   {
-   "query": "data.ai app.mobi highest revenue growth mobile game genres Southeast Asia",
+   "query": "AppMagic fastest growing mobile game genres in SEA last 12 months",
    "results": [
-    "https://www.businessofapps.com/insights/2026-southeast-asia-mobile-game-marketing-report",
-    "https://gamedevreports.substack.com/p/sensor-tower-southeast-asia-mobile",
-    "https://investgame.net/wp-content/uploads/2025/06/2025_Southeast_Asia_Mobile_Game_Insights.pdf",
-    "https://esportsinsider.com/2026/08/southeast-asia-mobile-gaming-powerhouse",
-    "https://onesky.ai/blog/southeast-asia-mobile-gaming"
-   ]
-  },
-  {
-   "query": "Niko Partners Southeast Asia mobile games revenue growth analysis",
-   "results": [
-    "https://nikopartners.com/wp-content/uploads/2022/08/Southeast-Asias-Games-Market.pdf",
-    "https://nikopartners.com/sea-of-opportunities-exploring-the-rise-of-southeast-asia-video-games-market",
-    "https://gamedevreports.substack.com/p/niko-partners-gaming-time-increased",
-    "https://nikopartners.com/asia-mena-market-model-2026",
-    "https://finance.yahoo.com/news/gaming-growth-unlocked-coda-niko-073000524.html"
+    "https://gamedevreports.substack.com/p/appmagic-mobile-market-landscape",
+    "https://wnhub.io/news/analytics/item-43063",
+    "https://appmagic.rocks/research/casual-report-h1-2025",
+    "https://www.scribd.com/document/996925600/AppMagic-Mobile-MarketLandscape-2026",
+    "https://appmagic.rocks/research/casual-report-H12026?hl=en"
    ]
   }
  ],
  "skipped": [
   {
-   "url": "https://investgame.net/wp-content/uploads/2025/06/2025_Southeast_Asia_Mobile_Game_Insights.pdf",
+   "url": "https://www.mordorintelligence.com/industry-reports/southeast-asia-gaming-market",
+   "reason": "Hạng D (trang SEO hoặc bán báo cáo): không dùng làm bằng chứng"
+  },
+  {
+   "url": "https://gamedevreports.substack.com/p/appmagic-mobile-market-landscape",
    "reason": "Vượt số nguồn tối đa mỗi lần chạy"
   },
   {
-   "url": "https://gamedevreports.substack.com/p/niko-partners-gaming-time-increased",
+   "url": "https://finance.yahoo.com/news/sensor-tower-state-gaming-gaming-151700611.html",
    "reason": "Vượt số nguồn tối đa mỗi lần chạy"
   },
   {
-   "url": "https://esportsinsider.com/2026/08/southeast-asia-mobile-gaming-powerhouse",
-   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
-  },
-  {
-   "url": "https://allcorrectgames.com/insights/the-gaming-market-in-southeast-asia-2",
-   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
-  },
-  {
-   "url": "https://finance.yahoo.com/news/southeast-asia-gaming-market-share-174300708.html",
-   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
-  },
-  {
-   "url": "https://finance.yahoo.com/news/2025-southeast-asia-gamer-insights-091000202.html",
-   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
-  },
-  {
-   "url": "https://www.scribd.com/document/934327627/2025-Newzoo-Free-Global-Games-Market-Report",
-   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
-  },
-  {
-   "url": "https://finance.yahoo.com/news/southeast-asia-gaming-market-growth-112200285.html",
+   "url": "https://finance.yahoo.com/news/c-o-r-r-e-223500215.html",
    "reason": "Vượt số nguồn tối đa mỗi lần chạy"
   },
   {
@@ -111,11 +95,27 @@
    "reason": "Vượt số nguồn tối đa mỗi lần chạy"
   },
   {
-   "url": "https://onesky.ai/blog/southeast-asia-mobile-gaming",
+   "url": "https://finance.yahoo.com/news/southeast-asia-gaming-market-report-092800983.html",
    "reason": "Vượt số nguồn tối đa mỗi lần chạy"
   },
   {
-   "url": "https://finance.yahoo.com/news/gaming-growth-unlocked-coda-niko-073000524.html",
+   "url": "https://allcorrectgames.com/insights/the-gaming-market-in-southeast-asia-2",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://finance.yahoo.com/news/southeast-asia-gaming-market-revenues-133000314.html",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://finance.yahoo.com/news/southeast-asia-gaming-market-growth-112200285.html",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://wnhub.io/news/analytics/item-43063",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://www.scribd.com/document/996925600/AppMagic-Mobile-MarketLandscape-2026",
    "reason": "Vượt số nguồn tối đa mỗi lần chạy"
   }
  ],
@@ -172,72 +172,38 @@
    "publisher": "Sensor Tower"
   },
   {
-   "id": "S88448f0d",
-   "url": "https://sensortower.com/state-of-mobile-games-in-sea-2025-report",
-   "title": "Southeast Asia: Mobile Game Market Insights 2025 Report",
-   "domain": "sensortower.com",
-   "published": "2026-01-01",
+   "id": "S09ff91fc",
+   "url": "https://appmagic.rocks/research/casual-report-h1-2025",
+   "title": "",
+   "domain": "appmagic.rocks",
+   "published": null,
    "kind": "html",
-   "text": "<1785 ký tự>",
+   "text": "<0 ký tự>",
+   "error": "Trang không có nội dung đọc được (có thể bị chặn hoặc chỉ có ảnh)",
+   "tier": "B",
+   "base_tier": "A",
+   "tier_notes": [
+    "appmagic.rocks nằm trong danh sách hạng A",
+    "Không rõ ngày đăng: hạ một hạng"
+   ],
+   "publisher": "AppMagic"
+  },
+  {
+   "id": "Sfcfd692f",
+   "url": "https://appmagic.rocks/research/casual-report-H12026?hl=en",
+   "title": "Casual Games Report H1 2026: Growth Beneath the Still Surface",
+   "domain": "appmagic.rocks",
+   "published": "2026-07-23",
+   "kind": "html",
+   "text": "<41762 ký tự>",
    "error": null,
    "tier": "A",
    "base_tier": "A",
    "tier_notes": [
-    "sensortower.com nằm trong danh sách hạng A",
-    "Đăng cách đây 9 tháng"
+    "appmagic.rocks nằm trong danh sách hạng A",
+    "Đăng cách đây 3 tháng"
    ],
-   "publisher": "Sensor Tower"
-  },
-  {
-   "id": "S144fb817",
-   "url": "https://nikopartners.com/wp-content/uploads/2022/08/Southeast-Asias-Games-Market.pdf",
-   "title": "",
-   "domain": "nikopartners.com",
-   "published": null,
-   "kind": "html",
-   "text": "<0 ký tự>",
-   "error": "Không tải được: ConnectionError ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-   "tier": "B",
-   "base_tier": "A",
-   "tier_notes": [
-    "nikopartners.com nằm trong danh sách hạng A",
-    "Không rõ ngày đăng: hạ một hạng"
-   ],
-   "publisher": "Niko Partners"
-  },
-  {
-   "id": "S41ff8a09",
-   "url": "https://nikopartners.com/sea-of-opportunities-exploring-the-rise-of-southeast-asia-video-games-market",
-   "title": "",
-   "domain": "nikopartners.com",
-   "published": null,
-   "kind": "html",
-   "text": "<0 ký tự>",
-   "error": "Không tải được: ConnectionError ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-   "tier": "B",
-   "base_tier": "A",
-   "tier_notes": [
-    "nikopartners.com nằm trong danh sách hạng A",
-    "Không rõ ngày đăng: hạ một hạng"
-   ],
-   "publisher": "Niko Partners"
-  },
-  {
-   "id": "Sb4534fca",
-   "url": "https://nikopartners.com/asia-mena-market-model-2026",
-   "title": "",
-   "domain": "nikopartners.com",
-   "published": null,
-   "kind": "html",
-   "text": "<0 ký tự>",
-   "error": "Không tải được: ConnectionError ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-   "tier": "B",
-   "base_tier": "A",
-   "tier_notes": [
-    "nikopartners.com nằm trong danh sách hạng A",
-    "Không rõ ngày đăng: hạ một hạng"
-   ],
-   "publisher": "Niko Partners"
+   "publisher": "AppMagic"
   },
   {
    "id": "S80418131",
@@ -255,29 +221,63 @@
     "Đăng cách đây 16 tháng (12 đến 24 tháng)"
    ],
    "publisher": "gamedevreports.substack.com"
+  },
+  {
+   "id": "Sfd8d5a99",
+   "url": "https://investgame.net/wp-content/uploads/2025/06/2025_Southeast_Asia_Mobile_Game_Insights.pdf",
+   "title": "2025_Southeast_Asia_Mobile_Game_Insights",
+   "domain": "investgame.net",
+   "published": "2025-05-22",
+   "kind": "pdf",
+   "text": "<55313 ký tự>",
+   "error": null,
+   "tier": "B",
+   "base_tier": "B",
+   "tier_notes": [
+    "investgame.net nằm trong danh sách hạng B",
+    "Đăng cách đây 17 tháng (12 đến 24 tháng)"
+   ],
+   "publisher": "investgame.net"
+  },
+  {
+   "id": "S7a0ad687",
+   "url": "https://investgame.net/wp-content/uploads/2025/03/Mobile-Game-Genre-Report-Hypercasual.pdf",
+   "title": "Pangle_Newzoo_Hypercasual",
+   "domain": "investgame.net",
+   "published": "2022-04-28",
+   "kind": "pdf",
+   "text": "<23535 ký tự>",
+   "error": null,
+   "tier": "C",
+   "base_tier": "B",
+   "tier_notes": [
+    "investgame.net nằm trong danh sách hạng B",
+    "Đăng cách đây 54 tháng (quá 24 tháng): hạ một hạng"
+   ],
+   "publisher": "investgame.net"
   }
  ],
  "claims": [
   {
    "id": "C1",
    "source_id": "S5a791072",
-   "claim_text": "Tốc độ tăng trưởng doanh thu theo quý của subgenre 4X Strategy trong thị trường game mobile Đông Nam Á đạt +17.6% trong Q1 2025 so với Q4 2024.",
+   "claim_text": "Subgenre Arcade | Music / Rhythm có tốc độ tăng trưởng doanh thu hoặc lượt tải là 75.1% trong Q1 2025 so với Q4 2024 tại Đông Nam Á.",
    "metric": "growth",
-   "value_text": "+17.6%",
+   "value_text": "+75.1%",
    "market": "Southeast Asia",
    "period": "Q1 2025 vs Q4 2024",
-   "scope": "mobile_iap",
-   "genre": "4X Strategy",
+   "scope": "mobile",
+   "genre": "Arcade | Music / Rhythm",
    "genre_level": "subgenre",
-   "quote": "Strategy | 4X Strategy ... +17.6%",
-   "section_title": "Top Gaming Subgenres in Southeast Asia: Arcade and Simulators Lead Downloads, while Strategy, RPG and Shooters Lead Revenue",
+   "quote": "+75.1%",
+   "section_title": "Southeast Asia Top Subgenre by Downloads",
    "attributed_to": "Sensor Tower",
    "criterion": 0,
    "value": null,
    "unit": "",
    "verified": false,
-   "verify_note": "Không tìm thấy câu trích trong nguồn (đoạn giống nhất 88%)",
-   "match_score": 88.0,
+   "verify_note": "Câu trích quá ngắn để kiểm",
+   "match_score": 0.0,
    "page": null,
    "context": "",
    "origin": "",
@@ -288,23 +288,23 @@
   {
    "id": "C2",
    "source_id": "S5a791072",
-   "claim_text": "Tốc độ tăng trưởng doanh thu theo quý của subgenre MOBARPG trong thị trường game mobile Đông Nam Á đạt +20.1% trong Q1 2025 so với Q4 2024.",
+   "claim_text": "Subgenre Strategy | MOBA đạt tốc độ tăng trưởng doanh thu hoặc biến động là 20.1% trong Q1 2025 so với Q4 2024 tại Đông Nam Á.",
    "metric": "growth",
    "value_text": "+20.1%",
    "market": "Southeast Asia",
    "period": "Q1 2025 vs Q4 2024",
    "scope": "mobile_iap",
-   "genre": "MOBARPG",
+   "genre": "Strategy | MOBA",
    "genre_level": "subgenre",
-   "quote": "Strategy | MOBARPG ... +20.1%",
-   "section_title": "Top Gaming Subgenres in Southeast Asia: Arcade and Simulators Lead Downloads, while Strategy, RPG and Shooters Lead Revenue",
+   "quote": "+20.1%",
+   "section_title": "Southeast Asia Top Subgenre by IAP Revenue",
    "attributed_to": "Sensor Tower",
    "criterion": 0,
    "value": null,
    "unit": "",
    "verified": false,
-   "verify_note": "Không tìm thấy câu trích trong nguồn (đoạn giống nhất 81%)",
-   "match_score": 81.0,
+   "verify_note": "Câu trích quá ngắn để kiểm",
+   "match_score": 0.0,
    "page": null,
    "context": "",
    "origin": "",
@@ -315,23 +315,23 @@
   {
    "id": "C3",
    "source_id": "S5a791072",
-   "claim_text": "Tốc độ tăng trưởng doanh thu theo quý của subgenre MMORPGS trong thị trường game mobile Đông Nam Á đạt -17.1% trong Q1 2025 so với Q4 2024.",
+   "claim_text": "Subgenre Strategy | 4X Strategy đạt tốc độ tăng trưởng doanh thu hoặc biến động là 17.6% trong Q1 2025 so với Q4 2024 tại Đông Nam Á.",
    "metric": "growth",
-   "value_text": "-17.1%",
+   "value_text": "+17.6%",
    "market": "Southeast Asia",
    "period": "Q1 2025 vs Q4 2024",
    "scope": "mobile_iap",
-   "genre": "MMORPGS",
+   "genre": "Strategy | 4X Strategy",
    "genre_level": "subgenre",
-   "quote": "RPG | MMORPGS ... -17.1%",
-   "section_title": "Top Gaming Subgenres in Southeast Asia: Arcade and Simulators Lead Downloads, while Strategy, RPG and Shooters Lead Revenue",
+   "quote": "+17.6%",
+   "section_title": "Southeast Asia Top Subgenre by IAP Revenue",
    "attributed_to": "Sensor Tower",
    "criterion": 0,
    "value": null,
    "unit": "",
    "verified": false,
-   "verify_note": "Không tìm thấy câu trích trong nguồn (đoạn giống nhất 69%)",
-   "match_score": 68.8,
+   "verify_note": "Câu trích quá ngắn để kiểm",
+   "match_score": 0.0,
    "page": null,
    "context": "",
    "origin": "",
@@ -342,23 +342,23 @@
   {
    "id": "C4",
    "source_id": "S5a791072",
-   "claim_text": "Tốc độ tăng trưởng doanh thu theo quý của subgenre Realistic Sports trong thị trường game mobile Đông Nam Á đạt -11.7% trong Q1 2025 so với Q4 2024.",
+   "claim_text": "Subgenre Shooter | Battle Royale đạt tốc độ tăng trưởng doanh thu hoặc biến động là 37.6% trong Q1 2025 so với Q4 2024 tại Đông Nam Á.",
    "metric": "growth",
-   "value_text": "-11.7%",
+   "value_text": "+37.6%",
    "market": "Southeast Asia",
    "period": "Q1 2025 vs Q4 2024",
    "scope": "mobile_iap",
-   "genre": "Realistic Sports",
+   "genre": "Shooter | Battle Royale",
    "genre_level": "subgenre",
-   "quote": "Sports | Realistic Sports ... -11.7%",
-   "section_title": "Top Gaming Subgenres in Southeast Asia: Arcade and Simulators Lead Downloads, while Strategy, RPG and Shooters Lead Revenue",
+   "quote": "+37.6%",
+   "section_title": "Southeast Asia Top Subgenre by IAP Revenue",
    "attributed_to": "Sensor Tower",
    "criterion": 0,
    "value": null,
    "unit": "",
    "verified": false,
-   "verify_note": "Không tìm thấy câu trích trong nguồn (đoạn giống nhất 86%)",
-   "match_score": 85.7,
+   "verify_note": "Câu trích quá ngắn để kiểm",
+   "match_score": 0.0,
    "page": null,
    "context": "",
    "origin": "",
@@ -369,179 +369,17 @@
   {
    "id": "C5",
    "source_id": "S5a791072",
-   "claim_text": "Tốc độ tăng trưởng doanh thu theo quý của subgenre Match Swap trong thị trường game mobile Đông Nam Á đạt -5.1% trong Q1 2025 so với Q4 2024.",
-   "metric": "growth",
-   "value_text": "-5.1%",
-   "market": "Southeast Asia",
-   "period": "Q1 2025 vs Q4 2024",
-   "scope": "mobile_iap",
-   "genre": "Match Swap",
-   "genre_level": "subgenre",
-   "quote": "Puzzle | Match Swap ... -5.1%",
-   "section_title": "Top Gaming Subgenres in Southeast Asia: Arcade and Simulators Lead Downloads, while Strategy, RPG and Shooters Lead Revenue",
-   "attributed_to": "Sensor Tower",
-   "criterion": 0,
-   "value": null,
-   "unit": "",
-   "verified": false,
-   "verify_note": "Không tìm thấy câu trích trong nguồn (đoạn giống nhất 86%)",
-   "match_score": 85.7,
-   "page": null,
-   "context": "",
-   "origin": "",
-   "tier": "D",
-   "flags": [],
-   "excluded_by_user": false
-  },
-  {
-   "id": "C6",
-   "source_id": "S5a791072",
-   "claim_text": "Tốc độ tăng trưởng doanh thu theo quý của subgenre Battle Royale trong thị trường game mobile Đông Nam Á đạt +37.6% trong Q1 2025 so với Q4 2024.",
-   "metric": "growth",
-   "value_text": "+37.6%",
-   "market": "Southeast Asia",
-   "period": "Q1 2025 vs Q4 2024",
-   "scope": "mobile_iap",
-   "genre": "Battle Royale",
-   "genre_level": "subgenre",
-   "quote": "Shooter | Battle Royale ... +37.6%",
-   "section_title": "Top Gaming Subgenres in Southeast Asia: Arcade and Simulators Lead Downloads, while Strategy, RPG and Shooters Lead Revenue",
-   "attributed_to": "Sensor Tower",
-   "criterion": 0,
-   "value": null,
-   "unit": "",
-   "verified": false,
-   "verify_note": "Không tìm thấy câu trích trong nguồn (đoạn giống nhất 85%)",
-   "match_score": 84.6,
-   "page": null,
-   "context": "",
-   "origin": "",
-   "tier": "D",
-   "flags": [],
-   "excluded_by_user": false
-  },
-  {
-   "id": "C7",
-   "source_id": "S5a791072",
-   "claim_text": "Tốc độ tăng trưởng doanh thu theo quý của subgenre Squad RPG trong thị trường game mobile Đông Nam Á đạt -14.4% trong Q1 2025 so với Q4 2024.",
-   "metric": "growth",
-   "value_text": "-14.4%",
-   "market": "Southeast Asia",
-   "period": "Q1 2025 vs Q4 2024",
-   "scope": "mobile_iap",
-   "genre": "Squad RPG",
-   "genre_level": "subgenre",
-   "quote": "RPG | Squad RPG ... -14.4%",
-   "section_title": "Top Gaming Subgenres in Southeast Asia: Arcade and Simulators Lead Downloads, while Strategy, RPG and Shooters Lead Revenue",
-   "attributed_to": "Sensor Tower",
-   "criterion": 0,
-   "value": null,
-   "unit": "",
-   "verified": false,
-   "verify_note": "Không tìm thấy câu trích trong nguồn (đoạn giống nhất 83%)",
-   "match_score": 83.3,
-   "page": null,
-   "context": "",
-   "origin": "",
-   "tier": "D",
-   "flags": [],
-   "excluded_by_user": false
-  },
-  {
-   "id": "C8",
-   "source_id": "S5a791072",
-   "claim_text": "Tốc độ tăng trưởng doanh thu theo quý của subgenre Sandbox trong thị trường game mobile Đông Nam Á đạt -12.6% trong Q1 2025 so với Q4 2024.",
-   "metric": "growth",
-   "value_text": "-12.6%",
-   "market": "Southeast Asia",
-   "period": "Q1 2025 vs Q4 2024",
-   "scope": "mobile_iap",
-   "genre": "Sandbox",
-   "genre_level": "subgenre",
-   "quote": "Simulation | Sandbox ... -12.6%",
-   "section_title": "Top Gaming Subgenres in Southeast Asia: Arcade and Simulators Lead Downloads, while Strategy, RPG and Shooters Lead Revenue",
-   "attributed_to": "Sensor Tower",
-   "criterion": 0,
-   "value": null,
-   "unit": "",
-   "verified": false,
-   "verify_note": "Không tìm thấy câu trích trong nguồn (đoạn giống nhất 78%)",
-   "match_score": 78.3,
-   "page": null,
-   "context": "",
-   "origin": "",
-   "tier": "D",
-   "flags": [],
-   "excluded_by_user": false
-  },
-  {
-   "id": "C9",
-   "source_id": "S5a791072",
-   "claim_text": "Tốc độ tăng trưởng doanh thu theo quý của subgenre Coin Looters trong thị trường game mobile Đông Nam Á đạt +4% trong Q1 2025 so với Q4 2024.",
-   "metric": "growth",
-   "value_text": "+4%",
-   "market": "Southeast Asia",
-   "period": "Q1 2025 vs Q4 2024",
-   "scope": "mobile_iap",
-   "genre": "Coin Looters",
-   "genre_level": "subgenre",
-   "quote": "Casino | Coin Looters ... +4%",
-   "section_title": "Top Gaming Subgenres in Southeast Asia: Arcade and Simulators Lead Downloads, while Strategy, RPG and Shooters Lead Revenue",
-   "attributed_to": "Sensor Tower",
-   "criterion": 0,
-   "value": null,
-   "unit": "",
-   "verified": false,
-   "verify_note": "Không tìm thấy nguyên văn trong nguồn (đoạn giống nhất 90%): có thể AI đã chép sai hoặc diễn đạt lại",
-   "match_score": 90.5,
-   "page": null,
-   "context": "",
-   "origin": "",
-   "tier": "D",
-   "flags": [],
-   "excluded_by_user": false
-  },
-  {
-   "id": "C10",
-   "source_id": "S5a791072",
-   "claim_text": "Tốc độ tăng trưởng doanh thu theo quý của subgenre Idle RPG trong thị trường game mobile Đông Nam Á đạt +3.9% trong Q1 2025 so với Q4 2024.",
-   "metric": "growth",
-   "value_text": "+3.9%",
-   "market": "Southeast Asia",
-   "period": "Q1 2025 vs Q4 2024",
-   "scope": "mobile_iap",
-   "genre": "Idle RPG",
-   "genre_level": "subgenre",
-   "quote": "RPG | Idle RPG ... +3.9%",
-   "section_title": "Top Gaming Subgenres in Southeast Asia: Arcade and Simulators Lead Downloads, while Strategy, RPG and Shooters Lead Revenue",
-   "attributed_to": "Sensor Tower",
-   "criterion": 0,
-   "value": null,
-   "unit": "",
-   "verified": false,
-   "verify_note": "Không tìm thấy câu trích trong nguồn (đoạn giống nhất 88%)",
-   "match_score": 87.5,
-   "page": null,
-   "context": "",
-   "origin": "",
-   "tier": "D",
-   "flags": [],
-   "excluded_by_user": false
-  },
-  {
-   "id": "C11",
-   "source_id": "S5a791072",
-   "claim_text": "Tại Indonesia trong Q1 2025 so với Q4 2024, thể loại Shooter/Battle Royale có mức tăng trưởng doanh thu +50%.",
+   "claim_text": "Tại Indonesia, thể loại Shooter/Battle Royale đạt mức tăng trưởng doanh thu +50% theo quý trong Q1 2025.",
    "metric": "growth",
    "value_text": "+50%",
    "market": "Indonesia",
    "period": "Q1 2025 vs Q4 2024",
    "scope": "mobile",
-   "genre": "Shooter | Battle Royale",
+   "genre": "Shooter / Battle Royale",
    "genre_level": "subgenre",
-   "quote": "Shooter/Battle Royale games, led by Garena Free Fire, showed exceptional momentum—revenue +50% QoQ and downloads +46% QoQ",
-   "section_title": "Indonesia’s Mobile Game Market Q1 2025: Simulation & Arcade Top Downloads, MOBA/Strategy Lead Revenue, While Shooters Surge in Growth",
-   "attributed_to": "Sensor Tower",
+   "quote": "Furthermore, Shooter/Battle Royale games, led by Garena Free Fire, showed exceptional momentum—revenue +50% QoQ and downloads +46% QoQ —its success driven by competitive and social interplay that deepens engagement and boosts monetization.",
+   "section_title": "Indonesia Top Subgenre by Revenue",
+   "attributed_to": "Sensor Tower App Performance Insights",
    "criterion": 0,
    "value": 50.0,
    "unit": "%",
@@ -549,7 +387,7 @@
    "verify_note": "Đã tìm thấy câu trích trong nguồn",
    "match_score": 100.0,
    "page": null,
-   "context": "uad RPG$0M$12.5M$25M2024 Q42025 Q1+32.7%+21.1%-22.6%+50%-9.4%-10.9%+1.7%-53.1%-7.8%-20.4%Indonesia Top Subgenre by DownloadsIndonesia Top Subgenre by RevenueIndonesia’s Mobile Game Market Q1 2025: Simulation & Arcade Top Downloads, MOBA/Strategy Lead Revenue, While Shooters Surge in GrowthSimulator (led by Jelly Master: Mukbang ASMR ) and Arcade Platformer/Runner (led by Super Bear Adventure ) ranked as the top two subgenres by downloads in Indonesia, signaling strong appetite for fresh casual titles. Strategy/MOBA, spearheaded by Mobile Legends: Bang Bang , dominated Q1 revenue. Furthermore, Shooter/Battle Royale games, led by Garena Free Fire, showed exceptional momentum—revenue +50% QoQ and downloads +46% QoQ —its success driven by competitive and social interplay that deepens engagement and boosts monetization.Data Source: Sensor Tower App Performance Insights. Games classified by Sensor Tower’s Game Tax",
+   "context": "!ing RPG | Squad RPG$0M$12.5M$25M2024 Q42025 Q1+32.7%+21.1%-22.6%+50%-9.4%-10.9%+1.7%-53.1%-7.8%-20.4%Indonesia Top Subgenre by DownloadsIndonesia Top Subgenre by RevenueIndonesia’s Mobile Game Market Q1 2025: Simulation & Arcade Top Downloads, MOBA/Strategy Lead Revenue, While Shooters Surge in GrowthSimulator (led by Jelly Master: Mukbang ASMR ) and Arcade Platformer/Runner (led by Super Bear Adventure ) ranked as the top two subgenres by downloads in Indonesia, signaling strong appetite for fresh casual titles. Strategy/MOBA, spearheaded by Mobile Legends: Bang Bang , dominated Q1 revenue. Furthermore, Shooter/Battle Royale games, led by Garena Free Fire, showed exceptional momentum—revenue +50% QoQ and downloads +46% QoQ —its success driven by competitive and social interplay that deepens engagement and boosts monetization.Data Source: Sensor Tower App Performance Insights. Games classified by Sensor Tower’s Game Taxonomy as of May 21, 2025. Notes: Sensor Tower’s data is based on estimates from App Store and Google Pla",
    "origin": "Sensor Tower",
    "tier": "B",
    "flags": [
@@ -560,19 +398,19 @@
    "excluded_by_user": false
   },
   {
-   "id": "C12",
+   "id": "C6",
    "source_id": "S5a791072",
-   "claim_text": "Tại Thái Lan trong Q1 2025 so với Q4 2024, thể loại Battle Royale có mức tăng trưởng doanh thu 35.8%.",
+   "claim_text": "Tại Thái Lan, thể loại Battle Royale đạt mức tăng trưởng doanh thu 35.8% theo quý trong Q1 2025.",
    "metric": "growth",
    "value_text": "35.8%",
    "market": "Thái Lan",
    "period": "Q1 2025 vs Q4 2024",
    "scope": "mobile",
-   "genre": "Shooter | Battle Royale",
+   "genre": "Battle Royale",
    "genre_level": "subgenre",
    "quote": "Significant revenue growth also came from Battle Royale (led by Garena Free Fire), at 35.8% QoQ growth and Coin Looters (led by Coin Master) , at 23.6% QoQ growth.",
-   "section_title": "Thailand Q1 2025: Realistic Sports Leads Revenue, Block Puzzle Surges Amidst Shifting Download Trends",
-   "attributed_to": "Sensor Tower",
+   "section_title": "Thailand Top Subgenre by Revenue",
+   "attributed_to": "Sensor Tower App Performance Insights",
    "criterion": 0,
    "value": 35.8,
    "unit": "%",
@@ -591,19 +429,19 @@
    "excluded_by_user": false
   },
   {
-   "id": "C13",
+   "id": "C7",
    "source_id": "S5a791072",
-   "claim_text": "Tại Thái Lan trong Q1 2025 so với Q4 2024, thể loại Coin Looters có mức tăng trưởng doanh thu 23.6%.",
+   "claim_text": "Tại Thái Lan, thể loại Coin Looters đạt mức tăng trưởng doanh thu 23.6% theo quý trong Q1 2025.",
    "metric": "growth",
    "value_text": "23.6%",
    "market": "Thái Lan",
    "period": "Q1 2025 vs Q4 2024",
    "scope": "mobile",
-   "genre": "Casino | Coin Looters",
+   "genre": "Coin Looters",
    "genre_level": "subgenre",
    "quote": "Significant revenue growth also came from Battle Royale (led by Garena Free Fire), at 35.8% QoQ growth and Coin Looters (led by Coin Master) , at 23.6% QoQ growth.",
-   "section_title": "Thailand Q1 2025: Realistic Sports Leads Revenue, Block Puzzle Surges Amidst Shifting Download Trends",
-   "attributed_to": "Sensor Tower",
+   "section_title": "Thailand Top Subgenre by Revenue",
+   "attributed_to": "Sensor Tower App Performance Insights",
    "criterion": 0,
    "value": 23.6,
    "unit": "%",
@@ -622,9 +460,9 @@
    "excluded_by_user": false
   },
   {
-   "id": "C14",
+   "id": "C8",
    "source_id": "S5a791072",
-   "claim_text": "Tốc độ tăng trưởng doanh thu theo quý của thể loại 4X Strategy trong game mobile tại Việt Nam là +51.5% trong Q1 2025 so với Q4 2024.",
+   "claim_text": "Tăng trưởng doanh thu của phân nhánh Strategy | 4X Strategy ở Việt Nam đạt +51.5% trong Q1 2025 so với Q4 2024.",
    "metric": "growth",
    "value_text": "+51.5%",
    "market": "Vietnam",
@@ -649,9 +487,9 @@
    "excluded_by_user": false
   },
   {
-   "id": "C15",
+   "id": "C9",
    "source_id": "S5a791072",
-   "claim_text": "Tốc độ tăng trưởng doanh thu theo quý của thể loại MMORPG trong game mobile tại Việt Nam là +8.2% trong Q1 2025 so với Q4 2024.",
+   "claim_text": "Tăng trưởng doanh thu của phân nhánh RPG | MMORPG ở Việt Nam đạt +8.2% trong Q1 2025 so với Q4 2024.",
    "metric": "growth",
    "value_text": "+8.2%",
    "market": "Vietnam",
@@ -676,9 +514,9 @@
    "excluded_by_user": false
   },
   {
-   "id": "C16",
+   "id": "C10",
    "source_id": "S5a791072",
-   "claim_text": "Tốc độ tăng trưởng doanh thu theo quý của thể loại Squad RPG trong game mobile tại Việt Nam là -1.8% trong Q1 2025 so với Q4 2024.",
+   "claim_text": "Tăng trưởng doanh thu của phân nhánh RPG | Squad RPG ở Việt Nam đạt -1.8% trong Q1 2025 so với Q4 2024.",
    "metric": "growth",
    "value_text": "-1.8%",
    "market": "Vietnam",
@@ -703,9 +541,9 @@
    "excluded_by_user": false
   },
   {
-   "id": "C17",
+   "id": "C11",
    "source_id": "S5a791072",
-   "claim_text": "Tốc độ tăng trưởng doanh thu theo quý của thể loại Idle RPG trong game mobile tại Việt Nam là +2.3% trong Q1 2025 so với Q4 2024.",
+   "claim_text": "Tăng trưởng doanh thu của phân nhánh RPG | Idle RPG ở Việt Nam đạt +2.3% trong Q1 2025 so với Q4 2024.",
    "metric": "growth",
    "value_text": "+2.3%",
    "market": "Vietnam",
@@ -730,9 +568,9 @@
    "excluded_by_user": false
   },
   {
-   "id": "C18",
+   "id": "C12",
    "source_id": "S5a791072",
-   "claim_text": "Tốc độ tăng trưởng doanh thu theo quý của thể loại MOBA trong game mobile tại Việt Nam là +15.8% trong Q1 2025 so với Q4 2024.",
+   "claim_text": "Tăng trưởng doanh thu của phân nhánh Strategy | MOBA ở Việt Nam đạt +15.8% trong Q1 2025 so với Q4 2024.",
    "metric": "growth",
    "value_text": "+15.8%",
    "market": "Vietnam",
@@ -757,9 +595,9 @@
    "excluded_by_user": false
   },
   {
-   "id": "C19",
+   "id": "C13",
    "source_id": "S5a791072",
-   "claim_text": "Tốc độ tăng trưởng doanh thu theo quý của thể loại Battle Royale trong game mobile tại Việt Nam là +12.2% trong Q1 2025 so với Q4 2024.",
+   "claim_text": "Tăng trưởng doanh thu của phân nhánh Shooter | Battle Royale ở Việt Nam đạt +12.2% trong Q1 2025 so với Q4 2024.",
    "metric": "growth",
    "value_text": "+12.2%",
    "market": "Vietnam",
@@ -784,36 +622,9 @@
    "excluded_by_user": false
   },
   {
-   "id": "C20",
+   "id": "C14",
    "source_id": "S5a791072",
-   "claim_text": "Tốc độ tăng trưởng doanh thu theo quý của thể loại Open World Adventure RPG tại Philippines là +36.8% trong Q1 2025 so với Q4 2024.",
-   "metric": "growth",
-   "value_text": "+36.8%",
-   "market": "Philippines",
-   "period": "Q1 2025 vs Q4 2024",
-   "scope": "mobile",
-   "genre": "Open World Adventure RPG",
-   "genre_level": "subgenre",
-   "quote": "+36.8%",
-   "section_title": "Philippines Top Subgenre by Revenue",
-   "attributed_to": "Sensor Tower",
-   "criterion": 0,
-   "value": null,
-   "unit": "",
-   "verified": false,
-   "verify_note": "Câu trích quá ngắn để kiểm",
-   "match_score": 0.0,
-   "page": null,
-   "context": "",
-   "origin": "",
-   "tier": "D",
-   "flags": [],
-   "excluded_by_user": false
-  },
-  {
-   "id": "C21",
-   "source_id": "S5a791072",
-   "claim_text": "Tốc độ tăng trưởng doanh thu theo quý của thể loại 4X Strategy tại Philippines là +18.7% trong Q1 2025 so với Q4 2024.",
+   "claim_text": "Tăng trưởng doanh thu của phân nhánh Strategy | 4X Strategy ở Philippines đạt +18.7% trong Q1 2025 so với Q4 2024.",
    "metric": "growth",
    "value_text": "+18.7%",
    "market": "Philippines",
@@ -838,9 +649,9 @@
    "excluded_by_user": false
   },
   {
-   "id": "C22",
+   "id": "C15",
    "source_id": "S5a791072",
-   "claim_text": "Tốc độ tăng trưởng doanh thu theo quý của thể loại MOBA tại Philippines là +19.0% trong Q1 2025 so với Q4 2024.",
+   "claim_text": "Tăng trưởng doanh thu của phân nhánh Strategy | MOBA ở Philippines đạt +19.0% trong Q1 2025 so với Q4 2024.",
    "metric": "growth",
    "value_text": "+19.0%",
    "market": "Philippines",
@@ -865,9 +676,9 @@
    "excluded_by_user": false
   },
   {
-   "id": "C23",
+   "id": "C16",
    "source_id": "S5a791072",
-   "claim_text": "Tốc độ tăng trưởng doanh thu theo quý của thể loại FPS / 3PS tại Philippines là +37.6% trong Q1 2025 so với Q4 2024.",
+   "claim_text": "Tăng trưởng doanh thu của phân nhánh Shooter | FPS / 3PS ở Philippines đạt +37.6% trong Q1 2025 so với Q4 2024.",
    "metric": "growth",
    "value_text": "+37.6%",
    "market": "Philippines",
@@ -892,17 +703,17 @@
    "excluded_by_user": false
   },
   {
-   "id": "C24",
+   "id": "C17",
    "source_id": "S5a791072",
-   "claim_text": "Tốc độ tăng trưởng doanh thu theo quý của thể loại MMORPG tại Philippines là -19.7% trong Q1 2025 so với Q4 2024.",
+   "claim_text": "Tăng trưởng doanh thu của phân nhánh RPG | Open World Adventure ở Philippines đạt +36.8% trong Q1 2025 so với Q4 2024.",
    "metric": "growth",
-   "value_text": "-19.7%",
+   "value_text": "+36.8%",
    "market": "Philippines",
    "period": "Q1 2025 vs Q4 2024",
    "scope": "mobile",
-   "genre": "MMORPG",
+   "genre": "Open World Adventure",
    "genre_level": "subgenre",
-   "quote": "-19.7%",
+   "quote": "+36.8%",
    "section_title": "Philippines Top Subgenre by Revenue",
    "attributed_to": "Sensor Tower",
    "criterion": 0,
@@ -919,27 +730,238 @@
    "excluded_by_user": false
   },
   {
-   "id": "C25",
+   "id": "C18",
    "source_id": "S71be215c",
-   "claim_text": "Thể loại Battle Royale đạt 10.05M lượt tải xuống với thị phần 13.1% và tăng trưởng -22.3% YoY tại thị trường Việt Nam trong H1 2026.",
+   "claim_text": "Thể loại Shooter có tốc độ tăng trưởng doanh thu nhanh nhất với 579.4% trong H1 2026 tại thị trường Việt Nam.",
    "metric": "growth",
-   "value_text": "-22.3%",
+   "value_text": "+579.4%",
    "market": "Việt Nam",
-   "period": "H1 2026 vs H1 2025",
+   "period": "H1 2026",
    "scope": "mobile",
-   "genre": "Battle Royale",
+   "genre": "Shooter",
    "genre_level": "subgenre",
-   "quote": "Battle Royale 10.05M 13.1% -22.3%",
-   "section_title": "Download -Led Subgenres",
-   "attributed_to": "",
+   "quote": "Shooter $9.2M 5.2% +579.4%",
+   "section_title": "Revenue -Led Subgenres",
+   "attributed_to": "Gamota analysis",
    "criterion": 0,
-   "value": -22.3,
+   "value": 579.4,
    "unit": "%",
    "verified": true,
    "verify_note": "Đã tìm thấy câu trích trong nguồn",
    "match_score": 100.0,
    "page": null,
-   "context": "elatively evenly across the six\nmonths.\nVisible value may support payment conversion\nIn progression -led segments, purchases offering power, rank,\ncollection, or status gains may support conversion; local payments\ncan also reduce transaction friction.\n02 VIETNAM MARKET LENS\nSource: Multiple mobile market intelligence sources; Gamota analysis. Date Range :2026/1~2026/6\nDownload -Led Subgenres\nEstablished categories continued to anchor H1 download scale, while Sim Sports, Shooter, and Idle RPG emerged as notable\ngrowth pockets.\nTop 10 Subgenres by Downloads, H1 2026\nSubgenre Downloads Share YoY\nBattle Royale 10.05M 13.1% -22.3%\nSim Sports 8.68M 11.3% +242.2%\n4X Battle 7.94M 10.4% -15.4%\nSandbox 6.68M 8.7% -26.9%\nMMORPG 6.57M 8.6% -47.8%\nMOBA 6.46M 8.4% -26.4%\nIdle RPG 5.99M 7.8% +21.4%\nTeam Battle 4.62M 6.0% -30.5%\nAvatar ",
+   "context": "ral shift.\n02 VIETNAM MARKET LENS\nSource: Multiple mobile market intelligence sources; Gamota analysis. Date Range :2026/1~2026/6\nRevenue -Led Subgenres\nH1 revenue remained concentrated in three large categories, while growth broadened through both traffic -supported and revenue -le d\ngains.\n87.4%\nTop 10 Share\n43.0%\nTop 3 Share\nTop 10 Subgenres by Total Revenue, H1 2026\nSubgenre Revenue Share YoY\nMMORPG $29.9M 16.9% +1.0%\nBattle Royale $26.8M 15.2% +2.6%\n4X Battle $19.3M 10.9% -1.8%\nTeam Battle $16.3M 9.2% +17.2%\nMOBA $13.5M 7.6% -35.1%\nIdle RPG $13.4M 7.6% +40.2%\nAvatar Life $9.7M 5.5% +6.2%\nShooter $9.2M 5.2% +579.4%\nSim Sports $8.5M 4.8% +80.7%\nAuto Chess $8.2M 4.6% -21.9%\nH1 revenue combined a stable core with two growth paths\n• A stable revenue core: MMORPG, Battle Royale, and 4X Battle\ngenerated 43.0% of H1 ",
+   "origin": "investgame.net",
+   "tier": "B",
+   "flags": [
+    "Số theo nửa năm, không phải số của cả 12 tháng",
+    "Số của thị trường Việt Nam, câu hỏi hỏi về Đông Nam Á",
+    "Tăng trưởng trên 100%: cần xem giá trị tuyệt đối, có thể do nền nhỏ"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C19",
+   "source_id": "S71be215c",
+   "claim_text": "Thể loại Sim Sports có tốc độ tăng trưởng doanh thu 80.7% trong H1 2026 tại thị trường Việt Nam.",
+   "metric": "growth",
+   "value_text": "+80.7%",
+   "market": "Việt Nam",
+   "period": "H1 2026",
+   "scope": "mobile",
+   "genre": "Sim Sports",
+   "genre_level": "subgenre",
+   "quote": "Sim Sports $8.5M 4.8% +80.7%",
+   "section_title": "Revenue -Led Subgenres",
+   "attributed_to": "Gamota analysis",
+   "criterion": 0,
+   "value": 80.7,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "T LENS\nSource: Multiple mobile market intelligence sources; Gamota analysis. Date Range :2026/1~2026/6\nRevenue -Led Subgenres\nH1 revenue remained concentrated in three large categories, while growth broadened through both traffic -supported and revenue -le d\ngains.\n87.4%\nTop 10 Share\n43.0%\nTop 3 Share\nTop 10 Subgenres by Total Revenue, H1 2026\nSubgenre Revenue Share YoY\nMMORPG $29.9M 16.9% +1.0%\nBattle Royale $26.8M 15.2% +2.6%\n4X Battle $19.3M 10.9% -1.8%\nTeam Battle $16.3M 9.2% +17.2%\nMOBA $13.5M 7.6% -35.1%\nIdle RPG $13.4M 7.6% +40.2%\nAvatar Life $9.7M 5.5% +6.2%\nShooter $9.2M 5.2% +579.4%\nSim Sports $8.5M 4.8% +80.7%\nAuto Chess $8.2M 4.6% -21.9%\nH1 revenue combined a stable core with two growth paths\n• A stable revenue core: MMORPG, Battle Royale, and 4X Battle\ngenerated 43.0% of H1 revenue, with only modest YoY",
+   "origin": "investgame.net",
+   "tier": "B",
+   "flags": [
+    "Số theo nửa năm, không phải số của cả 12 tháng",
+    "Số của thị trường Việt Nam, câu hỏi hỏi về Đông Nam Á"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C20",
+   "source_id": "S71be215c",
+   "claim_text": "Thể loại Idle RPG có tốc độ tăng trưởng doanh thu 40.2% trong H1 2026 tại thị trường Việt Nam.",
+   "metric": "growth",
+   "value_text": "+40.2%",
+   "market": "Việt Nam",
+   "period": "H1 2026",
+   "scope": "mobile",
+   "genre": "Idle RPG",
+   "genre_level": "subgenre",
+   "quote": "Idle RPG $13.4M 7.6% +40.2%",
+   "section_title": "Revenue -Led Subgenres",
+   "attributed_to": "Gamota analysis",
+   "criterion": 0,
+   "value": 40.2,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": " pools —\nindicating diversification rather than a structural shift.\n02 VIETNAM MARKET LENS\nSource: Multiple mobile market intelligence sources; Gamota analysis. Date Range :2026/1~2026/6\nRevenue -Led Subgenres\nH1 revenue remained concentrated in three large categories, while growth broadened through both traffic -supported and revenue -le d\ngains.\n87.4%\nTop 10 Share\n43.0%\nTop 3 Share\nTop 10 Subgenres by Total Revenue, H1 2026\nSubgenre Revenue Share YoY\nMMORPG $29.9M 16.9% +1.0%\nBattle Royale $26.8M 15.2% +2.6%\n4X Battle $19.3M 10.9% -1.8%\nTeam Battle $16.3M 9.2% +17.2%\nMOBA $13.5M 7.6% -35.1%\nIdle RPG $13.4M 7.6% +40.2%\nAvatar Life $9.7M 5.5% +6.2%\nShooter $9.2M 5.2% +579.4%\nSim Sports $8.5M 4.8% +80.7%\nAuto Chess $8.2M 4.6% -21.9%\nH1 revenue combined a stable core with two growth paths\n• A stable revenue core: MMO",
+   "origin": "investgame.net",
+   "tier": "B",
+   "flags": [
+    "Số theo nửa năm, không phải số của cả 12 tháng",
+    "Số của thị trường Việt Nam, câu hỏi hỏi về Đông Nam Á"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C21",
+   "source_id": "S71be215c",
+   "claim_text": "Thể loại Team Battle đạt tốc độ tăng trưởng doanh thu 17.2% trong H1 2026 tại thị trường Việt Nam.",
+   "metric": "growth",
+   "value_text": "+17.2%",
+   "market": "Việt Nam",
+   "period": "H1 2026",
+   "scope": "mobile",
+   "genre": "Team Battle",
+   "genre_level": "subgenre",
+   "quote": "Team Battle $16.3M 9.2% +17.2%",
+   "section_title": "Revenue -Led Subgenres",
+   "attributed_to": "Gamota analysis",
+   "criterion": 0,
+   "value": 17.2,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "e, but\nestablished genres retained the largest download pools —\nindicating diversification rather than a structural shift.\n02 VIETNAM MARKET LENS\nSource: Multiple mobile market intelligence sources; Gamota analysis. Date Range :2026/1~2026/6\nRevenue -Led Subgenres\nH1 revenue remained concentrated in three large categories, while growth broadened through both traffic -supported and revenue -le d\ngains.\n87.4%\nTop 10 Share\n43.0%\nTop 3 Share\nTop 10 Subgenres by Total Revenue, H1 2026\nSubgenre Revenue Share YoY\nMMORPG $29.9M 16.9% +1.0%\nBattle Royale $26.8M 15.2% +2.6%\n4X Battle $19.3M 10.9% -1.8%\nTeam Battle $16.3M 9.2% +17.2%\nMOBA $13.5M 7.6% -35.1%\nIdle RPG $13.4M 7.6% +40.2%\nAvatar Life $9.7M 5.5% +6.2%\nShooter $9.2M 5.2% +579.4%\nSim Sports $8.5M 4.8% +80.7%\nAuto Chess $8.2M 4.6% -21.9%\nH1 revenue combined a stable cor",
+   "origin": "investgame.net",
+   "tier": "B",
+   "flags": [
+    "Số theo nửa năm, không phải số của cả 12 tháng",
+    "Số của thị trường Việt Nam, câu hỏi hỏi về Đông Nam Á"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C22",
+   "source_id": "S71be215c",
+   "claim_text": "Thể loại Avatar Life đạt tốc độ tăng trưởng doanh thu 6.2% trong H1 2026 tại thị trường Việt Nam.",
+   "metric": "growth",
+   "value_text": "+6.2%",
+   "market": "Việt Nam",
+   "period": "H1 2026",
+   "scope": "mobile",
+   "genre": "Avatar Life",
+   "genre_level": "subgenre",
+   "quote": "Avatar Life $9.7M 5.5% +6.2%",
+   "section_title": "Revenue -Led Subgenres",
+   "attributed_to": "Gamota analysis",
+   "criterion": 0,
+   "value": 6.2,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "ication rather than a structural shift.\n02 VIETNAM MARKET LENS\nSource: Multiple mobile market intelligence sources; Gamota analysis. Date Range :2026/1~2026/6\nRevenue -Led Subgenres\nH1 revenue remained concentrated in three large categories, while growth broadened through both traffic -supported and revenue -le d\ngains.\n87.4%\nTop 10 Share\n43.0%\nTop 3 Share\nTop 10 Subgenres by Total Revenue, H1 2026\nSubgenre Revenue Share YoY\nMMORPG $29.9M 16.9% +1.0%\nBattle Royale $26.8M 15.2% +2.6%\n4X Battle $19.3M 10.9% -1.8%\nTeam Battle $16.3M 9.2% +17.2%\nMOBA $13.5M 7.6% -35.1%\nIdle RPG $13.4M 7.6% +40.2%\nAvatar Life $9.7M 5.5% +6.2%\nShooter $9.2M 5.2% +579.4%\nSim Sports $8.5M 4.8% +80.7%\nAuto Chess $8.2M 4.6% -21.9%\nH1 revenue combined a stable core with two growth paths\n• A stable revenue core: MMORPG, Battle Royale, and 4X Ba",
+   "origin": "investgame.net",
+   "tier": "B",
+   "flags": [
+    "Số theo nửa năm, không phải số của cả 12 tháng",
+    "Số của thị trường Việt Nam, câu hỏi hỏi về Đông Nam Á"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C23",
+   "source_id": "S71be215c",
+   "claim_text": "Thể loại Battle Royale có tốc độ tăng trưởng doanh thu 2.6% trong H1 2026 tại thị trường Việt Nam.",
+   "metric": "growth",
+   "value_text": "+2.6%",
+   "market": "Việt Nam",
+   "period": "H1 2026",
+   "scope": "mobile",
+   "genre": "Battle Royale",
+   "genre_level": "subgenre",
+   "quote": "Battle Royale $26.8M 15.2% +2.6%",
+   "section_title": "Revenue -Led Subgenres",
+   "attributed_to": "Gamota analysis",
+   "criterion": 0,
+   "value": 2.6,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "ion.\n• Broader mix: Faster -growing categories gained relevance, but\nestablished genres retained the largest download pools —\nindicating diversification rather than a structural shift.\n02 VIETNAM MARKET LENS\nSource: Multiple mobile market intelligence sources; Gamota analysis. Date Range :2026/1~2026/6\nRevenue -Led Subgenres\nH1 revenue remained concentrated in three large categories, while growth broadened through both traffic -supported and revenue -le d\ngains.\n87.4%\nTop 10 Share\n43.0%\nTop 3 Share\nTop 10 Subgenres by Total Revenue, H1 2026\nSubgenre Revenue Share YoY\nMMORPG $29.9M 16.9% +1.0%\nBattle Royale $26.8M 15.2% +2.6%\n4X Battle $19.3M 10.9% -1.8%\nTeam Battle $16.3M 9.2% +17.2%\nMOBA $13.5M 7.6% -35.1%\nIdle RPG $13.4M 7.6% +40.2%\nAvatar Life $9.7M 5.5% +6.2%\nShooter $9.2M 5.2% +579.4%\nSim Sports $8.5M 4.8% +80.7%\nA",
+   "origin": "investgame.net",
+   "tier": "B",
+   "flags": [
+    "Số theo nửa năm, không phải số của cả 12 tháng",
+    "Số của thị trường Việt Nam, câu hỏi hỏi về Đông Nam Á"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C24",
+   "source_id": "S71be215c",
+   "claim_text": "Thể loại MMORPG đạt tốc độ tăng trưởng doanh thu 1.0% trong H1 2026 tại thị trường Việt Nam.",
+   "metric": "growth",
+   "value_text": "+1.0%",
+   "market": "Việt Nam",
+   "period": "H1 2026",
+   "scope": "mobile",
+   "genre": "MMORPG",
+   "genre_level": "subgenre",
+   "quote": "MMORPG $29.9M 16.9% +1.0%",
+   "section_title": "Revenue -Led Subgenres",
+   "attributed_to": "Gamota analysis",
+   "criterion": 0,
+   "value": 1.0,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "y,\nand accessible progression.\n• Broader mix: Faster -growing categories gained relevance, but\nestablished genres retained the largest download pools —\nindicating diversification rather than a structural shift.\n02 VIETNAM MARKET LENS\nSource: Multiple mobile market intelligence sources; Gamota analysis. Date Range :2026/1~2026/6\nRevenue -Led Subgenres\nH1 revenue remained concentrated in three large categories, while growth broadened through both traffic -supported and revenue -le d\ngains.\n87.4%\nTop 10 Share\n43.0%\nTop 3 Share\nTop 10 Subgenres by Total Revenue, H1 2026\nSubgenre Revenue Share YoY\nMMORPG $29.9M 16.9% +1.0%\nBattle Royale $26.8M 15.2% +2.6%\n4X Battle $19.3M 10.9% -1.8%\nTeam Battle $16.3M 9.2% +17.2%\nMOBA $13.5M 7.6% -35.1%\nIdle RPG $13.4M 7.6% +40.2%\nAvatar Life $9.7M 5.5% +6.2%\nShooter $9.2M 5.2% +579.",
+   "origin": "investgame.net",
+   "tier": "B",
+   "flags": [
+    "Số theo nửa năm, không phải số của cả 12 tháng",
+    "Số của thị trường Việt Nam, câu hỏi hỏi về Đông Nam Á"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C25",
+   "source_id": "S71be215c",
+   "claim_text": "Thể loại MMORPG đạt quy mô doanh thu 29.9M USD trong H1 2026 tại thị trường Việt Nam.",
+   "metric": "revenue",
+   "value_text": "$29.9M",
+   "market": "Việt Nam",
+   "period": "H1 2026",
+   "scope": "mobile",
+   "genre": "MMORPG",
+   "genre_level": "subgenre",
+   "quote": "MMORPG $29.9M 16.9% +1.0%",
+   "section_title": "Revenue -Led Subgenres",
+   "attributed_to": "Gamota analysis",
+   "criterion": 1,
+   "value": 29900000.0,
+   "unit": "USD",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "y,\nand accessible progression.\n• Broader mix: Faster -growing categories gained relevance, but\nestablished genres retained the largest download pools —\nindicating diversification rather than a structural shift.\n02 VIETNAM MARKET LENS\nSource: Multiple mobile market intelligence sources; Gamota analysis. Date Range :2026/1~2026/6\nRevenue -Led Subgenres\nH1 revenue remained concentrated in three large categories, while growth broadened through both traffic -supported and revenue -le d\ngains.\n87.4%\nTop 10 Share\n43.0%\nTop 3 Share\nTop 10 Subgenres by Total Revenue, H1 2026\nSubgenre Revenue Share YoY\nMMORPG $29.9M 16.9% +1.0%\nBattle Royale $26.8M 15.2% +2.6%\n4X Battle $19.3M 10.9% -1.8%\nTeam Battle $16.3M 9.2% +17.2%\nMOBA $13.5M 7.6% -35.1%\nIdle RPG $13.4M 7.6% +40.2%\nAvatar Life $9.7M 5.5% +6.2%\nShooter $9.2M 5.2% +579.",
    "origin": "investgame.net",
    "tier": "B",
    "flags": [
@@ -951,56 +973,55 @@
   {
    "id": "C26",
    "source_id": "S71be215c",
-   "claim_text": "Thể loại Sim Sports đạt 8.68M lượt tải xuống với thị phần 11.3% và tăng trưởng 242.2% YoY tại thị trường Việt Nam trong H1 2026.",
-   "metric": "growth",
-   "value_text": "+242.2%",
+   "claim_text": "Thể loại Battle Royale đạt quy mô doanh thu 26.8M USD trong H1 2026 tại thị trường Việt Nam.",
+   "metric": "revenue",
+   "value_text": "$26.8M",
    "market": "Việt Nam",
-   "period": "H1 2026 vs H1 2025",
+   "period": "H1 2026",
    "scope": "mobile",
-   "genre": "Sim Sports",
+   "genre": "Battle Royale",
    "genre_level": "subgenre",
-   "quote": "Sim Sports 8.68M 11.3% +242.2%",
-   "section_title": "Download -Led Subgenres",
-   "attributed_to": "",
-   "criterion": 0,
-   "value": 242.2,
-   "unit": "%",
+   "quote": "Battle Royale $26.8M 15.2% +2.6%",
+   "section_title": "Revenue -Led Subgenres",
+   "attributed_to": "Gamota analysis",
+   "criterion": 1,
+   "value": 26800000.0,
+   "unit": "USD",
    "verified": true,
    "verify_note": "Đã tìm thấy câu trích trong nguồn",
    "match_score": 100.0,
    "page": null,
-   "context": "nths.\nVisible value may support payment conversion\nIn progression -led segments, purchases offering power, rank,\ncollection, or status gains may support conversion; local payments\ncan also reduce transaction friction.\n02 VIETNAM MARKET LENS\nSource: Multiple mobile market intelligence sources; Gamota analysis. Date Range :2026/1~2026/6\nDownload -Led Subgenres\nEstablished categories continued to anchor H1 download scale, while Sim Sports, Shooter, and Idle RPG emerged as notable\ngrowth pockets.\nTop 10 Subgenres by Downloads, H1 2026\nSubgenre Downloads Share YoY\nBattle Royale 10.05M 13.1% -22.3%\nSim Sports 8.68M 11.3% +242.2%\n4X Battle 7.94M 10.4% -15.4%\nSandbox 6.68M 8.7% -26.9%\nMMORPG 6.57M 8.6% -47.8%\nMOBA 6.46M 8.4% -26.4%\nIdle RPG 5.99M 7.8% +21.4%\nTeam Battle 4.62M 6.0% -30.5%\nAvatar Life 4.44M 5.8% -46.0%\nShooter ",
+   "context": "ion.\n• Broader mix: Faster -growing categories gained relevance, but\nestablished genres retained the largest download pools —\nindicating diversification rather than a structural shift.\n02 VIETNAM MARKET LENS\nSource: Multiple mobile market intelligence sources; Gamota analysis. Date Range :2026/1~2026/6\nRevenue -Led Subgenres\nH1 revenue remained concentrated in three large categories, while growth broadened through both traffic -supported and revenue -le d\ngains.\n87.4%\nTop 10 Share\n43.0%\nTop 3 Share\nTop 10 Subgenres by Total Revenue, H1 2026\nSubgenre Revenue Share YoY\nMMORPG $29.9M 16.9% +1.0%\nBattle Royale $26.8M 15.2% +2.6%\n4X Battle $19.3M 10.9% -1.8%\nTeam Battle $16.3M 9.2% +17.2%\nMOBA $13.5M 7.6% -35.1%\nIdle RPG $13.4M 7.6% +40.2%\nAvatar Life $9.7M 5.5% +6.2%\nShooter $9.2M 5.2% +579.4%\nSim Sports $8.5M 4.8% +80.7%\nA",
    "origin": "investgame.net",
    "tier": "B",
    "flags": [
     "Số theo nửa năm, không phải số của cả 12 tháng",
-    "Số của thị trường Việt Nam, câu hỏi hỏi về Đông Nam Á",
-    "Tăng trưởng trên 100%: cần xem giá trị tuyệt đối, có thể do nền nhỏ"
+    "Số của thị trường Việt Nam, câu hỏi hỏi về Đông Nam Á"
    ],
    "excluded_by_user": false
   },
   {
    "id": "C27",
    "source_id": "S71be215c",
-   "claim_text": "Thể loại 4X Battle đạt 7.94M lượt tải xuống với thị phần 10.4% và tăng trưởng -15.4% YoY tại thị trường Việt Nam trong H1 2026.",
-   "metric": "growth",
-   "value_text": "-15.4%",
+   "claim_text": "Thể loại 4X Battle đạt quy mô doanh thu 19.3M USD trong H1 2026 tại thị trường Việt Nam.",
+   "metric": "revenue",
+   "value_text": "$19.3M",
    "market": "Việt Nam",
-   "period": "H1 2026 vs H1 2025",
+   "period": "H1 2026",
    "scope": "mobile",
    "genre": "4X Battle",
    "genre_level": "subgenre",
-   "quote": "4X Battle 7.94M 10.4% -15.4%",
-   "section_title": "Download -Led Subgenres",
-   "attributed_to": "",
-   "criterion": 0,
-   "value": -15.4,
-   "unit": "%",
+   "quote": "4X Battle $19.3M 10.9% -1.8%",
+   "section_title": "Revenue -Led Subgenres",
+   "attributed_to": "Gamota analysis",
+   "criterion": 1,
+   "value": 19300000.0,
+   "unit": "USD",
    "verified": true,
    "verify_note": "Đã tìm thấy câu trích trong nguồn",
    "match_score": 100.0,
    "page": null,
-   "context": " payment conversion\nIn progression -led segments, purchases offering power, rank,\ncollection, or status gains may support conversion; local payments\ncan also reduce transaction friction.\n02 VIETNAM MARKET LENS\nSource: Multiple mobile market intelligence sources; Gamota analysis. Date Range :2026/1~2026/6\nDownload -Led Subgenres\nEstablished categories continued to anchor H1 download scale, while Sim Sports, Shooter, and Idle RPG emerged as notable\ngrowth pockets.\nTop 10 Subgenres by Downloads, H1 2026\nSubgenre Downloads Share YoY\nBattle Royale 10.05M 13.1% -22.3%\nSim Sports 8.68M 11.3% +242.2%\n4X Battle 7.94M 10.4% -15.4%\nSandbox 6.68M 8.7% -26.9%\nMMORPG 6.57M 8.6% -47.8%\nMOBA 6.46M 8.4% -26.4%\nIdle RPG 5.99M 7.8% +21.4%\nTeam Battle 4.62M 6.0% -30.5%\nAvatar Life 4.44M 5.8% -46.0%\nShooter 3.78M 4.9% +181.0%\n85.3%\nTop ",
+   "context": "ng categories gained relevance, but\nestablished genres retained the largest download pools —\nindicating diversification rather than a structural shift.\n02 VIETNAM MARKET LENS\nSource: Multiple mobile market intelligence sources; Gamota analysis. Date Range :2026/1~2026/6\nRevenue -Led Subgenres\nH1 revenue remained concentrated in three large categories, while growth broadened through both traffic -supported and revenue -le d\ngains.\n87.4%\nTop 10 Share\n43.0%\nTop 3 Share\nTop 10 Subgenres by Total Revenue, H1 2026\nSubgenre Revenue Share YoY\nMMORPG $29.9M 16.9% +1.0%\nBattle Royale $26.8M 15.2% +2.6%\n4X Battle $19.3M 10.9% -1.8%\nTeam Battle $16.3M 9.2% +17.2%\nMOBA $13.5M 7.6% -35.1%\nIdle RPG $13.4M 7.6% +40.2%\nAvatar Life $9.7M 5.5% +6.2%\nShooter $9.2M 5.2% +579.4%\nSim Sports $8.5M 4.8% +80.7%\nAuto Chess $8.2M 4.6% -21.9%\nH",
    "origin": "investgame.net",
    "tier": "B",
    "flags": [
@@ -1012,25 +1033,25 @@
   {
    "id": "C28",
    "source_id": "S71be215c",
-   "claim_text": "Thể loại Sandbox đạt 6.68M lượt tải xuống với thị phần 8.7% và tăng trưởng -26.9% YoY tại thị trường Việt Nam trong H1 2026.",
-   "metric": "growth",
-   "value_text": "-26.9%",
+   "claim_text": "Thể loại Team Battle đạt quy mô doanh thu 16.3M USD trong H1 2026 tại thị trường Việt Nam.",
+   "metric": "revenue",
+   "value_text": "$16.3M",
    "market": "Việt Nam",
-   "period": "H1 2026 vs H1 2025",
+   "period": "H1 2026",
    "scope": "mobile",
-   "genre": "Sandbox",
+   "genre": "Team Battle",
    "genre_level": "subgenre",
-   "quote": "Sandbox 6.68M 8.7% -26.9%",
-   "section_title": "Download -Led Subgenres",
-   "attributed_to": "",
-   "criterion": 0,
-   "value": -26.9,
-   "unit": "%",
+   "quote": "Team Battle $16.3M 9.2% +17.2%",
+   "section_title": "Revenue -Led Subgenres",
+   "attributed_to": "Gamota analysis",
+   "criterion": 1,
+   "value": 16300000.0,
+   "unit": "USD",
    "verified": true,
    "verify_note": "Đã tìm thấy câu trích trong nguồn",
    "match_score": 100.0,
    "page": null,
-   "context": "ssion -led segments, purchases offering power, rank,\ncollection, or status gains may support conversion; local payments\ncan also reduce transaction friction.\n02 VIETNAM MARKET LENS\nSource: Multiple mobile market intelligence sources; Gamota analysis. Date Range :2026/1~2026/6\nDownload -Led Subgenres\nEstablished categories continued to anchor H1 download scale, while Sim Sports, Shooter, and Idle RPG emerged as notable\ngrowth pockets.\nTop 10 Subgenres by Downloads, H1 2026\nSubgenre Downloads Share YoY\nBattle Royale 10.05M 13.1% -22.3%\nSim Sports 8.68M 11.3% +242.2%\n4X Battle 7.94M 10.4% -15.4%\nSandbox 6.68M 8.7% -26.9%\nMMORPG 6.57M 8.6% -47.8%\nMOBA 6.46M 8.4% -26.4%\nIdle RPG 5.99M 7.8% +21.4%\nTeam Battle 4.62M 6.0% -30.5%\nAvatar Life 4.44M 5.8% -46.0%\nShooter 3.78M 4.9% +181.0%\n85.3%\nTop 10 Share\n34.9%\nTop 3 Share",
+   "context": "e, but\nestablished genres retained the largest download pools —\nindicating diversification rather than a structural shift.\n02 VIETNAM MARKET LENS\nSource: Multiple mobile market intelligence sources; Gamota analysis. Date Range :2026/1~2026/6\nRevenue -Led Subgenres\nH1 revenue remained concentrated in three large categories, while growth broadened through both traffic -supported and revenue -le d\ngains.\n87.4%\nTop 10 Share\n43.0%\nTop 3 Share\nTop 10 Subgenres by Total Revenue, H1 2026\nSubgenre Revenue Share YoY\nMMORPG $29.9M 16.9% +1.0%\nBattle Royale $26.8M 15.2% +2.6%\n4X Battle $19.3M 10.9% -1.8%\nTeam Battle $16.3M 9.2% +17.2%\nMOBA $13.5M 7.6% -35.1%\nIdle RPG $13.4M 7.6% +40.2%\nAvatar Life $9.7M 5.5% +6.2%\nShooter $9.2M 5.2% +579.4%\nSim Sports $8.5M 4.8% +80.7%\nAuto Chess $8.2M 4.6% -21.9%\nH1 revenue combined a stable cor",
    "origin": "investgame.net",
    "tier": "B",
    "flags": [
@@ -1042,25 +1063,25 @@
   {
    "id": "C29",
    "source_id": "S71be215c",
-   "claim_text": "Thể loại MMORPG đạt 6.57M lượt tải xuống với thị phần 8.6% và tăng trưởng -47.8% YoY tại thị trường Việt Nam trong H1 2026.",
-   "metric": "growth",
-   "value_text": "-47.8%",
+   "claim_text": "Thể loại MOBA đạt quy mô doanh thu 13.5M USD trong H1 2026 tại thị trường Việt Nam.",
+   "metric": "revenue",
+   "value_text": "$13.5M",
    "market": "Việt Nam",
-   "period": "H1 2026 vs H1 2025",
+   "period": "H1 2026",
    "scope": "mobile",
-   "genre": "MMORPG",
+   "genre": "MOBA",
    "genre_level": "subgenre",
-   "quote": "MMORPG 6.57M 8.6% -47.8%",
-   "section_title": "Download -Led Subgenres",
-   "attributed_to": "",
-   "criterion": 0,
-   "value": -47.8,
-   "unit": "%",
+   "quote": "MOBA $13.5M 7.6% -35.1%",
+   "section_title": "Revenue -Led Subgenres",
+   "attributed_to": "Gamota analysis",
+   "criterion": 1,
+   "value": 13500000.0,
+   "unit": "USD",
    "verified": true,
    "verify_note": "Đã tìm thấy câu trích trong nguồn",
    "match_score": 100.0,
    "page": null,
-   "context": "ases offering power, rank,\ncollection, or status gains may support conversion; local payments\ncan also reduce transaction friction.\n02 VIETNAM MARKET LENS\nSource: Multiple mobile market intelligence sources; Gamota analysis. Date Range :2026/1~2026/6\nDownload -Led Subgenres\nEstablished categories continued to anchor H1 download scale, while Sim Sports, Shooter, and Idle RPG emerged as notable\ngrowth pockets.\nTop 10 Subgenres by Downloads, H1 2026\nSubgenre Downloads Share YoY\nBattle Royale 10.05M 13.1% -22.3%\nSim Sports 8.68M 11.3% +242.2%\n4X Battle 7.94M 10.4% -15.4%\nSandbox 6.68M 8.7% -26.9%\nMMORPG 6.57M 8.6% -47.8%\nMOBA 6.46M 8.4% -26.4%\nIdle RPG 5.99M 7.8% +21.4%\nTeam Battle 4.62M 6.0% -30.5%\nAvatar Life 4.44M 5.8% -46.0%\nShooter 3.78M 4.9% +181.0%\n85.3%\nTop 10 Share\n34.9%\nTop 3 Share\nGrowth broadened the mix",
+   "context": "ned the largest download pools —\nindicating diversification rather than a structural shift.\n02 VIETNAM MARKET LENS\nSource: Multiple mobile market intelligence sources; Gamota analysis. Date Range :2026/1~2026/6\nRevenue -Led Subgenres\nH1 revenue remained concentrated in three large categories, while growth broadened through both traffic -supported and revenue -le d\ngains.\n87.4%\nTop 10 Share\n43.0%\nTop 3 Share\nTop 10 Subgenres by Total Revenue, H1 2026\nSubgenre Revenue Share YoY\nMMORPG $29.9M 16.9% +1.0%\nBattle Royale $26.8M 15.2% +2.6%\n4X Battle $19.3M 10.9% -1.8%\nTeam Battle $16.3M 9.2% +17.2%\nMOBA $13.5M 7.6% -35.1%\nIdle RPG $13.4M 7.6% +40.2%\nAvatar Life $9.7M 5.5% +6.2%\nShooter $9.2M 5.2% +579.4%\nSim Sports $8.5M 4.8% +80.7%\nAuto Chess $8.2M 4.6% -21.9%\nH1 revenue combined a stable core with two growth paths\n",
    "origin": "investgame.net",
    "tier": "B",
    "flags": [
@@ -1071,249 +1092,368 @@
   },
   {
    "id": "C30",
-   "source_id": "S71be215c",
-   "claim_text": "Thể loại MOBA đạt 6.46M lượt tải xuống với thị phần 8.4% và tăng trưởng -26.4% YoY tại thị trường Việt Nam trong H1 2026.",
-   "metric": "growth",
-   "value_text": "-26.4%",
-   "market": "Việt Nam",
-   "period": "H1 2026 vs H1 2025",
-   "scope": "mobile",
-   "genre": "MOBA",
+   "source_id": "Sfcfd692f",
+   "claim_text": "Phân khúc Merge-2 đạt mức tăng trưởng doanh thu gần gấp đôi lên 1,2 tỷ USD và tăng 20% lượt tải xuống so với cùng kỳ năm trước trong nửa đầu năm 2026.",
+   "metric": "revenue",
+   "value_text": "$1.2B",
+   "market": "Toàn cầu",
+   "period": "H1 2026",
+   "scope": "mobile_iap",
+   "genre": "Merge-2",
    "genre_level": "subgenre",
-   "quote": "MOBA 6.46M 8.4% -26.4%",
-   "section_title": "Download -Led Subgenres",
+   "quote": "In H1 2026, it almost doubled its revenue to $1.2B and increased its downloads by 20% YoY, proving that monetization is the biggest strength of the genre.",
+   "section_title": "Merge-2: Big Publishers Growing Bigger",
    "attributed_to": "",
-   "criterion": 0,
-   "value": -26.4,
-   "unit": "%",
+   "criterion": 1,
+   "value": 1200000000.0,
+   "unit": "USD",
    "verified": true,
    "verify_note": "Đã tìm thấy câu trích trong nguồn",
    "match_score": 100.0,
    "page": null,
-   "context": ",\ncollection, or status gains may support conversion; local payments\ncan also reduce transaction friction.\n02 VIETNAM MARKET LENS\nSource: Multiple mobile market intelligence sources; Gamota analysis. Date Range :2026/1~2026/6\nDownload -Led Subgenres\nEstablished categories continued to anchor H1 download scale, while Sim Sports, Shooter, and Idle RPG emerged as notable\ngrowth pockets.\nTop 10 Subgenres by Downloads, H1 2026\nSubgenre Downloads Share YoY\nBattle Royale 10.05M 13.1% -22.3%\nSim Sports 8.68M 11.3% +242.2%\n4X Battle 7.94M 10.4% -15.4%\nSandbox 6.68M 8.7% -26.9%\nMMORPG 6.57M 8.6% -47.8%\nMOBA 6.46M 8.4% -26.4%\nIdle RPG 5.99M 7.8% +21.4%\nTeam Battle 4.62M 6.0% -30.5%\nAvatar Life 4.44M 5.8% -46.0%\nShooter 3.78M 4.9% +181.0%\n85.3%\nTop 10 Share\n34.9%\nTop 3 Share\nGrowth broadened the mix without displacing lea",
-   "origin": "investgame.net",
-   "tier": "B",
+   "context": " publisher may be getting ready to repeat that success in Match-3.\n- Simon's Cat Match! by Tactile Games. Big IPs keep finding their way into Match-3. Harry Potter, Disney, even K-pop legacies like Puzzle SEVENTEEN have all taken a shot at the genre—and Simon's Cat is next in line. While the game actually launched in February 2025, it really started picking up speed this year and already surpassed $6M, which could be just the beginning of its story.\nMerge-2: Big Publishers Growing Bigger\nMerge-2 has been the fastest-growing among the big genres for a while now, and it’s only picking up speed. In H1 2026, it almost doubled its revenue to $1.2B and increased its downloads by 20% YoY, proving that monetization is the biggest strength of the genre. Not many Casual genres can pull that off right now, and definitely not at this rate!\nLooking at the top charts, Gossip Harbor has been #1 since October 2024. In March this year, the game crossed the",
+   "origin": "AppMagic",
+   "tier": "A",
    "flags": [
     "Số theo nửa năm, không phải số của cả 12 tháng",
-    "Số của thị trường Việt Nam, câu hỏi hỏi về Đông Nam Á"
+    "Số của thị trường Toàn cầu, câu hỏi hỏi về Đông Nam Á"
    ],
    "excluded_by_user": false
   },
   {
    "id": "C31",
-   "source_id": "S71be215c",
-   "claim_text": "Thể loại Idle RPG đạt 5.99M lượt tải xuống với thị phần 7.8% và tăng trưởng 21.4% YoY tại thị trường Việt Nam trong H1 2026.",
-   "metric": "growth",
-   "value_text": "+21.4%",
-   "market": "Việt Nam",
-   "period": "H1 2026 vs H1 2025",
-   "scope": "mobile",
-   "genre": "Idle RPG",
+   "source_id": "Sfcfd692f",
+   "claim_text": "Phân khúc Merge đạt doanh thu 1,3 tỷ USD, tăng 74% so với cùng kỳ năm trước và 311 triệu lượt tải xuống, tăng 22% so với cùng kỳ năm trước trong nửa đầu năm 2026.",
+   "metric": "revenue",
+   "value_text": "$1.3B",
+   "market": "Toàn cầu",
+   "period": "H1 2026",
+   "scope": "mobile_iap",
+   "genre": "Merge",
    "genre_level": "subgenre",
-   "quote": "Idle RPG 5.99M 7.8% +21.4%",
-   "section_title": "Download -Led Subgenres",
+   "quote": "- Merge: $1.3B in revenue (+74% YoY), 311M downloads (+22% YoY). Gossip Harbor: Merge & Story, Tasty Travels: Merge Game, and Travel Town - Merge Adventure",
+   "section_title": "Puzzle: The Headliner of the Casual Market",
    "attributed_to": "",
-   "criterion": 0,
-   "value": 21.4,
-   "unit": "%",
+   "criterion": 1,
+   "value": 1300000000.0,
+   "unit": "USD",
    "verified": true,
    "verify_note": "Đã tìm thấy câu trích trong nguồn",
    "match_score": 100.0,
    "page": null,
-   "context": " gains may support conversion; local payments\ncan also reduce transaction friction.\n02 VIETNAM MARKET LENS\nSource: Multiple mobile market intelligence sources; Gamota analysis. Date Range :2026/1~2026/6\nDownload -Led Subgenres\nEstablished categories continued to anchor H1 download scale, while Sim Sports, Shooter, and Idle RPG emerged as notable\ngrowth pockets.\nTop 10 Subgenres by Downloads, H1 2026\nSubgenre Downloads Share YoY\nBattle Royale 10.05M 13.1% -22.3%\nSim Sports 8.68M 11.3% +242.2%\n4X Battle 7.94M 10.4% -15.4%\nSandbox 6.68M 8.7% -26.9%\nMMORPG 6.57M 8.6% -47.8%\nMOBA 6.46M 8.4% -26.4%\nIdle RPG 5.99M 7.8% +21.4%\nTeam Battle 4.62M 6.0% -30.5%\nAvatar Life 4.44M 5.8% -46.0%\nShooter 3.78M 4.9% +181.0%\n85.3%\nTop 10 Share\n34.9%\nTop 3 Share\nGrowth broadened the mix without displacing leaders\n• Established scale: B",
-   "origin": "investgame.net",
-   "tier": "B",
+   "context": " How mature Farming titles are still setting new revenue records\nNow let's start where Casual's center of gravity has always been: Puzzles.\nPuzzle: The Headliner of the Casual Market\nMarket Segment Comparison: Puzzle market revenue\nPuzzles continue to lead the Casual market, and their grip is only tightening. In H1 2026, the segment generated $4.9B in IAP revenue, with its overall market share now exceeding 44%. Here's how that breaks down across the top-performing subgenres:\n- Match-3: $2.5B in revenue (–0.4% YoY), 392M downloads (+10% YoY). Royal Match, Candy Crush Saga, and Royal Kingdom\n- Merge: $1.3B in revenue (+74% YoY), 311M downloads (+22% YoY). Gossip Harbor: Merge & Story, Tasty Travels: Merge Game, and Travel Town - Merge Adventure\n- Match-2 Blast: $257M in revenue (+2% YoY), 35M downloads (+35% YoY). Toon Blast, Toy Blast, and Angry Birds Dream Blast\nAlthough Match-2 Blast is the third-largest Puzzle subgenre, we won’t explore",
+   "origin": "AppMagic",
+   "tier": "A",
    "flags": [
     "Số theo nửa năm, không phải số của cả 12 tháng",
-    "Số của thị trường Việt Nam, câu hỏi hỏi về Đông Nam Á"
+    "Số của thị trường Toàn cầu, câu hỏi hỏi về Đông Nam Á"
    ],
    "excluded_by_user": false
   },
   {
    "id": "C32",
-   "source_id": "S71be215c",
-   "claim_text": "Thể loại Team Battle đạt 4.62M lượt tải xuống với thị phần 6.0% và tăng trưởng -30.5% YoY tại thị trường Việt Nam trong H1 2026.",
-   "metric": "growth",
-   "value_text": "-30.5%",
-   "market": "Việt Nam",
-   "period": "H1 2026 vs H1 2025",
-   "scope": "mobile",
-   "genre": "Team Battle",
+   "source_id": "Sfcfd692f",
+   "claim_text": "Phân khúc Match-3 đạt doanh thu 2,5 tỷ USD, giảm 0,4% so với cùng kỳ năm trước và 392 triệu lượt tải xuống, tăng 10% so với cùng kỳ năm trước trong nửa đầu năm 2026.",
+   "metric": "revenue",
+   "value_text": "$2.5B",
+   "market": "Toàn cầu",
+   "period": "H1 2026",
+   "scope": "mobile_iap",
+   "genre": "Match-3",
    "genre_level": "subgenre",
-   "quote": "Team Battle 4.62M 6.0% -30.5%",
-   "section_title": "Download -Led Subgenres",
+   "quote": "- Match-3: $2.5B in revenue (–0.4% YoY), 392M downloads (+10% YoY). Royal Match, Candy Crush Saga, and Royal Kingdom",
+   "section_title": "Puzzle: The Headliner of the Casual Market",
    "attributed_to": "",
-   "criterion": 0,
-   "value": -30.5,
-   "unit": "%",
+   "criterion": 1,
+   "value": 2500000000.0,
+   "unit": "USD",
    "verified": true,
    "verify_note": "Đã tìm thấy câu trích trong nguồn",
    "match_score": 100.0,
    "page": null,
-   "context": "on; local payments\ncan also reduce transaction friction.\n02 VIETNAM MARKET LENS\nSource: Multiple mobile market intelligence sources; Gamota analysis. Date Range :2026/1~2026/6\nDownload -Led Subgenres\nEstablished categories continued to anchor H1 download scale, while Sim Sports, Shooter, and Idle RPG emerged as notable\ngrowth pockets.\nTop 10 Subgenres by Downloads, H1 2026\nSubgenre Downloads Share YoY\nBattle Royale 10.05M 13.1% -22.3%\nSim Sports 8.68M 11.3% +242.2%\n4X Battle 7.94M 10.4% -15.4%\nSandbox 6.68M 8.7% -26.9%\nMMORPG 6.57M 8.6% -47.8%\nMOBA 6.46M 8.4% -26.4%\nIdle RPG 5.99M 7.8% +21.4%\nTeam Battle 4.62M 6.0% -30.5%\nAvatar Life 4.44M 5.8% -46.0%\nShooter 3.78M 4.9% +181.0%\n85.3%\nTop 10 Share\n34.9%\nTop 3 Share\nGrowth broadened the mix without displacing leaders\n• Established scale: Battle Royale and 4X Battle sta",
-   "origin": "investgame.net",
-   "tier": "B",
+   "context": " trends dev teams can't afford to ignore\n- How the Coin Master IP is taking up more space in the Coin Looter market\n- How mature Farming titles are still setting new revenue records\nNow let's start where Casual's center of gravity has always been: Puzzles.\nPuzzle: The Headliner of the Casual Market\nMarket Segment Comparison: Puzzle market revenue\nPuzzles continue to lead the Casual market, and their grip is only tightening. In H1 2026, the segment generated $4.9B in IAP revenue, with its overall market share now exceeding 44%. Here's how that breaks down across the top-performing subgenres:\n- Match-3: $2.5B in revenue (–0.4% YoY), 392M downloads (+10% YoY). Royal Match, Candy Crush Saga, and Royal Kingdom\n- Merge: $1.3B in revenue (+74% YoY), 311M downloads (+22% YoY). Gossip Harbor: Merge & Story, Tasty Travels: Merge Game, and Travel Town - Merge Adventure\n- Match-2 Blast: $257M in revenue (+2% YoY)",
+   "origin": "AppMagic",
+   "tier": "A",
    "flags": [
     "Số theo nửa năm, không phải số của cả 12 tháng",
-    "Số của thị trường Việt Nam, câu hỏi hỏi về Đông Nam Á"
+    "Số của thị trường Toàn cầu, câu hỏi hỏi về Đông Nam Á"
    ],
    "excluded_by_user": false
   },
   {
    "id": "C33",
-   "source_id": "S71be215c",
-   "claim_text": "Thể loại Avatar Life đạt 4.44M lượt tải xuống với thị phần 5.8% và tăng trưởng -46.0% YoY tại thị trường Việt Nam trong H1 2026.",
-   "metric": "growth",
-   "value_text": "-46.0%",
-   "market": "Việt Nam",
-   "period": "H1 2026 vs H1 2025",
-   "scope": "mobile",
-   "genre": "Avatar Life",
+   "source_id": "Sfcfd692f",
+   "claim_text": "Phân khúc Match-2 Blast đạt doanh thu 257 triệu USD, tăng 2% so với cùng kỳ năm trước và 35 triệu lượt tải xuống, tăng 35% so với cùng kỳ năm trước trong nửa đầu năm 2026.",
+   "metric": "revenue",
+   "value_text": "$257M",
+   "market": "Toàn cầu",
+   "period": "H1 2026",
+   "scope": "mobile_iap",
+   "genre": "Match-2 Blast",
    "genre_level": "subgenre",
-   "quote": "Avatar Life 4.44M 5.8% -46.0%",
-   "section_title": "Download -Led Subgenres",
+   "quote": "- Match-2 Blast: $257M in revenue (+2% YoY), 35M downloads (+35% YoY). Toon Blast, Toy Blast, and Angry Birds Dream Blast",
+   "section_title": "Puzzle: The Headliner of the Casual Market",
    "attributed_to": "",
-   "criterion": 0,
-   "value": -46.0,
-   "unit": "%",
+   "criterion": 1,
+   "value": 257000000.0,
+   "unit": "USD",
    "verified": true,
    "verify_note": "Đã tìm thấy câu trích trong nguồn",
    "match_score": 100.0,
    "page": null,
-   "context": "duce transaction friction.\n02 VIETNAM MARKET LENS\nSource: Multiple mobile market intelligence sources; Gamota analysis. Date Range :2026/1~2026/6\nDownload -Led Subgenres\nEstablished categories continued to anchor H1 download scale, while Sim Sports, Shooter, and Idle RPG emerged as notable\ngrowth pockets.\nTop 10 Subgenres by Downloads, H1 2026\nSubgenre Downloads Share YoY\nBattle Royale 10.05M 13.1% -22.3%\nSim Sports 8.68M 11.3% +242.2%\n4X Battle 7.94M 10.4% -15.4%\nSandbox 6.68M 8.7% -26.9%\nMMORPG 6.57M 8.6% -47.8%\nMOBA 6.46M 8.4% -26.4%\nIdle RPG 5.99M 7.8% +21.4%\nTeam Battle 4.62M 6.0% -30.5%\nAvatar Life 4.44M 5.8% -46.0%\nShooter 3.78M 4.9% +181.0%\n85.3%\nTop 10 Share\n34.9%\nTop 3 Share\nGrowth broadened the mix without displacing leaders\n• Established scale: Battle Royale and 4X Battle stayed in the Top\n3 despite lower",
-   "origin": "investgame.net",
-   "tier": "B",
+   "context": "liner of the Casual Market\nMarket Segment Comparison: Puzzle market revenue\nPuzzles continue to lead the Casual market, and their grip is only tightening. In H1 2026, the segment generated $4.9B in IAP revenue, with its overall market share now exceeding 44%. Here's how that breaks down across the top-performing subgenres:\n- Match-3: $2.5B in revenue (–0.4% YoY), 392M downloads (+10% YoY). Royal Match, Candy Crush Saga, and Royal Kingdom\n- Merge: $1.3B in revenue (+74% YoY), 311M downloads (+22% YoY). Gossip Harbor: Merge & Story, Tasty Travels: Merge Game, and Travel Town - Merge Adventure\n- Match-2 Blast: $257M in revenue (+2% YoY), 35M downloads (+35% YoY). Toon Blast, Toy Blast, and Angry Birds Dream Blast\nAlthough Match-2 Blast is the third-largest Puzzle subgenre, we won’t explore it in detail this time. Instead, we’ll turn our attention to Hybridcasual Puzzles, whose rapid growth and increasing infl",
+   "origin": "AppMagic",
+   "tier": "A",
    "flags": [
     "Số theo nửa năm, không phải số của cả 12 tháng",
-    "Số của thị trường Việt Nam, câu hỏi hỏi về Đông Nam Á"
+    "Số của thị trường Toàn cầu, câu hỏi hỏi về Đông Nam Á"
    ],
    "excluded_by_user": false
   },
   {
    "id": "C34",
-   "source_id": "S71be215c",
-   "claim_text": "Thể loại Shooter đạt 3.78M lượt tải xuống với thị phần 4.9% và tăng trưởng 181.0% YoY tại thị trường Việt Nam trong H1 2026.",
-   "metric": "growth",
-   "value_text": "+181.0%",
-   "market": "Việt Nam",
-   "period": "H1 2026 vs H1 2025",
-   "scope": "mobile",
-   "genre": "Shooter",
-   "genre_level": "subgenre",
-   "quote": "Shooter 3.78M 4.9% +181.0%",
-   "section_title": "Download -Led Subgenres",
+   "source_id": "Sfcfd692f",
+   "claim_text": "Thị trường Puzzle tạo ra 4,9 tỷ USD doanh thu IAP trong nửa đầu năm 2026.",
+   "metric": "revenue",
+   "value_text": "$4.9B",
+   "market": "Toàn cầu",
+   "period": "H1 2026",
+   "scope": "mobile_iap",
+   "genre": "Puzzle",
+   "genre_level": "genre",
+   "quote": "In H1 2026, the segment generated $4.9B in IAP revenue, with its overall market share now exceeding 44%.",
+   "section_title": "Puzzle: The Headliner of the Casual Market",
    "attributed_to": "",
-   "criterion": 0,
-   "value": 181.0,
-   "unit": "%",
+   "criterion": 1,
+   "value": 4900000000.0,
+   "unit": "USD",
    "verified": true,
    "verify_note": "Đã tìm thấy câu trích trong nguồn",
    "match_score": 100.0,
    "page": null,
-   "context": "VIETNAM MARKET LENS\nSource: Multiple mobile market intelligence sources; Gamota analysis. Date Range :2026/1~2026/6\nDownload -Led Subgenres\nEstablished categories continued to anchor H1 download scale, while Sim Sports, Shooter, and Idle RPG emerged as notable\ngrowth pockets.\nTop 10 Subgenres by Downloads, H1 2026\nSubgenre Downloads Share YoY\nBattle Royale 10.05M 13.1% -22.3%\nSim Sports 8.68M 11.3% +242.2%\n4X Battle 7.94M 10.4% -15.4%\nSandbox 6.68M 8.7% -26.9%\nMMORPG 6.57M 8.6% -47.8%\nMOBA 6.46M 8.4% -26.4%\nIdle RPG 5.99M 7.8% +21.4%\nTeam Battle 4.62M 6.0% -30.5%\nAvatar Life 4.44M 5.8% -46.0%\nShooter 3.78M 4.9% +181.0%\n85.3%\nTop 10 Share\n34.9%\nTop 3 Share\nGrowth broadened the mix without displacing leaders\n• Established scale: Battle Royale and 4X Battle stayed in the Top\n3 despite lower YoY downloads, showing lea",
-   "origin": "investgame.net",
-   "tier": "B",
+   "context": "tch-3 games are growing despite the segment’s general stagnation\n- Why large publishers like Century Games and Moon Active are doubling down on Merge-2\n- Which Hybridcasual trends dev teams can't afford to ignore\n- How the Coin Master IP is taking up more space in the Coin Looter market\n- How mature Farming titles are still setting new revenue records\nNow let's start where Casual's center of gravity has always been: Puzzles.\nPuzzle: The Headliner of the Casual Market\nMarket Segment Comparison: Puzzle market revenue\nPuzzles continue to lead the Casual market, and their grip is only tightening. In H1 2026, the segment generated $4.9B in IAP revenue, with its overall market share now exceeding 44%. Here's how that breaks down across the top-performing subgenres:\n- Match-3: $2.5B in revenue (–0.4% YoY), 392M downloads (+10% YoY). Royal Match, Candy Crush Saga, and Royal Kingdom\n- Merge: $1.3B ",
+   "origin": "AppMagic",
+   "tier": "A",
    "flags": [
     "Số theo nửa năm, không phải số của cả 12 tháng",
-    "Số của thị trường Việt Nam, câu hỏi hỏi về Đông Nam Á",
-    "Tăng trưởng trên 100%: cần xem giá trị tuyệt đối, có thể do nền nhỏ"
+    "Số của thị trường Toàn cầu, câu hỏi hỏi về Đông Nam Á"
    ],
    "excluded_by_user": false
   },
   {
    "id": "C35",
-   "source_id": "S71be215c",
-   "claim_text": "Top 10 thể loại game mobile chiếm 85.3% tổng lượt tải xuống tại thị trường Việt Nam trong H1 2026.",
-   "metric": "share",
-   "value_text": "85.3%",
-   "market": "Việt Nam",
-   "period": "H1 2026",
-   "scope": "mobile",
-   "genre": "",
-   "genre_level": "all",
-   "quote": "85.3% Top 10 Share",
-   "section_title": "Download -Led Subgenres",
+   "source_id": "Sfcfd692f",
+   "claim_text": "Doanh thu tổng thể của thị trường game Casual trong nửa đầu năm 2026 đạt khoảng 11 tỷ USD, không thay đổi so với nửa đầu năm 2025.",
+   "metric": "revenue",
+   "value_text": "$11B",
+   "market": "Toàn cầu",
+   "period": "H1 2025 vs H1 2026",
+   "scope": "mobile_iap",
+   "genre": "Casual",
+   "genre_level": "genre",
+   "quote": "The first half of 2026 followed a similar pattern, with overall revenue remaining virtually unchanged from H1 2025 at around $11B.",
+   "section_title": "",
    "attributed_to": "",
    "criterion": 1,
-   "value": 85.3,
-   "unit": "%",
+   "value": 11000000000.0,
+   "unit": "USD",
    "verified": true,
    "verify_note": "Đã tìm thấy câu trích trong nguồn",
    "match_score": 100.0,
    "page": null,
-   "context": " Multiple mobile market intelligence sources; Gamota analysis. Date Range :2026/1~2026/6\nDownload -Led Subgenres\nEstablished categories continued to anchor H1 download scale, while Sim Sports, Shooter, and Idle RPG emerged as notable\ngrowth pockets.\nTop 10 Subgenres by Downloads, H1 2026\nSubgenre Downloads Share YoY\nBattle Royale 10.05M 13.1% -22.3%\nSim Sports 8.68M 11.3% +242.2%\n4X Battle 7.94M 10.4% -15.4%\nSandbox 6.68M 8.7% -26.9%\nMMORPG 6.57M 8.6% -47.8%\nMOBA 6.46M 8.4% -26.4%\nIdle RPG 5.99M 7.8% +21.4%\nTeam Battle 4.62M 6.0% -30.5%\nAvatar Life 4.44M 5.8% -46.0%\nShooter 3.78M 4.9% +181.0%\n85.3%\nTop 10 Share\n34.9%\nTop 3 Share\nGrowth broadened the mix without displacing leaders\n• Established scale: Battle Royale and 4X Battle stayed in the Top\n3 despite lower YoY downloads, showing leadership can persist\n",
-   "origin": "investgame.net",
-   "tier": "B",
+   "context": "Casual Games Report H1 2026: Growth Beneath the Still Surface\nWhile the broader Casual games market remained largely flat in H1 2026, each major genre—Puzzle, Casino, and Simulation—found its own path to move forward. This report explores which strategies are actually working in today's market, and why.\n— Lera Kalashnikova\nIn 2025, Casual studios adapted their strategies to move forward in a market that had largely stalled. The first half of 2026 followed a similar pattern, with overall revenue remaining virtually unchanged from H1 2025 at around $11B. But that seeming stagnation only tells part of the story. Beneath the surface, new growth opportunities and genre breakthroughs are steadily reshaping the market.\nAs always, this report focuses on t",
+   "origin": "AppMagic",
+   "tier": "A",
    "flags": [
     "Số theo nửa năm, không phải số của cả 12 tháng",
-    "Số của thị trường Việt Nam, câu hỏi hỏi về Đông Nam Á"
+    "Số của thị trường Toàn cầu, câu hỏi hỏi về Đông Nam Á"
    ],
    "excluded_by_user": false
   },
   {
    "id": "C36",
-   "source_id": "S71be215c",
-   "claim_text": "Top 3 thể loại game mobile chiếm 34.9% tổng lượt tải xuống tại thị trường Việt Nam trong H1 2026.",
-   "metric": "share",
-   "value_text": "34.9%",
-   "market": "Việt Nam",
+   "source_id": "Sfcfd692f",
+   "claim_text": "Trò chơi Match Villains đạt khoảng 30 triệu USD doanh thu IAP trong nửa đầu năm 2026.",
+   "metric": "revenue",
+   "value_text": "$30M",
+   "market": "Toàn cầu",
    "period": "H1 2026",
-   "scope": "mobile",
-   "genre": "",
-   "genre_level": "all",
-   "quote": "34.9% Top 3 Share",
-   "section_title": "Download -Led Subgenres",
+   "scope": "mobile_iap",
+   "genre": "Match-3",
+   "genre_level": "subgenre",
+   "quote": "Match Villains by Good Job Games is now just one position away from entering the genre's top 10, having generated roughly $30M in IAP revenue during H1 2026.",
+   "section_title": "",
    "attributed_to": "",
    "criterion": 1,
-   "value": 34.9,
-   "unit": "%",
+   "value": 30000000.0,
+   "unit": "USD",
    "verified": true,
    "verify_note": "Đã tìm thấy câu trích trong nguồn",
    "match_score": 100.0,
    "page": null,
-   "context": "rket intelligence sources; Gamota analysis. Date Range :2026/1~2026/6\nDownload -Led Subgenres\nEstablished categories continued to anchor H1 download scale, while Sim Sports, Shooter, and Idle RPG emerged as notable\ngrowth pockets.\nTop 10 Subgenres by Downloads, H1 2026\nSubgenre Downloads Share YoY\nBattle Royale 10.05M 13.1% -22.3%\nSim Sports 8.68M 11.3% +242.2%\n4X Battle 7.94M 10.4% -15.4%\nSandbox 6.68M 8.7% -26.9%\nMMORPG 6.57M 8.6% -47.8%\nMOBA 6.46M 8.4% -26.4%\nIdle RPG 5.99M 7.8% +21.4%\nTeam Battle 4.62M 6.0% -30.5%\nAvatar Life 4.44M 5.8% -46.0%\nShooter 3.78M 4.9% +181.0%\n85.3%\nTop 10 Share\n34.9%\nTop 3 Share\nGrowth broadened the mix without displacing leaders\n• Established scale: Battle Royale and 4X Battle stayed in the Top\n3 despite lower YoY downloads, showing leadership can persist\nthrough softer acq",
-   "origin": "investgame.net",
-   "tier": "B",
+   "context": "the long-awaited expansion of the Gardenscapes IP with $1.9M generated while the game is still technically in its soft-launch stage since August 2022. Playrix is clearly searching for its next major hit, yet the main focus stays on scaling existing blockbusters like Gardenscapes and Homescapes—titles that have long proven they’re built to last and thrive.\nMatch-3 projects by Playrix since 2022\nMatching new projects to today’s genre standards is challenging even for the industry giants, and for newcomers, it's even harder. Still, the next shake-up in the rankings may be just around the corner. Match Villains by Good Job Games is now just one position away from entering the genre's top 10, having generated roughly $30M in IAP revenue during H1 2026. Its rapid rise may seem sudden, but it's actually backed by years of experience building successful Puzzle games.\nToday, Match Villains is the only major successful title currently owned by the stud",
+   "origin": "AppMagic",
+   "tier": "A",
    "flags": [
     "Số theo nửa năm, không phải số của cả 12 tháng",
-    "Số của thị trường Việt Nam, câu hỏi hỏi về Đông Nam Á"
+    "Số của thị trường Toàn cầu, câu hỏi hỏi về Đông Nam Á"
    ],
    "excluded_by_user": false
   },
   {
    "id": "C37",
-   "source_id": "S80418131",
-   "claim_text": "Doanh thu thể loại 4X strategy game tăng 17.6% QoQ tại Đông Nam Á trong Q1 2025.",
-   "metric": "growth",
-   "value_text": "+17.6% QoQ",
-   "market": "Đông Nam Á",
-   "period": "Q1 2025 vs Q4 2024",
-   "scope": "mobile",
-   "genre": "4X strategy",
-   "genre_level": "genre",
-   "quote": "- For revenue, 4X strategy games (+17.6% QoQ), MOBA (+20.1% QoQ), and MMORPG (-17.1% QoQ) are on top.",
-   "section_title": "General Market Overview",
-   "attributed_to": "Sensor Tower",
-   "criterion": 0,
-   "value": 17.6,
-   "unit": "%",
+   "source_id": "Sfcfd692f",
+   "claim_text": "Trò chơi Royal Kingdom đã tạo ra hơn 510 triệu USD doanh thu IAP trọn đời kể từ khi ra mắt toàn cầu vào tháng 11 năm 2024.",
+   "metric": "revenue",
+   "value_text": "$510M",
+   "market": "Toàn cầu",
+   "period": "November 2024 to H1 2026",
+   "scope": "mobile_iap",
+   "genre": "Match-3",
+   "genre_level": "subgenre",
+   "quote": "Since its global launch in November 2024, Royal Kingdom has generated more than $510M in lifetime IAP revenue, compared to Royal Match’s $465M over the same period following its own global launch.",
+   "section_title": "",
+   "attributed_to": "",
+   "criterion": 1,
+   "value": 510000000.0,
+   "unit": "USD",
    "verified": true,
    "verify_note": "Đã tìm thấy câu trích trong nguồn",
    "match_score": 100.0,
    "page": null,
-   "context": "es (+9% QoQ). The Philippines is second with 366 million installs (-1% QoQ), and Vietnam is third with 329 million installs (+2% QoQ).\n- In terms of revenue, Thailand leads with $162 million (-6% QoQ). Indonesia is second with $118 million (+1% QoQ), and Malaysia is third with $103 million (+7% QoQ).\n❗️Note that this is only about IAP purchases. D2C payments, which are quite common in Southeast Asia, aren’t reflected in these stats.\n- Looking at the most popular genres in Southeast Asia, platformers/runners (+16% QoQ), simulators (+0.1% QoQ), and arcade games (+12.2% QoQ) lead in downloads.\n- For revenue, 4X strategy games (+17.6% QoQ), MOBA (+20.1% QoQ), and MMORPG (-17.1% QoQ) are on top.\nConsider subscribing to the GameDev Reports Premium tier to support the newsletter. Get access to the list of curated articles & archive of Gaming Reports that I’ve been collecting since 2020.\n- Top",
-   "origin": "Sensor Tower",
-   "tier": "B",
+   "context": "eemed capable of disrupting the status quo. Or did it?\nWe’ve made it a tradition to begin every Match-3 chapter by following *Royal Kingdom*’s journey up the charts. Step by step, the game has climbed higher with each report, and in H1 2026, it finally secured the #3 spot, with only two legendary giants still ahead. This journey is a clear result of Dream Games’ remarkable focus: rather than spreading resources across multiple projects, the studio doubled down on scaling just two games and refining the genre’s formula.\nPeriod Comparison: top 10 grossing Match-3 games in H1 2026 (YoY growth)\")\nSince its global launch in November 2024, Royal Kingdom has generated more than $510M in lifetime IAP revenue, compared to *Royal Match*’s $465M over the same period following its own global launch. In other words, Royal Kingdom is actually outperforming Royal Match! If the current trajectory continues, the studio may soon occupy both of the genre’s top positions, even overtaking Candy Crush Sa",
+   "origin": "AppMagic",
+   "tier": "A",
    "flags": [
-    "Số liệu của Sensor Tower, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc",
-    "Kỳ đo \"Q1 2025 vs Q4 2024\" nằm ngoài khung thời gian của câu hỏi (12 tháng gần nhất)"
+    "Số theo tháng, không phải số của cả 12 tháng",
+    "Số của thị trường Toàn cầu, câu hỏi hỏi về Đông Nam Á"
    ],
    "excluded_by_user": false
   },
   {
    "id": "C38",
+   "source_id": "Sfcfd692f",
+   "claim_text": "Trò chơi Royal Match đã tạo ra 465 triệu USD doanh thu IAP trong cùng khoảng thời gian tương ứng kể từ khi ra mắt toàn cầu.",
+   "metric": "revenue",
+   "value_text": "$465M",
+   "market": "Toàn cầu",
+   "period": "Post global launch",
+   "scope": "mobile_iap",
+   "genre": "Match-3",
+   "genre_level": "subgenre",
+   "quote": "Since its global launch in November 2024, Royal Kingdom has generated more than $510M in lifetime IAP revenue, compared to Royal Match’s $465M over the same period following its own global launch.",
+   "section_title": "",
+   "attributed_to": "",
+   "criterion": 1,
+   "value": 465000000.0,
+   "unit": "USD",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "eemed capable of disrupting the status quo. Or did it?\nWe’ve made it a tradition to begin every Match-3 chapter by following *Royal Kingdom*’s journey up the charts. Step by step, the game has climbed higher with each report, and in H1 2026, it finally secured the #3 spot, with only two legendary giants still ahead. This journey is a clear result of Dream Games’ remarkable focus: rather than spreading resources across multiple projects, the studio doubled down on scaling just two games and refining the genre’s formula.\nPeriod Comparison: top 10 grossing Match-3 games in H1 2026 (YoY growth)\")\nSince its global launch in November 2024, Royal Kingdom has generated more than $510M in lifetime IAP revenue, compared to *Royal Match*’s $465M over the same period following its own global launch. In other words, Royal Kingdom is actually outperforming Royal Match! If the current trajectory continues, the studio may soon occupy both of the genre’s top positions, even overtaking Candy Crush Sa",
+   "origin": "AppMagic",
+   "tier": "A",
+   "flags": [
+    "Không xác định được kỳ đo",
+    "Số của thị trường Toàn cầu, câu hỏi hỏi về Đông Nam Á"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C39",
+   "source_id": "Sfcfd692f",
+   "claim_text": "Trò chơi Austin's Odyssey tạo ra 1,9 triệu USD trong giai đoạn phát hành thử nghiệm kể từ tháng 8 năm 2022.",
+   "metric": "revenue",
+   "value_text": "$1.9M",
+   "market": "Toàn cầu",
+   "period": "August 2022 to H1 2026",
+   "scope": "mobile_iap",
+   "genre": "Match-3",
+   "genre_level": "subgenre",
+   "quote": "Among them is Austin's Odyssey, the long-awaited expansion of the Gardenscapes IP with $1.9M generated while the game is still technically in its soft-launch stage since August 2022.",
+   "section_title": "",
+   "attributed_to": "",
+   "criterion": 1,
+   "value": 1900000.0,
+   "unit": "USD",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "global launch in November 2024, Royal Kingdom has generated more than $510M in lifetime IAP revenue, compared to *Royal Match*’s $465M over the same period following its own global launch. In other words, Royal Kingdom is actually outperforming Royal Match! If the current trajectory continues, the studio may soon occupy both of the genre’s top positions, even overtaking Candy Crush Saga.\nThat puts extra pressure on competitors, even the more experienced of them, such as Playrix. The studio has spent years testing several Match-3 projects, but most of them have yet to see their global release. Among them is Austin's Odyssey, the long-awaited expansion of the Gardenscapes IP with $1.9M generated while the game is still technically in its soft-launch stage since August 2022. Playrix is clearly searching for its next major hit, yet the main focus stays on scaling existing blockbusters like Gardenscapes and Homescapes—titles that have long proven they’re built to last and",
+   "origin": "AppMagic",
+   "tier": "A",
+   "flags": [
+    "Số theo tháng, không phải số của cả 12 tháng",
+    "Số của thị trường Toàn cầu, câu hỏi hỏi về Đông Nam Á"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C40",
+   "source_id": "Sfcfd692f",
+   "claim_text": "Trò chơi Zen Match đạt 92 triệu USD trước khi được mua lại bởi Moon Active vào tháng 12 năm 2022.",
+   "metric": "revenue",
+   "value_text": "$92M",
+   "market": "Toàn cầu",
+   "period": "Up to December 2022",
+   "scope": "mobile_iap",
+   "genre": "Puzzle",
+   "genre_level": "subgenre",
+   "quote": "The same story happened to Zen Match: the game already reached $92M before its acquisition by Moon Active in December 2022.",
+   "section_title": "",
+   "attributed_to": "",
+   "criterion": 1,
+   "value": 92000000.0,
+   "unit": "USD",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": " Still, the next shake-up in the rankings may be just around the corner. Match Villains by Good Job Games is now just one position away from entering the genre's top 10, having generated roughly $30M in IAP revenue during H1 2026. Its rapid rise may seem sudden, but it's actually backed by years of experience building successful Puzzle games.\nToday, Match Villains is the only major successful title currently owned by the studio, but it's far from its first. Back in early 2022, Good Job Games launched Wonder Blast, which later went to Fugo Games after generating more than $2.6M in IAP revenue. The same story happened to Zen Match: the game already reached $92M before its acquisition by Moon Active in December 2022.\nThese titles gave the team much more than revenue. They provided valuable expertise in building scalable games and helped attract investor interest, leading to two funding rounds in 2025 alone. Yet,",
+   "origin": "AppMagic",
+   "tier": "A",
+   "flags": [
+    "Kỳ đo \"Up to December 2022\" nằm ngoài khung thời gian của câu hỏi (12 tháng gần nhất)",
+    "Số của thị trường Toàn cầu, câu hỏi hỏi về Đông Nam Á"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C41",
+   "source_id": "Sfcfd692f",
+   "claim_text": "Trò chơi Tasty Travels đạt 127 triệu USD doanh thu trong nửa đầu năm 2026.",
+   "metric": "revenue",
+   "value_text": "$127M",
+   "market": "Toàn cầu",
+   "period": "H1 2026",
+   "scope": "mobile_iap",
+   "genre": "Merge-2",
+   "genre_level": "subgenre",
+   "quote": "Tasty Travels now sits at #2, with $127M earned in H1 2026!",
+   "section_title": "Merge-2: Big Publishers Growing Bigger",
+   "attributed_to": "",
+   "criterion": 1,
+   "value": 127000000.0,
+   "unit": "USD",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "ing up speed. In H1 2026, it almost doubled its revenue to $1.2B and increased its downloads by 20% YoY, proving that monetization is the biggest strength of the genre. Not many Casual genres can pull that off right now, and definitely not at this rate!\nLooking at the top charts, Gossip Harbor has been #1 since October 2024. In March this year, the game crossed the $100M threshold in monthly revenue for the first time and has lingered around this mark ever since!\nPeriod Comparison: top 10 grossing Merge-2 games in H1 2026 (YoY growth)\")\nThe bigger shift, however, starts just below the leader. Tasty Travels now sits at #2, with $127M earned in H1 2026! Considering the vast experience and operational scale of Century Games, the publisher might actually be the one to lay claim to *Gossip Harbor*’s throne. Yes, Tasty Travels is still ~4.5 times small",
+   "origin": "AppMagic",
+   "tier": "A",
+   "flags": [
+    "Số theo nửa năm, không phải số của cả 12 tháng",
+    "Số của thị trường Toàn cầu, câu hỏi hỏi về Đông Nam Á"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C42",
    "source_id": "S80418131",
-   "claim_text": "Doanh thu thể loại MOBA tăng 20.1% QoQ tại Đông Nam Á trong Q1 2025.",
+   "claim_text": "Doanh thu thể loại game MOBA trên thiết bị di động tại Đông Nam Á tăng 20,1% theo quý trong Q1 2025.",
    "metric": "growth",
    "value_text": "+20.1% QoQ",
    "market": "Đông Nam Á",
@@ -1321,7 +1461,7 @@
    "scope": "mobile",
    "genre": "MOBA",
    "genre_level": "genre",
-   "quote": "- For revenue, 4X strategy games (+17.6% QoQ), MOBA (+20.1% QoQ), and MMORPG (-17.1% QoQ) are on top.",
+   "quote": "For revenue, 4X strategy games (+17.6% QoQ), MOBA (+20.1% QoQ), and MMORPG (-17.1% QoQ) are on top.",
    "section_title": "General Market Overview",
    "attributed_to": "Sensor Tower",
    "criterion": 0,
@@ -1341,9 +1481,39 @@
    "excluded_by_user": false
   },
   {
-   "id": "C39",
+   "id": "C43",
    "source_id": "S80418131",
-   "claim_text": "Doanh thu thể loại MMORPG giảm 17.1% QoQ tại Đông Nam Á trong Q1 2025.",
+   "claim_text": "Doanh thu thể loại game chiến thuật 4X trên thiết bị di động tại Đông Nam Á tăng 17,6% theo quý trong Q1 2025.",
+   "metric": "growth",
+   "value_text": "+17.6% QoQ",
+   "market": "Đông Nam Á",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile",
+   "genre": "4X strategy",
+   "genre_level": "genre",
+   "quote": "For revenue, 4X strategy games (+17.6% QoQ), MOBA (+20.1% QoQ), and MMORPG (-17.1% QoQ) are on top.",
+   "section_title": "General Market Overview",
+   "attributed_to": "Sensor Tower",
+   "criterion": 0,
+   "value": 17.6,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "es (+9% QoQ). The Philippines is second with 366 million installs (-1% QoQ), and Vietnam is third with 329 million installs (+2% QoQ).\n- In terms of revenue, Thailand leads with $162 million (-6% QoQ). Indonesia is second with $118 million (+1% QoQ), and Malaysia is third with $103 million (+7% QoQ).\n❗️Note that this is only about IAP purchases. D2C payments, which are quite common in Southeast Asia, aren’t reflected in these stats.\n- Looking at the most popular genres in Southeast Asia, platformers/runners (+16% QoQ), simulators (+0.1% QoQ), and arcade games (+12.2% QoQ) lead in downloads.\n- For revenue, 4X strategy games (+17.6% QoQ), MOBA (+20.1% QoQ), and MMORPG (-17.1% QoQ) are on top.\nConsider subscribing to the GameDev Reports Premium tier to support the newsletter. Get access to the list of curated articles & archive of Gaming Reports that I’ve been collecting since 2020.\n- Top",
+   "origin": "Sensor Tower",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Sensor Tower, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc",
+    "Kỳ đo \"Q1 2025 vs Q4 2024\" nằm ngoài khung thời gian của câu hỏi (12 tháng gần nhất)"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C44",
+   "source_id": "S80418131",
+   "claim_text": "Doanh thu thể loại game MMORPG trên thiết bị di động tại Đông Nam Á giảm 17,1% theo quý trong Q1 2025.",
    "metric": "growth",
    "value_text": "-17.1% QoQ",
    "market": "Đông Nam Á",
@@ -1351,7 +1521,7 @@
    "scope": "mobile",
    "genre": "MMORPG",
    "genre_level": "genre",
-   "quote": "- For revenue, 4X strategy games (+17.6% QoQ), MOBA (+20.1% QoQ), and MMORPG (-17.1% QoQ) are on top.",
+   "quote": "For revenue, 4X strategy games (+17.6% QoQ), MOBA (+20.1% QoQ), and MMORPG (-17.1% QoQ) are on top.",
    "section_title": "General Market Overview",
    "attributed_to": "Sensor Tower",
    "criterion": 0,
@@ -1371,9 +1541,9 @@
    "excluded_by_user": false
   },
   {
-   "id": "C40",
+   "id": "C45",
    "source_id": "S80418131",
-   "claim_text": "Doanh thu thể loại MOBA tăng 32.7% QoQ tại Indonesia trong Q1 2025.",
+   "claim_text": "Doanh thu thể loại game MOBA trên thiết bị di động tại Indonesia tăng 32,7% theo quý trong Q1 2025.",
    "metric": "growth",
    "value_text": "+32.7% QoQ",
    "market": "Indonesia",
@@ -1402,9 +1572,9 @@
    "excluded_by_user": false
   },
   {
-   "id": "C41",
+   "id": "C46",
    "source_id": "S80418131",
-   "claim_text": "Doanh thu thể loại 4X strategy tăng 21.1% QoQ tại Indonesia trong Q1 2025.",
+   "claim_text": "Doanh thu thể loại game chiến thuật 4X trên thiết bị di động tại Indonesia tăng 21,1% theo quý trong Q1 2025.",
    "metric": "growth",
    "value_text": "+21.1% QoQ",
    "market": "Indonesia",
@@ -1433,15 +1603,15 @@
    "excluded_by_user": false
   },
   {
-   "id": "C42",
+   "id": "C47",
    "source_id": "S80418131",
-   "claim_text": "Doanh thu thể loại sports games giảm 22.6% QoQ tại Indonesia trong Q1 2025.",
+   "claim_text": "Doanh thu thể loại game thể thao trên thiết bị di động tại Indonesia giảm 22,6% theo quý trong Q1 2025.",
    "metric": "growth",
    "value_text": "-22.6% QoQ",
    "market": "Indonesia",
    "period": "Q1 2025 vs Q4 2024",
    "scope": "mobile",
-   "genre": "sports games",
+   "genre": "sports",
    "genre_level": "genre",
    "quote": "- For revenue, MOBA (+32.7% QoQ), 4X strategy (+21.1% QoQ), and sports games (-22.6% QoQ) lead. Battle Royale shows significant growth (+50% QoQ).",
    "section_title": "Indonesia",
@@ -1464,46 +1634,15 @@
    "excluded_by_user": false
   },
   {
-   "id": "C43",
+   "id": "C48",
    "source_id": "S80418131",
-   "claim_text": "Doanh thu thể loại Battle Royale tăng 50% QoQ tại Indonesia trong Q1 2025.",
-   "metric": "growth",
-   "value_text": "+50% QoQ",
-   "market": "Indonesia",
-   "period": "Q1 2025 vs Q4 2024",
-   "scope": "mobile",
-   "genre": "Battle Royale",
-   "genre_level": "genre",
-   "quote": "- For revenue, MOBA (+32.7% QoQ), 4X strategy (+21.1% QoQ), and sports games (-22.6% QoQ) lead. Battle Royale shows significant growth (+50% QoQ).",
-   "section_title": "Indonesia",
-   "attributed_to": "Sensor Tower",
-   "criterion": 0,
-   "value": 50.0,
-   "unit": "%",
-   "verified": true,
-   "verify_note": "Đã tìm thấy câu trích trong nguồn",
-   "match_score": 100.0,
-   "page": null,
-   "context": " the top 10 games are either developed by Chinese companies or owned by them. 9 out of 10 in the top 10 are Asian companies, with the exception being Coin Master from Moon Active.\n❗️Western companies face a cultural barrier when entering the Southeast Asian market. For Asian companies, business in the region is more familiar and accessible. Business relationships in the region are also heavily based on personal connections.\nMajor Southeast Asian Markets\nIndonesia\n- Top genres by downloads in Indonesia: simulators (+4.9% QoQ), platformers/runners (+38.2% QoQ), and arcade projects (+18% QoQ).\n- For revenue, MOBA (+32.7% QoQ), 4X strategy (+21.1% QoQ), and sports games (-22.6% QoQ) lead. Battle Royale shows significant growth (+50% QoQ).\n- New projects in Indonesia in Q1'25: Magic Chess: Go Go entered the download rankings, and Ragnarok M: Classic led in revenue.\nThailand\n- Top genres by downloads: simulators (-14.1% QoQ), platform",
-   "origin": "Sensor Tower",
-   "tier": "B",
-   "flags": [
-    "Số liệu của Sensor Tower, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc",
-    "Kỳ đo \"Q1 2025 vs Q4 2024\" nằm ngoài khung thời gian của câu hỏi (12 tháng gần nhất)",
-    "Số của thị trường Indonesia, câu hỏi hỏi về Đông Nam Á"
-   ],
-   "excluded_by_user": false
-  },
-  {
-   "id": "C44",
-   "source_id": "S80418131",
-   "claim_text": "Doanh thu thể loại realistic sports games giảm 7.8% QoQ tại Thái Lan trong Q1 2025.",
+   "claim_text": "Doanh thu thể loại game thể thao chân thực trên thiết bị di động tại Thái Lan giảm 7,8% theo quý trong Q1 2025.",
    "metric": "growth",
    "value_text": "-7.8% QoQ",
    "market": "Thái Lan",
    "period": "Q1 2025 vs Q4 2024",
    "scope": "mobile",
-   "genre": "realistic sports games",
+   "genre": "realistic sports",
    "genre_level": "genre",
    "quote": "- For revenue, realistic sports games (-7.8% QoQ), MMORPG (-27.4% QoQ), and 4X strategies (-5.6% QoQ) lead in Thailand.",
    "section_title": "Thailand",
@@ -1526,9 +1665,9 @@
    "excluded_by_user": false
   },
   {
-   "id": "C45",
+   "id": "C49",
    "source_id": "S80418131",
-   "claim_text": "Doanh thu thể loại MMORPG giảm 27.4% QoQ tại Thái Lan trong Q1 2025.",
+   "claim_text": "Doanh thu thể loại game MMORPG trên thiết bị di động tại Thái Lan giảm 27,4% theo quý trong Q1 2025.",
    "metric": "growth",
    "value_text": "-27.4% QoQ",
    "market": "Thái Lan",
@@ -1557,15 +1696,15 @@
    "excluded_by_user": false
   },
   {
-   "id": "C46",
+   "id": "C50",
    "source_id": "S80418131",
-   "claim_text": "Doanh thu thể loại 4X strategies giảm 5.6% QoQ tại Thái Lan trong Q1 2025.",
+   "claim_text": "Doanh thu thể loại game chiến thuật 4X trên thiết bị di động tại Thái Lan giảm 5,6% theo quý trong Q1 2025.",
    "metric": "growth",
    "value_text": "-5.6% QoQ",
    "market": "Thái Lan",
    "period": "Q1 2025 vs Q4 2024",
    "scope": "mobile",
-   "genre": "4X strategies",
+   "genre": "4X strategy",
    "genre_level": "genre",
    "quote": "- For revenue, realistic sports games (-7.8% QoQ), MMORPG (-27.4% QoQ), and 4X strategies (-5.6% QoQ) lead in Thailand.",
    "section_title": "Thailand",
@@ -1588,15 +1727,15 @@
    "excluded_by_user": false
   },
   {
-   "id": "C47",
+   "id": "C51",
    "source_id": "S80418131",
-   "claim_text": "Doanh thu thể loại 4X strategies tăng 51.5% QoQ tại Việt Nam trong Q1 2025.",
+   "claim_text": "Doanh thu thể loại game chiến thuật 4X trên thiết bị di động tại Việt Nam tăng 51,5% theo quý trong Q1 2025.",
    "metric": "growth",
    "value_text": "+51.5% QoQ",
    "market": "Việt Nam",
    "period": "Q1 2025 vs Q4 2024",
    "scope": "mobile",
-   "genre": "4X strategies",
+   "genre": "4X strategy",
    "genre_level": "genre",
    "quote": "- For revenue, 4X strategies (+51.5% QoQ), MMORPG (+8.2% QoQ), and Squad RPG (-1.8% QoQ) are on top.",
    "section_title": "Vietnam",
@@ -1619,9 +1758,9 @@
    "excluded_by_user": false
   },
   {
-   "id": "C48",
+   "id": "C52",
    "source_id": "S80418131",
-   "claim_text": "Doanh thu thể loại MMORPG tăng 8.2% QoQ tại Việt Nam trong Q1 2025.",
+   "claim_text": "Doanh thu thể loại game MMORPG trên thiết bị di động tại Việt Nam tăng 8,2% theo quý trong Q1 2025.",
    "metric": "growth",
    "value_text": "+8.2% QoQ",
    "market": "Việt Nam",
@@ -1648,14 +1787,720 @@
     "Số của thị trường Việt Nam, câu hỏi hỏi về Đông Nam Á"
    ],
    "excluded_by_user": false
+  },
+  {
+   "id": "C53",
+   "source_id": "S80418131",
+   "claim_text": "Doanh thu thể loại game Squad RPG trên thiết bị di động tại Việt Nam giảm 1,8% theo quý trong Q1 2025.",
+   "metric": "growth",
+   "value_text": "-1.8% QoQ",
+   "market": "Việt Nam",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile",
+   "genre": "Squad RPG",
+   "genre_level": "genre",
+   "quote": "- For revenue, 4X strategies (+51.5% QoQ), MMORPG (+8.2% QoQ), and Squad RPG (-1.8% QoQ) are on top.",
+   "section_title": "Vietnam",
+   "attributed_to": "Sensor Tower",
+   "criterion": 0,
+   "value": -1.8,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "iland\n- Top genres by downloads: simulators (-14.1% QoQ), platformers/runners (-18.6% QoQ), and sandbox projects (-17.5% QoQ).\n- For revenue, realistic sports games (-7.8% QoQ), MMORPG (-27.4% QoQ), and 4X strategies (-5.6% QoQ) lead in Thailand.\n- In Q1'25, Go Go Samkok and Papa Restaurant (casual simulators), as well as Ragnarok M: Classic, entered the download charts. For revenue, new entries include Ragnarok M: Classic and Dragoon Academy from Korea’s NewCube Games.\nVietnam\n- Platformers and runners (+3.2% QoQ), simulators (-6.7% QoQ), and other arcade games (+9.1% QoQ) lead in downloads. For revenue, 4X strategies (+51.5% QoQ), MMORPG (+8.2% QoQ), and Squad RPG (-1.8% QoQ) are on top.\n- Vietnam is a unique market for downloads. Roblox leads, and Trò Vẽ Vui Tuổi Thơ—a local casual game—leads download growth. Last War: Survival is also rapidly growing in downloads.\n- For revenue, L",
+   "origin": "Sensor Tower",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Sensor Tower, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc",
+    "Kỳ đo \"Q1 2025 vs Q4 2024\" nằm ngoài khung thời gian của câu hỏi (12 tháng gần nhất)",
+    "Số của thị trường Việt Nam, câu hỏi hỏi về Đông Nam Á"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C54",
+   "source_id": "Sfd8d5a99",
+   "claim_text": "Tốc độ tăng trưởng doanh thu của phân khúc Strategy | 4X Strategy là 17.6% trong Q1 2025 so với Q4 2024 tại Đông Nam Á.",
+   "metric": "growth",
+   "value_text": "+17.6%",
+   "market": "Southeast Asia",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile_iap",
+   "genre": "4X Strategy",
+   "genre_level": "subgenre",
+   "quote": "Strategy | 4X Strategy",
+   "section_title": "Southeast Asia Top Subgenre by IAP Revenue",
+   "attributed_to": "Sensor Tower",
+   "criterion": 0,
+   "value": null,
+   "unit": "",
+   "verified": false,
+   "verify_note": "Giá trị \"+17.6%\" không nằm trong câu trích",
+   "match_score": 100.0,
+   "page": null,
+   "context": "",
+   "origin": "",
+   "tier": "D",
+   "flags": [],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C55",
+   "source_id": "Sfd8d5a99",
+   "claim_text": "Tốc độ tăng trưởng doanh thu của phân khúc Strategy | MOBA là 20.1% trong Q1 2025 so với Q4 2024 tại Đông Nam Á.",
+   "metric": "growth",
+   "value_text": "+20.1%",
+   "market": "Southeast Asia",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile_iap",
+   "genre": "MOBA",
+   "genre_level": "subgenre",
+   "quote": "Strategy | MOBA",
+   "section_title": "Southeast Asia Top Subgenre by IAP Revenue",
+   "attributed_to": "Sensor Tower",
+   "criterion": 0,
+   "value": null,
+   "unit": "",
+   "verified": false,
+   "verify_note": "Câu trích quá ngắn để kiểm",
+   "match_score": 0.0,
+   "page": 12,
+   "context": "",
+   "origin": "",
+   "tier": "D",
+   "flags": [],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C56",
+   "source_id": "Sfd8d5a99",
+   "claim_text": "Tốc độ tăng trưởng doanh thu của phân khúc RPG | MMORPG là -17.1% trong Q1 2025 so với Q4 2024 tại Đông Nam Á.",
+   "metric": "growth",
+   "value_text": "-17.1%",
+   "market": "Southeast Asia",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile_iap",
+   "genre": "MMORPG",
+   "genre_level": "subgenre",
+   "quote": "RPG | MMORPG",
+   "section_title": "Southeast Asia Top Subgenre by IAP Revenue",
+   "attributed_to": "Sensor Tower",
+   "criterion": 0,
+   "value": null,
+   "unit": "",
+   "verified": false,
+   "verify_note": "Câu trích quá ngắn để kiểm",
+   "match_score": 0.0,
+   "page": 12,
+   "context": "",
+   "origin": "",
+   "tier": "D",
+   "flags": [],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C57",
+   "source_id": "Sfd8d5a99",
+   "claim_text": "Tốc độ tăng trưởng doanh thu của phân khúc Sports | Realistic Sports là -11.7% trong Q1 2025 so với Q4 2024 tại Đông Nam Á.",
+   "metric": "growth",
+   "value_text": "-11.7%",
+   "market": "Southeast Asia",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile_iap",
+   "genre": "Realistic Sports",
+   "genre_level": "subgenre",
+   "quote": "Sports | Realistic Sports",
+   "section_title": "Southeast Asia Top Subgenre by IAP Revenue",
+   "attributed_to": "Sensor Tower",
+   "criterion": 0,
+   "value": null,
+   "unit": "",
+   "verified": false,
+   "verify_note": "Giá trị \"-11.7%\" không nằm trong câu trích",
+   "match_score": 100.0,
+   "page": null,
+   "context": "",
+   "origin": "",
+   "tier": "D",
+   "flags": [],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C58",
+   "source_id": "Sfd8d5a99",
+   "claim_text": "Tốc độ tăng trưởng doanh thu của phân khúc Puzzle | Match Swap là -5.1% trong Q1 2025 so với Q4 2024 tại Đông Nam Á.",
+   "metric": "growth",
+   "value_text": "-5.1%",
+   "market": "Southeast Asia",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile_iap",
+   "genre": "Match Swap",
+   "genre_level": "subgenre",
+   "quote": "Puzzle | Match Swap",
+   "section_title": "Southeast Asia Top Subgenre by IAP Revenue",
+   "attributed_to": "Sensor Tower",
+   "criterion": 0,
+   "value": null,
+   "unit": "",
+   "verified": false,
+   "verify_note": "Giá trị \"-5.1%\" không nằm trong câu trích",
+   "match_score": 100.0,
+   "page": null,
+   "context": "",
+   "origin": "",
+   "tier": "D",
+   "flags": [],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C59",
+   "source_id": "Sfd8d5a99",
+   "claim_text": "Tốc độ tăng trưởng doanh thu của phân khúc Shooter | Battle Royale là 37.6% trong Q1 2025 so với Q4 2024 tại Đông Nam Á.",
+   "metric": "growth",
+   "value_text": "+37.6%",
+   "market": "Southeast Asia",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile_iap",
+   "genre": "Battle Royale",
+   "genre_level": "subgenre",
+   "quote": "Shooter | Battle Royale",
+   "section_title": "Southeast Asia Top Subgenre by IAP Revenue",
+   "attributed_to": "Sensor Tower",
+   "criterion": 0,
+   "value": null,
+   "unit": "",
+   "verified": false,
+   "verify_note": "Giá trị \"+37.6%\" không nằm trong câu trích",
+   "match_score": 100.0,
+   "page": null,
+   "context": "",
+   "origin": "",
+   "tier": "D",
+   "flags": [],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C60",
+   "source_id": "Sfd8d5a99",
+   "claim_text": "Tốc độ tăng trưởng doanh thu của phân khúc RPG | Squad RPG là -14.4% trong Q1 2025 so với Q4 2024 tại Đông Nam Á.",
+   "metric": "growth",
+   "value_text": "-14.4%",
+   "market": "Southeast Asia",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile_iap",
+   "genre": "Squad RPG",
+   "genre_level": "subgenre",
+   "quote": "RPG | Squad RPG",
+   "section_title": "Southeast Asia Top Subgenre by IAP Revenue",
+   "attributed_to": "Sensor Tower",
+   "criterion": 0,
+   "value": null,
+   "unit": "",
+   "verified": false,
+   "verify_note": "Câu trích quá ngắn để kiểm",
+   "match_score": 0.0,
+   "page": 12,
+   "context": "",
+   "origin": "",
+   "tier": "D",
+   "flags": [],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C61",
+   "source_id": "Sfd8d5a99",
+   "claim_text": "Tốc độ tăng trưởng doanh thu của phân khúc Simulation | Sandbox là -12.6% trong Q1 2025 so với Q4 2024 tại Đông Nam Á.",
+   "metric": "growth",
+   "value_text": "-12.6%",
+   "market": "Southeast Asia",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile_iap",
+   "genre": "Sandbox",
+   "genre_level": "subgenre",
+   "quote": "Simulation | Sandbox",
+   "section_title": "Southeast Asia Top Subgenre by IAP Revenue",
+   "attributed_to": "Sensor Tower",
+   "criterion": 0,
+   "value": null,
+   "unit": "",
+   "verified": false,
+   "verify_note": "Giá trị \"-12.6%\" không nằm trong câu trích",
+   "match_score": 100.0,
+   "page": null,
+   "context": "",
+   "origin": "",
+   "tier": "D",
+   "flags": [],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C62",
+   "source_id": "Sfd8d5a99",
+   "claim_text": "Tốc độ tăng trưởng doanh thu của phân khúc Casino | Coin Looters là 4% trong Q1 2025 so với Q4 2024 tại Đông Nam Á.",
+   "metric": "growth",
+   "value_text": "+4%",
+   "market": "Southeast Asia",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile_iap",
+   "genre": "Coin Looters",
+   "genre_level": "subgenre",
+   "quote": "Casino | Coin Looters",
+   "section_title": "Southeast Asia Top Subgenre by IAP Revenue",
+   "attributed_to": "Sensor Tower",
+   "criterion": 0,
+   "value": null,
+   "unit": "",
+   "verified": false,
+   "verify_note": "Giá trị \"+4%\" không nằm trong câu trích",
+   "match_score": 100.0,
+   "page": null,
+   "context": "",
+   "origin": "",
+   "tier": "D",
+   "flags": [],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C63",
+   "source_id": "Sfd8d5a99",
+   "claim_text": "Tốc độ tăng trưởng doanh thu của phân khúc RPG | Idle RPG là 3.9% trong Q1 2025 so với Q4 2024 tại Đông Nam Á.",
+   "metric": "growth",
+   "value_text": "+3.9%",
+   "market": "Southeast Asia",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile_iap",
+   "genre": "Idle RPG",
+   "genre_level": "subgenre",
+   "quote": "RPG | Idle RPG",
+   "section_title": "Southeast Asia Top Subgenre by IAP Revenue",
+   "attributed_to": "Sensor Tower",
+   "criterion": 0,
+   "value": null,
+   "unit": "",
+   "verified": false,
+   "verify_note": "Câu trích quá ngắn để kiểm",
+   "match_score": 0.0,
+   "page": 12,
+   "context": "",
+   "origin": "",
+   "tier": "D",
+   "flags": [],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C64",
+   "source_id": "Sfd8d5a99",
+   "claim_text": "Tại Indonesia trong Q1 2025 so với Q4 2024, thể loại Shooter | Battle Royale có doanh thu tăng trưởng 50%",
+   "metric": "growth",
+   "value_text": "+50%",
+   "market": "Indonesia",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile",
+   "genre": "Shooter | Battle Royale",
+   "genre_level": "subgenre",
+   "quote": "-50%",
+   "section_title": "Indonesia Top Subgenre by Revenue",
+   "attributed_to": "Sensor Tower",
+   "criterion": 0,
+   "value": null,
+   "unit": "",
+   "verified": false,
+   "verify_note": "Câu trích quá ngắn để kiểm",
+   "match_score": 0.0,
+   "page": 11,
+   "context": "",
+   "origin": "",
+   "tier": "D",
+   "flags": [],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C65",
+   "source_id": "Sfd8d5a99",
+   "claim_text": "Tại Thái Lan trong Q1 2025 so với Q4 2024, thể loại Shooter | Battle Royale có doanh thu tăng trưởng 35.8%",
+   "metric": "growth",
+   "value_text": "+35.8%",
+   "market": "Thailand",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile",
+   "genre": "Shooter | Battle Royale",
+   "genre_level": "subgenre",
+   "quote": "+35.8%",
+   "section_title": "Thailand Top Subgenre by Revenue",
+   "attributed_to": "Sensor Tower",
+   "criterion": 0,
+   "value": null,
+   "unit": "",
+   "verified": false,
+   "verify_note": "Câu trích quá ngắn để kiểm",
+   "match_score": 0.0,
+   "page": 17,
+   "context": "",
+   "origin": "",
+   "tier": "D",
+   "flags": [],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C66",
+   "source_id": "Sfd8d5a99",
+   "claim_text": "Tại Thái Lan trong Q1 2025 so với Q4 2024, thể loại Casino | Coin Looters có doanh thu tăng trưởng 23.6%",
+   "metric": "growth",
+   "value_text": "+23.6%",
+   "market": "Thailand",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile",
+   "genre": "Casino | Coin Looters",
+   "genre_level": "subgenre",
+   "quote": "+23.6%",
+   "section_title": "Thailand Top Subgenre by Revenue",
+   "attributed_to": "Sensor Tower",
+   "criterion": 0,
+   "value": null,
+   "unit": "",
+   "verified": false,
+   "verify_note": "Câu trích quá ngắn để kiểm",
+   "match_score": 0.0,
+   "page": 17,
+   "context": "",
+   "origin": "",
+   "tier": "D",
+   "flags": [],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C67",
+   "source_id": "Sfd8d5a99",
+   "claim_text": "Tại Indonesia trong Q1 2025 so với Q4 2024, thể loại Strategy | MOBA có doanh thu tăng trưởng 32.7%",
+   "metric": "growth",
+   "value_text": "+32.7%",
+   "market": "Indonesia",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile",
+   "genre": "Strategy | MOBA",
+   "genre_level": "subgenre",
+   "quote": "+32.7%",
+   "section_title": "Indonesia Top Subgenre by Revenue",
+   "attributed_to": "Sensor Tower",
+   "criterion": 0,
+   "value": null,
+   "unit": "",
+   "verified": false,
+   "verify_note": "Câu trích quá ngắn để kiểm",
+   "match_score": 0.0,
+   "page": 15,
+   "context": "",
+   "origin": "",
+   "tier": "D",
+   "flags": [],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C68",
+   "source_id": "Sfd8d5a99",
+   "claim_text": "Tại Indonesia trong Q1 2025 so với Q4 2024, thể loại Strategy | 4X Strategy có doanh thu tăng trưởng 21.1%",
+   "metric": "growth",
+   "value_text": "+21.1%",
+   "market": "Indonesia",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile",
+   "genre": "Strategy | 4X Strategy",
+   "genre_level": "subgenre",
+   "quote": "+21.1%",
+   "section_title": "Indonesia Top Subgenre by Revenue",
+   "attributed_to": "Sensor Tower",
+   "criterion": 0,
+   "value": null,
+   "unit": "",
+   "verified": false,
+   "verify_note": "Câu trích quá ngắn để kiểm",
+   "match_score": 0.0,
+   "page": 15,
+   "context": "",
+   "origin": "",
+   "tier": "D",
+   "flags": [],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C69",
+   "source_id": "Sfd8d5a99",
+   "claim_text": "Tại thị trường Việt Nam trong quý 1 2025 so với quý 4 2024, thể loại 4X Strategy đạt tăng trưởng doanh thu +51.5%",
+   "metric": "growth",
+   "value_text": "+51.5%",
+   "market": "Vietnam",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile",
+   "genre": "4X Strategy",
+   "genre_level": "subgenre",
+   "quote": "Strategy | 4X Strategy | +51.5%",
+   "section_title": "Vietnam Top Subgenre by Revenue",
+   "attributed_to": "Sensor Tower App Performance Insights",
+   "criterion": 0,
+   "value": null,
+   "unit": "",
+   "verified": false,
+   "verify_note": "Không tìm thấy câu trích trong nguồn (đoạn giống nhất 88%); con số có trong nguồn nhưng câu chữ đi kèm thì không (thường do ghép nhãn với số trong biểu đồ)",
+   "match_score": 88.0,
+   "page": 19,
+   "context": "",
+   "origin": "",
+   "tier": "D",
+   "flags": [],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C70",
+   "source_id": "Sfd8d5a99",
+   "claim_text": "Tại thị trường Việt Nam trong quý 1 2025 so với quý 4 2024, thể loại MMORPG đạt tăng trưởng doanh thu +8.2%",
+   "metric": "growth",
+   "value_text": "+8.2%",
+   "market": "Vietnam",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile",
+   "genre": "MMORPG",
+   "genre_level": "subgenre",
+   "quote": "RPG | MMORPG | +8.2%",
+   "section_title": "Vietnam Top Subgenre by Revenue",
+   "attributed_to": "Sensor Tower App Performance Insights",
+   "criterion": 0,
+   "value": null,
+   "unit": "",
+   "verified": false,
+   "verify_note": "Câu trích quá ngắn để kiểm",
+   "match_score": 0.0,
+   "page": null,
+   "context": "",
+   "origin": "",
+   "tier": "D",
+   "flags": [],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C71",
+   "source_id": "Sfd8d5a99",
+   "claim_text": "Tại thị trường Việt Nam trong quý 1 2025 so với quý 4 2024, thể loại Squad RPG đạt tăng trưởng doanh thu -1.8%",
+   "metric": "growth",
+   "value_text": "-1.8%",
+   "market": "Vietnam",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile",
+   "genre": "Squad RPG",
+   "genre_level": "subgenre",
+   "quote": "RPG | Squad RPG | -1.8%",
+   "section_title": "Vietnam Top Subgenre by Revenue",
+   "attributed_to": "Sensor Tower App Performance Insights",
+   "criterion": 0,
+   "value": null,
+   "unit": "",
+   "verified": false,
+   "verify_note": "Không tìm thấy câu trích trong nguồn (đoạn giống nhất 88%); con số có trong nguồn nhưng câu chữ đi kèm thì không (thường do ghép nhãn với số trong biểu đồ)",
+   "match_score": 88.2,
+   "page": 19,
+   "context": "",
+   "origin": "",
+   "tier": "D",
+   "flags": [],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C72",
+   "source_id": "Sfd8d5a99",
+   "claim_text": "Tại thị trường Việt Nam trong quý 1 2025 so với quý 4 2024, thể loại Idle RPG đạt tăng trưởng doanh thu +2.3%",
+   "metric": "growth",
+   "value_text": "+2.3%",
+   "market": "Vietnam",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile",
+   "genre": "Idle RPG",
+   "genre_level": "subgenre",
+   "quote": "RPG | Idle RPG | +2.3%",
+   "section_title": "Vietnam Top Subgenre by Revenue",
+   "attributed_to": "Sensor Tower App Performance Insights",
+   "criterion": 0,
+   "value": null,
+   "unit": "",
+   "verified": false,
+   "verify_note": "Không tìm thấy câu trích trong nguồn (đoạn giống nhất 88%); con số có trong nguồn nhưng câu chữ đi kèm thì không (thường do ghép nhãn với số trong biểu đồ)",
+   "match_score": 87.5,
+   "page": 13,
+   "context": "",
+   "origin": "",
+   "tier": "D",
+   "flags": [],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C73",
+   "source_id": "Sfd8d5a99",
+   "claim_text": "Tại thị trường Việt Nam trong quý 1 2025 so với quý 4 2024, thể loại MOBA đạt tăng trưởng doanh thu +15.8%",
+   "metric": "growth",
+   "value_text": "+15.8%",
+   "market": "Vietnam",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile",
+   "genre": "MOBA",
+   "genre_level": "subgenre",
+   "quote": "Strategy | MOBA | +15.8%",
+   "section_title": "Vietnam Top Subgenre by Revenue",
+   "attributed_to": "Sensor Tower App Performance Insights",
+   "criterion": 0,
+   "value": null,
+   "unit": "",
+   "verified": false,
+   "verify_note": "Không tìm thấy câu trích trong nguồn (đoạn giống nhất 83%); con số có trong nguồn nhưng câu chữ đi kèm thì không (thường do ghép nhãn với số trong biểu đồ)",
+   "match_score": 83.3,
+   "page": 19,
+   "context": "",
+   "origin": "",
+   "tier": "D",
+   "flags": [],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C74",
+   "source_id": "Sfd8d5a99",
+   "claim_text": "Tại thị trường Philippines trong quý 1 2025 so với quý 4 2024, thể loại MMORPG đạt tăng trưởng doanh thu -19.7%",
+   "metric": "growth",
+   "value_text": "-19.7%",
+   "market": "Philippines",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile",
+   "genre": "MMORPG",
+   "genre_level": "subgenre",
+   "quote": "RPG | MMORPG | -19.7%",
+   "section_title": "Philippines Top Subgenre by Revenue",
+   "attributed_to": "Sensor Tower App Performance Insights",
+   "criterion": 0,
+   "value": null,
+   "unit": "",
+   "verified": false,
+   "verify_note": "Không tìm thấy câu trích trong nguồn (đoạn giống nhất 80%); con số có trong nguồn nhưng câu chữ đi kèm thì không (thường do ghép nhãn với số trong biểu đồ)",
+   "match_score": 80.0,
+   "page": 21,
+   "context": "",
+   "origin": "",
+   "tier": "D",
+   "flags": [],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C75",
+   "source_id": "Sfd8d5a99",
+   "claim_text": "Tại thị trường Philippines trong quý 1 2025 so với quý 4 2024, thể loại 4X Strategy đạt tăng trưởng doanh thu +18.7%",
+   "metric": "growth",
+   "value_text": "+18.7%",
+   "market": "Philippines",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile",
+   "genre": "4X Strategy",
+   "genre_level": "subgenre",
+   "quote": "Strategy | 4X Strategy | +18.7%",
+   "section_title": "Philippines Top Subgenre by Revenue",
+   "attributed_to": "Sensor Tower App Performance Insights",
+   "criterion": 0,
+   "value": null,
+   "unit": "",
+   "verified": false,
+   "verify_note": "Không tìm thấy câu trích trong nguồn (đoạn giống nhất 88%); con số có trong nguồn nhưng câu chữ đi kèm thì không (thường do ghép nhãn với số trong biểu đồ)",
+   "match_score": 88.0,
+   "page": 21,
+   "context": "",
+   "origin": "",
+   "tier": "D",
+   "flags": [],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C76",
+   "source_id": "Sfd8d5a99",
+   "claim_text": "Tại thị trường Philippines trong quý 1 2025 so với quý 4 2024, thể loại MOBA đạt tăng trưởng doanh thu +19.0%",
+   "metric": "growth",
+   "value_text": "+19.0%",
+   "market": "Philippines",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile",
+   "genre": "MOBA",
+   "genre_level": "subgenre",
+   "quote": "Strategy | MOBA | +19.0%",
+   "section_title": "Philippines Top Subgenre by Revenue",
+   "attributed_to": "Sensor Tower App Performance Insights",
+   "criterion": 0,
+   "value": null,
+   "unit": "",
+   "verified": false,
+   "verify_note": "Không tìm thấy câu trích trong nguồn (đoạn giống nhất 83%); con số có trong nguồn nhưng câu chữ đi kèm thì không (thường do ghép nhãn với số trong biểu đồ)",
+   "match_score": 83.3,
+   "page": 21,
+   "context": "",
+   "origin": "",
+   "tier": "D",
+   "flags": [],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C77",
+   "source_id": "Sfd8d5a99",
+   "claim_text": "Tại thị trường Philippines trong quý 1 2025 so với quý 4 2024, thể loại FPS / 3PS đạt tăng trưởng doanh thu +37.6%",
+   "metric": "growth",
+   "value_text": "+37.6%",
+   "market": "Philippines",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile",
+   "genre": "FPS / 3PS",
+   "genre_level": "subgenre",
+   "quote": "Shooter | FPS / 3PS | +37.6%",
+   "section_title": "Philippines Top Subgenre by Revenue",
+   "attributed_to": "Sensor Tower App Performance Insights",
+   "criterion": 0,
+   "value": null,
+   "unit": "",
+   "verified": false,
+   "verify_note": "Không tìm thấy câu trích trong nguồn (đoạn giống nhất 85%); con số có trong nguồn nhưng câu chữ đi kèm thì không (thường do ghép nhãn với số trong biểu đồ)",
+   "match_score": 85.0,
+   "page": 12,
+   "context": "",
+   "origin": "",
+   "tier": "D",
+   "flags": [],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C78",
+   "source_id": "Sfd8d5a99",
+   "claim_text": "Tại thị trường Philippines trong quý 1 2025 so với quý 4 2024, thể loại Open World Adventure đạt tăng trưởng doanh thu +36.8%",
+   "metric": "growth",
+   "value_text": "+36.8%",
+   "market": "Philippines",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile",
+   "genre": "Open World Adventure",
+   "genre_level": "subgenre",
+   "quote": "RPG | Open World Adventure | +36.8%",
+   "section_title": "Philippines Top Subgenre by Revenue",
+   "attributed_to": "Sensor Tower App Performance Insights",
+   "criterion": 0,
+   "value": null,
+   "unit": "",
+   "verified": false,
+   "verify_note": "Không tìm thấy câu trích trong nguồn (đoạn giống nhất 86%); con số có trong nguồn nhưng câu chữ đi kèm thì không (thường do ghép nhãn với số trong biểu đồ)",
+   "match_score": 86.2,
+   "page": 21,
+   "context": "",
+   "origin": "",
+   "tier": "D",
+   "flags": [],
+   "excluded_by_user": false
   }
  ],
  "findings": [
   {
    "key": "F1",
-   "label": "Tăng trưởng game mobile, Shooter | Battle Royale, Indonesia, Q1 2025 vs Q4 2024",
+   "label": "Tăng trưởng game mobile, Shooter / Battle Royale, Indonesia, Q1 2025 vs Q4 2024",
    "claim_ids": [
-    "C11"
+    "C5"
    ],
    "origins": [
     "Sensor Tower"
@@ -1675,9 +2520,9 @@
   },
   {
    "key": "F2",
-   "label": "Tăng trưởng game mobile, Shooter | Battle Royale, Thái Lan, Q1 2025 vs Q4 2024",
+   "label": "Tăng trưởng game mobile, Battle Royale, Thái Lan, Q1 2025 vs Q4 2024",
    "claim_ids": [
-    "C12"
+    "C6"
    ],
    "origins": [
     "Sensor Tower"
@@ -1697,9 +2542,9 @@
   },
   {
    "key": "F3",
-   "label": "Tăng trưởng game mobile, Casino | Coin Looters, Thái Lan, Q1 2025 vs Q4 2024",
+   "label": "Tăng trưởng game mobile, Coin Looters, Thái Lan, Q1 2025 vs Q4 2024",
    "claim_ids": [
-    "C13"
+    "C7"
    ],
    "origins": [
     "Sensor Tower"
@@ -1719,15 +2564,15 @@
   },
   {
    "key": "F4",
-   "label": "Tăng trưởng game mobile, Battle Royale, Việt Nam, H1 2026 vs H1 2025",
+   "label": "Tăng trưởng game mobile, Shooter, Việt Nam, H1 2026",
    "claim_ids": [
-    "C25"
+    "C18"
    ],
    "origins": [
     "investgame.net"
    ],
    "values": [
-    -22.3
+    579.4
    ],
    "unit": "%",
    "status": "single",
@@ -1741,15 +2586,15 @@
   },
   {
    "key": "F5",
-   "label": "Tăng trưởng game mobile, Sim Sports, Việt Nam, H1 2026 vs H1 2025",
+   "label": "Tăng trưởng game mobile, Sim Sports, Việt Nam, H1 2026",
    "claim_ids": [
-    "C26"
+    "C19"
    ],
    "origins": [
     "investgame.net"
    ],
    "values": [
-    242.2
+    80.7
    ],
    "unit": "%",
    "status": "single",
@@ -1763,15 +2608,15 @@
   },
   {
    "key": "F6",
-   "label": "Tăng trưởng game mobile, 4X Battle, Việt Nam, H1 2026 vs H1 2025",
+   "label": "Tăng trưởng game mobile, Idle RPG, Việt Nam, H1 2026",
    "claim_ids": [
-    "C27"
+    "C20"
    ],
    "origins": [
     "investgame.net"
    ],
    "values": [
-    -15.4
+    40.2
    ],
    "unit": "%",
    "status": "single",
@@ -1785,15 +2630,15 @@
   },
   {
    "key": "F7",
-   "label": "Tăng trưởng game mobile, Sandbox, Việt Nam, H1 2026 vs H1 2025",
+   "label": "Tăng trưởng game mobile, Team Battle, Việt Nam, H1 2026",
    "claim_ids": [
-    "C28"
+    "C21"
    ],
    "origins": [
     "investgame.net"
    ],
    "values": [
-    -26.9
+    17.2
    ],
    "unit": "%",
    "status": "single",
@@ -1807,15 +2652,15 @@
   },
   {
    "key": "F8",
-   "label": "Tăng trưởng game mobile, MMORPG, Việt Nam, H1 2026 vs H1 2025",
+   "label": "Tăng trưởng game mobile, Avatar Life, Việt Nam, H1 2026",
    "claim_ids": [
-    "C29"
+    "C22"
    ],
    "origins": [
     "investgame.net"
    ],
    "values": [
-    -47.8
+    6.2
    ],
    "unit": "%",
    "status": "single",
@@ -1829,15 +2674,15 @@
   },
   {
    "key": "F9",
-   "label": "Tăng trưởng game mobile, MOBA, Việt Nam, H1 2026 vs H1 2025",
+   "label": "Tăng trưởng game mobile, Battle Royale, Việt Nam, H1 2026",
    "claim_ids": [
-    "C30"
+    "C23"
    ],
    "origins": [
     "investgame.net"
    ],
    "values": [
-    -26.4
+    2.6
    ],
    "unit": "%",
    "status": "single",
@@ -1851,15 +2696,15 @@
   },
   {
    "key": "F10",
-   "label": "Tăng trưởng game mobile, Idle RPG, Việt Nam, H1 2026 vs H1 2025",
+   "label": "Tăng trưởng game mobile, MMORPG, Việt Nam, H1 2026",
    "claim_ids": [
-    "C31"
+    "C24"
    ],
    "origins": [
     "investgame.net"
    ],
    "values": [
-    21.4
+    1.0
    ],
    "unit": "%",
    "status": "single",
@@ -1873,17 +2718,17 @@
   },
   {
    "key": "F11",
-   "label": "Tăng trưởng game mobile, Team Battle, Việt Nam, H1 2026 vs H1 2025",
+   "label": "Doanh thu game mobile, MMORPG, Việt Nam, H1 2026",
    "claim_ids": [
-    "C32"
+    "C25"
    ],
    "origins": [
     "investgame.net"
    ],
    "values": [
-    -30.5
+    29900000.0
    ],
-   "unit": "%",
+   "unit": "USD",
    "status": "single",
    "spread_pct": 0.0,
    "confidence": "Thấp",
@@ -1895,17 +2740,17 @@
   },
   {
    "key": "F12",
-   "label": "Tăng trưởng game mobile, Avatar Life, Việt Nam, H1 2026 vs H1 2025",
+   "label": "Doanh thu game mobile, Battle Royale, Việt Nam, H1 2026",
    "claim_ids": [
-    "C33"
+    "C26"
    ],
    "origins": [
     "investgame.net"
    ],
    "values": [
-    -46.0
+    26800000.0
    ],
-   "unit": "%",
+   "unit": "USD",
    "status": "single",
    "spread_pct": 0.0,
    "confidence": "Thấp",
@@ -1917,17 +2762,17 @@
   },
   {
    "key": "F13",
-   "label": "Tăng trưởng game mobile, Shooter, Việt Nam, H1 2026 vs H1 2025",
+   "label": "Doanh thu game mobile, 4X Battle, Việt Nam, H1 2026",
    "claim_ids": [
-    "C34"
+    "C27"
    ],
    "origins": [
     "investgame.net"
    ],
    "values": [
-    181.0
+    19300000.0
    ],
-   "unit": "%",
+   "unit": "USD",
    "status": "single",
    "spread_pct": 0.0,
    "confidence": "Thấp",
@@ -1939,55 +2784,276 @@
   },
   {
    "key": "F14",
-   "label": "Thị phần game mobile, Việt Nam, H1 2026",
+   "label": "Doanh thu game mobile, Team Battle, Việt Nam, H1 2026",
    "claim_ids": [
-    "C35",
-    "C36"
+    "C28"
    ],
    "origins": [
     "investgame.net"
    ],
    "values": [
-    85.3
+    16300000.0
    ],
-   "unit": "%",
+   "unit": "USD",
    "status": "single",
    "spread_pct": 0.0,
    "confidence": "Thấp",
    "reasons": [
     "Chỉ có một nguồn gốc (investgame.net, hạng B)",
-    "2 bài viết nhưng chỉ 1 nguồn gốc",
     "Có cảnh báo về kỳ đo hoặc phạm vi: hạ một mức"
    ],
    "newer": ""
   },
   {
    "key": "F15",
-   "label": "Tăng trưởng game mobile, 4X strategy, Đông Nam Á, Q1 2025 vs Q4 2024",
+   "label": "Doanh thu game mobile, MOBA, Việt Nam, H1 2026",
    "claim_ids": [
-    "C37"
+    "C29"
    ],
    "origins": [
-    "Sensor Tower"
+    "investgame.net"
    ],
    "values": [
-    17.6
+    13500000.0
    ],
-   "unit": "%",
+   "unit": "USD",
    "status": "single",
    "spread_pct": 0.0,
    "confidence": "Thấp",
    "reasons": [
-    "Chỉ có một nguồn gốc (Sensor Tower, hạng B)",
+    "Chỉ có một nguồn gốc (investgame.net, hạng B)",
     "Có cảnh báo về kỳ đo hoặc phạm vi: hạ một mức"
    ],
    "newer": ""
   },
   {
    "key": "F16",
-   "label": "Tăng trưởng game mobile, MOBA, Đông Nam Á, Q1 2025 vs Q4 2024",
+   "label": "Doanh thu IAP game mobile, Merge-2, Toàn cầu, H1 2026",
+   "claim_ids": [
+    "C30",
+    "C41"
+   ],
+   "origins": [
+    "AppMagic"
+   ],
+   "values": [
+    1200000000.0
+   ],
+   "unit": "USD",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Thấp",
+   "reasons": [
+    "Chỉ có một nguồn gốc (AppMagic, hạng A)",
+    "2 bài viết nhưng chỉ 1 nguồn gốc",
+    "Có cảnh báo về kỳ đo hoặc phạm vi: hạ một mức"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F17",
+   "label": "Doanh thu IAP game mobile, Merge, Toàn cầu, H1 2026",
+   "claim_ids": [
+    "C31"
+   ],
+   "origins": [
+    "AppMagic"
+   ],
+   "values": [
+    1300000000.0
+   ],
+   "unit": "USD",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Thấp",
+   "reasons": [
+    "Chỉ có một nguồn gốc (AppMagic, hạng A)",
+    "Có cảnh báo về kỳ đo hoặc phạm vi: hạ một mức"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F18",
+   "label": "Doanh thu IAP game mobile, Match-3, Toàn cầu, H1 2026",
+   "claim_ids": [
+    "C32",
+    "C36"
+   ],
+   "origins": [
+    "AppMagic"
+   ],
+   "values": [
+    2500000000.0
+   ],
+   "unit": "USD",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Thấp",
+   "reasons": [
+    "Chỉ có một nguồn gốc (AppMagic, hạng A)",
+    "2 bài viết nhưng chỉ 1 nguồn gốc",
+    "Có cảnh báo về kỳ đo hoặc phạm vi: hạ một mức"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F19",
+   "label": "Doanh thu IAP game mobile, Match-2 Blast, Toàn cầu, H1 2026",
+   "claim_ids": [
+    "C33"
+   ],
+   "origins": [
+    "AppMagic"
+   ],
+   "values": [
+    257000000.0
+   ],
+   "unit": "USD",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Thấp",
+   "reasons": [
+    "Chỉ có một nguồn gốc (AppMagic, hạng A)",
+    "Có cảnh báo về kỳ đo hoặc phạm vi: hạ một mức"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F20",
+   "label": "Doanh thu IAP game mobile, Puzzle, Toàn cầu, H1 2026",
+   "claim_ids": [
+    "C34"
+   ],
+   "origins": [
+    "AppMagic"
+   ],
+   "values": [
+    4900000000.0
+   ],
+   "unit": "USD",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Thấp",
+   "reasons": [
+    "Chỉ có một nguồn gốc (AppMagic, hạng A)",
+    "Có cảnh báo về kỳ đo hoặc phạm vi: hạ một mức"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F21",
+   "label": "Doanh thu IAP game mobile, Casual, Toàn cầu, H1 2025 vs H1 2026",
+   "claim_ids": [
+    "C35"
+   ],
+   "origins": [
+    "AppMagic"
+   ],
+   "values": [
+    11000000000.0
+   ],
+   "unit": "USD",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Thấp",
+   "reasons": [
+    "Chỉ có một nguồn gốc (AppMagic, hạng A)",
+    "Có cảnh báo về kỳ đo hoặc phạm vi: hạ một mức"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F22",
+   "label": "Doanh thu IAP game mobile, Match-3, Toàn cầu, November 2024 to H1 2026",
+   "claim_ids": [
+    "C37"
+   ],
+   "origins": [
+    "AppMagic"
+   ],
+   "values": [
+    510000000.0
+   ],
+   "unit": "USD",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Thấp",
+   "reasons": [
+    "Chỉ có một nguồn gốc (AppMagic, hạng A)",
+    "Có cảnh báo về kỳ đo hoặc phạm vi: hạ một mức"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F23",
+   "label": "Doanh thu IAP game mobile, Match-3, Toàn cầu, Post global launch",
    "claim_ids": [
     "C38"
+   ],
+   "origins": [
+    "AppMagic"
+   ],
+   "values": [
+    465000000.0
+   ],
+   "unit": "USD",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Trung bình",
+   "reasons": [
+    "Chỉ có một nguồn gốc (AppMagic, hạng A)"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F24",
+   "label": "Doanh thu IAP game mobile, Match-3, Toàn cầu, August 2022 to H1 2026",
+   "claim_ids": [
+    "C39"
+   ],
+   "origins": [
+    "AppMagic"
+   ],
+   "values": [
+    1900000.0
+   ],
+   "unit": "USD",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Thấp",
+   "reasons": [
+    "Chỉ có một nguồn gốc (AppMagic, hạng A)",
+    "Có cảnh báo về kỳ đo hoặc phạm vi: hạ một mức"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F25",
+   "label": "Doanh thu IAP game mobile, Puzzle, Toàn cầu, Up to December 2022",
+   "claim_ids": [
+    "C40"
+   ],
+   "origins": [
+    "AppMagic"
+   ],
+   "values": [
+    92000000.0
+   ],
+   "unit": "USD",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Thấp",
+   "reasons": [
+    "Chỉ có một nguồn gốc (AppMagic, hạng A)",
+    "Có cảnh báo về kỳ đo hoặc phạm vi: hạ một mức"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F26",
+   "label": "Tăng trưởng game mobile, MOBA, Đông Nam Á, Q1 2025 vs Q4 2024",
+   "claim_ids": [
+    "C42"
    ],
    "origins": [
     "Sensor Tower"
@@ -2006,10 +3072,32 @@
    "newer": ""
   },
   {
-   "key": "F17",
+   "key": "F27",
+   "label": "Tăng trưởng game mobile, 4X strategy, Đông Nam Á, Q1 2025 vs Q4 2024",
+   "claim_ids": [
+    "C43"
+   ],
+   "origins": [
+    "Sensor Tower"
+   ],
+   "values": [
+    17.6
+   ],
+   "unit": "%",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Thấp",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Sensor Tower, hạng B)",
+    "Có cảnh báo về kỳ đo hoặc phạm vi: hạ một mức"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F28",
    "label": "Tăng trưởng game mobile, MMORPG, Đông Nam Á, Q1 2025 vs Q4 2024",
    "claim_ids": [
-    "C39"
+    "C44"
    ],
    "origins": [
     "Sensor Tower"
@@ -2028,10 +3116,10 @@
    "newer": ""
   },
   {
-   "key": "F18",
+   "key": "F29",
    "label": "Tăng trưởng game mobile, MOBA, Indonesia, Q1 2025 vs Q4 2024",
    "claim_ids": [
-    "C40"
+    "C45"
    ],
    "origins": [
     "Sensor Tower"
@@ -2050,10 +3138,10 @@
    "newer": ""
   },
   {
-   "key": "F19",
+   "key": "F30",
    "label": "Tăng trưởng game mobile, 4X strategy, Indonesia, Q1 2025 vs Q4 2024",
    "claim_ids": [
-    "C41"
+    "C46"
    ],
    "origins": [
     "Sensor Tower"
@@ -2072,10 +3160,10 @@
    "newer": ""
   },
   {
-   "key": "F20",
-   "label": "Tăng trưởng game mobile, sports games, Indonesia, Q1 2025 vs Q4 2024",
+   "key": "F31",
+   "label": "Tăng trưởng game mobile, sports, Indonesia, Q1 2025 vs Q4 2024",
    "claim_ids": [
-    "C42"
+    "C47"
    ],
    "origins": [
     "Sensor Tower"
@@ -2094,32 +3182,10 @@
    "newer": ""
   },
   {
-   "key": "F21",
-   "label": "Tăng trưởng game mobile, Battle Royale, Indonesia, Q1 2025 vs Q4 2024",
+   "key": "F32",
+   "label": "Tăng trưởng game mobile, realistic sports, Thái Lan, Q1 2025 vs Q4 2024",
    "claim_ids": [
-    "C43"
-   ],
-   "origins": [
-    "Sensor Tower"
-   ],
-   "values": [
-    50.0
-   ],
-   "unit": "%",
-   "status": "single",
-   "spread_pct": 0.0,
-   "confidence": "Thấp",
-   "reasons": [
-    "Chỉ có một nguồn gốc (Sensor Tower, hạng B)",
-    "Có cảnh báo về kỳ đo hoặc phạm vi: hạ một mức"
-   ],
-   "newer": ""
-  },
-  {
-   "key": "F22",
-   "label": "Tăng trưởng game mobile, realistic sports games, Thái Lan, Q1 2025 vs Q4 2024",
-   "claim_ids": [
-    "C44"
+    "C48"
    ],
    "origins": [
     "Sensor Tower"
@@ -2138,10 +3204,10 @@
    "newer": ""
   },
   {
-   "key": "F23",
+   "key": "F33",
    "label": "Tăng trưởng game mobile, MMORPG, Thái Lan, Q1 2025 vs Q4 2024",
    "claim_ids": [
-    "C45"
+    "C49"
    ],
    "origins": [
     "Sensor Tower"
@@ -2160,10 +3226,10 @@
    "newer": ""
   },
   {
-   "key": "F24",
-   "label": "Tăng trưởng game mobile, 4X strategies, Thái Lan, Q1 2025 vs Q4 2024",
+   "key": "F34",
+   "label": "Tăng trưởng game mobile, 4X strategy, Thái Lan, Q1 2025 vs Q4 2024",
    "claim_ids": [
-    "C46"
+    "C50"
    ],
    "origins": [
     "Sensor Tower"
@@ -2182,10 +3248,10 @@
    "newer": ""
   },
   {
-   "key": "F25",
-   "label": "Tăng trưởng game mobile, 4X strategies, Việt Nam, Q1 2025 vs Q4 2024",
+   "key": "F35",
+   "label": "Tăng trưởng game mobile, 4X strategy, Việt Nam, Q1 2025 vs Q4 2024",
    "claim_ids": [
-    "C47"
+    "C51"
    ],
    "origins": [
     "Sensor Tower"
@@ -2204,10 +3270,10 @@
    "newer": ""
   },
   {
-   "key": "F26",
+   "key": "F36",
    "label": "Tăng trưởng game mobile, MMORPG, Việt Nam, Q1 2025 vs Q4 2024",
    "claim_ids": [
-    "C48"
+    "C52"
    ],
    "origins": [
     "Sensor Tower"
@@ -2224,83 +3290,72 @@
     "Có cảnh báo về kỳ đo hoặc phạm vi: hạ một mức"
    ],
    "newer": ""
+  },
+  {
+   "key": "F37",
+   "label": "Tăng trưởng game mobile, Squad RPG, Việt Nam, Q1 2025 vs Q4 2024",
+   "claim_ids": [
+    "C53"
+   ],
+   "origins": [
+    "Sensor Tower"
+   ],
+   "values": [
+    -1.8
+   ],
+   "unit": "%",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Thấp",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Sensor Tower, hạng B)",
+    "Có cảnh báo về kỳ đo hoặc phạm vi: hạ một mức"
+   ],
+   "newer": ""
   }
  ],
  "brief": {
-  "decision": "Đã có câu trả lời",
-  "summary": "Tại khu vực Đông Nam Á trong Q1 2025 so với Q4 2024, doanh thu thể loại MOBA tăng 20.1% và thể loại 4X strategy tăng 17.6%, trong khi MMORPG giảm 17.1%. Tuy nhiên, các số liệu này cần lưu ý có kỳ đo nằm ngoài khung thời gian 12 tháng gần nhất và chưa được đối chiếu bản gốc từ nguồn Sensor Tower.",
+  "decision": "Cần thêm dữ liệu",
+  "summary": "Dữ liệu hiện tại chỉ có số liệu tăng trưởng doanh thu theo quý (Q1 2025) cho thể loại MOBA (+20,1%) và chiến thuật 4X (+17,6%) tại khu vực Đông Nam Á, nhưng chưa đủ dữ liệu toàn bộ 12 tháng qua để xác định chính xác thể loại nào tăng trưởng nhanh nhất.",
   "reasons": [
    {
-    "text": "Doanh thu thể loại MOBA tăng 20.1% QoQ tại Đông Nam Á trong Q1 2025, nhưng kỳ đo này nằm ngoài khung thời gian 12 tháng gần nhất và chưa đối chiếu bản gốc Sensor Tower.",
+    "text": "Doanh thu thể loại game MOBA trên thiết bị di động tại Đông Nam Á tăng 20,1% theo quý trong Q1 2025.",
     "claim_ids": [
-     "C38"
+     "C42"
     ],
     "status": "uncertain"
    },
    {
-    "text": "Doanh thu thể loại 4X strategy game tăng 17.6% QoQ tại Đông Nam Á trong Q1 2025, với cảnh báo số liệu chưa đối chiếu bản gốc và ngoài khung thời gian yêu cầu.",
+    "text": "Doanh thu thể loại game chiến thuật 4X trên thiết bị di động tại Đông Nam Á tăng 17,6% theo quý trong Q1 2025.",
     "claim_ids": [
-     "C37"
+     "C43"
     ],
     "status": "uncertain"
    },
    {
-    "text": "Doanh thu thể loại MMORPG giảm 17.1% QoQ tại Đông Nam Á trong Q1 2025, nhưng số liệu này cũng thuộc kỳ đo ngoài khung thời gian nghiên cứu.",
+    "text": "Doanh thu thể loại game MMORPG trên thiết bị di động tại Đông Nam Á giảm 17,1% theo quý trong Q1 2025.",
     "claim_ids": [
-     "C39"
+     "C44"
     ],
     "status": "uncertain"
    }
   ],
   "what_would_change": [
-   "Có số liệu báo cáo doanh thu chính thức cho toàn bộ 12 tháng gần nhất thay vì chỉ so sánh theo quý Q1 2025 với Q4 2024.",
-   "Bản đối chiếu trực tiếp dữ liệu gốc từ Sensor Tower cho các thể loại game mobile tại toàn bộ các thị trường Đông Nam Á."
+   "Có số liệu thống kê tốc độ tăng trưởng doanh thu đầy đủ cho tất cả các thể loại game mobile trong phạm vi toàn bộ 12 tháng gần nhất tại Đông Nam Á.",
+   "Có dữ liệu đối chiếu từ các nguồn độc lập khác để xác thực độ tin cậy của số liệu Sensor Tower."
   ],
   "confidence": "Thấp",
   "gaps": [],
   "conflicts": [],
-  "definition_notes": [],
+  "definition_notes": [
+   "Doanh thu Việt Nam: 29,9 triệu USD (game mobile, H1 2026, MMORPG; investgame.net); 26,8 triệu USD (game mobile, H1 2026, Battle Royale; investgame.net); 19,3 triệu USD (game mobile, H1 2026, 4X Battle; investgame.net); 16,3 triệu USD (game mobile, H1 2026, Team Battle; investgame.net); 13,5 triệu USD (game mobile, H1 2026, MOBA; investgame.net). Các số này khác kỳ đo hoặc phạm vi đo nên không so trực tiếp được.",
+   "Doanh thu Toàn cầu: 1,2 tỷ USD (IAP game mobile, H1 2026, Merge-2; AppMagic); 1,3 tỷ USD (IAP game mobile, H1 2026, Merge; AppMagic); 2,5 tỷ USD (IAP game mobile, H1 2026, Match-3; AppMagic); 257 triệu USD (IAP game mobile, H1 2026, Match-2 Blast; AppMagic); 4,9 tỷ USD (IAP game mobile, H1 2026, Puzzle; AppMagic); 11 tỷ USD (IAP game mobile, H1 2025 vs H1 2026, Casual; AppMagic); 510 triệu USD (IAP game mobile, November 2024 to H1 2026, Match-3; AppMagic); 465 triệu USD (IAP game mobile, Post global launch, Match-3; AppMagic); 1,9 triệu USD (IAP game mobile, August 2022 to H1 2026, Match-3; AppMagic); 92 triệu USD (IAP game mobile, Up to December 2022, Puzzle; AppMagic). Các số này khác kỳ đo hoặc phạm vi đo nên không so trực tiếp được."
+  ],
   "guard_log": [],
   "trusted": [],
   "uncertain": [
    {
-    "finding": "F15",
-    "label": "Tăng trưởng game mobile, 4X strategy, Đông Nam Á, Q1 2025 vs Q4 2024",
-    "values": "+17,6%",
-    "origins": [
-     "Sensor Tower"
-    ],
-    "confidence": "Thấp",
-    "claim_ids": [
-     "C37"
-    ],
-    "why": [
-     "Kỳ đo \"Q1 2025 vs Q4 2024\" nằm ngoài khung thời gian của câu hỏi (12 tháng gần nhất)",
-     "Số của Sensor Tower dẫn lại qua bài viết, chưa đối chiếu bản gốc"
-    ],
-    "next_steps": [
-     {
-      "text": "Đối chiếu bản gốc của Sensor Tower trên sensortower.com",
-      "query": "Sensor Tower Southeast Asia mobile games 4X strategy revenue growth Q1 2025 vs Q4 2024",
-      "ask": "",
-      "url": "",
-      "findings": [
-       "F15"
-      ]
-     },
-     {
-      "text": "Tìm số đúng khung thời gian của câu hỏi (12 tháng gần nhất)",
-      "query": "Southeast Asia mobile games 4X strategy revenue growth 2026",
-      "ask": "",
-      "url": "",
-      "findings": [
-       "F15"
-      ]
-     }
-    ]
-   },
-   {
-    "finding": "F16",
+    "finding": "F26",
     "label": "Tăng trưởng game mobile, MOBA, Đông Nam Á, Q1 2025 vs Q4 2024",
     "values": "+20,1%",
     "origins": [
@@ -2308,7 +3363,7 @@
     ],
     "confidence": "Thấp",
     "claim_ids": [
-     "C38"
+     "C42"
     ],
     "why": [
      "Kỳ đo \"Q1 2025 vs Q4 2024\" nằm ngoài khung thời gian của câu hỏi (12 tháng gần nhất)",
@@ -2321,7 +3376,7 @@
       "ask": "",
       "url": "",
       "findings": [
-       "F16"
+       "F26"
       ]
      },
      {
@@ -2330,13 +3385,49 @@
       "ask": "",
       "url": "",
       "findings": [
-       "F16"
+       "F26"
       ]
      }
     ]
    },
    {
-    "finding": "F17",
+    "finding": "F27",
+    "label": "Tăng trưởng game mobile, 4X strategy, Đông Nam Á, Q1 2025 vs Q4 2024",
+    "values": "+17,6%",
+    "origins": [
+     "Sensor Tower"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C43"
+    ],
+    "why": [
+     "Kỳ đo \"Q1 2025 vs Q4 2024\" nằm ngoài khung thời gian của câu hỏi (12 tháng gần nhất)",
+     "Số của Sensor Tower dẫn lại qua bài viết, chưa đối chiếu bản gốc"
+    ],
+    "next_steps": [
+     {
+      "text": "Đối chiếu bản gốc của Sensor Tower trên sensortower.com",
+      "query": "Sensor Tower Southeast Asia mobile games 4X strategy revenue growth Q1 2025 vs Q4 2024",
+      "ask": "",
+      "url": "",
+      "findings": [
+       "F27"
+      ]
+     },
+     {
+      "text": "Tìm số đúng khung thời gian của câu hỏi (12 tháng gần nhất)",
+      "query": "Southeast Asia mobile games 4X strategy revenue growth 2026",
+      "ask": "",
+      "url": "",
+      "findings": [
+       "F27"
+      ]
+     }
+    ]
+   },
+   {
+    "finding": "F28",
     "label": "Tăng trưởng game mobile, MMORPG, Đông Nam Á, Q1 2025 vs Q4 2024",
     "values": "-17,1%",
     "origins": [
@@ -2344,7 +3435,7 @@
     ],
     "confidence": "Thấp",
     "claim_ids": [
-     "C39"
+     "C44"
     ],
     "why": [
      "Kỳ đo \"Q1 2025 vs Q4 2024\" nằm ngoài khung thời gian của câu hỏi (12 tháng gần nhất)",
@@ -2357,7 +3448,7 @@
       "ask": "",
       "url": "",
       "findings": [
-       "F17"
+       "F28"
       ]
      },
      {
@@ -2366,7 +3457,7 @@
       "ask": "",
       "url": "",
       "findings": [
-       "F17"
+       "F28"
       ]
      }
     ]
@@ -2375,14 +3466,14 @@
   "other": [
    {
     "finding": "F1",
-    "label": "Tăng trưởng game mobile, Shooter | Battle Royale, Indonesia, Q1 2025 vs Q4 2024",
+    "label": "Tăng trưởng game mobile, Shooter / Battle Royale, Indonesia, Q1 2025 vs Q4 2024",
     "values": "+50,0%",
     "origins": [
      "Sensor Tower"
     ],
     "confidence": "Thấp",
     "claim_ids": [
-     "C11"
+     "C5"
     ],
     "why": [
      "Số của thị trường Indonesia, câu hỏi hỏi về Đông Nam Á"
@@ -2390,14 +3481,14 @@
    },
    {
     "finding": "F2",
-    "label": "Tăng trưởng game mobile, Shooter | Battle Royale, Thái Lan, Q1 2025 vs Q4 2024",
+    "label": "Tăng trưởng game mobile, Battle Royale, Thái Lan, Q1 2025 vs Q4 2024",
     "values": "+35,8%",
     "origins": [
      "Sensor Tower"
     ],
     "confidence": "Thấp",
     "claim_ids": [
-     "C12"
+     "C6"
     ],
     "why": [
      "Số của thị trường Thái Lan, câu hỏi hỏi về Đông Nam Á"
@@ -2405,14 +3496,14 @@
    },
    {
     "finding": "F3",
-    "label": "Tăng trưởng game mobile, Casino | Coin Looters, Thái Lan, Q1 2025 vs Q4 2024",
+    "label": "Tăng trưởng game mobile, Coin Looters, Thái Lan, Q1 2025 vs Q4 2024",
     "values": "+23,6%",
     "origins": [
      "Sensor Tower"
     ],
     "confidence": "Thấp",
     "claim_ids": [
-     "C13"
+     "C7"
     ],
     "why": [
      "Số của thị trường Thái Lan, câu hỏi hỏi về Đông Nam Á"
@@ -2420,8 +3511,113 @@
    },
    {
     "finding": "F4",
-    "label": "Tăng trưởng game mobile, Battle Royale, Việt Nam, H1 2026 vs H1 2025",
-    "values": "-22,3%",
+    "label": "Tăng trưởng game mobile, Shooter, Việt Nam, H1 2026",
+    "values": "+579,4%",
+    "origins": [
+     "investgame.net"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C18"
+    ],
+    "why": [
+     "Số của thị trường Việt Nam, câu hỏi hỏi về Đông Nam Á"
+    ]
+   },
+   {
+    "finding": "F5",
+    "label": "Tăng trưởng game mobile, Sim Sports, Việt Nam, H1 2026",
+    "values": "+80,7%",
+    "origins": [
+     "investgame.net"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C19"
+    ],
+    "why": [
+     "Số của thị trường Việt Nam, câu hỏi hỏi về Đông Nam Á"
+    ]
+   },
+   {
+    "finding": "F6",
+    "label": "Tăng trưởng game mobile, Idle RPG, Việt Nam, H1 2026",
+    "values": "+40,2%",
+    "origins": [
+     "investgame.net"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C20"
+    ],
+    "why": [
+     "Số của thị trường Việt Nam, câu hỏi hỏi về Đông Nam Á"
+    ]
+   },
+   {
+    "finding": "F7",
+    "label": "Tăng trưởng game mobile, Team Battle, Việt Nam, H1 2026",
+    "values": "+17,2%",
+    "origins": [
+     "investgame.net"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C21"
+    ],
+    "why": [
+     "Số của thị trường Việt Nam, câu hỏi hỏi về Đông Nam Á"
+    ]
+   },
+   {
+    "finding": "F8",
+    "label": "Tăng trưởng game mobile, Avatar Life, Việt Nam, H1 2026",
+    "values": "+6,2%",
+    "origins": [
+     "investgame.net"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C22"
+    ],
+    "why": [
+     "Số của thị trường Việt Nam, câu hỏi hỏi về Đông Nam Á"
+    ]
+   },
+   {
+    "finding": "F9",
+    "label": "Tăng trưởng game mobile, Battle Royale, Việt Nam, H1 2026",
+    "values": "+2,6%",
+    "origins": [
+     "investgame.net"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C23"
+    ],
+    "why": [
+     "Số của thị trường Việt Nam, câu hỏi hỏi về Đông Nam Á"
+    ]
+   },
+   {
+    "finding": "F10",
+    "label": "Tăng trưởng game mobile, MMORPG, Việt Nam, H1 2026",
+    "values": "+1,0%",
+    "origins": [
+     "investgame.net"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C24"
+    ],
+    "why": [
+     "Số của thị trường Việt Nam, câu hỏi hỏi về Đông Nam Á"
+    ]
+   },
+   {
+    "finding": "F11",
+    "label": "Doanh thu game mobile, MMORPG, Việt Nam, H1 2026",
+    "values": "29,9 triệu USD",
     "origins": [
      "investgame.net"
     ],
@@ -2434,9 +3630,9 @@
     ]
    },
    {
-    "finding": "F5",
-    "label": "Tăng trưởng game mobile, Sim Sports, Việt Nam, H1 2026 vs H1 2025",
-    "values": "+242,2%",
+    "finding": "F12",
+    "label": "Doanh thu game mobile, Battle Royale, Việt Nam, H1 2026",
+    "values": "26,8 triệu USD",
     "origins": [
      "investgame.net"
     ],
@@ -2449,9 +3645,9 @@
     ]
    },
    {
-    "finding": "F6",
-    "label": "Tăng trưởng game mobile, 4X Battle, Việt Nam, H1 2026 vs H1 2025",
-    "values": "-15,4%",
+    "finding": "F13",
+    "label": "Doanh thu game mobile, 4X Battle, Việt Nam, H1 2026",
+    "values": "19,3 triệu USD",
     "origins": [
      "investgame.net"
     ],
@@ -2464,9 +3660,9 @@
     ]
    },
    {
-    "finding": "F7",
-    "label": "Tăng trưởng game mobile, Sandbox, Việt Nam, H1 2026 vs H1 2025",
-    "values": "-26,9%",
+    "finding": "F14",
+    "label": "Doanh thu game mobile, Team Battle, Việt Nam, H1 2026",
+    "values": "16,3 triệu USD",
     "origins": [
      "investgame.net"
     ],
@@ -2479,9 +3675,9 @@
     ]
    },
    {
-    "finding": "F8",
-    "label": "Tăng trưởng game mobile, MMORPG, Việt Nam, H1 2026 vs H1 2025",
-    "values": "-47,8%",
+    "finding": "F15",
+    "label": "Doanh thu game mobile, MOBA, Việt Nam, H1 2026",
+    "values": "13,5 triệu USD",
     "origins": [
      "investgame.net"
     ],
@@ -2494,175 +3690,161 @@
     ]
    },
    {
-    "finding": "F9",
-    "label": "Tăng trưởng game mobile, MOBA, Việt Nam, H1 2026 vs H1 2025",
-    "values": "-26,4%",
+    "finding": "F16",
+    "label": "Doanh thu IAP game mobile, Merge-2, Toàn cầu, H1 2026",
+    "values": "1,2 tỷ USD",
     "origins": [
-     "investgame.net"
+     "AppMagic"
     ],
     "confidence": "Thấp",
     "claim_ids": [
-     "C30"
+     "C30",
+     "C41"
     ],
     "why": [
-     "Số của thị trường Việt Nam, câu hỏi hỏi về Đông Nam Á"
+     "Số của thị trường Toàn cầu, câu hỏi hỏi về Đông Nam Á"
     ]
    },
    {
-    "finding": "F10",
-    "label": "Tăng trưởng game mobile, Idle RPG, Việt Nam, H1 2026 vs H1 2025",
-    "values": "+21,4%",
+    "finding": "F17",
+    "label": "Doanh thu IAP game mobile, Merge, Toàn cầu, H1 2026",
+    "values": "1,3 tỷ USD",
     "origins": [
-     "investgame.net"
+     "AppMagic"
     ],
     "confidence": "Thấp",
     "claim_ids": [
      "C31"
     ],
     "why": [
-     "Số của thị trường Việt Nam, câu hỏi hỏi về Đông Nam Á"
+     "Số của thị trường Toàn cầu, câu hỏi hỏi về Đông Nam Á"
     ]
    },
    {
-    "finding": "F11",
-    "label": "Tăng trưởng game mobile, Team Battle, Việt Nam, H1 2026 vs H1 2025",
-    "values": "-30,5%",
+    "finding": "F18",
+    "label": "Doanh thu IAP game mobile, Match-3, Toàn cầu, H1 2026",
+    "values": "2,5 tỷ USD",
     "origins": [
-     "investgame.net"
+     "AppMagic"
     ],
     "confidence": "Thấp",
     "claim_ids": [
-     "C32"
+     "C32",
+     "C36"
     ],
     "why": [
-     "Số của thị trường Việt Nam, câu hỏi hỏi về Đông Nam Á"
+     "Số của thị trường Toàn cầu, câu hỏi hỏi về Đông Nam Á"
     ]
    },
    {
-    "finding": "F12",
-    "label": "Tăng trưởng game mobile, Avatar Life, Việt Nam, H1 2026 vs H1 2025",
-    "values": "-46,0%",
+    "finding": "F19",
+    "label": "Doanh thu IAP game mobile, Match-2 Blast, Toàn cầu, H1 2026",
+    "values": "257 triệu USD",
     "origins": [
-     "investgame.net"
+     "AppMagic"
     ],
     "confidence": "Thấp",
     "claim_ids": [
      "C33"
     ],
     "why": [
-     "Số của thị trường Việt Nam, câu hỏi hỏi về Đông Nam Á"
+     "Số của thị trường Toàn cầu, câu hỏi hỏi về Đông Nam Á"
     ]
    },
    {
-    "finding": "F13",
-    "label": "Tăng trưởng game mobile, Shooter, Việt Nam, H1 2026 vs H1 2025",
-    "values": "+181,0%",
+    "finding": "F20",
+    "label": "Doanh thu IAP game mobile, Puzzle, Toàn cầu, H1 2026",
+    "values": "4,9 tỷ USD",
     "origins": [
-     "investgame.net"
+     "AppMagic"
     ],
     "confidence": "Thấp",
     "claim_ids": [
      "C34"
     ],
     "why": [
-     "Số của thị trường Việt Nam, câu hỏi hỏi về Đông Nam Á"
+     "Số của thị trường Toàn cầu, câu hỏi hỏi về Đông Nam Á"
     ]
    },
    {
-    "finding": "F14",
-    "label": "Thị phần game mobile, Việt Nam, H1 2026",
-    "values": "+85,3%",
+    "finding": "F21",
+    "label": "Doanh thu IAP game mobile, Casual, Toàn cầu, H1 2025 vs H1 2026",
+    "values": "11 tỷ USD",
     "origins": [
-     "investgame.net"
+     "AppMagic"
     ],
     "confidence": "Thấp",
     "claim_ids": [
-     "C35",
-     "C36"
+     "C35"
     ],
     "why": [
-     "Số của thị trường Việt Nam, câu hỏi hỏi về Đông Nam Á"
+     "Số của thị trường Toàn cầu, câu hỏi hỏi về Đông Nam Á"
     ]
    },
    {
-    "finding": "F18",
-    "label": "Tăng trưởng game mobile, MOBA, Indonesia, Q1 2025 vs Q4 2024",
-    "values": "+32,7%",
+    "finding": "F22",
+    "label": "Doanh thu IAP game mobile, Match-3, Toàn cầu, November 2024 to H1 2026",
+    "values": "510 triệu USD",
     "origins": [
-     "Sensor Tower"
+     "AppMagic"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C37"
+    ],
+    "why": [
+     "Số của thị trường Toàn cầu, câu hỏi hỏi về Đông Nam Á"
+    ]
+   },
+   {
+    "finding": "F23",
+    "label": "Doanh thu IAP game mobile, Match-3, Toàn cầu, Post global launch",
+    "values": "465 triệu USD",
+    "origins": [
+     "AppMagic"
+    ],
+    "confidence": "Trung bình",
+    "claim_ids": [
+     "C38"
+    ],
+    "why": [
+     "Số của thị trường Toàn cầu, câu hỏi hỏi về Đông Nam Á"
+    ]
+   },
+   {
+    "finding": "F24",
+    "label": "Doanh thu IAP game mobile, Match-3, Toàn cầu, August 2022 to H1 2026",
+    "values": "1,9 triệu USD",
+    "origins": [
+     "AppMagic"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C39"
+    ],
+    "why": [
+     "Số của thị trường Toàn cầu, câu hỏi hỏi về Đông Nam Á"
+    ]
+   },
+   {
+    "finding": "F25",
+    "label": "Doanh thu IAP game mobile, Puzzle, Toàn cầu, Up to December 2022",
+    "values": "92 triệu USD",
+    "origins": [
+     "AppMagic"
     ],
     "confidence": "Thấp",
     "claim_ids": [
      "C40"
     ],
     "why": [
-     "Số của thị trường Indonesia, câu hỏi hỏi về Đông Nam Á"
+     "Số của thị trường Toàn cầu, câu hỏi hỏi về Đông Nam Á"
     ]
    },
    {
-    "finding": "F19",
-    "label": "Tăng trưởng game mobile, 4X strategy, Indonesia, Q1 2025 vs Q4 2024",
-    "values": "+21,1%",
-    "origins": [
-     "Sensor Tower"
-    ],
-    "confidence": "Thấp",
-    "claim_ids": [
-     "C41"
-    ],
-    "why": [
-     "Số của thị trường Indonesia, câu hỏi hỏi về Đông Nam Á"
-    ]
-   },
-   {
-    "finding": "F20",
-    "label": "Tăng trưởng game mobile, sports games, Indonesia, Q1 2025 vs Q4 2024",
-    "values": "-22,6%",
-    "origins": [
-     "Sensor Tower"
-    ],
-    "confidence": "Thấp",
-    "claim_ids": [
-     "C42"
-    ],
-    "why": [
-     "Số của thị trường Indonesia, câu hỏi hỏi về Đông Nam Á"
-    ]
-   },
-   {
-    "finding": "F21",
-    "label": "Tăng trưởng game mobile, Battle Royale, Indonesia, Q1 2025 vs Q4 2024",
-    "values": "+50,0%",
-    "origins": [
-     "Sensor Tower"
-    ],
-    "confidence": "Thấp",
-    "claim_ids": [
-     "C43"
-    ],
-    "why": [
-     "Số của thị trường Indonesia, câu hỏi hỏi về Đông Nam Á"
-    ]
-   },
-   {
-    "finding": "F22",
-    "label": "Tăng trưởng game mobile, realistic sports games, Thái Lan, Q1 2025 vs Q4 2024",
-    "values": "-7,8%",
-    "origins": [
-     "Sensor Tower"
-    ],
-    "confidence": "Thấp",
-    "claim_ids": [
-     "C44"
-    ],
-    "why": [
-     "Số của thị trường Thái Lan, câu hỏi hỏi về Đông Nam Á"
-    ]
-   },
-   {
-    "finding": "F23",
-    "label": "Tăng trưởng game mobile, MMORPG, Thái Lan, Q1 2025 vs Q4 2024",
-    "values": "-27,4%",
+    "finding": "F29",
+    "label": "Tăng trưởng game mobile, MOBA, Indonesia, Q1 2025 vs Q4 2024",
+    "values": "+32,7%",
     "origins": [
      "Sensor Tower"
     ],
@@ -2671,13 +3853,13 @@
      "C45"
     ],
     "why": [
-     "Số của thị trường Thái Lan, câu hỏi hỏi về Đông Nam Á"
+     "Số của thị trường Indonesia, câu hỏi hỏi về Đông Nam Á"
     ]
    },
    {
-    "finding": "F24",
-    "label": "Tăng trưởng game mobile, 4X strategies, Thái Lan, Q1 2025 vs Q4 2024",
-    "values": "-5,6%",
+    "finding": "F30",
+    "label": "Tăng trưởng game mobile, 4X strategy, Indonesia, Q1 2025 vs Q4 2024",
+    "values": "+21,1%",
     "origins": [
      "Sensor Tower"
     ],
@@ -2686,13 +3868,13 @@
      "C46"
     ],
     "why": [
-     "Số của thị trường Thái Lan, câu hỏi hỏi về Đông Nam Á"
+     "Số của thị trường Indonesia, câu hỏi hỏi về Đông Nam Á"
     ]
    },
    {
-    "finding": "F25",
-    "label": "Tăng trưởng game mobile, 4X strategies, Việt Nam, Q1 2025 vs Q4 2024",
-    "values": "+51,5%",
+    "finding": "F31",
+    "label": "Tăng trưởng game mobile, sports, Indonesia, Q1 2025 vs Q4 2024",
+    "values": "-22,6%",
     "origins": [
      "Sensor Tower"
     ],
@@ -2701,11 +3883,71 @@
      "C47"
     ],
     "why": [
+     "Số của thị trường Indonesia, câu hỏi hỏi về Đông Nam Á"
+    ]
+   },
+   {
+    "finding": "F32",
+    "label": "Tăng trưởng game mobile, realistic sports, Thái Lan, Q1 2025 vs Q4 2024",
+    "values": "-7,8%",
+    "origins": [
+     "Sensor Tower"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C48"
+    ],
+    "why": [
+     "Số của thị trường Thái Lan, câu hỏi hỏi về Đông Nam Á"
+    ]
+   },
+   {
+    "finding": "F33",
+    "label": "Tăng trưởng game mobile, MMORPG, Thái Lan, Q1 2025 vs Q4 2024",
+    "values": "-27,4%",
+    "origins": [
+     "Sensor Tower"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C49"
+    ],
+    "why": [
+     "Số của thị trường Thái Lan, câu hỏi hỏi về Đông Nam Á"
+    ]
+   },
+   {
+    "finding": "F34",
+    "label": "Tăng trưởng game mobile, 4X strategy, Thái Lan, Q1 2025 vs Q4 2024",
+    "values": "-5,6%",
+    "origins": [
+     "Sensor Tower"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C50"
+    ],
+    "why": [
+     "Số của thị trường Thái Lan, câu hỏi hỏi về Đông Nam Á"
+    ]
+   },
+   {
+    "finding": "F35",
+    "label": "Tăng trưởng game mobile, 4X strategy, Việt Nam, Q1 2025 vs Q4 2024",
+    "values": "+51,5%",
+    "origins": [
+     "Sensor Tower"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C51"
+    ],
+    "why": [
      "Số của thị trường Việt Nam, câu hỏi hỏi về Đông Nam Á"
     ]
    },
    {
-    "finding": "F26",
+    "finding": "F36",
     "label": "Tăng trưởng game mobile, MMORPG, Việt Nam, Q1 2025 vs Q4 2024",
     "values": "+8,2%",
     "origins": [
@@ -2713,7 +3955,22 @@
     ],
     "confidence": "Thấp",
     "claim_ids": [
-     "C48"
+     "C52"
+    ],
+    "why": [
+     "Số của thị trường Việt Nam, câu hỏi hỏi về Đông Nam Á"
+    ]
+   },
+   {
+    "finding": "F37",
+    "label": "Tăng trưởng game mobile, Squad RPG, Việt Nam, Q1 2025 vs Q4 2024",
+    "values": "-1,8%",
+    "origins": [
+     "Sensor Tower"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C53"
     ],
     "why": [
      "Số của thị trường Việt Nam, câu hỏi hỏi về Đông Nam Á"
@@ -2723,51 +3980,72 @@
   "next_steps": [
    {
     "text": "Đối chiếu bản gốc của Sensor Tower trên sensortower.com",
-    "query": "Sensor Tower Southeast Asia mobile games 4X strategy revenue growth Q1 2025 vs Q4 2024",
+    "query": "Sensor Tower Southeast Asia mobile games MOBA revenue growth Q1 2025 vs Q4 2024",
     "ask": "",
     "url": "",
     "findings": [
-     "F15",
-     "F16",
-     "F17"
+     "F26",
+     "F27",
+     "F28"
     ]
    },
    {
     "text": "Tìm số đúng khung thời gian của câu hỏi (12 tháng gần nhất)",
-    "query": "Southeast Asia mobile games 4X strategy revenue growth 2026",
+    "query": "Southeast Asia mobile games MOBA revenue growth 2026",
     "ask": "",
     "url": "",
     "findings": [
-     "F15",
-     "F16",
-     "F17"
+     "F26",
+     "F27",
+     "F28"
     ]
    },
    {
     "text": "Mới có số của thị trường khác, tìm số riêng cho Đông Nam Á",
-    "query": "Southeast Asia mobile games Shooter | Battle Royale revenue growth Q1 2025 vs Q4 2024",
+    "query": "Southeast Asia mobile games Shooter / Battle Royale revenue growth Q1 2025 vs Q4 2024",
     "ask": "",
     "url": "",
     "findings": []
    },
    {
-    "text": "11 con số ở \"Southeast Asian Mobile Game Market Insights 2025 - InvestGame.net\" chưa kiểm được vì câu trích chỉ có con số (thường là biểu đồ): mở để đọc trực tiếp",
+    "text": "14 con số ở \"Southeast Asian Mobile Game Market Insights 2025 - InvestGame.net\" chưa kiểm được vì câu trích chỉ có con số hoặc nhãn bị ghép với số (thường là biểu đồ): mở để đọc trực tiếp",
     "query": "",
     "ask": "",
-    "url": "https://investgame.net/news/pdf/southeast-asian-mobile-game-market-insights-2025/#:~:text=%2B51.5%25",
+    "url": "https://investgame.net/news/pdf/southeast-asian-mobile-game-market-insights-2025/#:~:text=%2B75.1%25",
+    "findings": []
+   },
+   {
+    "text": "5 con số ở trang 12 của \"2025_Southeast_Asia_Mobile_Game_Insights\" chưa kiểm được vì câu trích chỉ có con số hoặc nhãn bị ghép với số (thường là biểu đồ): mở để đọc trực tiếp",
+    "query": "",
+    "ask": "",
+    "url": "https://investgame.net/wp-content/uploads/2025/06/2025_Southeast_Asia_Mobile_Game_Insights.pdf#page=12",
+    "findings": []
+   },
+   {
+    "text": "3 con số ở trang 19 của \"2025_Southeast_Asia_Mobile_Game_Insights\" chưa kiểm được vì câu trích chỉ có con số hoặc nhãn bị ghép với số (thường là biểu đồ): mở để đọc trực tiếp",
+    "query": "",
+    "ask": "",
+    "url": "https://investgame.net/wp-content/uploads/2025/06/2025_Southeast_Asia_Mobile_Game_Insights.pdf#page=19",
+    "findings": []
+   },
+   {
+    "text": "4 con số ở trang 21 của \"2025_Southeast_Asia_Mobile_Game_Insights\" chưa kiểm được vì câu trích chỉ có con số hoặc nhãn bị ghép với số (thường là biểu đồ): mở để đọc trực tiếp",
+    "query": "",
+    "ask": "",
+    "url": "https://investgame.net/wp-content/uploads/2025/06/2025_Southeast_Asia_Mobile_Game_Insights.pdf#page=21",
     "findings": []
    }
   ]
  },
  "stats": {
-  "sources_read": 5,
-  "sources_failed": 3,
-  "claims": 48,
-  "verified": 27,
-  "rejected": 21,
+  "sources_read": 7,
+  "sources_failed": 1,
+  "claims": 78,
+  "verified": 39,
+  "rejected": 39,
   "carried": 0,
-  "llm_calls": 11,
-  "seconds": 52.2,
+  "llm_calls": 19,
+  "seconds": 88.0,
   "model": "gemini/gemini-3.5-flash-lite",
   "search": "Tavily"
  }

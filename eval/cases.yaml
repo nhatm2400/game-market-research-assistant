@@ -18,7 +18,7 @@
   checks_m3:
     decision_in: ["Đã có câu trả lời"]
     trusted_includes_numbers: ["625"]
-  hoc_duoc: "Đạt. Kế hoạch giờ chỉ có 1 tiêu chí đúng thứ được hỏi; ở M2 AI tự thêm tiêu chí ngoài câu hỏi (top thể loại, top quốc gia), tạo chỗ thiếu giả và kéo kết luận về 'Cần thêm dữ liệu'. Số 625 triệu USD từ blog Sensor Tower (hạng A, bản gốc) nằm ở 'Có thể tin', kết luận 'Đã có câu trả lời', tin cậy Trung bình vì chỉ một nguồn gốc. Ở một lần chạy đủ trước đó (prompt cũ) AI vẫn chọn 'Cần thêm dữ liệu' dù số đã ở mục có thể tin: nhãn kết luận vẫn do AI chọn nên có thể dao động, còn ba phần do code xếp thì ổn định."
+  hoc_duoc: "Đạt. Kế hoạch chỉ còn 1 tiêu chí đúng thứ được hỏi; ở M2 AI tự thêm tiêu chí ngoài câu hỏi (top thể loại, top quốc gia), tạo chỗ thiếu giả và kéo kết luận về 'Cần thêm dữ liệu'. Số 625 triệu USD từ blog Sensor Tower (hạng A, bản gốc) và từ bài dẫn lại đều ở 'Có thể tin'; kết luận 'Đã có câu trả lời', tin cậy Trung bình vì chỉ một nguồn gốc; bước tiếp là đối chiếu bản gốc Sensor Tower cho bài dẫn lại. Ở một lần chạy với prompt cũ, AI vẫn chọn 'Cần thêm dữ liệu' dù số đã ở mục có thể tin: nhãn kết luận do AI chọn nên có thể dao động, còn ba phần do code xếp thì ổn định."
 
 - id: TC2
   loai: kho
@@ -37,7 +37,7 @@
     uncertain_reason_any: ["lệch", "trái chiều"]
     trusted_excludes_numbers: ["5.37", "5.89"]
     next_steps_min: 1
-  hoc_duoc: "Đạt. Ba nguồn gốc độc lập (Niko Partners 5,37; Statista 5,89; Newzoo 6,51 tỷ USD) được gom vào một nhóm mâu thuẫn lệch 21% và xếp 'Chưa chắc chắn'; không con số quy mô nào vào 'Có thể tin'. Bước tiếp là so sánh cách đo của ba hãng; số dự báo 2029 để riêng ở 'ngoài phạm vi'. Hai lỗi lộ ra khi chạy thử M3 đã sửa và có test: một bản sao '5.37 billion' không ghi USD bị tách khỏi nhóm (nay doanh thu không ghi đơn vị được coi là USD, có ghi chú), và ô bảng 'N-6.51' bị đọc thành −6,51 rồi báo nhầm các nguồn trái chiều."
+  hoc_duoc: "Đạt. Hai mâu thuẫn được xếp 'Chưa chắc chắn': Niko Partners 5,37 và Statista 5,89 tỷ USD lệch 10%; Statista 5,89 và Newzoo 6,51 (đọc từ bảng không ghi đơn vị) lệch 11%. Không con số quy mô nào vào 'Có thể tin', chỉ có tăng trưởng 5,2% của Niko. Kết luận 'Đã có câu trả lời', tin cậy Thấp, tóm tắt nêu khoảng 5,37 đến 6,51 tỷ USD. Hạn chế: số trong bảng không ghi 'billion' nên không vào chung một nhóm với số có đơn vị. Các lỗi lộ ra khi chạy thử M3 đã sửa và có test: số '5.37 billion' không ghi USD, ô bảng 'N-6.51' bị đọc thành số âm, giá trị ghi hai con số."
 
 - id: TC3
   loai: kho
@@ -55,7 +55,7 @@
     uncertain_reason_any: ["ngoài khung", "không phải số của cả", "cần xem lại phạm vi"]
     trusted_excludes_numbers: ["579.4"]
     next_steps_min: 1
-  hoc_duoc: "Đạt. Câu tóm tắt có lại (M2 bị rỗng vì bộ kiểm coi '12 tháng' là số bịa). Chỉ có số Q1 2025 (4X Strategy +17,6%, MOBA +20,1%, MMORPG −17,1%) nên cả ba ở 'Chưa chắc chắn' với lý do ngoài khung 12 tháng và là số dẫn lại; số của Indonesia và Thái Lan để ở 'ngoài phạm vi' (lần chạy này không trích bảng Việt Nam +579,4%, nên điều kiện không đưa số đó vào mục có thể tin đạt mà không có gì để kiểm). Bước tiếp gồm tìm số đúng khung và mở biểu đồ InvestGame có 11 con số chưa kiểm được. AI vẫn chọn 'Đã có câu trả lời' kèm tin cậy Thấp: nhãn kết luận còn rộng, người dùng cần đọc cùng mức tin cậy và ba phần."
+  hoc_duoc: "Đạt. Câu tóm tắt có lại (M2 bị rỗng vì bộ kiểm coi '12 tháng' là số bịa). Chỉ có số Q1 2025 (MOBA +20,1%, 4X Strategy +17,6%, MMORPG −17,1%) nên cả ba ở 'Chưa chắc chắn' với lý do ngoài khung 12 tháng; 34 nhóm số của thị trường hoặc kỳ khác để ở 'ngoài phạm vi'. Bước tiếp gồm tìm số đúng khung và mở các biểu đồ chưa đọc được (14 con số trên trang InvestGame, các trang 12, 19, 21 của một PDF). Lần chạy này không trích bảng Việt Nam +579,4% nên điều kiện không đưa số đó vào mục có thể tin đạt mà không có gì để kiểm."
 
 - id: TC4
   loai: tot
@@ -69,7 +69,7 @@
   checks_m3:
     summary_not_empty: true
     next_steps_min: 1
-  hoc_duoc: "Đạt. 'Cần thêm dữ liệu' là hợp lý: số về Việt Nam có thể tin chỉ có 329 triệu lượt tải game mobile Q1 2025; số MOBA chỉ có ở cấp Đông Nam Á nên được để ở 'ngoài phạm vi' thay vì trộn vào lý do như M2. Bước tiếp là tìm dữ liệu về mức cạnh tranh, bấm được để hỏi tiếp. Nguồn đọc được có hạng A, B, D; 2 nguồn lỗi tải."
+  hoc_duoc: "Đạt. 'Cần thêm dữ liệu' là hợp lý. Có thể tin: 329 triệu lượt tải Q1 2025 và tăng trưởng lượt tải 12% của Việt Nam. Chưa chắc chắn: doanh thu 1,8 tỷ USD và tăng trưởng 33% (chỉ có nguồn hạng C), tăng trưởng 2024–2027 (một phần là dự báo). Chưa có dữ liệu về mức cạnh tranh trong nhóm MOBA, có bước bấm được để hỏi tiếp. Mỗi lý do trong bản tóm tắt có dấu cho biết dựa trên nhận định có thể tin hay chưa chắc chắn."
 
 - id: TC5
   loai: thieu
@@ -97,7 +97,7 @@
   checks_m3:
     top_growth_genre_in_market: "battle royale"
     chart_step: true
-  hoc_duoc: "Chưa đạt, đúng như dự đoán. Ở các lần chạy M3, AI có lúc gán đúng +37,6% cho Battle Royale của Đông Nam Á, nhưng câu trích chỉ là con số hoặc là chuỗi ghép nhãn, trục và số không đứng liền nhau trong văn bản, nên code không kiểm được và loại; có lần AI ghép +37,6% với Match Swap (sai) và cũng bị loại. Chỉ còn số của Indonesia và Thái Lan nên không có đáp án cho Đông Nam Á. Cải tiến M3: không còn đạt nhầm (điều kiện mới chỉ xét số của Đông Nam Á; điều kiện cũ vẫn đạt nhầm nhờ số +50% của Indonesia), và có bước mở thẳng tới biểu đồ có 22 con số chưa kiểm được. Muốn đạt cần đọc biểu đồ theo bố cục trang hoặc bằng mô hình thị giác. TC6 được chạy lại riêng sau khi thêm bước chỉ tới biểu đồ khi nhãn bị ghép với số."
+  hoc_duoc: "Chưa đạt, đúng như dự đoán. Lần chạy cuối không giữ được nhận định nào (0/22): câu trích bị ghép từ nhãn, trục và số của biểu đồ nên không có nguyên văn trong nguồn; trong đó +37,6% bị gán cho Squad RPG (sai, đúng là Battle Royale) và bị loại. Ở lần chạy khác AI có lúc gán đúng Battle Royale nhưng câu trích chỉ là con số nên cũng bị loại. Điều kiện cũ của M2 từng đạt nhầm nhờ số +50% của Indonesia, nay báo đúng là không đạt; vì vậy tổng điều kiện M2 của bản M3 là 19/21 chứ không phải 20/21. Cải tiến M3: có bước mở thẳng tới biểu đồ có 22 con số chưa kiểm được. Muốn đạt cần đọc biểu đồ theo bố cục trang hoặc bằng mô hình thị giác."
 
 - id: TC7
   loai: tiep
@@ -114,7 +114,7 @@
     context_kept: true
     llm_calls_max: 10
     verified_numbers: ["0.817"]
-  hoc_duoc: "Đạt. 'Còn riêng Việt Nam thì sao?' được viết lại thành 'Quy mô thị trường game Việt Nam năm 2024 là bao nhiêu và các nguồn có khớp nhau không?' (giữ chỉ số, năm và ý so sánh nguồn, chỉ đổi thị trường). Giữ 7/7 nhận định của TC2, đọc lại 3 nguồn đã lưu với câu hỏi mới (không tải lại) và tìm ra 0,817 tỷ USD (Newzoo) cùng 0,46 tỷ USD (Statista); hai nguồn lệch 78% nên xếp 'Chưa chắc chắn'. 6 lượt gọi LLM. Bản đầu tiên không đọc lại nguồn đã hụt số này vì lần đọc đầu của TC2 không trích dòng Việt Nam, nên đã đổi thành đọc lại nguồn khi hỏi tiếp."
+  hoc_duoc: "Đạt. 'Còn riêng Việt Nam thì sao?' được viết lại thành 'Quy mô thị trường game Việt Nam năm 2024 là bao nhiêu và các nguồn có khớp nhau không?' (giữ chỉ số, năm và ý so sánh nguồn, chỉ đổi thị trường). Giữ 7/7 nhận định của TC2, đọc lại 3 nguồn đã lưu với câu hỏi mới (không tải lại), tìm ra 0,817 tỷ USD (Newzoo) và 0,46 tỷ USD (Statista) lệch 78%. Bộ kiểm loại 2 lý do vì AI tự đổi 0,46 tỷ thành '460 triệu USD' (số không có trong nhận định), và code đổi kết luận 'Đã có câu trả lời' thành 'Có số liệu nhưng chưa chắc chắn' vì không lý do nào dựa trên nhận định có thể tin. 6 lượt gọi LLM. Bản đầu tiên không đọc lại nguồn đã hụt số này vì lần đọc đầu của TC2 không trích dòng Việt Nam."
 
 - id: TC8
   loai: cu
@@ -131,6 +131,6 @@
     uncertain_reason_any: ["chưa kết thúc", "dự báo"]
     confidence_not: ["Cao"]
     next_steps_min: 1
-  hoc_duoc: "Đạt. Số 2025 duy nhất là 5,47 tỷ USD của Niko Partners trong bài đăng tháng 9 và 10/2025; code nhận ra năm 2025 chưa kết thúc lúc đăng nên xếp 'Chưa chắc chắn' (số ước tính hoặc dự báo), tin cậy Thấp, bước tiếp là tìm số đã đo của năm 2025 và đối chiếu bản gốc Niko Partners. M2 không có cảnh báo này nên sẽ đưa 5,47 tỷ như số đã đo."
+  hoc_duoc: "Đạt. Số 2025 duy nhất là 5,47 tỷ USD của Niko Partners trong bài đăng tháng 9 và 10/2025. Code nhận ra năm 2025 chưa kết thúc lúc đăng nên xếp 'Chưa chắc chắn' (số ước tính hoặc dự báo), tin cậy Thấp, và đổi kết luận AI viết ('Đã có câu trả lời') thành 'Có số liệu nhưng chưa chắc chắn' vì không lý do nào dựa trên nhận định có thể tin. Bước tiếp: tìm số đã đo của năm 2025 và đối chiếu bản gốc Niko Partners. M2 không có cảnh báo này nên sẽ đưa 5,47 tỷ như số đã đo."
 
 # TC9: Change Request. Sẽ thêm khi nhận Change Request.
