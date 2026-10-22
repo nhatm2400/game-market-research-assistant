@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import json
 import os
+from html import escape as h
 
 import pandas as pd
 import streamlit as st
@@ -17,6 +18,7 @@ except Exception:
     pass
 
 from core import extract, pipeline, store  # noqa: E402
+from core.brief import UNSURE  # noqa: E402
 from core.evidence import evidence_url  # noqa: E402
 from core.fetch import from_upload  # noqa: E402
 from core.llm import LLM, LLMError  # noqa: E402
@@ -32,8 +34,60 @@ SAMPLES = [
     "Doanh thu tháng 9/2026 của tựa game Tiếu Ngạo tại Việt Nam là bao nhiêu?",
 ]
 TIER_HELP = "A: dữ liệu gốc. B: thứ cấp uy tín. C: blog, ý kiến. D: không dùng làm bằng chứng."
+CONF_LEVEL = {"Thấp": 1, "Trung bình": 2, "Cao": 3}
+
+# Colour carries meaning only: jade = can be trusted, ochre = not settled, slate = outside the question or
+# missing, indigo = something to do. The serif face is kept for words quoted from a source.
+CSS = """
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500&display=swap');
+:root { --ink:#1A2433; --muted:#5B6675; --line:#D5DDE3; --jade:#17785B; --ochre:#95600F;
+        --slate:#66717E; --indigo:#3346A8; }
+.lead { font-size:1.05rem; color:var(--muted); max-width:68ch; margin:-.4rem 0 1.2rem; line-height:1.55; }
+.thread { color:var(--muted); font-size:.9rem; margin:.2rem 0 .8rem; }
+.thread b { color:var(--ink); font-weight:600; }
+.verdict { border-top:3px solid var(--ink); padding:1rem 0 .2rem; margin:.4rem 0 1rem; }
+.v-label { color:var(--muted); font-size:.9rem; }
+.v-answer { font-size:2.1rem; font-weight:700; line-height:1.15; letter-spacing:-.015em; margin:.15rem 0 .5rem; }
+.v-answer.firm { color:var(--ink); } .v-answer.unsure { color:var(--ochre); } .v-answer.missing { color:var(--slate); }
+.v-conf { display:flex; align-items:center; gap:.6rem; font-weight:500; margin-bottom:.8rem; }
+.meter { display:inline-flex; gap:3px; }
+.meter i { width:26px; height:8px; border-radius:2px; background:var(--line); }
+.meter.l1 i:nth-child(-n+1), .meter.l2 i:nth-child(-n+2), .meter.l3 i:nth-child(-n+3) { background:var(--indigo); }
+.v-summary { font-size:1.08rem; line-height:1.6; max-width:72ch; margin:0 0 .6rem; }
+.v-meta { color:var(--muted); font-size:.9rem; max-width:80ch; margin:0; }
+.reason { display:flex; gap:.65rem; margin:.45rem 0; max-width:80ch; line-height:1.5; }
+.dot { flex:none; width:.6rem; height:.6rem; border-radius:50%; margin-top:.45rem; }
+.dot.trusted { background:var(--jade); } .dot.uncertain { background:var(--ochre); }
+.chip { display:inline-block; font-size:.75rem; line-height:1.35; padding:0 .35rem; margin-left:.25rem;
+        border:1px solid var(--line); border-radius:3px; color:var(--muted); white-space:nowrap; }
+.col-head { font-size:1.15rem; font-weight:700; padding-bottom:.35rem; border-bottom:2px solid; margin:.6rem 0 .3rem; }
+.col-head.trusted { color:var(--jade); } .col-head.uncertain { color:var(--ochre); } .col-head.next { color:var(--indigo); }
+.col-head span { font-weight:500; color:var(--muted); font-size:.95rem; margin-left:.35rem; }
+.col-note { color:var(--muted); font-size:.85rem; margin:0 0 .9rem; line-height:1.45; }
+.ev { border-left:3px solid var(--line); padding:.15rem 0 .2rem .85rem; margin:0 0 1.05rem; }
+.ev.trusted { border-color:var(--jade); } .ev.uncertain { border-color:var(--ochre); }
+.ev-what { color:var(--muted); font-size:.9rem; line-height:1.4; }
+.ev-val { font-size:1.4rem; font-weight:600; font-variant-numeric:tabular-nums; line-height:1.3; margin:.1rem 0; }
+.ev-src { font-size:.9rem; display:flex; align-items:center; flex-wrap:wrap; gap:.15rem; }
+.ev ul { margin:.35rem 0 0; padding-left:1.1rem; color:var(--muted); font-size:.88rem; line-height:1.45; }
+.ev ul li { margin:.1rem 0; }
+.seal { display:inline-flex; align-items:center; justify-content:center; width:1.3rem; height:1.3rem;
+        border-radius:50%; border:1.5px solid currentColor; font-size:.7rem; font-weight:700; margin-right:.3rem; }
+.seal.A { color:var(--jade); } .seal.B { color:var(--indigo); } .seal.C { color:var(--ochre); } .seal.D { color:#9AA3AD; }
+.step { line-height:1.5; max-width:80ch; padding:.15rem 0; }
+.step small { display:block; color:var(--muted); }
+.src-quote { font-family:'Literata', Georgia, serif; font-size:1.04rem; line-height:1.7; border-left:2px solid var(--ink);
+             padding:.1rem 0 .1rem .9rem; margin:.4rem 0 .8rem; max-width:75ch; }
+.src-context { font-family:'Literata', Georgia, serif; font-size:.92rem; line-height:1.7; color:var(--muted);
+               max-width:75ch; white-space:pre-wrap; max-height:14rem; overflow:auto; }
+.src-context mark { background:#E7F3EE; color:var(--ink); padding:0 .1rem; }
+@media (prefers-reduced-motion: reduce) { * { transition:none !important; animation:none !important; } }
+</style>
+"""
 
 st.set_page_config(page_title="Nghiên cứu thị trường game", layout="wide")
+st.markdown(CSS, unsafe_allow_html=True)
 ss = st.session_state
 ss.setdefault("plan", None)
 ss.setdefault("result", None)
@@ -53,6 +107,21 @@ def research_further(prev: dict, follow_question: str = "", queries: list[str] |
     ss.result = res
     ss.plan = res["plan"]
     st.rerun()
+
+
+def chips(ids) -> str:
+    return "".join(f'<span class="chip">{h(i)}</span>' for i in ids)
+
+
+def evidence_row(x: dict, kind: str, claims: dict, notes: list[str]) -> str:
+    """One finding: what it measures, its value, the best source tier, its origin and why it sits here."""
+    tier = min(claims[c]["tier"] for c in x["claim_ids"])
+    items = "".join(f"<li>{h(n)}</li>" for n in notes)
+    return (f'<div class="ev {kind}"><div class="ev-what">{h(x["label"])}</div>'
+            f'<div class="ev-val">{h(x["values"])}</div>'
+            f'<div class="ev-src"><span class="seal {h(tier)}" title="Hạng nguồn {h(tier)}">{h(tier)}</span>'
+            f'{h(", ".join(x["origins"]))}{chips([x["finding"]] + x["claim_ids"])}</div>'
+            + (f"<ul>{items}</ul>" if items else "") + "</div>")
 
 
 # ---------- sidebar ----------
@@ -76,8 +145,9 @@ with st.sidebar:
 
 # ---------- input ----------
 st.title("Trợ lý nghiên cứu thị trường game")
-st.caption("Mỗi nhận định phải có câu trích nguyên văn được code tìm thấy trong nguồn; "
-           "hạng nguồn và mức tin cậy tính bằng quy tắc, không do AI tự chấm.")
+st.markdown('<p class="lead">Đặt một câu hỏi, hệ thống đọc nguồn rồi tách điều có thể tin khỏi điều còn chưa chắc '
+            'chắn. Mỗi con số đi kèm câu trích nguyên văn mà code đã tìm thấy trong nguồn; hạng nguồn và mức tin cậy '
+            'tính bằng quy tắc, không do AI tự chấm.</p>', unsafe_allow_html=True)
 
 sample = st.selectbox("Câu hỏi mẫu", ["(tự nhập)"] + SAMPLES)
 question = st.text_area("Câu hỏi nghiên cứu", value="" if sample == "(tự nhập)" else sample, height=70)
@@ -94,9 +164,9 @@ if col1.button("1. Lập kế hoạch", disabled=not (question.strip() and llm))
         ss.result = None
 
 if ss.plan:
-    st.subheader("Kế hoạch (bạn có thể sửa trước khi chạy)")
+    st.subheader("Kế hoạch, sửa được trước khi chạy")
     c1, c2 = st.columns(2)
-    crit = c1.text_area("Tiêu chí ra quyết định, mỗi dòng một tiêu chí", "\n".join(ss.plan["criteria"]), height=130)
+    crit = c1.text_area("Tiêu chí, mỗi dòng một tiêu chí", "\n".join(ss.plan["criteria"]), height=130)
     qs = c2.text_area("Truy vấn tìm kiếm, mỗi dòng một truy vấn", "\n".join(ss.plan["queries"]), height=130)
     ss.plan["criteria"] = [x.strip() for x in crit.splitlines() if x.strip()]
     ss.plan["queries"] = [x.strip() for x in qs.splitlines() if x.strip()]
@@ -124,68 +194,70 @@ if r:
     claims = {c["id"]: c for c in r["claims"]}
     sources = {s["id"]: s for s in r["sources"]}
     trusted, uncertain, steps = b.get("trusted", []), b.get("uncertain", []), b.get("next_steps", [])
-    st.divider()
+
     if len(r.get("thread") or []) > 1:
-        st.caption("Chuỗi nghiên cứu: " + "  →  ".join(t["question"] for t in r["thread"]))
-    st.subheader("Bản tóm tắt quyết định")
-    m1, m2, m3, m4 = st.columns(4)
-    m1.metric("Kết luận", b["decision"])
-    m2.metric("Mức tin cậy", b["confidence"])
-    m3.metric("Có thể tin / Chưa chắc chắn", f"{len(trusted)} / {len(uncertain)}")
-    m4.metric("Nhận định giữ / loại", f"{r['stats']['verified']} / {r['stats']['rejected']}")
+        path = " → ".join(h(t["question"]) for t in r["thread"][:-1])
+        st.markdown(f'<p class="thread">Nghiên cứu tiếp từ: {path} → <b>{h(r["thread"][-1]["question"])}</b></p>',
+                    unsafe_allow_html=True)
+
+    kind = ("unsure" if b["decision"] == UNSURE else "missing" if b["decision"] == "Cần thêm dữ liệu" else "firm")
+    level = CONF_LEVEL.get(b["confidence"], 0)
+    meta = (f"{len(trusted)} điều có thể tin, {len(uncertain)} điều chưa chắc chắn, {len(steps)} bước nên tìm tiếp. "
+            f"Khung thời gian dữ liệu: {r['window']['label']}.")
+    if r["stats"].get("carried"):
+        meta += f" Giữ lại {r['stats']['carried']} nhận định đã kiểm từ lần trước."
+    st.markdown(
+        f'<section class="verdict"><div class="v-label">Kết luận</div>'
+        f'<div class="v-answer {kind}">{h(b["decision"])}</div>'
+        f'<div class="v-conf"><span class="meter l{level}" aria-hidden="true"><i></i><i></i><i></i></span>'
+        f'Tin cậy {h(b["confidence"].lower() if level else b["confidence"])}</div>'
+        + (f'<p class="v-summary">{h(b["summary"])}</p>' if b["summary"] else "")
+        + f'<p class="v-meta">{h(meta)}</p></section>', unsafe_allow_html=True)
     if r["stats"]["sources_failed"]:
         st.warning(f"{r['stats']['sources_failed']} nguồn bị lỗi khi đọc hoặc khi trích nhận định. "
                    "Xem lý do ở tab Nguồn.")
-    st.write(b["summary"])
-    st.caption(f"Khung thời gian dữ liệu: {r['window']['label']}"
-               + (f". Giữ lại {r['stats']['carried']} nhận định đã kiểm từ lần trước." if r["stats"].get("carried") else ""))
-    if b["reasons"]:
-        st.markdown("**Lý do chính** (✅ dựa trên nhận định có thể tin, ⚠️ có nhận định chưa chắc chắn)")
-        for i, x in enumerate(b["reasons"], 1):
-            mark = {"trusted": "✅ ", "uncertain": "⚠️ "}.get(x.get("status"), "")
-            st.markdown(f"{i}. {mark}{x['text']} `{', '.join(x['claim_ids'])}`")
 
-    col_t, col_u = st.columns(2)
+    if b["reasons"]:
+        rows = "".join(f'<div class="reason"><span class="dot {h(x.get("status", "uncertain"))}"></span>'
+                       f'<div>{h(x["text"])}{chips(x["claim_ids"])}</div></div>' for x in b["reasons"])
+        st.markdown(f'<div class="col-note">Lý do chính. Chấm xanh: dựa trên nhận định có thể tin. Chấm vàng: có '
+                    f'nhận định chưa chắc chắn.</div>{rows}', unsafe_allow_html=True)
+
+    col_t, col_u = st.columns(2, gap="large")
     with col_t:
-        st.markdown("#### ✅ Có thể tin")
-        st.caption("Ít nhất một nguồn gốc hạng A/B, không mâu thuẫn, không lệch kỳ đo hay thị trường, "
-                   "không phải số dẫn lại chưa đối chiếu. Do code xếp, không phải AI.")
-        for x in trusted:
-            st.markdown(f"**{x['finding']}. {x['label']}**: {x['values']} ({', '.join(x['origins'])}). "
-                        f"Tin cậy {x['confidence']}. `{', '.join(x['claim_ids'])}`")
-            for n in x.get("notes", []):
-                st.caption(f"Lưu ý: {n}")
+        html = (f'<div class="col-head trusted">Có thể tin<span>{len(trusted)}</span></div>'
+                '<p class="col-note">Nguồn gốc hạng A hoặc B, không mâu thuẫn, đúng kỳ và đúng thị trường câu hỏi.</p>')
+        html += "".join(evidence_row(x, "trusted", claims, x.get("notes", [])) for x in trusted)
+        st.markdown(html or "", unsafe_allow_html=True)
         if not trusted:
-            st.write("Chưa có số liệu nào đủ điều kiện.")
+            st.caption("Chưa có số liệu nào đủ điều kiện. Xem cột bên cạnh và các bước nên tìm tiếp.")
     with col_u:
-        st.markdown("#### ⚠️ Chưa chắc chắn")
-        st.caption("Có số liệu đã kiểm câu trích nhưng còn lý do để chưa tin hẳn.")
-        for x in uncertain:
-            st.markdown(f"**{x['finding']}. {x['label']}**: {x['values']} ({', '.join(x['origins'])}). "
-                        f"`{', '.join(x['claim_ids'])}`")
-            for w in x["why"]:
-                st.markdown(f"  - {w}")
+        html = (f'<div class="col-head uncertain">Chưa chắc chắn<span>{len(uncertain)}</span></div>'
+                '<p class="col-note">Câu trích đã kiểm, nhưng còn lý do cụ thể để chưa tin hẳn.</p>')
+        html += "".join(evidence_row(x, "uncertain", claims, x["why"]) for x in uncertain)
+        st.markdown(html, unsafe_allow_html=True)
         if not uncertain:
-            st.write("Không có.")
+            st.caption("Không có.")
     other = b.get("other", [])
     if other:
-        with st.expander(f"Số liệu khác đã kiểm nhưng ngoài phạm vi câu hỏi ({len(other)})"):
-            for x in other:
-                st.markdown(f"- **{x['finding']}. {x['label']}**: {x['values']} ({', '.join(x['origins'])}). {x['why'][0]}.")
+        with st.expander(f"Số liệu đã kiểm nhưng ngoài phạm vi câu hỏi ({len(other)})"):
+            st.markdown("".join(evidence_row(x, "other", claims, x["why"]) for x in other), unsafe_allow_html=True)
 
-    st.markdown("#### 🔎 Nên tìm hiểu tiếp ở đâu")
-    st.caption("Bấm để nghiên cứu tiếp: hệ thống giữ câu hỏi, các nhận định đã kiểm và các nhận định bạn đã loại, "
-               "chỉ tìm thêm phần còn thiếu.")
+    st.markdown(f'<div class="col-head next">Nên tìm hiểu tiếp ở đâu<span>{len(steps)}</span></div>'
+                '<p class="col-note">Bấm để nghiên cứu tiếp. Hệ thống giữ câu hỏi, các nhận định đã kiểm và các nhận '
+                'định bạn đã loại, chỉ tìm thêm phần còn thiếu.</p>', unsafe_allow_html=True)
 
     def show_step(i: int, s: dict) -> None:
-        c_text, c_btn = st.columns([5, 1])
-        about = f" ({', '.join(s['findings'])})" if s.get("findings") else ""
-        c_text.markdown(f"- {s['text']}{about}" + (f"  \n  Truy vấn: `{s['query']}`" if s["query"] else ""))
+        c_text, c_btn = st.columns([5, 1], vertical_alignment="center")
+        extra = f"<small>Truy vấn: {h(s['query'])}</small>" if s["query"] else ""
+        c_text.markdown(f'<div class="step">{h(s["text"])}{chips(s.get("findings", []))}{extra}</div>',
+                        unsafe_allow_html=True)
         if s["url"]:
-            c_btn.link_button("Mở nguồn", s["url"])
-        elif s["query"] and c_btn.button("Tìm thêm", key=f"q{r['id']}{i}", disabled=llm is None or not use_search):
+            c_btn.link_button("Mở nguồn", s["url"], width="stretch")
+        elif s["query"] and c_btn.button("Tìm thêm", key=f"q{r['id']}{i}", disabled=llm is None or not use_search,
+                                         width="stretch"):
             research_further(r, queries=[s["query"]])
-        elif s["ask"] and c_btn.button("Tìm thêm", key=f"a{r['id']}{i}", disabled=llm is None):
+        elif s["ask"] and c_btn.button("Tìm thêm", key=f"a{r['id']}{i}", disabled=llm is None, width="stretch"):
             research_further(r, follow_question=s["ask"])
 
     for i, s in enumerate(steps[:5]):
@@ -195,41 +267,32 @@ if r:
             for i, s in enumerate(steps[5:], 5):
                 show_step(i, s)
     if not steps:
-        st.write("Không có bước nào cần thêm.")
-    with st.form(f"follow{r['id']}", clear_on_submit=True):
+        st.caption("Không còn bước nào cần làm thêm.")
+    with st.form(f"follow{r['id']}", clear_on_submit=True, border=False):
         fq = st.text_input("Hỏi tiếp, giữ bối cảnh câu hỏi này",
                            placeholder="Ví dụ: Còn riêng Việt Nam thì sao? Hoặc: Số năm 2025 có chưa?")
-        asked = st.form_submit_button("Hỏi tiếp", disabled=llm is None)
+        asked = st.form_submit_button("Hỏi tiếp", disabled=llm is None, type="primary")
     if asked and fq.strip():
         research_further(r, follow_question=fq)
-    if b["conflicts"]:
-        st.markdown("**Mâu thuẫn giữa các nguồn**")
-        for x in b["conflicts"]:
-            st.markdown(f"- {x}")
-    if b["definition_notes"]:
-        st.markdown("**Số liệu khác định nghĩa, không so trực tiếp**")
-        for x in b["definition_notes"]:
-            st.markdown(f"- {x}")
-    if b["gaps"]:
-        st.markdown("**Tiêu chí chưa có dữ liệu đã kiểm**")
-        for x in b["gaps"]:
-            st.markdown(f"- {x}")
-    if b["what_would_change"]:
-        st.markdown("**Điều gì sẽ làm thay đổi khuyến nghị**")
-        for x in b["what_would_change"]:
-            st.markdown(f"- {x}")
-    if b["guard_log"]:
-        with st.expander(f"Câu bị bộ kiểm loại khỏi bản tóm tắt ({len(b['guard_log'])})"):
-            for x in b["guard_log"]:
-                st.markdown(f"- {x}")
 
+    details = [("Số liệu khác định nghĩa, không so trực tiếp", b["definition_notes"]),
+               ("Điều gì sẽ làm thay đổi kết luận", b["what_would_change"]),
+               ("Câu bị bộ kiểm loại khỏi bản tóm tắt", b["guard_log"])]
+    for title, items in details:
+        if items:
+            with st.expander(f"{title} ({len(items)})"):
+                for x in items:
+                    st.markdown(f"- {x}")
+
+    st.divider()
     t1, t2, t3, t4 = st.tabs(["Nhận định đã kiểm", "Nhận định bị loại", "Nguồn", "Nhật ký chạy"])
     with t1:
-        st.caption("Mở từng nhận định để xem câu trích và link nguồn. Đánh dấu nhận định sai rồi viết lại bản tóm tắt.")
+        st.caption("Mở từng nhận định để xem câu trích và mở nguồn tại đúng chỗ. Đánh dấu nhận định sai rồi viết lại "
+                   "bản tóm tắt.")
         excluded = set()
         for f in r["findings"]:
-            st.markdown(f"**{f['key']}. {f['label']}**: tin cậy {f['confidence']}, "
-                        f"{'mâu thuẫn' if f['status'] == 'conflict' else 'khớp' if f['status'] == 'agree' else 'một nguồn gốc'}. "
+            status_txt = {"conflict": "mâu thuẫn", "agree": "khớp"}.get(f["status"], "một nguồn gốc")
+            st.markdown(f"**{f['key']}. {f['label']}**: tin cậy {f['confidence']}, {status_txt}. "
                         f"{'; '.join(f['reasons'])}")
             for cid in f["claim_ids"]:
                 c = claims[cid]
@@ -237,7 +300,7 @@ if r:
                 head = f"{cid}  {c['value_text']}  ({c['origin']}, hạng {c['tier']})" + ("  có cảnh báo" if c["flags"] else "")
                 with st.expander(head):
                     st.write(c["claim_text"])
-                    st.markdown(f"> {c['quote']}")
+                    st.markdown(f'<blockquote class="src-quote">{h(c["quote"])}</blockquote>', unsafe_allow_html=True)
                     page = f", trang {c['page']}" if c.get("page") else ""
                     st.markdown(f"Nguồn: [{s['title'] or s['domain']}]({s['url']}){page}, đăng {s['published'] or 'không rõ'}. "
                                 f"Giá trị chuẩn hóa: {fmt_value(c['value'], c['unit'])}. Kỳ: {c['period']}. "
@@ -247,8 +310,9 @@ if r:
                         st.link_button("Mở nguồn tại câu trích" if s["kind"] != "pdf" else f"Mở PDF ở trang {c['page']}",
                                        link)
                     if c.get("context"):
-                        st.caption("Đoạn văn quanh câu trích, lấy nguyên từ nguồn (câu trích nằm trong 【 】):")
-                        st.text(c["context"].replace(c["quote"], f"【{c['quote']}】", 1))
+                        ctx = h(c["context"]).replace(h(c["quote"]), f"<mark>{h(c['quote'])}</mark>", 1)
+                        st.caption("Đoạn văn quanh câu trích, lấy nguyên từ nguồn:")
+                        st.markdown(f'<div class="src-context">{ctx}</div>', unsafe_allow_html=True)
                     if c.get("section_title"):
                         st.caption(f"Chương/bảng: {c['section_title']}")
                     for fl in c["flags"]:
