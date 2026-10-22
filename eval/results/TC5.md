@@ -6,7 +6,7 @@
 
 Chưa đủ dữ liệu đã kiểm chứng để trả lời câu hỏi. Không có nhận định nào vừa liên quan vừa tìm thấy câu trích trong nguồn.
 
-Khung thời gian dữ liệu: 09/2026 đến 09/2026. Ngày chạy: 2026-10-21.
+Khung thời gian dữ liệu: 09/2026 đến 09/2026. Ngày chạy: 2026-10-22.
 
 ## Có thể tin
 
@@ -18,18 +18,14 @@ Khung thời gian dữ liệu: 09/2026 đến 09/2026. Ngày chạy: 2026-10-21.
 
 ## Nên tìm hiểu tiếp ở đâu
 
-- Chưa có dữ liệu đã kiểm cho tiêu chí "Quy mô doanh thu tháng 9 năm 2026".
-- Chưa có dữ liệu đã kiểm cho tiêu chí "Thứ hạng doanh thu trên cửa hàng ứng dụng".
-- Chưa có dữ liệu đã kiểm cho tiêu chí "Biến động doanh thu so với tháng trước".
+- Chưa có dữ liệu đã kiểm cho tiêu chí "Doanh thu tháng 9/2026 của Tiếu Ngạo tại Việt Nam".
 
 ## Tiêu chí chưa có dữ liệu đã kiểm
 
-- Quy mô doanh thu tháng 9 năm 2026
-- Thứ hạng doanh thu trên cửa hàng ứng dụng
-- Biến động doanh thu so với tháng trước
+- Doanh thu tháng 9/2026 của Tiếu Ngạo tại Việt Nam
 
 ## Điều gì sẽ làm thay đổi khuyến nghị
 
 - Tải lên báo cáo đã mua hoặc thêm link nguồn gốc của hãng dữ liệu
 
-_Đọc 5 nguồn, trích 0 nhận định, giữ 0, loại 0. 6 lượt gọi gemini/gemini-3.5-flash-lite, 100.8 giây._
+_Đọc 5 nguồn, trích 0 nhận định, giữ 0, loại 0. 7 lượt gọi gemini/gemini-3.5-flash-lite, 33.7 giây._

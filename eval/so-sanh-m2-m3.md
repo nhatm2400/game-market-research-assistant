@@ -7,13 +7,13 @@ không đạt là đúng. Cột cuối chỉ có ở M3: số mục có thể ti
 
 | Mã | Loại | Điều kiện M2: M2 → M3 | Điều kiện M3: M2 → M3 | Kết luận / tin cậy: M2 → M3 | Tóm tắt | M3: tin / chưa chắc / ngoài / bước |
 |---|---|---|---|---|---|---|
-| TC1 | Làm tốt | 3/3 → 3/3 | 0/2 → 2/2 | Cần thêm dữ liệu / Trung bình → Đã có câu trả lời / Trung bình | có → có | 5 / 0 / 6 / 1 |
-| TC2 | Khó, dữ liệu không rõ ràng | 4/4 → 4/4 | 1/3 → 3/3 | Cần thêm dữ liệu / Thấp → Đã có câu trả lời / Thấp | có → có | 5 / 1 / 5 / 3 |
-| TC3 | Khó, dữ liệu không rõ ràng | 3/3 → 3/3 | 1/4 → 4/4 | Cần thêm dữ liệu / Thấp → Cần thêm dữ liệu / Thấp | rỗng → có | 0 / 6 / 26 / 4 |
-| TC4 | Làm tốt | 3/3 → 3/3 | 1/2 → 2/2 | Cần thêm dữ liệu / Trung bình → Cần thêm dữ liệu / Trung bình | có → có | 1 / 0 / 12 / 1 |
-| TC5 | Thiếu dữ liệu | 3/3 → 3/3 | 0/1 → 1/1 | Cần thêm dữ liệu / Chưa đủ dữ liệu → Cần thêm dữ liệu / Chưa đủ dữ liệu | có → có | 0 / 0 / 0 / 3 |
-| TC6 | Dự đoán chưa xử lý tốt | 2/3 → 2/3 | 0/2 → 1/2 | Cần thêm dữ liệu / Trung bình → Cần thêm dữ liệu / Trung bình | có → có | 0 / 0 / 3 / 5 |
-| TC7 | Nghiên cứu tiếp, giữ bối cảnh | chưa có → 1/1 | chưa có → 4/5 | - / - → Cần thêm dữ liệu / Trung bình | - → có | 0 / 0 / 11 / 1 |
-| TC8 | Nguồn cũ, số dự báo | chưa có → 1/1 | chưa có → 5/5 | - / - → Đã có câu trả lời / Thấp | - → có | 0 / 3 / 2 / 3 |
+| TC1 | Làm tốt | 3/3 → 3/3 | 0/2 → 2/2 | Cần thêm dữ liệu / Trung bình → Đã có câu trả lời / Trung bình | có → có | 1 / 0 / 0 / 0 |
+| TC2 | Khó, dữ liệu không rõ ràng | 4/4 → 4/4 | 1/3 → 3/3 | Cần thêm dữ liệu / Thấp → Đã có câu trả lời / Thấp | có → có | 0 / 1 / 1 / 2 |
+| TC3 | Khó, dữ liệu không rõ ràng | 3/3 → 3/3 | 1/4 → 4/4 | Cần thêm dữ liệu / Thấp → Đã có câu trả lời / Thấp | rỗng → có | 0 / 3 / 23 / 4 |
+| TC4 | Làm tốt | 3/3 → 3/3 | 1/2 → 2/2 | Cần thêm dữ liệu / Trung bình → Cần thêm dữ liệu / Trung bình | có → có | 1 / 0 / 13 / 1 |
+| TC5 | Thiếu dữ liệu | 3/3 → 3/3 | 0/1 → 1/1 | Cần thêm dữ liệu / Chưa đủ dữ liệu → Cần thêm dữ liệu / Chưa đủ dữ liệu | có → có | 0 / 0 / 0 / 1 |
+| TC6 | Dự đoán chưa xử lý tốt | 2/3 → 2/3 | 0/2 → 1/2 | Cần thêm dữ liệu / Trung bình → Cần thêm dữ liệu / Trung bình | có → có | 0 / 0 / 3 / 2 |
+| TC7 | Nghiên cứu tiếp, giữ bối cảnh | chưa có → 1/1 | chưa có → 5/5 | - / - → Đã có câu trả lời / Thấp | - → có | 0 / 2 / 3 / 4 |
+| TC8 | Nguồn cũ, số dự báo | chưa có → 1/1 | chưa có → 5/5 | - / - → Đã có câu trả lời / Thấp | - → có | 0 / 1 / 0 / 2 |
 
-Tổng điều kiện M2 đạt: M2 18/19, M3 20/21. Tổng điều kiện M3 đạt: M2 3/14, M3 22/24.
+Tổng điều kiện M2 đạt: M2 18/19, M3 20/21. Tổng điều kiện M3 đạt: M2 3/14, M3 23/24.

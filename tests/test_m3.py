@@ -176,6 +176,19 @@ def test_value_with_two_numbers_is_rejected():
     assert not c.verified and "nhiều con số" in c.verify_note
 
 
+def test_label_stitched_to_a_chart_number_is_rejected_but_points_to_the_chart():
+    """M3 TC6: the AI paired Battle Royale with +37.6% by stitching words that are not next to each other."""
+    text = "[[Trang 6]]\nShooter | Battle Royale\nRPG | Squad RPG\n$0M $50M $100M\n+17.6%+20.1%-17.1%-11.7%-5.1%+37.6%\n"
+    s = assess_source(Source(id="S9", url="https://investgame.net/r.pdf", kind="pdf", text=text, published="2025-06-19"), TODAY)
+    cs = [claim(f"C{i}", "S9", f"Shooter | Battle Royale | $0M | {v}", v, metric="growth", period="Q1 2025")
+          for i, v in enumerate(["+37.6%", "+17.6%", "+20.1%"], 1)]
+    for c in cs:
+        verify_claim(c, s)
+    assert all(not c.verified and "con số có trong nguồn" in c.verify_note and c.page == 6 for c in cs)
+    step = sort_evidence([], cs, {s.id: s}, W_Q1, "Đông Nam Á", [])["next_steps"][0]
+    assert step["url"].endswith("#page=6") and "nhãn bị ghép với số" in step["text"]
+
+
 def test_revenue_without_currency_is_compared_as_usd():
     """M3 TC2: a copy of Niko's figure written "5.37 billion" was not compared with "$5.89 billion"."""
     s = assess_source(src("S3", "https://gamesbeat.com/niko", NIKO_TEXT.replace("$5.37", "5.37"), "2025-09-30"), TODAY)

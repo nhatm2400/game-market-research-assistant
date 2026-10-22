@@ -77,6 +77,10 @@ def verify_claim(claim: Claim, source: Source) -> Claim:
                                  "có thể AI đã chép sai hoặc diễn đạt lại")
         else:
             claim.verify_note = f"Không tìm thấy câu trích trong nguồn (đoạn giống nhất {score:.0f}%)"
+        num = find_quote(claim.value_text, source) if numbers_in(claim.value_text, claim.quote) else None
+        if num:     # the number is there but not the words around it: usually a chart label stitched to a value
+            claim.page = page_at(source.text, num[0])
+            claim.verify_note += "; con số có trong nguồn nhưng câu chữ đi kèm thì không (thường do ghép nhãn với số trong biểu đồ)"
         return claim
 
     claim.match_score = 100.0
