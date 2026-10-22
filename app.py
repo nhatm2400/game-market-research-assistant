@@ -58,7 +58,8 @@ CSS = """
 .v-meta { color:var(--muted); font-size:.9rem; max-width:80ch; margin:0; }
 .reason { display:flex; gap:.65rem; margin:.45rem 0; max-width:80ch; line-height:1.5; }
 .dot { flex:none; width:.6rem; height:.6rem; border-radius:50%; margin-top:.45rem; }
-.dot.trusted { background:var(--jade); } .dot.uncertain { background:var(--ochre); }
+.dot.trusted { background:var(--jade); } .dot.uncertain { border:2px solid var(--ochre); }
+.sr { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
 .chip { display:inline-block; font-size:.75rem; line-height:1.35; padding:0 .35rem; margin-left:.25rem;
         border:1px solid var(--line); border-radius:3px; color:var(--muted); white-space:nowrap; }
 .col-head { font-size:1.15rem; font-weight:700; padding-bottom:.35rem; border-bottom:2px solid; margin:.6rem 0 .3rem; }
@@ -218,9 +219,12 @@ if r:
                    "Xem lý do ở tab Nguồn.")
 
     if b["reasons"]:
-        rows = "".join(f'<div class="reason"><span class="dot {h(x.get("status", "uncertain"))}"></span>'
-                       f'<div>{h(x["text"])}{chips(x["claim_ids"])}</div></div>' for x in b["reasons"])
-        st.markdown(f'<div class="col-note">Lý do chính. Chấm xanh: dựa trên nhận định có thể tin. Chấm vàng: có '
+        said = {"trusted": "Dựa trên nhận định có thể tin", "uncertain": "Có nhận định chưa chắc chắn"}
+        rows = "".join(f'<div class="reason"><span class="dot {h(x.get("status", "uncertain"))}" '
+                       f'title="{said.get(x.get("status"), said["uncertain"])}"></span>'
+                       f'<div><span class="sr">{said.get(x.get("status"), said["uncertain"])}: </span>'
+                       f'{h(x["text"])}{chips(x["claim_ids"])}</div></div>' for x in b["reasons"])
+        st.markdown(f'<div class="col-note">Lý do chính. Chấm đặc xanh: dựa trên nhận định có thể tin. Vòng vàng: có '
                     f'nhận định chưa chắc chắn.</div>{rows}', unsafe_allow_html=True)
 
     col_t, col_u = st.columns(2, gap="large")

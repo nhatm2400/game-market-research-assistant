@@ -189,6 +189,21 @@ def test_label_stitched_to_a_chart_number_is_rejected_but_points_to_the_chart():
     assert step["url"].endswith("#page=6") and "nhãn bị ghép với số" in step["text"]
 
 
+def test_table_cell_without_unit_is_compared_with_the_same_measure_in_usd():
+    """M3 TC2/TC7: Newzoo's table cells "6.51" and "0.817" (USD billion in the header) formed their own group,
+    so the conflict with "$5.37 billion" / "0.46 tỷ USD" was split in two."""
+    niko = assess_source(src("S3", "https://gamesbeat.com/niko", NIKO_TEXT, "2025-09-30"), TODAY)
+    table = "| Total revenue | S-5.89 N-6.51 | Southeast Asia games market 2024, USD billion |"
+    t = assess_source(src("S4", "https://allcorrectgames.com/x", table, "2026-05-05"), TODAY)
+    cs = [_verified("C1", niko, "the Southeast Asia games market generated $5.37 billion in revenue in 2024", "$5.37 billion"),
+          _verified("C2", t, table, "6.51", attributed_to="Newzoo")]
+    f = build_findings(cs, {niko.id: niko, t.id: t}, TODAY)
+    assert len(f) == 1 and f[0].status == "conflict" and sorted(f[0].values) == [5.37e9, 6.51e9]
+    assert any("suy ra là tỷ USD" in fl for fl in cs[1].flags)
+    lone = _verified("C3", t, table, "6.51", attributed_to="Newzoo")
+    assert build_findings([lone], {t.id: t}, TODAY)[0].unit == ""      # nothing to compare with: left alone
+
+
 def test_revenue_without_currency_is_compared_as_usd():
     """M3 TC2: a copy of Niko's figure written "5.37 billion" was not compared with "$5.89 billion"."""
     s = assess_source(src("S3", "https://gamesbeat.com/niko", NIKO_TEXT.replace("$5.37", "5.37"), "2025-09-30"), TODAY)

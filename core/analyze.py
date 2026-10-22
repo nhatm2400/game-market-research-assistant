@@ -115,8 +115,27 @@ def _label(c: Claim) -> str:
     return f"{METRIC_VI.get(c.metric, c.metric).capitalize()} {SCOPE_VI.get(c.scope, c.scope)}{g}, {c.market}, {c.period}"
 
 
+def _infer_scale(good: list[Claim]) -> None:
+    """A table cell "5.89" under a "USD billion" header measures the same thing as "$5.89 billion" elsewhere.
+    Rescale it only when a USD figure for the same metric, market and period is within a factor of 2."""
+    usd: dict[tuple, list[float]] = defaultdict(list)
+    for c in good:
+        if c.metric == "revenue" and c.unit == "USD" and c.value:
+            usd[_base_key(c)[:-1]].append(c.value)
+    for c in good:
+        refs = usd.get(_base_key(c)[:-1]) if c.metric == "revenue" and not c.unit else None
+        if not refs or not c.value or abs(c.value) >= 1e6:
+            continue
+        for k, name in ((1e9, "tỷ"), (1e6, "triệu")):
+            if any(0.5 <= c.value * k / r <= 2 for r in refs):
+                c.value, c.unit = c.value * k, "USD"
+                c.flags.append(f"Số trong bảng không ghi đơn vị, suy ra là {name} USD từ số cùng chỉ số ở nguồn khác")
+                break
+
+
 def build_findings(claims: list[Claim], sources: dict[str, Source], today: date) -> list[Finding]:
     good = [c for c in claims if c.verified and not c.excluded_by_user and c.value is not None]
+    _infer_scale(good)
     known: dict[tuple, set[str]] = defaultdict(set)
     for c in good:
         if c.scope != "unknown":
