@@ -409,3 +409,12 @@ def test_numbers_formatted_by_code_are_not_treated_as_invented():
                     "what_would_change": []})
     b = write_brief(fake, "Quy mô thị trường game Việt Nam năm 2024?", ["Quy mô"], [c], fs, [], w, {s.id: s}, "Việt Nam")
     assert b["summary"] == "Statista ghi 460 triệu USD." and len(b["reasons"]) == 1
+
+
+def test_rescoring_a_stored_run_reproduces_it_when_rules_are_unchanged():
+    """The three sections come from code, so the same claims always give the same sections."""
+    r = _first_run(FollowLLM())
+    again = pipeline.rescore(r)
+    for k in ("trusted", "uncertain", "other", "next_steps"):
+        assert again["brief"][k] == r["brief"][k], k
+    assert again["brief"]["decision"] == r["brief"]["decision"]

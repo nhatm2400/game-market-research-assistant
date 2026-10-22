@@ -4,6 +4,7 @@
     python -m eval.run_eval TC2 TC6    # some cases
     python -m eval.run_eval --report   # rebuild the table from eval/results/*.json, no LLM calls
     python -m eval.run_eval --compare  # M2 (eval/results_m2) vs M3 (eval/results) -> eval/so-sanh-m2-m3.md
+    python -m eval.run_eval --rescore  # apply the current code rules to the stored live runs, no LLM calls
 
 `checks` are the Mission 2 conditions, kept unchanged as the regression test. `checks_m3` are the
 conditions added for Mission 3. A case with `parent` and `follow_up` asks a follow-up question on
@@ -224,13 +225,17 @@ def main(ids: list[str]) -> None:
         cases = [c for c in cases if c["id"] in ids]
     OUT.mkdir(exist_ok=True)
     rows, done = [], {}
-    llm = None if "--report" in flags else LLM()
+    llm = None if flags & {"--report", "--rescore"} else LLM()
     for case in cases:
         if llm is None:
             r = _load(OUT, case["id"])
             if r is None:
                 rows.append((case, None, [("chay", False, "chưa có kết quả trong eval/results")]))
                 continue
+            if "--rescore" in flags:
+                r = pipeline.rescore(r)
+                (OUT / f"{case['id']}.json").write_text(json.dumps(r, ensure_ascii=False, indent=1), encoding="utf-8")
+                (OUT / f"{case['id']}.md").write_text(brief_markdown(r), encoding="utf-8")
             parent = _load(OUT, case["parent"]) if case.get("parent") else None
             rows.append((case, r, all_checks(r, case, parent)))
             continue
