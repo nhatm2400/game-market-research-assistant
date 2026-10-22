@@ -2,73 +2,82 @@
 
 **Câu hỏi:** Có nên phát hành game MOBA trên mobile tại Việt Nam trong 12 tháng tới không?
 
-**Kết luận:** Cần thêm dữ liệu. **Mức tin cậy:** Trung bình.
+**Kết luận:** Cần thêm dữ liệu. **Mức tin cậy:** Thấp.
 
-Hiện chưa đủ dữ liệu để quyết định phát hành game MOBA trên mobile tại Việt Nam trong 12 tháng tới do thiếu thông tin về mức độ cạnh tranh của dòng game này. Các dữ liệu về quy mô và tăng trưởng chung của thị trường game di động có thể tin cậy ở mức trung bình và thấp.
+Chưa đủ dữ liệu đặc thù về phân khúc MOBA tại Việt Nam để đưa ra quyết định phát hành trong 12 tháng tới, dù thị trường game mobile nói chung năm 2025 đạt quy mô 825 triệu USD và có khoảng 54 triệu người chơi theo các nguồn tin cậy thấp.
 
 Khung thời gian dữ liệu: câu hỏi về tương lai, dùng dữ liệu 24 tháng gần nhất. Ngày chạy: 2026-10-22.
 
 ## Lý do chính
 
-1. Việt Nam đạt 329 triệu lượt tải xuống trong Q1 2025, phản ánh quy mô thị trường có độ tin cậy trung bình từ nguồn Sensor Tower. [C1] (có thể tin)
-2. Việt Nam ghi nhận mức tăng trưởng lượng tải ứng dụng đạt 12% YoY trong năm 2025 theo nguồn gamedevreports.substack.com. [C3] (có thể tin)
-3. Thị trường game tại Việt Nam đạt quy mô GMV 1.8 tỷ USD vào năm 2025, tuy nhiên đây là số liệu chưa chắc chắn do chỉ có nguồn hạng C. [C7] (chưa chắc chắn)
-4. Tốc độ tăng trưởng YoY của thị trường game tại Việt Nam đạt +33% vào năm 2025 theo nguồn hạng C, thuộc nhóm chưa chắc chắn. [C8] (chưa chắc chắn)
+1. Thị trường game mobile Việt Nam đạt quy mô doanh thu 825 triệu USD trong năm 2025 với mức tăng trưởng 9.16%, nhưng đây là số liệu toàn thị trường và ở mức tin cậy thấp. [C4, C5] (chưa chắc chắn)
+2. Số lượng người chơi game mobile tại Việt Nam khoảng 54 triệu người trong năm 2025 dựa trên nguồn tin cậy thấp. [C6] (chưa chắc chắn)
+3. Doanh thu trung bình trên mỗi người dùng (ARPU) game mobile tại Việt Nam là 15.27 USD trong năm 2025, thuộc nhóm nguồn tin cậy thấp. [C7] (chưa chắc chắn)
+4. Các số liệu tăng trưởng MOBA cụ thể (như mức tăng 20.1% QoQ trong Q1 2025) lại thuộc phạm vi thị trường Đông Nam Á chứ không phải riêng Việt Nam. [C1] (chưa chắc chắn)
 
 ## Có thể tin
 
-- **F1** Lượt tải game mobile, Việt Nam, Q1 2025: 329 triệu (Sensor Tower), tin cậy Trung bình. [C1]
-- **F3** Tăng trưởng phạm vi chưa rõ, Việt Nam, 2025 vs 2024: +12,0% (gamedevreports.substack.com), tin cậy Trung bình. [C3]
+- Chưa có
 
 ## Chưa chắc chắn
 
-- **F4** Doanh thu game mobile, Việt Nam, 2025: 1,8 tỷ USD (foxreload.com). [C7]
+- **F4** Doanh thu game mobile, all, Việt Nam, 2025: 825 triệu USD (IMARC). [C4]
   - Chỉ có nguồn hạng C hoặc D
-- **F5** Tăng trưởng game mobile, Việt Nam, 2025: +33,0% (foxreload.com). [C8]
+  - Số của IMARC dẫn lại qua bài viết, chưa đối chiếu bản gốc
+- **F5** Tăng trưởng game mobile, all, Việt Nam, 2025 vs 2024: +9,2% (IMARC). [C5]
   - Chỉ có nguồn hạng C hoặc D
-- **F6** Tăng trưởng toàn ngành game, Việt Nam, 2024–2027: +9,0% (Newzoo). [C9]
+  - Số của IMARC dẫn lại qua bài viết, chưa đối chiếu bản gốc
+- **F6** Số người chơi game mobile, all, Việt Nam, 2025: 54 triệu (IMARC). [C6]
   - Chỉ có nguồn hạng C hoặc D
-  - Kỳ đo "2024–2027" kéo dài tới tương lai: một phần là số dự báo
-  - Số của Newzoo dẫn lại qua bài viết, chưa đối chiếu bản gốc
-- **F7** Tăng trưởng toàn ngành game, Việt Nam, 2023 to 2024: 1.4 (Newzoo). [C10]
+  - Số của IMARC dẫn lại qua bài viết, chưa đối chiếu bản gốc
+- **F7** Doanh thu game mobile, all, Việt Nam, 2025: 15.27 (IMARC). [C7]
   - Chỉ có nguồn hạng C hoặc D
-  - Số của Newzoo dẫn lại qua bài viết, chưa đối chiếu bản gốc
+  - Số của IMARC dẫn lại qua bài viết, chưa đối chiếu bản gốc
 
 ## Số liệu khác, ngoài phạm vi câu hỏi
 
-- **F2** Doanh thu IAP game mobile, Thái Lan, Q1 2025: 162 triệu USD (Sensor Tower). Số của thị trường Thái Lan, câu hỏi hỏi về Việt Nam.
-- **F8** Doanh thu game mobile, Việt Nam, 2023: 740 triệu USD (data.ai). Đã có số mới hơn cho cùng chỉ số (F4).
+- **F1** Tăng trưởng game mobile, MOBA, Đông Nam Á, Q1 2025 vs Q4 2024: +20,1% (Sensor Tower). Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam.
+- **F2** Tăng trưởng game mobile, MOBA, Indonesia, Q1 2025 vs Q4 2024: +32,7% (Sensor Tower). Số của thị trường Indonesia, câu hỏi hỏi về Việt Nam.
+- **F3** Tăng trưởng game mobile, MOBA, Philippines, Q1 2025 vs Q4 2024: +19,0% (Sensor Tower). Số của thị trường Philippines, câu hỏi hỏi về Việt Nam.
+- **F8** Tăng trưởng IAP game mobile, MOBA, Đông Nam Á, January to August 2024: +6,0% (Sensor Tower). Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam.
+- **F9** Chỉ số khác game mobile, MOBA, Đông Nam Á, December 2025: 1,04 triệu (icon-era.com). Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam.
+- **F10** Thị phần game mobile, Đông Nam Á, 2019: +90,0% (thinkwithgoogle.com). Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam.
+- **F11** Tăng trưởng game mobile, Đông Nam Á, 2018-2019: +244,0% (thinkwithgoogle.com). Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam.
+- **F12** Thị phần game mobile, RPG, 韩国, H1 2020: +58,0% (Sensor Tower). Số của thị trường 韩国, câu hỏi hỏi về Việt Nam.
 
 ## Nên tìm hiểu tiếp ở đâu
 
-- Tìm nguồn hạng A/B (hãng dữ liệu, báo chuyên ngành) cho chỉ số này (F4, F5, F6, F7). Truy vấn gợi ý: `Vietnam mobile games revenue 2025 Sensor Tower Newzoo Niko Partners`.
-- Đối chiếu bản gốc của Newzoo trên newzoo.com (F6, F7). Truy vấn gợi ý: `Newzoo Vietnam games market revenue growth 2024–2027`.
-- Tìm số đã đo thay cho số dự báo (F6). Truy vấn gợi ý: `Vietnam games market revenue growth 2024–2027 actual`.
-- Chưa có dữ liệu đã kiểm cho tiêu chí "Mức độ cạnh tranh trong nhóm game MOBA dẫn đầu".
-- 3 con số ở "Mobile MOBA Game Developers - 2026 Market & Investments Trends - Tracxn" chưa kiểm được vì câu trích chỉ có con số hoặc nhãn bị ghép với số (thường là biểu đồ): mở để đọc trực tiếp. https://tracxn.com/d/trending-business-models/startups-in-mobile-moba-game-developers/__Cd6hKZ-76B4z9EbOKzETE0IaRsZMngGzQrOCWRFZRGA#:~:text=Vietnam%203
+- Tìm nguồn hạng A/B (hãng dữ liệu, báo chuyên ngành) cho chỉ số này (F4, F5, F6, F7). Truy vấn gợi ý: `Vietnam mobile games all revenue 2025 Sensor Tower Newzoo Niko Partners`.
+- Đối chiếu bản gốc của IMARC trên imarcgroup.com (F4, F5, F6, F7). Truy vấn gợi ý: `IMARC Vietnam mobile games all revenue 2025`.
+- Mới có số của thị trường khác, tìm số riêng cho Việt Nam. Truy vấn gợi ý: `Vietnam mobile games MOBA revenue growth Q1 2025 vs Q4 2024`.
 
 ## Số liệu khác định nghĩa (không so trực tiếp)
 
-- Doanh thu Việt Nam: 1,8 tỷ USD (game mobile, 2025; foxreload.com); 740 triệu USD (game mobile, 2023; data.ai). Các số này khác kỳ đo hoặc phạm vi đo nên không so trực tiếp được.
-
-## Tiêu chí chưa có dữ liệu đã kiểm
-
-- Mức độ cạnh tranh trong nhóm game MOBA dẫn đầu
+- Doanh thu Việt Nam: 825 triệu USD (game mobile, 2025, all; IMARC); 15.27 (game mobile, 2025, all; IMARC). Các số này khác kỳ đo hoặc phạm vi đo nên không so trực tiếp được.
 
 ## Điều gì sẽ làm thay đổi khuyến nghị
 
-- Có số liệu chi tiết về mức độ cạnh tranh trong nhóm game MOBA dẫn đầu tại thị trường Việt Nam.
-- Có dữ liệu doanh thu cụ thể và đáng tin cậy dành riêng cho phân khúc game MOBA trên mobile.
+- Cần số liệu doanh thu và tốc độ tăng trưởng riêng cho phân khúc game MOBA tại thị trường Việt Nam trong 24 tháng gần nhất.
+- Cần dữ liệu chi tiết về mức độ cạnh tranh và thị phần của các tựa game MOBA hàng đầu hiện đang hoạt động tại Việt Nam.
 
 ## Nhận định được trích dẫn
 
-- **C1** Việt Nam đạt 329 triệu lượt tải xuống trong Q1 2025. Giá trị: 329 million (329 triệu). Nguồn gốc: Sensor Tower, hạng A. Nguồn: https://sensortower.com/blog/southeast-asia-mobile-gaming-2025#:~:text=The%20Philippines%20and%20Vietnam%20follow,and%20329%20million%20downloads%20respectively., đăng 2025-05-21.
-  > The Philippines and Vietnam follow with 366 million and 329 million downloads respectively.
-- **C3** Việt Nam ghi nhận mức tăng trưởng lượng tải ứng dụng đạt 12% YoY trong năm 2025. Giá trị: +12% YoY (+12,0%). Nguồn gốc: gamedevreports.substack.com, hạng B. Nguồn: https://gamedevreports.substack.com/p/appmagic-mobile-market-landscape#:~:text=Pakistan%20%28%2B10%25%20YoY%29%20and%20Vietnam,also%20showed%20rapid%20download%20growth., đăng 2026-02-06.
-  > Pakistan (+10% YoY) and Vietnam (+12% YoY) also showed rapid download growth.
-- **C7** Thị trường game tại Việt Nam đạt quy mô GMV 1.8 tỷ USD vào năm 2025. Giá trị: $1.8B (1,8 tỷ USD). Nguồn gốc: foxreload.com, hạng C. Nguồn: https://foxreload.com/en/library/business/southeast-asia-mobile-gaming-2026#:~:text=Vietnam%20%241.8B%20%2B33%25%2088%25%20100M, đăng 2026-05-18.
-  > | Vietnam | $1.8B | +33% | 88% | 100M |
-- **C8** Tốc độ tăng trưởng YoY của thị trường game tại Việt Nam đạt +33% vào năm 2025. Giá trị: +33% (+33,0%). Nguồn gốc: foxreload.com, hạng C. Nguồn: https://foxreload.com/en/library/business/southeast-asia-mobile-gaming-2026#:~:text=Vietnam%20%241.8B%20%2B33%25%2088%25%20100M, đăng 2026-05-18.
-  > | Vietnam | $1.8B | +33% | 88% | 100M |
+- **C4** Thị trường game mobile Việt Nam đạt quy mô doanh thu 825 triệu USD trong năm 2025. Giá trị: 825 million (825 triệu USD). Nguồn gốc: IMARC, hạng C. Nguồn: https://icon-era.com/statistics/southeast-asia-mobile-gaming#:~:text=Vietnam%E2%80%99s%20mobile%20game%20market%20generated,Vietnam%20Mobile%20Gaming%20Year%2Din%2DReview%202025., đăng 2026-09-24.
+  > Vietnam’s mobile game market generated $825 million in 2025, up 9.16% year on year, according to Gamota’s Vietnam Mobile Gaming Year-in-Review 2025.
+  - Cảnh báo: Số liệu của IMARC, dẫn lại qua icon-era.com; chưa đối chiếu bản gốc
+  - Cảnh báo: Không ghi đơn vị tiền, coi là USD để so sánh
+- **C5** Tỷ lệ tăng trưởng doanh thu thị trường game mobile Việt Nam đạt 9.16% trong năm 2025 so với năm trước. Giá trị: 9.16% (+9,2%). Nguồn gốc: IMARC, hạng C. Nguồn: https://icon-era.com/statistics/southeast-asia-mobile-gaming#:~:text=Vietnam%E2%80%99s%20mobile%20game%20market%20generated,Vietnam%20Mobile%20Gaming%20Year%2Din%2DReview%202025., đăng 2026-09-24.
+  > Vietnam’s mobile game market generated $825 million in 2025, up 9.16% year on year, according to Gamota’s Vietnam Mobile Gaming Year-in-Review 2025.
+  - Cảnh báo: Số liệu của IMARC, dẫn lại qua icon-era.com; chưa đối chiếu bản gốc
+- **C6** Thị trường game mobile Việt Nam có khoảng 54 triệu người chơi trong năm 2025. Giá trị: 54 million (54 triệu). Nguồn gốc: IMARC, hạng C. Nguồn: https://icon-era.com/statistics/southeast-asia-mobile-gaming#:~:text=The%20report%20counts%20about%2054,revenue%20per%20user%20of%20%2415.27., đăng 2026-09-24.
+  > The report counts about 54 million mobile gamers and an average revenue per user of $15.27.
+  - Cảnh báo: Số liệu của IMARC, dẫn lại qua icon-era.com; chưa đối chiếu bản gốc
+- **C7** Doanh thu trung bình trên mỗi người dùng (ARPU) game mobile tại Việt Nam là 15.27 USD trong năm 2025. Giá trị: 15.27 (15.27). Nguồn gốc: IMARC, hạng C. Nguồn: https://icon-era.com/statistics/southeast-asia-mobile-gaming#:~:text=The%20report%20counts%20about%2054,revenue%20per%20user%20of%20%2415.27., đăng 2026-09-24.
+  > The report counts about 54 million mobile gamers and an average revenue per user of $15.27.
+  - Cảnh báo: Số liệu của IMARC, dẫn lại qua icon-era.com; chưa đối chiếu bản gốc
+- **C1** Doanh thu phân khúc MOBA tại Đông Nam Á tăng 20,1% theo quý trong Q1 2025. Giá trị: +20.1% QoQ (+20,1%). Nguồn gốc: Sensor Tower, hạng B. Nguồn: https://gamedevreports.substack.com/p/sensor-tower-southeast-asia-mobile#:~:text=For%20revenue%2C%204X%20strategy%20games,%28%2D17.1%25%20QoQ%29%20are%20on%20top., đăng 2025-06-13.
+  > For revenue, 4X strategy games (+17.6% QoQ), MOBA (+20.1% QoQ), and MMORPG (-17.1% QoQ) are on top.
+  - Cảnh báo: Số liệu của Sensor Tower, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc
+  - Cảnh báo: Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam
 
-_Đọc 7 nguồn, trích 11 nhận định, giữ 8, loại 3. 12 lượt gọi gemini/gemini-3.5-flash-lite, 48.7 giây._
+_Đọc 4 nguồn, trích 25 nhận định, giữ 12, loại 13. 9 lượt gọi gemini/gemini-3.5-flash-lite, 58.7 giây._

@@ -1,0 +1,940 @@
+{
+ "id": "859cb47a8d",
+ "created_at": "2026-10-22T18:15:59",
+ "question": "Quy mô thị trường game Đông Nam Á năm 2024 là bao nhiêu và các nguồn có khớp nhau không?",
+ "parent_id": null,
+ "thread": [
+  {
+   "id": "859cb47a8d",
+   "question": "Quy mô thị trường game Đông Nam Á năm 2024 là bao nhiêu và các nguồn có khớp nhau không?"
+  }
+ ],
+ "today": "2026-10-22",
+ "plan": {
+  "criteria": [
+   "Quy mô doanh thu thị trường game Đông Nam Á năm 2024",
+   "Sự đồng nhất giữa các nguồn dữ liệu về quy mô thị trường"
+  ],
+  "queries": [
+   "Southeast Asia gaming market revenue 2024 Newzoo report",
+   "SEA games market size 2024 Niko Partners data",
+   "Southeast Asia video game revenue 2024 Sensor Tower",
+   "Southeast Asia games market size 2024 comparison source"
+  ],
+  "market": "Đông Nam Á",
+  "genre": ""
+ },
+ "window": {
+  "start": "2024-01-01",
+  "end": "2024-12-31",
+  "kind": "specific",
+  "label": "01/2024 đến 12/2024"
+ },
+ "question_market": "Đông Nam Á",
+ "search_log": [],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1d4280f7",
+   "url": "https://gamesbeat.com/southeast-asia-to-reach-6-47-billion-in-revenues-by-2029-niko-partners/",
+   "title": "Southeast Asia to reach $6.47 billion in revenues by 2029 | Niko Partners",
+   "domain": "gamesbeat.com",
+   "published": "2025-09-30",
+   "kind": "html",
+   "text": "<5923 ký tự>",
+   "error": null,
+   "tier": "B",
+   "base_tier": "B",
+   "tier_notes": [
+    "gamesbeat.com nằm trong danh sách hạng B",
+    "Đăng cách đây 13 tháng (12 đến 24 tháng)"
+   ],
+   "publisher": "gamesbeat.com"
+  },
+  {
+   "id": "Sb1cf0824",
+   "url": "https://gamedevreports.substack.com/p/niko-partners-southeast-asia-games",
+   "title": "Niko Partners: Southeast Asia Games Market in 2025",
+   "domain": "gamedevreports.substack.com",
+   "published": "2025-10-31",
+   "kind": "html",
+   "text": "<2034 ký tự>",
+   "error": null,
+   "tier": "B",
+   "base_tier": "B",
+   "tier_notes": [
+    "gamedevreports.substack.com nằm trong danh sách hạng B",
+    "Đăng cách đây 12 tháng"
+   ],
+   "publisher": "gamedevreports.substack.com"
+  },
+  {
+   "id": "S72d50cb7",
+   "url": "https://allcorrectgames.com/insights/the-gaming-market-in-southeast-asia-2/",
+   "title": "The Gaming Market in Southeast Asia (SEA) | Allcorrect",
+   "domain": "allcorrectgames.com",
+   "published": "2026-05-05",
+   "kind": "html",
+   "text": "<12832 ký tự>",
+   "error": null,
+   "tier": "C",
+   "base_tier": "C",
+   "tier_notes": [
+    "allcorrectgames.com nằm trong danh sách hạng C",
+    "Đăng cách đây 5 tháng"
+   ],
+   "publisher": "allcorrectgames.com"
+  }
+ ],
+ "claims": [
+  {
+   "id": "C1",
+   "source_id": "S1d4280f7",
+   "claim_text": "Thị trường game Đông Nam Á đạt doanh thu 5,37 tỷ USD vào năm 2024 theo ước tính của Niko Partners.",
+   "metric": "revenue",
+   "value_text": "$5.37 billion",
+   "market": "Đông Nam Á",
+   "period": "2024",
+   "scope": "all_games",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "According to Niko’s Southeast Asia Market Model and 5-Year Forecast, the region generated $5.37 billion in games revenue in 2024, up 5.2% year-over-year (YoY).",
+   "section_title": "Southeast Asia to reach $6.47 billion market size by 2029",
+   "attributed_to": "Niko Partners",
+   "criterion": 0,
+   "value": 5370000000.0,
+   "unit": "USD",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "e communities and events, growing social acceptance of games—particularly esports—as popular mode of entertainment, and high social media and video platform engagement.\nAlthough Niko Partners predict slower growth in Southeast Asia this year, due to economic and political issues affecting some of its constituent countries, the region still represents a huge opportunity for companies who can navigate the market. Read on to understand the unique insights needed to find success among one of the world’s largest regional gaming populations.\nSoutheast Asia to reach $6.47 billion market size by 2029\nAccording to Niko’s Southeast Asia Market Model and 5-Year Forecast, the region\ngenerated $5.37 billion in games revenue in 2024, up 5.2% year-over-year (YoY).\nRevenue is expected to continue growing in 2025, albeit at a slower growth rate than in years past. The slower growth is due to current economic and political issues faced by some of the countries ",
+   "origin": "Niko Partners",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Niko Partners, dẫn lại qua gamesbeat.com; chưa đối chiếu bản gốc"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C2",
+   "source_id": "S1d4280f7",
+   "claim_text": "Quy mô doanh thu thị trường game Đông Nam Á dự kiến đạt 6,47 tỷ USD vào năm 2029 theo Niko Partners.",
+   "metric": "revenue",
+   "value_text": "$6.47 billion",
+   "market": "Đông Nam Á",
+   "period": "2029",
+   "scope": "all_games",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "Niko Partners said Southeast Asia will reach $6.47 billion in revenues by 2029, up from $5.37 billion in games revenue in 2024.",
+   "section_title": "",
+   "attributed_to": "Niko Partners",
+   "criterion": 0,
+   "value": 6470000000.0,
+   "unit": "USD",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "Niko Partners said Southeast Asia will reach $6.47 billion in revenues by 2029, up from $5.37 billion in games revenue in 2024.\nThe market researcher said Southeast Asia is known to intimidate companies hoping to enter the region. A multitude of languages, country-specific regulations, cultural differences, and local gamer p",
+   "origin": "Niko Partners",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Niko Partners, dẫn lại qua gamesbeat.com; chưa đối chiếu bản gốc",
+    "Số dự báo, chưa phải số đã đo"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C3",
+   "source_id": "Sb1cf0824",
+   "claim_text": "Quy mô doanh thu thị trường game Đông Nam Á (SEA-6) năm 2024 đạt 5,37 tỷ USD",
+   "metric": "revenue",
+   "value_text": "5.37 billion",
+   "market": "Đông Nam Á",
+   "period": "2024",
+   "scope": "all_games",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "- In 2024, the games industry across the SEA-6 generated $5.37 billion, up 5.2% YoY.",
+   "section_title": "Revenue, audience, monetization",
+   "attributed_to": "Niko Partners",
+   "criterion": 0,
+   "value": 5370000000.0,
+   "unit": "USD",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "Niko Partners has tracked the region for the past 11 years. The study covers six countries (SEA-6): Indonesia, Malaysia, the Philippines, Singapore, Thailand, and Vietnam.\nRevenue, audience, monetization\n- In 2024, the games industry across the SEA-6 generated $5.37 billion, up 5.2% YoY.\n- For 2025, a more modest increase is expected to $5.47 billion (+1.8% YoY). The slowdown is attributed to economic headwinds and new regulatory practices (e.g., Vietnam now requires licenses).\n- By",
+   "origin": "Niko Partners",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Niko Partners, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc",
+    "Không ghi đơn vị tiền, coi là USD để so sánh"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C4",
+   "source_id": "Sb1cf0824",
+   "claim_text": "Tỷ lệ tăng trưởng doanh thu thị trường game Đông Nam Á (SEA-6) năm 2024 so với năm trước là 5,2%",
+   "metric": "growth",
+   "value_text": "5.2%",
+   "market": "Đông Nam Á",
+   "period": "2024 vs 2023",
+   "scope": "all_games",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "- In 2024, the games industry across the SEA-6 generated $5.37 billion, up 5.2% YoY.",
+   "section_title": "Revenue, audience, monetization",
+   "attributed_to": "Niko Partners",
+   "criterion": 0,
+   "value": 5.2,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "Niko Partners has tracked the region for the past 11 years. The study covers six countries (SEA-6): Indonesia, Malaysia, the Philippines, Singapore, Thailand, and Vietnam.\nRevenue, audience, monetization\n- In 2024, the games industry across the SEA-6 generated $5.37 billion, up 5.2% YoY.\n- For 2025, a more modest increase is expected to $5.47 billion (+1.8% YoY). The slowdown is attributed to economic headwinds and new regulatory practices (e.g., Vietnam now requires licenses).\n- By",
+   "origin": "Niko Partners",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Niko Partners, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C5",
+   "source_id": "S72d50cb7",
+   "claim_text": "Theo Statista, doanh thu thị trường game Đông Nam Á năm 2024 đạt 5,89 tỷ USD.",
+   "metric": "revenue",
+   "value_text": "5.89 billion USD",
+   "market": "Đông Nam Á",
+   "period": "2024",
+   "scope": "all_games",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "In 2024, revenue from this market amounted to USD 5.89 billion.",
+   "section_title": "Overview",
+   "attributed_to": "Statista",
+   "criterion": 0,
+   "value": 5890000000.0,
+   "unit": "USD",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": " following 11 countries are included in Southeast Asia: on the continental side are Cambodia, Laos, Myanmar, Thailand, Malaysia, and Vietnam; and on the island side are Brunei, East Timor, Indonesia, Singapore, and the Philippines.\nThe gaming industry in the part of Southeast Asia that includes Indonesia, Malaysia, the Philippines, Singapore, Thailand, and Vietnam is continuing to grow, showing increased playtime, growing interest in cyber sports, and rising player engagement with new technologies, including Web3.\nAccording to Statista, the gaming market in Southeast Asia is growing steadily. In 2024, revenue from this market amounted to USD 5.89 billion. Revenue is projected to grow across all regions in 2025 to USD 6.39 billion and is projected to reach USD 7.37 billion by 2027. Of the selected regions, the Philippines is projected to lead the rank",
+   "origin": "Statista",
+   "tier": "C",
+   "flags": [
+    "Số liệu của Statista, dẫn lại qua allcorrectgames.com; chưa đối chiếu bản gốc"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C6",
+   "source_id": "S72d50cb7",
+   "claim_text": "Theo Statista, tổng doanh thu thị trường game năm 2024 của Đông Nam Á là 5,85 tỷ USD.",
+   "metric": "revenue",
+   "value_text": "S-5.89 billion USD",
+   "market": "Đông Nam Á",
+   "period": "2024",
+   "scope": "all_games",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "| Total revenue | S-4.85 N-6.14 | S-5.35 N-6.17 | S-5.89 N-6.51 | S-6.39 N-6.89 | S-6.88 | S-7.37 |",
+   "section_title": "Video games market revenue in Southeast Asia from 2018 to 2027, by country",
+   "attributed_to": "Statista",
+   "criterion": 0,
+   "value": 5890000000.0,
+   "unit": "USD",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "89 billion. Revenue is projected to grow across all regions in 2025 to USD 6.39 billion and is projected to reach USD 7.37 billion by 2027. Of the selected regions, the Philippines is projected to lead the ranking in terms of revenue in the video games segment of the digital media market, with a revenue of USD 2.27 billion.\nVideo games market revenue in Southeast Asia from 2018 to 2027, by country\nSoutheast Asian Video Game Market Revenue in 2018–2027 by Country (in Billions USD), per Statista (S) and Newzoo (N)\n|  | 2022 | 2023 | 2024 | 2025 prediction | 2026 prediction | 2027 prediction |\n| Total revenue | S-4.85 N-6.14 | S-5.35 N-6.17 | S-5.89 N-6.51 | S-6.39 N-6.89 | S-6.88 | S-7.37 |\n| Philippines | S-1.75 N-0.817 | S-1.94 N-0.844 | S-2.12 N-0.894 | S-2.27 N-0.953 | S-2.42 | S-2.6 |\n| Indonesia | S-1.02 N-1.85 | S-1.12 N-1.79 | S-1.23 N-1.9 | S-1.34 N-2.03 | S-1.43 | S-1.52 |\n|",
+   "origin": "Statista",
+   "tier": "C",
+   "flags": [
+    "Số liệu của Statista, dẫn lại qua allcorrectgames.com; chưa đối chiếu bản gốc"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C7",
+   "source_id": "S72d50cb7",
+   "claim_text": "Theo Newzoo, tổng doanh thu thị trường game năm 2024 của Đông Nam Á là 6,51 tỷ USD.",
+   "metric": "revenue",
+   "value_text": "N-6.51 billion USD",
+   "market": "Đông Nam Á",
+   "period": "2024",
+   "scope": "all_games",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "| Total revenue | S-4.85 N-6.14 | S-5.35 N-6.17 | S-5.89 N-6.51 | S-6.39 N-6.89 | S-6.88 | S-7.37 |",
+   "section_title": "Video games market revenue in Southeast Asia from 2018 to 2027, by country",
+   "attributed_to": "Newzoo",
+   "criterion": 0,
+   "value": 6510000000.0,
+   "unit": "USD",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "89 billion. Revenue is projected to grow across all regions in 2025 to USD 6.39 billion and is projected to reach USD 7.37 billion by 2027. Of the selected regions, the Philippines is projected to lead the ranking in terms of revenue in the video games segment of the digital media market, with a revenue of USD 2.27 billion.\nVideo games market revenue in Southeast Asia from 2018 to 2027, by country\nSoutheast Asian Video Game Market Revenue in 2018–2027 by Country (in Billions USD), per Statista (S) and Newzoo (N)\n|  | 2022 | 2023 | 2024 | 2025 prediction | 2026 prediction | 2027 prediction |\n| Total revenue | S-4.85 N-6.14 | S-5.35 N-6.17 | S-5.89 N-6.51 | S-6.39 N-6.89 | S-6.88 | S-7.37 |\n| Philippines | S-1.75 N-0.817 | S-1.94 N-0.844 | S-2.12 N-0.894 | S-2.27 N-0.953 | S-2.42 | S-2.6 |\n| Indonesia | S-1.02 N-1.85 | S-1.12 N-1.79 | S-1.23 N-1.9 | S-1.34 N-2.03 | S-1.43 | S-1.52 |\n|",
+   "origin": "Newzoo",
+   "tier": "C",
+   "flags": [
+    "Số liệu của Newzoo, dẫn lại qua allcorrectgames.com; chưa đối chiếu bản gốc"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C8",
+   "source_id": "S72d50cb7",
+   "claim_text": "Theo Newzoo, quy mô thị trường game Indonesia năm 2024 đạt 1,9 tỷ USD.",
+   "metric": "revenue",
+   "value_text": "1.9 billion USD",
+   "market": "Indonesia",
+   "period": "2024",
+   "scope": "all_games",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "| Indonesia | 1.79 | 1.9 | +6.14 | 1,371,171 |",
+   "section_title": "Market Overview by SEA Country",
+   "attributed_to": "Newzoo",
+   "criterion": 1,
+   "value": 1900000000.0,
+   "unit": "USD",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": " increasing by 6%.\n- Honor of Kings has successfully launched (relaunched) in Southeast Asian countries. The game was released in June 2024 and quickly reached the top on Google Play in Indonesia. It’s third place in terms of download growth rate in the region.\n- Pizza Ready! saw a 6-fold increase in downloads, putting it in eighth place in SEA.\n- Legend of Mushroom (Joy Net Games) brought in USD 11 million in revenue in SEA over 8 months.\nMarket Overview by SEA Country\n| Country | Market size 2023 ($bln) Newzoo | Market size 2024 ($bln) Newzoo | Growth dynamics 2023–2024 (%) | GDP ($mln) |\n| Indonesia | 1.79 | 1.9 | +6.14 | 1,371,171 |\n| Philippines | 0.844 | 0.894 | +5.92 | 437,146 |\n| Thailand | 1.07 | 1.12 | +4.67 | 514,968 |\n| Malaysia | 0.904 | 0.948 | +4.86 | 399,705 |\n| Vietnam | 0.776 | 0.817 | +5.28 | 429,716 |\n| Singapo",
+   "origin": "Newzoo",
+   "tier": "C",
+   "flags": [
+    "Số liệu của Newzoo, dẫn lại qua allcorrectgames.com; chưa đối chiếu bản gốc",
+    "Số của thị trường Indonesia, câu hỏi hỏi về Đông Nam Á"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C9",
+   "source_id": "S72d50cb7",
+   "claim_text": "Theo Newzoo, quy mô thị trường game Philippines năm 2024 đạt 0,894 tỷ USD.",
+   "metric": "revenue",
+   "value_text": "0.894 billion USD",
+   "market": "Philippines",
+   "period": "2024",
+   "scope": "all_games",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "| Philippines | 0.844 | 0.894 | +5.92 | 437,146 |",
+   "section_title": "Market Overview by SEA Country",
+   "attributed_to": "Newzoo",
+   "criterion": 1,
+   "value": 894000000.0,
+   "unit": "USD",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "fully launched (relaunched) in Southeast Asian countries. The game was released in June 2024 and quickly reached the top on Google Play in Indonesia. It’s third place in terms of download growth rate in the region.\n- Pizza Ready! saw a 6-fold increase in downloads, putting it in eighth place in SEA.\n- Legend of Mushroom (Joy Net Games) brought in USD 11 million in revenue in SEA over 8 months.\nMarket Overview by SEA Country\n| Country | Market size 2023 ($bln) Newzoo | Market size 2024 ($bln) Newzoo | Growth dynamics 2023–2024 (%) | GDP ($mln) |\n| Indonesia | 1.79 | 1.9 | +6.14 | 1,371,171 |\n| Philippines | 0.844 | 0.894 | +5.92 | 437,146 |\n| Thailand | 1.07 | 1.12 | +4.67 | 514,968 |\n| Malaysia | 0.904 | 0.948 | +4.86 | 399,705 |\n| Vietnam | 0.776 | 0.817 | +5.28 | 429,716 |\n| Singapore | 0.551 | 0.548 | -0.55 | 501,427 |\nSource: pla",
+   "origin": "Newzoo",
+   "tier": "C",
+   "flags": [
+    "Số liệu của Newzoo, dẫn lại qua allcorrectgames.com; chưa đối chiếu bản gốc",
+    "Số của thị trường Philippines, câu hỏi hỏi về Đông Nam Á"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C10",
+   "source_id": "S72d50cb7",
+   "claim_text": "Theo Newzoo, quy mô thị trường game Thailand năm 2024 đạt 1,12 tỷ USD.",
+   "metric": "revenue",
+   "value_text": "1.12 billion USD",
+   "market": "Thái Lan",
+   "period": "2024",
+   "scope": "all_games",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "| Thailand | 1.07 | 1.12 | +4.67 | 514,968 |",
+   "section_title": "Market Overview by SEA Country",
+   "attributed_to": "Newzoo",
+   "criterion": 1,
+   "value": 1120000000.0,
+   "unit": "USD",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "ntries. The game was released in June 2024 and quickly reached the top on Google Play in Indonesia. It’s third place in terms of download growth rate in the region.\n- Pizza Ready! saw a 6-fold increase in downloads, putting it in eighth place in SEA.\n- Legend of Mushroom (Joy Net Games) brought in USD 11 million in revenue in SEA over 8 months.\nMarket Overview by SEA Country\n| Country | Market size 2023 ($bln) Newzoo | Market size 2024 ($bln) Newzoo | Growth dynamics 2023–2024 (%) | GDP ($mln) |\n| Indonesia | 1.79 | 1.9 | +6.14 | 1,371,171 |\n| Philippines | 0.844 | 0.894 | +5.92 | 437,146 |\n| Thailand | 1.07 | 1.12 | +4.67 | 514,968 |\n| Malaysia | 0.904 | 0.948 | +4.86 | 399,705 |\n| Vietnam | 0.776 | 0.817 | +5.28 | 429,716 |\n| Singapore | 0.551 | 0.548 | -0.55 | 501,427 |\nSource: platform.newzoo.com, data.worldbank.org\nPopulati",
+   "origin": "Newzoo",
+   "tier": "C",
+   "flags": [
+    "Số liệu của Newzoo, dẫn lại qua allcorrectgames.com; chưa đối chiếu bản gốc",
+    "Số của thị trường Thái Lan, câu hỏi hỏi về Đông Nam Á"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C11",
+   "source_id": "S72d50cb7",
+   "claim_text": "Theo Newzoo, quy mô thị trường game Malaysia năm 2024 đạt 0,948 tỷ USD.",
+   "metric": "revenue",
+   "value_text": "0.948 billion USD",
+   "market": "Malaysia",
+   "period": "2024",
+   "scope": "all_games",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "| Malaysia | 0.904 | 0.948 | +4.86 | 399,705 |",
+   "section_title": "Market Overview by SEA Country",
+   "attributed_to": "Newzoo",
+   "criterion": 1,
+   "value": 948000000.0,
+   "unit": "USD",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "d quickly reached the top on Google Play in Indonesia. It’s third place in terms of download growth rate in the region.\n- Pizza Ready! saw a 6-fold increase in downloads, putting it in eighth place in SEA.\n- Legend of Mushroom (Joy Net Games) brought in USD 11 million in revenue in SEA over 8 months.\nMarket Overview by SEA Country\n| Country | Market size 2023 ($bln) Newzoo | Market size 2024 ($bln) Newzoo | Growth dynamics 2023–2024 (%) | GDP ($mln) |\n| Indonesia | 1.79 | 1.9 | +6.14 | 1,371,171 |\n| Philippines | 0.844 | 0.894 | +5.92 | 437,146 |\n| Thailand | 1.07 | 1.12 | +4.67 | 514,968 |\n| Malaysia | 0.904 | 0.948 | +4.86 | 399,705 |\n| Vietnam | 0.776 | 0.817 | +5.28 | 429,716 |\n| Singapore | 0.551 | 0.548 | -0.55 | 501,427 |\nSource: platform.newzoo.com, data.worldbank.org\nPopulation Overview by SEA Country\n|  | Population | Av",
+   "origin": "Newzoo",
+   "tier": "C",
+   "flags": [
+    "Số liệu của Newzoo, dẫn lại qua allcorrectgames.com; chưa đối chiếu bản gốc",
+    "Số của thị trường Malaysia, câu hỏi hỏi về Đông Nam Á"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C12",
+   "source_id": "S72d50cb7",
+   "claim_text": "Theo Newzoo, quy mô thị trường game Vietnam năm 2024 đạt 0,817 tỷ USD.",
+   "metric": "revenue",
+   "value_text": "0.817 billion USD",
+   "market": "Việt Nam",
+   "period": "2024",
+   "scope": "all_games",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "| Vietnam | 0.776 | 0.817 | +5.28 | 429,716 |",
+   "section_title": "Market Overview by SEA Country",
+   "attributed_to": "Newzoo",
+   "criterion": 1,
+   "value": 817000000.0,
+   "unit": "USD",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "onesia. It’s third place in terms of download growth rate in the region.\n- Pizza Ready! saw a 6-fold increase in downloads, putting it in eighth place in SEA.\n- Legend of Mushroom (Joy Net Games) brought in USD 11 million in revenue in SEA over 8 months.\nMarket Overview by SEA Country\n| Country | Market size 2023 ($bln) Newzoo | Market size 2024 ($bln) Newzoo | Growth dynamics 2023–2024 (%) | GDP ($mln) |\n| Indonesia | 1.79 | 1.9 | +6.14 | 1,371,171 |\n| Philippines | 0.844 | 0.894 | +5.92 | 437,146 |\n| Thailand | 1.07 | 1.12 | +4.67 | 514,968 |\n| Malaysia | 0.904 | 0.948 | +4.86 | 399,705 |\n| Vietnam | 0.776 | 0.817 | +5.28 | 429,716 |\n| Singapore | 0.551 | 0.548 | -0.55 | 501,427 |\nSource: platform.newzoo.com, data.worldbank.org\nPopulation Overview by SEA Country\n|  | Population | Average age | Number of internet users | Number ",
+   "origin": "Newzoo",
+   "tier": "C",
+   "flags": [
+    "Số liệu của Newzoo, dẫn lại qua allcorrectgames.com; chưa đối chiếu bản gốc",
+    "Số của thị trường Việt Nam, câu hỏi hỏi về Đông Nam Á"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C13",
+   "source_id": "S72d50cb7",
+   "claim_text": "Theo Newzoo, quy mô thị trường game Singapore năm 2024 đạt 0,548 tỷ USD.",
+   "metric": "revenue",
+   "value_text": "0.548 billion USD",
+   "market": "Singapore",
+   "period": "2024",
+   "scope": "all_games",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "| Singapore | 0.551 | 0.548 | -0.55 | 501,427 |",
+   "section_title": "Market Overview by SEA Country",
+   "attributed_to": "Newzoo",
+   "criterion": 1,
+   "value": 548000000.0,
+   "unit": "USD",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "growth rate in the region.\n- Pizza Ready! saw a 6-fold increase in downloads, putting it in eighth place in SEA.\n- Legend of Mushroom (Joy Net Games) brought in USD 11 million in revenue in SEA over 8 months.\nMarket Overview by SEA Country\n| Country | Market size 2023 ($bln) Newzoo | Market size 2024 ($bln) Newzoo | Growth dynamics 2023–2024 (%) | GDP ($mln) |\n| Indonesia | 1.79 | 1.9 | +6.14 | 1,371,171 |\n| Philippines | 0.844 | 0.894 | +5.92 | 437,146 |\n| Thailand | 1.07 | 1.12 | +4.67 | 514,968 |\n| Malaysia | 0.904 | 0.948 | +4.86 | 399,705 |\n| Vietnam | 0.776 | 0.817 | +5.28 | 429,716 |\n| Singapore | 0.551 | 0.548 | -0.55 | 501,427 |\nSource: platform.newzoo.com, data.worldbank.org\nPopulation Overview by SEA Country\n|  | Population | Average age | Number of internet users | Number of players (mln) |\n| Indonesia | 284,774,845 | 3",
+   "origin": "Newzoo",
+   "tier": "C",
+   "flags": [
+    "Số liệu của Newzoo, dẫn lại qua allcorrectgames.com; chưa đối chiếu bản gốc",
+    "Số của thị trường Singapore, câu hỏi hỏi về Đông Nam Á"
+   ],
+   "excluded_by_user": false
+  }
+ ],
+ "findings": [
+  {
+   "key": "F1",
+   "label": "Doanh thu toàn ngành game, Đông Nam Á, 2024",
+   "claim_ids": [
+    "C1",
+    "C3",
+    "C5",
+    "C6",
+    "C7"
+   ],
+   "origins": [
+    "Newzoo",
+    "Niko Partners",
+    "Statista"
+   ],
+   "values": [
+    5370000000.0,
+    5890000000.0,
+    6510000000.0
+   ],
+   "unit": "USD",
+   "status": "conflict",
+   "spread_pct": 21.2,
+   "confidence": "Thấp",
+   "reasons": [
+    "Các nguồn gốc độc lập lệch nhau 21% (ghi dạng khoảng)",
+    "5 bài viết nhưng chỉ 3 nguồn gốc"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F2",
+   "label": "Doanh thu toàn ngành game, Đông Nam Á, 2029",
+   "claim_ids": [
+    "C2"
+   ],
+   "origins": [
+    "Niko Partners"
+   ],
+   "values": [
+    6470000000.0
+   ],
+   "unit": "USD",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Thấp",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Niko Partners, hạng B)",
+    "Có cảnh báo về kỳ đo hoặc phạm vi: hạ một mức"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F3",
+   "label": "Tăng trưởng toàn ngành game, Đông Nam Á, 2024 vs 2023",
+   "claim_ids": [
+    "C4"
+   ],
+   "origins": [
+    "Niko Partners"
+   ],
+   "values": [
+    5.2
+   ],
+   "unit": "%",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Trung bình",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Niko Partners, hạng B)"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F4",
+   "label": "Doanh thu toàn ngành game, Indonesia, 2024",
+   "claim_ids": [
+    "C8"
+   ],
+   "origins": [
+    "Newzoo"
+   ],
+   "values": [
+    1900000000.0
+   ],
+   "unit": "USD",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Thấp",
+   "reasons": [
+    "Chỉ có nguồn hạng C hoặc D"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F5",
+   "label": "Doanh thu toàn ngành game, Philippines, 2024",
+   "claim_ids": [
+    "C9"
+   ],
+   "origins": [
+    "Newzoo"
+   ],
+   "values": [
+    894000000.0
+   ],
+   "unit": "USD",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Thấp",
+   "reasons": [
+    "Chỉ có nguồn hạng C hoặc D"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F6",
+   "label": "Doanh thu toàn ngành game, Thái Lan, 2024",
+   "claim_ids": [
+    "C10"
+   ],
+   "origins": [
+    "Newzoo"
+   ],
+   "values": [
+    1120000000.0
+   ],
+   "unit": "USD",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Thấp",
+   "reasons": [
+    "Chỉ có nguồn hạng C hoặc D"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F7",
+   "label": "Doanh thu toàn ngành game, Malaysia, 2024",
+   "claim_ids": [
+    "C11"
+   ],
+   "origins": [
+    "Newzoo"
+   ],
+   "values": [
+    948000000.0
+   ],
+   "unit": "USD",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Thấp",
+   "reasons": [
+    "Chỉ có nguồn hạng C hoặc D"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F8",
+   "label": "Doanh thu toàn ngành game, Việt Nam, 2024",
+   "claim_ids": [
+    "C12"
+   ],
+   "origins": [
+    "Newzoo"
+   ],
+   "values": [
+    817000000.0
+   ],
+   "unit": "USD",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Thấp",
+   "reasons": [
+    "Chỉ có nguồn hạng C hoặc D"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F9",
+   "label": "Doanh thu toàn ngành game, Singapore, 2024",
+   "claim_ids": [
+    "C13"
+   ],
+   "origins": [
+    "Newzoo"
+   ],
+   "values": [
+    548000000.0
+   ],
+   "unit": "USD",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Thấp",
+   "reasons": [
+    "Chỉ có nguồn hạng C hoặc D"
+   ],
+   "newer": ""
+  }
+ ],
+ "brief": {
+  "decision": "Có số liệu nhưng chưa chắc chắn",
+  "summary": "Quy mô thị trường game Đông Nam Á năm 2024 dao động trong khoảng từ 5,37 tỷ USD đến 6,51 tỷ USD tùy theo nguồn. Tuy nhiên, các số liệu này chưa chắc chắn do các nguồn độc lập lệch nhau khoảng 21% và đều là số dẫn lại qua bài viết chưa đối chiếu bản gốc.",
+  "reasons": [
+   {
+    "text": "Niko Partners ước tính doanh thu thị trường game Đông Nam Á năm 2024 đạt 5,37 tỷ USD, tuy nhiên đây là số liệu dẫn lại qua bài viết và chưa đối chiếu bản gốc.",
+    "claim_ids": [
+     "C1"
+    ],
+    "status": "uncertain"
+   },
+   {
+    "text": "Statista đưa ra con số doanh thu thị trường game Đông Nam Á năm 2024 là 5,89 tỷ USD, song con số này cũng là dữ liệu dẫn lại và có độ lệch so với các nguồn khác.",
+    "claim_ids": [
+     "C5"
+    ],
+    "status": "uncertain"
+   },
+   {
+    "text": "Newzoo ghi nhận tổng doanh thu thị trường game năm 2024 của khu vực này là 6,51 tỷ USD, nhưng xếp hạng nguồn ở mức C và chưa được đối chiếu bản gốc.",
+    "claim_ids": [
+     "C7"
+    ],
+    "status": "uncertain"
+   },
+   {
+    "text": "Các nguồn gốc độc lập hiện nay có mức chênh lệch khoảng 21% và các số liệu đều được dẫn lại qua các bài báo cáo trung gian, dẫn đến độ tin cậy của thông tin còn thấp.",
+    "claim_ids": [
+     "C1",
+     "C5",
+     "C7"
+    ],
+    "status": "uncertain"
+   }
+  ],
+  "what_would_change": [
+   "Có được báo cáo gốc chính thức từ các nhà nghiên cứu thị trường như Newzoo, Niko Partners và Statista thay vì các bài viết dẫn lại.",
+   "Làm rõ phương pháp luận và phạm vi định nghĩa doanh thu (ví dụ có bao gồm doanh thu quảng cáo trong game hay không) của từng đơn vị nghiên cứu để chuẩn hóa số liệu so sánh."
+  ],
+  "confidence": "Thấp",
+  "gaps": [],
+  "conflicts": [
+   "Doanh thu toàn ngành game, Đông Nam Á, 2024: 5,37 tỷ USD đến 5,89 tỷ USD đến 6,51 tỷ USD (lệch 21%, nguồn gốc: Newzoo, Niko Partners, Statista)"
+  ],
+  "definition_notes": [
+   "Doanh thu Đông Nam Á: 5,37 tỷ USD đến 5,89 tỷ USD đến 6,51 tỷ USD (toàn ngành game, 2024; Newzoo, Niko Partners, Statista); 6,47 tỷ USD (toàn ngành game, 2029; Niko Partners). Các số này khác kỳ đo hoặc phạm vi đo nên không so trực tiếp được."
+  ],
+  "guard_log": [
+   "Đổi kết luận \"Đã có câu trả lời\" thành \"Có số liệu nhưng chưa chắc chắn\": không lý do nào dựa trên nhận định có thể tin"
+  ],
+  "trusted": [
+   {
+    "finding": "F3",
+    "label": "Tăng trưởng toàn ngành game, Đông Nam Á, 2024 vs 2023",
+    "values": "+5,2%",
+    "origins": [
+     "Niko Partners"
+    ],
+    "confidence": "Trung bình",
+    "claim_ids": [
+     "C4"
+    ],
+    "why": [
+     "Chỉ có một nguồn gốc (Niko Partners, hạng B)"
+    ],
+    "notes": [
+     "Số của Niko Partners dẫn lại qua bài viết, chưa đối chiếu bản gốc"
+    ]
+   }
+  ],
+  "uncertain": [
+   {
+    "finding": "F1",
+    "label": "Doanh thu toàn ngành game, Đông Nam Á, 2024",
+    "values": "5,37 tỷ USD đến 5,89 tỷ USD đến 6,51 tỷ USD",
+    "origins": [
+     "Newzoo",
+     "Niko Partners",
+     "Statista"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C1",
+     "C3",
+     "C5",
+     "C6",
+     "C7"
+    ],
+    "why": [
+     "Các nguồn gốc độc lập lệch nhau 21% (ghi dạng khoảng)",
+     "Số của Newzoo, Niko Partners, Statista dẫn lại qua bài viết, chưa đối chiếu bản gốc"
+    ],
+    "next_steps": [
+     {
+      "text": "So sánh cách đo của Newzoo, Niko Partners, Statista (phạm vi, quốc gia tính vào, loại doanh thu) rồi chọn số hợp với câu hỏi",
+      "query": "Southeast Asia games market revenue 2024 Newzoo Niko Partners Statista methodology",
+      "ask": "",
+      "url": "",
+      "findings": [
+       "F1"
+      ]
+     },
+     {
+      "text": "Đối chiếu bản gốc của Newzoo trên newzoo.com",
+      "query": "Newzoo Southeast Asia games market revenue 2024",
+      "ask": "",
+      "url": "",
+      "findings": [
+       "F1"
+      ]
+     }
+    ]
+   }
+  ],
+  "other": [
+   {
+    "finding": "F2",
+    "label": "Doanh thu toàn ngành game, Đông Nam Á, 2029",
+    "values": "6,47 tỷ USD",
+    "origins": [
+     "Niko Partners"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C2"
+    ],
+    "why": [
+     "Kỳ đo 2029 nằm sau khung thời gian câu hỏi (01/2024 đến 12/2024)"
+    ]
+   },
+   {
+    "finding": "F4",
+    "label": "Doanh thu toàn ngành game, Indonesia, 2024",
+    "values": "1,9 tỷ USD",
+    "origins": [
+     "Newzoo"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C8"
+    ],
+    "why": [
+     "Số của thị trường Indonesia, câu hỏi hỏi về Đông Nam Á"
+    ]
+   },
+   {
+    "finding": "F5",
+    "label": "Doanh thu toàn ngành game, Philippines, 2024",
+    "values": "894 triệu USD",
+    "origins": [
+     "Newzoo"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C9"
+    ],
+    "why": [
+     "Số của thị trường Philippines, câu hỏi hỏi về Đông Nam Á"
+    ]
+   },
+   {
+    "finding": "F6",
+    "label": "Doanh thu toàn ngành game, Thái Lan, 2024",
+    "values": "1,12 tỷ USD",
+    "origins": [
+     "Newzoo"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C10"
+    ],
+    "why": [
+     "Số của thị trường Thái Lan, câu hỏi hỏi về Đông Nam Á"
+    ]
+   },
+   {
+    "finding": "F7",
+    "label": "Doanh thu toàn ngành game, Malaysia, 2024",
+    "values": "948 triệu USD",
+    "origins": [
+     "Newzoo"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C11"
+    ],
+    "why": [
+     "Số của thị trường Malaysia, câu hỏi hỏi về Đông Nam Á"
+    ]
+   },
+   {
+    "finding": "F8",
+    "label": "Doanh thu toàn ngành game, Việt Nam, 2024",
+    "values": "817 triệu USD",
+    "origins": [
+     "Newzoo"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C12"
+    ],
+    "why": [
+     "Số của thị trường Việt Nam, câu hỏi hỏi về Đông Nam Á"
+    ]
+   },
+   {
+    "finding": "F9",
+    "label": "Doanh thu toàn ngành game, Singapore, 2024",
+    "values": "548 triệu USD",
+    "origins": [
+     "Newzoo"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C13"
+    ],
+    "why": [
+     "Số của thị trường Singapore, câu hỏi hỏi về Đông Nam Á"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "text": "So sánh cách đo của Newzoo, Niko Partners, Statista (phạm vi, quốc gia tính vào, loại doanh thu) rồi chọn số hợp với câu hỏi",
+    "query": "Southeast Asia games market revenue 2024 Newzoo Niko Partners Statista methodology",
+    "ask": "",
+    "url": "",
+    "findings": [
+     "F1"
+    ]
+   },
+   {
+    "text": "Đối chiếu bản gốc của Newzoo trên newzoo.com",
+    "query": "Newzoo Southeast Asia games market revenue 2024",
+    "ask": "",
+    "url": "",
+    "findings": [
+     "F1"
+    ]
+   },
+   {
+    "text": "Đối chiếu bản gốc của Niko Partners trên nikopartners.com",
+    "query": "Niko Partners Southeast Asia games market revenue growth 2024 vs 2023",
+    "ask": "",
+    "url": "",
+    "findings": [
+     "F3"
+    ]
+   }
+  ]
+ },
+ "stats": {
+  "sources_read": 3,
+  "sources_failed": 0,
+  "claims": 13,
+  "verified": 13,
+  "rejected": 0,
+  "carried": 0,
+  "llm_calls": 6,
+  "seconds": 13.5,
+  "model": "gemini/gemini-3.5-flash-lite",
+  "search": "tắt"
+ }
+}

@@ -1,0 +1,218 @@
+{
+ "id": "bf27939c38",
+ "created_at": "2026-10-22T18:20:12",
+ "question": "Doanh thu IAP game mobile Đông Nam Á quý 1/2025 là bao nhiêu?",
+ "parent_id": null,
+ "thread": [
+  {
+   "id": "bf27939c38",
+   "question": "Doanh thu IAP game mobile Đông Nam Á quý 1/2025 là bao nhiêu?"
+  }
+ ],
+ "today": "2026-10-22",
+ "plan": {
+  "criteria": [
+   "Doanh thu IAP game mobile Đông Nam Á quý 1 2025"
+  ],
+  "queries": [
+   "Southeast Asia mobile game IAP revenue Q1 2025 Sensor Tower",
+   "SEA mobile games revenue first quarter 2025 data.ai AppMagic",
+   "Southeast Asia mobile gaming market Q1 2025 revenue report Newzoo",
+   "SEA mobile app revenue Q1 2025 Niko Partners"
+  ],
+  "market": "Đông Nam Á",
+  "genre": ""
+ },
+ "window": {
+  "start": "2025-01-01",
+  "end": "2025-03-31",
+  "kind": "specific",
+  "label": "01/2025 đến 03/2025"
+ },
+ "question_market": "Đông Nam Á",
+ "search_log": [],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "Sb4dc9f66",
+   "url": "https://sensortower.com/blog/southeast-asia-mobile-gaming-2025",
+   "title": "Sensor Tower Southeast Asia Mobile Game Market Insights 2025",
+   "domain": "sensortower.com",
+   "published": "2025-05-21",
+   "kind": "html",
+   "text": "<5366 ký tự>",
+   "error": null,
+   "tier": "A",
+   "base_tier": "A",
+   "tier_notes": [
+    "sensortower.com nằm trong danh sách hạng A",
+    "Đăng cách đây 17 tháng (12 đến 24 tháng)"
+   ],
+   "publisher": "Sensor Tower"
+  },
+  {
+   "id": "S80418131",
+   "url": "https://gamedevreports.substack.com/p/sensor-tower-southeast-asia-mobile",
+   "title": "Sensor Tower: Southeast Asia Mobile Game Market in 2025",
+   "domain": "gamedevreports.substack.com",
+   "published": "2025-06-13",
+   "kind": "html",
+   "text": "<5560 ký tự>",
+   "error": null,
+   "tier": "B",
+   "base_tier": "B",
+   "tier_notes": [
+    "gamedevreports.substack.com nằm trong danh sách hạng B",
+    "Đăng cách đây 16 tháng (12 đến 24 tháng)"
+   ],
+   "publisher": "gamedevreports.substack.com"
+  }
+ ],
+ "claims": [
+  {
+   "id": "C1",
+   "source_id": "Sb4dc9f66",
+   "claim_text": "Doanh thu IAP game mobile tại Đông Nam Á đạt 625 triệu USD trong quý 1 năm 2025.",
+   "metric": "revenue",
+   "value_text": "$625 million",
+   "market": "Đông Nam Á",
+   "period": "Q1 2025",
+   "scope": "mobile_iap",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "While SEA currently ranks seventh globally in in-app purchase (IAP) revenue at $625 million in Q1 2025, this figure signals significant untapped monetization potential.",
+   "section_title": "Southeast Asian Mobile Game Market Insights 2025",
+   "attributed_to": "Sensor Tower",
+   "criterion": 0,
+   "value": 625000000.0,
+   "unit": "USD",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "as a pivotal growth region in the global mobile gaming industry, presenting significant opportunities for developers and publishers. With a steadily expanding player base and increasing monetization potential, SEA is a dynamic and exciting landscape for the mobile gaming industry.\nIn the first quarter of 2025, Southeast Asia ranked as the second-largest global market for mobile game downloads, hitting an impressive 1.93 billion new installs. This represents a 3% increase from the previous quarter, highlighting the region's highly engaged and growing audience hungry for new gaming experiences. While SEA currently ranks seventh globally in in-app purchase (IAP) revenue at $625 million in Q1 2025, this figure signals significant untapped monetization potential. Factors like a large gaming community, improving digital payment infrastructure, and rising smartphone adoption are key drivers that suggest future revenue growth.\nNote: The download data in this re",
+   "origin": "Sensor Tower",
+   "tier": "A",
+   "flags": [],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C2",
+   "source_id": "S80418131",
+   "claim_text": "Doanh thu IAP game mobile Đông Nam Á trong quý 1 năm 2025 đạt 625 triệu USD.",
+   "metric": "revenue",
+   "value_text": "$625 million",
+   "market": "Đông Nam Á",
+   "period": "Q1 2025",
+   "scope": "mobile_iap",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "Southeast Asian users spent $625 million on games in Q1'25, up 1% QoQ.",
+   "section_title": "General Market Overview",
+   "attributed_to": "Sensor Tower",
+   "criterion": 0,
+   "value": 625000000.0,
+   "unit": "USD",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "General Market Overview\n- In Q1'25, the region ranked second globally by downloads, accounting for 1.93 billion installs. This represents a 3% quarter-over-quarter increase.\n❗️However, Sensor Tower is being a bit misleading here—comparing a region to individual countries isn’t entirely accurate.\n- Southeast Asian users spent $625 million on games in Q1'25, up 1% QoQ. This is the seventh-highest figure worldwide, and again, it’s a region being compared to individual countries.\n- Indonesia leads Southeast Asia in downloads. In Q1'25, Indonesians downloaded games 8",
+   "origin": "Sensor Tower",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Sensor Tower, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc"
+   ],
+   "excluded_by_user": false
+  }
+ ],
+ "findings": [
+  {
+   "key": "F1",
+   "label": "Doanh thu IAP game mobile, Đông Nam Á, Q1 2025",
+   "claim_ids": [
+    "C1",
+    "C2"
+   ],
+   "origins": [
+    "Sensor Tower"
+   ],
+   "values": [
+    625000000.0
+   ],
+   "unit": "USD",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Trung bình",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Sensor Tower, hạng A)",
+    "2 bài viết nhưng chỉ 1 nguồn gốc"
+   ],
+   "newer": ""
+  }
+ ],
+ "brief": {
+  "decision": "Đã có câu trả lời",
+  "summary": "Doanh thu IAP game mobile tại Đông Nam Á trong quý 1 năm 2025 đạt 625 triệu USD dựa trên nguồn từ Sensor Tower. Số liệu có thể tin cậy ở mức trung bình do chỉ có một nguồn gốc và cần lưu ý một số cảnh báo về việc dẫn lại qua trang tin.",
+  "reasons": [
+   {
+    "text": "Doanh thu IAP game mobile tại Đông Nam Á đạt 625 triệu USD trong quý 1 năm 2025 theo nguồn Sensor Tower hạng A.",
+    "claim_ids": [
+     "C1"
+    ],
+    "status": "trusted"
+   },
+   {
+    "text": "Số liệu 625 triệu USD trong quý 1 năm 2025 cho thị trường Đông Nam Á cũng được ghi nhận từ Sensor Tower hạng B nhưng có cảnh báo là số liệu dẫn lại qua gamedevreports.substack.com và chưa đối chiếu bản gốc.",
+    "claim_ids": [
+     "C2"
+    ],
+    "status": "trusted"
+   }
+  ],
+  "what_would_change": [
+   "Có thêm dữ liệu đối chiếu trực tiếp từ báo cáo gốc của Sensor Tower thay vì qua bài viết dẫn lại.",
+   "Có thêm số liệu độc lập từ các đơn vị nghiên cứu thị trường khác như Data.ai để so sánh."
+  ],
+  "confidence": "Trung bình",
+  "gaps": [],
+  "conflicts": [],
+  "definition_notes": [],
+  "guard_log": [],
+  "trusted": [
+   {
+    "finding": "F1",
+    "label": "Doanh thu IAP game mobile, Đông Nam Á, Q1 2025",
+    "values": "625 triệu USD",
+    "origins": [
+     "Sensor Tower"
+    ],
+    "confidence": "Trung bình",
+    "claim_ids": [
+     "C1",
+     "C2"
+    ],
+    "why": [
+     "Chỉ có một nguồn gốc (Sensor Tower, hạng A)",
+     "2 bài viết nhưng chỉ 1 nguồn gốc"
+    ],
+    "notes": []
+   }
+  ],
+  "uncertain": [],
+  "other": [],
+  "next_steps": []
+ },
+ "stats": {
+  "sources_read": 2,
+  "sources_failed": 0,
+  "claims": 2,
+  "verified": 2,
+  "rejected": 0,
+  "carried": 0,
+  "llm_calls": 4,
+  "seconds": 6.5,
+  "model": "gemini/gemini-3.5-flash-lite",
+  "search": "tắt"
+ }
+}

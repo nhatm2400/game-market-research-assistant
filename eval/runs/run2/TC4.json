@@ -1,0 +1,1498 @@
+{
+ "id": "2a0ef5aab3",
+ "created_at": "2026-10-22T18:22:05",
+ "question": "Có nên phát hành game MOBA trên mobile tại Việt Nam trong 12 tháng tới không?",
+ "parent_id": null,
+ "thread": [
+  {
+   "id": "2a0ef5aab3",
+   "question": "Có nên phát hành game MOBA trên mobile tại Việt Nam trong 12 tháng tới không?"
+  }
+ ],
+ "today": "2026-10-22",
+ "plan": {
+  "criteria": [
+   "Quy mô doanh thu thị trường game MOBA mobile tại Việt Nam",
+   "Tốc độ tăng trưởng và tỷ lệ thâm nhập của game MOBA",
+   "Mức độ cạnh tranh và thị phần của các tựa game MOBA hiện tại"
+  ],
+  "queries": [
+   "Vietnam mobile MOBA game market size revenue Sensor Tower",
+   "Vietnam MOBA mobile games growth rate Niko Partners",
+   "top mobile MOBA games market share Vietnam data.ai",
+   "thị trường game MOBA di động Việt Nam doanh thu xu hướng"
+  ],
+  "market": "Việt Nam",
+  "genre": "MOBA"
+ },
+ "window": {
+  "start": "2024-10-01",
+  "end": "2026-10-22",
+  "kind": "future",
+  "label": "câu hỏi về tương lai, dùng dữ liệu 24 tháng gần nhất"
+ },
+ "question_market": "Việt Nam",
+ "search_log": [
+  {
+   "query": "Vietnam mobile MOBA game market size revenue Sensor Tower",
+   "results": [
+    "https://gamedevreports.substack.com/p/sensor-tower-southeast-asia-mobile",
+    "https://investgame.net/wp-content/uploads/2025/06/2025_Southeast_Asia_Mobile_Game_Insights.pdf",
+    "https://sensortower.com/blog/southeast-asia-mobile-gaming-2025",
+    "https://tracxn.com/d/trending-business-models/startups-in-mobile-moba-game-developers/__Cd6hKZ-76B4z9EbOKzETE0IaRsZMngGzQrOCWRFZRGA",
+    "https://finance.yahoo.com/news/sensor-tower-acquires-video-game-130000109.html"
+   ]
+  },
+  {
+   "query": "Vietnam MOBA mobile games growth rate Niko Partners",
+   "results": [
+    "https://gamedevreports.substack.com/p/niko-partners-gaming-time-increased",
+    "https://nikopartners.com/wp-content/uploads/2022/08/Southeast-Asias-Games-Market.pdf",
+    "https://appsamurai.com/blog/the-rise-of-mobile-gaming-in-vietnam",
+    "https://finance.yahoo.com/news/gaming-growth-unlocked-coda-niko-073000524.html",
+    "https://nikopartners.com/7-billion-in-2030-opportunities-in-southeast-asias-video-game-markets"
+   ]
+  },
+  {
+   "query": "top mobile MOBA games market share Vietnam data.ai",
+   "results": [
+    "https://finance.yahoo.com/news/decade-flappy-bird-vietnam-becomes-220000672.html",
+    "https://onesky.ai/blog/vietnam-mobile-game",
+    "https://www.pocketgamer.biz/mobile-game-trends-vietnam",
+    "https://tracxn.com/d/trending-business-models/startups-in-mobile-moba-game-developers/__Cd6hKZ-76B4z9EbOKzETE0IaRsZMngGzQrOCWRFZRGA",
+    "https://posiel.com/wp-content/uploads/2022/09/dataai__state_of_mobile_2022__en.pdf"
+   ]
+  },
+  {
+   "query": "thị trường game MOBA di động Việt Nam doanh thu xu hướng",
+   "results": [
+    "https://blog.tomorrowmarketers.org/buc-tranh-toan-canh-thi-truong-game-mobile-viet-nam",
+    "https://stockbiz.vn/tin-tuc/nganh-cong-nghiep-game-viet-nam-huong-toi-doanh-thu-1-ty-usd/25286731",
+    "https://advertisingvietnam.com/article/bao-cao-thi-truong-game-mobile-2025-tu-socialpeta-va-newsbreak-hon-9-trieu-nha-quang-cao-hoat-dong-moi-thang-cung-xu-huong-sang-tao-doi-moi-lien-tuc-hang-tuan-p26913",
+    "https://laodong.vn/cong-nghe/nganh-game-viet-nam-vuon-tam-khang-dinh-vi-the-lon-tren-the-gioi-1690320.ldo",
+    "https://www.scribd.com/document/537497092/20181207150113"
+   ]
+  }
+ ],
+ "skipped": [
+  {
+   "url": "https://finance.yahoo.com/news/sensor-tower-acquires-video-game-130000109.html",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://appsamurai.com/blog/the-rise-of-mobile-gaming-in-vietnam",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://finance.yahoo.com/news/gaming-growth-unlocked-coda-niko-073000524.html",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://finance.yahoo.com/news/decade-flappy-bird-vietnam-becomes-220000672.html",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://onesky.ai/blog/vietnam-mobile-game",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://posiel.com/wp-content/uploads/2022/09/dataai__state_of_mobile_2022__en.pdf",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://blog.tomorrowmarketers.org/buc-tranh-toan-canh-thi-truong-game-mobile-viet-nam",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://stockbiz.vn/tin-tuc/nganh-cong-nghiep-game-viet-nam-huong-toi-doanh-thu-1-ty-usd/25286731",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://advertisingvietnam.com/article/bao-cao-thi-truong-game-mobile-2025-tu-socialpeta-va-newsbreak-hon-9-trieu-nha-quang-cao-hoat-dong-moi-thang-cung-xu-huong-sang-tao-doi-moi-lien-tuc-hang-tuan-p26913",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://laodong.vn/cong-nghe/nganh-game-viet-nam-vuon-tam-khang-dinh-vi-the-lon-tren-the-gioi-1690320.ldo",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://www.scribd.com/document/537497092/20181207150113",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  }
+ ],
+ "sources": [
+  {
+   "id": "Sb4dc9f66",
+   "url": "https://sensortower.com/blog/southeast-asia-mobile-gaming-2025",
+   "title": "Sensor Tower Southeast Asia Mobile Game Market Insights 2025",
+   "domain": "sensortower.com",
+   "published": "2025-05-21",
+   "kind": "html",
+   "text": "<5366 ký tự>",
+   "error": null,
+   "tier": "A",
+   "base_tier": "A",
+   "tier_notes": [
+    "sensortower.com nằm trong danh sách hạng A",
+    "Đăng cách đây 17 tháng (12 đến 24 tháng)"
+   ],
+   "publisher": "Sensor Tower"
+  },
+  {
+   "id": "S144fb817",
+   "url": "https://nikopartners.com/wp-content/uploads/2022/08/Southeast-Asias-Games-Market.pdf",
+   "title": "",
+   "domain": "nikopartners.com",
+   "published": null,
+   "kind": "html",
+   "text": "<0 ký tự>",
+   "error": "Không tải được: ConnectionError ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+   "tier": "B",
+   "base_tier": "A",
+   "tier_notes": [
+    "nikopartners.com nằm trong danh sách hạng A",
+    "Không rõ ngày đăng: hạ một hạng"
+   ],
+   "publisher": "Niko Partners"
+  },
+  {
+   "id": "Sb9e808d0",
+   "url": "https://nikopartners.com/7-billion-in-2030-opportunities-in-southeast-asias-video-game-markets",
+   "title": "",
+   "domain": "nikopartners.com",
+   "published": null,
+   "kind": "html",
+   "text": "<0 ký tự>",
+   "error": "Không tải được: ConnectionError ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+   "tier": "B",
+   "base_tier": "A",
+   "tier_notes": [
+    "nikopartners.com nằm trong danh sách hạng A",
+    "Không rõ ngày đăng: hạ một hạng"
+   ],
+   "publisher": "Niko Partners"
+  },
+  {
+   "id": "S80418131",
+   "url": "https://gamedevreports.substack.com/p/sensor-tower-southeast-asia-mobile",
+   "title": "Sensor Tower: Southeast Asia Mobile Game Market in 2025",
+   "domain": "gamedevreports.substack.com",
+   "published": "2025-06-13",
+   "kind": "html",
+   "text": "<5560 ký tự>",
+   "error": null,
+   "tier": "B",
+   "base_tier": "B",
+   "tier_notes": [
+    "gamedevreports.substack.com nằm trong danh sách hạng B",
+    "Đăng cách đây 16 tháng (12 đến 24 tháng)"
+   ],
+   "publisher": "gamedevreports.substack.com"
+  },
+  {
+   "id": "Sfd8d5a99",
+   "url": "https://investgame.net/wp-content/uploads/2025/06/2025_Southeast_Asia_Mobile_Game_Insights.pdf",
+   "title": "2025_Southeast_Asia_Mobile_Game_Insights",
+   "domain": "investgame.net",
+   "published": "2025-05-22",
+   "kind": "pdf",
+   "text": "<55313 ký tự>",
+   "error": null,
+   "tier": "B",
+   "base_tier": "B",
+   "tier_notes": [
+    "investgame.net nằm trong danh sách hạng B",
+    "Đăng cách đây 17 tháng (12 đến 24 tháng)"
+   ],
+   "publisher": "investgame.net"
+  },
+  {
+   "id": "S2ad5e74c",
+   "url": "https://gamedevreports.substack.com/p/niko-partners-gaming-time-increased",
+   "title": "Niko Partners: Gaming time increased by 53.2% in the 6 largest gaming countries of Southeast Asia",
+   "domain": "gamedevreports.substack.com",
+   "published": "2024-10-23",
+   "kind": "html",
+   "text": "<2138 ký tự>",
+   "error": null,
+   "tier": "B",
+   "base_tier": "B",
+   "tier_notes": [
+    "gamedevreports.substack.com nằm trong danh sách hạng B",
+    "Đăng cách đây 24 tháng (12 đến 24 tháng)"
+   ],
+   "publisher": "gamedevreports.substack.com"
+  },
+  {
+   "id": "S6c2c3096",
+   "url": "https://www.pocketgamer.biz/mobile-game-trends-vietnam",
+   "title": "",
+   "domain": "pocketgamer.biz",
+   "published": null,
+   "kind": "html",
+   "text": "<0 ký tự>",
+   "error": "Không tải được: HTTPError 403 Client Error: Forbidden for url: https://www.pocketgamer.biz/mobile-game-trends-vietnam",
+   "tier": "C",
+   "base_tier": "B",
+   "tier_notes": [
+    "pocketgamer.biz nằm trong danh sách hạng B",
+    "Không rõ ngày đăng: hạ một hạng"
+   ],
+   "publisher": "pocketgamer.biz"
+  },
+  {
+   "id": "S93dbe345",
+   "url": "https://tracxn.com/d/trending-business-models/startups-in-mobile-moba-game-developers/__Cd6hKZ-76B4z9EbOKzETE0IaRsZMngGzQrOCWRFZRGA",
+   "title": "Mobile MOBA Game Developers - 2026 Market & Investments Trends - Tracxn",
+   "domain": "tracxn.com",
+   "published": "2024-09-25",
+   "kind": "html",
+   "text": "<5598 ký tự>",
+   "error": null,
+   "tier": "D",
+   "base_tier": "C",
+   "tier_notes": [
+    "Tên miền không có trong danh sách, mặc định hạng C",
+    "Đăng cách đây 25 tháng (quá 24 tháng): hạ một hạng"
+   ],
+   "publisher": "tracxn.com"
+  }
+ ],
+ "claims": [
+  {
+   "id": "C1",
+   "source_id": "Sb4dc9f66",
+   "claim_text": "Trong quý 1 năm 2025, Việt Nam đạt 329 triệu lượt tải xuống game mobile.",
+   "metric": "downloads",
+   "value_text": "329 million",
+   "market": "Việt Nam",
+   "period": "Q1 2025",
+   "scope": "mobile",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "The Philippines and Vietnam follow with 366 million and 329 million downloads respectively.",
+   "section_title": "Market-Specific Highlights: Indonesia Leads Downloads, Thailand Tops Revenue",
+   "attributed_to": "Sensor Tower",
+   "criterion": 1,
+   "value": 329000000.0,
+   "unit": "",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": ", and rising smartphone adoption are key drivers that suggest future revenue growth.\nNote: The download data in this report are based on estimated downloads from the App Store and Google Play, excluding pre-installs, re-downloads, and downloads from third-party Android marketplaces. Google Play is not available in Mainland China.\nMarket-Specific Highlights: Indonesia Leads Downloads, Thailand Tops Revenue\nWithin SEA, individual countries showcase distinct trends. Indonesia stands out as the leader in mobile game downloads, reaching 870 million in Q1 2025, a 9% increase from the prior quarter. The Philippines and Vietnam follow with 366 million and 329 million downloads respectively.\nWhen it comes to revenue, Thailand takes the lead in the region, generating $162 million in IAP revenue during Q1 2025. This is attributed to its strong digital payment systems and a cultural willin",
+   "origin": "Sensor Tower",
+   "tier": "A",
+   "flags": [],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C2",
+   "source_id": "S80418131",
+   "claim_text": "Doanh thu game MOBA tại Đông Nam Á tăng trưởng 20,1% theo quý trong Q1 2025 theo Sensor Tower",
+   "metric": "growth",
+   "value_text": "+20.1% QoQ",
+   "market": "Đông Nam Á",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile",
+   "genre": "MOBA",
+   "genre_level": "genre",
+   "quote": "For revenue, 4X strategy games (+17.6% QoQ), MOBA (+20.1% QoQ), and MMORPG (-17.1% QoQ) are on top.",
+   "section_title": "General Market Overview",
+   "attributed_to": "Sensor Tower",
+   "criterion": 1,
+   "value": 20.1,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "es (+9% QoQ). The Philippines is second with 366 million installs (-1% QoQ), and Vietnam is third with 329 million installs (+2% QoQ).\n- In terms of revenue, Thailand leads with $162 million (-6% QoQ). Indonesia is second with $118 million (+1% QoQ), and Malaysia is third with $103 million (+7% QoQ).\n❗️Note that this is only about IAP purchases. D2C payments, which are quite common in Southeast Asia, aren’t reflected in these stats.\n- Looking at the most popular genres in Southeast Asia, platformers/runners (+16% QoQ), simulators (+0.1% QoQ), and arcade games (+12.2% QoQ) lead in downloads.\n- For revenue, 4X strategy games (+17.6% QoQ), MOBA (+20.1% QoQ), and MMORPG (-17.1% QoQ) are on top.\nConsider subscribing to the GameDev Reports Premium tier to support the newsletter. Get access to the list of curated articles & archive of Gaming Reports that I’ve been collecting since 2020.\n- Top",
+   "origin": "Sensor Tower",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Sensor Tower, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc",
+    "Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C3",
+   "source_id": "S80418131",
+   "claim_text": "Doanh thu game MOBA tại Indonesia tăng trưởng 32,7% theo quý trong Q1 2025 theo Sensor Tower",
+   "metric": "growth",
+   "value_text": "+32.7% QoQ",
+   "market": "Indonesia",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile",
+   "genre": "MOBA",
+   "genre_level": "genre",
+   "quote": "For revenue, MOBA (+32.7% QoQ), 4X strategy (+21.1% QoQ), and sports games (-22.6% QoQ) lead.",
+   "section_title": "Indonesia",
+   "attributed_to": "Sensor Tower",
+   "criterion": 1,
+   "value": 32.7,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": " the top 10 games are either developed by Chinese companies or owned by them. 9 out of 10 in the top 10 are Asian companies, with the exception being Coin Master from Moon Active.\n❗️Western companies face a cultural barrier when entering the Southeast Asian market. For Asian companies, business in the region is more familiar and accessible. Business relationships in the region are also heavily based on personal connections.\nMajor Southeast Asian Markets\nIndonesia\n- Top genres by downloads in Indonesia: simulators (+4.9% QoQ), platformers/runners (+38.2% QoQ), and arcade projects (+18% QoQ).\n- For revenue, MOBA (+32.7% QoQ), 4X strategy (+21.1% QoQ), and sports games (-22.6% QoQ) lead. Battle Royale shows significant growth (+50% QoQ).\n- New projects in Indonesia in Q1'25: Magic Chess: Go Go entered the download rankings, and Ragnarok M: Classic led in revenue.\nThailand\n- Top genr",
+   "origin": "Sensor Tower",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Sensor Tower, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc",
+    "Số của thị trường Indonesia, câu hỏi hỏi về Việt Nam"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C4",
+   "source_id": "S80418131",
+   "claim_text": "Doanh thu game MOBA tại Philippines tăng trưởng 19% theo quý trong Q1 2025 theo Sensor Tower",
+   "metric": "growth",
+   "value_text": "+19% QoQ",
+   "market": "Philippines",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile",
+   "genre": "MOBA",
+   "genre_level": "genre",
+   "quote": "For revenue, MMORPG (-19.7% QoQ), 4X strategies (+18.7% QoQ), and MOBA games (+19% QoQ) lead.",
+   "section_title": "Philippines",
+   "attributed_to": "Sensor Tower",
+   "criterion": 1,
+   "value": 19.0,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "s (+3.2% QoQ), simulators (-6.7% QoQ), and other arcade games (+9.1% QoQ) lead in downloads. For revenue, 4X strategies (+51.5% QoQ), MMORPG (+8.2% QoQ), and Squad RPG (-1.8% QoQ) are on top.\n- Vietnam is a unique market for downloads. Roblox leads, and Trò Vẽ Vui Tuổi Thơ—a local casual game—leads download growth. Last War: Survival is also rapidly growing in downloads.\n- For revenue, Last War: Survival and local RPG Big Bang Thời Không are leaders.\nPhilippines\n- Top genres by downloads remain platformers/runners (+6.8% QoQ), simulators (+0.7% QoQ), and various arcade projects (+9.6% QoQ).\n- For revenue, MMORPG (-19.7% QoQ), 4X strategies (+18.7% QoQ), and MOBA games (+19% QoQ) lead.\n- The Philippine market is more dynamic than others. Five new projects entered the download rankings (Magic Chess: Go Go, Hapunan Horror Game, I Am Security, Good Coffee, Great Coffee, Color Game-co",
+   "origin": "Sensor Tower",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Sensor Tower, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc",
+    "Số của thị trường Philippines, câu hỏi hỏi về Việt Nam"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C5",
+   "source_id": "Sfd8d5a99",
+   "claim_text": "Tại Việt Nam, tổng số lượt tải game mobile trong Q1 2025 đạt 329 triệu lượt, tăng 2% so với Q4 2024.",
+   "metric": "downloads",
+   "value_text": "329 M",
+   "market": "Vietnam",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "329 M +2% vs Q4 2024",
+   "section_title": "Southeast Asia Top Mobile Game Markets by Downloads Q1 2025",
+   "attributed_to": "Sensor Tower",
+   "criterion": -1,
+   "value": null,
+   "unit": "",
+   "verified": false,
+   "verify_note": "Không tìm thấy câu trích trong nguồn (đoạn giống nhất 78%); con số có trong nguồn nhưng câu chữ đi kèm thì không (thường do ghép nhãn với số trong biểu đồ)",
+   "match_score": 77.8,
+   "page": 11,
+   "context": "",
+   "origin": "",
+   "tier": "D",
+   "flags": [],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C6",
+   "source_id": "Sfd8d5a99",
+   "claim_text": "Doanh thu IAP game mobile tại Việt Nam trong Q1 2025 đạt 103 triệu USD, tăng 7% so với Q4 2024.",
+   "metric": "revenue",
+   "value_text": "$103 M",
+   "market": "Vietnam",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile_iap",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "$103 M +7% vs Q4 2024",
+   "section_title": "Southeast Asia Top Mobile Game Markets by IAP Revenue Q1 2025",
+   "attributed_to": "Sensor Tower",
+   "criterion": 0,
+   "value": null,
+   "unit": "",
+   "verified": false,
+   "verify_note": "Không tìm thấy câu trích trong nguồn (đoạn giống nhất 83%); con số có trong nguồn nhưng câu chữ đi kèm thì không (thường do ghép nhãn với số trong biểu đồ)",
+   "match_score": 83.3,
+   "page": 11,
+   "context": "",
+   "origin": "",
+   "tier": "D",
+   "flags": [],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C7",
+   "source_id": "Sfd8d5a99",
+   "claim_text": "Phân khúc MOBA thuộc thể loại Strategy ghi nhận mức tăng trưởng doanh thu IAP 20.1% trong Q1 2025 tại Đông Nam Á.",
+   "metric": "growth",
+   "value_text": "+20.1%",
+   "market": "Southeast Asia",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile_iap",
+   "genre": "MOBA",
+   "genre_level": "subgenre",
+   "quote": "+20.1%",
+   "section_title": "Southeast Asia Top Subgenre by IAP Revenue",
+   "attributed_to": "Sensor Tower",
+   "criterion": 1,
+   "value": null,
+   "unit": "",
+   "verified": false,
+   "verify_note": "Câu trích quá ngắn để kiểm",
+   "match_score": 0.0,
+   "page": 11,
+   "context": "",
+   "origin": "",
+   "tier": "D",
+   "flags": [],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C8",
+   "source_id": "Sfd8d5a99",
+   "claim_text": "Tựa game Mobile Legends: Bang Bang dẫn đầu doanh thu IAP phân khúc subgenre MOBA tại Đông Nam Á trong Q1 2025.",
+   "metric": "revenue",
+   "value_text": "Mobile Legends: Bang Bang",
+   "market": "Southeast Asia",
+   "period": "Q1 2025",
+   "scope": "mobile_iap",
+   "genre": "MOBA",
+   "genre_level": "subgenre",
+   "quote": "Mobile Legends: Bang Bang",
+   "section_title": "Southeast Asia Top Subgenre by IAP Revenue",
+   "attributed_to": "Sensor Tower",
+   "criterion": 2,
+   "value": null,
+   "unit": "",
+   "verified": false,
+   "verify_note": "Giá trị \"Mobile Legends: Bang Bang\" không nằm trong câu trích",
+   "match_score": 100.0,
+   "page": null,
+   "context": "",
+   "origin": "",
+   "tier": "D",
+   "flags": [],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C9",
+   "source_id": "Sfd8d5a99",
+   "claim_text": "Thị phần hoặc tốc độ tăng trưởng của phân khúc MOBA trên mobile tại Việt Nam trong Q1 2025 so với Q4 2024",
+   "metric": "growth",
+   "value_text": "+15.8%",
+   "market": "Vietnam",
+   "period": "2025 Q1 vs 2024 Q4",
+   "scope": "mobile",
+   "genre": "MOBA",
+   "genre_level": "subgenre",
+   "quote": "Strategy | MOBA +15.8%",
+   "section_title": "Vietnam Top Subgenre by Revenue",
+   "attributed_to": "Sensor Tower",
+   "criterion": 1,
+   "value": null,
+   "unit": "",
+   "verified": false,
+   "verify_note": "Không tìm thấy câu trích trong nguồn (đoạn giống nhất 83%); con số có trong nguồn nhưng câu chữ đi kèm thì không (thường do ghép nhãn với số trong biểu đồ)",
+   "match_score": 83.3,
+   "page": 19,
+   "context": "",
+   "origin": "",
+   "tier": "D",
+   "flags": [],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C10",
+   "source_id": "S2ad5e74c",
+   "claim_text": "Thị trường game tại 6 nước SEA-6 đạt 5,1 tỷ USD vào cuối năm 2023.",
+   "metric": "revenue",
+   "value_text": "$5.1 billion",
+   "market": "Đông Nam Á",
+   "period": "2023",
+   "scope": "all_games",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "- By the end of 2023, the gaming market volume in these six countries reached $5.1 billion (+8.8% YoY). In mid-2023, Niko Partners predicted it would grow to $5.8 billion.",
+   "section_title": "Overall markets condition",
+   "attributed_to": "Niko Partners",
+   "criterion": 0,
+   "value": 5100000000.0,
+   "unit": "USD",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "Niko Partners uses the abbreviation SEA-6, which refers to the markets of Indonesia, Malaysia, the Philippines, Singapore, Thailand, and Vietnam.\nOverall markets condition\n- By the end of 2023, the gaming market volume in these six countries reached $5.1 billion (+8.8% YoY). In mid-2023, Niko Partners predicted it would grow to $5.8 billion.\n- In 2024, the market volume is expected to increase to $5.5 billion, and by 2028, it could reach $7.1 billion, with a projected annual growth rate of 6.7%.\n- Niko Partners anticipates that by 2028,",
+   "origin": "Niko Partners",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Niko Partners, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc",
+    "Kỳ đo \"2023\" nằm ngoài khung thời gian của câu hỏi (câu hỏi về tương lai, dùng dữ liệu 24 tháng gần nhất)",
+    "Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C11",
+   "source_id": "S2ad5e74c",
+   "claim_text": "Tăng trưởng doanh thu thị trường game SEA-6 đạt +8.8% YoY vào cuối năm 2023.",
+   "metric": "growth",
+   "value_text": "+8.8% YoY",
+   "market": "Đông Nam Á",
+   "period": "2023 vs 2022",
+   "scope": "all_games",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "- By the end of 2023, the gaming market volume in these six countries reached $5.1 billion (+8.8% YoY). In mid-2023, Niko Partners predicted it would grow to $5.8 billion.",
+   "section_title": "Overall markets condition",
+   "attributed_to": "Niko Partners",
+   "criterion": 1,
+   "value": 8.8,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "Niko Partners uses the abbreviation SEA-6, which refers to the markets of Indonesia, Malaysia, the Philippines, Singapore, Thailand, and Vietnam.\nOverall markets condition\n- By the end of 2023, the gaming market volume in these six countries reached $5.1 billion (+8.8% YoY). In mid-2023, Niko Partners predicted it would grow to $5.8 billion.\n- In 2024, the market volume is expected to increase to $5.5 billion, and by 2028, it could reach $7.1 billion, with a projected annual growth rate of 6.7%.\n- Niko Partners anticipates that by 2028,",
+   "origin": "Niko Partners",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Niko Partners, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc",
+    "Kỳ đo \"2023 vs 2022\" nằm ngoài khung thời gian của câu hỏi (câu hỏi về tương lai, dùng dữ liệu 24 tháng gần nhất)",
+    "Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C12",
+   "source_id": "S2ad5e74c",
+   "claim_text": "Doanh thu thị trường game SEA-6 dự kiến tăng lên 5,5 tỷ USD vào năm 2024.",
+   "metric": "revenue",
+   "value_text": "$5.5 billion",
+   "market": "Đông Nam Á",
+   "period": "2024",
+   "scope": "all_games",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "- In 2024, the market volume is expected to increase to $5.5 billion, and by 2028, it could reach $7.1 billion, with a projected annual growth rate of 6.7%.",
+   "section_title": "Overall markets condition",
+   "attributed_to": "Niko Partners",
+   "criterion": 0,
+   "value": 5500000000.0,
+   "unit": "USD",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "Niko Partners uses the abbreviation SEA-6, which refers to the markets of Indonesia, Malaysia, the Philippines, Singapore, Thailand, and Vietnam.\nOverall markets condition\n- By the end of 2023, the gaming market volume in these six countries reached $5.1 billion (+8.8% YoY). In mid-2023, Niko Partners predicted it would grow to $5.8 billion.\n- In 2024, the market volume is expected to increase to $5.5 billion, and by 2028, it could reach $7.1 billion, with a projected annual growth rate of 6.7%.\n- Niko Partners anticipates that by 2028, there will be 332 million gamers in these six countries—equivalent to the entire population of the U.S. today.\n- By the end of 2024, SEA-6 will have 285.9 ",
+   "origin": "Niko Partners",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Niko Partners, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc",
+    "Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam",
+    "Kỳ đo 2024 chưa kết thúc khi nguồn đăng (10/2024): là số ước tính hoặc dự báo, chưa chắc là số đã đo"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C13",
+   "source_id": "S2ad5e74c",
+   "claim_text": "Doanh thu thị trường game SEA-6 dự kiến đạt 7,1 tỷ USD vào năm 2028.",
+   "metric": "revenue",
+   "value_text": "$7.1 billion",
+   "market": "Đông Nam Á",
+   "period": "2028",
+   "scope": "all_games",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "- In 2024, the market volume is expected to increase to $5.5 billion, and by 2028, it could reach $7.1 billion, with a projected annual growth rate of 6.7%.",
+   "section_title": "Overall markets condition",
+   "attributed_to": "Niko Partners",
+   "criterion": 0,
+   "value": 7100000000.0,
+   "unit": "USD",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "Niko Partners uses the abbreviation SEA-6, which refers to the markets of Indonesia, Malaysia, the Philippines, Singapore, Thailand, and Vietnam.\nOverall markets condition\n- By the end of 2023, the gaming market volume in these six countries reached $5.1 billion (+8.8% YoY). In mid-2023, Niko Partners predicted it would grow to $5.8 billion.\n- In 2024, the market volume is expected to increase to $5.5 billion, and by 2028, it could reach $7.1 billion, with a projected annual growth rate of 6.7%.\n- Niko Partners anticipates that by 2028, there will be 332 million gamers in these six countries—equivalent to the entire population of the U.S. today.\n- By the end of 2024, SEA-6 will have 285.9 ",
+   "origin": "Niko Partners",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Niko Partners, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc",
+    "Số dự báo, chưa phải số đã đo",
+    "Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C14",
+   "source_id": "S2ad5e74c",
+   "claim_text": "Tốc độ tăng trưởng hàng năm dự kiến của thị trường game SEA-6 đến năm 2028 là 6,7%.",
+   "metric": "growth",
+   "value_text": "6.7%",
+   "market": "Đông Nam Á",
+   "period": "2028",
+   "scope": "all_games",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "- In 2024, the market volume is expected to increase to $5.5 billion, and by 2028, it could reach $7.1 billion, with a projected annual growth rate of 6.7%.",
+   "section_title": "Overall markets condition",
+   "attributed_to": "Niko Partners",
+   "criterion": 1,
+   "value": 6.7,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "Niko Partners uses the abbreviation SEA-6, which refers to the markets of Indonesia, Malaysia, the Philippines, Singapore, Thailand, and Vietnam.\nOverall markets condition\n- By the end of 2023, the gaming market volume in these six countries reached $5.1 billion (+8.8% YoY). In mid-2023, Niko Partners predicted it would grow to $5.8 billion.\n- In 2024, the market volume is expected to increase to $5.5 billion, and by 2028, it could reach $7.1 billion, with a projected annual growth rate of 6.7%.\n- Niko Partners anticipates that by 2028, there will be 332 million gamers in these six countries—equivalent to the entire population of the U.S. today.\n- By the end of 2024, SEA-6 will have 285.9 ",
+   "origin": "Niko Partners",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Niko Partners, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc",
+    "Số dự báo, chưa phải số đã đo",
+    "Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C15",
+   "source_id": "S2ad5e74c",
+   "claim_text": "Số lượng game thủ tại SEA-6 dự kiến đạt 332 triệu người vào năm 2028.",
+   "metric": "players",
+   "value_text": "332 million",
+   "market": "Đông Nam Á",
+   "period": "2028",
+   "scope": "all_games",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "- Niko Partners anticipates that by 2028, there will be 332 million gamers in these six countries—equivalent to the entire population of the U.S. today.",
+   "section_title": "Overall markets condition",
+   "attributed_to": "Niko Partners",
+   "criterion": 1,
+   "value": 332000000.0,
+   "unit": "",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "Niko Partners uses the abbreviation SEA-6, which refers to the markets of Indonesia, Malaysia, the Philippines, Singapore, Thailand, and Vietnam.\nOverall markets condition\n- By the end of 2023, the gaming market volume in these six countries reached $5.1 billion (+8.8% YoY). In mid-2023, Niko Partners predicted it would grow to $5.8 billion.\n- In 2024, the market volume is expected to increase to $5.5 billion, and by 2028, it could reach $7.1 billion, with a projected annual growth rate of 6.7%.\n- Niko Partners anticipates that by 2028, there will be 332 million gamers in these six countries—equivalent to the entire population of the U.S. today.\n- By the end of 2024, SEA-6 will have 285.9 million gamers (+3.2% YoY).\n- Thailand and Indonesia have the highest growth rates in gaming revenue. Niko Partners also advises including localization fo",
+   "origin": "Niko Partners",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Niko Partners, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc",
+    "Số dự báo, chưa phải số đã đo",
+    "Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C16",
+   "source_id": "S2ad5e74c",
+   "claim_text": "Số lượng game thủ tại SEA-6 đạt 285,9 triệu người vào cuối năm 2024.",
+   "metric": "players",
+   "value_text": "285.9 million",
+   "market": "Đông Nam Á",
+   "period": "2024",
+   "scope": "all_games",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "- By the end of 2024, SEA-6 will have 285.9 million gamers (+3.2% YoY).",
+   "section_title": "Overall markets condition",
+   "attributed_to": "Niko Partners",
+   "criterion": 1,
+   "value": 285900000.0,
+   "unit": "",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "to the markets of Indonesia, Malaysia, the Philippines, Singapore, Thailand, and Vietnam.\nOverall markets condition\n- By the end of 2023, the gaming market volume in these six countries reached $5.1 billion (+8.8% YoY). In mid-2023, Niko Partners predicted it would grow to $5.8 billion.\n- In 2024, the market volume is expected to increase to $5.5 billion, and by 2028, it could reach $7.1 billion, with a projected annual growth rate of 6.7%.\n- Niko Partners anticipates that by 2028, there will be 332 million gamers in these six countries—equivalent to the entire population of the U.S. today.\n- By the end of 2024, SEA-6 will have 285.9 million gamers (+3.2% YoY).\n- Thailand and Indonesia have the highest growth rates in gaming revenue. Niko Partners also advises including localization for these languages, and it is important to localize for Vietnam as well.",
+   "origin": "Niko Partners",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Niko Partners, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc",
+    "Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam",
+    "Kỳ đo 2024 chưa kết thúc khi nguồn đăng (10/2024): là số ước tính hoặc dự báo, chưa chắc là số đã đo"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C17",
+   "source_id": "S2ad5e74c",
+   "claim_text": "Tăng trưởng số lượng game thủ tại SEA-6 đạt +3.2% YoY vào cuối năm 2024.",
+   "metric": "growth",
+   "value_text": "+3.2% YoY",
+   "market": "Đông Nam Á",
+   "period": "2024 vs 2023",
+   "scope": "all_games",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "- By the end of 2024, SEA-6 will have 285.9 million gamers (+3.2% YoY).",
+   "section_title": "Overall markets condition",
+   "attributed_to": "Niko Partners",
+   "criterion": 1,
+   "value": 3.2,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "to the markets of Indonesia, Malaysia, the Philippines, Singapore, Thailand, and Vietnam.\nOverall markets condition\n- By the end of 2023, the gaming market volume in these six countries reached $5.1 billion (+8.8% YoY). In mid-2023, Niko Partners predicted it would grow to $5.8 billion.\n- In 2024, the market volume is expected to increase to $5.5 billion, and by 2028, it could reach $7.1 billion, with a projected annual growth rate of 6.7%.\n- Niko Partners anticipates that by 2028, there will be 332 million gamers in these six countries—equivalent to the entire population of the U.S. today.\n- By the end of 2024, SEA-6 will have 285.9 million gamers (+3.2% YoY).\n- Thailand and Indonesia have the highest growth rates in gaming revenue. Niko Partners also advises including localization for these languages, and it is important to localize for Vietnam as well.",
+   "origin": "Niko Partners",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Niko Partners, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc",
+    "Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam",
+    "Kỳ đo 2024 vs 2023 chưa kết thúc khi nguồn đăng (10/2024): là số ước tính hoặc dự báo, chưa chắc là số đã đo"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C18",
+   "source_id": "S2ad5e74c",
+   "claim_text": "Thời gian chơi game năm 2024 tại SEA-6 tăng 53,2% so với năm 2023.",
+   "metric": "growth",
+   "value_text": "53.2%",
+   "market": "Đông Nam Á",
+   "period": "2024 vs 2023",
+   "scope": "all_games",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "- In 2024, players spent 53.2% more time in games than in 2023, with the biggest increases in Thailand and Vietnam.",
+   "section_title": "Player Behavior in SEA-6 Countries",
+   "attributed_to": "Niko Partners",
+   "criterion": 1,
+   "value": 53.2,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "S. today.\n- By the end of 2024, SEA-6 will have 285.9 million gamers (+3.2% YoY).\n- Thailand and Indonesia have the highest growth rates in gaming revenue. Niko Partners also advises including localization for these languages, and it is important to localize for Vietnam as well.\n- Games developed by local studios are actively supported by players and the local press.\nConsider subscribing to the GameDev Reports Premium tier to support the newsletter. Get access to the list of curated articles & archive of Gaming Reports that I’ve been collecting since 2020.\nPlayer Behavior in SEA-6 Countries\n- In 2024, players spent 53.2% more time in games than in 2023, with the biggest increases in Thailand and Vietnam.\n- More than half of the gamers in SEA-6 countries engage with esports. The most popular games in the region have esports components.\n- Women are more likely to make in-game purchases (30%) than men ",
+   "origin": "Niko Partners",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Niko Partners, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc",
+    "Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam",
+    "Kỳ đo 2024 vs 2023 chưa kết thúc khi nguồn đăng (10/2024): là số ước tính hoặc dự báo, chưa chắc là số đã đo"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C19",
+   "source_id": "S2ad5e74c",
+   "claim_text": "Tỷ lệ nữ giới thực hiện mua hàng trong game tại SEA-6 là 30%.",
+   "metric": "other",
+   "value_text": "30%",
+   "market": "Đông Nam Á",
+   "period": "2024",
+   "scope": "all_games",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "- Women are more likely to make in-game purchases (30%) than men (22%).",
+   "section_title": "Player Behavior in SEA-6 Countries",
+   "attributed_to": "Niko Partners",
+   "criterion": -1,
+   "value": 30.0,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": " localize for Vietnam as well.\n- Games developed by local studios are actively supported by players and the local press.\nConsider subscribing to the GameDev Reports Premium tier to support the newsletter. Get access to the list of curated articles & archive of Gaming Reports that I’ve been collecting since 2020.\nPlayer Behavior in SEA-6 Countries\n- In 2024, players spent 53.2% more time in games than in 2023, with the biggest increases in Thailand and Vietnam.\n- More than half of the gamers in SEA-6 countries engage with esports. The most popular games in the region have esports components.\n- Women are more likely to make in-game purchases (30%) than men (22%).\n- Issues of representation and accessibility are important to players in the region.\nPayments in SEA-6 Countries\n- More than 75% of gamers use digital wallets for in-game payments.\n- Players over ",
+   "origin": "Niko Partners",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Niko Partners, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc",
+    "Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam",
+    "Kỳ đo 2024 chưa kết thúc khi nguồn đăng (10/2024): là số ước tính hoặc dự báo, chưa chắc là số đã đo"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C20",
+   "source_id": "S2ad5e74c",
+   "claim_text": "Tỷ lệ nam giới thực hiện mua hàng trong game tại SEA-6 là 22%.",
+   "metric": "other",
+   "value_text": "22%",
+   "market": "Đông Nam Á",
+   "period": "2024",
+   "scope": "all_games",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "- Women are more likely to make in-game purchases (30%) than men (22%).",
+   "section_title": "Player Behavior in SEA-6 Countries",
+   "attributed_to": "Niko Partners",
+   "criterion": -1,
+   "value": 22.0,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": " localize for Vietnam as well.\n- Games developed by local studios are actively supported by players and the local press.\nConsider subscribing to the GameDev Reports Premium tier to support the newsletter. Get access to the list of curated articles & archive of Gaming Reports that I’ve been collecting since 2020.\nPlayer Behavior in SEA-6 Countries\n- In 2024, players spent 53.2% more time in games than in 2023, with the biggest increases in Thailand and Vietnam.\n- More than half of the gamers in SEA-6 countries engage with esports. The most popular games in the region have esports components.\n- Women are more likely to make in-game purchases (30%) than men (22%).\n- Issues of representation and accessibility are important to players in the region.\nPayments in SEA-6 Countries\n- More than 75% of gamers use digital wallets for in-game payments.\n- Players over ",
+   "origin": "Niko Partners",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Niko Partners, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc",
+    "Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam",
+    "Kỳ đo 2024 chưa kết thúc khi nguồn đăng (10/2024): là số ước tính hoặc dự báo, chưa chắc là số đã đo"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C21",
+   "source_id": "S2ad5e74c",
+   "claim_text": "Tỷ lệ game thủ sử dụng ví điện tử cho thanh toán trong game tại SEA-6 là hơn 75%.",
+   "metric": "other",
+   "value_text": "75%",
+   "market": "Đông Nam Á",
+   "period": "2024",
+   "scope": "all_games",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "- More than 75% of gamers use digital wallets for in-game payments.",
+   "section_title": "Payments in SEA-6 Countries",
+   "attributed_to": "Niko Partners",
+   "criterion": -1,
+   "value": 75.0,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "ort the newsletter. Get access to the list of curated articles & archive of Gaming Reports that I’ve been collecting since 2020.\nPlayer Behavior in SEA-6 Countries\n- In 2024, players spent 53.2% more time in games than in 2023, with the biggest increases in Thailand and Vietnam.\n- More than half of the gamers in SEA-6 countries engage with esports. The most popular games in the region have esports components.\n- Women are more likely to make in-game purchases (30%) than men (22%).\n- Issues of representation and accessibility are important to players in the region.\nPayments in SEA-6 Countries\n- More than 75% of gamers use digital wallets for in-game payments.\n- Players over 25 years old tend to use cards, while younger players (under 21) prefer to pay in cash (e.g., through retail outlets).\nPlay-to-Earn and Crypto Games in SEA-6\n- Play-to-earn mechanics ",
+   "origin": "Niko Partners",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Niko Partners, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc",
+    "Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam",
+    "Kỳ đo 2024 chưa kết thúc khi nguồn đăng (10/2024): là số ước tính hoặc dự báo, chưa chắc là số đã đo"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C22",
+   "source_id": "S93dbe345",
+   "claim_text": "Việt Nam có 3 startup phát triển game MOBA trên mobile",
+   "metric": "other",
+   "value_text": "3",
+   "market": "Vietnam",
+   "period": "2024",
+   "scope": "mobile",
+   "genre": "MOBA",
+   "genre_level": "genre",
+   "quote": "| Vietnam | 3 |",
+   "section_title": "Companies founded across countries in Mobile MOBA Game Developers",
+   "attributed_to": "",
+   "criterion": 2,
+   "value": null,
+   "unit": "",
+   "verified": false,
+   "verify_note": "Câu trích quá ngắn để kiểm",
+   "match_score": 0.0,
+   "page": null,
+   "context": "",
+   "origin": "",
+   "tier": "D",
+   "flags": [],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C23",
+   "source_id": "S93dbe345",
+   "claim_text": "Các startup phát triển game MOBA trên mobile tại Việt Nam đã nhận được tổng vốn đầu tư là 2.14 triệu USD",
+   "metric": "other",
+   "value_text": "$2.14M",
+   "market": "Vietnam",
+   "period": "last 10 years",
+   "scope": "mobile",
+   "genre": "MOBA",
+   "genre_level": "genre",
+   "quote": "| Vietnam | $2.14M |",
+   "section_title": "Total funding across countries in Mobile MOBA Game Developers",
+   "attributed_to": "",
+   "criterion": 0,
+   "value": null,
+   "unit": "",
+   "verified": false,
+   "verify_note": "Câu trích quá ngắn để kiểm",
+   "match_score": 0.0,
+   "page": null,
+   "context": "",
+   "origin": "",
+   "tier": "D",
+   "flags": [],
+   "excluded_by_user": false
+  }
+ ],
+ "findings": [
+  {
+   "key": "F1",
+   "label": "Lượt tải game mobile, Việt Nam, Q1 2025",
+   "claim_ids": [
+    "C1"
+   ],
+   "origins": [
+    "Sensor Tower"
+   ],
+   "values": [
+    329000000.0
+   ],
+   "unit": "",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Trung bình",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Sensor Tower, hạng A)"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F2",
+   "label": "Tăng trưởng game mobile, MOBA, Đông Nam Á, Q1 2025 vs Q4 2024",
+   "claim_ids": [
+    "C2"
+   ],
+   "origins": [
+    "Sensor Tower"
+   ],
+   "values": [
+    20.1
+   ],
+   "unit": "%",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Trung bình",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Sensor Tower, hạng B)"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F3",
+   "label": "Tăng trưởng game mobile, MOBA, Indonesia, Q1 2025 vs Q4 2024",
+   "claim_ids": [
+    "C3"
+   ],
+   "origins": [
+    "Sensor Tower"
+   ],
+   "values": [
+    32.7
+   ],
+   "unit": "%",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Trung bình",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Sensor Tower, hạng B)"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F4",
+   "label": "Tăng trưởng game mobile, MOBA, Philippines, Q1 2025 vs Q4 2024",
+   "claim_ids": [
+    "C4"
+   ],
+   "origins": [
+    "Sensor Tower"
+   ],
+   "values": [
+    19.0
+   ],
+   "unit": "%",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Trung bình",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Sensor Tower, hạng B)"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F5",
+   "label": "Doanh thu toàn ngành game, Đông Nam Á, 2023",
+   "claim_ids": [
+    "C10"
+   ],
+   "origins": [
+    "Niko Partners"
+   ],
+   "values": [
+    5100000000.0
+   ],
+   "unit": "USD",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Thấp",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Niko Partners, hạng B)",
+    "Có cảnh báo về kỳ đo hoặc phạm vi: hạ một mức"
+   ],
+   "newer": "F7"
+  },
+  {
+   "key": "F6",
+   "label": "Tăng trưởng toàn ngành game, Đông Nam Á, 2023 vs 2022",
+   "claim_ids": [
+    "C11"
+   ],
+   "origins": [
+    "Niko Partners"
+   ],
+   "values": [
+    8.8
+   ],
+   "unit": "%",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Thấp",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Niko Partners, hạng B)",
+    "Có cảnh báo về kỳ đo hoặc phạm vi: hạ một mức"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F7",
+   "label": "Doanh thu toàn ngành game, Đông Nam Á, 2024",
+   "claim_ids": [
+    "C12"
+   ],
+   "origins": [
+    "Niko Partners"
+   ],
+   "values": [
+    5500000000.0
+   ],
+   "unit": "USD",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Thấp",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Niko Partners, hạng B)",
+    "Có cảnh báo về kỳ đo hoặc phạm vi: hạ một mức"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F8",
+   "label": "Doanh thu toàn ngành game, Đông Nam Á, 2028",
+   "claim_ids": [
+    "C13"
+   ],
+   "origins": [
+    "Niko Partners"
+   ],
+   "values": [
+    7100000000.0
+   ],
+   "unit": "USD",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Thấp",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Niko Partners, hạng B)",
+    "Có cảnh báo về kỳ đo hoặc phạm vi: hạ một mức"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F9",
+   "label": "Tăng trưởng toàn ngành game, Đông Nam Á, 2028",
+   "claim_ids": [
+    "C14"
+   ],
+   "origins": [
+    "Niko Partners"
+   ],
+   "values": [
+    6.7
+   ],
+   "unit": "%",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Thấp",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Niko Partners, hạng B)",
+    "Có cảnh báo về kỳ đo hoặc phạm vi: hạ một mức"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F10",
+   "label": "Số người chơi toàn ngành game, Đông Nam Á, 2028",
+   "claim_ids": [
+    "C15"
+   ],
+   "origins": [
+    "Niko Partners"
+   ],
+   "values": [
+    332000000.0
+   ],
+   "unit": "",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Thấp",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Niko Partners, hạng B)",
+    "Có cảnh báo về kỳ đo hoặc phạm vi: hạ một mức"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F11",
+   "label": "Số người chơi toàn ngành game, Đông Nam Á, 2024",
+   "claim_ids": [
+    "C16"
+   ],
+   "origins": [
+    "Niko Partners"
+   ],
+   "values": [
+    285900000.0
+   ],
+   "unit": "",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Thấp",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Niko Partners, hạng B)",
+    "Có cảnh báo về kỳ đo hoặc phạm vi: hạ một mức"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F12",
+   "label": "Tăng trưởng toàn ngành game, Đông Nam Á, 2024 vs 2023",
+   "claim_ids": [
+    "C17",
+    "C18"
+   ],
+   "origins": [
+    "Niko Partners"
+   ],
+   "values": [
+    3.2
+   ],
+   "unit": "%",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Thấp",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Niko Partners, hạng B)",
+    "2 bài viết nhưng chỉ 1 nguồn gốc",
+    "Có cảnh báo về kỳ đo hoặc phạm vi: hạ một mức"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F13",
+   "label": "Chỉ số khác toàn ngành game, Đông Nam Á, 2024",
+   "claim_ids": [
+    "C19",
+    "C20",
+    "C21"
+   ],
+   "origins": [
+    "Niko Partners"
+   ],
+   "values": [
+    30.0
+   ],
+   "unit": "%",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Thấp",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Niko Partners, hạng B)",
+    "3 bài viết nhưng chỉ 1 nguồn gốc",
+    "Có cảnh báo về kỳ đo hoặc phạm vi: hạ một mức"
+   ],
+   "newer": ""
+  }
+ ],
+ "brief": {
+  "decision": "Cần thêm dữ liệu",
+  "summary": "Chưa có đủ dữ liệu cụ thể về quy mô doanh thu, tốc độ tăng trưởng và mức độ cạnh tranh của game MOBA mobile tại riêng thị trường Việt Nam trong 24 tháng gần nhất để đưa ra quyết định phát hành.",
+  "reasons": [
+   {
+    "text": "Trong quý 1 năm 2025, Việt Nam đạt 329 triệu lượt tải xuống game mobile theo Sensor Tower.",
+    "claim_ids": [
+     "C1"
+    ],
+    "status": "trusted"
+   },
+   {
+    "text": "Số liệu tăng trưởng doanh thu game MOBA của Đông Nam Á đạt +20,1% theo quý trong Q1 2025, tuy nhiên dữ liệu này thuộc phạm vi khu vực Đông Nam Á chứ không phải riêng Việt Nam và chưa được đối chiếu bản gốc.",
+    "claim_ids": [
+     "C2"
+    ],
+    "status": "uncertain"
+   }
+  ],
+  "what_would_change": [
+   "Có số liệu đo lường chính xác về quy mô doanh thu và tốc độ tăng trưởng của dòng game MOBA mobile tại thị trường Việt Nam trong 24 tháng gần nhất.",
+   "Có dữ liệu chi tiết về mức độ cạnh tranh và thị phần của các tựa game MOBA đang phát hành tại Việt Nam."
+  ],
+  "confidence": "Trung bình",
+  "gaps": [
+   "Mức độ cạnh tranh và thị phần của các tựa game MOBA hiện tại"
+  ],
+  "conflicts": [],
+  "definition_notes": [
+   "Doanh thu Đông Nam Á: 5,1 tỷ USD (toàn ngành game, 2023; Niko Partners); 5,5 tỷ USD (toàn ngành game, 2024; Niko Partners); 7,1 tỷ USD (toàn ngành game, 2028; Niko Partners). Các số này khác kỳ đo hoặc phạm vi đo nên không so trực tiếp được.",
+   "Số người chơi Đông Nam Á: 332 triệu (toàn ngành game, 2028; Niko Partners); 285,9 triệu (toàn ngành game, 2024; Niko Partners). Các số này khác kỳ đo hoặc phạm vi đo nên không so trực tiếp được."
+  ],
+  "guard_log": [
+   "Bỏ lý do không gắn mã nhận định hợp lệ: \"Tiêu chí về mức độ cạnh tranh và thị phần của các tựa game MOBA hiện tại tại Việt Nam hiện hoàn toàn chưa có dữ liệu kiểm chứng.\""
+  ],
+  "trusted": [
+   {
+    "finding": "F1",
+    "label": "Lượt tải game mobile, Việt Nam, Q1 2025",
+    "values": "329 triệu",
+    "origins": [
+     "Sensor Tower"
+    ],
+    "confidence": "Trung bình",
+    "claim_ids": [
+     "C1"
+    ],
+    "why": [
+     "Chỉ có một nguồn gốc (Sensor Tower, hạng A)"
+    ],
+    "notes": []
+   }
+  ],
+  "uncertain": [],
+  "other": [
+   {
+    "finding": "F2",
+    "label": "Tăng trưởng game mobile, MOBA, Đông Nam Á, Q1 2025 vs Q4 2024",
+    "values": "+20,1%",
+    "origins": [
+     "Sensor Tower"
+    ],
+    "confidence": "Trung bình",
+    "claim_ids": [
+     "C2"
+    ],
+    "why": [
+     "Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam"
+    ]
+   },
+   {
+    "finding": "F3",
+    "label": "Tăng trưởng game mobile, MOBA, Indonesia, Q1 2025 vs Q4 2024",
+    "values": "+32,7%",
+    "origins": [
+     "Sensor Tower"
+    ],
+    "confidence": "Trung bình",
+    "claim_ids": [
+     "C3"
+    ],
+    "why": [
+     "Số của thị trường Indonesia, câu hỏi hỏi về Việt Nam"
+    ]
+   },
+   {
+    "finding": "F4",
+    "label": "Tăng trưởng game mobile, MOBA, Philippines, Q1 2025 vs Q4 2024",
+    "values": "+19,0%",
+    "origins": [
+     "Sensor Tower"
+    ],
+    "confidence": "Trung bình",
+    "claim_ids": [
+     "C4"
+    ],
+    "why": [
+     "Số của thị trường Philippines, câu hỏi hỏi về Việt Nam"
+    ]
+   },
+   {
+    "finding": "F5",
+    "label": "Doanh thu toàn ngành game, Đông Nam Á, 2023",
+    "values": "5,1 tỷ USD",
+    "origins": [
+     "Niko Partners"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C10"
+    ],
+    "why": [
+     "Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam"
+    ]
+   },
+   {
+    "finding": "F6",
+    "label": "Tăng trưởng toàn ngành game, Đông Nam Á, 2023 vs 2022",
+    "values": "+8,8%",
+    "origins": [
+     "Niko Partners"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C11"
+    ],
+    "why": [
+     "Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam"
+    ]
+   },
+   {
+    "finding": "F7",
+    "label": "Doanh thu toàn ngành game, Đông Nam Á, 2024",
+    "values": "5,5 tỷ USD",
+    "origins": [
+     "Niko Partners"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C12"
+    ],
+    "why": [
+     "Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam"
+    ]
+   },
+   {
+    "finding": "F8",
+    "label": "Doanh thu toàn ngành game, Đông Nam Á, 2028",
+    "values": "7,1 tỷ USD",
+    "origins": [
+     "Niko Partners"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C13"
+    ],
+    "why": [
+     "Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam"
+    ]
+   },
+   {
+    "finding": "F9",
+    "label": "Tăng trưởng toàn ngành game, Đông Nam Á, 2028",
+    "values": "+6,7%",
+    "origins": [
+     "Niko Partners"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C14"
+    ],
+    "why": [
+     "Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam"
+    ]
+   },
+   {
+    "finding": "F10",
+    "label": "Số người chơi toàn ngành game, Đông Nam Á, 2028",
+    "values": "332 triệu",
+    "origins": [
+     "Niko Partners"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C15"
+    ],
+    "why": [
+     "Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam"
+    ]
+   },
+   {
+    "finding": "F11",
+    "label": "Số người chơi toàn ngành game, Đông Nam Á, 2024",
+    "values": "285,9 triệu",
+    "origins": [
+     "Niko Partners"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C16"
+    ],
+    "why": [
+     "Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam"
+    ]
+   },
+   {
+    "finding": "F12",
+    "label": "Tăng trưởng toàn ngành game, Đông Nam Á, 2024 vs 2023",
+    "values": "+3,2%",
+    "origins": [
+     "Niko Partners"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C17",
+     "C18"
+    ],
+    "why": [
+     "Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam"
+    ]
+   },
+   {
+    "finding": "F13",
+    "label": "Chỉ số khác toàn ngành game, Đông Nam Á, 2024",
+    "values": "+30,0%",
+    "origins": [
+     "Niko Partners"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C19",
+     "C20",
+     "C21"
+    ],
+    "why": [
+     "Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "text": "Chưa có dữ liệu đã kiểm cho tiêu chí \"Mức độ cạnh tranh và thị phần của các tựa game MOBA hiện tại\"",
+    "query": "",
+    "ask": "Tìm số liệu cho tiêu chí: Mức độ cạnh tranh và thị phần của các tựa game MOBA hiện tại",
+    "url": "",
+    "findings": []
+   },
+   {
+    "text": "3 con số ở trang 11 của \"2025_Southeast_Asia_Mobile_Game_Insights\" chưa kiểm được vì câu trích chỉ có con số hoặc nhãn bị ghép với số (thường là biểu đồ): mở để đọc trực tiếp",
+    "query": "",
+    "ask": "",
+    "url": "https://investgame.net/wp-content/uploads/2025/06/2025_Southeast_Asia_Mobile_Game_Insights.pdf#page=11",
+    "findings": []
+   }
+  ]
+ },
+ "stats": {
+  "sources_read": 5,
+  "sources_failed": 3,
+  "claims": 23,
+  "verified": 16,
+  "rejected": 7,
+  "carried": 0,
+  "llm_calls": 9,
+  "seconds": 39.9,
+  "model": "gemini/gemini-3.5-flash-lite",
+  "search": "Tavily"
+ }
+}

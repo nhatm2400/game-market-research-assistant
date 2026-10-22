@@ -55,27 +55,41 @@ Luồng mới trên giao diện:
 
 | | Bản M2 | Bản M3 |
 |---|---|---|
-| Điều kiện cũ của M2 (regression) | 18/19 | 19/21 |
+| Điều kiện cũ của M2 (regression) | 18/19 | 20/21 |
 | Điều kiện mới của M3 | 3/14 | 23/24 |
 | Số case đạt | 5/6 | 7/8 |
 
-Mọi điều kiện chưa đạt đều ở TC6 (số nằm trong biểu đồ PDF), case đã được dự đoán là chưa đạt từ M2. Điều kiện cũ của M2 ít hơn một điều kiện ở bản M3 vì ở M2 TC6 "đạt nhầm" điều kiện `top_growth_genre` nhờ số +50% của Indonesia; bản M3 không giữ số sai đó nên báo đúng là không đạt. TC1 đến TC5 vẫn đạt mọi điều kiện cũ.
+Mọi điều kiện chưa đạt đều ở TC6 (số nằm trong biểu đồ PDF), case đã được dự đoán là chưa đạt từ M2. Điều kiện cũ `top_growth_genre` của TC6 vẫn "đạt nhầm" ở cả hai bản nhờ số +50% của Indonesia; điều kiện mới chỉ xét số của Đông Nam Á nên báo đúng là chưa đạt.
+
+**Độ ổn định qua 3 lần chạy đủ bộ kiểm thử** (`eval/do-on-dinh.md`, kết quả từng lần trong `eval/runs/`). Một lần đạt chưa đủ để kết luận vì câu trả lời của AI thay đổi giữa các lần, nên bộ kiểm thử được chạy lại 3 lần trên cùng bản code:
+
+| Case | Đạt mọi điều kiện | Kết luận qua 3 lần |
+|---|---|---|
+| TC1 tra cứu một con số | 3/3 | Đã có câu trả lời (3) |
+| TC2 ba nguồn mâu thuẫn | 3/3 | Có số liệu nhưng chưa chắc chắn (2), Đã có câu trả lời (1) |
+| TC3 khung 12 tháng | 3/3 | Cần thêm dữ liệu (2), Có số liệu nhưng chưa chắc chắn (1) |
+| TC4 quyết định phát hành | 3/3 | Cần thêm dữ liệu (3) |
+| TC5 không có dữ liệu | 3/3 | Cần thêm dữ liệu (3) |
+| TC6 số trong biểu đồ | 0/3 | Cần thêm dữ liệu (3) |
+| TC7 hỏi tiếp | 3/3 | Có số liệu nhưng chưa chắc chắn (3) |
+| TC8 số dự báo cũ | 3/3 | Có số liệu nhưng chưa chắc chắn (3) |
+
+Chỉ có hai điều kiện từng không đạt, cả hai đều của TC6 và không đạt ở cả 3 lần. Ba phần do code xếp cho cùng kết quả ở các điểm chính: TC2 cả 3 lần gom Niko 5,37 / Statista 5,89 / Newzoo 6,51 tỷ USD thành một mâu thuẫn lệch 21%; TC7 cả 3 lần tìm ra 0,46 và 0,817 tỷ USD lệch 78%; TC8 cả 3 lần xếp 5,47 tỷ USD vào chưa chắc chắn. Nhãn kết luận vẫn dao động ở TC2 và TC3.
 
 **Từng thay đổi và case chứng minh nó** (chi tiết trong `eval/ket-qua-kiem-thu.md`):
 
 | Thay đổi | Trước (M2) | Sau (M3) |
 |---|---|---|
-| Tách điều có thể tin khỏi điều chưa chắc | TC2: 5,37 và 5,89 tỷ USD, số dự báo 2029 nằm chung, một nhãn "tin cậy Thấp" | TC2: hai mâu thuẫn (Niko 5,37 với Statista 5,89 lệch 10%; Statista với Newzoo 6,51 lệch 11%) xếp "chưa chắc chắn"; chỉ tăng trưởng 5,2% ở "có thể tin"; bước tiếp: so sánh cách đo của các hãng |
-| Số dự báo cũ | Số "2025: 5,47 tỷ USD" (bài tháng 9/2025) không có cảnh báo | TC8: xếp "chưa chắc chắn" vì năm 2025 chưa kết thúc lúc đăng; kết luận AI viết "Đã có câu trả lời" bị code đổi thành "Có số liệu nhưng chưa chắc chắn"; bước tiếp: tìm số đã đo |
-| Nghiên cứu tiếp giữ bối cảnh | Không có | TC7: "Còn riêng Việt Nam thì sao?" thành câu hỏi đầy đủ về Việt Nam năm 2024, giữ 7/7 nhận định, đọc lại nguồn đã lưu, tìm ra 0,817 tỷ (Newzoo) và 0,46 tỷ (Statista) lệch 78%; 6 lượt gọi LLM |
-| Kết luận hợp loại câu hỏi | TC1: "Cần thêm dữ liệu" dù đã có 625 triệu USD | TC1: "Đã có câu trả lời", 625 triệu USD ở "có thể tin"; TC7, TC8: "Có số liệu nhưng chưa chắc chắn" vì không lý do nào dựa trên nhận định có thể tin |
-| Không đạt nhầm | TC6: "top_growth_genre" đạt nhờ số +50% của Indonesia | TC6: báo đúng là chưa đạt; có bước mở thẳng tới biểu đồ có 22 con số chưa kiểm được |
-| Lỗi M2 | TC3 rỗng tóm tắt; "0.817" đọc thành 817 | TC3 có tóm tắt; 0,817 đọc đúng (TC7) |
+| Tách điều có thể tin khỏi điều chưa chắc | TC2: 5,37 và 5,89 tỷ USD, số dự báo 2029 nằm chung, một nhãn "tin cậy Thấp" | TC2: ba nguồn gốc 5,37 / 5,89 / 6,51 tỷ USD gom thành một mâu thuẫn lệch 21%, xếp "chưa chắc chắn"; tăng trưởng 5,2% ở "có thể tin"; bước tiếp: so sánh cách đo của các hãng |
+| Số dự báo cũ | Số "2025: 5,47 tỷ USD" (bài tháng 9/2025) không có cảnh báo | TC8: xếp "chưa chắc chắn" vì năm 2025 chưa kết thúc lúc đăng; kết luận "Có số liệu nhưng chưa chắc chắn"; bước tiếp: tìm số đã đo |
+| Nghiên cứu tiếp giữ bối cảnh | Không có | TC7: "Còn riêng Việt Nam thì sao?" thành câu hỏi đầy đủ về Việt Nam năm 2024, giữ toàn bộ nhận định của TC2, đọc lại nguồn đã lưu, tìm ra 0,46 tỷ (Statista) và 0,817 tỷ (Newzoo) lệch 78% |
+| Kết luận hợp loại câu hỏi | TC1: "Cần thêm dữ liệu" dù đã có 625 triệu USD | TC1: "Đã có câu trả lời" cả 3 lần, 625 triệu USD ở "có thể tin" |
+| Không đạt nhầm | TC6: "top_growth_genre" đạt nhờ số +50% của Indonesia | TC6: điều kiện mới báo đúng là chưa đạt; có bước mở thẳng tới biểu đồ chưa đọc được |
+| Lỗi M2 | TC3 rỗng tóm tắt; "0.817" đọc thành 817 | TC3 có tóm tắt cả 3 lần; 0,817 đọc đúng (TC7) |
 
-**Test offline**: 55 bài, gồm 32 bài M2 giữ nguyên (regression), 22 bài mới cho M3 và 1 bài giao diện (Streamlit AppTest). Mỗi lỗi tìm ra trong lúc làm M3 đều có test riêng: đơn vị USD bị thiếu, ô bảng "S-5.89 N-6.51" bị đọc thành số âm, giá trị ghi hai con số, độ lệch "21%" do code tính bị bộ kiểm loại, nhãn bị ghép với số trong biểu đồ, kết luận chắc chắn khi không lý do nào dựa trên nhận định có thể tin.
+**Test offline**: 57 bài, gồm 32 bài M2 giữ nguyên (regression), 23 bài mới cho M3 và 2 bài giao diện (Streamlit AppTest: ba phần hiển thị, chữ từ nguồn được escape trước khi chèn vào trang). Mỗi lỗi tìm ra trong lúc làm M3 đều có test riêng: đơn vị USD bị thiếu, số trong bảng không ghi đơn vị, ô bảng "S-5.89 N-6.51" bị đọc thành số âm, giá trị ghi hai con số, độ lệch "21%" do code tính bị bộ kiểm loại, nhãn bị ghép với số trong biểu đồ, kết luận chắc chắn khi không lý do nào dựa trên nhận định có thể tin.
 
-**Lưu ý về độ ổn định**: câu tóm tắt và nhãn kết luận do AI viết nên có thể khác nhau giữa các lần chạy; ở một lần chạy với prompt cũ, TC1 ra "Cần thêm dữ liệu". Code chặn một chiều: không lý do nào dựa trên nhận định có thể tin thì không được ghi là "Đã có câu trả lời" hay "Nên ưu tiên". Ba phần có thể tin / chưa chắc chắn / tìm hiểu tiếp do code xếp nên cùng bằng chứng luôn ra cùng kết quả; nhưng AI trích ra nhận định nào từ nguồn thì vẫn khác nhau giữa các lần chạy (TC6 có lần giữ 3 nhận định, có lần 0). Kết quả trong bảng là lần chạy đủ 8 case cuối cùng trên bản code đang nộp.
-
+**Về độ ổn định**: câu tóm tắt và nhãn kết luận do AI viết nên có thể khác nhau giữa các lần chạy. Code chặn một chiều: không lý do nào dựa trên nhận định có thể tin thì không được ghi là "Đã có câu trả lời" hay "Nên ưu tiên". AI trích ra nhận định nào từ nguồn cũng khác nhau giữa các lần, nên số mục trong ba phần thay đổi (ví dụ TC4). Bảng kết quả chính (`eval/ket-qua-kiem-thu.md`) là lần chạy thứ 3.
 ## 6. Giới hạn còn lại
 
 - **"Có thể tin" không có nghĩa là đúng**: phân loại dựa trên quy tắc về nguồn, kỳ đo và thị trường. Số do chính hãng dữ liệu công bố vẫn là ước tính của hãng đó.
@@ -113,13 +127,13 @@ Em chủ động chưa làm bốn việc:
 
 **Câu 2. Thay đổi nào tạo ra khác biệt lớn nhất giữa sản phẩm Mission 2 và Mission 3? Bạn dùng bằng chứng nào để kết luận phiên bản mới tốt hơn?**
 
-Khác biệt lớn nhất là ba phần có thể tin / chưa chắc chắn / tìm hiểu tiếp do code xếp, cùng với khả năng hỏi tiếp từ chính các bước đó. Em áp cùng một bộ điều kiện chấm lên kết quả chạy thật của hai phiên bản. Bản M3 đạt 23/24 điều kiện mới, bản M2 chỉ đạt 3/14. TC1 đến TC5 vẫn đạt mọi điều kiện cũ của M2, nghĩa là không có regression; riêng TC6 mất điều kiện từng đạt nhầm ở M2 (nhờ số của Indonesia), và đó là sửa đúng. Bằng chứng cụ thể:
-- TC2: Niko 5,37 với Statista 5,89 tỷ USD (lệch 10%) và Statista với Newzoo 6,51 tỷ USD (lệch 11%) được nhận ra là mâu thuẫn, không con số quy mô nào bị đưa vào phần có thể tin.
+Khác biệt lớn nhất là ba phần có thể tin / chưa chắc chắn / tìm hiểu tiếp do code xếp, cùng với khả năng hỏi tiếp từ chính các bước đó. Em áp cùng một bộ điều kiện chấm lên kết quả chạy thật của hai phiên bản. Bản M3 đạt 23/24 điều kiện mới, bản M2 chỉ đạt 3/14; các điều kiện cũ của M2 vẫn đạt (18/19 ở M2, 20/21 ở M3), nghĩa là không có regression. Em chạy lại cả bộ kiểm thử 3 lần: 7/8 case đạt đủ cả 3 lần, chỉ TC6 (số trong biểu đồ) không đạt, đúng như dự đoán từ M2. Bằng chứng cụ thể:
+- TC2: cả 3 lần, ba nguồn gốc Niko 5,37 / Statista 5,89 / Newzoo 6,51 tỷ USD được gom thành một mâu thuẫn lệch 21% và không con số quy mô nào bị đưa vào phần có thể tin.
 - TC8: số 5,47 tỷ USD cho năm 2025 trong bài đăng tháng 9/2025 được nhận ra là số dự báo.
 - TC7: câu "Còn riêng Việt Nam thì sao?" giữ đủ bối cảnh và tìm ra hai con số lệch nhau 78%.
 - TC1: kết luận đổi từ "Cần thêm dữ liệu" sang "Đã có câu trả lời".
 
-Toàn bộ có 55 test offline và 8 tình huống chạy thật lưu trong repo.
+Toàn bộ có 57 test offline, 8 tình huống chạy thật và kết quả 3 lần chạy lưu trong repo.
 
 **Câu 3. Nếu sản phẩm này được đưa cho người dùng thật vào ngày mai, rủi ro hoặc giới hạn lớn nhất còn lại là gì? Bạn sẽ ưu tiên xử lý nó như thế nào?**
 
@@ -140,9 +154,9 @@ Quay im lặng, chèn chữ khi dựng. Trước khi quay: mở app, bỏ chọn
 | 0:15–0:45 | GitHub: `eval/results_m2/TC2.md` | Trước (M2): mọi số liệu dưới một mức tin cậy; cả 6 case đều ra "Cần thêm dữ liệu" |
 | 0:45–1:10 | `docs/mission-3.md` mục 3 | Quyết định: ba phần do code xếp, hỏi tiếp giữ bối cảnh, kiểm chứng một cú nhấp. Không cho AI chấm tin cậy, không hạ chuẩn kiểm câu trích |
 | 1:10–1:40 | App: chạy câu hỏi TC2 (tua nhanh lúc chờ) | Sau (M3): chạy cùng câu hỏi TC2 |
-| 1:40–2:20 | Bản tóm tắt, hai cột, mục ngoài phạm vi | Có thể tin / Chưa chắc chắn: Niko, Statista, Newzoo lệch nhau 10–11% nên chưa chắc chắn; chỉ tăng trưởng 5,2% ở có thể tin |
+| 1:40–2:20 | Bản tóm tắt, hai cột, mục ngoài phạm vi | Có thể tin / Chưa chắc chắn: Niko 5,37, Statista 5,89, Newzoo 6,51 tỷ USD lệch nhau 21% nên chưa chắc chắn; tăng trưởng 5,2% ở có thể tin |
 | 2:20–2:45 | Bấm một nhận định, "Mở nguồn tại câu trích" | Kiểm chứng một cú nhấp: trang mở đúng câu trích, câu được tô sáng |
 | 2:45–3:30 | Ô "Hỏi tiếp": gõ "Còn riêng Việt Nam thì sao?" | Hỏi tiếp giữ bối cảnh: hiểu thành Việt Nam năm 2024, giữ nhận định cũ, tìm ra 0,817 và 0,46 tỷ USD lệch 78% |
-| 3:30–4:05 | GitHub: `eval/so-sanh-m2-m3.md`, terminal chạy pytest | Bằng chứng: điều kiện M3 từ 3/14 lên 23/24, TC1–TC5 giữ mọi điều kiện cũ, 55 test qua |
+| 3:30–4:05 | GitHub: `eval/so-sanh-m2-m3.md`, terminal chạy pytest | Bằng chứng: điều kiện M3 từ 3/14 lên 23/24, điều kiện M2 không giảm, 7/8 case đạt cả 3 lần chạy, 57 test qua |
 | 4:05–4:35 | `docs/mission-3.md` mục 6 | Giới hạn: "có thể tin" không có nghĩa là đúng; số trong biểu đồ chưa tự đọc được; Change Request đang chờ |
 | 4:35–4:45 | Khung kết | Link app và repo |

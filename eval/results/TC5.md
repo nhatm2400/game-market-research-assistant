@@ -28,4 +28,4 @@ Khung thời gian dữ liệu: 09/2026 đến 09/2026. Ngày chạy: 2026-10-22.
 
 - Tải lên báo cáo đã mua hoặc thêm link nguồn gốc của hãng dữ liệu
 
-_Đọc 5 nguồn, trích 0 nhận định, giữ 0, loại 0. 6 lượt gọi gemini/gemini-3.5-flash-lite, 32.4 giây._
+_Đọc 7 nguồn, trích 0 nhận định, giữ 0, loại 0. 11 lượt gọi gemini/gemini-3.5-flash-lite, 36.1 giây._

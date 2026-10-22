@@ -1,0 +1,1379 @@
+{
+ "id": "097f67866d",
+ "created_at": "2026-10-22T18:18:09",
+ "question": "Có nên phát hành game MOBA trên mobile tại Việt Nam trong 12 tháng tới không?",
+ "parent_id": null,
+ "thread": [
+  {
+   "id": "097f67866d",
+   "question": "Có nên phát hành game MOBA trên mobile tại Việt Nam trong 12 tháng tới không?"
+  }
+ ],
+ "today": "2026-10-22",
+ "plan": {
+  "criteria": [
+   "Quy mô doanh thu thị trường MOBA mobile tại Việt Nam",
+   "Tốc độ tăng trưởng thị trường MOBA mobile",
+   "Mức độ cạnh tranh và thị phần của các game MOBA hàng đầu",
+   "Chi phí và hiệu quả thu hút người dùng trong thể loại MOBA"
+  ],
+  "queries": [
+   "Vietnam mobile MOBA market revenue Sensor Tower data.ai",
+   "Niko Partners Vietnam mobile gaming market MOBA genre",
+   "AppMagic mobile MOBA games revenue downloads Vietnam 2025 2026",
+   "Vietnam mobile gaming market trends Newzoo",
+   "Thị trường game MOBA di động Việt Nam doanh thu xu hướng"
+  ],
+  "market": "Việt Nam",
+  "genre": "MOBA"
+ },
+ "window": {
+  "start": "2024-10-01",
+  "end": "2026-10-22",
+  "kind": "future",
+  "label": "câu hỏi về tương lai, dùng dữ liệu 24 tháng gần nhất"
+ },
+ "question_market": "Việt Nam",
+ "search_log": [
+  {
+   "query": "Vietnam mobile MOBA market revenue Sensor Tower data.ai",
+   "results": [
+    "https://gamedevreports.substack.com/p/sensor-tower-southeast-asia-mobile",
+    "https://leadiq.com/c/dataai/5a1d966a2300005400850d0e",
+    "https://leadiq.com/c/app-annie/5a1d966a2300005400850d0e",
+    "https://sensortower.com/blog/state-of-mobile-2026",
+    "https://sensortower.com"
+   ]
+  },
+  {
+   "query": "Niko Partners Vietnam mobile gaming market MOBA genre",
+   "results": [
+    "https://nikopartners.com/niko-partners-esports-charts-top-esports-titles-genres-q1-2025",
+    "https://investgame.net/wp-content/uploads/2023/09/Five-Key-Mobile-Game-Genres-in-Asia-and-MENA.pdf",
+    "https://finance.yahoo.com/news/gaming-growth-unlocked-coda-niko-073000524.html",
+    "https://nikopartners.com/sea-of-opportunities-exploring-the-rise-of-southeast-asia-video-games-market",
+    "https://finance.yahoo.com/news/vietnam-gaming-market-report-2023-153800498.html"
+   ]
+  },
+  {
+   "query": "AppMagic mobile MOBA games revenue downloads Vietnam 2025 2026",
+   "results": [
+    "https://www.linkedin.com/posts/michalkorek_%F0%9D%97%A0%F0%9D%97%BC%F0%9D%97%AF%F0%9D%97%B6%F0%9D%97%B9%F0%9D%97%B2-%F0%9D%97%9A%F0%9D%97%AE%F0%9D%97%BA%F0%9D%97%B2%F0%9D%98%80-%F0%9D%97%9C%F0%9D%97%94%F0%9D%97%A3-%F0%9D%97%A5%F0%9D%97%B2%F0%9D%98%83%F0%9D%97%B2%F0%9D%97%BB%F0%9D%98%82%F0%9D%97%B2-activity-7412533748304384000-hzRw",
+    "https://gamedevreports.substack.com/p/appmagic-top-mobile-games-by-revenue-11d",
+    "https://www.linkedin.com/posts/aslashcev_mobile-market-landscape-2026-ive-gathered-activity-7426587352703139840-m7U1",
+    "https://www.scribd.com/document/996925600/AppMagic-Mobile-MarketLandscape-2026",
+    "https://www.singular.net/blog/top-mobile-games"
+   ]
+  },
+  {
+   "query": "Vietnam mobile gaming market trends Newzoo",
+   "results": [
+    "https://appsamurai.com/blog/the-rise-of-mobile-gaming-in-vietnam",
+    "https://www.kenresearch.com/vietnam-mobile-gaming-and-esports-market",
+    "https://tracxn.com/d/explore/mobile-gaming-startups-in-ho-chi-minh-city-vietnam/__D5FxGYuwsrQYiIEhJ4zjGM7gsHtgrOPaSylvncAHJGI",
+    "https://finance.yahoo.com/news/vietnam-gaming-market-report-2023-153800498.html",
+    "https://gamedevreports.substack.com/p/newzoo-the-gaming-market-in-2026"
+   ]
+  },
+  {
+   "query": "Thị trường game MOBA di động Việt Nam doanh thu xu hướng",
+   "results": [
+    "https://blog.tomorrowmarketers.org/buc-tranh-toan-canh-thi-truong-game-mobile-viet-nam",
+    "https://stockbiz.vn/tin-tuc/nganh-cong-nghiep-game-viet-nam-huong-toi-doanh-thu-1-ty-usd/25286731",
+    "https://advertisingvietnam.com/article/bao-cao-thi-truong-game-mobile-2025-tu-socialpeta-va-newsbreak-hon-9-trieu-nha-quang-cao-hoat-dong-moi-thang-cung-xu-huong-sang-tao-doi-moi-lien-tuc-hang-tuan-p26913",
+    "https://laodong.vn/cong-nghe/nganh-game-viet-nam-vuon-tam-khang-dinh-vi-the-lon-tren-the-gioi-1690320.ldo",
+    "https://www.scribd.com/document/537497092/20181207150113"
+   ]
+  }
+ ],
+ "skipped": [
+  {
+   "url": "https://www.kenresearch.com/vietnam-mobile-gaming-and-esports-market",
+   "reason": "Hạng D (trang SEO hoặc bán báo cáo): không dùng làm bằng chứng"
+  },
+  {
+   "url": "https://leadiq.com/c/dataai/5a1d966a2300005400850d0e",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://leadiq.com/c/app-annie/5a1d966a2300005400850d0e",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://finance.yahoo.com/news/gaming-growth-unlocked-coda-niko-073000524.html",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://finance.yahoo.com/news/vietnam-gaming-market-report-2023-153800498.html",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://www.linkedin.com/posts/michalkorek_%F0%9D%97%A0%F0%9D%97%BC%F0%9D%97%AF%F0%9D%97%B6%F0%9D%97%B9%F0%9D%97%B2-%F0%9D%97%9A%F0%9D%97%AE%F0%9D%97%BA%F0%9D%97%B2%F0%9D%98%80-%F0%9D%97%9C%F0%9D%97%94%F0%9D%97%A3-%F0%9D%97%A5%F0%9D%97%B2%F0%9D%98%83%F0%9D%97%B2%F0%9D%97%BB%F0%9D%98%82%F0%9D%97%B2-activity-7412533748304384000-hzRw",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://www.linkedin.com/posts/aslashcev_mobile-market-landscape-2026-ive-gathered-activity-7426587352703139840-m7U1",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://www.scribd.com/document/996925600/AppMagic-Mobile-MarketLandscape-2026",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://www.singular.net/blog/top-mobile-games",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://appsamurai.com/blog/the-rise-of-mobile-gaming-in-vietnam",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://tracxn.com/d/explore/mobile-gaming-startups-in-ho-chi-minh-city-vietnam/__D5FxGYuwsrQYiIEhJ4zjGM7gsHtgrOPaSylvncAHJGI",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://blog.tomorrowmarketers.org/buc-tranh-toan-canh-thi-truong-game-mobile-viet-nam",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://stockbiz.vn/tin-tuc/nganh-cong-nghiep-game-viet-nam-huong-toi-doanh-thu-1-ty-usd/25286731",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://advertisingvietnam.com/article/bao-cao-thi-truong-game-mobile-2025-tu-socialpeta-va-newsbreak-hon-9-trieu-nha-quang-cao-hoat-dong-moi-thang-cung-xu-huong-sang-tao-doi-moi-lien-tuc-hang-tuan-p26913",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://laodong.vn/cong-nghe/nganh-game-viet-nam-vuon-tam-khang-dinh-vi-the-lon-tren-the-gioi-1690320.ldo",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://www.scribd.com/document/537497092/20181207150113",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  }
+ ],
+ "sources": [
+  {
+   "id": "S1edec7f5",
+   "url": "https://sensortower.com/blog/state-of-mobile-2026",
+   "title": "2026 State of Mobile",
+   "domain": "sensortower.com",
+   "published": "2026-01-21",
+   "kind": "html",
+   "text": "<6581 ký tự>",
+   "error": null,
+   "tier": "A",
+   "base_tier": "A",
+   "tier_notes": [
+    "sensortower.com nằm trong danh sách hạng A",
+    "Đăng cách đây 9 tháng"
+   ],
+   "publisher": "Sensor Tower"
+  },
+  {
+   "id": "S981cb8cd",
+   "url": "https://sensortower.com",
+   "title": "Digital Intelligence & App Data Analysis by Sensor Tower",
+   "domain": "sensortower.com",
+   "published": "2026-01-01",
+   "kind": "html",
+   "text": "<3661 ký tự>",
+   "error": null,
+   "tier": "A",
+   "base_tier": "A",
+   "tier_notes": [
+    "sensortower.com nằm trong danh sách hạng A",
+    "Đăng cách đây 9 tháng"
+   ],
+   "publisher": "Sensor Tower"
+  },
+  {
+   "id": "Scfd5ff9c",
+   "url": "https://nikopartners.com/niko-partners-esports-charts-top-esports-titles-genres-q1-2025",
+   "title": "",
+   "domain": "nikopartners.com",
+   "published": null,
+   "kind": "html",
+   "text": "<0 ký tự>",
+   "error": "Không tải được: ConnectionError ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+   "tier": "B",
+   "base_tier": "A",
+   "tier_notes": [
+    "nikopartners.com nằm trong danh sách hạng A",
+    "Không rõ ngày đăng: hạ một hạng"
+   ],
+   "publisher": "Niko Partners"
+  },
+  {
+   "id": "S41ff8a09",
+   "url": "https://nikopartners.com/sea-of-opportunities-exploring-the-rise-of-southeast-asia-video-games-market",
+   "title": "",
+   "domain": "nikopartners.com",
+   "published": null,
+   "kind": "html",
+   "text": "<0 ký tự>",
+   "error": "Không tải được: ConnectionError ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+   "tier": "B",
+   "base_tier": "A",
+   "tier_notes": [
+    "nikopartners.com nằm trong danh sách hạng A",
+    "Không rõ ngày đăng: hạ một hạng"
+   ],
+   "publisher": "Niko Partners"
+  },
+  {
+   "id": "S80418131",
+   "url": "https://gamedevreports.substack.com/p/sensor-tower-southeast-asia-mobile",
+   "title": "Sensor Tower: Southeast Asia Mobile Game Market in 2025",
+   "domain": "gamedevreports.substack.com",
+   "published": "2025-06-13",
+   "kind": "html",
+   "text": "<5560 ký tự>",
+   "error": null,
+   "tier": "B",
+   "base_tier": "B",
+   "tier_notes": [
+    "gamedevreports.substack.com nằm trong danh sách hạng B",
+    "Đăng cách đây 16 tháng (12 đến 24 tháng)"
+   ],
+   "publisher": "gamedevreports.substack.com"
+  },
+  {
+   "id": "S601d2899",
+   "url": "https://investgame.net/wp-content/uploads/2023/09/Five-Key-Mobile-Game-Genres-in-Asia-and-MENA.pdf",
+   "title": "Game Genre",
+   "domain": "investgame.net",
+   "published": "2023-06-29",
+   "kind": "pdf",
+   "text": "<19349 ký tự>",
+   "error": null,
+   "tier": "C",
+   "base_tier": "B",
+   "tier_notes": [
+    "investgame.net nằm trong danh sách hạng B",
+    "Đăng cách đây 40 tháng (quá 24 tháng): hạ một hạng"
+   ],
+   "publisher": "investgame.net"
+  },
+  {
+   "id": "S588feeba",
+   "url": "https://gamedevreports.substack.com/p/appmagic-top-mobile-games-by-revenue-11d",
+   "title": "AppMagic: Top Mobile Games by Revenue and Downloads in January 2026",
+   "domain": "gamedevreports.substack.com",
+   "published": "2026-02-04",
+   "kind": "html",
+   "text": "<1475 ký tự>",
+   "error": null,
+   "tier": "B",
+   "base_tier": "B",
+   "tier_notes": [
+    "gamedevreports.substack.com nằm trong danh sách hạng B",
+    "Đăng cách đây 8 tháng"
+   ],
+   "publisher": "gamedevreports.substack.com"
+  },
+  {
+   "id": "Sb7d891bf",
+   "url": "https://gamedevreports.substack.com/p/newzoo-the-gaming-market-in-2026",
+   "title": "Newzoo: The Gaming Market in 2026 - powered by Mellow",
+   "domain": "gamedevreports.substack.com",
+   "published": "2026-08-25",
+   "kind": "html",
+   "text": "<3920 ký tự>",
+   "error": null,
+   "tier": "B",
+   "base_tier": "B",
+   "tier_notes": [
+    "gamedevreports.substack.com nằm trong danh sách hạng B",
+    "Đăng cách đây 2 tháng"
+   ],
+   "publisher": "gamedevreports.substack.com"
+  }
+ ],
+ "claims": [
+  {
+   "id": "C1",
+   "source_id": "S80418131",
+   "claim_text": "Doanh thu thị trường MOBA mobile tại Indonesia đạt mức tăng trưởng 32.7% theo quý trong Q1 2025.",
+   "metric": "growth",
+   "value_text": "+32.7% QoQ",
+   "market": "Indonesia",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile",
+   "genre": "MOBA",
+   "genre_level": "genre",
+   "quote": "- For revenue, MOBA (+32.7% QoQ), 4X strategy (+21.1% QoQ), and sports games (-22.6% QoQ) lead. Battle Royale shows significant growth (+50% QoQ).",
+   "section_title": "Indonesia",
+   "attributed_to": "Sensor Tower",
+   "criterion": 1,
+   "value": 32.7,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": " the top 10 games are either developed by Chinese companies or owned by them. 9 out of 10 in the top 10 are Asian companies, with the exception being Coin Master from Moon Active.\n❗️Western companies face a cultural barrier when entering the Southeast Asian market. For Asian companies, business in the region is more familiar and accessible. Business relationships in the region are also heavily based on personal connections.\nMajor Southeast Asian Markets\nIndonesia\n- Top genres by downloads in Indonesia: simulators (+4.9% QoQ), platformers/runners (+38.2% QoQ), and arcade projects (+18% QoQ).\n- For revenue, MOBA (+32.7% QoQ), 4X strategy (+21.1% QoQ), and sports games (-22.6% QoQ) lead. Battle Royale shows significant growth (+50% QoQ).\n- New projects in Indonesia in Q1'25: Magic Chess: Go Go entered the download rankings, and Ragnarok M: Classic led in revenue.\nThailand\n- Top genres by downloads: simulators (-14.1% QoQ), platform",
+   "origin": "Sensor Tower",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Sensor Tower, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc",
+    "Số của thị trường Indonesia, câu hỏi hỏi về Việt Nam"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C2",
+   "source_id": "S80418131",
+   "claim_text": "Doanh thu thể loại MOBA tại thị trường Đông Nam Á tăng 20.1% theo quý trong Q1 2025.",
+   "metric": "growth",
+   "value_text": "+20.1% QoQ",
+   "market": "Đông Nam Á",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile",
+   "genre": "MOBA",
+   "genre_level": "genre",
+   "quote": "- For revenue, 4X strategy games (+17.6% QoQ), MOBA (+20.1% QoQ), and MMORPG (-17.1% QoQ) are on top.",
+   "section_title": "General Market Overview",
+   "attributed_to": "Sensor Tower",
+   "criterion": 1,
+   "value": 20.1,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "es (+9% QoQ). The Philippines is second with 366 million installs (-1% QoQ), and Vietnam is third with 329 million installs (+2% QoQ).\n- In terms of revenue, Thailand leads with $162 million (-6% QoQ). Indonesia is second with $118 million (+1% QoQ), and Malaysia is third with $103 million (+7% QoQ).\n❗️Note that this is only about IAP purchases. D2C payments, which are quite common in Southeast Asia, aren’t reflected in these stats.\n- Looking at the most popular genres in Southeast Asia, platformers/runners (+16% QoQ), simulators (+0.1% QoQ), and arcade games (+12.2% QoQ) lead in downloads.\n- For revenue, 4X strategy games (+17.6% QoQ), MOBA (+20.1% QoQ), and MMORPG (-17.1% QoQ) are on top.\nConsider subscribing to the GameDev Reports Premium tier to support the newsletter. Get access to the list of curated articles & archive of Gaming Reports that I’ve been collecting since 2020.\n- Top",
+   "origin": "Sensor Tower",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Sensor Tower, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc",
+    "Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C3",
+   "source_id": "S80418131",
+   "claim_text": "Doanh thu thể loại MOBA tại Philippines tăng trưởng 19% theo quý trong Q1 2025.",
+   "metric": "growth",
+   "value_text": "+19% QoQ",
+   "market": "Philippines",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile",
+   "genre": "MOBA",
+   "genre_level": "genre",
+   "quote": "- For revenue, MMORPG (-19.7% QoQ), 4X strategies (+18.7% QoQ), and MOBA games (+19% QoQ) lead.",
+   "section_title": "Philippines",
+   "attributed_to": "Sensor Tower",
+   "criterion": 1,
+   "value": 19.0,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "s (+3.2% QoQ), simulators (-6.7% QoQ), and other arcade games (+9.1% QoQ) lead in downloads. For revenue, 4X strategies (+51.5% QoQ), MMORPG (+8.2% QoQ), and Squad RPG (-1.8% QoQ) are on top.\n- Vietnam is a unique market for downloads. Roblox leads, and Trò Vẽ Vui Tuổi Thơ—a local casual game—leads download growth. Last War: Survival is also rapidly growing in downloads.\n- For revenue, Last War: Survival and local RPG Big Bang Thời Không are leaders.\nPhilippines\n- Top genres by downloads remain platformers/runners (+6.8% QoQ), simulators (+0.7% QoQ), and various arcade projects (+9.6% QoQ).\n- For revenue, MMORPG (-19.7% QoQ), 4X strategies (+18.7% QoQ), and MOBA games (+19% QoQ) lead.\n- The Philippine market is more dynamic than others. Five new projects entered the download rankings (Magic Chess: Go Go, Hapunan Horror Game, I Am Security, Good Coffee, Great Coffee, Color Game-co",
+   "origin": "Sensor Tower",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Sensor Tower, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc",
+    "Số của thị trường Philippines, câu hỏi hỏi về Việt Nam"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C4",
+   "source_id": "S80418131",
+   "claim_text": "Game Mobile Legends: Bang Bang duy trì vị trí trong top 5 về cả doanh thu và lượt tải xuống tại Đông Nam Á kể từ năm 2017.",
+   "metric": "rank",
+   "value_text": "top 5",
+   "market": "Đông Nam Á",
+   "period": "2017-2025",
+   "scope": "mobile",
+   "genre": "MOBA",
+   "genre_level": "genre",
+   "quote": "- The team adds localized content, characters inspired by Southeast Asian cultures, hosts tournaments, and actively engages with the community. This has kept the game in the top 5 for both revenue and downloads since 2017.",
+   "section_title": "Local Operation of Mobile Legends: Bang Bang",
+   "attributed_to": "Sensor Tower",
+   "criterion": 2,
+   "value": 5.0,
+   "unit": "",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "projects (+9.6% QoQ).\n- For revenue, MMORPG (-19.7% QoQ), 4X strategies (+18.7% QoQ), and MOBA games (+19% QoQ) lead.\n- The Philippine market is more dynamic than others. Five new projects entered the download rankings (Magic Chess: Go Go, Hapunan Horror Game, I Am Security, Good Coffee, Great Coffee, Color Game-color game), and two Ragnarok series games (Ragnarok M: Classic, Ragnarok Idle Adventure Plus) led in revenue.\nLocal Operation of Mobile Legends: Bang Bang\n- Sensor Tower highlights Mobile Legends: Bang Bang from China’s Moontoon Games as a successful example of regional operations.\n- The team adds localized content, characters inspired by Southeast Asian cultures, hosts tournaments, and actively engages with the community. This has kept the game in the top 5 for both revenue and downloads since 2017.\n- Mobile Legends: Bang Bang’s developers work not only with the audience but also with influencers. Their strong local presence - with offices in Indonesia, Malaysia, Singapore, and the Philippines ",
+   "origin": "Sensor Tower",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Sensor Tower, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc",
+    "Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam",
+    "Kỳ đo 2017-2025 chưa kết thúc khi nguồn đăng (06/2025): là số ước tính hoặc dự báo, chưa chắc là số đã đo"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C5",
+   "source_id": "S601d2899",
+   "claim_text": "MOBA có doanh thu trên mỗi lượt tải cao thứ hai trong số các thể loại được đề cập.",
+   "metric": "revenue",
+   "value_text": "2nd highest",
+   "market": "Asia and MENA",
+   "period": "2022",
+   "scope": "mobile",
+   "genre": "MOBA",
+   "genre_level": "genre",
+   "quote": "MOBA Has the 2nd Highest Revenue per Download",
+   "section_title": "MOBA Has the 2nd Highest Revenue per Download",
+   "attributed_to": "Niko Partners",
+   "criterion": 0,
+   "value": 2.0,
+   "unit": "",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn (trang 10)",
+   "match_score": 100.0,
+   "page": 10,
+   "context": "in esports at a professional or amateur level.\n•\nStrategy has the second highest appeal score of the genres covered in this bulletin. Players\nare the least likely to be dissatisfied with the game they’re playing and the most likely to try\nnew games in the same genre.\n•\nThe genre performed strongly in Asia and MENA during 2022, while seeing declines in the\nWest. Innovation within the strategy genre, which involves combining traditional gameplay\nwith new sub genres, has helped the genre remain engaging for players.\n\n[[Trang 10]]\n© Niko Partners 2023 | Five Mobile Game Genres in Asia and MENA\n10\nMOBA Has the 2nd Highest Revenue per Download\nMonetization Score:\n5.4\nEngagement Score:\n6.4\nEsports Score:               6.0\nAppeal Score:\n\n5.6\nGenre Score:\n5.8\nAn overview of Massive Battle Online Arena (MOBA) games on mobile:\n•\nThe MOBA genre ",
+   "origin": "Niko Partners",
+   "tier": "C",
+   "flags": [
+    "Số liệu của Niko Partners, dẫn lại qua investgame.net; chưa đối chiếu bản gốc",
+    "Kỳ đo \"2022\" nằm ngoài khung thời gian của câu hỏi (câu hỏi về tương lai, dùng dữ liệu 24 tháng gần nhất)",
+    "Số của thị trường Asia and MENA, câu hỏi hỏi về Việt Nam"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C6",
+   "source_id": "S601d2899",
+   "claim_text": "5 thể loại game di động trọng tâm chiếm gần 80% chi tiêu cho game di động tại khu vực Châu Á & MENA trong năm 2022.",
+   "metric": "share",
+   "value_text": "nearly 80%",
+   "market": "Asia & MENA",
+   "period": "2022",
+   "scope": "mobile",
+   "genre": "all",
+   "genre_level": "all",
+   "quote": "The focus of this bulletin is on 5 key mobile game genres: RPG, Strategy, MOBA, Puzzle and Battle Royale, which cumulatively accounted for nearly 80% of mobile game spend in the Asia & MENA region during 2022.",
+   "section_title": "Ranking the Mobile Game Genres",
+   "attributed_to": "Niko Partners",
+   "criterion": 0,
+   "value": 80.0,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn (trang 5)",
+   "match_score": 100.0,
+   "page": 5,
+   "context": "evel revenue, downloads and\nrevenue per download across the Asia and MENA region.\n•\nThe company also provided insights on the top games in these genres\nwhich were matched with our survey results to build a robust games\ntaxonomy for this bulletin.\n•\nAppMagic’s data was combined with Niko Partners survey data to\nintroduce additional metrics that were used to calculate final category\nscores and build out the player profiles for each genre.\n© Niko Partners 2023 | Five Mobile Game Genres in Asia and MENA\n4\nMethodology\n\n[[Trang 5]]\n© Niko Partners 2023 | Five Mobile Game Genres in Asia and MENA\n5\n•\nThe focus of this bulletin is on 5 key mobile game genres: RPG, Strategy,\nMOBA, Puzzle and Battle Royale, which cumulatively accounted for nearly\n80% of mobile game spend in the Asia & MENA region during 2022.\n•\nNiko Partners analyzed its survey data to create player profiles for the key\nmobile game genres that provide a relative performance comparison.\n•\nNiko Partners and AppMagic collaborated to enhance",
+   "origin": "Niko Partners",
+   "tier": "C",
+   "flags": [
+    "Số liệu của Niko Partners, dẫn lại qua investgame.net; chưa đối chiếu bản gốc",
+    "Kỳ đo \"2022\" nằm ngoài khung thời gian của câu hỏi (câu hỏi về tương lai, dùng dữ liệu 24 tháng gần nhất)",
+    "Số của thị trường Asia & MENA, câu hỏi hỏi về Việt Nam"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C7",
+   "source_id": "S601d2899",
+   "claim_text": "Người chơi MOBA đứng đầu về số giờ chơi mỗi tuần trong số các thể loại được đề cập.",
+   "metric": "other",
+   "value_text": "6 hours",
+   "market": "Asia and MENA",
+   "period": "2022",
+   "scope": "mobile",
+   "genre": "MOBA",
+   "genre_level": "genre",
+   "quote": "Gamers play strategy games for an average of 5.1 hours a week compared to 6 hours for MOBA gamers, which ranks #1.",
+   "section_title": "Strategy Gamers Are Willing to Engage with Esports",
+   "attributed_to": "Niko Partners",
+   "criterion": -1,
+   "value": 6.0,
+   "unit": "",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn (trang 9)",
+   "match_score": 100.0,
+   "page": 9,
+   "context": "e:\n6.0\nEngagement Score:\n5.2\nEsports Score:               7.5\nAppeal Score:\n\n6.0\nGenre Score:\n6.1\nAn overview of Strategy games on mobile:\n•\nStrategy is the second largest genre by revenue covered in this bulletin and the third\nlargest for downloads. However, it ranks second last for revenue per download.\n•\nStrategy has an above average monetization score due to its revenue ranking and\npercentage of players that make in game purchases.\n•\nThe genre has the lowest engagement score of the genres covered in this bulletin,\nprimarily due to low longevity of titles and average hours played per week. Gamers play\nstrategy games for an average of 5.1 hours a week compared to 6 hours for MOBA gamers,\nwhich ranks #1.\n•\nInterestingly, the strategy genre has a high esports score among players. 65% of strategy\ngames are a fan of esports and players of this genre are more likely to attend esports\nevents in person an",
+   "origin": "Niko Partners",
+   "tier": "C",
+   "flags": [
+    "Số liệu của Niko Partners, dẫn lại qua investgame.net; chưa đối chiếu bản gốc",
+    "Kỳ đo \"2022\" nằm ngoài khung thời gian của câu hỏi (câu hỏi về tương lai, dùng dữ liệu 24 tháng gần nhất)",
+    "Số của thị trường Asia and MENA, câu hỏi hỏi về Việt Nam"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C8",
+   "source_id": "S601d2899",
+   "claim_text": "MOBA đứng số 1 về số giờ chơi trung bình mỗi tuần với 6 giờ tại khu vực Châu Á và MENA trong năm 2023.",
+   "metric": "rank",
+   "value_text": "#1",
+   "market": "Asia and MENA",
+   "period": "2023",
+   "scope": "mobile",
+   "genre": "MOBA",
+   "genre_level": "genre",
+   "quote": "• MOBA has a high engagement score as it ranks #1 for average hours played per week (6 hours) and player lifespan.",
+   "section_title": "",
+   "attributed_to": "Niko Partners",
+   "criterion": 2,
+   "value": 1.0,
+   "unit": "",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn (trang 10)",
+   "match_score": 100.0,
+   "page": 10,
+   "context": "er Download\nMonetization Score:\n5.4\nEngagement Score:\n6.4\nEsports Score:               6.0\nAppeal Score:\n\n5.6\nGenre Score:\n5.8\nAn overview of Massive Battle Online Arena (MOBA) games on mobile:\n•\nThe MOBA genre continues to excel in Asia and MENA, especially when compared to\nWestern markets, and has the second highest revenue per download of the genres\ncovered in this bulletin.\n•\nWhile the high revenue per download and high total spend contributes to boosting its\nmonetization score, players of this genre tend to earn less income than players of other\ngenres and spend less on gaming overall.\n•\nMOBA has a high engagement score as it ranks #1 for average hours played per week (6\nhours) and player lifespan.\n•\nDespite its dominance across mobile esports in terms of number of tournaments, total\nprize pools, and medium to high scores across esports metrics, MOBA gamers are the least\nlikely to attend in pe",
+   "origin": "Niko Partners",
+   "tier": "C",
+   "flags": [
+    "Số liệu của Niko Partners, dẫn lại qua investgame.net; chưa đối chiếu bản gốc",
+    "Kỳ đo \"2023\" nằm ngoài khung thời gian của câu hỏi (câu hỏi về tương lai, dùng dữ liệu 24 tháng gần nhất)",
+    "Số của thị trường Asia and MENA, câu hỏi hỏi về Việt Nam",
+    "Kỳ đo 2023 chưa kết thúc khi nguồn đăng (06/2023): là số ước tính hoặc dự báo, chưa chắc là số đã đo"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C9",
+   "source_id": "S601d2899",
+   "claim_text": "Số giờ chơi trung bình mỗi tuần của thể loại MOBA là 6 giờ tại khu vực Châu Á và MENA trong năm 2023.",
+   "metric": "other",
+   "value_text": "6",
+   "market": "Asia and MENA",
+   "period": "2023",
+   "scope": "mobile",
+   "genre": "MOBA",
+   "genre_level": "genre",
+   "quote": "• MOBA has a high engagement score as it ranks #1 for average hours played per week (6 hours) and player lifespan.",
+   "section_title": "",
+   "attributed_to": "Niko Partners",
+   "criterion": 2,
+   "value": 6.0,
+   "unit": "",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn (trang 10)",
+   "match_score": 100.0,
+   "page": 10,
+   "context": "er Download\nMonetization Score:\n5.4\nEngagement Score:\n6.4\nEsports Score:               6.0\nAppeal Score:\n\n5.6\nGenre Score:\n5.8\nAn overview of Massive Battle Online Arena (MOBA) games on mobile:\n•\nThe MOBA genre continues to excel in Asia and MENA, especially when compared to\nWestern markets, and has the second highest revenue per download of the genres\ncovered in this bulletin.\n•\nWhile the high revenue per download and high total spend contributes to boosting its\nmonetization score, players of this genre tend to earn less income than players of other\ngenres and spend less on gaming overall.\n•\nMOBA has a high engagement score as it ranks #1 for average hours played per week (6\nhours) and player lifespan.\n•\nDespite its dominance across mobile esports in terms of number of tournaments, total\nprize pools, and medium to high scores across esports metrics, MOBA gamers are the least\nlikely to attend in pe",
+   "origin": "Niko Partners",
+   "tier": "C",
+   "flags": [
+    "Số liệu của Niko Partners, dẫn lại qua investgame.net; chưa đối chiếu bản gốc",
+    "Kỳ đo \"2023\" nằm ngoài khung thời gian của câu hỏi (câu hỏi về tương lai, dùng dữ liệu 24 tháng gần nhất)",
+    "Số của thị trường Asia and MENA, câu hỏi hỏi về Việt Nam",
+    "Kỳ đo 2023 chưa kết thúc khi nguồn đăng (06/2023): là số ước tính hoặc dự báo, chưa chắc là số đã đo"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C10",
+   "source_id": "S601d2899",
+   "claim_text": "Điểm số kiếm tiền (monetization score) của Battle Royale là 6.0 trong năm 2023.",
+   "metric": "other",
+   "value_text": "6.0",
+   "market": "Asia and MENA",
+   "period": "2023",
+   "scope": "mobile",
+   "genre": "Battle Royale",
+   "genre_level": "genre",
+   "quote": "• At 6.0, Battle Royale has the average monetization score of the genres covered in this bulletin.",
+   "section_title": "Battle Royale Ranks #1 for Mobile Esports",
+   "attributed_to": "Niko Partners",
+   "criterion": 3,
+   "value": 6.0,
+   "unit": "",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn (trang 12)",
+   "match_score": 100.0,
+   "page": 12,
+   "context": " age of players.\n•\nInnovation within the puzzle genre has seen sub-genres such as merge perform well in\n2022. Puzzle gamers in Asia and MENA are more likely to value localization than players of\nother genres.\n\n[[Trang 12]]\n© Niko Partners 2023 | Five Mobile Game Genres in Asia and MENA\n12\nBattle Royale Ranks #1 for Mobile Esports\nMonetization Score:\n6.0\nEngagement Score:\n5.6\nEsports Score:\n\n9.5\nAppeal Score:\n\n5.2\nGenre Score:\n6.4\nAn overview of Battle Royale games on mobile:\n•\nThe Battle Royale genre has seen tremendous growth on mobile since 2018 and has\nestablished itself as a core genre.\n•\nAt 6.0, Battle Royale has the average monetization score of the genres covered in this\nbulletin. With 55.1% of players having purchased in-game items in the past year, it ranks #1\nin this category. However, its total revenue is the lowest of the genres covered in this\nbulletin.\n•\nEngagement is ",
+   "origin": "Niko Partners",
+   "tier": "C",
+   "flags": [
+    "Số liệu của Niko Partners, dẫn lại qua investgame.net; chưa đối chiếu bản gốc",
+    "Kỳ đo \"2023\" nằm ngoài khung thời gian của câu hỏi (câu hỏi về tương lai, dùng dữ liệu 24 tháng gần nhất)",
+    "Số của thị trường Asia and MENA, câu hỏi hỏi về Việt Nam",
+    "Kỳ đo 2023 chưa kết thúc khi nguồn đăng (06/2023): là số ước tính hoặc dự báo, chưa chắc là số đã đo"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C11",
+   "source_id": "S601d2899",
+   "claim_text": "Có 55.1% người chơi Battle Royale đã mua vật phẩm trong game trong năm qua tính đến năm 2023 tại khu vực Châu Á và MENA.",
+   "metric": "other",
+   "value_text": "55.1%",
+   "market": "Asia and MENA",
+   "period": "2023",
+   "scope": "mobile",
+   "genre": "Battle Royale",
+   "genre_level": "genre",
+   "quote": "• With 55.1% of players having purchased in-game items in the past year, it ranks #1 in this category.",
+   "section_title": "Battle Royale Ranks #1 for Mobile Esports",
+   "attributed_to": "Niko Partners",
+   "criterion": 3,
+   "value": 55.1,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn (trang 12)",
+   "match_score": 100.0,
+   "page": 12,
+   "context": "ell in\n2022. Puzzle gamers in Asia and MENA are more likely to value localization than players of\nother genres.\n\n[[Trang 12]]\n© Niko Partners 2023 | Five Mobile Game Genres in Asia and MENA\n12\nBattle Royale Ranks #1 for Mobile Esports\nMonetization Score:\n6.0\nEngagement Score:\n5.6\nEsports Score:\n\n9.5\nAppeal Score:\n\n5.2\nGenre Score:\n6.4\nAn overview of Battle Royale games on mobile:\n•\nThe Battle Royale genre has seen tremendous growth on mobile since 2018 and has\nestablished itself as a core genre.\n•\nAt 6.0, Battle Royale has the average monetization score of the genres covered in this\nbulletin. With 55.1% of players having purchased in-game items in the past year, it ranks #1\nin this category. However, its total revenue is the lowest of the genres covered in this\nbulletin.\n•\nEngagement is high in terms of average hours played per week and player longevity, but the\ngenre falls short across",
+   "origin": "Niko Partners",
+   "tier": "C",
+   "flags": [
+    "Số liệu của Niko Partners, dẫn lại qua investgame.net; chưa đối chiếu bản gốc",
+    "Kỳ đo \"2023\" nằm ngoài khung thời gian của câu hỏi (câu hỏi về tương lai, dùng dữ liệu 24 tháng gần nhất)",
+    "Số của thị trường Asia and MENA, câu hỏi hỏi về Việt Nam",
+    "Kỳ đo 2023 chưa kết thúc khi nguồn đăng (06/2023): là số ước tính hoặc dự báo, chưa chắc là số đã đo"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C12",
+   "source_id": "S601d2899",
+   "claim_text": "Người chơi Battle Royale xem nội dung esports trung bình 2.5 giờ mỗi tuần tại khu vực Châu Á và MENA trong năm 2023.",
+   "metric": "other",
+   "value_text": "2.5",
+   "market": "Asia and MENA",
+   "period": "2023",
+   "scope": "mobile",
+   "genre": "Battle Royale",
+   "genre_level": "genre",
+   "quote": "• Battle Royale is a leading genre for mobile esports. Players are the most likely to stream esports tournaments online, watching an average of 2.5 hours of esports content per week.",
+   "section_title": "Battle Royale Ranks #1 for Mobile Esports",
+   "attributed_to": "Niko Partners",
+   "criterion": 2,
+   "value": 2.5,
+   "unit": "",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn (trang 12)",
+   "match_score": 100.0,
+   "page": 12,
+   "context": "Score:\n6.4\nAn overview of Battle Royale games on mobile:\n•\nThe Battle Royale genre has seen tremendous growth on mobile since 2018 and has\nestablished itself as a core genre.\n•\nAt 6.0, Battle Royale has the average monetization score of the genres covered in this\nbulletin. With 55.1% of players having purchased in-game items in the past year, it ranks #1\nin this category. However, its total revenue is the lowest of the genres covered in this\nbulletin.\n•\nEngagement is high in terms of average hours played per week and player longevity, but the\ngenre falls short across other metrics measured.\n•\nBattle Royale is a leading genre for mobile esports. Players are the most likely to stream\nesports tournaments online, watching an average of 2.5 hours of esports content per week.\nThey are also most likely to aspire to compete at a professional or amateur level. 60.2% of\nBattle Royale players consider themselves to be fans of esports.\n•\nThe genre has narrow appeal comparative",
+   "origin": "Niko Partners",
+   "tier": "C",
+   "flags": [
+    "Số liệu của Niko Partners, dẫn lại qua investgame.net; chưa đối chiếu bản gốc",
+    "Kỳ đo \"2023\" nằm ngoài khung thời gian của câu hỏi (câu hỏi về tương lai, dùng dữ liệu 24 tháng gần nhất)",
+    "Số của thị trường Asia and MENA, câu hỏi hỏi về Việt Nam",
+    "Kỳ đo 2023 chưa kết thúc khi nguồn đăng (06/2023): là số ước tính hoặc dự báo, chưa chắc là số đã đo"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C13",
+   "source_id": "S601d2899",
+   "claim_text": "Có 60.2% người chơi Battle Royale tự coi mình là fan của esports tại khu vực Châu Á và MENA trong năm 2023.",
+   "metric": "other",
+   "value_text": "60.2%",
+   "market": "Asia and MENA",
+   "period": "2023",
+   "scope": "mobile",
+   "genre": "Battle Royale",
+   "genre_level": "genre",
+   "quote": "• They are also most likely to aspire to compete at a professional or amateur level. 60.2% of Battle Royale players consider themselves to be fans of esports.",
+   "section_title": "Battle Royale Ranks #1 for Mobile Esports",
+   "attributed_to": "Niko Partners",
+   "criterion": 2,
+   "value": 60.2,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn (trang 12)",
+   "match_score": 100.0,
+   "page": 12,
+   "context": ".0, Battle Royale has the average monetization score of the genres covered in this\nbulletin. With 55.1% of players having purchased in-game items in the past year, it ranks #1\nin this category. However, its total revenue is the lowest of the genres covered in this\nbulletin.\n•\nEngagement is high in terms of average hours played per week and player longevity, but the\ngenre falls short across other metrics measured.\n•\nBattle Royale is a leading genre for mobile esports. Players are the most likely to stream\nesports tournaments online, watching an average of 2.5 hours of esports content per week.\nThey are also most likely to aspire to compete at a professional or amateur level. 60.2% of\nBattle Royale players consider themselves to be fans of esports.\n•\nThe genre has narrow appeal comparatively, as it is more likely to appeal to male players\nthan female players by a notable margin, and because players are more likely to be\ndissatisfied with the g",
+   "origin": "Niko Partners",
+   "tier": "C",
+   "flags": [
+    "Số liệu của Niko Partners, dẫn lại qua investgame.net; chưa đối chiếu bản gốc",
+    "Kỳ đo \"2023\" nằm ngoài khung thời gian của câu hỏi (câu hỏi về tương lai, dùng dữ liệu 24 tháng gần nhất)",
+    "Số của thị trường Asia and MENA, câu hỏi hỏi về Việt Nam",
+    "Kỳ đo 2023 chưa kết thúc khi nguồn đăng (06/2023): là số ước tính hoặc dự báo, chưa chắc là số đã đo"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C14",
+   "source_id": "S601d2899",
+   "claim_text": "Điểm số kiếm tiền của Puzzle là 4.9 tại khu vực Châu Á và MENA trong năm 2023.",
+   "metric": "other",
+   "value_text": "4.9",
+   "market": "Asia and MENA",
+   "period": "2023",
+   "scope": "mobile",
+   "genre": "Puzzle",
+   "genre_level": "genre",
+   "quote": "Monetization Score: 4.9",
+   "section_title": "Puzzle Has High Downloads and Engagement",
+   "attributed_to": "Niko Partners",
+   "criterion": 3,
+   "value": 4.9,
+   "unit": "",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn (trang 11)",
+   "match_score": 100.0,
+   "page": 11,
+   "context": "person esports events, which drags its esports score down.\n•\nMOBA games have the youngest player base of the genres covered in this bulletin and\nhave a more equal distribution of male and female players compared to battle royale and\nstrategy players.\n•\nMOBA is a tough genre to crack due to the dominance of a few titles in the region. In\naddition, existing MOBA gamers are extremely loyal to their preferred game, being least\nlikely to play another game within the MOBA genre.\n\n[[Trang 11]]\n© Niko Partners 2023 | Five Mobile Game Genres in Asia and MENA\n11\nPuzzle Has High Downloads and Engagement\nMonetization Score:\n4.9\nEngagement Score:\n6.0\nEsports Score:\n\n3.0\nAppeal Score:\n\n5.2\nGenre Score:\n4.9\nAn overview of Puzzle games on mobile:\n•\nThe puzzle genre is the largest by downloads of the genres covered in this bulle",
+   "origin": "Niko Partners",
+   "tier": "C",
+   "flags": [
+    "Số liệu của Niko Partners, dẫn lại qua investgame.net; chưa đối chiếu bản gốc",
+    "Kỳ đo \"2023\" nằm ngoài khung thời gian của câu hỏi (câu hỏi về tương lai, dùng dữ liệu 24 tháng gần nhất)",
+    "Số của thị trường Asia and MENA, câu hỏi hỏi về Việt Nam",
+    "Kỳ đo 2023 chưa kết thúc khi nguồn đăng (06/2023): là số ước tính hoặc dự báo, chưa chắc là số đã đo"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C15",
+   "source_id": "S601d2899",
+   "claim_text": "Điểm số tương tác của Puzzle là 6.0 tại khu vực Châu Á và MENA trong năm 2023.",
+   "metric": "other",
+   "value_text": "6.0",
+   "market": "Asia and MENA",
+   "period": "2023",
+   "scope": "mobile",
+   "genre": "Puzzle",
+   "genre_level": "genre",
+   "quote": "Engagement Score: 6.0",
+   "section_title": "Puzzle Has High Downloads and Engagement",
+   "attributed_to": "Niko Partners",
+   "criterion": 2,
+   "value": 6.0,
+   "unit": "",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn (trang 11)",
+   "match_score": 100.0,
+   "page": 11,
+   "context": "hich drags its esports score down.\n•\nMOBA games have the youngest player base of the genres covered in this bulletin and\nhave a more equal distribution of male and female players compared to battle royale and\nstrategy players.\n•\nMOBA is a tough genre to crack due to the dominance of a few titles in the region. In\naddition, existing MOBA gamers are extremely loyal to their preferred game, being least\nlikely to play another game within the MOBA genre.\n\n[[Trang 11]]\n© Niko Partners 2023 | Five Mobile Game Genres in Asia and MENA\n11\nPuzzle Has High Downloads and Engagement\nMonetization Score:\n4.9\nEngagement Score:\n6.0\nEsports Score:\n\n3.0\nAppeal Score:\n\n5.2\nGenre Score:\n4.9\nAn overview of Puzzle games on mobile:\n•\nThe puzzle genre is the largest by downloads of the genres covered in this bulletin, but has\nthe lowes",
+   "origin": "Niko Partners",
+   "tier": "C",
+   "flags": [
+    "Số liệu của Niko Partners, dẫn lại qua investgame.net; chưa đối chiếu bản gốc",
+    "Kỳ đo \"2023\" nằm ngoài khung thời gian của câu hỏi (câu hỏi về tương lai, dùng dữ liệu 24 tháng gần nhất)",
+    "Số của thị trường Asia and MENA, câu hỏi hỏi về Việt Nam",
+    "Kỳ đo 2023 chưa kết thúc khi nguồn đăng (06/2023): là số ước tính hoặc dự báo, chưa chắc là số đã đo"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C16",
+   "source_id": "S601d2899",
+   "claim_text": "Điểm số Esports của Puzzle là 3.0 tại khu vực Châu Á và MENA trong năm 2023.",
+   "metric": "other",
+   "value_text": "3.0",
+   "market": "Asia and MENA",
+   "period": "2023",
+   "scope": "mobile",
+   "genre": "Puzzle",
+   "genre_level": "genre",
+   "quote": "Esports Score: 3.0",
+   "section_title": "Puzzle Has High Downloads and Engagement",
+   "attributed_to": "Niko Partners",
+   "criterion": -1,
+   "value": 3.0,
+   "unit": "",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn (trang 11)",
+   "match_score": 100.0,
+   "page": 11,
+   "context": " score down.\n•\nMOBA games have the youngest player base of the genres covered in this bulletin and\nhave a more equal distribution of male and female players compared to battle royale and\nstrategy players.\n•\nMOBA is a tough genre to crack due to the dominance of a few titles in the region. In\naddition, existing MOBA gamers are extremely loyal to their preferred game, being least\nlikely to play another game within the MOBA genre.\n\n[[Trang 11]]\n© Niko Partners 2023 | Five Mobile Game Genres in Asia and MENA\n11\nPuzzle Has High Downloads and Engagement\nMonetization Score:\n4.9\nEngagement Score:\n6.0\nEsports Score:\n\n3.0\nAppeal Score:\n\n5.2\nGenre Score:\n4.9\nAn overview of Puzzle games on mobile:\n•\nThe puzzle genre is the largest by downloads of the genres covered in this bulletin, but has\nthe lowest revenue per downlo",
+   "origin": "Niko Partners",
+   "tier": "C",
+   "flags": [
+    "Số liệu của Niko Partners, dẫn lại qua investgame.net; chưa đối chiếu bản gốc",
+    "Kỳ đo \"2023\" nằm ngoài khung thời gian của câu hỏi (câu hỏi về tương lai, dùng dữ liệu 24 tháng gần nhất)",
+    "Số của thị trường Asia and MENA, câu hỏi hỏi về Việt Nam",
+    "Kỳ đo 2023 chưa kết thúc khi nguồn đăng (06/2023): là số ước tính hoặc dự báo, chưa chắc là số đã đo"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C17",
+   "source_id": "S601d2899",
+   "claim_text": "Điểm số hấp dẫn của Puzzle là 5.2 tại khu vực Châu Á và MENA trong năm 2023.",
+   "metric": "other",
+   "value_text": "5.2",
+   "market": "Asia and MENA",
+   "period": "2023",
+   "scope": "mobile",
+   "genre": "Puzzle",
+   "genre_level": "genre",
+   "quote": "Appeal Score: 5.2",
+   "section_title": "Puzzle Has High Downloads and Engagement",
+   "attributed_to": "Niko Partners",
+   "criterion": -1,
+   "value": 5.2,
+   "unit": "",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn (trang 11)",
+   "match_score": 100.0,
+   "page": 11,
+   "context": "games have the youngest player base of the genres covered in this bulletin and\nhave a more equal distribution of male and female players compared to battle royale and\nstrategy players.\n•\nMOBA is a tough genre to crack due to the dominance of a few titles in the region. In\naddition, existing MOBA gamers are extremely loyal to their preferred game, being least\nlikely to play another game within the MOBA genre.\n\n[[Trang 11]]\n© Niko Partners 2023 | Five Mobile Game Genres in Asia and MENA\n11\nPuzzle Has High Downloads and Engagement\nMonetization Score:\n4.9\nEngagement Score:\n6.0\nEsports Score:\n\n3.0\nAppeal Score:\n\n5.2\nGenre Score:\n4.9\nAn overview of Puzzle games on mobile:\n•\nThe puzzle genre is the largest by downloads of the genres covered in this bulletin, but has\nthe lowest revenue per download.\n•\nThe low avera",
+   "origin": "Niko Partners",
+   "tier": "C",
+   "flags": [
+    "Số liệu của Niko Partners, dẫn lại qua investgame.net; chưa đối chiếu bản gốc",
+    "Kỳ đo \"2023\" nằm ngoài khung thời gian của câu hỏi (câu hỏi về tương lai, dùng dữ liệu 24 tháng gần nhất)",
+    "Số của thị trường Asia and MENA, câu hỏi hỏi về Việt Nam",
+    "Kỳ đo 2023 chưa kết thúc khi nguồn đăng (06/2023): là số ước tính hoặc dự báo, chưa chắc là số đã đo"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C18",
+   "source_id": "S601d2899",
+   "claim_text": "Số giờ chơi trung bình của người chơi puzzle là 3.9 giờ mỗi tuần tại khu vực Châu Á và MENA trong năm 2023.",
+   "metric": "other",
+   "value_text": "3.9",
+   "market": "Asia and MENA",
+   "period": "2023",
+   "scope": "mobile",
+   "genre": "Puzzle",
+   "genre_level": "genre",
+   "quote": "• Puzzle has a high engagement score, primarily driven by a high number of total downloads and downloads per gamer. However, puzzle gamers are the least engaged in terms of hours played with an average of 3.9 hours played per week.",
+   "section_title": "Puzzle Has High Downloads and Engagement",
+   "attributed_to": "Niko Partners",
+   "criterion": 2,
+   "value": 3.9,
+   "unit": "",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn (trang 11)",
+   "match_score": 100.0,
+   "page": 11,
+   "context": "bile Game Genres in Asia and MENA\n11\nPuzzle Has High Downloads and Engagement\nMonetization Score:\n4.9\nEngagement Score:\n6.0\nEsports Score:\n\n3.0\nAppeal Score:\n\n5.2\nGenre Score:\n4.9\nAn overview of Puzzle games on mobile:\n•\nThe puzzle genre is the largest by downloads of the genres covered in this bulletin, but has\nthe lowest revenue per download.\n•\nThe low average spend contributes to the weak monetization score, along with a low\npercentage of in-game spenders. However, players of puzzle games are more likely to have\na higher average income than players of other genres except for RPG players.\n•\nPuzzle has a high engagement score, primarily driven by a high number of total downloads\nand downloads per gamer. However, puzzle gamers are the least engaged in terms of hours\nplayed with an average of 3.9 hours played per week.\n•\nThe genre has a low esports score due to a lack of engagement and mobile esports\ntournaments involving puzzle games. Players of puzzle games are the least likely to be fans\nof esports, stream espo",
+   "origin": "Niko Partners",
+   "tier": "C",
+   "flags": [
+    "Số liệu của Niko Partners, dẫn lại qua investgame.net; chưa đối chiếu bản gốc",
+    "Kỳ đo \"2023\" nằm ngoài khung thời gian của câu hỏi (câu hỏi về tương lai, dùng dữ liệu 24 tháng gần nhất)",
+    "Số của thị trường Asia and MENA, câu hỏi hỏi về Việt Nam",
+    "Kỳ đo 2023 chưa kết thúc khi nguồn đăng (06/2023): là số ước tính hoặc dự báo, chưa chắc là số đã đo"
+   ],
+   "excluded_by_user": false
+  }
+ ],
+ "findings": [
+  {
+   "key": "F1",
+   "label": "Tăng trưởng game mobile, MOBA, Indonesia, Q1 2025 vs Q4 2024",
+   "claim_ids": [
+    "C1"
+   ],
+   "origins": [
+    "Sensor Tower"
+   ],
+   "values": [
+    32.7
+   ],
+   "unit": "%",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Trung bình",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Sensor Tower, hạng B)"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F2",
+   "label": "Tăng trưởng game mobile, MOBA, Đông Nam Á, Q1 2025 vs Q4 2024",
+   "claim_ids": [
+    "C2"
+   ],
+   "origins": [
+    "Sensor Tower"
+   ],
+   "values": [
+    20.1
+   ],
+   "unit": "%",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Trung bình",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Sensor Tower, hạng B)"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F3",
+   "label": "Tăng trưởng game mobile, MOBA, Philippines, Q1 2025 vs Q4 2024",
+   "claim_ids": [
+    "C3"
+   ],
+   "origins": [
+    "Sensor Tower"
+   ],
+   "values": [
+    19.0
+   ],
+   "unit": "%",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Trung bình",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Sensor Tower, hạng B)"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F4",
+   "label": "Xếp hạng game mobile, MOBA, Đông Nam Á, 2017-2025",
+   "claim_ids": [
+    "C4"
+   ],
+   "origins": [
+    "Sensor Tower"
+   ],
+   "values": [
+    5.0
+   ],
+   "unit": "",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Thấp",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Sensor Tower, hạng B)",
+    "Có cảnh báo về kỳ đo hoặc phạm vi: hạ một mức"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F5",
+   "label": "Doanh thu game mobile, MOBA, Asia and MENA, 2022",
+   "claim_ids": [
+    "C5"
+   ],
+   "origins": [
+    "Niko Partners"
+   ],
+   "values": [
+    2.0
+   ],
+   "unit": "",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Thấp",
+   "reasons": [
+    "Chỉ có nguồn hạng C hoặc D"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F6",
+   "label": "Thị phần game mobile, all, Asia & MENA, 2022",
+   "claim_ids": [
+    "C6"
+   ],
+   "origins": [
+    "Niko Partners"
+   ],
+   "values": [
+    80.0
+   ],
+   "unit": "%",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Thấp",
+   "reasons": [
+    "Chỉ có nguồn hạng C hoặc D"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F7",
+   "label": "Chỉ số khác game mobile, MOBA, Asia and MENA, 2022",
+   "claim_ids": [
+    "C7"
+   ],
+   "origins": [
+    "Niko Partners"
+   ],
+   "values": [
+    6.0
+   ],
+   "unit": "",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Thấp",
+   "reasons": [
+    "Chỉ có nguồn hạng C hoặc D"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F8",
+   "label": "Xếp hạng game mobile, MOBA, Asia and MENA, 2023",
+   "claim_ids": [
+    "C8"
+   ],
+   "origins": [
+    "Niko Partners"
+   ],
+   "values": [
+    1.0
+   ],
+   "unit": "",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Thấp",
+   "reasons": [
+    "Chỉ có nguồn hạng C hoặc D"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F9",
+   "label": "Chỉ số khác game mobile, MOBA, Asia and MENA, 2023",
+   "claim_ids": [
+    "C9"
+   ],
+   "origins": [
+    "Niko Partners"
+   ],
+   "values": [
+    6.0
+   ],
+   "unit": "",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Thấp",
+   "reasons": [
+    "Chỉ có nguồn hạng C hoặc D"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F10",
+   "label": "Chỉ số khác game mobile, Battle Royale, Asia and MENA, 2023",
+   "claim_ids": [
+    "C10",
+    "C12"
+   ],
+   "origins": [
+    "Niko Partners"
+   ],
+   "values": [
+    6.0
+   ],
+   "unit": "",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Thấp",
+   "reasons": [
+    "Chỉ có nguồn hạng C hoặc D",
+    "2 bài viết nhưng chỉ 1 nguồn gốc"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F11",
+   "label": "Chỉ số khác game mobile, Battle Royale, Asia and MENA, 2023",
+   "claim_ids": [
+    "C11",
+    "C13"
+   ],
+   "origins": [
+    "Niko Partners"
+   ],
+   "values": [
+    55.1
+   ],
+   "unit": "%",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Thấp",
+   "reasons": [
+    "Chỉ có nguồn hạng C hoặc D",
+    "2 bài viết nhưng chỉ 1 nguồn gốc"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F12",
+   "label": "Chỉ số khác game mobile, Puzzle, Asia and MENA, 2023",
+   "claim_ids": [
+    "C14",
+    "C15",
+    "C16",
+    "C17",
+    "C18"
+   ],
+   "origins": [
+    "Niko Partners"
+   ],
+   "values": [
+    4.9
+   ],
+   "unit": "",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Thấp",
+   "reasons": [
+    "Chỉ có nguồn hạng C hoặc D",
+    "5 bài viết nhưng chỉ 1 nguồn gốc"
+   ],
+   "newer": ""
+  }
+ ],
+ "brief": {
+  "decision": "Cần thêm dữ liệu",
+  "summary": "Chưa có đủ dữ liệu cụ thể cho thị trường Việt Nam trong 24 tháng gần nhất để đưa ra quyết định phát hành game MOBA mobile. Toàn bộ các dữ liệu hiện có đều thuộc về thị trường Indonesia, Philippines, Đông Nam Á hoặc khu vực Châu Á & MENA, chưa phản ánh chính xác thị trường Việt Nam.",
+  "reasons": [
+   {
+    "text": "Doanh thu thị trường MOBA mobile tại Indonesia tăng 32.7% theo quý trong Q1 2025, tuy nhiên số liệu này thuộc về thị trường Indonesia và nằm ngoài phạm vi câu hỏi về Việt Nam.",
+    "claim_ids": [
+     "C1"
+    ],
+    "status": "uncertain"
+   },
+   {
+    "text": "Doanh thu thể loại MOBA tại Đông Nam Á tăng 20.1% theo quý trong Q1 2025, nhưng đây là số liệu khu vực Đông Nam Á, chưa phản ánh riêng thị trường Việt Nam.",
+    "claim_ids": [
+     "C2"
+    ],
+    "status": "uncertain"
+   },
+   {
+    "text": "Doanh thu MOBA tại Philippines tăng trưởng 19% theo quý trong Q1 2025, nhưng dữ liệu này áp dụng cho Philippines thay vì Việt Nam.",
+    "claim_ids": [
+     "C3"
+    ],
+    "status": "uncertain"
+   },
+   {
+    "text": "Game Mobile Legends: Bang Bang duy trì top 5 về doanh thu và lượt tải tại Đông Nam Á kể từ 2017 đến 2025, nhưng kỳ đo chưa kết thúc và thuộc phạm vi khu vực chứ không phải Việt Nam.",
+    "claim_ids": [
+     "C4"
+    ],
+    "status": "uncertain"
+   }
+  ],
+  "what_would_change": [
+   "Có số liệu đo lường trực tiếp về quy mô và tốc độ tăng trưởng doanh thu thị trường MOBA mobile tại riêng Việt Nam trong 24 tháng gần nhất.",
+   "Có dữ liệu chi tiết về chi phí và hiệu quả thu hút người dùng (UA) đối với thể loại game MOBA tại thị trường Việt Nam."
+  ],
+  "confidence": "Trung bình",
+  "gaps": [],
+  "conflicts": [],
+  "definition_notes": [],
+  "guard_log": [],
+  "trusted": [],
+  "uncertain": [],
+  "other": [
+   {
+    "finding": "F1",
+    "label": "Tăng trưởng game mobile, MOBA, Indonesia, Q1 2025 vs Q4 2024",
+    "values": "+32,7%",
+    "origins": [
+     "Sensor Tower"
+    ],
+    "confidence": "Trung bình",
+    "claim_ids": [
+     "C1"
+    ],
+    "why": [
+     "Số của thị trường Indonesia, câu hỏi hỏi về Việt Nam"
+    ]
+   },
+   {
+    "finding": "F2",
+    "label": "Tăng trưởng game mobile, MOBA, Đông Nam Á, Q1 2025 vs Q4 2024",
+    "values": "+20,1%",
+    "origins": [
+     "Sensor Tower"
+    ],
+    "confidence": "Trung bình",
+    "claim_ids": [
+     "C2"
+    ],
+    "why": [
+     "Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam"
+    ]
+   },
+   {
+    "finding": "F3",
+    "label": "Tăng trưởng game mobile, MOBA, Philippines, Q1 2025 vs Q4 2024",
+    "values": "+19,0%",
+    "origins": [
+     "Sensor Tower"
+    ],
+    "confidence": "Trung bình",
+    "claim_ids": [
+     "C3"
+    ],
+    "why": [
+     "Số của thị trường Philippines, câu hỏi hỏi về Việt Nam"
+    ]
+   },
+   {
+    "finding": "F4",
+    "label": "Xếp hạng game mobile, MOBA, Đông Nam Á, 2017-2025",
+    "values": "5",
+    "origins": [
+     "Sensor Tower"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C4"
+    ],
+    "why": [
+     "Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam"
+    ]
+   },
+   {
+    "finding": "F5",
+    "label": "Doanh thu game mobile, MOBA, Asia and MENA, 2022",
+    "values": "2",
+    "origins": [
+     "Niko Partners"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C5"
+    ],
+    "why": [
+     "Số của thị trường Asia and MENA, câu hỏi hỏi về Việt Nam"
+    ]
+   },
+   {
+    "finding": "F6",
+    "label": "Thị phần game mobile, all, Asia & MENA, 2022",
+    "values": "+80,0%",
+    "origins": [
+     "Niko Partners"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C6"
+    ],
+    "why": [
+     "Số của thị trường Asia & MENA, câu hỏi hỏi về Việt Nam"
+    ]
+   },
+   {
+    "finding": "F7",
+    "label": "Chỉ số khác game mobile, MOBA, Asia and MENA, 2022",
+    "values": "6",
+    "origins": [
+     "Niko Partners"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C7"
+    ],
+    "why": [
+     "Số của thị trường Asia and MENA, câu hỏi hỏi về Việt Nam"
+    ]
+   },
+   {
+    "finding": "F8",
+    "label": "Xếp hạng game mobile, MOBA, Asia and MENA, 2023",
+    "values": "1",
+    "origins": [
+     "Niko Partners"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C8"
+    ],
+    "why": [
+     "Số của thị trường Asia and MENA, câu hỏi hỏi về Việt Nam"
+    ]
+   },
+   {
+    "finding": "F9",
+    "label": "Chỉ số khác game mobile, MOBA, Asia and MENA, 2023",
+    "values": "6",
+    "origins": [
+     "Niko Partners"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C9"
+    ],
+    "why": [
+     "Số của thị trường Asia and MENA, câu hỏi hỏi về Việt Nam"
+    ]
+   },
+   {
+    "finding": "F10",
+    "label": "Chỉ số khác game mobile, Battle Royale, Asia and MENA, 2023",
+    "values": "6",
+    "origins": [
+     "Niko Partners"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C10",
+     "C12"
+    ],
+    "why": [
+     "Số của thị trường Asia and MENA, câu hỏi hỏi về Việt Nam"
+    ]
+   },
+   {
+    "finding": "F11",
+    "label": "Chỉ số khác game mobile, Battle Royale, Asia and MENA, 2023",
+    "values": "+55,1%",
+    "origins": [
+     "Niko Partners"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C11",
+     "C13"
+    ],
+    "why": [
+     "Số của thị trường Asia and MENA, câu hỏi hỏi về Việt Nam"
+    ]
+   },
+   {
+    "finding": "F12",
+    "label": "Chỉ số khác game mobile, Puzzle, Asia and MENA, 2023",
+    "values": "4.9",
+    "origins": [
+     "Niko Partners"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C14",
+     "C15",
+     "C16",
+     "C17",
+     "C18"
+    ],
+    "why": [
+     "Số của thị trường Asia and MENA, câu hỏi hỏi về Việt Nam"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "text": "Mới có số của thị trường khác, tìm số riêng cho Việt Nam",
+    "query": "Vietnam mobile games MOBA revenue growth Q1 2025 vs Q4 2024",
+    "ask": "",
+    "url": "",
+    "findings": []
+   }
+  ]
+ },
+ "stats": {
+  "sources_read": 6,
+  "sources_failed": 2,
+  "claims": 18,
+  "verified": 18,
+  "rejected": 0,
+  "carried": 0,
+  "llm_calls": 9,
+  "seconds": 41.1,
+  "model": "gemini/gemini-3.5-flash-lite",
+  "search": "Tavily"
+ }
+}

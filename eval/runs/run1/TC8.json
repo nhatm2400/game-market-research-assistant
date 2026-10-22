@@ -1,0 +1,283 @@
+{
+ "id": "cff49fbb73",
+ "created_at": "2026-10-22T18:20:04",
+ "question": "Quy mô thị trường game Đông Nam Á năm 2025 là bao nhiêu?",
+ "parent_id": null,
+ "thread": [
+  {
+   "id": "cff49fbb73",
+   "question": "Quy mô thị trường game Đông Nam Á năm 2025 là bao nhiêu?"
+  }
+ ],
+ "today": "2026-10-22",
+ "plan": {
+  "criteria": [
+   "Quy mô doanh thu thị trường game Đông Nam Á 2025"
+  ],
+  "queries": [
+   "Southeast Asia games market size revenue 2025 Newzoo",
+   "SEA gaming industry market value 2025 Niko Partners",
+   "Southeast Asia mobile games market revenue 2025 Sensor Tower",
+   "ASEAN video games market size 2025 data report"
+  ],
+  "market": "Đông Nam Á",
+  "genre": ""
+ },
+ "window": {
+  "start": "2025-01-01",
+  "end": "2025-12-31",
+  "kind": "specific",
+  "label": "01/2025 đến 12/2025"
+ },
+ "question_market": "Đông Nam Á",
+ "search_log": [],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "S1d4280f7",
+   "url": "https://gamesbeat.com/southeast-asia-to-reach-6-47-billion-in-revenues-by-2029-niko-partners/",
+   "title": "Southeast Asia to reach $6.47 billion in revenues by 2029 | Niko Partners",
+   "domain": "gamesbeat.com",
+   "published": "2025-09-30",
+   "kind": "html",
+   "text": "<5923 ký tự>",
+   "error": null,
+   "tier": "B",
+   "base_tier": "B",
+   "tier_notes": [
+    "gamesbeat.com nằm trong danh sách hạng B",
+    "Đăng cách đây 13 tháng (12 đến 24 tháng)"
+   ],
+   "publisher": "gamesbeat.com"
+  },
+  {
+   "id": "Sb1cf0824",
+   "url": "https://gamedevreports.substack.com/p/niko-partners-southeast-asia-games",
+   "title": "Niko Partners: Southeast Asia Games Market in 2025",
+   "domain": "gamedevreports.substack.com",
+   "published": "2025-10-31",
+   "kind": "html",
+   "text": "<2034 ký tự>",
+   "error": null,
+   "tier": "B",
+   "base_tier": "B",
+   "tier_notes": [
+    "gamedevreports.substack.com nằm trong danh sách hạng B",
+    "Đăng cách đây 12 tháng"
+   ],
+   "publisher": "gamedevreports.substack.com"
+  }
+ ],
+ "claims": [
+  {
+   "id": "C1",
+   "source_id": "S1d4280f7",
+   "claim_text": "Thị trường game Đông Nam Á được kỳ vọng tăng trưởng 1,8% trong năm 2025, đạt 5,47 tỷ USD.",
+   "metric": "revenue",
+   "value_text": "5.47 billion",
+   "market": "Đông Nam Á",
+   "period": "2025",
+   "scope": "all_games",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "The region’s market is expected to grow 1.8% in 2025 to $5.47 billion.",
+   "section_title": "Key highlights",
+   "attributed_to": "Niko Partners",
+   "criterion": 0,
+   "value": 5470000000.0,
+   "unit": "USD",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "rated $5.37 billion in games revenue in 2024, up 5.2% year-over-year (YoY).\nRevenue is expected to continue growing in 2025, albeit at a slower growth rate than in years past. The slower growth is due to current economic and political issues faced by some of the countries in the region, although Niko projects the growth to rebound in the coming years.\nThere are also slight declines in Indonesia and the Philippines driven by economic woes, as seen in the multiple protests taking place in both countries this year. There are many more details disclosed in the Market Model reports.\nKey highlights\nThe region’s market is expected to grow 1.8% in 2025 to $5.47 billion. The market is forecasted to reach $6.47 billion in 2029 at a 5-year CAGR of 3.8%.\nThe Southeast Asia video game market had 285.82 million gamers in 2024, up 3.1% YoY. This will grow a further 1.5% t",
+   "origin": "Niko Partners",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Niko Partners, dẫn lại qua gamesbeat.com; chưa đối chiếu bản gốc",
+    "Không ghi đơn vị tiền, coi là USD để so sánh",
+    "Kỳ đo 2025 chưa kết thúc khi nguồn đăng (09/2025): là số ước tính hoặc dự báo, chưa chắc là số đã đo"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C2",
+   "source_id": "Sb1cf0824",
+   "claim_text": "Doanh thu thị trường game Đông Nam Á (SEA-6) năm 2025 đạt 5,47 tỷ USD.",
+   "metric": "revenue",
+   "value_text": "$5.47 billion",
+   "market": "Đông Nam Á",
+   "period": "2025",
+   "scope": "all_games",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "- For 2025, a more modest increase is expected to $5.47 billion (+1.8% YoY). The slowdown is attributed to economic headwinds and new regulatory practices (e.g., Vietnam now requires licenses).",
+   "section_title": "Revenue, audience, monetization",
+   "attributed_to": "Niko Partners",
+   "criterion": 0,
+   "value": 5470000000.0,
+   "unit": "USD",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "Niko Partners has tracked the region for the past 11 years. The study covers six countries (SEA-6): Indonesia, Malaysia, the Philippines, Singapore, Thailand, and Vietnam.\nRevenue, audience, monetization\n- In 2024, the games industry across the SEA-6 generated $5.37 billion, up 5.2% YoY.\n- For 2025, a more modest increase is expected to $5.47 billion (+1.8% YoY). The slowdown is attributed to economic headwinds and new regulatory practices (e.g., Vietnam now requires licenses).\n- By 2029, Niko Partners projects SEA-6 revenues to reach $6.47 billion, a 5-year CAGR of 3.8%.\n- There were 285.82 million players in Southeast Asia in 2024 (+3.1% YoY). In 2025, the number rose t",
+   "origin": "Niko Partners",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Niko Partners, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc",
+    "Kỳ đo 2025 chưa kết thúc khi nguồn đăng (10/2025): là số ước tính hoặc dự báo, chưa chắc là số đã đo"
+   ],
+   "excluded_by_user": false
+  }
+ ],
+ "findings": [
+  {
+   "key": "F1",
+   "label": "Doanh thu toàn ngành game, Đông Nam Á, 2025",
+   "claim_ids": [
+    "C1",
+    "C2"
+   ],
+   "origins": [
+    "Niko Partners"
+   ],
+   "values": [
+    5470000000.0
+   ],
+   "unit": "USD",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Thấp",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Niko Partners, hạng B)",
+    "2 bài viết nhưng chỉ 1 nguồn gốc",
+    "Có cảnh báo về kỳ đo hoặc phạm vi: hạ một mức"
+   ],
+   "newer": ""
+  }
+ ],
+ "brief": {
+  "decision": "Có số liệu nhưng chưa chắc chắn",
+  "summary": "Quy mô doanh thu thị trường game Đông Nam Á năm 2025 được dự báo đạt 5,47 tỷ USD theo dữ liệu từ Niko Partners. Tuy nhiên, đây là số liệu ước tính vì kỳ đo năm 2025 chưa kết thúc khi nguồn được đăng tải.",
+  "reasons": [
+   {
+    "text": "Thị trường game Đông Nam Á trong năm 2025 được kỳ vọng đạt 5,47 tỷ USD với mức tăng trưởng 1,8% theo ước tính từ Niko Partners.",
+    "claim_ids": [
+     "C1"
+    ],
+    "status": "uncertain"
+   },
+   {
+    "text": "Doanh thu thị trường game Đông Nam Á (SEA-6) năm 2025 đạt 5,47 tỷ USD theo nguồn Niko Partners.",
+    "claim_ids": [
+     "C2"
+    ],
+    "status": "uncertain"
+   },
+   {
+    "text": "Số liệu dự báo có độ tin cậy thấp do kỳ đo 2025 chưa kết thúc khi nguồn được đăng tải và thông tin được dẫn lại qua các bài viết mà chưa đối chiếu bản gốc.",
+    "claim_ids": [
+     "C1",
+     "C2"
+    ],
+    "status": "uncertain"
+   }
+  ],
+  "what_would_change": [
+   "Có số liệu chính thức đã được tổng kết sau khi năm 2025 kết thúc thay vì các con số dự báo.",
+   "Có bản đối chiếu trực tiếp từ báo cáo gốc của Niko Partners thay vì dữ liệu dẫn lại qua bài viết.",
+   "Có thêm số liệu phân tách chi tiết theo từng quốc gia hoặc nền tảng trong khu vực."
+  ],
+  "confidence": "Thấp",
+  "gaps": [],
+  "conflicts": [],
+  "definition_notes": [],
+  "guard_log": [
+   "Đổi kết luận \"Đã có câu trả lời\" thành \"Có số liệu nhưng chưa chắc chắn\": không lý do nào dựa trên nhận định có thể tin"
+  ],
+  "trusted": [],
+  "uncertain": [
+   {
+    "finding": "F1",
+    "label": "Doanh thu toàn ngành game, Đông Nam Á, 2025",
+    "values": "5,47 tỷ USD",
+    "origins": [
+     "Niko Partners"
+    ],
+    "confidence": "Thấp",
+    "claim_ids": [
+     "C1",
+     "C2"
+    ],
+    "why": [
+     "Kỳ đo 2025 chưa kết thúc khi nguồn đăng (09/2025): là số ước tính hoặc dự báo, chưa chắc là số đã đo",
+     "Kỳ đo 2025 chưa kết thúc khi nguồn đăng (10/2025): là số ước tính hoặc dự báo, chưa chắc là số đã đo",
+     "Số của Niko Partners dẫn lại qua bài viết, chưa đối chiếu bản gốc"
+    ],
+    "next_steps": [
+     {
+      "text": "Đối chiếu bản gốc của Niko Partners trên nikopartners.com",
+      "query": "Niko Partners Southeast Asia games market revenue 2025",
+      "ask": "",
+      "url": "",
+      "findings": [
+       "F1"
+      ]
+     },
+     {
+      "text": "Tìm số đã đo thay cho số dự báo",
+      "query": "Southeast Asia games market revenue 2025 actual",
+      "ask": "",
+      "url": "",
+      "findings": [
+       "F1"
+      ]
+     },
+     {
+      "text": "Tìm số đã đo thay cho số dự báo",
+      "query": "Southeast Asia games market revenue 2025 actual",
+      "ask": "",
+      "url": "",
+      "findings": [
+       "F1"
+      ]
+     }
+    ]
+   }
+  ],
+  "other": [],
+  "next_steps": [
+   {
+    "text": "Đối chiếu bản gốc của Niko Partners trên nikopartners.com",
+    "query": "Niko Partners Southeast Asia games market revenue 2025",
+    "ask": "",
+    "url": "",
+    "findings": [
+     "F1"
+    ]
+   },
+   {
+    "text": "Tìm số đã đo thay cho số dự báo",
+    "query": "Southeast Asia games market revenue 2025 actual",
+    "ask": "",
+    "url": "",
+    "findings": [
+     "F1"
+    ]
+   }
+  ]
+ },
+ "stats": {
+  "sources_read": 2,
+  "sources_failed": 0,
+  "claims": 2,
+  "verified": 2,
+  "rejected": 0,
+  "carried": 0,
+  "llm_calls": 5,
+  "seconds": 49.4,
+  "model": "gemini/gemini-3.5-flash-lite",
+  "search": "tắt"
+ }
+}

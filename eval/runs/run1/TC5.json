@@ -1,0 +1,315 @@
+{
+ "id": "ef5266406a",
+ "created_at": "2026-10-22T18:18:46",
+ "question": "Doanh thu tháng 9/2026 của tựa game Tiếu Ngạo tại Việt Nam là bao nhiêu?",
+ "parent_id": null,
+ "thread": [
+  {
+   "id": "ef5266406a",
+   "question": "Doanh thu tháng 9/2026 của tựa game Tiếu Ngạo tại Việt Nam là bao nhiêu?"
+  }
+ ],
+ "today": "2026-10-22",
+ "plan": {
+  "criteria": [
+   "Doanh thu tháng 9/2026"
+  ],
+  "queries": [
+   "Tieu Ngao mobile game revenue September 2026 Sensor Tower",
+   "Tieu Ngao game revenue Vietnam September 2026 data.ai",
+   "Tieu Ngao revenue Vietnam AppMagic September 2026",
+   "doanh thu game Tieu Ngao Viet Nam thang 9 2026",
+   "Tieu Ngao mobile earnings Vietnam September 2026 Niko Partners"
+  ],
+  "market": "Việt Nam",
+  "genre": ""
+ },
+ "window": {
+  "start": "2026-09-01",
+  "end": "2026-09-30",
+  "kind": "specific",
+  "label": "09/2026 đến 09/2026"
+ },
+ "question_market": "Việt Nam",
+ "search_log": [
+  {
+   "query": "Tieu Ngao mobile game revenue September 2026 Sensor Tower",
+   "results": [
+    "https://tech-insider.org/mobile-game-revenue-decline-2026",
+    "https://sensortower.com/blog/top-10-worldwide-mobile-games-by-revenue-and-downloads-in-september-2026",
+    "https://www.reddit.com/r/gachagaming/comments/1wuy5fa/gacha_revenue_monthly_report_september_2026",
+    "https://gamedevreports.substack.com/p/sensor-tower-the-state-of-the-mobile",
+    "https://finance.yahoo.com/news/sensor-tower-acquires-video-game-130000109.html"
+   ]
+  },
+  {
+   "query": "Tieu Ngao game revenue Vietnam September 2026 data.ai",
+   "results": [
+    "https://tracxn.com/d/companies/tieugame/__yFtnqWzuAw-eyNq2rf22j-fwoh9CXh7WG10EwZlIv1Q",
+    "https://finance.yahoo.com/news/decade-flappy-bird-vietnam-becomes-220000672.html",
+    "https://www.linkedin.com/in/tieu-ngao-b4b608154",
+    "https://vnexpress.net/cong-nghe/vgv-2025/de-cu/tieu-ngao-gamota-1225",
+    "https://www.linkedin.com/in/tieu-ngao-67b68a12"
+   ]
+  },
+  {
+   "query": "Tieu Ngao revenue Vietnam AppMagic September 2026",
+   "results": [
+    "https://digitalinasia.com/vietnam-mobile-gaming-market",
+    "https://gamedevreports.substack.com/p/appmagic-top-mobile-games-by-revenue-2a7",
+    "https://www.linkedin.com/posts/aslashcev_mobile-market-landscape-2026-ive-gathered-activity-7426587352703139840-m7U1",
+    "https://vietnamnet.vn/en/vietnamese-developers-earn-over-80-million-usd-from-global-app-users-2462362.html",
+    "https://tracxn.com/d/legal-entities/india/appmagic-private-limited/__i7t1stjR0y3vu1yXkGYuvO8Qn8btUolGMVDPtx3W6jk"
+   ]
+  },
+  {
+   "query": "doanh thu game Tieu Ngao Viet Nam thang 9 2026",
+   "results": [
+    "https://gamota.com/gamota-lab/vietnam-game-industry-weekly-updates-september-21-27-2026",
+    "https://vnbusiness.vn/nam-2026-du-kien-doanh-thu-tu-game-va-ung-dung-tai-viet-nam-dat-27-ty-usd.html",
+    "https://advertisingvietnam.com/article/top-game-mobile-theo-luot-tai-xuong-va-doanh-thu-trong-thang-82026",
+    "https://www.brandsvietnam.com/congdong/topic/top-game-mobile-toan-cau-thang-3-2026-quang-cao-doanh-thu-luot-tai",
+    "https://www.facebook.com/Paimoncuteeeee/posts/doanh-thu-c%C3%A1c-game-gacha-th%C3%A1ng-9/122222552252511674"
+   ]
+  },
+  {
+   "query": "Tieu Ngao mobile earnings Vietnam September 2026 Niko Partners",
+   "results": [
+    "https://hanetsema.blog/mlku/188701"
+   ]
+  }
+ ],
+ "skipped": [
+  {
+   "url": "https://finance.yahoo.com/news/decade-flappy-bird-vietnam-becomes-220000672.html",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://www.linkedin.com/in/tieu-ngao-b4b608154",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://www.linkedin.com/in/tieu-ngao-67b68a12",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://digitalinasia.com/vietnam-mobile-gaming-market",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://www.linkedin.com/posts/aslashcev_mobile-market-landscape-2026-ive-gathered-activity-7426587352703139840-m7U1",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://vietnamnet.vn/en/vietnamese-developers-earn-over-80-million-usd-from-global-app-users-2462362.html",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://tracxn.com/d/legal-entities/india/appmagic-private-limited/__i7t1stjR0y3vu1yXkGYuvO8Qn8btUolGMVDPtx3W6jk",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://gamota.com/gamota-lab/vietnam-game-industry-weekly-updates-september-21-27-2026",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://vnbusiness.vn/nam-2026-du-kien-doanh-thu-tu-game-va-ung-dung-tai-viet-nam-dat-27-ty-usd.html",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://advertisingvietnam.com/article/top-game-mobile-theo-luot-tai-xuong-va-doanh-thu-trong-thang-82026",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://www.brandsvietnam.com/congdong/topic/top-game-mobile-toan-cau-thang-3-2026-quang-cao-doanh-thu-luot-tai",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://www.facebook.com/Paimoncuteeeee/posts/doanh-thu-c%C3%A1c-game-gacha-th%C3%A1ng-9/122222552252511674",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  },
+  {
+   "url": "https://hanetsema.blog/mlku/188701",
+   "reason": "Vượt số nguồn tối đa mỗi lần chạy"
+  }
+ ],
+ "sources": [
+  {
+   "id": "S3eb9650e",
+   "url": "https://sensortower.com/blog/top-10-worldwide-mobile-games-by-revenue-and-downloads-in-september-2026",
+   "title": "Sensor Tower Top 10 Worldwide Mobile Games - July 2026",
+   "domain": "sensortower.com",
+   "published": "2026-10-04",
+   "kind": "html",
+   "text": "<9081 ký tự>",
+   "error": null,
+   "tier": "A",
+   "base_tier": "A",
+   "tier_notes": [
+    "sensortower.com nằm trong danh sách hạng A",
+    "Đăng cách đây 0 tháng"
+   ],
+   "publisher": "Sensor Tower"
+  },
+  {
+   "id": "S88a84778",
+   "url": "https://gamedevreports.substack.com/p/sensor-tower-the-state-of-the-mobile",
+   "title": "Sensor Tower: The State of the Mobile Market in 2026",
+   "domain": "gamedevreports.substack.com",
+   "published": "2026-01-30",
+   "kind": "html",
+   "text": "<9277 ký tự>",
+   "error": null,
+   "tier": "B",
+   "base_tier": "B",
+   "tier_notes": [
+    "gamedevreports.substack.com nằm trong danh sách hạng B",
+    "Đăng cách đây 9 tháng"
+   ],
+   "publisher": "gamedevreports.substack.com"
+  },
+  {
+   "id": "S61957401",
+   "url": "https://vnexpress.net/cong-nghe/vgv-2025/de-cu/tieu-ngao-gamota-1225",
+   "title": "Tiếu Ngạo - Gamota - Vietnam GameVerse 2025",
+   "domain": "vnexpress.net",
+   "published": "2024-05-16",
+   "kind": "html",
+   "text": "<1571 ký tự>",
+   "error": null,
+   "tier": "C",
+   "base_tier": "B",
+   "tier_notes": [
+    "vnexpress.net nằm trong danh sách hạng B",
+    "Đăng cách đây 29 tháng (quá 24 tháng): hạ một hạng"
+   ],
+   "publisher": "vnexpress.net"
+  },
+  {
+   "id": "S486409b6",
+   "url": "https://gamedevreports.substack.com/p/appmagic-top-mobile-games-by-revenue-2a7",
+   "title": "AppMagic: Top Mobile Games by Revenue and Downloads in September 2026 - powered by Mellow",
+   "domain": "gamedevreports.substack.com",
+   "published": "2026-10-05",
+   "kind": "html",
+   "text": "<2881 ký tự>",
+   "error": null,
+   "tier": "B",
+   "base_tier": "B",
+   "tier_notes": [
+    "gamedevreports.substack.com nằm trong danh sách hạng B",
+    "Đăng cách đây 0 tháng"
+   ],
+   "publisher": "gamedevreports.substack.com"
+  },
+  {
+   "id": "Sbef095ae",
+   "url": "https://tech-insider.org/mobile-game-revenue-decline-2026",
+   "title": "Mobile Game Revenue Sinks 2% to $40B in 2026",
+   "domain": "tech-insider.org",
+   "published": "2026-08-07",
+   "kind": "html",
+   "text": "<25933 ký tự>",
+   "error": null,
+   "tier": "C",
+   "base_tier": "C",
+   "tier_notes": [
+    "Tên miền không có trong danh sách, mặc định hạng C",
+    "Đăng cách đây 2 tháng"
+   ],
+   "publisher": "tech-insider.org"
+  },
+  {
+   "id": "S979a72f3",
+   "url": "https://www.reddit.com/r/gachagaming/comments/1wuy5fa/gacha_revenue_monthly_report_september_2026",
+   "title": "",
+   "domain": "reddit.com",
+   "published": null,
+   "kind": "html",
+   "text": "<0 ký tự>",
+   "error": "Trang không có nội dung đọc được (có thể bị chặn hoặc chỉ có ảnh)",
+   "tier": "D",
+   "base_tier": "C",
+   "tier_notes": [
+    "reddit.com nằm trong danh sách hạng C",
+    "Không rõ ngày đăng: hạ một hạng"
+   ],
+   "publisher": "reddit.com"
+  },
+  {
+   "id": "Sf65ef20d",
+   "url": "https://finance.yahoo.com/news/sensor-tower-acquires-video-game-130000109.html",
+   "title": "Sensor Tower acquires Video Game Insights, Adds PC/Console Gaming Data",
+   "domain": "finance.yahoo.com",
+   "published": "2025-03-18",
+   "kind": "html",
+   "text": "<2822 ký tự>",
+   "error": null,
+   "tier": "C",
+   "base_tier": "C",
+   "tier_notes": [
+    "Tên miền không có trong danh sách, mặc định hạng C",
+    "Đăng cách đây 19 tháng (12 đến 24 tháng)"
+   ],
+   "publisher": "finance.yahoo.com"
+  },
+  {
+   "id": "S672c9773",
+   "url": "https://tracxn.com/d/companies/tieugame/__yFtnqWzuAw-eyNq2rf22j-fwoh9CXh7WG10EwZlIv1Q",
+   "title": "",
+   "domain": "tracxn.com",
+   "published": null,
+   "kind": "html",
+   "text": "<0 ký tự>",
+   "error": "Không tải được: HTTPError 429 Client Error: Too Many Requests for url: https://tracxn.com/d/companies/tieu-game/__yFtnqWzuAw-eyNq2rf22j-fwoh9CXh7W",
+   "tier": "D",
+   "base_tier": "C",
+   "tier_notes": [
+    "Tên miền không có trong danh sách, mặc định hạng C",
+    "Không rõ ngày đăng: hạ một hạng"
+   ],
+   "publisher": "tracxn.com"
+  }
+ ],
+ "claims": [],
+ "findings": [],
+ "brief": {
+  "decision": "Cần thêm dữ liệu",
+  "summary": "Chưa đủ dữ liệu đã kiểm chứng để trả lời câu hỏi. Không có nhận định nào vừa liên quan vừa tìm thấy câu trích trong nguồn.",
+  "reasons": [],
+  "what_would_change": [
+   "Tải lên báo cáo đã mua hoặc thêm link nguồn gốc của hãng dữ liệu"
+  ],
+  "confidence": "Chưa đủ dữ liệu",
+  "gaps": [
+   "Doanh thu tháng 9/2026"
+  ],
+  "conflicts": [],
+  "definition_notes": [],
+  "guard_log": [],
+  "trusted": [],
+  "uncertain": [],
+  "other": [],
+  "next_steps": [
+   {
+    "text": "Chưa có dữ liệu đã kiểm cho tiêu chí \"Doanh thu tháng 9/2026\"",
+    "query": "",
+    "ask": "Tìm số liệu cho tiêu chí: Doanh thu tháng 9/2026",
+    "url": "",
+    "findings": []
+   }
+  ]
+ },
+ "stats": {
+  "sources_read": 6,
+  "sources_failed": 2,
+  "claims": 0,
+  "verified": 0,
+  "rejected": 0,
+  "carried": 0,
+  "llm_calls": 9,
+  "seconds": 37.0,
+  "model": "gemini/gemini-3.5-flash-lite",
+  "search": "Tavily"
+ }
+}
