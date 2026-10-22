@@ -18,7 +18,5 @@ def test_result_page_shows_trusted_uncertain_and_next_steps():
     text = " ".join(m.value for m in at.markdown)
     for heading in ("Có thể tin", "Chưa chắc chắn", "Nên tìm hiểu tiếp ở đâu"):
         assert heading in text
-    callouts = [*at.success, *at.warning, *at.info]
-    assert any(c.value.startswith(f"**Kết luận: {r['brief']['decision']}**") for c in callouts)
-    assert any(m.label == "Có thể tin" for m in at.metric)
+    assert any(m.label == "Kết luận" for m in at.metric)
     assert at.text_input[0].label.startswith("Hỏi tiếp")

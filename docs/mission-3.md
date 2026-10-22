@@ -48,7 +48,6 @@ Luồng mới trên giao diện:
 4. **Nên tìm hiểu tiếp ở đâu**: các bước đã gộp trùng, mỗi bước có nút "Tìm thêm" hoặc "Mở nguồn".
 5. Ô **Hỏi tiếp**: câu hỏi tiếp được viết lại thành câu hỏi đầy đủ; chuỗi nghiên cứu hiện ở đầu trang.
 6. Mỗi nhận định có nút **Mở nguồn tại câu trích** và đoạn văn quanh câu trích.
-7. Khung **Các nguồn nói khác nhau**: bảng đặt các số mâu thuẫn cạnh nhau (nguồn gốc, giá trị, hạng nguồn, bài viết, ngày đăng) để so trực tiếp.
 
 ## 5. Bằng chứng
 
