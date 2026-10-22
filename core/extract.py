@@ -26,8 +26,10 @@ Hôm nay là {today}. Câu hỏi của người dùng:
 "{question}"
 
 Hãy lập kế hoạch nghiên cứu:
-- criteria: 3 đến 4 tiêu chí đo được để trả lời câu hỏi, viết tiếng Việt, ngắn gọn
-  (ví dụ: "Quy mô doanh thu", "Tốc độ tăng trưởng doanh thu", "Mức cạnh tranh trong nhóm doanh thu cao").
+- criteria: tiêu chí đo được để trả lời câu hỏi, viết tiếng Việt, ngắn gọn. Câu hỏi cần ra quyết định thì 3 đến 4
+  tiêu chí (ví dụ: "Quy mô doanh thu", "Tốc độ tăng trưởng doanh thu", "Mức cạnh tranh trong nhóm doanh thu cao").
+  Câu hỏi tra cứu một con số hoặc một sự kiện thì chỉ 1 đến 2 tiêu chí đúng thứ được hỏi; không thêm tiêu chí ngoài
+  câu hỏi, vì tiêu chí không có dữ liệu sẽ bị tính là còn thiếu.
 - queries: 4 truy vấn tìm kiếm web để tìm số liệu cho các tiêu chí. Viết bằng tiếng Anh vì báo cáo
   thị trường game chủ yếu bằng tiếng Anh; nếu câu hỏi về Việt Nam thì thêm 1 truy vấn tiếng Việt.
   Ưu tiên truy vấn dẫn tới báo cáo của hãng dữ liệu (Sensor Tower, Newzoo, Niko Partners, data.ai, AppMagic).
