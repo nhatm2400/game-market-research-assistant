@@ -31,3 +31,14 @@ def test_text_from_sources_is_escaped_before_it_reaches_the_page():
     at.run()
     text = " ".join(m.value for m in at.markdown)
     assert "<img src=x" not in text and "&lt;img src=x" in text
+
+
+def test_stored_live_runs_open_from_the_sidebar_without_an_llm():
+    """A grader opening the demo with no history and no quota can still see real results."""
+    at = AppTest.from_file(APP, default_timeout=60)
+    at.run()
+    at.button(key="eTC2").click().run()
+    assert not at.exception
+    assert at.session_state["result"]["question"].startswith("Quy mô thị trường game Đông Nam Á năm 2024")
+    text = " ".join(m.value for m in at.markdown)
+    assert "Có thể tin" in text and "Chưa chắc chắn" in text

@@ -98,8 +98,8 @@ class LLM:
         if all(self._is_exhausted(m) for m in self.models):
             wait = max(0.0, min(self.exhausted[m] for m in self.models) - time.time()) / 3600
             raise LLMError("Đã hết hạn mức miễn phí trong ngày của " + ", ".join(self.models)
-                           + f". Hạn mức mở lại sau khoảng {wait:.0f} giờ. Có thể đổi LLM_MODEL hoặc dùng khóa API "
-                           "của một dự án Google khác trong file .env.")
+                           + f". Hạn mức mở lại sau khoảng {wait:.0f} giờ. Có thể đổi LLM_MODEL trong file .env "
+                           "sang mô hình khác, hoặc chờ hạn mức mở lại.")
         raise LLMError(f"Gọi LLM thất bại sau khi thử {', '.join(self.models)}: {str(last)[:300]}")
 
     def _is_exhausted(self, model: str) -> bool:
