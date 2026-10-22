@@ -116,6 +116,7 @@ def run(question: str, plan: dict | None = None, extra_urls: list[str] | None = 
 
     first = 1 + max((int(c.id[1:]) for c in old_claims if c.id[1:].isdigit()), default=0)
     claims: list[Claim] = []
+    llm_error = ""          # set when the AI could not be called, so the run is not mistaken for a finding
     for s in sources:
         if s.error or not s.text:
             continue
@@ -124,6 +125,7 @@ def run(question: str, plan: dict | None = None, extra_urls: list[str] | None = 
             claims += extract.extract_claims(llm, question, plan["criteria"], s, start_index=first + len(claims))
         except Exception as e:
             s.error = f"Lỗi khi trích nhận định: {e}"
+            llm_error = str(e) if isinstance(e, LLMError) else llm_error
 
     progress("Kiểm câu trích bằng code, chấm hạng nguồn, so sánh số liệu")
     by_id = {s.id: s for s in sources}
@@ -147,6 +149,7 @@ def run(question: str, plan: dict | None = None, extra_urls: list[str] | None = 
     try:
         brief = write_brief(llm, question, plan["criteria"], claims, findings, def_notes, window, by_id, q_market)
     except LLMError as e:
+        llm_error = str(e)
         brief = write_brief(None, question, plan["criteria"], claims, findings, def_notes, window, by_id, q_market)
         if any(c.verified for c in claims):
             brief["summary"] = ("Không viết được bản tóm tắt vì lỗi gọi AI. Các nhận định đã kiểm chứng vẫn được "
@@ -155,7 +158,8 @@ def run(question: str, plan: dict | None = None, extra_urls: list[str] | None = 
         brief["guard_log"].append(f"Lỗi khi viết bản tóm tắt: {e}")
 
     if not any(c.verified for c in claims) and sources and (all(s.error for s in sources) or any("Lỗi khi trích nhận định" in (s.error or "") for s in sources)):
-        brief["summary"] = ("Chưa thể trả lời do gặp lỗi kỹ thuật khi đọc hoặc xử lý nguồn. "
+        brief["summary"] = (f"Chưa trả lời được do lỗi kỹ thuật khi gọi AI, không phải do thiếu dữ liệu. {llm_error}" if llm_error else
+                            "Chưa thể trả lời do gặp lỗi kỹ thuật khi đọc hoặc xử lý nguồn. "
                             "Vui lòng kiểm tra lại kết nối mạng hoặc thử lại sau.")
         brief["confidence"] = "Chưa đánh giá"
 
@@ -189,6 +193,7 @@ def run(question: str, plan: dict | None = None, extra_urls: list[str] | None = 
             "seconds": round(time.time() - t0, 1),
             "model": f"{llm.provider}/{', '.join(sorted(getattr(llm, 'models_used', set()) or {llm.model}))}",
             "search": search_engine_name() if use_search else "tắt",
+            "llm_error": llm_error,
         },
     }
 

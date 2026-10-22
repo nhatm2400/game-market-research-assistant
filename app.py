@@ -107,6 +107,9 @@ def examples() -> dict[str, dict]:
 
 
 def research_further(prev: dict, follow_question: str = "", queries: list[str] | None = None) -> None:
+    # claims ticked "Loại nhận định này" stay excluded even if the brief was not rewritten first
+    prev = {**prev, "claims": [{**c, "excluded_by_user": ss.get(f"x{prev['id']}{c['id']}", c.get("excluded_by_user", False))}
+                               for c in prev["claims"]]}
     with st.status("Đang nghiên cứu tiếp, giữ bối cảnh lần trước", expanded=True) as status:
         try:
             res = pipeline.follow_up(prev, follow_question, queries, use_search=use_search, max_sources=max_sources,
@@ -116,10 +119,20 @@ def research_further(prev: dict, follow_question: str = "", queries: list[str] |
             st.error(str(e))
             return
         status.update(label="Xong", state="complete", expanded=False)
-    store.save(res)
+    save(res)
     ss.result = res
-    ss.plan = res["plan"]
+    ss.plan, ss.plan_question = res["plan"], res["question"]
     st.rerun()
+
+
+def save(res: dict) -> None:
+    """Keep a run in the shared history unless the AI failed during it or it read the user's own files."""
+    if res["stats"].get("llm_error"):
+        st.warning("Lần chạy này gặp lỗi gọi AI nên không được lưu vào lịch sử. " + res["stats"]["llm_error"])
+    elif any(s["kind"] == "upload" for s in res["sources"]):
+        st.caption("Lần chạy có file bạn tải lên nên không được lưu vào lịch sử dùng chung.")
+    else:
+        store.save(res)
 
 
 def chips(ids) -> str:
@@ -156,7 +169,7 @@ with st.sidebar:
     for rid, created, q in runs:
         if st.button(f"{created[5:16]}  {q[:40]}", key=f"h{rid}"):
             ss.result = store.load(rid)
-            ss.plan = ss.result["plan"]
+            ss.plan, ss.plan_question = ss.result["plan"], ss.result["question"]
     st.subheader("Kết quả mẫu đã chạy thật")
     st.caption("Các tình huống kiểm thử trong repo, mở ngay, không tốn lượt gọi AI. Vẫn hỏi tiếp được từ đây.")
     for tc, ex in examples().items():
@@ -195,9 +208,12 @@ if ss.plan:
     qs = c2.text_area("Truy vấn tìm kiếm, mỗi dòng một truy vấn", "\n".join(ss.plan["queries"]), height=130)
     ss.plan["criteria"] = [x.strip() for x in crit.splitlines() if x.strip()]
     ss.plan["queries"] = [x.strip() for x in qs.splitlines() if x.strip()]
-    st.caption(f"Thị trường: {ss.plan.get('market') or 'chưa rõ'}. Thể loại: {ss.plan.get('genre') or 'không giới hạn'}.")
+    # the plan belongs to the question it was made for, which may not be what the text box holds now
+    plan_q = ss.get("plan_question") or question
+    st.caption(f"Câu hỏi của kế hoạch: {plan_q}. Thị trường: {ss.plan.get('market') or 'chưa rõ'}. "
+               f"Thể loại: {ss.plan.get('genre') or 'không giới hạn'}.")
 
-    if col2.button("2. Chạy nghiên cứu", type="primary", disabled=llm is None):
+    if col2.button("2. Chạy nghiên cứu", type="primary", disabled=llm is None or not plan_q.strip()):
         uploads = []
         for f in files or []:
             s = from_upload(f.name, f.getvalue())
@@ -205,11 +221,11 @@ if ss.plan:
                 st.warning(f"{f.name}: {s.error}")
             uploads.append(s)
         with st.status("Đang chạy", expanded=True) as status:
-            res = pipeline.run(question, plan=ss.plan, extra_urls=urls_text.splitlines(), uploads=uploads,
+            res = pipeline.run(plan_q, plan=ss.plan, extra_urls=urls_text.splitlines(), uploads=uploads,
                                use_search=use_search, max_sources=max_sources, llm=llm,
                                upload_tier=upload_tier, progress=st.write)
             status.update(label="Xong", state="complete", expanded=False)
-        store.save(res)
+        save(res)
         ss.result = res
 
 # ---------- result ----------
@@ -348,7 +364,7 @@ if r:
                         excluded.add(cid)
         if r["findings"] and st.button("Viết lại bản tóm tắt sau khi loại", disabled=llm is None):
             ss.result = pipeline.rebrief(r, excluded, llm)
-            store.save(ss.result)
+            save(ss.result)
             st.rerun()
         if not r["findings"]:
             st.info("Không có nhận định nào qua được bước kiểm câu trích.")
