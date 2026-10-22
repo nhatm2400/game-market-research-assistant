@@ -16,7 +16,7 @@ from .sources import load_config
 from .textnorm import fmt_value
 
 UNCERTAIN_FLAGS = ("ngoài khung", "cần xem lại phạm vi", "dự báo", "không phải số của cả",
-                   "Không xác định được kỳ đo", "Tăng trưởng trên 100%")
+                   "Không xác định được kỳ đo", "Tăng trưởng trên 100%", "coi là USD", "không ghi rõ thị trường")
 RELAYED = "chưa đối chiếu bản gốc"
 ONLY_CD = "Chỉ có nguồn hạng C hoặc D"
 CHART_MIN_NUMBERS = 3       # this many bare-number quotes on one page usually means a chart or table

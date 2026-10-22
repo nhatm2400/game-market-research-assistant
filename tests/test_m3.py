@@ -315,3 +315,39 @@ def test_value_check_keeps_declines_and_table_cells_without_a_scale_word():
     assert value_mismatch("-17.1%", "+20.1%-17.1%-11.7%") == ""
     assert value_mismatch("$5.37 billion", "Revenue (USD bn) | 5.37 | 5.89") == ""
     assert value_mismatch("S-5.89", "| Total revenue | S-5.35 N-6.17 | S-5.89 N-6.51 |") == ""
+
+
+def test_weaker_newer_figure_does_not_push_a_measured_figure_aside():
+    """A blog's 2026 figure must not hide Newzoo's 2024 figure for a question without a year."""
+    nz = assess_source(src("S6", "https://newzoo.com/x", "Newzoo: the Southeast Asia games market reached $5.5 billion in 2024.",
+                           "2025-08-01"), TODAY)
+    blog = assess_source(src("S7", "https://some-gaming-blog.net/x",
+                             "Our estimate: the Southeast Asia games market will hit $7.2 billion in 2026.", "2026-02-01"), TODAY)
+    cs = [_verified("C1", nz, "the Southeast Asia games market reached $5.5 billion in 2024", "$5.5 billion", period="2024"),
+          _verified("C2", blog, "the Southeast Asia games market will hit $7.2 billion in 2026", "$7.2 billion", period="2026")]
+    fs, ev = _ev(cs, [nz, blog], question_window("Quy mô thị trường game Đông Nam Á", TODAY))
+    assert not fs[0].newer
+    assert fs[0].key in [x["finding"] for x in ev["trusted"]]
+
+
+def test_unstated_currency_and_market_are_not_trusted():
+    assert parse_value("Rp 30 trillion")[1] == "IDR" and parse_value("S$1.2 billion")[1] == "SGD"
+    s = assess_source(src("S1", "https://nikopartners.com/x",
+                          "In 2024 the market generated 5.37 billion in revenue. Mobile titles earned $2.1 billion in 2024.",
+                          "2025-03-01"), TODAY)
+    no_cur = _verified("C1", s, "In 2024 the market generated 5.37 billion in revenue", "5.37 billion")
+    no_mkt = _verified("C2", s, "Mobile titles earned $2.1 billion in 2024", "$2.1 billion", market="", scope="mobile")
+    fs, ev = _ev([no_cur, no_mkt], [s], question_window("Quy mô thị trường game Đông Nam Á năm 2024", TODAY))
+    assert not ev["trusted"]
+    why = " ".join(w for x in ev["uncertain"] for w in x["why"])
+    assert "coi là USD" in why and "không ghi rõ thị trường" in why
+
+
+def test_comparison_period_on_a_revenue_figure_does_not_split_it():
+    """TC1: the same $625M appeared twice as trusted because one copy had period 'Q1 2025 vs Q4 2024'."""
+    s = assess_source(src("S1", "https://sensortower.com/x", ST_TEXT * 3, "2025-05-20"), TODAY)
+    q = "SEA currently ranks seventh globally in in-app purchase (IAP) revenue at $625 million in Q1 2025"
+    cs = [_verified("C1", s, q, "$625 million", period="Q1 2025", scope="mobile_iap"),
+          _verified("C2", s, q, "$625 million", period="Q1 2025 vs Q4 2024", scope="mobile_iap")]
+    assert cs[1].period == "Q1 2025"
+    assert len(build_findings(cs, {s.id: s}, TODAY)) == 1

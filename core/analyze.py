@@ -66,6 +66,8 @@ def geo_flags(claim: Claim, question_market: str) -> list[str]:
             flags.append(f"Ghi là {REGION} nhưng đoạn/bảng chứa câu trích nói về {c}: cần xem lại phạm vi")
     if question_market and question_market != "chưa rõ" and market not in (question_market, "chưa rõ"):
         flags.append(f"Số của thị trường {market}, câu hỏi hỏi về {question_market}")
+    if market == "chưa rõ" and question_market and question_market != "chưa rõ":
+        flags.append(f"Nguồn không ghi rõ thị trường của số này (câu hỏi về {question_market})")
     return flags
 
 
@@ -91,6 +93,8 @@ def context_flags(claim: Claim, window: Window, question_market: str, today: dat
 def enrich_claim(claim: Claim, window: Window, question_market: str, today: date,
                  published: str | None = None) -> Claim:
     claim.value, claim.unit = parse_value(claim.value_text)
+    if claim.metric != "growth":   # "Q1 2025 vs Q4 2024" on a revenue figure is the quarter it measures
+        claim.period = re.split(r"\s+(?:vs\.?|so với)\s+", claim.period or "", maxsplit=1)[0]
     if claim.metric == "revenue" and not claim.unit and claim.value is not None and abs(claim.value) >= 1e6:
         # "5.37 billion" in a market report is USD; without this it would not be compared with "$5.89 billion"
         claim.unit = "USD"
@@ -194,11 +198,19 @@ def _mark_newer(findings: list[Finding], claims: dict[str, Claim], today: date) 
         sp = parse_period(c.period)
         if c.metric in ("revenue", "downloads", "players", "share") and sp and sp.start <= today:
             groups[(c.metric, c.market, c.scope, (c.genre or "").lower(), c.unit, sp.gran)].append((sp.end, f))
+
+    def tier(f: Finding) -> str:
+        return min(claims[i].tier for i in f.claim_ids)
+
+    def forecast(f: Finding) -> bool:
+        return any("dự báo" in fl for i in f.claim_ids for fl in claims[i].flags)
+
     for items in groups.values():
-        newest = max(items, key=lambda x: x[0])
         for end, f in items:
-            if end < newest[0]:
-                f.newer = newest[1].key
+            # only a measured figure from an equally good or better source replaces an older one
+            newer = [x for x in items if x[0] > end and tier(x[1]) <= tier(f) and not forecast(x[1])]
+            if newer:
+                f.newer = max(newer, key=lambda x: x[0])[1].key
 
 
 def definition_differences(findings: list[Finding], claims: dict[str, Claim]) -> list[str]:

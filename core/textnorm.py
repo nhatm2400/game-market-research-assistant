@@ -59,6 +59,12 @@ _MULT = [
 ]
 
 
+# checked in order: "S$" and "Rp" must not be read as US dollars
+CURRENCIES = [("SGD", r"s\$|sgd"), ("IDR", r"\brp\.?\s?\d|idr|rupiah"), ("THB", r"thb|฿|baht"),
+              ("PHP", r"\bphp|₱|peso"), ("MYR", r"myr|ringgit|\brm\s?\d"), ("VND", r"vnd|đồng|₫"),
+              ("USD", r"\$|usd|đô")]
+
+
 def number_tokens(text: str) -> list[str]:
     """Digit groups of a value in normalised form, e.g. '$5.37 billion' -> ['5 37']."""
     return [normalize(m.group(0)) for m in NUM_RE.finditer(text or "")]
@@ -100,7 +106,7 @@ def parse_value(value_text: str) -> tuple[float | None, str]:
         if re.search(pat, rest[:15]):
             mult = k
             break
-    unit = "USD" if ("$" in vt or "usd" in vt or "đô" in vt) else ("VND" if ("vnd" in vt or "đồng" in vt) else "")
+    unit = next((code for code, pat in CURRENCIES if re.search(pat, vt)), "")
     return num * mult, unit
 
 
@@ -137,7 +143,7 @@ def value_mismatch(value_text: str, quote: str) -> str:
         qv, qu = parse_value(sign + quote[q.start(): min(end, q.end() + 15)])
         if qv is None:
             return ""
-        if (u == "%" and qu in ("USD", "VND")) or (u != "%" and qu == "%"):
+        if (u == "%" and qu not in ("", "%")) or (u != "%" and qu == "%"):
             why = "đơn vị"
         elif u != "%" and abs(qv) != parse_number(q.group(0)) and abs(abs(v) - abs(qv)) > 1e-6 * abs(v):
             why = "bậc (tỷ, triệu...)"
