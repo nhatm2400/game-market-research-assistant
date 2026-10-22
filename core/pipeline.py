@@ -1,6 +1,7 @@
 """End-to-end run: question -> plan -> search -> read -> claims -> code checks -> brief."""
 from __future__ import annotations
 
+import re
 import time
 import uuid
 from concurrent.futures import ThreadPoolExecutor
@@ -16,7 +17,7 @@ from .models import Claim, Source
 from .periods import Window, question_window
 from .search import search, search_engine_name
 from .sources import assess_claim, assess_source, base_tier, domain_of
-from .textnorm import normalize
+from .textnorm import normalize, value_mismatch
 from .verify import verify_claim
 
 TIER_RANK = {"A": 0, "B": 1, "C": 2, "D": 3}
@@ -116,6 +117,7 @@ def run(question: str, plan: dict | None = None, extra_urls: list[str] | None = 
 
     first = 1 + max((int(c.id[1:]) for c in old_claims if c.id[1:].isdigit()), default=0)
     claims: list[Claim] = []
+    llm_error = ""          # set when the AI could not be called, so the run is not mistaken for a finding
     for s in sources:
         if s.error or not s.text:
             continue
@@ -124,6 +126,7 @@ def run(question: str, plan: dict | None = None, extra_urls: list[str] | None = 
             claims += extract.extract_claims(llm, question, plan["criteria"], s, start_index=first + len(claims))
         except Exception as e:
             s.error = f"Lỗi khi trích nhận định: {e}"
+            llm_error = str(e) if isinstance(e, LLMError) else llm_error
 
     progress("Kiểm câu trích bằng code, chấm hạng nguồn, so sánh số liệu")
     by_id = {s.id: s for s in sources}
@@ -147,6 +150,7 @@ def run(question: str, plan: dict | None = None, extra_urls: list[str] | None = 
     try:
         brief = write_brief(llm, question, plan["criteria"], claims, findings, def_notes, window, by_id, q_market)
     except LLMError as e:
+        llm_error = str(e)
         brief = write_brief(None, question, plan["criteria"], claims, findings, def_notes, window, by_id, q_market)
         if any(c.verified for c in claims):
             brief["summary"] = ("Không viết được bản tóm tắt vì lỗi gọi AI. Các nhận định đã kiểm chứng vẫn được "
@@ -155,7 +159,8 @@ def run(question: str, plan: dict | None = None, extra_urls: list[str] | None = 
         brief["guard_log"].append(f"Lỗi khi viết bản tóm tắt: {e}")
 
     if not any(c.verified for c in claims) and sources and (all(s.error for s in sources) or any("Lỗi khi trích nhận định" in (s.error or "") for s in sources)):
-        brief["summary"] = ("Chưa thể trả lời do gặp lỗi kỹ thuật khi đọc hoặc xử lý nguồn. "
+        brief["summary"] = (f"Chưa trả lời được do lỗi kỹ thuật khi gọi AI, không phải do thiếu dữ liệu. {llm_error}" if llm_error else
+                            "Chưa thể trả lời do gặp lỗi kỹ thuật khi đọc hoặc xử lý nguồn. "
                             "Vui lòng kiểm tra lại kết nối mạng hoặc thử lại sau.")
         brief["confidence"] = "Chưa đánh giá"
 
@@ -189,6 +194,7 @@ def run(question: str, plan: dict | None = None, extra_urls: list[str] | None = 
             "seconds": round(time.time() - t0, 1),
             "model": f"{llm.provider}/{', '.join(sorted(getattr(llm, 'models_used', set()) or {llm.model}))}",
             "search": search_engine_name() if use_search else "tắt",
+            "llm_error": llm_error,
         },
     }
 
@@ -211,6 +217,50 @@ def rebrief(result: dict, excluded_ids: set[str], llm: LLM | None = None) -> dic
                                   def_notes, window, sources, result.get("question_market", ""))
     result["brief"]["guard_log"].append(f"Người dùng loại {len(excluded_ids)} nhận định: {', '.join(sorted(excluded_ids))}")
     return result
+
+
+class _Replay:
+    """Gives write_brief the AI's stored answer, so only the code rules run again."""
+    calls = 0
+
+    def __init__(self, out: dict):
+        self.out = out
+
+    def json(self, prompt: str, schema: dict) -> dict:
+        return self.out
+
+
+def rescore(result: dict) -> dict:
+    """Apply the current code rules to a stored run without calling the AI: the value check, claim flags,
+    findings, the three sections and the brief guards. The AI's claims and wording stay as they were; a reason
+    the guard dropped during the live run cannot come back, since only its text was kept."""
+    today, window = date.fromisoformat(result["today"]), _window(result["window"])
+    q_market = result.get("question_market", "")
+    sources = {s["id"]: Source(**{**s, "text": ""}) for s in result["sources"]}
+    claims = [Claim(**c) for c in result["claims"]]
+    for c in claims:
+        bad = value_mismatch(c.value_text, c.quote) if c.verified else ""
+        if bad:
+            c.verified, c.verify_note = False, f"Giá trị \"{c.value_text}\" khác con số trong câu trích về {bad}"
+        if c.verified:
+            enrich_claim(c, window, q_market, today, sources[c.source_id].published)
+    findings = build_findings(claims, sources, today)
+    old = result["brief"]
+    first = re.search(r'Đổi kết luận "(.+?)"', " ".join(old["guard_log"]))   # the AI's own label, before the guard
+    out = {"decision": first.group(1) if first else old["decision"], "summary": old["summary"],
+           "reasons": [{"text": x["text"], "claim_ids": x["claim_ids"]} for x in old["reasons"]],
+           "what_would_change": old["what_would_change"]}
+    brief = write_brief(_Replay(out) if any(c.verified for c in claims) else None, result["question"],
+                        result["plan"]["criteria"], claims, findings,
+                        definition_differences(findings, {c.id: c for c in claims}), window, sources, q_market)
+    if not any(c.verified for c in claims):
+        brief["summary"] = old["summary"]
+    brief["guard_log"] = list(dict.fromkeys([g for g in old["guard_log"] if g.startswith("Bỏ")] + brief["guard_log"]))
+    stats = {**result["stats"], "verified": sum(c.verified for c in claims),
+             "rejected": sum(not c.verified for c in claims),
+             "rescored": "Phần do code tính đã được tính lại bằng code hiện tại trên lần chạy thật này, không gọi lại AI"}
+    return {**result, "claims": [c.to_dict() for c in claims], "findings": [f.to_dict() for f in findings],
+            "brief": brief, "stats": stats}
 
 
 def follow_up(prev: dict, follow_question: str = "", queries: list[str] | None = None,

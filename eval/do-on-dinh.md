@@ -6,7 +6,7 @@ lưu trong `eval/runs/`. Câu trả lời của AI thay đổi giữa các lần
 | Mã | Loại | Số lần đạt mọi điều kiện | Kết luận qua các lần (số lần) |
 |---|---|---|---|
 | TC1 | Làm tốt | 3/3 | Đã có câu trả lời (3) |
-| TC2 | Khó, dữ liệu không rõ ràng | 3/3 | Có số liệu nhưng chưa chắc chắn (2), Đã có câu trả lời (1) |
+| TC2 | Khó, dữ liệu không rõ ràng | 3/3 | Có số liệu nhưng chưa chắc chắn (3) |
 | TC3 | Khó, dữ liệu không rõ ràng | 3/3 | Có số liệu nhưng chưa chắc chắn (1), Cần thêm dữ liệu (2) |
 | TC4 | Làm tốt | 3/3 | Cần thêm dữ liệu (3) |
 | TC5 | Thiếu dữ liệu | 3/3 | Cần thêm dữ liệu (3) |

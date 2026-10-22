@@ -652,7 +652,7 @@
     "Các nguồn gốc độc lập lệch nhau 21% (ghi dạng khoảng)",
     "6 bài viết nhưng chỉ 3 nguồn gốc"
    ],
-   "newer": "F6"
+   "newer": ""
   },
   {
    "key": "F2",
@@ -876,7 +876,7 @@
   }
  ],
  "brief": {
-  "decision": "Đã có câu trả lời",
+  "decision": "Có số liệu nhưng chưa chắc chắn",
   "summary": "Quy mô doanh thu thị trường game Đông Nam Á năm 2024 dao động từ 5,37 tỷ USD đến 6,51 tỷ USD tùy thuộc vào nguồn dữ liệu. Số liệu này có sự chênh lệch khoảng 21% giữa các tổ chức độc lập nên cần lưu ý khi sử dụng.",
   "reasons": [
    {
@@ -921,7 +921,9 @@
    "Doanh thu Đông Nam Á: 5,37 tỷ USD đến 5,89 tỷ USD đến 6,51 tỷ USD (toàn ngành game, 2024; Newzoo, Niko Partners, Statista); 6,47 tỷ USD (toàn ngành game, 2029; Niko Partners); 5,47 tỷ USD (toàn ngành game, 2025; Niko Partners). Các số này khác kỳ đo hoặc phạm vi đo nên không so trực tiếp được.",
    "Số người chơi Đông Nam Á: 285,82 triệu (toàn ngành game, 2024; Niko Partners); 324,4 triệu (toàn ngành game, 2029; Niko Partners). Các số này khác kỳ đo hoặc phạm vi đo nên không so trực tiếp được."
   ],
-  "guard_log": [],
+  "guard_log": [
+   "Đổi kết luận \"Đã có câu trả lời\" thành \"Có số liệu nhưng chưa chắc chắn\": chỉ 1/4 lý do dựa trên nhận định có thể tin"
+  ],
   "trusted": [
    {
     "finding": "F2",
@@ -1236,6 +1238,7 @@
   "llm_calls": 6,
   "seconds": 14.0,
   "model": "gemini/gemini-3.5-flash-lite",
-  "search": "tắt"
+  "search": "tắt",
+  "rescored": "Phần do code tính đã được tính lại bằng code hiện tại trên lần chạy thật này, không gọi lại AI"
  }
 }

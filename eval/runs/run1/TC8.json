@@ -211,6 +211,7 @@
      "C2"
     ],
     "why": [
+     "Không ghi đơn vị tiền, coi là USD để so sánh",
      "Kỳ đo 2025 chưa kết thúc khi nguồn đăng (09/2025): là số ước tính hoặc dự báo, chưa chắc là số đã đo",
      "Kỳ đo 2025 chưa kết thúc khi nguồn đăng (10/2025): là số ước tính hoặc dự báo, chưa chắc là số đã đo",
      "Số của Niko Partners dẫn lại qua bài viết, chưa đối chiếu bản gốc"
@@ -221,6 +222,15 @@
       "query": "Niko Partners Southeast Asia games market revenue 2025",
       "ask": "",
       "url": "",
+      "findings": [
+       "F1"
+      ]
+     },
+     {
+      "text": "Mở nguồn tại câu trích để xem lại kỳ đo, phạm vi hoặc giá trị tuyệt đối",
+      "query": "",
+      "ask": "",
+      "url": "https://gamesbeat.com/southeast-asia-to-reach-6-47-billion-in-revenues-by-2029-niko-partners/#:~:text=The%20region%E2%80%99s%20market%20is%20expected,in%202025%20to%20%245.47%20billion.",
       "findings": [
        "F1"
       ]
@@ -258,6 +268,15 @@
     ]
    },
    {
+    "text": "Mở nguồn tại câu trích để xem lại kỳ đo, phạm vi hoặc giá trị tuyệt đối",
+    "query": "",
+    "ask": "",
+    "url": "https://gamesbeat.com/southeast-asia-to-reach-6-47-billion-in-revenues-by-2029-niko-partners/#:~:text=The%20region%E2%80%99s%20market%20is%20expected,in%202025%20to%20%245.47%20billion.",
+    "findings": [
+     "F1"
+    ]
+   },
+   {
     "text": "Tìm số đã đo thay cho số dự báo",
     "query": "Southeast Asia games market revenue 2025 actual",
     "ask": "",
@@ -278,6 +297,7 @@
   "llm_calls": 5,
   "seconds": 49.4,
   "model": "gemini/gemini-3.5-flash-lite",
-  "search": "tắt"
+  "search": "tắt",
+  "rescored": "Phần do code tính đã được tính lại bằng code hiện tại trên lần chạy thật này, không gọi lại AI"
  }
 }

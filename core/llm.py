@@ -13,7 +13,8 @@ import time
 
 ATTEMPTS_PER_MODEL = 3
 LONG_WAIT_SECONDS = 90      # a 429 asking for a longer wait than this means the quota is used up
-FATAL = ("API_KEY_INVALID", "API key not valid", "PERMISSION_DENIED", "UNAUTHENTICATED", "401", "403")
+FATAL = ("API_KEY_INVALID", "API key not valid", "PERMISSION_DENIED", "UNAUTHENTICATED")
+FATAL_CODE = re.compile(r"\b40[13]\b")     # a word on its own, not digits inside a request id
 NEXT_MODEL = ("NOT_FOUND", "404", "UNAVAILABLE", "503", "overloaded", "high demand")
 DEFAULT_GEMINI_FALLBACKS = "gemini-2.5-flash,gemini-2.5-flash-lite"
 
@@ -25,7 +26,7 @@ class LLMError(RuntimeError):
 def classify(msg: str) -> str:
     """'fatal' stops at once, 'exhausted' means the quota of this model is used up for now,
     'retry' is transient."""
-    if any(s in msg for s in FATAL):
+    if any(s in msg for s in FATAL) or FATAL_CODE.search(msg):
         return "fatal"
     if "RESOURCE_EXHAUSTED" in msg or "429" in msg:
         if "PerDay" in msg or "per day" in msg.lower() or retry_seconds(msg) > LONG_WAIT_SECONDS:
@@ -88,7 +89,8 @@ class LLM:
                     if kind == "fatal":
                         raise LLMError(f"Gọi LLM thất bại: {msg[:300]}") from e
                     if kind == "exhausted":
-                        self.exhausted[model] = time.time() + retry_seconds(msg)
+                        # a per-day limit often comes without a retry delay: assume an hour, not "now"
+                        self.exhausted[model] = time.time() + (retry_seconds(msg) or 3600)
                         break                      # no point waiting: use the next model
                     unavailable = any(s in msg for s in NEXT_MODEL)
                     if unavailable and (attempt >= 1 or "NOT_FOUND" in msg or "404" in msg):
@@ -98,8 +100,8 @@ class LLM:
         if all(self._is_exhausted(m) for m in self.models):
             wait = max(0.0, min(self.exhausted[m] for m in self.models) - time.time()) / 3600
             raise LLMError("Đã hết hạn mức miễn phí trong ngày của " + ", ".join(self.models)
-                           + f". Hạn mức mở lại sau khoảng {wait:.0f} giờ. Có thể đổi LLM_MODEL hoặc dùng khóa API "
-                           "của một dự án Google khác trong file .env.")
+                           + f". Hạn mức mở lại sau khoảng {wait:.0f} giờ. Có thể đổi LLM_MODEL trong file .env "
+                           "sang mô hình khác, hoặc chờ hạn mức mở lại.")
         raise LLMError(f"Gọi LLM thất bại sau khi thử {', '.join(self.models)}: {str(last)[:300]}")
 
     def _is_exhausted(self, model: str) -> bool:

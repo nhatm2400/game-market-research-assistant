@@ -22,6 +22,7 @@ Khung thời gian dữ liệu: 01/2025 đến 12/2025. Ngày chạy: 2026-10-22.
 ## Chưa chắc chắn
 
 - **F1** Doanh thu toàn ngành game, Đông Nam Á, 2025: 5,47 tỷ USD (Niko Partners). [C1, C2]
+  - Không ghi đơn vị tiền, coi là USD để so sánh
   - Kỳ đo 2025 chưa kết thúc khi nguồn đăng (09/2025): là số ước tính hoặc dự báo, chưa chắc là số đã đo
   - Kỳ đo 2025 chưa kết thúc khi nguồn đăng (10/2025): là số ước tính hoặc dự báo, chưa chắc là số đã đo
   - Số của Niko Partners dẫn lại qua bài viết, chưa đối chiếu bản gốc
@@ -29,6 +30,7 @@ Khung thời gian dữ liệu: 01/2025 đến 12/2025. Ngày chạy: 2026-10-22.
 ## Nên tìm hiểu tiếp ở đâu
 
 - Đối chiếu bản gốc của Niko Partners trên nikopartners.com (F1). Truy vấn gợi ý: `Niko Partners Southeast Asia games market revenue 2025`.
+- Mở nguồn tại câu trích để xem lại kỳ đo, phạm vi hoặc giá trị tuyệt đối (F1). https://gamesbeat.com/southeast-asia-to-reach-6-47-billion-in-revenues-by-2029-niko-partners/#:~:text=The%20region%E2%80%99s%20market%20is%20expected,in%202025%20to%20%245.47%20billion.
 - Tìm số đã đo thay cho số dự báo (F1). Truy vấn gợi ý: `Southeast Asia games market revenue 2025 actual`.
 
 ## Điều gì sẽ làm thay đổi khuyến nghị

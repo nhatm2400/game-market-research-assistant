@@ -82,6 +82,9 @@ def _allowed_numbers(claims: list[Claim], extra: str = "") -> set[str]:
     return allowed
 
 
+SINGLE_DIGIT_UNIT = re.compile(r"\s*(%|phần trăm|percent|tỷ|tỉ|triệu|nghìn|ngàn|billion|million|usd|đô|lần|x\b)", re.I)
+
+
 def unsupported_numbers(text: str, claims: list[Claim], extra: str = "") -> list[str]:
     """Numbers in `text` that are in none of the claims. `extra` is text whose numbers are also allowed:
     the question and its time frame, so "12 tháng" is not mistaken for an invented figure."""
@@ -89,7 +92,9 @@ def unsupported_numbers(text: str, claims: list[Claim], extra: str = "") -> list
     bad = []
     for m in NUM_RE.finditer(text or ""):
         tok = normalize(m.group(0))
-        if len(tok) == 1:            # single digits: counts like "3 nguồn", quarter numbers
+        # single digits are counts ("3 nguồn") or quarters, unless a unit makes them a figure ("6 tỷ USD", "9%")
+        if len(tok) == 1 and not (text[max(0, m.start() - 1): m.start()] == "$"
+                                  or SINGLE_DIGIT_UNIT.match(text, m.end())):
             continue
         if tok not in allowed:
             bad.append(m.group(0))
@@ -111,8 +116,10 @@ def write_brief(llm: LLM | None, question: str, criteria: list[str], claims: lis
     status_of = {x["finding"]: "có thể tin" for x in ev["trusted"]}
     status_of.update({x["finding"]: "chưa chắc chắn (" + "; ".join(x["why"]) + ")" for x in ev["uncertain"]})
     status_of.update({x["finding"]: "ngoài phạm vi câu hỏi (" + x["why"][0] + ")" for x in ev["other"]})
-    # numbers the user wrote, and those code computed (e.g. "lệch nhau 21%"), are not invented by the LLM
-    asked = " ".join([question, window.label] + [r for f in findings for r in f.reasons])
+    # numbers the user wrote, and those code computed and showed the LLM ("lệch nhau 21%", "460 triệu USD"),
+    # are not invented by the LLM
+    asked = " ".join([question, window.label] + [r for f in findings for r in f.reasons]
+                     + [fmt_value(v, f.unit) for f in findings for v in f.values])
     brief = {"decision": "Cần thêm dữ liệu", "summary": "", "reasons": [], "what_would_change": [],
              "confidence": "Chưa đủ dữ liệu", "gaps": gaps, "conflicts": [], "definition_notes": def_notes,
              "guard_log": [], **ev}
@@ -171,11 +178,13 @@ def write_brief(llm: LLM | None, question: str, criteria: list[str], claims: lis
         brief["confidence"] = overall_confidence(findings, cited_findings)
     else:
         brief["decision"] = "Cần thêm dữ liệu"
-    # a firm answer or recommendation needs at least one reason resting on trusted findings
-    if brief["decision"] != "Cần thêm dữ liệu" and not any(x["status"] == "trusted" for x in brief["reasons"]):
+    # a firm answer or recommendation needs at least half of its reasons resting on trusted findings
+    n_trusted = sum(x["status"] == "trusted" for x in brief["reasons"])
+    if brief["decision"] != "Cần thêm dữ liệu" and n_trusted * 2 < len(brief["reasons"]):
         new = UNSURE if brief["decision"] == "Đã có câu trả lời" else "Cần thêm dữ liệu"
         brief["guard_log"].append(f"Đổi kết luận \"{brief['decision']}\" thành \"{new}\": "
-                                  "không lý do nào dựa trên nhận định có thể tin")
+                                  + (f"chỉ {n_trusted}/{len(brief['reasons'])} lý do" if n_trusted else "không lý do nào")
+                                  + " dựa trên nhận định có thể tin")
         brief["decision"] = new
     if gaps and brief["confidence"] == "Cao":
         brief["confidence"] = "Trung bình"

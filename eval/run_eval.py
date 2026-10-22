@@ -5,6 +5,7 @@
     python -m eval.run_eval --report   # rebuild the table from eval/results/*.json, no LLM calls
     python -m eval.run_eval --compare  # M2 (eval/results_m2) vs M3 (eval/results) -> eval/so-sanh-m2-m3.md
     python -m eval.run_eval --stability  # several runs kept in eval/runs/<run>/ -> eval/do-on-dinh.md
+    python -m eval.run_eval --rescore  # apply the current code rules to the stored live runs, no LLM calls
 
 `checks` are the Mission 2 conditions, kept unchanged as the regression test. `checks_m3` are the
 conditions added for Mission 3. A case with `parent` and `follow_up` asks a follow-up question on
@@ -214,8 +215,9 @@ def compare(cases: list[dict]) -> None:
     print("Đã ghi eval/so-sanh-m2-m3.md")
 
 
-def stability(cases: list[dict]) -> None:
-    """Same checks over several full runs kept in eval/runs/<run>/: how often each case and condition passes."""
+def stability(cases: list[dict], rescore: bool = False) -> None:
+    """Same checks over several full runs kept in eval/runs/<run>/: how often each case and condition passes.
+    With `rescore`, each stored run first gets the current code rules (no AI calls) and is saved back."""
     runs = sorted(p for p in (HERE / "runs").iterdir() if p.is_dir()) if (HERE / "runs").exists() else []
     rows, fails = [], {}
     for case in cases:
@@ -224,6 +226,10 @@ def stability(cases: list[dict]) -> None:
             r = _load(run, case["id"])
             if r is None:
                 continue
+            if rescore:
+                r = pipeline.rescore(r)
+                (run / f"{case['id']}.json").write_text(json.dumps(r, ensure_ascii=False, indent=1), encoding="utf-8")
+                (run / f"{case['id']}.md").write_text(brief_markdown(r), encoding="utf-8")
             parent = _load(run, case["parent"]) if case.get("parent") else None
             res = all_checks(r, case, parent)
             n += 1
@@ -253,18 +259,22 @@ def main(ids: list[str]) -> None:
     if "--compare" in flags:
         return compare(cases)
     if "--stability" in flags:
-        return stability(cases)
+        return stability(cases, "--rescore" in flags)
     if ids:
         cases = [c for c in cases if c["id"] in ids]
     OUT.mkdir(exist_ok=True)
     rows, done = [], {}
-    llm = None if "--report" in flags else LLM()
+    llm = None if flags & {"--report", "--rescore"} else LLM()
     for case in cases:
         if llm is None:
             r = _load(OUT, case["id"])
             if r is None:
                 rows.append((case, None, [("chay", False, "chưa có kết quả trong eval/results")]))
                 continue
+            if "--rescore" in flags:
+                r = pipeline.rescore(r)
+                (OUT / f"{case['id']}.json").write_text(json.dumps(r, ensure_ascii=False, indent=1), encoding="utf-8")
+                (OUT / f"{case['id']}.md").write_text(brief_markdown(r), encoding="utf-8")
             parent = _load(OUT, case["parent"]) if case.get("parent") else None
             rows.append((case, r, all_checks(r, case, parent)))
             continue

@@ -764,6 +764,7 @@
     ],
     "why": [
      "Các nguồn gốc độc lập lệch nhau 21% (ghi dạng khoảng)",
+     "Không ghi đơn vị tiền, coi là USD để so sánh",
      "Số của Newzoo, Niko Partners, Statista dẫn lại qua bài viết, chưa đối chiếu bản gốc"
     ],
     "next_steps": [
@@ -781,6 +782,15 @@
       "query": "Newzoo Southeast Asia games market revenue 2024",
       "ask": "",
       "url": "",
+      "findings": [
+       "F1"
+      ]
+     },
+     {
+      "text": "Mở nguồn tại câu trích để xem lại kỳ đo, phạm vi hoặc giá trị tuyệt đối",
+      "query": "",
+      "ask": "",
+      "url": "https://gamesbeat.com/southeast-asia-to-reach-6-47-billion-in-revenues-by-2029-niko-partners/#:~:text=According%20to%20Niko%E2%80%99s%20Southeast%20Asia,2024%2C%20up%205.2%25%20year%2Dover%2Dyear%20%28YoY%29.",
       "findings": [
        "F1"
       ]
@@ -915,6 +925,15 @@
     ]
    },
    {
+    "text": "Mở nguồn tại câu trích để xem lại kỳ đo, phạm vi hoặc giá trị tuyệt đối",
+    "query": "",
+    "ask": "",
+    "url": "https://gamesbeat.com/southeast-asia-to-reach-6-47-billion-in-revenues-by-2029-niko-partners/#:~:text=According%20to%20Niko%E2%80%99s%20Southeast%20Asia,2024%2C%20up%205.2%25%20year%2Dover%2Dyear%20%28YoY%29.",
+    "findings": [
+     "F1"
+    ]
+   },
+   {
     "text": "Đối chiếu bản gốc của Niko Partners trên nikopartners.com",
     "query": "Niko Partners Southeast Asia games market revenue growth 2024 vs 2023",
     "ask": "",
@@ -935,6 +954,7 @@
   "llm_calls": 6,
   "seconds": 13.5,
   "model": "gemini/gemini-3.5-flash-lite",
-  "search": "tắt"
+  "search": "tắt",
+  "rescored": "Phần do code tính đã được tính lại bằng code hiện tại trên lần chạy thật này, không gọi lại AI"
  }
 }

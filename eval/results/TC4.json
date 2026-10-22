@@ -1289,6 +1289,7 @@
     ],
     "why": [
      "Chỉ có nguồn hạng C hoặc D",
+     "Không ghi đơn vị tiền, coi là USD để so sánh",
      "Số của IMARC dẫn lại qua bài viết, chưa đối chiếu bản gốc"
     ],
     "next_steps": [
@@ -1306,6 +1307,15 @@
       "query": "IMARC Vietnam mobile games all revenue 2025",
       "ask": "",
       "url": "",
+      "findings": [
+       "F4"
+      ]
+     },
+     {
+      "text": "Mở nguồn tại câu trích để xem lại kỳ đo, phạm vi hoặc giá trị tuyệt đối",
+      "query": "",
+      "ask": "",
+      "url": "https://icon-era.com/statistics/southeast-asia-mobile-gaming#:~:text=Vietnam%E2%80%99s%20mobile%20game%20market%20generated,Vietnam%20Mobile%20Gaming%20Year%2Din%2DReview%202025.",
       "findings": [
        "F4"
       ]
@@ -1569,6 +1579,15 @@
     ]
    },
    {
+    "text": "Mở nguồn tại câu trích để xem lại kỳ đo, phạm vi hoặc giá trị tuyệt đối",
+    "query": "",
+    "ask": "",
+    "url": "https://icon-era.com/statistics/southeast-asia-mobile-gaming#:~:text=Vietnam%E2%80%99s%20mobile%20game%20market%20generated,Vietnam%20Mobile%20Gaming%20Year%2Din%2DReview%202025.",
+    "findings": [
+     "F4"
+    ]
+   },
+   {
     "text": "Mới có số của thị trường khác, tìm số riêng cho Việt Nam",
     "query": "Vietnam mobile games MOBA revenue growth Q1 2025 vs Q4 2024",
     "ask": "",
@@ -1587,6 +1606,7 @@
   "llm_calls": 9,
   "seconds": 58.7,
   "model": "gemini/gemini-3.5-flash-lite",
-  "search": "Tavily"
+  "search": "Tavily",
+  "rescored": "Phần do code tính đã được tính lại bằng code hiện tại trên lần chạy thật này, không gọi lại AI"
  }
 }

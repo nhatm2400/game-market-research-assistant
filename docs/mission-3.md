@@ -66,7 +66,7 @@ Mọi điều kiện chưa đạt đều ở TC6 (số nằm trong biểu đồ 
 | Case | Đạt mọi điều kiện | Kết luận qua 3 lần |
 |---|---|---|
 | TC1 tra cứu một con số | 3/3 | Đã có câu trả lời (3) |
-| TC2 ba nguồn mâu thuẫn | 3/3 | Có số liệu nhưng chưa chắc chắn (2), Đã có câu trả lời (1) |
+| TC2 ba nguồn mâu thuẫn | 3/3 | Có số liệu nhưng chưa chắc chắn (3) |
 | TC3 khung 12 tháng | 3/3 | Cần thêm dữ liệu (2), Có số liệu nhưng chưa chắc chắn (1) |
 | TC4 quyết định phát hành | 3/3 | Cần thêm dữ liệu (3) |
 | TC5 không có dữ liệu | 3/3 | Cần thêm dữ liệu (3) |
@@ -74,7 +74,7 @@ Mọi điều kiện chưa đạt đều ở TC6 (số nằm trong biểu đồ 
 | TC7 hỏi tiếp | 3/3 | Có số liệu nhưng chưa chắc chắn (3) |
 | TC8 số dự báo cũ | 3/3 | Có số liệu nhưng chưa chắc chắn (3) |
 
-Chỉ có hai điều kiện từng không đạt, cả hai đều của TC6 và không đạt ở cả 3 lần. Ba phần do code xếp cho cùng kết quả ở các điểm chính: TC2 cả 3 lần gom Niko 5,37 / Statista 5,89 / Newzoo 6,51 tỷ USD thành một mâu thuẫn lệch 21%; TC7 cả 3 lần tìm ra 0,46 và 0,817 tỷ USD lệch 78%; TC8 cả 3 lần xếp 5,47 tỷ USD vào chưa chắc chắn. Nhãn kết luận vẫn dao động ở TC2 và TC3.
+Chỉ có hai điều kiện từng không đạt, cả hai đều của TC6 và không đạt ở cả 3 lần. Ba phần do code xếp cho cùng kết quả ở các điểm chính: TC2 cả 3 lần gom Niko 5,37 / Statista 5,89 / Newzoo 6,51 tỷ USD thành một mâu thuẫn lệch 21%; TC7 cả 3 lần tìm ra 0,46 và 0,817 tỷ USD lệch 78%; TC8 cả 3 lần xếp 5,47 tỷ USD vào chưa chắc chắn. Nhãn kết luận chỉ còn dao động ở TC3.
 
 **Từng thay đổi và case chứng minh nó** (chi tiết trong `eval/ket-qua-kiem-thu.md`):
 
@@ -87,9 +87,9 @@ Chỉ có hai điều kiện từng không đạt, cả hai đều của TC6 và
 | Không đạt nhầm | TC6: "top_growth_genre" đạt nhờ số +50% của Indonesia | TC6: điều kiện mới báo đúng là chưa đạt; có bước mở thẳng tới biểu đồ chưa đọc được |
 | Lỗi M2 | TC3 rỗng tóm tắt; "0.817" đọc thành 817 | TC3 có tóm tắt cả 3 lần; 0,817 đọc đúng (TC7) |
 
-**Test offline**: 57 bài, gồm 32 bài M2 giữ nguyên (regression), 23 bài mới cho M3 và 2 bài giao diện (Streamlit AppTest: ba phần hiển thị, chữ từ nguồn được escape trước khi chèn vào trang). Mỗi lỗi tìm ra trong lúc làm M3 đều có test riêng: đơn vị USD bị thiếu, số trong bảng không ghi đơn vị, ô bảng "S-5.89 N-6.51" bị đọc thành số âm, giá trị ghi hai con số, độ lệch "21%" do code tính bị bộ kiểm loại, nhãn bị ghép với số trong biểu đồ, kết luận chắc chắn khi không lý do nào dựa trên nhận định có thể tin.
+**Test offline**: 69 bài, gồm 32 bài M2 giữ nguyên (regression), 34 bài mới cho M3 (32 trong `tests/test_m3.py`, 2 về lỗi hết lượt gọi AI) và 3 bài giao diện (Streamlit AppTest: ba phần hiển thị, chữ từ nguồn được escape trước khi chèn vào trang, kết quả có sẵn mở được không cần AI). Mỗi lỗi tìm ra trong lúc làm M3 đều có test riêng: đơn vị USD bị thiếu, số trong bảng không ghi đơn vị, ô bảng "S-5.89 N-6.51" bị đọc thành số âm, giá trị ghi hai con số, độ lệch "21%" do code tính bị bộ kiểm loại, nhãn bị ghép với số trong biểu đồ, kết luận chắc chắn khi không lý do nào dựa trên nhận định có thể tin.
 
-**Về độ ổn định**: câu tóm tắt và nhãn kết luận do AI viết nên có thể khác nhau giữa các lần chạy. Code chặn một chiều: không lý do nào dựa trên nhận định có thể tin thì không được ghi là "Đã có câu trả lời" hay "Nên ưu tiên". AI trích ra nhận định nào từ nguồn cũng khác nhau giữa các lần, nên số mục trong ba phần thay đổi (ví dụ TC4). Bảng kết quả chính (`eval/ket-qua-kiem-thu.md`) là lần chạy thứ 3.
+**Về độ ổn định**: câu tóm tắt và nhãn kết luận do AI viết nên có thể khác nhau giữa các lần chạy. Code chặn một chiều: không lý do nào dựa trên nhận định có thể tin thì không được ghi là "Đã có câu trả lời" hay "Nên ưu tiên". AI trích ra nhận định nào từ nguồn cũng khác nhau giữa các lần, nên số mục trong ba phần thay đổi (ví dụ TC4). Bảng kết quả chính (`eval/ket-qua-kiem-thu.md`) là lần chạy thứ 3. Ba lần chạy là chạy thật; sau đó các quy tắc mới (kết luận chắc chắn cần đa số lý do có thể tin, giá trị phải khớp con số trong câu trích cả về dấu, bậc và đơn vị) được áp lên chính các lần chạy đó bằng `python -m eval.run_eval --stability --rescore`, không gọi lại AI.
 ## 6. Giới hạn còn lại
 
 - **"Có thể tin" không có nghĩa là đúng**: phân loại dựa trên quy tắc về nguồn, kỳ đo và thị trường. Số do chính hãng dữ liệu công bố vẫn là ước tính của hãng đó.
@@ -133,7 +133,7 @@ Khác biệt lớn nhất là ba phần có thể tin / chưa chắc chắn / t�
 - TC7: câu "Còn riêng Việt Nam thì sao?" giữ đủ bối cảnh và tìm ra hai con số lệch nhau 78%.
 - TC1: kết luận đổi từ "Cần thêm dữ liệu" sang "Đã có câu trả lời".
 
-Toàn bộ có 57 test offline, 8 tình huống chạy thật và kết quả 3 lần chạy lưu trong repo.
+Toàn bộ có 69 test offline, 8 tình huống chạy thật và kết quả 3 lần chạy lưu trong repo.
 
 **Câu 3. Nếu sản phẩm này được đưa cho người dùng thật vào ngày mai, rủi ro hoặc giới hạn lớn nhất còn lại là gì? Bạn sẽ ưu tiên xử lý nó như thế nào?**
 
@@ -157,6 +157,6 @@ Quay im lặng, chèn chữ khi dựng. Trước khi quay: mở app, bỏ chọn
 | 1:40–2:20 | Bản tóm tắt, hai cột, mục ngoài phạm vi | Có thể tin / Chưa chắc chắn: Niko 5,37, Statista 5,89, Newzoo 6,51 tỷ USD lệch nhau 21% nên chưa chắc chắn; tăng trưởng 5,2% ở có thể tin |
 | 2:20–2:45 | Bấm một nhận định, "Mở nguồn tại câu trích" | Kiểm chứng một cú nhấp: trang mở đúng câu trích, câu được tô sáng |
 | 2:45–3:30 | Ô "Hỏi tiếp": gõ "Còn riêng Việt Nam thì sao?" | Hỏi tiếp giữ bối cảnh: hiểu thành Việt Nam năm 2024, giữ nhận định cũ, tìm ra 0,817 và 0,46 tỷ USD lệch 78% |
-| 3:30–4:05 | GitHub: `eval/so-sanh-m2-m3.md`, terminal chạy pytest | Bằng chứng: điều kiện M3 từ 3/14 lên 23/24, điều kiện M2 không giảm, 7/8 case đạt cả 3 lần chạy, 57 test qua |
+| 3:30–4:05 | GitHub: `eval/so-sanh-m2-m3.md`, terminal chạy pytest | Bằng chứng: điều kiện M3 từ 3/14 lên 23/24, điều kiện M2 không giảm, 7/8 case đạt cả 3 lần chạy, 69 test qua |
 | 4:05–4:35 | `docs/mission-3.md` mục 6 | Giới hạn: "có thể tin" không có nghĩa là đúng; số trong biểu đồ chưa tự đọc được; Change Request đang chờ |
 | 4:35–4:45 | Khung kết | Link app và repo |

@@ -37,7 +37,7 @@
     uncertain_reason_any: ["lệch", "trái chiều"]
     trusted_excludes_numbers: ["5.37", "5.89"]
     next_steps_min: 1
-  hoc_duoc: "Đạt cả 3/3 lần. Cả 3 lần đều gom ba nguồn gốc Niko Partners 5,37, Statista 5,89 và Newzoo 6,51 tỷ USD thành một mâu thuẫn lệch 21%, xếp 'Chưa chắc chắn'; tăng trưởng 5,2% của Niko luôn ở 'Có thể tin'. Việc gom đủ ba số nhờ suy ra đơn vị cho ô bảng không ghi đơn vị (trước đó Newzoo 6,51 nằm nhóm riêng). Nhãn kết luận còn dao động: 2 lần 'Có số liệu nhưng chưa chắc chắn', 1 lần 'Đã có câu trả lời'; ba phần do code xếp thì giống nhau. Các lỗi lộ ra khi chạy thử đã sửa và có test: số không ghi USD, ô 'N-6.51' bị đọc thành số âm, giá trị ghi hai con số."
+  hoc_duoc: "Đạt cả 3/3 lần. Cả 3 lần đều gom ba nguồn gốc Niko Partners 5,37, Statista 5,89 và Newzoo 6,51 tỷ USD thành một mâu thuẫn lệch 21%, xếp 'Chưa chắc chắn'; tăng trưởng 5,2% của Niko luôn ở 'Có thể tin'. Việc gom đủ ba số nhờ suy ra đơn vị cho ô bảng không ghi đơn vị (trước đó Newzoo 6,51 nằm nhóm riêng). Cả 3 lần kết luận là 'Có số liệu nhưng chưa chắc chắn': code chỉ giữ kết luận chắc chắn khi đa số lý do dựa trên nhận định có thể tin (trước quy tắc này, một lần AI ghi 'Đã có câu trả lời'). Các lỗi lộ ra khi chạy thử đã sửa và có test: số không ghi USD, ô 'N-6.51' bị đọc thành số âm, giá trị ghi hai con số."
 
 - id: TC3
   loai: kho

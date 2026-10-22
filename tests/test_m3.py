@@ -308,3 +308,128 @@ def test_llm_calls_are_counted_per_run():
     llm = FollowLLM()
     a, b = _first_run(llm), _first_run(llm)
     assert a["stats"]["llm_calls"] == b["stats"]["llm_calls"] > 0
+
+
+def test_value_must_agree_with_the_quote_in_sign_scale_and_unit():
+    """Same digits are not enough: a flipped sign makes a fake conflict, a wrong scale or pairing a wrong number."""
+    quote = "The Southeast Asia games market grew 8% to $6.2 billion in 2024, according to the report."
+    s = assess_source(src("S1", "https://nikopartners.com/x", quote * 5, "2025-03-01"), TODAY)
+    for value, why in [("-8%", "dấu"), ("$6.2 trillion", "bậc"), ("$8 billion", "đơn vị")]:
+        c = claim("C1", s.id, quote, value)
+        verify_claim(c, s)
+        assert not c.verified and why in c.verify_note, value
+    for value in ["8%", "$6.2 billion", "6,2 tỷ USD"]:
+        c = claim("C1", s.id, quote, value)
+        verify_claim(c, s)
+        assert c.verified, value
+
+
+def test_value_check_keeps_declines_and_table_cells_without_a_scale_word():
+    from core.textnorm import value_mismatch
+    assert value_mismatch("-17.1%", "MOBA revenue declined 17.1% quarter on quarter") == ""
+    assert value_mismatch("-17.1%", "+20.1%-17.1%-11.7%") == ""
+    assert value_mismatch("$5.37 billion", "Revenue (USD bn) | 5.37 | 5.89") == ""
+    assert value_mismatch("S-5.89", "| Total revenue | S-5.35 N-6.17 | S-5.89 N-6.51 |") == ""
+
+
+def test_weaker_newer_figure_does_not_push_a_measured_figure_aside():
+    """A blog's 2026 figure must not hide Newzoo's 2024 figure for a question without a year."""
+    nz = assess_source(src("S6", "https://newzoo.com/x", "Newzoo: the Southeast Asia games market reached $5.5 billion in 2024.",
+                           "2025-08-01"), TODAY)
+    blog = assess_source(src("S7", "https://some-gaming-blog.net/x",
+                             "Our estimate: the Southeast Asia games market will hit $7.2 billion in 2026.", "2026-02-01"), TODAY)
+    cs = [_verified("C1", nz, "the Southeast Asia games market reached $5.5 billion in 2024", "$5.5 billion", period="2024"),
+          _verified("C2", blog, "the Southeast Asia games market will hit $7.2 billion in 2026", "$7.2 billion", period="2026")]
+    fs, ev = _ev(cs, [nz, blog], question_window("Quy mô thị trường game Đông Nam Á", TODAY))
+    assert not fs[0].newer
+    assert fs[0].key in [x["finding"] for x in ev["trusted"]]
+
+
+def test_unstated_currency_and_market_are_not_trusted():
+    assert parse_value("Rp 30 trillion")[1] == "IDR" and parse_value("S$1.2 billion")[1] == "SGD"
+    s = assess_source(src("S1", "https://nikopartners.com/x",
+                          "In 2024 the market generated 5.37 billion in revenue. Mobile titles earned $2.1 billion in 2024.",
+                          "2025-03-01"), TODAY)
+    no_cur = _verified("C1", s, "In 2024 the market generated 5.37 billion in revenue", "5.37 billion")
+    no_mkt = _verified("C2", s, "Mobile titles earned $2.1 billion in 2024", "$2.1 billion", market="", scope="mobile")
+    fs, ev = _ev([no_cur, no_mkt], [s], question_window("Quy mô thị trường game Đông Nam Á năm 2024", TODAY))
+    assert not ev["trusted"]
+    why = " ".join(w for x in ev["uncertain"] for w in x["why"])
+    assert "coi là USD" in why and "không ghi rõ thị trường" in why
+
+
+def test_comparison_period_on_a_revenue_figure_does_not_split_it():
+    """TC1: the same $625M appeared twice as trusted because one copy had period 'Q1 2025 vs Q4 2024'."""
+    s = assess_source(src("S1", "https://sensortower.com/x", ST_TEXT * 3, "2025-05-20"), TODAY)
+    q = "SEA currently ranks seventh globally in in-app purchase (IAP) revenue at $625 million in Q1 2025"
+    cs = [_verified("C1", s, q, "$625 million", period="Q1 2025", scope="mobile_iap"),
+          _verified("C2", s, q, "$625 million", period="Q1 2025 vs Q4 2024", scope="mobile_iap")]
+    assert cs[1].period == "Q1 2025"
+    assert len(build_findings(cs, {s.id: s}, TODAY)) == 1
+
+
+def _tc2_like():
+    """Niko 5.37 vs Statista 5.89 (conflict, uncertain) and one trusted Newzoo player count."""
+    srcs = [assess_source(src("S1", "https://nikopartners.com/x", NIKO_TEXT, "2025-06-01"), TODAY),
+            assess_source(src("S2", "https://www.statista.com/x", STATISTA_TEXT, "2025-06-01"), TODAY),
+            assess_source(src("S3", "https://newzoo.com/x", "Southeast Asia had 285.82 million gamers in 2024.",
+                              "2025-06-01"), TODAY)]
+    cs = [_verified("C1", srcs[0], "the Southeast Asia games market generated $5.37 billion in revenue in 2024",
+                    "$5.37 billion"),
+          _verified("C2", srcs[1], "revenue in the SEA-6 games market amounted to $5.89 billion in 2024", "$5.89 billion"),
+          _verified("C3", srcs[2], "Southeast Asia had 285.82 million gamers in 2024", "285.82 million", metric="players")]
+    return srcs, cs
+
+
+def test_settled_answer_needs_most_reasons_to_be_trusted():
+    """M3 TC2: one trusted side figure must not make 'Đã có câu trả lời' when the asked market size is in conflict."""
+    srcs, cs = _tc2_like()
+    w = question_window("Quy mô thị trường game Đông Nam Á năm 2024", TODAY)
+    fs = build_findings(cs, {s.id: s for s in srcs}, TODAY)
+    reasons = [{"text": "Đông Nam Á có 285,82 triệu người chơi.", "claim_ids": ["C3"]},
+               {"text": "Niko Partners ghi 5,37 tỷ USD.", "claim_ids": ["C1"]},
+               {"text": "Statista ghi 5,89 tỷ USD.", "claim_ids": ["C2"]}]
+    fake = FakeLLM({"decision": "Đã có câu trả lời", "summary": "", "reasons": reasons, "what_would_change": []})
+    b = write_brief(fake, "Quy mô thị trường game Đông Nam Á năm 2024?", ["Quy mô"], cs, fs, [], w,
+                    {s.id: s for s in srcs}, "Đông Nam Á")
+    assert [x["status"] for x in b["reasons"]] == ["trusted", "uncertain", "uncertain"]
+    assert b["decision"] == "Có số liệu nhưng chưa chắc chắn"
+    assert any("chỉ 1/3 lý do" in x for x in b["guard_log"])
+
+
+def test_brief_guard_checks_single_digit_figures_but_allows_numbers_code_showed_the_llm():
+    srcs, cs = _tc2_like()
+    cs.append(_verified("C4", srcs[1], "revenue in the SEA-6 games market amounted to $5.89 billion in 2024", "$5.89 billion"))
+    w = question_window("Quy mô thị trường game Đông Nam Á năm 2024", TODAY)
+    fs = build_findings(cs, {s.id: s for s in srcs}, TODAY)
+    reasons = [{"text": "Thị trường đạt 6 tỷ USD, tăng 9%.", "claim_ids": ["C1"]},
+               {"text": "Có 2 nguồn gốc ghi số khác nhau, lệch 10%.", "claim_ids": ["C1", "C2"]}]
+    fake = FakeLLM({"decision": "Cần thêm dữ liệu", "summary": "Hai nguồn lệch nhau 10%, gấp 4 lần sai số thường gặp.",
+                    "reasons": reasons, "what_would_change": []})
+    b = write_brief(fake, "Quy mô thị trường game Đông Nam Á năm 2024?", ["Quy mô"], cs, fs, [], w,
+                    {s.id: s for s in srcs}, "Đông Nam Á")
+    assert [x["text"] for x in b["reasons"]] == ["Có 2 nguồn gốc ghi số khác nhau, lệch 10%."]
+    assert b["summary"] == ""          # "4 lần" is a figure the sources never gave
+
+
+def test_numbers_formatted_by_code_are_not_treated_as_invented():
+    """M3 TC7: the finding line showed the LLM '460 triệu USD' for $0.46 billion, then the guard dropped it."""
+    s = assess_source(src("S2", "https://www.statista.com/x", "Vietnam games revenue reached $0.46 billion in 2024.",
+                          "2025-06-01"), TODAY)
+    c = _verified("C1", s, "Vietnam games revenue reached $0.46 billion in 2024", "$0.46 billion", market="Vietnam")
+    w = question_window("Quy mô thị trường game Việt Nam năm 2024", TODAY)
+    fs = build_findings([c], {s.id: s}, TODAY)
+    fake = FakeLLM({"decision": "Cần thêm dữ liệu", "summary": "Statista ghi 460 triệu USD.",
+                    "reasons": [{"text": "Statista ghi 460 triệu USD cho năm 2024.", "claim_ids": ["C1"]}],
+                    "what_would_change": []})
+    b = write_brief(fake, "Quy mô thị trường game Việt Nam năm 2024?", ["Quy mô"], [c], fs, [], w, {s.id: s}, "Việt Nam")
+    assert b["summary"] == "Statista ghi 460 triệu USD." and len(b["reasons"]) == 1
+
+
+def test_rescoring_a_stored_run_reproduces_it_when_rules_are_unchanged():
+    """The three sections come from code, so the same claims always give the same sections."""
+    r = _first_run(FollowLLM())
+    again = pipeline.rescore(r)
+    for k in ("trusted", "uncertain", "other", "next_steps"):
+        assert again["brief"][k] == r["brief"][k], k
+    assert again["brief"]["decision"] == r["brief"]["decision"]

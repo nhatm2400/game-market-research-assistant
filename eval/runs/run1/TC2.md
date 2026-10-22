@@ -24,6 +24,7 @@ Khung thời gian dữ liệu: 01/2024 đến 12/2024. Ngày chạy: 2026-10-22.
 
 - **F1** Doanh thu toàn ngành game, Đông Nam Á, 2024: 5,37 tỷ USD đến 5,89 tỷ USD đến 6,51 tỷ USD (Newzoo, Niko Partners, Statista). [C1, C3, C5, C6, C7]
   - Các nguồn gốc độc lập lệch nhau 21% (ghi dạng khoảng)
+  - Không ghi đơn vị tiền, coi là USD để so sánh
   - Số của Newzoo, Niko Partners, Statista dẫn lại qua bài viết, chưa đối chiếu bản gốc
 
 ## Số liệu khác, ngoài phạm vi câu hỏi
@@ -40,6 +41,7 @@ Khung thời gian dữ liệu: 01/2024 đến 12/2024. Ngày chạy: 2026-10-22.
 
 - So sánh cách đo của Newzoo, Niko Partners, Statista (phạm vi, quốc gia tính vào, loại doanh thu) rồi chọn số hợp với câu hỏi (F1). Truy vấn gợi ý: `Southeast Asia games market revenue 2024 Newzoo Niko Partners Statista methodology`.
 - Đối chiếu bản gốc của Newzoo trên newzoo.com (F1). Truy vấn gợi ý: `Newzoo Southeast Asia games market revenue 2024`.
+- Mở nguồn tại câu trích để xem lại kỳ đo, phạm vi hoặc giá trị tuyệt đối (F1). https://gamesbeat.com/southeast-asia-to-reach-6-47-billion-in-revenues-by-2029-niko-partners/#:~:text=According%20to%20Niko%E2%80%99s%20Southeast%20Asia,2024%2C%20up%205.2%25%20year%2Dover%2Dyear%20%28YoY%29.
 - Đối chiếu bản gốc của Niko Partners trên nikopartners.com (F3). Truy vấn gợi ý: `Niko Partners Southeast Asia games market revenue growth 2024 vs 2023`.
 
 ## Mâu thuẫn giữa các nguồn

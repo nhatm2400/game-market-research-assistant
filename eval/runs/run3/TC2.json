@@ -800,7 +800,7 @@
     "Các nguồn gốc độc lập lệch nhau 21% (ghi dạng khoảng)",
     "6 bài viết nhưng chỉ 3 nguồn gốc"
    ],
-   "newer": "F5"
+   "newer": ""
   },
   {
    "key": "F2",
@@ -941,7 +941,7 @@
    "reasons": [
     "Chỉ có một nguồn gốc (Niko Partners, hạng B)"
    ],
-   "newer": "F8"
+   "newer": ""
   },
   {
    "key": "F8",
@@ -1478,6 +1478,7 @@
   "llm_calls": 6,
   "seconds": 17.9,
   "model": "gemini/gemini-3.5-flash-lite",
-  "search": "tắt"
+  "search": "tắt",
+  "rescored": "Phần do code tính đã được tính lại bằng code hiện tại trên lần chạy thật này, không gọi lại AI"
  }
 }

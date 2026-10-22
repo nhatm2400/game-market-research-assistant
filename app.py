@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import json
 import os
+from pathlib import Path
 from html import escape as h
 
 import pandas as pd
@@ -99,15 +100,40 @@ def get_llm():
     return LLM()
 
 
+@st.cache_data
+def examples() -> dict[str, dict]:
+    """Live runs of the test cases stored in the repo, so the demo shows results without spending LLM quota."""
+    files = sorted(Path(__file__).parent.glob("eval/results/TC*.json"), key=lambda p: int(p.stem[2:]))
+    return {p.stem: json.loads(p.read_text(encoding="utf-8")) for p in files}
+
+
 def research_further(prev: dict, follow_question: str = "", queries: list[str] | None = None) -> None:
+    # claims ticked "Loại nhận định này" stay excluded even if the brief was not rewritten first
+    prev = {**prev, "claims": [{**c, "excluded_by_user": ss.get(f"x{prev['id']}{c['id']}", c.get("excluded_by_user", False))}
+                               for c in prev["claims"]]}
     with st.status("Đang nghiên cứu tiếp, giữ bối cảnh lần trước", expanded=True) as status:
-        res = pipeline.follow_up(prev, follow_question, queries, use_search=use_search, max_sources=max_sources,
-                                 llm=llm, progress=st.write)
+        try:
+            res = pipeline.follow_up(prev, follow_question, queries, use_search=use_search, max_sources=max_sources,
+                                     llm=llm, progress=st.write)
+        except LLMError as e:
+            status.update(label="Chưa nghiên cứu tiếp được", state="error")
+            st.error(str(e))
+            return
         status.update(label="Xong", state="complete", expanded=False)
-    store.save(res)
+    save(res)
     ss.result = res
-    ss.plan = res["plan"]
+    ss.plan, ss.plan_question = res["plan"], res["question"]
     st.rerun()
+
+
+def save(res: dict) -> None:
+    """Keep a run in the shared history unless the AI failed during it or it read the user's own files."""
+    if res["stats"].get("llm_error"):
+        st.warning("Lần chạy này gặp lỗi gọi AI nên không được lưu vào lịch sử. " + res["stats"]["llm_error"])
+    elif any(s["kind"] == "upload" for s in res["sources"]):
+        st.caption("Lần chạy có file bạn tải lên nên không được lưu vào lịch sử dùng chung.")
+    else:
+        store.save(res)
 
 
 def chips(ids) -> str:
@@ -138,17 +164,26 @@ with st.sidebar:
     max_sources = st.slider("Số nguồn tối đa mỗi lần chạy", 3, 12, 6)
     st.caption(TIER_HELP)
     st.divider()
-    st.subheader("Lần chạy trước")
-    for rid, created, q in store.recent(10):
+    runs = store.recent(10)
+    if runs:
+        st.subheader("Lần chạy trước")
+    for rid, created, q in runs:
         if st.button(f"{created[5:16]}  {q[:40]}", key=f"h{rid}"):
             ss.result = store.load(rid)
-            ss.plan = ss.result["plan"]
+            ss.plan, ss.plan_question = ss.result["plan"], ss.result["question"]
+    st.subheader("Kết quả mẫu đã chạy thật")
+    st.caption("Các tình huống kiểm thử trong repo, mở ngay, không tốn lượt gọi AI. Vẫn hỏi tiếp được từ đây.")
+    for tc, ex in examples().items():
+        if st.button(f"{tc}  {ex['question'][:45]}", key=f"e{tc}"):
+            ss.result, ss.plan = ex, None   # no plan editor, so the result sits right under the question box
 
 # ---------- input ----------
 st.title("Trợ lý nghiên cứu thị trường game")
 st.markdown('<p class="lead">Đặt một câu hỏi, hệ thống đọc nguồn rồi tách điều có thể tin khỏi điều còn chưa chắc '
             'chắn. Mỗi con số đi kèm câu trích nguyên văn mà code đã tìm thấy trong nguồn; hạng nguồn và mức tin cậy '
             'tính bằng quy tắc, không do AI tự chấm.</p>', unsafe_allow_html=True)
+if not ss.plan and not ss.result:
+    st.caption("Muốn xem ngay mà không chờ chạy: mở một kết quả mẫu đã chạy thật ở thanh bên trái.")
 
 sample = st.selectbox("Câu hỏi mẫu", ["(tự nhập)"] + SAMPLES)
 question = st.text_area("Câu hỏi nghiên cứu", value="" if sample == "(tự nhập)" else sample, height=70)
@@ -160,9 +195,12 @@ with st.expander("Thêm nguồn của bạn (link hoặc file báo cáo)"):
 col1, col2 = st.columns(2)
 if col1.button("1. Lập kế hoạch", disabled=not (question.strip() and llm)):
     with st.spinner("Đang tách tiêu chí và viết truy vấn"):
-        ss.plan = extract.plan(llm, question)
-        ss.plan_question = question
-        ss.result = None
+        try:
+            ss.plan = extract.plan(llm, question)
+            ss.plan_question = question
+            ss.result = None
+        except LLMError as e:
+            st.error(f"{e} Trong lúc chờ, có thể mở một kết quả mẫu đã chạy thật ở thanh bên.")
 
 if ss.plan:
     st.subheader("Kế hoạch, sửa được trước khi chạy")
@@ -171,9 +209,12 @@ if ss.plan:
     qs = c2.text_area("Truy vấn tìm kiếm, mỗi dòng một truy vấn", "\n".join(ss.plan["queries"]), height=130)
     ss.plan["criteria"] = [x.strip() for x in crit.splitlines() if x.strip()]
     ss.plan["queries"] = [x.strip() for x in qs.splitlines() if x.strip()]
-    st.caption(f"Thị trường: {ss.plan.get('market') or 'chưa rõ'}. Thể loại: {ss.plan.get('genre') or 'không giới hạn'}.")
+    # the plan belongs to the question it was made for, which may not be what the text box holds now
+    plan_q = ss.get("plan_question") or question
+    st.caption(f"Câu hỏi của kế hoạch: {plan_q}. Thị trường: {ss.plan.get('market') or 'chưa rõ'}. "
+               f"Thể loại: {ss.plan.get('genre') or 'không giới hạn'}.")
 
-    if col2.button("2. Chạy nghiên cứu", type="primary", disabled=llm is None):
+    if col2.button("2. Chạy nghiên cứu", type="primary", disabled=llm is None or not plan_q.strip()):
         uploads = []
         for f in files or []:
             s = from_upload(f.name, f.getvalue())
@@ -181,11 +222,11 @@ if ss.plan:
                 st.warning(f"{f.name}: {s.error}")
             uploads.append(s)
         with st.status("Đang chạy", expanded=True) as status:
-            res = pipeline.run(question, plan=ss.plan, extra_urls=urls_text.splitlines(), uploads=uploads,
+            res = pipeline.run(plan_q, plan=ss.plan, extra_urls=urls_text.splitlines(), uploads=uploads,
                                use_search=use_search, max_sources=max_sources, llm=llm,
                                upload_tier=upload_tier, progress=st.write)
             status.update(label="Xong", state="complete", expanded=False)
-        store.save(res)
+        save(res)
         ss.result = res
 
 # ---------- result ----------
@@ -200,6 +241,8 @@ if r:
         path = " → ".join(h(t["question"]) for t in r["thread"][:-1])
         st.markdown(f'<p class="thread">Nghiên cứu tiếp từ: {path} → <b>{h(r["thread"][-1]["question"])}</b></p>',
                     unsafe_allow_html=True)
+    else:
+        st.markdown(f'<p class="thread">Câu hỏi: <b>{h(r["question"])}</b></p>', unsafe_allow_html=True)
 
     kind = ("unsure" if b["decision"] == UNSURE else "missing" if b["decision"] == "Cần thêm dữ liệu" else "firm")
     level = CONF_LEVEL.get(b["confidence"], 0)
@@ -325,7 +368,7 @@ if r:
                         excluded.add(cid)
         if r["findings"] and st.button("Viết lại bản tóm tắt sau khi loại", disabled=llm is None):
             ss.result = pipeline.rebrief(r, excluded, llm)
-            store.save(ss.result)
+            save(ss.result)
             st.rerun()
         if not r["findings"]:
             st.info("Không có nhận định nào qua được bước kiểm câu trích.")

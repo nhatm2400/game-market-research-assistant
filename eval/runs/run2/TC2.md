@@ -2,7 +2,7 @@
 
 **Câu hỏi:** Quy mô thị trường game Đông Nam Á năm 2024 là bao nhiêu và các nguồn có khớp nhau không?
 
-**Kết luận:** Đã có câu trả lời. **Mức tin cậy:** Thấp.
+**Kết luận:** Có số liệu nhưng chưa chắc chắn. **Mức tin cậy:** Thấp.
 
 Quy mô doanh thu thị trường game Đông Nam Á năm 2024 dao động từ 5,37 tỷ USD đến 6,51 tỷ USD tùy thuộc vào nguồn dữ liệu. Số liệu này có sự chênh lệch khoảng 21% giữa các tổ chức độc lập nên cần lưu ý khi sử dụng.
 
@@ -80,5 +80,9 @@ Khung thời gian dữ liệu: 01/2024 đến 12/2024. Ngày chạy: 2026-10-22.
 - **C2** Tỷ lệ tăng trưởng doanh thu thị trường game Đông Nam Á năm 2024 so với năm trước là 5,2%. Giá trị: 5.2% (+5,2%). Nguồn gốc: Niko Partners, hạng B. Nguồn: https://gamesbeat.com/southeast-asia-to-reach-6-47-billion-in-revenues-by-2029-niko-partners/#:~:text=According%20to%20Niko%E2%80%99s%20Southeast%20Asia,2024%2C%20up%205.2%25%20year%2Dover%2Dyear%20%28YoY%29., đăng 2025-09-30.
   > According to Niko’s Southeast Asia Market Model and 5-Year Forecast, the region generated $5.37 billion in games revenue in 2024, up 5.2% year-over-year (YoY).
   - Cảnh báo: Số liệu của Niko Partners, dẫn lại qua gamesbeat.com; chưa đối chiếu bản gốc
+
+## Câu bị bộ kiểm loại khỏi bản tóm tắt
+
+- Đổi kết luận "Đã có câu trả lời" thành "Có số liệu nhưng chưa chắc chắn": chỉ 1/4 lý do dựa trên nhận định có thể tin
 
 _Đọc 3 nguồn, trích 18 nhận định, giữ 18, loại 0. 6 lượt gọi gemini/gemini-3.5-flash-lite, 14.0 giây._

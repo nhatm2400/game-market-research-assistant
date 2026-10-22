@@ -6,7 +6,7 @@ from core import fetch as fetch_mod
 from core import llm as llm_mod
 from core import pipeline
 from core.fetch import from_upload
-from core.llm import LLM, LLMError
+from core.llm import LLM, LLMError, classify
 from tests.test_core import NIKO_TEXT, TODAY
 from tests.test_pipeline_offline import ScriptedLLM
 
@@ -161,3 +161,34 @@ def test_technical_failure_is_not_reported_as_missing_data():
                      llm=ExtractFailsLLM(), today=TODAY)
     assert r["stats"]["sources_failed"] == 1
     assert "lỗi kỹ thuật" in r["brief"]["summary"] and r["brief"]["confidence"] == "Chưa đánh giá"
+
+
+def test_quota_failure_names_its_cause_and_is_remembered():
+    """A per-day 429 without a retry delay used to be forgotten at once, so every call hit the dead model again."""
+    assert classify("500 Internal error, request id 40139") == "retry"
+    assert classify("403 PERMISSION_DENIED") == "fatal"
+
+    class ExtractFailsLLM(ScriptedLLM):
+        def json(self, prompt, schema):
+            if "claims" in schema["properties"]:
+                raise LLMError("Đã hết hạn mức miễn phí trong ngày")
+            return super().json(prompt, schema)
+
+    r = pipeline.run("Quy mô thị trường game Đông Nam Á năm 2024?", uploads=[from_upload("niko.txt", (NIKO_TEXT * 3).encode())],
+                     use_search=False, llm=ExtractFailsLLM(), today=TODAY)
+    assert "hạn mức" in r["brief"]["summary"] and r["stats"]["llm_error"]
+
+
+def test_daily_limit_without_retry_delay_is_remembered(monkeypatch):
+    llm = LLM.__new__(LLM)
+    llm.provider, llm.model, llm.models, llm.calls, llm.models_used, llm.exhausted = "gemini", "m1", ["m1"], 0, set(), {}
+    calls = []
+
+    def call(model, prompt, schema):
+        calls.append(model)
+        raise RuntimeError("429 RESOURCE_EXHAUSTED. Quota exceeded for metric: GenerateRequestsPerDayPerProjectPerModel")
+    monkeypatch.setattr(llm, "_call", call)
+    for _ in range(2):
+        with pytest.raises(LLMError, match="hạn mức"):
+            llm.json("x", {"properties": {}})
+    assert calls == ["m1"]          # the second request does not hit the exhausted model again

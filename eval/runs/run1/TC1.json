@@ -213,6 +213,7 @@
   "llm_calls": 4,
   "seconds": 7.1,
   "model": "gemini/gemini-3.5-flash-lite",
-  "search": "tắt"
+  "search": "tắt",
+  "rescored": "Phần do code tính đã được tính lại bằng code hiện tại trên lần chạy thật này, không gọi lại AI"
  }
 }

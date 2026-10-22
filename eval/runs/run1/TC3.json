@@ -2194,7 +2194,7 @@
    "attributed_to": "Sensor Tower",
    "criterion": 1,
    "value": 94000000.0,
-   "unit": "USD",
+   "unit": "SGD",
    "verified": true,
    "verify_note": "Đã tìm thấy câu trích trong nguồn",
    "match_score": 100.0,
@@ -2363,7 +2363,7 @@
    "metric": "downloads",
    "value_text": "1.93 billion",
    "market": "Đông Nam Á",
-   "period": "Q1 2025 vs Q4 2024",
+   "period": "Q1 2025",
    "scope": "mobile",
    "genre": "",
    "genre_level": "all",
@@ -2382,7 +2382,8 @@
    "tier": "C",
    "flags": [
     "Số liệu của Sensor Tower, dẫn lại qua esportsinsider.com; chưa đối chiếu bản gốc",
-    "Kỳ đo \"Q1 2025 vs Q4 2024\" nằm ngoài khung thời gian của câu hỏi (12 tháng gần nhất)"
+    "Kỳ đo \"Q1 2025 vs Q4 2024\" nằm ngoài khung thời gian của câu hỏi (12 tháng gần nhất)",
+    "Kỳ đo \"Q1 2025\" nằm ngoài khung thời gian của câu hỏi (12 tháng gần nhất)"
    ],
    "excluded_by_user": false
   },
@@ -3246,7 +3247,7 @@
    "values": [
     94000000.0
    ],
-   "unit": "USD",
+   "unit": "SGD",
    "status": "single",
    "spread_pct": 0.0,
    "confidence": "Thấp",
@@ -3362,7 +3363,7 @@
   },
   {
    "key": "F37",
-   "label": "Lượt tải game mobile, Đông Nam Á, Q1 2025 vs Q4 2024",
+   "label": "Lượt tải game mobile, Đông Nam Á, Q1 2025",
    "claim_ids": [
     "C74"
    ],
@@ -3799,7 +3800,7 @@
    },
    {
     "finding": "F37",
-    "label": "Lượt tải game mobile, Đông Nam Á, Q1 2025 vs Q4 2024",
+    "label": "Lượt tải game mobile, Đông Nam Á, Q1 2025",
     "values": "1,93 tỷ",
     "origins": [
      "Sensor Tower"
@@ -3811,12 +3812,13 @@
     "why": [
      "Chỉ có nguồn hạng C hoặc D",
      "Kỳ đo \"Q1 2025 vs Q4 2024\" nằm ngoài khung thời gian của câu hỏi (12 tháng gần nhất)",
+     "Kỳ đo \"Q1 2025\" nằm ngoài khung thời gian của câu hỏi (12 tháng gần nhất)",
      "Số của Sensor Tower dẫn lại qua bài viết, chưa đối chiếu bản gốc"
     ],
     "next_steps": [
      {
       "text": "Tìm nguồn hạng A/B (hãng dữ liệu, báo chuyên ngành) cho chỉ số này",
-      "query": "Southeast Asia mobile games downloads Q1 2025 vs Q4 2024 Sensor Tower Newzoo Niko Partners",
+      "query": "Southeast Asia mobile games downloads Q1 2025 Sensor Tower Newzoo Niko Partners",
       "ask": "",
       "url": "",
       "findings": [
@@ -3825,7 +3827,16 @@
      },
      {
       "text": "Đối chiếu bản gốc của Sensor Tower trên sensortower.com",
-      "query": "Sensor Tower Southeast Asia mobile games downloads Q1 2025 vs Q4 2024",
+      "query": "Sensor Tower Southeast Asia mobile games downloads Q1 2025",
+      "ask": "",
+      "url": "",
+      "findings": [
+       "F37"
+      ]
+     },
+     {
+      "text": "Tìm số đúng khung thời gian của câu hỏi (12 tháng gần nhất)",
+      "query": "Southeast Asia mobile games downloads 2026",
       "ask": "",
       "url": "",
       "findings": [
@@ -4275,7 +4286,7 @@
    {
     "finding": "F31",
     "label": "Doanh thu IAP game mobile, Philippines, Q1 2025",
-    "values": "94 triệu USD",
+    "values": "94 triệu SGD",
     "origins": [
      "Sensor Tower"
     ],
@@ -4465,6 +4476,7 @@
   "llm_calls": 16,
   "seconds": 88.2,
   "model": "gemini/gemini-3.5-flash-lite",
-  "search": "Tavily"
+  "search": "Tavily",
+  "rescored": "Phần do code tính đã được tính lại bằng code hiện tại trên lần chạy thật này, không gọi lại AI"
  }
 }

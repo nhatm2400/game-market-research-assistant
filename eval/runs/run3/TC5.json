@@ -310,6 +310,7 @@
   "llm_calls": 11,
   "seconds": 36.1,
   "model": "gemini/gemini-3.5-flash-lite",
-  "search": "Tavily"
+  "search": "Tavily",
+  "rescored": "Phần do code tính đã được tính lại bằng code hiện tại trên lần chạy thật này, không gọi lại AI"
  }
 }

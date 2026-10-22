@@ -23,6 +23,7 @@ Khung thời gian dữ liệu: câu hỏi về tương lai, dùng dữ liệu 24
 
 - **F4** Doanh thu game mobile, all, Việt Nam, 2025: 825 triệu USD (IMARC). [C4]
   - Chỉ có nguồn hạng C hoặc D
+  - Không ghi đơn vị tiền, coi là USD để so sánh
   - Số của IMARC dẫn lại qua bài viết, chưa đối chiếu bản gốc
 - **F5** Tăng trưởng game mobile, all, Việt Nam, 2025 vs 2024: +9,2% (IMARC). [C5]
   - Chỉ có nguồn hạng C hoặc D
@@ -49,6 +50,7 @@ Khung thời gian dữ liệu: câu hỏi về tương lai, dùng dữ liệu 24
 
 - Tìm nguồn hạng A/B (hãng dữ liệu, báo chuyên ngành) cho chỉ số này (F4, F5, F6, F7). Truy vấn gợi ý: `Vietnam mobile games all revenue 2025 Sensor Tower Newzoo Niko Partners`.
 - Đối chiếu bản gốc của IMARC trên imarcgroup.com (F4, F5, F6, F7). Truy vấn gợi ý: `IMARC Vietnam mobile games all revenue 2025`.
+- Mở nguồn tại câu trích để xem lại kỳ đo, phạm vi hoặc giá trị tuyệt đối (F4). https://icon-era.com/statistics/southeast-asia-mobile-gaming#:~:text=Vietnam%E2%80%99s%20mobile%20game%20market%20generated,Vietnam%20Mobile%20Gaming%20Year%2Din%2DReview%202025.
 - Mới có số của thị trường khác, tìm số riêng cho Việt Nam. Truy vấn gợi ý: `Vietnam mobile games MOBA revenue growth Q1 2025 vs Q4 2024`.
 
 ## Số liệu khác định nghĩa (không so trực tiếp)

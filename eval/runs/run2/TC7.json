@@ -940,7 +940,7 @@
     "Các nguồn gốc độc lập lệch nhau 21% (ghi dạng khoảng)",
     "7 bài viết nhưng chỉ 3 nguồn gốc"
    ],
-   "newer": "F6"
+   "newer": ""
   },
   {
    "key": "F2",
@@ -1666,7 +1666,8 @@
   "llm_calls": 6,
   "seconds": 15.3,
   "model": "gemini/gemini-3.5-flash-lite",
-  "search": "tắt"
+  "search": "tắt",
+  "rescored": "Phần do code tính đã được tính lại bằng code hiện tại trên lần chạy thật này, không gọi lại AI"
  },
  "asked": "Còn riêng Việt Nam thì sao?"
 }

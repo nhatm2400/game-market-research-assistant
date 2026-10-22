@@ -44,9 +44,10 @@ Khung thời gian dữ liệu: 12 tháng gần nhất. Ngày chạy: 2026-10-22.
 - **F36** Tăng trưởng IAP game mobile, Đông Nam Á, 2025: +16,3% (Sensor Tower). [C73]
   - Chỉ có nguồn hạng C hoặc D
   - Số của Sensor Tower dẫn lại qua bài viết, chưa đối chiếu bản gốc
-- **F37** Lượt tải game mobile, Đông Nam Á, Q1 2025 vs Q4 2024: 1,93 tỷ (Sensor Tower). [C74]
+- **F37** Lượt tải game mobile, Đông Nam Á, Q1 2025: 1,93 tỷ (Sensor Tower). [C74]
   - Chỉ có nguồn hạng C hoặc D
   - Kỳ đo "Q1 2025 vs Q4 2024" nằm ngoài khung thời gian của câu hỏi (12 tháng gần nhất)
+  - Kỳ đo "Q1 2025" nằm ngoài khung thời gian của câu hỏi (12 tháng gần nhất)
   - Số của Sensor Tower dẫn lại qua bài viết, chưa đối chiếu bản gốc
 - **F41** Số người chơi toàn ngành game, Đông Nam Á, 2025: 290 triệu (Niko Partners). [C80]
   - Chỉ có nguồn hạng C hoặc D
@@ -80,7 +81,7 @@ Khung thời gian dữ liệu: 12 tháng gần nhất. Ngày chạy: 2026-10-22.
 - **F28** Tăng trưởng game mobile, 4X strategy, Việt Nam, Q1 2025 vs Q4 2024: +51,5% (Sensor Tower). Số của thị trường Việt Nam, câu hỏi hỏi về Đông Nam Á.
 - **F29** Tăng trưởng game mobile, MMORPG, Việt Nam, Q1 2025 vs Q4 2024: +8,2% (Sensor Tower). Số của thị trường Việt Nam, câu hỏi hỏi về Đông Nam Á.
 - **F30** Tăng trưởng IAP game mobile, Philippines, Q1 2025: +3,0% (Sensor Tower). Số của thị trường Philippines, câu hỏi hỏi về Đông Nam Á.
-- **F31** Doanh thu IAP game mobile, Philippines, Q1 2025: 94 triệu USD (Sensor Tower). Số của thị trường Philippines, câu hỏi hỏi về Đông Nam Á.
+- **F31** Doanh thu IAP game mobile, Philippines, Q1 2025: 94 triệu SGD (Sensor Tower). Số của thị trường Philippines, câu hỏi hỏi về Đông Nam Á.
 - **F32** Doanh thu toàn ngành game, Đông Nam Á, 2024: 5,37 tỷ USD (Niko Partners). Đã có số mới hơn cho cùng chỉ số (F33).
 - **F38** Lượt tải game mobile, Indonesia, Q1 2025: 870 triệu (Sensor Tower). Số của thị trường Indonesia, câu hỏi hỏi về Đông Nam Á.
 - **F39** Doanh thu IAP game mobile, Indonesia, Q1 2025: 118 triệu USD (Sensor Tower). Số của thị trường Indonesia, câu hỏi hỏi về Đông Nam Á.

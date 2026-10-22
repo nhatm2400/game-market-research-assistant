@@ -1043,7 +1043,7 @@
     "Chỉ có một nguồn gốc (Niko Partners, hạng B)",
     "Có cảnh báo về kỳ đo hoặc phạm vi: hạ một mức"
    ],
-   "newer": "F7"
+   "newer": ""
   },
   {
    "key": "F6",
@@ -1493,6 +1493,7 @@
   "llm_calls": 9,
   "seconds": 39.9,
   "model": "gemini/gemini-3.5-flash-lite",
-  "search": "Tavily"
+  "search": "Tavily",
+  "rescored": "Phần do code tính đã được tính lại bằng code hiện tại trên lần chạy thật này, không gọi lại AI"
  }
 }
