@@ -96,7 +96,7 @@ Trên macOS hoặc Linux, thay `.venv\Scripts\activate` bằng `source .venv/bin
 |---|---|---|
 | `GEMINI_API_KEY` | Có | Khóa Gemini API |
 | `TAVILY_API_KEY` | Không | Có thì tìm bằng Tavily, không có thì dùng DuckDuckGo |
-| `LLM_MODEL` | Không | Mặc định `gemini-2.5-flash`; đổi sang `gemini-2.5-flash-lite` nếu bị giới hạn lượt gọi |
+| `LLM_MODEL` | Không | Mặc định `gemini-2.5-flash`; đổi sang `gemini-2.5-flash-lite` nếu bị giới hạn lượt gọi. Các lần chạy thật lưu trong `eval/` dùng `gemini-3.5-flash-lite` (ghi ở `stats.model` của từng file) |
 | `LLM_FALLBACK_MODELS` | Không | Các mô hình dự phòng, cách nhau bằng dấu phẩy. Khi mô hình chính quá tải, hệ thống tự chuyển sang mô hình tiếp theo. Mặc định `gemini-2.5-flash,gemini-2.5-flash-lite` |
 | `LLM_PROVIDER`, `OPENAI_API_KEY`, `OPENAI_BASE_URL` | Không | Dùng API tương thích OpenAI (ví dụ Groq) thay cho Gemini; cần cài thêm gói `openai` |
 
@@ -121,7 +121,7 @@ python -m eval.run_eval
 ```
 
 - `pytest` chạy 69 bài test không cần mạng và không cần khóa API:
-  - 32 bài từ M2 (giữ nguyên, là test regression): kiểm câu trích (câu bịa, câu bị diễn đạt lại, số bị đổi), đọc giá trị và kỳ đo, hạng nguồn, truy nguồn gốc, phân biệt mâu thuẫn với khác định nghĩa, bẫy bảng của Việt Nam bị ghi là Đông Nam Á, bộ kiểm bản tóm tắt, xử lý lỗi (mô hình quá tải, mô hình dự phòng, tải trang timeout, lỗi khi viết tóm tắt), và một bài chạy toàn bộ luồng với LLM giả cố tình trả về một nhận định bịa.
+  - 32 bài từ M2 (là test regression; một bài đổi điều kiện kiểm vì M3 thêm quy tắc kết luận): kiểm câu trích (câu bịa, câu bị diễn đạt lại, số bị đổi), đọc giá trị và kỳ đo, hạng nguồn, truy nguồn gốc, phân biệt mâu thuẫn với khác định nghĩa, bẫy bảng của Việt Nam bị ghi là Đông Nam Á, bộ kiểm bản tóm tắt, xử lý lỗi (mô hình quá tải, mô hình dự phòng, tải trang timeout, lỗi khi viết tóm tắt), và một bài chạy toàn bộ luồng với LLM giả cố tình trả về một nhận định bịa.
   - 2 bài mới trong `tests/test_robustness.py`: lỗi hết lượt gọi AI nêu rõ nguyên nhân và được nhớ để không gọi lại vô ích.
   - 32 bài mới trong `tests/test_m3.py`: xếp có thể tin / chưa chắc chắn / ngoài phạm vi, số dẫn lại, mâu thuẫn và trái chiều, số dự báo tại thời điểm đăng, số cũ có bản mới hơn, biểu đồ chỉ tới đúng trang hoặc đúng con số kể cả khi nhãn bị ghép với số, số không ghi đơn vị tiền, số trong bảng không ghi đơn vị, giá trị ghi hai con số, link mở câu trích, nghiên cứu tiếp giữ bối cảnh (đổi thị trường, giữ năm, giữ nhận định đã loại, bước tìm thêm bỏ qua trang đã đọc), số lượt gọi LLM từng lần chạy, kết luận không được ghi là đã trả lời khi mọi lý do chỉ dựa trên nhận định chưa chắc chắn, và regression cho các lỗi M2 (mất tóm tắt vì "12 tháng", "0.817" bị đọc thành 817, ô bảng "S-5.89 N-6.51" bị đọc thành số âm).
   - 3 bài trong `tests/test_app.py` dựng trang Streamlit bằng AppTest: ba phần mới hiển thị, chữ lấy từ nguồn được escape trước khi chèn vào trang, và kết quả chạy thật có sẵn mở được từ thanh bên mà không cần gọi AI.

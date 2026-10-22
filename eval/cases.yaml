@@ -106,7 +106,7 @@
   follow_up: "Còn riêng Việt Nam thì sao?"
   urls: []
   use_search: false
-  ky_vong: "Hiểu câu hỏi tiếp là quy mô thị trường game Việt Nam năm 2024 (giữ chỉ số và năm của TC2, chỉ đổi thị trường), giữ toàn bộ nhận định đã kiểm của TC2 mà không đọc lại nguồn, và trả lời bằng số của Việt Nam đã có trong bối cảnh (0,817 tỷ USD theo Newzoo)"
+  ky_vong: "Hiểu câu hỏi tiếp là quy mô thị trường game Việt Nam năm 2024 (giữ chỉ số và năm của TC2, chỉ đổi thị trường), giữ toàn bộ nhận định đã kiểm của TC2 mà không tải lại nguồn từ mạng, và trả lời bằng số của Việt Nam đã có trong bối cảnh (0,817 tỷ USD theo Newzoo)"
   checks: {}
   checks_m3:
     question_market: "Việt Nam"
@@ -131,6 +131,6 @@
     uncertain_reason_any: ["chưa kết thúc", "dự báo"]
     confidence_not: ["Cao"]
     next_steps_min: 1
-  hoc_duoc: "Đạt cả 3/3 lần. Số 2025 duy nhất là 5,47 tỷ USD của Niko Partners trong bài đăng tháng 9 và 10/2025; code nhận ra năm 2025 chưa kết thúc lúc đăng nên xếp 'Chưa chắc chắn' (số ước tính hoặc dự báo), tin cậy Thấp, và cả 3 lần kết luận là 'Có số liệu nhưng chưa chắc chắn' (code đổi từ 'Đã có câu trả lời' AI viết, vì không lý do nào dựa trên nhận định có thể tin). Bước tiếp: tìm số đã đo của năm 2025. M2 không có cảnh báo này nên sẽ đưa 5,47 tỷ như số đã đo."
+  hoc_duoc: "Đạt cả 3/3 lần. Số 2025 duy nhất là 5,47 tỷ USD của Niko Partners trong bài đăng tháng 9 và 10/2025; code nhận ra năm 2025 chưa kết thúc lúc đăng nên xếp 'Chưa chắc chắn' (số ước tính hoặc dự báo), tin cậy Thấp, và cả 3 lần kết luận là 'Có số liệu nhưng chưa chắc chắn' (code đổi từ 'Đã có câu trả lời' AI viết, vì không lý do nào dựa trên nhận định có thể tin). Bước tiếp: tìm số đã đo của năm 2025. M2 không có quy tắc này (chỉ cảnh báo số lệch khung của câu hỏi), nên với câu hỏi về năm 2025 sẽ đưa 5,47 tỷ như số đã đo; điều này suy ra từ quy tắc M2, M2 chưa được chạy trên TC8."
 
 # TC9: Change Request. Sẽ thêm khi nhận Change Request.
