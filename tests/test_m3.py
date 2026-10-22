@@ -77,9 +77,16 @@ def test_conflict_is_uncertain_and_suggests_comparing_methods():
     sta = assess_source(src("S4", "https://statista.com/x", STATISTA_TEXT, "2025-02-10"), TODAY)
     cs = [_verified("C1", niko, "the Southeast Asia games market generated $5.37 billion in revenue in 2024", "$5.37 billion"),
           _verified("C2", sta, "revenue in the SEA-6 games market amounted to $5.89 billion in 2024", "$5.89 billion")]
-    _, ev = _ev(cs, [niko, sta], question_window("Quy mô thị trường game Đông Nam Á năm 2024", TODAY))
+    w = question_window("Quy mô thị trường game Đông Nam Á năm 2024", TODAY)
+    fs, ev = _ev(cs, [niko, sta], w)
     u = ev["uncertain"][0]
-    assert "lệch" in u["why"][0] and "methodology" in u["next_steps"][0]["query"]
+    assert "lệch nhau 10%" in u["why"][0] and "methodology" in u["next_steps"][0]["query"]
+    # the spread is computed by code, so the brief may repeat it (M3 TC2 lost its summary over "21%")
+    fake = FakeLLM({"decision": "Đã có câu trả lời", "summary": "Từ 5,37 đến 5,89 tỷ USD, các nguồn lệch nhau 10%.",
+                    "reasons": [], "what_would_change": []})
+    b = write_brief(fake, "Quy mô thị trường game Đông Nam Á năm 2024", ["Quy mô"], cs, fs, [], w,
+                    {niko.id: niko, sta.id: sta}, "Đông Nam Á")
+    assert b["summary"].endswith("lệch nhau 10%.")
 
 
 def test_opposite_directions_are_called_out():

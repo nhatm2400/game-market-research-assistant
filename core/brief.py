@@ -111,7 +111,8 @@ def write_brief(llm: LLM | None, question: str, criteria: list[str], claims: lis
     status_of = {x["finding"]: "có thể tin" for x in ev["trusted"]}
     status_of.update({x["finding"]: "chưa chắc chắn (" + "; ".join(x["why"]) + ")" for x in ev["uncertain"]})
     status_of.update({x["finding"]: "ngoài phạm vi câu hỏi (" + x["why"][0] + ")" for x in ev["other"]})
-    asked = f"{question} {window.label}"      # numbers the user wrote are not invented by the LLM
+    # numbers the user wrote, and those code computed (e.g. "lệch nhau 21%"), are not invented by the LLM
+    asked = " ".join([question, window.label] + [r for f in findings for r in f.reasons])
     brief = {"decision": "Cần thêm dữ liệu", "summary": "", "reasons": [], "what_would_change": [],
              "confidence": "Chưa đủ dữ liệu", "gaps": gaps, "conflicts": [], "definition_notes": def_notes,
              "guard_log": [], **ev}
