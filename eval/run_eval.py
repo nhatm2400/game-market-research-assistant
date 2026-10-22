@@ -4,6 +4,7 @@
     python -m eval.run_eval TC2 TC6    # some cases
     python -m eval.run_eval --report   # rebuild the table from eval/results/*.json, no LLM calls
     python -m eval.run_eval --compare  # M2 (eval/results_m2) vs M3 (eval/results) -> eval/so-sanh-m2-m3.md
+    python -m eval.run_eval --stability  # several runs kept in eval/runs/<run>/ -> eval/do-on-dinh.md
 
 `checks` are the Mission 2 conditions, kept unchanged as the regression test. `checks_m3` are the
 conditions added for Mission 3. A case with `parent` and `follow_up` asks a follow-up question on
@@ -213,6 +214,37 @@ def compare(cases: list[dict]) -> None:
     print("Đã ghi eval/so-sanh-m2-m3.md")
 
 
+def stability(cases: list[dict]) -> None:
+    """Same checks over several full runs kept in eval/runs/<run>/: how often each case and condition passes."""
+    runs = sorted(p for p in (HERE / "runs").iterdir() if p.is_dir()) if (HERE / "runs").exists() else []
+    rows, fails = [], {}
+    for case in cases:
+        passed, n, decisions = 0, 0, []
+        for run in runs:
+            r = _load(run, case["id"])
+            if r is None:
+                continue
+            parent = _load(run, case["parent"]) if case.get("parent") else None
+            res = all_checks(r, case, parent)
+            n += 1
+            passed += all(ok for _, ok, _ in res)
+            decisions.append(r["brief"]["decision"])
+            for name, ok, _ in res:
+                fails.setdefault((case["id"], name), [0, 0])
+                fails[(case["id"], name)][0] += ok
+                fails[(case["id"], name)][1] += 1
+        counts = ", ".join(f"{d} ({decisions.count(d)})" for d in dict.fromkeys(decisions))
+        rows.append(f"| {case['id']} | {LOAI.get(case['loai'], case['loai'])} | {passed}/{n} | {counts} |")
+    unstable = [f"- {cid} `{name}`: đạt {ok}/{tot}" for (cid, name), (ok, tot) in fails.items() if ok < tot]
+    md = ["# Độ ổn định qua nhiều lần chạy", "",
+          f"Bảng do `python -m eval.run_eval --stability` sinh ra từ {len(runs)} lần chạy đủ bộ kiểm thử, kết quả mỗi lần",
+          "lưu trong `eval/runs/`. Câu trả lời của AI thay đổi giữa các lần chạy, nên một lần đạt chưa đủ để kết luận.", "",
+          "| Mã | Loại | Số lần đạt mọi điều kiện | Kết luận qua các lần (số lần) |", "|---|---|---|---|"] + rows
+    md += ["", "Điều kiện không đạt ở ít nhất một lần chạy:", ""] + (unstable or ["- Không có"])
+    (HERE / "do-on-dinh.md").write_text("\n".join(md) + "\n", encoding="utf-8")
+    print("Đã ghi eval/do-on-dinh.md")
+
+
 def main(ids: list[str]) -> None:
     sys.stdout.reconfigure(encoding="utf-8")  # Windows consoles default to cp1252 when redirected
     flags = {i for i in ids if i.startswith("--")}
@@ -220,6 +252,8 @@ def main(ids: list[str]) -> None:
     cases = yaml.safe_load((HERE / "cases.yaml").read_text(encoding="utf-8"))
     if "--compare" in flags:
         return compare(cases)
+    if "--stability" in flags:
+        return stability(cases)
     if ids:
         cases = [c for c in cases if c["id"] in ids]
     OUT.mkdir(exist_ok=True)
