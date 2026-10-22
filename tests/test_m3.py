@@ -293,3 +293,25 @@ def test_llm_calls_are_counted_per_run():
     llm = FollowLLM()
     a, b = _first_run(llm), _first_run(llm)
     assert a["stats"]["llm_calls"] == b["stats"]["llm_calls"] > 0
+
+
+def test_value_must_agree_with_the_quote_in_sign_scale_and_unit():
+    """Same digits are not enough: a flipped sign makes a fake conflict, a wrong scale or pairing a wrong number."""
+    quote = "The Southeast Asia games market grew 8% to $6.2 billion in 2024, according to the report."
+    s = assess_source(src("S1", "https://nikopartners.com/x", quote * 5, "2025-03-01"), TODAY)
+    for value, why in [("-8%", "dấu"), ("$6.2 trillion", "bậc"), ("$8 billion", "đơn vị")]:
+        c = claim("C1", s.id, quote, value)
+        verify_claim(c, s)
+        assert not c.verified and why in c.verify_note, value
+    for value in ["8%", "$6.2 billion", "6,2 tỷ USD"]:
+        c = claim("C1", s.id, quote, value)
+        verify_claim(c, s)
+        assert c.verified, value
+
+
+def test_value_check_keeps_declines_and_table_cells_without_a_scale_word():
+    from core.textnorm import value_mismatch
+    assert value_mismatch("-17.1%", "MOBA revenue declined 17.1% quarter on quarter") == ""
+    assert value_mismatch("-17.1%", "+20.1%-17.1%-11.7%") == ""
+    assert value_mismatch("$5.37 billion", "Revenue (USD bn) | 5.37 | 5.89") == ""
+    assert value_mismatch("S-5.89", "| Total revenue | S-5.35 N-6.17 | S-5.89 N-6.51 |") == ""

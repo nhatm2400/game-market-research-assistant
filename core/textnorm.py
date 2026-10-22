@@ -113,6 +113,41 @@ def numbers_in(value_text: str, quote: str) -> bool:
     return all(f" {t} " in q for t in toks)
 
 
+DECLINE_RE = re.compile(r"declin|decreas|drop|fell|fall|down|lower|shr[iau]nk|contract|negative|loss|giảm|sụt|lỗ", re.I)
+
+
+def value_mismatch(value_text: str, quote: str) -> str:
+    """Why the value disagrees with the same digits in the quote ("" if it does not), e.g. '-8%' for 'grew 8%'.
+
+    Each number in the quote is read with the sign right before it and the words right after it. A quote number
+    without a scale word (a table cell under "USD bn") accepts any scale, so only an explicit conflict is rejected.
+    """
+    v, u = parse_value(value_text)
+    m = NUM_RE.search(value_text or "")
+    if v is None or not m:
+        return ""
+    tok = normalize(m.group(0))
+    found = list(NUM_RE.finditer(quote or ""))
+    why = ""
+    for k, q in enumerate(found):
+        if normalize(q.group(0)) != tok:
+            continue
+        end = found[k + 1].start() if k + 1 < len(found) else len(quote)
+        sign = re.sub(r"^.*\d", "", quote[max(0, q.start() - 2): q.start()])   # never borrow digits of the number before
+        qv, qu = parse_value(sign + quote[q.start(): min(end, q.end() + 15)])
+        if qv is None:
+            return ""
+        if (u == "%" and qu in ("USD", "VND")) or (u != "%" and qu == "%"):
+            why = "đơn vị"
+        elif u != "%" and abs(qv) != parse_number(q.group(0)) and abs(abs(v) - abs(qv)) > 1e-6 * abs(v):
+            why = "bậc (tỷ, triệu...)"
+        elif v < 0 and qv >= 0 and not DECLINE_RE.search(quote):
+            why = "dấu"
+        else:
+            return ""          # one occurrence of the digits agrees with the value
+    return why
+
+
 def fmt_value(v: float | None, unit: str) -> str:
     if v is None:
         return "?"

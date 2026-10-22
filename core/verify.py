@@ -13,7 +13,7 @@ import re
 from rapidfuzz import fuzz
 
 from .models import Claim, Source
-from .textnorm import normalize, normalize_with_map, number_tokens, numbers_in
+from .textnorm import normalize, normalize_with_map, number_tokens, numbers_in, value_mismatch
 
 MIN_QUOTE_CHARS = 15
 PAGE_RE = re.compile(r"\[\[Trang (\d+)\]\]")
@@ -89,6 +89,10 @@ def verify_claim(claim: Claim, source: Source) -> Claim:
         return claim
     if not numbers_in(claim.value_text, claim.quote):
         claim.verify_note = f"Giá trị \"{claim.value_text}\" không nằm trong câu trích"
+        return claim
+    bad = value_mismatch(claim.value_text, claim.quote)
+    if bad:
+        claim.verify_note = f"Giá trị \"{claim.value_text}\" khác con số trong câu trích về {bad}"
         return claim
 
     start, end = span
