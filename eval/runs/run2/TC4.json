@@ -1481,7 +1481,41 @@
     "url": "https://investgame.net/wp-content/uploads/2025/06/2025_Southeast_Asia_Mobile_Game_Insights.pdf#page=11",
     "findings": []
    }
-  ]
+  ],
+  "next_action": "",
+  "card": {
+   "action": "Chưa đủ căn cứ để quyết định; bổ sung dữ liệu theo bước dưới đây.",
+   "next_step": {
+    "text": "Chưa có dữ liệu đã kiểm cho tiêu chí \"Mức độ cạnh tranh và thị phần của các tựa game MOBA hiện tại\"",
+    "query": "",
+    "ask": "Tìm số liệu cho tiêu chí: Mức độ cạnh tranh và thị phần của các tựa game MOBA hiện tại",
+    "url": "",
+    "findings": []
+   },
+   "evidence": [
+    {
+     "finding": "F1",
+     "label": "Lượt tải game mobile, Việt Nam, Q1 2025",
+     "values": "329 triệu",
+     "origins": [
+      "Sensor Tower"
+     ],
+     "tier": "A",
+     "status": "trusted",
+     "claim_id": "C1",
+     "quote": "The Philippines and Vietnam follow with 366 million and 329 million downloads respectively.",
+     "url": "https://sensortower.com/blog/southeast-asia-mobile-gaming-2025#:~:text=The%20Philippines%20and%20Vietnam%20follow,and%20329%20million%20downloads%20respectively.",
+     "links": [
+      {
+       "origin": "Sensor Tower",
+       "claim_id": "C1",
+       "value": "329 million",
+       "url": "https://sensortower.com/blog/southeast-asia-mobile-gaming-2025#:~:text=The%20Philippines%20and%20Vietnam%20follow,and%20329%20million%20downloads%20respectively."
+      }
+     ]
+    }
+   ]
+  }
  },
  "stats": {
   "sources_read": 5,

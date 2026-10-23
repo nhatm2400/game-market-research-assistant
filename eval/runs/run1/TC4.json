@@ -452,7 +452,7 @@
    "market": "Asia & MENA",
    "period": "2022",
    "scope": "mobile",
-   "genre": "all",
+   "genre": "",
    "genre_level": "all",
    "quote": "The focus of this bulletin is on 5 key mobile game genres: RPG, Strategy, MOBA, Puzzle and Battle Royale, which cumulatively accounted for nearly 80% of mobile game spend in the Asia & MENA region during 2022.",
    "section_title": "Ranking the Mobile Game Genres",
@@ -967,7 +967,7 @@
   },
   {
    "key": "F6",
-   "label": "Thị phần game mobile, all, Asia & MENA, 2022",
+   "label": "Thị phần game mobile, Asia & MENA, 2022",
    "claim_ids": [
     "C6"
    ],
@@ -1244,7 +1244,7 @@
    },
    {
     "finding": "F6",
-    "label": "Thị phần game mobile, all, Asia & MENA, 2022",
+    "label": "Thị phần game mobile, Asia & MENA, 2022",
     "values": "+80,0%",
     "origins": [
      "Niko Partners"
@@ -1362,7 +1362,19 @@
     "url": "",
     "findings": []
    }
-  ]
+  ],
+  "next_action": "",
+  "card": {
+   "action": "Chưa đủ căn cứ để quyết định; bổ sung dữ liệu theo bước dưới đây.",
+   "next_step": {
+    "text": "Mới có số của thị trường khác, tìm số riêng cho Việt Nam",
+    "query": "Vietnam mobile games MOBA revenue growth Q1 2025 vs Q4 2024",
+    "ask": "",
+    "url": "",
+    "findings": []
+   },
+   "evidence": []
+  }
  },
  "stats": {
   "sources_read": 6,

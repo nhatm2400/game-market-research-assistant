@@ -363,7 +363,7 @@
    "market": "Việt Nam",
    "period": "2025",
    "scope": "mobile",
-   "genre": "all",
+   "genre": "",
    "genre_level": "all",
    "quote": "Vietnam’s mobile game market generated $825 million in 2025, up 9.16% year on year, according to Gamota’s Vietnam Mobile Gaming Year-in-Review 2025.",
    "section_title": "What Do Vietnam Mobile Gaming Statistics Show for 2025?",
@@ -393,7 +393,7 @@
    "market": "Việt Nam",
    "period": "2025 vs 2024",
    "scope": "mobile",
-   "genre": "all",
+   "genre": "",
    "genre_level": "all",
    "quote": "Vietnam’s mobile game market generated $825 million in 2025, up 9.16% year on year, according to Gamota’s Vietnam Mobile Gaming Year-in-Review 2025.",
    "section_title": "What Do Vietnam Mobile Gaming Statistics Show for 2025?",
@@ -422,7 +422,7 @@
    "market": "Việt Nam",
    "period": "2025",
    "scope": "mobile",
-   "genre": "all",
+   "genre": "",
    "genre_level": "all",
    "quote": "The report counts about 54 million mobile gamers and an average revenue per user of $15.27.",
    "section_title": "What Do Vietnam Mobile Gaming Statistics Show for 2025?",
@@ -451,7 +451,7 @@
    "market": "Việt Nam",
    "period": "2025",
    "scope": "mobile",
-   "genre": "all",
+   "genre": "",
    "genre_level": "all",
    "quote": "The report counts about 54 million mobile gamers and an average revenue per user of $15.27.",
    "section_title": "What Do Vietnam Mobile Gaming Statistics Show for 2025?",
@@ -1041,7 +1041,7 @@
   },
   {
    "key": "F4",
-   "label": "Doanh thu game mobile, all, Việt Nam, 2025",
+   "label": "Doanh thu game mobile, Việt Nam, 2025",
    "claim_ids": [
     "C4"
    ],
@@ -1062,7 +1062,7 @@
   },
   {
    "key": "F5",
-   "label": "Tăng trưởng game mobile, all, Việt Nam, 2025 vs 2024",
+   "label": "Tăng trưởng game mobile, Việt Nam, 2025 vs 2024",
    "claim_ids": [
     "C5"
    ],
@@ -1083,7 +1083,7 @@
   },
   {
    "key": "F6",
-   "label": "Số người chơi game mobile, all, Việt Nam, 2025",
+   "label": "Số người chơi game mobile, Việt Nam, 2025",
    "claim_ids": [
     "C6"
    ],
@@ -1104,7 +1104,7 @@
   },
   {
    "key": "F7",
-   "label": "Doanh thu game mobile, all, Việt Nam, 2025",
+   "label": "Doanh thu game mobile, Việt Nam, 2025",
    "claim_ids": [
     "C7"
    ],
@@ -1271,14 +1271,14 @@
   "gaps": [],
   "conflicts": [],
   "definition_notes": [
-   "Doanh thu Việt Nam: 825 triệu USD (game mobile, 2025, all; IMARC); 15.27 (game mobile, 2025, all; IMARC). Các số này khác kỳ đo hoặc phạm vi đo nên không so trực tiếp được."
+   "Doanh thu Việt Nam: 825 triệu USD (game mobile, 2025; IMARC); 15.27 (game mobile, 2025; IMARC). Các số này khác kỳ đo hoặc phạm vi đo nên không so trực tiếp được."
   ],
   "guard_log": [],
   "trusted": [],
   "uncertain": [
    {
     "finding": "F4",
-    "label": "Doanh thu game mobile, all, Việt Nam, 2025",
+    "label": "Doanh thu game mobile, Việt Nam, 2025",
     "values": "825 triệu USD",
     "origins": [
      "IMARC"
@@ -1295,7 +1295,7 @@
     "next_steps": [
      {
       "text": "Tìm nguồn hạng A/B (hãng dữ liệu, báo chuyên ngành) cho chỉ số này",
-      "query": "Vietnam mobile games all revenue 2025 Sensor Tower Newzoo Niko Partners",
+      "query": "Vietnam mobile games revenue 2025 Sensor Tower Newzoo Niko Partners",
       "ask": "",
       "url": "",
       "findings": [
@@ -1304,7 +1304,7 @@
      },
      {
       "text": "Đối chiếu bản gốc của IMARC trên imarcgroup.com",
-      "query": "IMARC Vietnam mobile games all revenue 2025",
+      "query": "IMARC Vietnam mobile games revenue 2025",
       "ask": "",
       "url": "",
       "findings": [
@@ -1324,7 +1324,7 @@
    },
    {
     "finding": "F5",
-    "label": "Tăng trưởng game mobile, all, Việt Nam, 2025 vs 2024",
+    "label": "Tăng trưởng game mobile, Việt Nam, 2025 vs 2024",
     "values": "+9,2%",
     "origins": [
      "IMARC"
@@ -1340,7 +1340,7 @@
     "next_steps": [
      {
       "text": "Tìm nguồn hạng A/B (hãng dữ liệu, báo chuyên ngành) cho chỉ số này",
-      "query": "Vietnam mobile games all revenue growth 2025 vs 2024 Sensor Tower Newzoo Niko Partners",
+      "query": "Vietnam mobile games revenue growth 2025 vs 2024 Sensor Tower Newzoo Niko Partners",
       "ask": "",
       "url": "",
       "findings": [
@@ -1349,7 +1349,7 @@
      },
      {
       "text": "Đối chiếu bản gốc của IMARC trên imarcgroup.com",
-      "query": "IMARC Vietnam mobile games all revenue growth 2025 vs 2024",
+      "query": "IMARC Vietnam mobile games revenue growth 2025 vs 2024",
       "ask": "",
       "url": "",
       "findings": [
@@ -1360,7 +1360,7 @@
    },
    {
     "finding": "F6",
-    "label": "Số người chơi game mobile, all, Việt Nam, 2025",
+    "label": "Số người chơi game mobile, Việt Nam, 2025",
     "values": "54 triệu",
     "origins": [
      "IMARC"
@@ -1376,7 +1376,7 @@
     "next_steps": [
      {
       "text": "Tìm nguồn hạng A/B (hãng dữ liệu, báo chuyên ngành) cho chỉ số này",
-      "query": "Vietnam mobile games all players 2025 Sensor Tower Newzoo Niko Partners",
+      "query": "Vietnam mobile games players 2025 Sensor Tower Newzoo Niko Partners",
       "ask": "",
       "url": "",
       "findings": [
@@ -1385,7 +1385,7 @@
      },
      {
       "text": "Đối chiếu bản gốc của IMARC trên imarcgroup.com",
-      "query": "IMARC Vietnam mobile games all players 2025",
+      "query": "IMARC Vietnam mobile games players 2025",
       "ask": "",
       "url": "",
       "findings": [
@@ -1396,7 +1396,7 @@
    },
    {
     "finding": "F7",
-    "label": "Doanh thu game mobile, all, Việt Nam, 2025",
+    "label": "Doanh thu game mobile, Việt Nam, 2025",
     "values": "15.27",
     "origins": [
      "IMARC"
@@ -1412,7 +1412,7 @@
     "next_steps": [
      {
       "text": "Tìm nguồn hạng A/B (hãng dữ liệu, báo chuyên ngành) cho chỉ số này",
-      "query": "Vietnam mobile games all revenue 2025 Sensor Tower Newzoo Niko Partners",
+      "query": "Vietnam mobile games revenue 2025 Sensor Tower Newzoo Niko Partners",
       "ask": "",
       "url": "",
       "findings": [
@@ -1421,7 +1421,7 @@
      },
      {
       "text": "Đối chiếu bản gốc của IMARC trên imarcgroup.com",
-      "query": "IMARC Vietnam mobile games all revenue 2025",
+      "query": "IMARC Vietnam mobile games revenue 2025",
       "ask": "",
       "url": "",
       "findings": [
@@ -1556,7 +1556,7 @@
   "next_steps": [
    {
     "text": "Tìm nguồn hạng A/B (hãng dữ liệu, báo chuyên ngành) cho chỉ số này",
-    "query": "Vietnam mobile games all revenue 2025 Sensor Tower Newzoo Niko Partners",
+    "query": "Vietnam mobile games revenue 2025 Sensor Tower Newzoo Niko Partners",
     "ask": "",
     "url": "",
     "findings": [
@@ -1568,7 +1568,7 @@
    },
    {
     "text": "Đối chiếu bản gốc của IMARC trên imarcgroup.com",
-    "query": "IMARC Vietnam mobile games all revenue 2025",
+    "query": "IMARC Vietnam mobile games revenue 2025",
     "ask": "",
     "url": "",
     "findings": [
@@ -1594,7 +1594,88 @@
     "url": "",
     "findings": []
    }
-  ]
+  ],
+  "next_action": "",
+  "card": {
+   "action": "Chưa đủ căn cứ để quyết định; bổ sung dữ liệu theo bước dưới đây.",
+   "next_step": {
+    "text": "Tìm nguồn hạng A/B (hãng dữ liệu, báo chuyên ngành) cho chỉ số này",
+    "query": "Vietnam mobile games revenue 2025 Sensor Tower Newzoo Niko Partners",
+    "ask": "",
+    "url": "",
+    "findings": [
+     "F4",
+     "F5",
+     "F6",
+     "F7"
+    ]
+   },
+   "evidence": [
+    {
+     "finding": "F4",
+     "label": "Doanh thu game mobile, Việt Nam, 2025",
+     "values": "825 triệu USD",
+     "origins": [
+      "IMARC"
+     ],
+     "tier": "C",
+     "status": "uncertain",
+     "claim_id": "C4",
+     "quote": "Vietnam’s mobile game market generated $825 million in 2025, up 9.16% year on year, according to Gamota’s Vietnam Mobile Gaming Year-in-Review 2025.",
+     "url": "https://icon-era.com/statistics/southeast-asia-mobile-gaming#:~:text=Vietnam%E2%80%99s%20mobile%20game%20market%20generated,Vietnam%20Mobile%20Gaming%20Year%2Din%2DReview%202025.",
+     "links": [
+      {
+       "origin": "IMARC",
+       "claim_id": "C4",
+       "value": "825 million",
+       "url": "https://icon-era.com/statistics/southeast-asia-mobile-gaming#:~:text=Vietnam%E2%80%99s%20mobile%20game%20market%20generated,Vietnam%20Mobile%20Gaming%20Year%2Din%2DReview%202025."
+      }
+     ]
+    },
+    {
+     "finding": "F5",
+     "label": "Tăng trưởng game mobile, Việt Nam, 2025 vs 2024",
+     "values": "+9,2%",
+     "origins": [
+      "IMARC"
+     ],
+     "tier": "C",
+     "status": "uncertain",
+     "claim_id": "C5",
+     "quote": "Vietnam’s mobile game market generated $825 million in 2025, up 9.16% year on year, according to Gamota’s Vietnam Mobile Gaming Year-in-Review 2025.",
+     "url": "https://icon-era.com/statistics/southeast-asia-mobile-gaming#:~:text=Vietnam%E2%80%99s%20mobile%20game%20market%20generated,Vietnam%20Mobile%20Gaming%20Year%2Din%2DReview%202025.",
+     "links": [
+      {
+       "origin": "IMARC",
+       "claim_id": "C5",
+       "value": "9.16%",
+       "url": "https://icon-era.com/statistics/southeast-asia-mobile-gaming#:~:text=Vietnam%E2%80%99s%20mobile%20game%20market%20generated,Vietnam%20Mobile%20Gaming%20Year%2Din%2DReview%202025."
+      }
+     ]
+    },
+    {
+     "finding": "F6",
+     "label": "Số người chơi game mobile, Việt Nam, 2025",
+     "values": "54 triệu",
+     "origins": [
+      "IMARC"
+     ],
+     "tier": "C",
+     "status": "uncertain",
+     "claim_id": "C6",
+     "quote": "The report counts about 54 million mobile gamers and an average revenue per user of $15.27.",
+     "url": "https://icon-era.com/statistics/southeast-asia-mobile-gaming#:~:text=The%20report%20counts%20about%2054,revenue%20per%20user%20of%20%2415.27.",
+     "links": [
+      {
+       "origin": "IMARC",
+       "claim_id": "C6",
+       "value": "54 million",
+       "url": "https://icon-era.com/statistics/southeast-asia-mobile-gaming#:~:text=The%20report%20counts%20about%2054,revenue%20per%20user%20of%20%2415.27."
+      }
+     ]
+    }
+   ]
+  }
  },
  "stats": {
   "sources_read": 4,

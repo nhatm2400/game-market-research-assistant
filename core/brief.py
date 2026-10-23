@@ -9,7 +9,7 @@ from __future__ import annotations
 import re
 
 from .analyze import overall_confidence
-from .evidence import sort_evidence
+from .evidence import decision_card, sort_evidence
 from .llm import LLM
 from .models import Claim, Finding, Source
 from .periods import Window
@@ -28,8 +28,9 @@ BRIEF_SCHEMA = {
             "properties": {"text": {"type": "string"}, "claim_ids": {"type": "array", "items": {"type": "string"}}},
             "required": ["text", "claim_ids"]}},
         "what_would_change": {"type": "array", "items": {"type": "string"}},
+        "next_action": {"type": "string"},
     },
-    "required": ["decision", "summary", "reasons", "what_would_change"],
+    "required": ["decision", "summary", "reasons", "what_would_change", "next_action"],
 }
 
 BRIEF_PROMPT = """Bạn viết bản tóm tắt quyết định một trang cho chuyên viên phát triển kinh doanh của nhà phát hành game.
@@ -58,6 +59,8 @@ Yêu cầu:
   lý do phải lấy đúng từ nhận định được gắn mã; không tự tính, không thêm số ngoài danh sách. Nếu số liệu có cảnh báo
   (ngoài khung thời gian, số theo quý, phạm vi địa lý, nền nhỏ) thì nói cảnh báo đó trong lý do.
 - what_would_change: 1 đến 3 điều nếu biết thêm sẽ làm thay đổi khuyến nghị, ví dụ dữ liệu còn thiếu.
+- next_action: một câu dưới 25 chữ nói người dùng nên làm gì tiếp theo, cụ thể theo câu hỏi (ví dụ "Ưu tiên
+  MOBA; trước khi chốt, kiểm thêm chi phí thu hút người dùng"). Không đưa con số ngoài các nhận định.
 Viết tiếng Việt tự nhiên, ngắn gọn."""
 
 
@@ -133,6 +136,7 @@ def write_brief(llm: LLM | None, question: str, criteria: list[str], claims: lis
         brief["summary"] = ("Chưa đủ dữ liệu đã kiểm chứng để trả lời câu hỏi. "
                             "Không có nhận định nào vừa liên quan vừa tìm thấy câu trích trong nguồn.")
         brief["what_would_change"] = ["Tải lên báo cáo đã mua hoặc thêm link nguồn gốc của hãng dữ liệu"]
+        brief["card"] = decision_card(brief, findings, claims, sources or {})
         return brief
 
     out = llm.json(BRIEF_PROMPT.format(
@@ -172,6 +176,11 @@ def write_brief(llm: LLM | None, question: str, criteria: list[str], claims: lis
             brief["guard_log"].append(f"Bỏ ý có số không có nguồn: \"{w}\"")
         else:
             brief["what_would_change"].append(w)
+    action = (out.get("next_action") or "").strip()
+    if action and unsupported_numbers(action, good, asked):
+        brief["guard_log"].append(f"Bỏ câu nên làm gì tiếp có số không có nguồn: \"{action}\"")
+        action = ""
+    brief["next_action"] = action
 
     brief["decision"] = out.get("decision") if out.get("decision") in DECISIONS else "Cần thêm dữ liệu"
     if brief["reasons"]:
@@ -189,4 +198,5 @@ def write_brief(llm: LLM | None, question: str, criteria: list[str], claims: lis
     if gaps and brief["confidence"] == "Cao":
         brief["confidence"] = "Trung bình"
         brief["guard_log"].append("Hạ mức tin cậy chung xuống Trung bình vì còn tiêu chí chưa có dữ liệu")
+    brief["card"] = decision_card(brief, findings, claims, sources or {})
     return brief

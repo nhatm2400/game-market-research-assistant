@@ -6,6 +6,20 @@
 
 Hiện chưa có đủ dữ liệu tổng hợp chính thức cho toàn bộ thị trường Đông Nam Á trong 12 tháng qua để xác định chính xác thể loại game mobile nào tăng trưởng doanh thu nhanh nhất. Các dữ liệu hiện có mới chỉ ghi nhận theo từng thị trường riêng lẻ như Indonesia, Thái Lan, Việt Nam hoặc theo các quý cụ thể.
 
+## Quyết định nhanh
+
+**Nên làm gì tiếp:** Chưa đủ căn cứ để quyết định; bổ sung dữ liệu theo bước dưới đây.
+Bước tiếp theo: Đối chiếu bản gốc của Sensor Tower trên sensortower.com. Truy vấn gợi ý: `Sensor Tower Southeast Asia mobile games 4X strategy revenue growth Q1 2025 vs Q4 2024`.
+
+**Dựa trên bằng chứng nào:**
+
+- +17,6%: Tăng trưởng game mobile, 4X strategy, Đông Nam Á, Q1 2025 vs Q4 2024 (hạng B, chưa chắc chắn).
+  - Sensor Tower: +17.6% QoQ [C35] https://gamedevreports.substack.com/p/sensor-tower-southeast-asia-mobile#:~:text=For%20revenue%2C%204X%20strategy%20games,%28%2D17.1%25%20QoQ%29%20are%20on%20top.
+- +20,1%: Tăng trưởng game mobile, MOBA, Đông Nam Á, Q1 2025 vs Q4 2024 (hạng B, chưa chắc chắn).
+  - Sensor Tower: +20.1% QoQ [C36] https://gamedevreports.substack.com/p/sensor-tower-southeast-asia-mobile#:~:text=For%20revenue%2C%204X%20strategy%20games,%28%2D17.1%25%20QoQ%29%20are%20on%20top.
+- -17,1%: Tăng trưởng game mobile, MMORPG, Đông Nam Á, Q1 2025 vs Q4 2024 (hạng B, chưa chắc chắn).
+  - Sensor Tower: -17.1% QoQ [C37] https://gamedevreports.substack.com/p/sensor-tower-southeast-asia-mobile#:~:text=For%20revenue%2C%204X%20strategy%20games,%28%2D17.1%25%20QoQ%29%20are%20on%20top.
+
 Khung thời gian dữ liệu: 12 tháng gần nhất. Ngày chạy: 2026-10-22.
 
 ## Lý do chính

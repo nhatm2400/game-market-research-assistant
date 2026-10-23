@@ -6,6 +6,15 @@
 
 Doanh thu IAP game mobile tại Đông Nam Á trong quý 1 năm 2025 đạt 625 triệu USD theo dữ liệu từ Sensor Tower. Số liệu này có mức độ tin cậy trung bình do chỉ dựa trên một nguồn gốc duy nhất.
 
+## Quyết định nhanh
+
+**Nên làm gì tiếp:** Có thể dùng câu trả lời này làm căn cứ.
+
+**Dựa trên bằng chứng nào:**
+
+- 625 triệu USD: Doanh thu IAP game mobile, Đông Nam Á, Q1 2025 (hạng A, có thể tin).
+  - Sensor Tower: $625 million [C1] https://sensortower.com/blog/southeast-asia-mobile-gaming-2025#:~:text=While%20SEA%20currently%20ranks%20seventh,signals%20significant%20untapped%20monetization%20potential.
+
 Khung thời gian dữ liệu: 01/2025 đến 03/2025. Ngày chạy: 2026-10-22.
 
 ## Lý do chính

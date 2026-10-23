@@ -29,6 +29,15 @@ Những thay đổi khác so với M2:
 - **Số trong bảng không ghi đơn vị**: ô bảng như `6.51` dưới cột `USD billion` được suy ra là tỷ USD khi cùng chỉ số ở nguồn khác có số USD cùng cỡ (chênh trong khoảng gấp đôi), có cờ ghi rõ là suy ra; nhờ vậy mâu thuẫn không bị tách thành nhiều nhóm.
 - **Sửa lỗi M2**: số có trong câu hỏi ("12 tháng") không còn bị coi là số bịa làm mất câu tóm tắt (TC3); ô bảng "0.817" không còn bị đọc thành 817; nhãn bảng như "S-5.89 N-6.51" (S là Statista, N là Newzoo) không còn bị đọc thành số âm, và giá trị ghi hai con số bị loại vì không rõ số nào là của nhận định; số lượt gọi LLM tính riêng từng lần chạy.
 
+### Change Request A4: hỗ trợ quyết định
+
+Người dùng không muốn đọc báo cáo dài; họ muốn biết **nên làm gì tiếp theo và quyết định đó dựa trên bằng chứng nào**. Đầu mỗi kết quả là khối **Quyết định nhanh**, đọc trong vài giây:
+
+- **Kết luận** và mức tin cậy, kèm một hai câu tóm tắt.
+- **Nên làm gì tiếp**: một câu hành động và bước tiếp theo quan trọng nhất, có nút "Làm bước này" để chạy luôn. Câu hành động cụ thể do AI viết chỉ hiện khi code để kết luận chắc chắn đứng; khi kết luận bị hạ (chưa chắc chắn, cần thêm dữ liệu), khối dùng câu của code.
+- **Dựa trên bằng chứng nào**: tối đa 3 dòng do code chọn từ các nhóm số mà lý do chính dẫn, có thể tin xếp trước, không bao giờ lấy số ngoài phạm vi câu hỏi. Mỗi dòng có con số, hạng nguồn, trạng thái, và link mở đúng câu trích của từng hãng.
+
+Báo cáo chi tiết (lý do, ba phần, các bước khác, nguồn) vẫn ở ngay bên dưới. Bản Markdown tải về cũng mở đầu bằng khối này. Kiểm thử: `tests/test_cr.py`, TC9 chạy thật và điều kiện `checks_cr` trong `eval/cases.yaml`.
 Chi tiết trước và sau cải tiến, quyết định thay đổi gì và không thay đổi gì, bằng chứng và giới hạn còn lại: [docs/mission-3.md](docs/mission-3.md). Bảng so sánh kết quả chạy thật M2 và M3: [eval/so-sanh-m2-m3.md](eval/so-sanh-m2-m3.md).
 
 ## Cách hoạt động
@@ -120,13 +129,14 @@ python -m pytest -q
 python -m eval.run_eval
 ```
 
-- `pytest` chạy 69 bài test không cần mạng và không cần khóa API:
+- `pytest` chạy 74 bài test không cần mạng và không cần khóa API:
   - 32 bài từ M2 (là test regression; một bài đổi điều kiện kiểm vì M3 thêm quy tắc kết luận): kiểm câu trích (câu bịa, câu bị diễn đạt lại, số bị đổi), đọc giá trị và kỳ đo, hạng nguồn, truy nguồn gốc, phân biệt mâu thuẫn với khác định nghĩa, bẫy bảng của Việt Nam bị ghi là Đông Nam Á, bộ kiểm bản tóm tắt, xử lý lỗi (mô hình quá tải, mô hình dự phòng, tải trang timeout, lỗi khi viết tóm tắt), và một bài chạy toàn bộ luồng với LLM giả cố tình trả về một nhận định bịa.
   - 2 bài mới trong `tests/test_robustness.py`: lỗi hết lượt gọi AI nêu rõ nguyên nhân và được nhớ để không gọi lại vô ích.
   - 32 bài mới trong `tests/test_m3.py`: xếp có thể tin / chưa chắc chắn / ngoài phạm vi, số dẫn lại, mâu thuẫn và trái chiều, số dự báo tại thời điểm đăng, số cũ có bản mới hơn, biểu đồ chỉ tới đúng trang hoặc đúng con số kể cả khi nhãn bị ghép với số, số không ghi đơn vị tiền, số trong bảng không ghi đơn vị, giá trị ghi hai con số, link mở câu trích, nghiên cứu tiếp giữ bối cảnh (đổi thị trường, giữ năm, giữ nhận định đã loại, bước tìm thêm bỏ qua trang đã đọc), số lượt gọi LLM từng lần chạy, kết luận không được ghi là đã trả lời khi mọi lý do chỉ dựa trên nhận định chưa chắc chắn, và regression cho các lỗi M2 (mất tóm tắt vì "12 tháng", "0.817" bị đọc thành 817, ô bảng "S-5.89 N-6.51" bị đọc thành số âm).
-  - 3 bài trong `tests/test_app.py` dựng trang Streamlit bằng AppTest: ba phần mới hiển thị, chữ lấy từ nguồn được escape trước khi chèn vào trang, và kết quả chạy thật có sẵn mở được từ thanh bên mà không cần gọi AI.
-- `eval.run_eval` chạy 8 tình huống thật trong `eval/cases.yaml` (cần mạng và khóa Gemini), tự chấm và sinh bảng `eval/ket-qua-kiem-thu.md`. Mỗi case có `checks` (điều kiện M2, giữ nguyên để kiểm regression) và `checks_m3` (điều kiện mới). TC7 hỏi tiếp từ kết quả TC2 để kiểm việc giữ bối cảnh; TC8 là nguồn cũ có số dự báo. Kết quả chi tiết từng lần chạy nằm trong `eval/results/`, kết quả của M2 giữ ở `eval/results_m2/` và `eval/ket-qua-m2.md`.
-- `eval.run_eval --compare` áp cùng bộ điều kiện lên kết quả M2 và M3, sinh `eval/so-sanh-m2-m3.md`. `eval.run_eval --report` dựng lại bảng từ kết quả đã lưu mà không gọi LLM. `eval.run_eval --stability` đọc các lần chạy lưu trong `eval/runs/` và sinh `eval/do-on-dinh.md`: qua 3 lần chạy đủ bộ kiểm thử, 7/8 case đạt cả 3 lần, TC6 không đạt cả 3 lần.
+  - 5 bài trong `tests/test_cr.py` cho Change Request A4: khối quyết định nhanh khi đã có câu trả lời, khi nguồn mâu thuẫn, khi thiếu dữ liệu; câu hành động của AI chỉ hiện khi kết luận đứng được; khối tối đa 3 bằng chứng và không lấy số ngoài phạm vi câu hỏi.
+  - 3 bài trong `tests/test_app.py` dựng trang Streamlit bằng AppTest: ba phần mới và khối quyết định nhanh hiển thị (khối đứng trước báo cáo dài), chữ lấy từ nguồn được escape trước khi chèn vào trang, và kết quả chạy thật có sẵn mở được từ thanh bên mà không cần gọi AI.
+- `eval.run_eval` chạy 9 tình huống thật trong `eval/cases.yaml` (cần mạng và khóa Gemini), tự chấm và sinh bảng `eval/ket-qua-kiem-thu.md`. Mỗi case có `checks` (điều kiện M2, giữ nguyên để kiểm regression) và `checks_m3` (điều kiện mới). TC7 hỏi tiếp từ kết quả TC2 để kiểm việc giữ bối cảnh; TC8 là nguồn cũ có số dự báo; TC9 là câu hỏi ra quyết định cho Change Request A4, chấm bằng `checks_cr`. Kết quả chi tiết từng lần chạy nằm trong `eval/results/`, kết quả của M2 giữ ở `eval/results_m2/` và `eval/ket-qua-m2.md`.
+- `eval.run_eval --compare` áp cùng bộ điều kiện lên kết quả M2 và M3, sinh `eval/so-sanh-m2-m3.md`. `eval.run_eval --report` dựng lại bảng từ kết quả đã lưu mà không gọi LLM. `eval.run_eval --stability` đọc các lần chạy lưu trong `eval/runs/` và sinh `eval/do-on-dinh.md`: qua 3 lần chạy đủ bộ kiểm thử, 8/9 case đạt cả 3 lần, TC6 không đạt cả 3 lần.
 
 ## Hạn chế đã biết
 

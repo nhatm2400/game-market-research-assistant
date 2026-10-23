@@ -1080,7 +1080,19 @@
     "url": "https://investgame.net/news/pdf/southeast-asian-mobile-game-market-insights-2025/#:~:text=%2B17.6%25",
     "findings": []
    }
-  ]
+  ],
+  "next_action": "",
+  "card": {
+   "action": "Chưa đủ căn cứ để quyết định; bổ sung dữ liệu theo bước dưới đây.",
+   "next_step": {
+    "text": "Mới có số của thị trường khác, tìm số riêng cho Đông Nam Á",
+    "query": "Southeast Asia mobile games Shooter / Battle Royale revenue growth Q1 2025 vs Q4 2024",
+    "ask": "",
+    "url": "",
+    "findings": []
+   },
+   "evidence": []
+  }
  },
  "stats": {
   "sources_read": 1,

@@ -1466,7 +1466,57 @@
     "url": "",
     "findings": []
    }
-  ]
+  ],
+  "next_action": "",
+  "card": {
+   "action": "Chưa nên dùng các con số này làm căn cứ chính; làm bước dưới đây trước.",
+   "next_step": {
+    "text": "So sánh cách đo của Newzoo, Niko Partners, Statista (phạm vi, quốc gia tính vào, loại doanh thu) rồi chọn số hợp với câu hỏi",
+    "query": "Southeast Asia games market revenue 2024 Newzoo Niko Partners Statista methodology",
+    "ask": "",
+    "url": "",
+    "findings": [
+     "F1"
+    ]
+   },
+   "evidence": [
+    {
+     "finding": "F1",
+     "label": "Doanh thu toàn ngành game, Đông Nam Á, 2024",
+     "values": "5,37 tỷ USD đến 5,89 tỷ USD đến 6,51 tỷ USD",
+     "origins": [
+      "Newzoo",
+      "Niko Partners",
+      "Statista"
+     ],
+     "tier": "B",
+     "status": "uncertain",
+     "claim_id": "C1",
+     "quote": "According to Niko’s Southeast Asia Market Model and 5-Year Forecast, the region generated $5.37 billion in games revenue in 2024, up 5.2% year-over-year (YoY).",
+     "url": "https://gamesbeat.com/southeast-asia-to-reach-6-47-billion-in-revenues-by-2029-niko-partners/#:~:text=According%20to%20Niko%E2%80%99s%20Southeast%20Asia,2024%2C%20up%205.2%25%20year%2Dover%2Dyear%20%28YoY%29.",
+     "links": [
+      {
+       "origin": "Newzoo",
+       "claim_id": "C20",
+       "value": "6.51 billion USD",
+       "url": "https://allcorrectgames.com/insights/the-gaming-market-in-southeast-asia-2/#:~:text=Total%20revenue%20S%2D4.85%20N%2D6.14%20S%2D5.35,N%2D6.51%20S%2D6.39%20N%2D6.89%20S%2D6.88%20S%2D7.37"
+      },
+      {
+       "origin": "Niko Partners",
+       "claim_id": "C1",
+       "value": "$5.37 billion",
+       "url": "https://gamesbeat.com/southeast-asia-to-reach-6-47-billion-in-revenues-by-2029-niko-partners/#:~:text=According%20to%20Niko%E2%80%99s%20Southeast%20Asia,2024%2C%20up%205.2%25%20year%2Dover%2Dyear%20%28YoY%29."
+      },
+      {
+       "origin": "Statista",
+       "claim_id": "C19",
+       "value": "5.89 billion USD",
+       "url": "https://allcorrectgames.com/insights/the-gaming-market-in-southeast-asia-2/#:~:text=Total%20revenue%20S%2D4.85%20N%2D6.14%20S%2D5.35,N%2D6.51%20S%2D6.39%20N%2D6.89%20S%2D6.88%20S%2D7.37"
+      }
+     ]
+    }
+   ]
+  }
  },
  "stats": {
   "sources_read": 3,

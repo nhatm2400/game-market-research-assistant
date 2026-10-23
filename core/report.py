@@ -14,8 +14,23 @@ def brief_markdown(r: dict) -> str:
     if len(r.get("thread") or []) > 1:
         out += ["**Chuỗi nghiên cứu:** " + " → ".join(t["question"] for t in r["thread"]), ""]
     out += [f"**Kết luận:** {b['decision']}. **Mức tin cậy:** {b['confidence']}.", "",
-            b["summary"] or "", "",
-            f"Khung thời gian dữ liệu: {r['window']['label']}. Ngày chạy: {r['today']}.", ""]
+            b["summary"] or "", ""]
+    card = b.get("card")
+    if card:
+        out += ["## Quyết định nhanh", "", f"**Nên làm gì tiếp:** {card['action']}"]
+        if card["next_step"]:
+            s = card["next_step"]
+            out.append(f"Bước tiếp theo: {s['text']}." + (f" Truy vấn gợi ý: `{s['query']}`." if s["query"] else "")
+                       + (f" {s['url']}" if s["url"] else ""))
+        out += ["", "**Dựa trên bằng chứng nào:**", ""]
+        label = {"trusted": "có thể tin", "uncertain": "chưa chắc chắn"}
+        for e in card["evidence"]:
+            out.append(f"- {e['values']}: {e['label']} (hạng {e['tier']}, {label[e['status']]}).")
+            out += [f"  - {x['origin']}: {x['value']} [{x['claim_id']}] {x['url']}".rstrip() for x in e.get("links", [])]
+        if not card["evidence"]:
+            out.append("- Chưa có nhận định nào đã kiểm.")
+        out.append("")
+    out += [f"Khung thời gian dữ liệu: {r['window']['label']}. Ngày chạy: {r['today']}.", ""]
     if b["reasons"]:
         out += ["## Lý do chính", ""]
         for i, x in enumerate(b["reasons"], 1):

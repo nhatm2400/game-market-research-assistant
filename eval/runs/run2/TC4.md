@@ -6,6 +6,16 @@
 
 Chưa có đủ dữ liệu cụ thể về quy mô doanh thu, tốc độ tăng trưởng và mức độ cạnh tranh của game MOBA mobile tại riêng thị trường Việt Nam trong 24 tháng gần nhất để đưa ra quyết định phát hành.
 
+## Quyết định nhanh
+
+**Nên làm gì tiếp:** Chưa đủ căn cứ để quyết định; bổ sung dữ liệu theo bước dưới đây.
+Bước tiếp theo: Chưa có dữ liệu đã kiểm cho tiêu chí "Mức độ cạnh tranh và thị phần của các tựa game MOBA hiện tại".
+
+**Dựa trên bằng chứng nào:**
+
+- 329 triệu: Lượt tải game mobile, Việt Nam, Q1 2025 (hạng A, có thể tin).
+  - Sensor Tower: 329 million [C1] https://sensortower.com/blog/southeast-asia-mobile-gaming-2025#:~:text=The%20Philippines%20and%20Vietnam%20follow,and%20329%20million%20downloads%20respectively.
+
 Khung thời gian dữ liệu: câu hỏi về tương lai, dùng dữ liệu 24 tháng gần nhất. Ngày chạy: 2026-10-22.
 
 ## Lý do chính

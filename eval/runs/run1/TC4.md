@@ -6,6 +6,15 @@
 
 Chưa có đủ dữ liệu cụ thể cho thị trường Việt Nam trong 24 tháng gần nhất để đưa ra quyết định phát hành game MOBA mobile. Toàn bộ các dữ liệu hiện có đều thuộc về thị trường Indonesia, Philippines, Đông Nam Á hoặc khu vực Châu Á & MENA, chưa phản ánh chính xác thị trường Việt Nam.
 
+## Quyết định nhanh
+
+**Nên làm gì tiếp:** Chưa đủ căn cứ để quyết định; bổ sung dữ liệu theo bước dưới đây.
+Bước tiếp theo: Mới có số của thị trường khác, tìm số riêng cho Việt Nam. Truy vấn gợi ý: `Vietnam mobile games MOBA revenue growth Q1 2025 vs Q4 2024`.
+
+**Dựa trên bằng chứng nào:**
+
+- Chưa có nhận định nào đã kiểm.
+
 Khung thời gian dữ liệu: câu hỏi về tương lai, dùng dữ liệu 24 tháng gần nhất. Ngày chạy: 2026-10-22.
 
 ## Lý do chính
@@ -30,7 +39,7 @@ Khung thời gian dữ liệu: câu hỏi về tương lai, dùng dữ liệu 24
 - **F3** Tăng trưởng game mobile, MOBA, Philippines, Q1 2025 vs Q4 2024: +19,0% (Sensor Tower). Số của thị trường Philippines, câu hỏi hỏi về Việt Nam.
 - **F4** Xếp hạng game mobile, MOBA, Đông Nam Á, 2017-2025: 5 (Sensor Tower). Số của thị trường Đông Nam Á, câu hỏi hỏi về Việt Nam.
 - **F5** Doanh thu game mobile, MOBA, Asia and MENA, 2022: 2 (Niko Partners). Số của thị trường Asia and MENA, câu hỏi hỏi về Việt Nam.
-- **F6** Thị phần game mobile, all, Asia & MENA, 2022: +80,0% (Niko Partners). Số của thị trường Asia & MENA, câu hỏi hỏi về Việt Nam.
+- **F6** Thị phần game mobile, Asia & MENA, 2022: +80,0% (Niko Partners). Số của thị trường Asia & MENA, câu hỏi hỏi về Việt Nam.
 - **F7** Chỉ số khác game mobile, MOBA, Asia and MENA, 2022: 6 (Niko Partners). Số của thị trường Asia and MENA, câu hỏi hỏi về Việt Nam.
 - **F8** Xếp hạng game mobile, MOBA, Asia and MENA, 2023: 1 (Niko Partners). Số của thị trường Asia and MENA, câu hỏi hỏi về Việt Nam.
 - **F9** Chỉ số khác game mobile, MOBA, Asia and MENA, 2023: 6 (Niko Partners). Số của thị trường Asia and MENA, câu hỏi hỏi về Việt Nam.

@@ -287,7 +287,18 @@
     "url": "",
     "findings": []
    }
-  ]
+  ],
+  "card": {
+   "action": "Chưa đủ căn cứ để quyết định; bổ sung dữ liệu theo bước dưới đây.",
+   "next_step": {
+    "text": "Chưa có dữ liệu đã kiểm cho tiêu chí \"Doanh thu Tiếu Ngạo Việt Nam tháng 9 2026\"",
+    "query": "",
+    "ask": "Tìm số liệu cho tiêu chí: Doanh thu Tiếu Ngạo Việt Nam tháng 9 2026",
+    "url": "",
+    "findings": []
+   },
+   "evidence": []
+  }
  },
  "stats": {
   "sources_read": 6,

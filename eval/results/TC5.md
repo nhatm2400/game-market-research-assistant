@@ -6,6 +6,15 @@
 
 Chưa đủ dữ liệu đã kiểm chứng để trả lời câu hỏi. Không có nhận định nào vừa liên quan vừa tìm thấy câu trích trong nguồn.
 
+## Quyết định nhanh
+
+**Nên làm gì tiếp:** Chưa đủ căn cứ để quyết định; bổ sung dữ liệu theo bước dưới đây.
+Bước tiếp theo: Chưa có dữ liệu đã kiểm cho tiêu chí "Doanh thu tháng 9/2026 của game Tiếu Ngạo tại Việt Nam".
+
+**Dựa trên bằng chứng nào:**
+
+- Chưa có nhận định nào đã kiểm.
+
 Khung thời gian dữ liệu: 09/2026 đến 09/2026. Ngày chạy: 2026-10-22.
 
 ## Có thể tin

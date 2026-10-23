@@ -1,7 +1,8 @@
 # Bộ kiểm thử chạy thật (cần mạng và GEMINI_API_KEY). Chạy: python -m eval.run_eval
 # loai: tot (kỳ vọng làm tốt), kho (dữ liệu không rõ ràng), thieu (thiếu dữ liệu), that_bai (dự đoán làm chưa tốt),
-#       tiep (nghiên cứu tiếp từ case khác, giữ bối cảnh), cu (nguồn cũ, số dự báo)
+#       tiep (nghiên cứu tiếp từ case khác, giữ bối cảnh), cu (nguồn cũ, số dự báo), cr (Change Request A4)
 # checks: điều kiện của Mission 2, giữ nguyên để kiểm regression. checks_m3: điều kiện mới của Mission 3.
+# checks_cr: điều kiện của Change Request A4 (khối quyết định nhanh: nên làm gì tiếp, dựa trên bằng chứng nào).
 # hoc_duoc: điền sau khi xem kết quả.
 
 - id: TC1
@@ -18,6 +19,9 @@
   checks_m3:
     decision_in: ["Đã có câu trả lời"]
     trusted_includes_numbers: ["625"]
+  checks_cr:
+    card: true
+    card_evidence_numbers_any: ["625"]
   hoc_duoc: "Đạt cả 3/3 lần chạy, cả 3 lần đều 'Đã có câu trả lời' với 625 triệu USD ở 'Có thể tin' (blog Sensor Tower, hạng A, bản gốc), tin cậy Trung bình vì chỉ một nguồn gốc. Nguyên nhân chính so với M2: kế hoạch chỉ còn tiêu chí đúng thứ được hỏi; M2 tự thêm tiêu chí ngoài câu hỏi (top thể loại, top quốc gia), tạo chỗ thiếu giả và kéo kết luận về 'Cần thêm dữ liệu'."
 
 - id: TC2
@@ -37,6 +41,9 @@
     uncertain_reason_any: ["lệch", "trái chiều"]
     trusted_excludes_numbers: ["5.37", "5.89"]
     next_steps_min: 1
+  checks_cr:
+    card: true
+    card_evidence_numbers_any: ["5.37", "5.89", "6.51"]
   hoc_duoc: "Đạt cả 3/3 lần. Cả 3 lần đều gom ba nguồn gốc Niko Partners 5,37, Statista 5,89 và Newzoo 6,51 tỷ USD thành một mâu thuẫn lệch 21%, xếp 'Chưa chắc chắn'; tăng trưởng 5,2% của Niko luôn ở 'Có thể tin'. Việc gom đủ ba số nhờ suy ra đơn vị cho ô bảng không ghi đơn vị (trước đó Newzoo 6,51 nằm nhóm riêng). Cả 3 lần kết luận là 'Có số liệu nhưng chưa chắc chắn': code chỉ giữ kết luận chắc chắn khi đa số lý do dựa trên nhận định có thể tin (trước quy tắc này, một lần AI ghi 'Đã có câu trả lời'). Các lỗi lộ ra khi chạy thử đã sửa và có test: số không ghi USD, ô 'N-6.51' bị đọc thành số âm, giá trị ghi hai con số."
 
 - id: TC3
@@ -69,6 +76,8 @@
   checks_m3:
     summary_not_empty: true
     next_steps_min: 1
+  checks_cr:
+    card: true
   hoc_duoc: "Đạt cả 3/3 lần, cả 3 lần đều 'Cần thêm dữ liệu' vì không có số riêng cho MOBA tại Việt Nam và thiếu dữ liệu về mức cạnh tranh; có bước bấm được để hỏi tiếp. Nguồn tìm được thay đổi giữa các lần (2 đến 4 nguồn lỗi tải), nên số trong ba phần cũng khác nhau: có lần có 329 triệu lượt tải ở 'Có thể tin', có lần chỉ có số từ nguồn hạng C ở 'Chưa chắc chắn'. Số MOBA của Đông Nam Á được để ở 'ngoài phạm vi' thay vì làm lý do như M2."
 
 - id: TC5
@@ -82,6 +91,8 @@
     no_verified_number_for_period: "2026-09"
   checks_m3:
     next_steps_min: 1
+  checks_cr:
+    card: true
   hoc_duoc: "Đạt cả 3/3 lần: không có nhận định nào, mức 'Chưa đủ dữ liệu', không gọi AI viết tóm tắt nên không có chỗ bịa số. Khác M2: kế hoạch chỉ còn tiêu chí đúng câu hỏi, và mục 'Nên tìm hiểu tiếp' có bước bấm được để nghiên cứu tiếp tiêu chí đó thay vì một câu khuyên chung."
 
 - id: TC6
@@ -131,6 +142,22 @@
     uncertain_reason_any: ["chưa kết thúc", "dự báo"]
     confidence_not: ["Cao"]
     next_steps_min: 1
+  checks_cr:
+    card: true
+    card_evidence_numbers_any: ["5.47"]
   hoc_duoc: "Đạt cả 3/3 lần. Số 2025 duy nhất là 5,47 tỷ USD của Niko Partners trong bài đăng tháng 9 và 10/2025; code nhận ra năm 2025 chưa kết thúc lúc đăng nên xếp 'Chưa chắc chắn' (số ước tính hoặc dự báo), tin cậy Thấp, và cả 3 lần kết luận là 'Có số liệu nhưng chưa chắc chắn' (code đổi từ 'Đã có câu trả lời' AI viết, vì không lý do nào dựa trên nhận định có thể tin). Bước tiếp: tìm số đã đo của năm 2025. M2 không có quy tắc này (chỉ cảnh báo số lệch khung của câu hỏi), nên với câu hỏi về năm 2025 sẽ đưa 5,47 tỷ như số đã đo; điều này suy ra từ quy tắc M2, M2 chưa được chạy trên TC8."
 
-# TC9: Change Request. Sẽ thêm khi nhận Change Request.
+- id: TC9
+  loai: cr
+  question: "Nên ưu tiên phát hành game MOBA hay game chiến thuật 4X tại Đông Nam Á, dựa trên tăng trưởng doanh thu quý 1/2025?"
+  urls:
+    - https://sensortower.com/blog/southeast-asia-mobile-gaming-2025
+    - https://gamedevreports.substack.com/p/sensor-tower-southeast-asia-mobile
+  use_search: false
+  ky_vong: "Change Request A4: người dùng không đọc báo cáo dài. Đầu kết quả phải có khối quyết định nhanh: một câu nên làm gì tiếp và bước tiếp theo, dựa trên tối đa 3 bằng chứng đã kiểm, mỗi bằng chứng mở được câu trích; bằng chứng phải là số tăng trưởng doanh thu theo thể loại của Sensor Tower (MOBA +20,1%, 4X +17,6%)"
+  checks: {}
+  checks_cr:
+    card: true
+    card_evidence_min: 1
+    card_evidence_numbers_any: ["20.1", "17.6"]
+  hoc_duoc: "Đạt cả 3/3 lần chạy thật. Lần nào khối quyết định nhanh cũng có đúng 3 bằng chứng đã kiểm, mỗi bằng chứng mở được câu trích: 625 triệu USD (Sensor Tower, hạng A), MOBA +20,1% và 4X Strategy +17,6% (Sensor Tower dẫn qua GameDev Reports, hạng B). 2 lần AI kết luận 'Nên ưu tiên' và câu nên làm gì tiếp là câu cụ thể (ví dụ 'Ưu tiên phát hành game MOBA; cần đối chiếu thêm báo cáo gốc của Sensor Tower trước khi chốt đầu tư'); 1 lần AI chọn 'Cần thêm dữ liệu' nên khối dùng câu hành động của code kèm bước tiếp theo. Hạn chế: so MOBA với 4X chỉ dựa trên tăng trưởng một quý của một nguồn gốc; khối thể hiện điều đó bằng mức tin cậy Trung bình và bước đối chiếu bản gốc Sensor Tower."
