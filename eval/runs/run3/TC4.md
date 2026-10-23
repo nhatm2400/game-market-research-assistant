@@ -13,11 +13,11 @@ Bước tiếp theo: Tìm nguồn hạng A/B (hãng dữ liệu, báo chuyên ng
 
 **Dựa trên bằng chứng nào:**
 
-- 825 triệu USD: Doanh thu game mobile, Việt Nam, 2025 (hạng C, chưa chắc chắn).
+- 825 triệu USD: Doanh thu game mobile, Việt Nam, 2025 (hạng C, chưa chắc chắn, vì: Chỉ có nguồn hạng C hoặc D; Không ghi đơn vị tiền, coi là USD để so sánh; Số của IMARC dẫn lại qua bài viết, chưa đối chiếu bản gốc).
   - IMARC: 825 million [C4] https://icon-era.com/statistics/southeast-asia-mobile-gaming#:~:text=Vietnam%E2%80%99s%20mobile%20game%20market%20generated,Vietnam%20Mobile%20Gaming%20Year%2Din%2DReview%202025.
-- +9,2%: Tăng trưởng game mobile, Việt Nam, 2025 vs 2024 (hạng C, chưa chắc chắn).
+- +9,2%: Tăng trưởng game mobile, Việt Nam, 2025 vs 2024 (hạng C, chưa chắc chắn, vì: Chỉ có nguồn hạng C hoặc D; Số của IMARC dẫn lại qua bài viết, chưa đối chiếu bản gốc).
   - IMARC: 9.16% [C5] https://icon-era.com/statistics/southeast-asia-mobile-gaming#:~:text=Vietnam%E2%80%99s%20mobile%20game%20market%20generated,Vietnam%20Mobile%20Gaming%20Year%2Din%2DReview%202025.
-- 54 triệu: Số người chơi game mobile, Việt Nam, 2025 (hạng C, chưa chắc chắn).
+- 54 triệu: Số người chơi game mobile, Việt Nam, 2025 (hạng C, chưa chắc chắn, vì: Chỉ có nguồn hạng C hoặc D; Số của IMARC dẫn lại qua bài viết, chưa đối chiếu bản gốc).
   - IMARC: 54 million [C6] https://icon-era.com/statistics/southeast-asia-mobile-gaming#:~:text=The%20report%20counts%20about%2054,revenue%20per%20user%20of%20%2415.27.
 
 Khung thời gian dữ liệu: câu hỏi về tương lai, dùng dữ liệu 24 tháng gần nhất. Ngày chạy: 2026-10-22.

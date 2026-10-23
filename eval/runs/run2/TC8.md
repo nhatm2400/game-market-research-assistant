@@ -13,7 +13,7 @@ Bước tiếp theo: Đối chiếu bản gốc của Niko Partners trên nikopa
 
 **Dựa trên bằng chứng nào:**
 
-- 5,47 tỷ USD: Doanh thu toàn ngành game, Đông Nam Á, 2025 (hạng B, chưa chắc chắn).
+- 5,47 tỷ USD: Doanh thu toàn ngành game, Đông Nam Á, 2025 (hạng B, chưa chắc chắn, vì: Không ghi đơn vị tiền, coi là USD để so sánh; Kỳ đo 2025 chưa kết thúc khi nguồn đăng (09/2025): là số ước tính hoặc dự báo, chưa chắc là số đã đo; Kỳ đo 2025 chưa kết thúc khi nguồn đăng (10/2025): là số ước tính hoặc dự báo, chưa chắc là số đã đo; Số của Niko Partners dẫn lại qua bài viết, chưa đối chiếu bản gốc).
   - Niko Partners: 5.47 billion [C1] https://gamesbeat.com/southeast-asia-to-reach-6-47-billion-in-revenues-by-2029-niko-partners/#:~:text=The%20region%E2%80%99s%20market%20is%20expected,in%202025%20to%20%245.47%20billion.
 
 Khung thời gian dữ liệu: 01/2025 đến 12/2025. Ngày chạy: 2026-10-22.

@@ -15,12 +15,12 @@ Bước tiếp theo: So sánh cách đo của Newzoo, Statista (phạm vi, quố
 
 **Dựa trên bằng chứng nào:**
 
-- 0.46 đến 0.817: Doanh thu toàn ngành game, Việt Nam, 2024 (hạng C, chưa chắc chắn).
+- 0.46 đến 0.817: Doanh thu toàn ngành game, Việt Nam, 2024 (hạng C, chưa chắc chắn, vì: Các nguồn gốc độc lập lệch nhau 78% (ghi dạng khoảng); Số của Newzoo, Statista dẫn lại qua bài viết, chưa đối chiếu bản gốc).
   - Newzoo: N-0.817 [C32] https://allcorrectgames.com/insights/the-gaming-market-in-southeast-asia-2/#:~:text=Vietnam%20S%2D0.37%20N%2D0.764%20S%2D0.41%20N%2D0.776,N%2D0.817%20S%2D0.5%20N%2D0.885%20S%2D0.55%20S%2D0.59
   - Statista: S-0.46 [C31] https://allcorrectgames.com/insights/the-gaming-market-in-southeast-asia-2/#:~:text=Vietnam%20S%2D0.37%20N%2D0.764%20S%2D0.41%20N%2D0.776,N%2D0.817%20S%2D0.5%20N%2D0.885%20S%2D0.55%20S%2D0.59
-- 5.28: Tăng trưởng toàn ngành game, Việt Nam, 2023-2024 (hạng C, chưa chắc chắn).
+- 5.28: Tăng trưởng toàn ngành game, Việt Nam, 2023-2024 (hạng C, chưa chắc chắn, vì: Chỉ có nguồn hạng C hoặc D; Số của Newzoo dẫn lại qua bài viết, chưa đối chiếu bản gốc).
   - Newzoo: +5.28 [C34] https://allcorrectgames.com/insights/the-gaming-market-in-southeast-asia-2/#:~:text=Vietnam%200.776%200.817%20%2B5.28%20429%2C716
-- 58.5: Số người chơi toàn ngành game, Việt Nam, 2024 (hạng C, chưa chắc chắn).
+- 58.5: Số người chơi toàn ngành game, Việt Nam, 2024 (hạng C, chưa chắc chắn, vì: Chỉ có nguồn hạng C hoặc D; Số của Newzoo dẫn lại qua bài viết, chưa đối chiếu bản gốc).
   - Newzoo: 58.5 [C35] https://allcorrectgames.com/insights/the-gaming-market-in-southeast-asia-2/#:~:text=Vietnam%20101%2C338%2C073%2033.4%2078.44%2058.5
 
 Khung thời gian dữ liệu: 01/2024 đến 12/2024. Ngày chạy: 2026-10-22.

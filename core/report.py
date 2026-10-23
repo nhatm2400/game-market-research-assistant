@@ -25,7 +25,8 @@ def brief_markdown(r: dict) -> str:
         out += ["", "**Dựa trên bằng chứng nào:**", ""]
         label = {"trusted": "có thể tin", "uncertain": "chưa chắc chắn"}
         for e in card["evidence"]:
-            out.append(f"- {e['values']}: {e['label']} (hạng {e['tier']}, {label[e['status']]}).")
+            why_txt = f", vì: {e['why']}" if e.get("why") and e["status"] == "uncertain" else ""
+            out.append(f"- {e['values']}: {e['label']} (hạng {e['tier']}, {label[e['status']]}{why_txt}).")
             out += [f"  - {x['origin']}: {x['value']} [{x['claim_id']}] {x['url']}".rstrip() for x in e.get("links", [])]
         if not card["evidence"]:
             out.append("- Chưa có nhận định nào đã kiểm.")

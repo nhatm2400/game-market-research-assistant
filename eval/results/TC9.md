@@ -4,36 +4,36 @@
 
 **Kết luận:** Nên ưu tiên. **Mức tin cậy:** Trung bình.
 
-Nên ưu tiên phát hành game MOBA tại Đông Nam Á trong quý 1 năm 2025 vì có tốc độ tăng trưởng doanh thu cao hơn game chiến thuật 4X. Tuy nhiên, các số liệu này dựa trên nguồn Sensor Tower dẫn lại qua gamedevreports chưa được đối chiếu bản gốc.
+Nên ưu tiên phát hành game MOBA tại Đông Nam Á trong quý 1 năm 2025 vì có tốc độ tăng trưởng doanh thu cao hơn game 4X strategy. Tuy nhiên, dữ liệu từ Sensor Tower chỉ ở mức tin cậy trung bình và chưa được đối chiếu bản gốc.
 
 ## Quyết định nhanh
 
-**Nên làm gì tiếp:** Ưu tiên phát hành game MOBA; cần đối chiếu thêm báo cáo gốc của Sensor Tower trước khi chốt đầu tư.
-Bước tiếp theo: Đối chiếu bản gốc của Sensor Tower trên sensortower.com. Truy vấn gợi ý: `Sensor Tower Southeast Asia mobile games in-app purchase MOBA revenue growth Q1 2025 vs Q4 2024`.
+**Nên làm gì tiếp:** Ưu tiên MOBA; trước khi chốt, kiểm tra thêm số liệu gốc từ Sensor Tower.
+Bước tiếp theo: Đối chiếu bản gốc của Sensor Tower trên sensortower.com. Truy vấn gợi ý: `Sensor Tower Southeast Asia mobile games in-app purchase 4X strategy revenue growth Q1 2025 vs Q4 2024`.
 
 **Dựa trên bằng chứng nào:**
 
+- +17,6%: Tăng trưởng IAP game mobile, 4X strategy, Đông Nam Á, Q1 2025 vs Q4 2024 (hạng B, có thể tin).
+  - Sensor Tower: +17.6% QoQ [C2] https://gamedevreports.substack.com/p/sensor-tower-southeast-asia-mobile#:~:text=%2D%20For%20revenue%2C%204X%20strategy,%28%2D17.1%25%20QoQ%29%20are%20on%20top.
+- +20,1%: Tăng trưởng IAP game mobile, MOBA, Đông Nam Á, Q1 2025 vs Q4 2024 (hạng B, có thể tin).
+  - Sensor Tower: +20.1% QoQ [C3] https://gamedevreports.substack.com/p/sensor-tower-southeast-asia-mobile#:~:text=%2D%20For%20revenue%2C%204X%20strategy,%28%2D17.1%25%20QoQ%29%20are%20on%20top.
 - 625 triệu USD: Doanh thu IAP game mobile, Đông Nam Á, Q1 2025 (hạng A, có thể tin).
   - Sensor Tower: $625 million [C1] https://sensortower.com/blog/southeast-asia-mobile-gaming-2025#:~:text=While%20SEA%20currently%20ranks%20seventh,signals%20significant%20untapped%20monetization%20potential.
-- +20,1%: Tăng trưởng IAP game mobile, MOBA, Đông Nam Á, Q1 2025 vs Q4 2024 (hạng B, có thể tin).
-  - Sensor Tower: +20.1% QoQ [C2] https://gamedevreports.substack.com/p/sensor-tower-southeast-asia-mobile#:~:text=For%20revenue%2C%204X%20strategy%20games,%28%2D17.1%25%20QoQ%29%20are%20on%20top.
-- +17,6%: Tăng trưởng IAP game mobile, 4X strategy, Đông Nam Á, Q1 2025 vs Q4 2024 (hạng B, có thể tin).
-  - Sensor Tower: +17.6% QoQ [C3] https://gamedevreports.substack.com/p/sensor-tower-southeast-asia-mobile#:~:text=For%20revenue%2C%204X%20strategy%20games,%28%2D17.1%25%20QoQ%29%20are%20on%20top.
 
 Khung thời gian dữ liệu: 01/2025 đến 03/2025. Ngày chạy: 2026-10-23.
 
 ## Lý do chính
 
-1. Trong quý 1 năm 2025, doanh thu IAP của khu vực Đông Nam Á đạt 625 triệu USD, tạo quy mô thị trường lớn. [C1] (có thể tin)
-2. Doanh thu game MOBA tại Đông Nam Á tăng trưởng 20,1% theo quý trong Q1 2025, cao hơn mức tăng trưởng của game chiến thuật 4X. [C2] (có thể tin)
-3. Doanh thu game chiến thuật 4X tại Đông Nam Á chỉ tăng trưởng 17,6% theo quý trong Q1 2025, thấp hơn dòng game MOBA. [C3] (có thể tin)
+1. Doanh thu game MOBA tại Đông Nam Á tăng trưởng 20.1% QoQ trong Q1 2025, cao hơn mức 17.6% của game 4X strategy. [C2, C3] (có thể tin)
+2. Số liệu tăng trưởng dựa trên nguồn Sensor Tower, dẫn lại qua gamedevreports.substack.com và chưa đối chiếu bản gốc. [C2, C3] (có thể tin)
+3. Tổng doanh thu mua sắm trong ứng dụng (IAP) của khu vực Đông Nam Á đạt 625 triệu USD trong quý 1 năm 2025. [C1] (có thể tin)
 
 ## Có thể tin
 
 - **F1** Doanh thu IAP game mobile, Đông Nam Á, Q1 2025: 625 triệu USD (Sensor Tower), tin cậy Trung bình. [C1]
-- **F2** Tăng trưởng IAP game mobile, MOBA, Đông Nam Á, Q1 2025 vs Q4 2024: +20,1% (Sensor Tower), tin cậy Trung bình. [C2]
+- **F2** Tăng trưởng IAP game mobile, 4X strategy, Đông Nam Á, Q1 2025 vs Q4 2024: +17,6% (Sensor Tower), tin cậy Trung bình. [C2]
   - Lưu ý: Số của Sensor Tower dẫn lại qua bài viết, chưa đối chiếu bản gốc
-- **F3** Tăng trưởng IAP game mobile, 4X strategy, Đông Nam Á, Q1 2025 vs Q4 2024: +17,6% (Sensor Tower), tin cậy Trung bình. [C3]
+- **F3** Tăng trưởng IAP game mobile, MOBA, Đông Nam Á, Q1 2025 vs Q4 2024: +20,1% (Sensor Tower), tin cậy Trung bình. [C3]
   - Lưu ý: Số của Sensor Tower dẫn lại qua bài viết, chưa đối chiếu bản gốc
 
 ## Chưa chắc chắn
@@ -51,22 +51,22 @@ Khung thời gian dữ liệu: 01/2025 đến 03/2025. Ngày chạy: 2026-10-23.
 
 ## Nên tìm hiểu tiếp ở đâu
 
-- Đối chiếu bản gốc của Sensor Tower trên sensortower.com (F2, F3). Truy vấn gợi ý: `Sensor Tower Southeast Asia mobile games in-app purchase MOBA revenue growth Q1 2025 vs Q4 2024`.
+- Đối chiếu bản gốc của Sensor Tower trên sensortower.com (F2, F3). Truy vấn gợi ý: `Sensor Tower Southeast Asia mobile games in-app purchase 4X strategy revenue growth Q1 2025 vs Q4 2024`.
 
 ## Điều gì sẽ làm thay đổi khuyến nghị
 
-- Có số liệu đối chiếu trực tiếp từ bản gốc của Sensor Tower thay vì qua bên trung gian.
-- Bổ sung dữ liệu chi phí thu hút người dùng (UA) và chi phí vận hành cho từng thể loại game tại khu vực.
+- Có báo cáo doanh thu gốc trực tiếp từ Sensor Tower thay vì qua trang trung gian
+- Bổ sung dữ liệu về chi phí thu hút người dùng (UA) và lợi nhuận ròng của từng thể loại
 
 ## Nhận định được trích dẫn
 
+- **C2** Doanh thu game 4X strategy tại Đông Nam Á tăng trưởng 17.6% QoQ trong Q1 2025. Giá trị: +17.6% QoQ (+17,6%). Nguồn gốc: Sensor Tower, hạng B. Nguồn: https://gamedevreports.substack.com/p/sensor-tower-southeast-asia-mobile#:~:text=%2D%20For%20revenue%2C%204X%20strategy,%28%2D17.1%25%20QoQ%29%20are%20on%20top., đăng 2025-06-13.
+  > - For revenue, 4X strategy games (+17.6% QoQ), MOBA (+20.1% QoQ), and MMORPG (-17.1% QoQ) are on top.
+  - Cảnh báo: Số liệu của Sensor Tower, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc
+- **C3** Doanh thu game MOBA tại Đông Nam Á tăng trưởng 20.1% QoQ trong Q1 2025. Giá trị: +20.1% QoQ (+20,1%). Nguồn gốc: Sensor Tower, hạng B. Nguồn: https://gamedevreports.substack.com/p/sensor-tower-southeast-asia-mobile#:~:text=%2D%20For%20revenue%2C%204X%20strategy,%28%2D17.1%25%20QoQ%29%20are%20on%20top., đăng 2025-06-13.
+  > - For revenue, 4X strategy games (+17.6% QoQ), MOBA (+20.1% QoQ), and MMORPG (-17.1% QoQ) are on top.
+  - Cảnh báo: Số liệu của Sensor Tower, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc
 - **C1** Trong quý 1 năm 2025, doanh thu mua sắm trong ứng dụng (IAP) của khu vực Đông Nam Á đạt 625 triệu USD. Giá trị: $625 million (625 triệu USD). Nguồn gốc: Sensor Tower, hạng A. Nguồn: https://sensortower.com/blog/southeast-asia-mobile-gaming-2025#:~:text=While%20SEA%20currently%20ranks%20seventh,signals%20significant%20untapped%20monetization%20potential., đăng 2025-05-21.
   > While SEA currently ranks seventh globally in in-app purchase (IAP) revenue at $625 million in Q1 2025, this figure signals significant untapped monetization potential.
-- **C2** Tại Đông Nam Á, doanh thu game MOBA tăng trưởng 20,1% theo quý trong Q1 2025. Giá trị: +20.1% QoQ (+20,1%). Nguồn gốc: Sensor Tower, hạng B. Nguồn: https://gamedevreports.substack.com/p/sensor-tower-southeast-asia-mobile#:~:text=For%20revenue%2C%204X%20strategy%20games,%28%2D17.1%25%20QoQ%29%20are%20on%20top., đăng 2025-06-13.
-  > For revenue, 4X strategy games (+17.6% QoQ), MOBA (+20.1% QoQ), and MMORPG (-17.1% QoQ) are on top.
-  - Cảnh báo: Số liệu của Sensor Tower, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc
-- **C3** Tại Đông Nam Á, doanh thu game chiến thuật 4X tăng trưởng 17,6% theo quý trong Q1 2025. Giá trị: +17.6% QoQ (+17,6%). Nguồn gốc: Sensor Tower, hạng B. Nguồn: https://gamedevreports.substack.com/p/sensor-tower-southeast-asia-mobile#:~:text=For%20revenue%2C%204X%20strategy%20games,%28%2D17.1%25%20QoQ%29%20are%20on%20top., đăng 2025-06-13.
-  > For revenue, 4X strategy games (+17.6% QoQ), MOBA (+20.1% QoQ), and MMORPG (-17.1% QoQ) are on top.
-  - Cảnh báo: Số liệu của Sensor Tower, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc
 
-_Đọc 2 nguồn, trích 9 nhận định, giữ 9, loại 0. 4 lượt gọi gemini/gemini-3.5-flash-lite, 8.7 giây._
+_Đọc 2 nguồn, trích 9 nhận định, giữ 9, loại 0. 4 lượt gọi gemini/gemini-3.5-flash-lite, 8.4 giây._

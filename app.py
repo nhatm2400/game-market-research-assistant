@@ -64,6 +64,7 @@ CSS = """
 .card-ev .val { font-weight:600; font-variant-numeric:tabular-nums; }
 .card-ev .what { color:var(--muted); font-size:.9rem; }
 .card-ev a { color:var(--indigo); font-size:.88rem; }
+.card-why { color:var(--ochre); font-size:.88rem; }
 .details { color:var(--muted); font-size:.9rem; border-top:1px solid var(--line); padding-top:.7rem; margin:1.2rem 0 .4rem; }
 .reason { display:flex; gap:.65rem; margin:.45rem 0; max-width:80ch; line-height:1.5; }
 .dot { flex:none; width:.6rem; height:.6rem; border-radius:50%; margin-top:.45rem; }
@@ -285,6 +286,7 @@ if r:
             f'<span class="seal {h(e["tier"])}" title="Hạng nguồn {h(e["tier"])}">{h(e["tier"])}</span>'
             + ", ".join(f'<a href="{h(x["url"])}" target="_blank" rel="noopener" title="Mở câu trích">{h(x["origin"])}</a>'
                         if x["url"] else h(x["origin"]) for x in e.get("links") or [{"origin": o, "url": ""} for o in e["origins"]])
+            + (f' <span class="card-why">({h(e["why"])})</span>' if e.get("why") and e["status"] == "uncertain" else "")
             + "</div>" for e in card["evidence"])
         st.markdown(f'<div class="card-h">Dựa trên bằng chứng nào</div>'
                     + (rows or '<p class="col-note">Chưa có nhận định nào đã kiểm để làm căn cứ.</p>')

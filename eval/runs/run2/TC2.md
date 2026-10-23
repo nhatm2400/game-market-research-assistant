@@ -15,7 +15,7 @@ Bước tiếp theo: So sánh cách đo của Newzoo, Niko Partners, Statista (p
 
 - +5,2%: Tăng trưởng toàn ngành game, Đông Nam Á, 2024 vs previous year (hạng B, có thể tin).
   - Niko Partners: 5.2% [C2] https://gamesbeat.com/southeast-asia-to-reach-6-47-billion-in-revenues-by-2029-niko-partners/#:~:text=According%20to%20Niko%E2%80%99s%20Southeast%20Asia,2024%2C%20up%205.2%25%20year%2Dover%2Dyear%20%28YoY%29.
-- 5,37 tỷ USD đến 5,89 tỷ USD đến 6,51 tỷ USD: Doanh thu toàn ngành game, Đông Nam Á, 2024 (hạng B, chưa chắc chắn).
+- 5,37 tỷ USD đến 5,89 tỷ USD đến 6,51 tỷ USD: Doanh thu toàn ngành game, Đông Nam Á, 2024 (hạng B, chưa chắc chắn, vì: Các nguồn gốc độc lập lệch nhau 21% (ghi dạng khoảng); Số của Newzoo, Niko Partners, Statista dẫn lại qua bài viết, chưa đối chiếu bản gốc).
   - Newzoo: 6.51 billion USD [C17] https://allcorrectgames.com/insights/the-gaming-market-in-southeast-asia-2/#:~:text=Total%20revenue%20S%2D4.85%20N%2D6.14%20S%2D5.35,N%2D6.51%20S%2D6.39%20N%2D6.89%20S%2D6.88%20S%2D7.37
   - Niko Partners: $5.37 billion [C1] https://gamesbeat.com/southeast-asia-to-reach-6-47-billion-in-revenues-by-2029-niko-partners/#:~:text=According%20to%20Niko%E2%80%99s%20Southeast%20Asia,2024%2C%20up%205.2%25%20year%2Dover%2Dyear%20%28YoY%29.
   - Statista: 5.89 billion USD [C16] https://allcorrectgames.com/insights/the-gaming-market-in-southeast-asia-2/#:~:text=In%202024%2C%20revenue%20from%20this,amounted%20to%20USD%205.89%20billion.

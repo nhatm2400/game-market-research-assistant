@@ -126,7 +126,7 @@ def judge(f: Finding, claims: dict[str, Claim], sources: dict[str, Source], wind
 
 ACTION = {
     "Nên ưu tiên": "Nên làm: ưu tiên phương án trong câu hỏi.",
-    "Chưa nên": "Chưa nên làm lúc này.",
+    "Chưa nên": "Chưa đủ cơ sở để quyết định; bổ sung dữ liệu theo bước dưới đây.",
     "Đã có câu trả lời": "Có thể dùng câu trả lời này làm căn cứ.",
     "Có số liệu nhưng chưa chắc chắn": "Chưa nên dùng các con số này làm căn cứ chính; làm bước dưới đây trước.",
     "Cần thêm dữ liệu": "Chưa đủ căn cứ để quyết định; bổ sung dữ liệu theo bước dưới đây.",
@@ -141,9 +141,14 @@ def decision_card(brief: dict, findings: list[Finding], claims: list[Claim], sou
     finding = {f.key: f for f in findings}
     status = {x["finding"]: "trusted" for x in brief.get("trusted", [])}
     status.update({x["finding"]: "uncertain" for x in brief.get("uncertain", [])})
+    why_map = {x["finding"]: "; ".join(x.get("why", [])) for x in brief.get("uncertain", [])}
     of_claim = {cid: f.key for f in findings for cid in f.claim_ids}
     keys = list(dict.fromkeys(of_claim[i] for x in brief["reasons"] for i in x["claim_ids"] if i in of_claim))
-    keys = [k for k in keys if k in status] or list(status)
+    if brief["decision"] in ("Đã có câu trả lời", "Nên ưu tiên"):
+        # Kết luận "Đã có câu trả lời" hay "Nên ưu tiên": hành động là dùng kết luận, bằng chứng lấy từ mục có thể tin
+        keys = [k for k in keys if status.get(k) == "trusted"] or [k for k in status if status[k] == "trusted"]
+    else:
+        keys = [k for k in keys if k in status] or list(status)
     keys.sort(key=lambda k: status[k] != "trusted")
     evidence = []
     for k in keys[:CARD_EVIDENCE]:
@@ -157,10 +162,11 @@ def decision_card(brief: dict, findings: list[Finding], claims: list[Claim], sou
                  for o in f.origins for x in [best([by_id[i] for i in f.claim_ids if by_id[i].origin == o])]]
         evidence.append({"finding": k, "label": f.label, "values": _values(f), "origins": f.origins, "tier": c.tier,
                          "status": status[k], "claim_id": c.id, "quote": c.quote,
-                         "url": claim_link(c, sources.get(c.source_id)), "links": links})
+                         "url": claim_link(c, sources.get(c.source_id)), "links": links,
+                         "why": why_map.get(k, "")})
     steps = brief.get("next_steps", [])
     # the AI's own wording only for a conclusion the code let stand as firm; otherwise the code's instruction
-    firm = brief["decision"] in ("Nên ưu tiên", "Chưa nên", "Đã có câu trả lời")
+    firm = brief["decision"] in ("Nên ưu tiên", "Đã có câu trả lời")
     action = (brief.get("next_action") if firm else "") or ACTION.get(brief["decision"], ACTION["Cần thêm dữ liệu"])
     return {"action": action, "next_step": steps[0] if steps else None, "evidence": evidence}
 
