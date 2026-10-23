@@ -127,38 +127,44 @@ Chỉ có hai điều kiện từng không đạt, cả hai đều của TC6 và
 
 **Câu 1. Sau khi nhận yêu cầu mới, bạn đã ưu tiên thay đổi điều gì và chủ động chưa làm điều gì? Vì sao?**
 
-Sau khi nhận yêu cầu mới bao gồm Change Request A4 về hỗ trợ quyết định (người dùng không muốn đọc báo cáo dài, muốn biết nên làm gì tiếp theo và quyết định đó dựa trên bằng chứng nào), em nhận thấy bản tóm tắt trước đó vẫn bắt người dùng phải đọc hết các lý do và hai cột số liệu mới nắm được hướng đi. Vì vậy em đã ưu tiên thực hiện theo thứ tự:
-1. Thêm khối "Quyết định nhanh" ở ngay đầu kết quả trong ứng dụng và ở đầu bản markdown tải về. Khối gồm hai phần chính: câu nên làm gì tiếp (kèm nút bấm chạy luôn bước tiếp theo nếu có) và dựa trên bằng chứng nào (tối đa ba dòng, mỗi dòng gồm con số, nguồn gốc, hạng nguồn, trạng thái có thể tin hay chưa chắc chắn kèm lý do ngắn, và liên kết mở đúng câu trích của từng hãng). Khối hoàn toàn do code tự chọn từ các phần đã kiểm, không gọi thêm ai; câu hành động cụ thể chỉ hiện khi code để kết luận chắc chắn đứng vững.
-2. Thiết lập quy tắc nội dung chặt chẽ: kết luận "Đã có câu trả lời" hoặc "Nên ưu tiên" thì hành động là dùng kết luận, bằng chứng lấy từ mục có thể tin; "Có số liệu nhưng chưa chắc chắn" thì hành động là bước tìm tiếp đầu tiên và bằng chứng gồm cả số chưa chắc chắn kèm lý do rõ ràng; "Cần thêm dữ liệu" hoặc "Chưa nên" thì hành động là bước thu thập dữ liệu đầu tiên, nói thẳng là chưa đủ cơ sở quyết định và không bịa bằng chứng; tuyệt đối không gắn nhãn có thể tin cho con số chưa chắc chắn.
-3. Duy trì trọn vẹn các tính năng cốt lõi của Mission 3: ba phần có thể tin, chưa chắc chắn và nên tìm hiểu tiếp do code xếp; hỏi tiếp giữ nguyên bối cảnh; kiểm chứng một cú nhấp mở thẳng câu trích; nhận diện nguồn cũ và số dự báo.
+Em nhận hai yêu cầu: yêu cầu chung (cho biết điều gì có thể tin, điều gì chưa chắc chắn, nên tìm tiếp ở đâu) và Change Request A4 (người dùng không đọc báo cáo dài, muốn biết nên làm gì tiếp và quyết định đó dựa trên bằng chứng nào). Bản M2 gộp mọi số liệu dưới một mức tin cậy chung và bắt người dùng đọc hết báo cáo, nên em làm theo thứ tự:
+1. Khối "Quyết định nhanh" ở đầu trang (Change Request A4): kết luận, mức tin cậy, nên làm gì tiếp (một câu hành động và bước tiếp theo bấm được), dựa trên bằng chứng nào (tối đa 3 dòng, mỗi dòng mở được đúng câu trích của từng hãng). Bằng chứng do code chọn từ những gì đã kiểm; câu hành động cụ thể của AI chỉ hiện khi code để kết luận chắc chắn đứng.
+2. Chia bằng chứng thành ba phần do code xếp theo quy tắc: có thể tin; chưa chắc chắn, kèm lý do (mâu thuẫn, chỉ có bài dẫn lại từ nguồn hạng C, số cũ, số dự báo khi kỳ đo chưa kết thúc); nên tìm hiểu tiếp ở đâu, kèm bước bấm được.
+3. Cho hỏi tiếp mà vẫn giữ bối cảnh: câu hỏi tiếp được viết lại thành câu hỏi đầy đủ, giữ các nhận định đã kiểm và các nhận định người dùng đã loại.
+4. Kiểm chứng một cú nhấp tới đúng câu trích hoặc đúng trang PDF.
+5. Sửa các lỗi M2 đã ghi lại.
 
-Em chủ động chưa làm các việc sau:
-- Không để ai chọn bằng chứng cho khối quyết định và không gọi thêm ai, vì code tự chọn từ nhận định đã kiểm giúp kết quả hoàn toàn ổn định, không tốn thêm lượt gọi và tránh bịa số.
-- Không bỏ báo cáo chi tiết bên dưới, vì bản tóm tắt nhanh phục vụ quyết định tức thì, nhưng khi cần thẩm định sâu người dùng vẫn phải có toàn bộ số liệu và nguồn gốc đối chiếu.
-- Không cho ai tự chấm mức độ tin cậy hay tự xếp mục có thể tin, để tránh việc cùng bằng chứng lại ra các kết luận khác nhau giữa các lần chạy.
-- Không hạ chuẩn kiểm câu trích cho số liệu trong biểu đồ để tránh lọt các số bị ghép nhầm nhãn.
-- Không thay đổi các ngưỡng và cách chấm của Mission 2 nhằm bảo đảm không bị regression và kết quả giữa hai phiên bản so sánh được với nhau.
+Em chủ động chưa làm năm việc:
+- Không cho AI chấm độ tin cậy hay chọn bằng chứng cho khối quyết định, vì kết quả không lặp lại được và không giải thích được.
+- Không bỏ báo cáo chi tiết: Change Request cần bản ngắn, nhưng người muốn kiểm vẫn phải xem được toàn bộ số liệu và câu trích, nên báo cáo nằm ngay dưới khối quyết định.
+- Không hạ chuẩn kiểm câu trích cho số trong biểu đồ. Trong lúc chạy, AI từng ghép +37,6% với Match Swap, trong khi đúng là Battle Royale; nới chuẩn thì số ghép sai sẽ lọt.
+- Chưa dùng mô hình đọc ảnh cho biểu đồ, vì code chưa kiểm được kết quả và gói miễn phí giới hạn số lượt gọi.
+- Giữ nguyên các ngưỡng và cách chấm Cao / Trung bình / Thấp của M2, chỉ thêm cờ cảnh báo mới, để kết quả hai phiên bản so sánh được với nhau.
 
 **Câu 2. Thay đổi nào tạo ra khác biệt lớn nhất giữa sản phẩm Mission 2 và Mission 3? Bạn dùng bằng chứng nào để kết luận phiên bản mới tốt hơn?**
 
-Khác biệt lớn nhất là người dùng không còn phải tự đọc toàn bộ báo cáo dài để tìm việc cần làm: ngay đầu trang có khối quyết định nhanh cho biết nên làm gì tiếp và dựa trên bằng chứng nào với tối đa ba dòng mở được câu trích; ngay bên dưới là ba phần có thể tin, chưa chắc chắn và bước tìm tiếp do code xếp, cho phép hỏi tiếp mà không mất bối cảnh nghiên cứu.
+Khác biệt lớn nhất là người dùng không còn phải đọc cả báo cáo: đầu trang cho biết nên làm gì tiếp và dựa trên bằng chứng nào; ngay dưới là ba phần có thể tin / chưa chắc chắn / tìm hiểu tiếp do code xếp, và có thể hỏi tiếp từ chính các bước đó. Em áp cùng một bộ điều kiện chấm lên kết quả chạy thật của hai phiên bản:
+- Điều kiện cũ của M2 vẫn đạt (18/19 ở M2, 21/22 ở M3), nghĩa là không có regression.
+- Điều kiện mới của M3: M2 đạt 3/14, M3 đạt 23/24.
+- Điều kiện của Change Request A4: M2 đạt 0/6, M3 đạt 11/11.
 
-Em dùng các bằng chứng cụ thể sau để kết luận phiên bản mới tốt hơn:
-- Bộ kiểm thử tự động offline tăng lên 76 bài kiểm thử đều vượt qua (trong đó có 7 bài riêng cho Change Request A4 và 3 bài kiểm thử giao diện streamlit apptest), kiểm tra toàn diện các trường hợp có câu trả lời, nguồn mâu thuẫn, thiếu dữ liệu, câu hỏi nên hay không nên, bằng chứng tối đa ba dòng, không số chưa chắc chắn nào bị gắn nhãn tin được, và nội dung chữ từ nguồn được escape an toàn.
-- Áp cùng bộ điều kiện lên kết quả chạy thật của hai phiên bản: các điều kiện cũ của Mission 2 giữ nguyên đạt 21 trên 22 điều kiện (bản Mission 2 chỉ đạt 18 trên 19), chứng minh không bị regression. Các điều kiện mới của Mission 3 đạt 23 trên 24 (Mission 2 chỉ đạt 3 trên 14). Toàn bộ 11 trên 11 điều kiện của Change Request A4 đều đạt trên các ca áp dụng.
-- Tình huống TC9 chạy thật kiểm tra đúng câu hỏi ra quyết định nên ưu tiên moba hay chiến thuật 4x: hệ thống trả về kết luận nên ưu tiên với độ tin cậy trung bình, khối quyết định nhanh đưa ra câu hành động cụ thể "ưu tiên moba, trước khi chốt kiểm tra thêm số liệu gốc từ sensor tower" cùng ba bằng chứng đã kiểm có liên kết câu trích (625 triệu usd của sensor tower hạng a, moba tăng 20,1 phần trăm và 4x tăng 17,6 phần trăm từ gamedev reports dẫn sensor tower hạng b), đạt toàn bộ các điều kiện kiểm tra.
-- Bộ kiểm thử thật qua ba lần chạy độc lập đạt độ ổn định cao: 8 trên 9 tình huống đạt tuyệt đối cả ba lần; chỉ riêng tình huống TC6 (số nằm trong biểu đồ pdf) không đạt do hạn chế của việc trích xuất văn bản biểu đồ, đúng như dự đoán từ Mission 2.
+Em chạy lại cả bộ kiểm thử 3 lần: 8/9 case đạt đủ cả 3 lần; chỉ TC6 (số trong biểu đồ) không đạt, đúng như dự đoán từ M2. Bằng chứng cụ thể:
+- TC9 (Change Request, "Nên ưu tiên MOBA hay 4X?"): cả 3 lần, đầu trang có câu nên làm gì tiếp và 3 bằng chứng có link câu trích (625 triệu USD, MOBA +20,1%, 4X +17,6%), ví dụ "Ưu tiên phát hành game MOBA; cần đối chiếu thêm báo cáo gốc của Sensor Tower trước khi chốt đầu tư".
+- TC2: cả 3 lần, Niko 5,37 / Statista 5,89 / Newzoo 6,51 tỷ USD được gom thành một mâu thuẫn lệch 21%, không số nào vào phần có thể tin; khối quyết định nói "chưa nên dùng các con số này làm căn cứ chính" và chỉ bước so sánh cách đo của các hãng.
+- TC8: số 5,47 tỷ USD cho năm 2025 trong bài đăng tháng 9/2025 được nhận ra là số dự báo.
+- TC7: câu "Còn riêng Việt Nam thì sao?" giữ đủ bối cảnh và tìm ra hai con số lệch nhau 78%.
+- TC1: kết luận đổi từ "Cần thêm dữ liệu" sang "Đã có câu trả lời", cả 3 lần.
+
+Toàn bộ có 76 test offline (7 test riêng cho Change Request), 9 tình huống chạy thật và kết quả 3 lần chạy lưu trong repo.
 
 **Câu 3. Nếu sản phẩm này được đưa cho người dùng thật vào ngày mai, rủi ro hoặc giới hạn lớn nhất còn lại là gì? Bạn sẽ ưu tiên xử lý nó như thế nào?**
 
-Rủi ro lớn nhất là người dùng có thể tin tưởng tuyệt đối vào câu hành động và ngộ nhận trạng thái có thể tin là số liệu đúng hoàn toàn trong thực tế, trong khi đó chỉ là số liệu đạt tiêu chuẩn về nguồn gốc, kỳ đo và thị trường theo quy tắc định sẵn. Thêm vào đó, câu hành động cụ thể và các trường trích xuất như thị trường, kỳ đo vẫn do ai điền, nhãn kết luận còn có thể dao động nhẹ giữa các lần chạy do tính chất sinh văn bản của mô hình ngôn ngữ.
+Rủi ro lớn nhất là người dùng làm theo ngay câu "nên làm gì tiếp" và hiểu "có thể tin" là "đúng". Thực ra "có thể tin" chỉ có nghĩa là số đạt quy tắc về nguồn, kỳ đo và thị trường. Câu hành động cụ thể vẫn do AI viết (chỉ hiện khi kết luận đứng được), các trường như thị trường, kỳ đo hay đơn vị lấy từ tiêu đề bảng vẫn do AI điền, và nhãn kết luận còn dao động giữa các lần chạy; code hiện mới chặn một chiều: không đủ căn cứ có thể tin thì không được ghi kết luận chắc chắn. Em sẽ ưu tiên ba việc:
+1. Mở rộng bộ kiểm thử lên khoảng 20 đến 30 câu hỏi có đáp án đã biết, để đo tỷ lệ "có thể tin nhưng sai", tỷ lệ câu nên làm gì tiếp sai, và tỷ lệ kết luận dao động giữa các lần chạy.
+2. Để người dùng báo nhận định hoặc câu hành động sai ngay trên giao diện, rồi đưa các ca đó vào bộ kiểm thử.
+3. Kiểm thêm bằng code những trường AI điền, ví dụ tìm tiêu đề cột trong nguồn để xác nhận đơn vị, và tính nhãn kết luận hoàn toàn bằng quy tắc từ ba phần thay vì để AI chọn.
 
-Em sẽ ưu tiên xử lý theo ba bước:
-1. Mở rộng bộ kiểm thử lên từ 20 đến 30 câu hỏi thực tế đa dạng hơn để đo lường độ chính xác của câu nên làm gì tiếp và theo dõi độ biến thiên kết luận giữa các lần chạy.
-2. Bổ sung nút phản hồi nhanh trên giao diện để người dùng báo cáo khi phát hiện nhận định hoặc hành động gợi ý chưa chuẩn, từ đó thu thập dữ liệu làm ca kiểm thử hồi quy.
-3. Tăng cường kiểm tra bằng code cho các trường ai điền (như đối chiếu tiêu đề cột để xác thực đơn vị) và chuyển hẳn việc chọn nhãn kết luận sang quy tắc code dựa trên tỷ lệ nhận định tin cậy thay vì để ai chọn.
-
-Vấn đề đọc biểu đồ phức tạp sẽ giải quyết sau ba việc trên. Khi triển khai mô hình thị giác cho biểu đồ, kết quả đọc được mặc định chỉ xếp vào mục chưa chắc chắn để người dùng kiểm tra lại.
+Số trong biểu đồ để sau ba việc trên. Khi làm, kết quả đọc bằng mô hình nhìn ảnh mặc định chỉ được vào phần chưa chắc chắn.
 
 ## 9. Kịch bản video (dưới 5 phút)
 
