@@ -13,11 +13,11 @@ Bước tiếp theo: Đối chiếu bản gốc của Sensor Tower trên sensort
 
 **Dựa trên bằng chứng nào:**
 
-- +17,6%: Tăng trưởng game mobile, 4X strategy, Đông Nam Á, Q1 2025 vs Q4 2024 (hạng B, chưa chắc chắn).
+- +17,6%: Tăng trưởng game mobile, 4X strategy, Đông Nam Á, Q1 2025 vs Q4 2024 (hạng B, chưa chắc chắn, vì: Kỳ đo "Q1 2025 vs Q4 2024" nằm ngoài khung thời gian của câu hỏi (12 tháng gần nhất); Số của Sensor Tower dẫn lại qua bài viết, chưa đối chiếu bản gốc).
   - Sensor Tower: +17.6% QoQ [C35] https://gamedevreports.substack.com/p/sensor-tower-southeast-asia-mobile#:~:text=For%20revenue%2C%204X%20strategy%20games,%28%2D17.1%25%20QoQ%29%20are%20on%20top.
-- +20,1%: Tăng trưởng game mobile, MOBA, Đông Nam Á, Q1 2025 vs Q4 2024 (hạng B, chưa chắc chắn).
+- +20,1%: Tăng trưởng game mobile, MOBA, Đông Nam Á, Q1 2025 vs Q4 2024 (hạng B, chưa chắc chắn, vì: Kỳ đo "Q1 2025 vs Q4 2024" nằm ngoài khung thời gian của câu hỏi (12 tháng gần nhất); Số của Sensor Tower dẫn lại qua bài viết, chưa đối chiếu bản gốc).
   - Sensor Tower: +20.1% QoQ [C36] https://gamedevreports.substack.com/p/sensor-tower-southeast-asia-mobile#:~:text=For%20revenue%2C%204X%20strategy%20games,%28%2D17.1%25%20QoQ%29%20are%20on%20top.
-- -17,1%: Tăng trưởng game mobile, MMORPG, Đông Nam Á, Q1 2025 vs Q4 2024 (hạng B, chưa chắc chắn).
+- -17,1%: Tăng trưởng game mobile, MMORPG, Đông Nam Á, Q1 2025 vs Q4 2024 (hạng B, chưa chắc chắn, vì: Kỳ đo "Q1 2025 vs Q4 2024" nằm ngoài khung thời gian của câu hỏi (12 tháng gần nhất); Số của Sensor Tower dẫn lại qua bài viết, chưa đối chiếu bản gốc).
   - Sensor Tower: -17.1% QoQ [C37] https://gamedevreports.substack.com/p/sensor-tower-southeast-asia-mobile#:~:text=For%20revenue%2C%204X%20strategy%20games,%28%2D17.1%25%20QoQ%29%20are%20on%20top.
 
 Khung thời gian dữ liệu: 12 tháng gần nhất. Ngày chạy: 2026-10-22.

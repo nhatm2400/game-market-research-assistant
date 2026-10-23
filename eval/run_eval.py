@@ -122,7 +122,12 @@ def check(r: dict, checks: dict, parent: dict | None = None, always: bool = True
             else:
                 if len(card["evidence"]) > 3:
                     problems.append(f"{len(card['evidence'])} bằng chứng, quá 3")
+                uncertain_findings = {x["finding"] for x in b.get("uncertain", [])}
                 for e in card["evidence"]:
+                    if e["status"] == "trusted" and e["finding"] in uncertain_findings:
+                        problems.append(f"{e['finding']} là số chưa chắc chắn nhưng lại gắn nhãn có thể tin")
+                    if b["decision"] in ("Nên ưu tiên", "Đã có câu trả lời") and e["status"] != "trusted":
+                        problems.append(f"kết luận {b['decision']} nhưng bằng chứng {e['finding']} chưa chắc chắn")
                     for x in e.get("links", []):
                         web = srcs[claims_of(r)[x["claim_id"]]["source_id"]]["url"].startswith("http")
                         if x["claim_id"] not in ok_ids or (web and not x["url"]):

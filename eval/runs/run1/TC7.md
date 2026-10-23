@@ -15,10 +15,10 @@ Bước tiếp theo: So sánh cách đo của Newzoo, Statista (phạm vi, quố
 
 **Dựa trên bằng chứng nào:**
 
-- 460 triệu USD đến 817 triệu USD: Doanh thu toàn ngành game, Việt Nam, 2024 (hạng C, chưa chắc chắn).
+- 460 triệu USD đến 817 triệu USD: Doanh thu toàn ngành game, Việt Nam, 2024 (hạng C, chưa chắc chắn, vì: Các nguồn gốc độc lập lệch nhau 78% (ghi dạng khoảng); Số của Newzoo, Statista dẫn lại qua bài viết, chưa đối chiếu bản gốc).
   - Newzoo: 0.817 billion USD [C12] https://allcorrectgames.com/insights/the-gaming-market-in-southeast-asia-2/#:~:text=Vietnam%200.776%200.817%20%2B5.28%20429%2C716
   - Statista: 0.46 billion USD [C14] https://allcorrectgames.com/insights/the-gaming-market-in-southeast-asia-2/#:~:text=Vietnam%20S%2D0.37%20N%2D0.764%20S%2D0.41%20N%2D0.776,N%2D0.817%20S%2D0.5%20N%2D0.885%20S%2D0.55%20S%2D0.59
-- +5,3%: Tăng trưởng phạm vi chưa rõ, Việt Nam, 2023-2024 (hạng C, chưa chắc chắn).
+- +5,3%: Tăng trưởng phạm vi chưa rõ, Việt Nam, 2023-2024 (hạng C, chưa chắc chắn, vì: Chỉ có nguồn hạng C hoặc D; Số của Newzoo dẫn lại qua bài viết, chưa đối chiếu bản gốc).
   - Newzoo: +5.28% [C17] https://allcorrectgames.com/insights/the-gaming-market-in-southeast-asia-2/#:~:text=Vietnam%200.776%200.817%20%2B5.28%20429%2C716
 
 Khung thời gian dữ liệu: 01/2024 đến 12/2024. Ngày chạy: 2026-10-22.

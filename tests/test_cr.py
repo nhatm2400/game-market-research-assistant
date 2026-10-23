@@ -94,3 +94,37 @@ def test_change_request_card_stays_short_and_never_rests_on_out_of_scope_figures
     assert len(card["evidence"]) == 3
     assert "C5" not in {e["claim_id"] for e in card["evidence"]}       # Thailand is outside the question
     assert all(e["url"].startswith("https://sensortower.com/blog/y#:~:text=") for e in card["evidence"])
+
+
+def test_change_request_uncertain_figures_never_labeled_trusted():
+    """Uncertain figures (e.g. from blogs, conflicting sources, or estimates) must never be labeled trusted."""
+    s = assess_source(src("S2", "https://allcorrectgames.com/x", RELAY_TEXT, "2025-06-13"), TODAY)
+    weak = _q1("C2", s, RELAY_Q)
+    out = {"decision": "Đã có câu trả lời", "summary": "625 triệu USD.",
+           "reasons": [{"text": "Doanh thu IAP quý 1/2025 là 625 triệu USD.", "claim_ids": ["C2"]}],
+           "what_would_change": []}
+    b = _brief(out, [weak], [s])
+    card = b["card"]
+    assert b["decision"] == "Có số liệu nhưng chưa chắc chắn"
+    for ev in card["evidence"]:
+        assert ev["status"] == "uncertain"
+        assert ev["status"] != "trusted"
+        assert ev["why"]  # includes short reason why it is uncertain
+
+
+def test_change_request_source_text_is_escaped():
+    """Special HTML characters in quotes, origins, and card actions must be escaped."""
+    import html
+    st = _st()
+    c = _q1("C1", st, ST_Q)
+    out = {"decision": "Đã có câu trả lời", "summary": "625 triệu USD.",
+           "next_action": 'Nên ưu tiên <img src=x onerror="alert(1)">',
+           "reasons": [{"text": "Doanh thu IAP quý 1/2025 là 625 triệu USD.", "claim_ids": ["C1"]}],
+           "what_would_change": []}
+    b = _brief(out, [c], [st])
+    card = b["card"]
+    assert b["decision"] == "Đã có câu trả lời"
+    assert "<img" in card["action"]
+    escaped_action = html.escape(card["action"])
+    assert "<img" not in escaped_action and "&lt;img" in escaped_action
+
