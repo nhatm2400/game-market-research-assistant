@@ -166,19 +166,24 @@ Rủi ro lớn nhất là người dùng làm theo ngay câu "nên làm gì ti�
 
 Số trong biểu đồ để sau ba việc trên. Khi làm, kết quả đọc bằng mô hình nhìn ảnh mặc định chỉ được vào phần chưa chắc chắn.
 
-## 9. Kịch bản video (dưới 5 phút)
+## 9. Video trình bày cải tiến (4:50)
 
-Quay im lặng, chèn chữ khi dựng. Trước khi quay: mở app, bỏ chọn "Tìm nguồn trên web", để sẵn ba link của TC2.
+Video quay im lặng trên bản demo, chữ thuyết minh chèn khi dựng; đoạn chờ AI chạy được tua nhanh. Phần chạy TC2 trong video bật tìm nguồn trên web nên con số khác lần chạy trong bộ kiểm thử; chữ thuyết minh ghi đúng số hiện trên màn hình.
 
-| Thời gian | Màn hình | Chữ thuyết minh |
+| Thời gian | Màn hình | Nội dung |
 |---|---|---|
-| 0:00–0:15 | Khung tiêu đề | Mission 3: điều gì có thể tin, điều gì chưa chắc chắn, nên tìm hiểu tiếp ở đâu |
-| 0:15–0:45 | GitHub: `eval/results_m2/TC2.md` | Trước (M2): mọi số liệu dưới một mức tin cậy; cả 6 case đều ra "Cần thêm dữ liệu" |
-| 0:45–1:10 | `docs/mission-3.md` mục 3 | Quyết định: ba phần do code xếp, hỏi tiếp giữ bối cảnh, kiểm chứng một cú nhấp. Không cho AI chấm tin cậy, không hạ chuẩn kiểm câu trích |
-| 1:10–1:40 | App: chạy câu hỏi TC2 (tua nhanh lúc chờ) | Sau (M3): chạy cùng câu hỏi TC2 |
-| 1:40–2:10 | Khối Quyết định nhanh (Change Request A4) | Quyết định nhanh: nên làm gì tiếp kèm nút làm luôn, dựa trên tối đa 3 bằng chứng có link mở đúng câu trích; xem kết quả mẫu TC9 và TC2 |
-| 2:10–2:40 | Bản tóm tắt, hai cột, mục ngoài phạm vi | Có thể tin / Chưa chắc chắn: Niko 5,37, Statista 5,89, Newzoo 6,51 tỷ USD lệch nhau 21% nên chưa chắc chắn; tăng trưởng 5,2% ở có thể tin |
-| 2:40–3:05 | Bấm một nhận định, "Mở nguồn tại câu trích" | Kiểm chứng một cú nhấp: trang mở đúng câu trích, câu được tô sáng |
-| 3:05–3:45 | Ô "Hỏi tiếp": gõ "Còn riêng Việt Nam thì sao?" | Hỏi tiếp giữ bối cảnh: hiểu thành Việt Nam năm 2024, giữ nhận định cũ, tìm ra 0,817 và 0,46 tỷ USD lệch 78% |
-| 3:45–4:20 | GitHub: `eval/so-sanh-m2-m3.md`, terminal chạy pytest | Bằng chứng: điều kiện M3 từ 3/14 lên 23/24, điều kiện M2 không giảm, 8/9 case đạt cả 3 lần chạy, 76 test qua |
-| 4:20–4:45 | `docs/mission-3.md` mục 6 và khung kết | Giới hạn: "có thể tin" không có nghĩa là đúng; số trong biểu đồ chưa tự đọc được. Link app và repo |
+| 0:00–0:18 | Khung tiêu đề, `eval/results_m2/TC2.md` | Trước (M2): một mức tin cậy chung cho mọi số liệu; cả 6 case ra "Cần thêm dữ liệu" |
+| 0:18–0:46 | `docs/mission-3.md` mục 1 đến 4 | Yêu cầu mới; quyết định làm gì và chủ động chưa làm gì; luồng mới |
+| 0:46–1:02 | `docs/mission-3.md` mục 5 | Bằng chứng: điều kiện M3 từ 3/14 lên 23/24; 7/8 case đạt cả 3 lần (lúc quay, trước Change Request) |
+| 1:02–1:34 | App: chạy TC2 có tìm nguồn trên web | Kết luận "Có số liệu nhưng chưa chắc chắn" |
+| 1:34–1:48 | Hai cột | Chưa chắc chắn: Niko 5,5 / Statista 5,89 / Newzoo 6,51 / Yahoo Finance 14,8 tỷ USD lệch 169%; số 2024 trong bài đăng khi năm chưa hết bị gắn cờ dự báo |
+| 1:48–2:18 | Nhận định, nút mở nguồn | Kiểm chứng một cú nhấp: bài gốc mở và cuộn tới câu trích; đoạn văn quanh câu trích được tô sáng |
+| 2:18–3:16 | Nên tìm hiểu tiếp, ô Hỏi tiếp | "Còn riêng Việt Nam thì sao?": Statista 0,46 và Newzoo 0,817 tỷ USD lệch 78%; bấm "Tìm thêm" chạy luôn một bước |
+| 3:16–3:35 | `eval/so-sanh-m2-m3.md` | Bằng chứng trên kết quả chạy thật: điều kiện M2 không giảm, điều kiện M3 từ 3/14 lên 23/24 |
+| 3:35–3:53 | `docs/mission-3.md` mục 6 | Giới hạn: "có thể tin" chưa có nghĩa là đúng; số trong biểu đồ PDF chưa tự đọc được |
+| 3:53–4:07 | Khung tiêu đề, kết quả mẫu TC9 | Change Request A4: Quyết định nhanh ở đầu trang, "Ưu tiên MOBA", dựa trên MOBA +20,1%, 4X +17,6% và 625 triệu USD của Sensor Tower |
+| 4:07–4:22 | Bấm tên hãng, rồi cuộn xuống | Trang Sensor Tower mở và tô sáng đúng câu được trích; báo cáo chi tiết vẫn ở bên dưới |
+| 4:22–4:45 | Nút "Làm bước này" | Chạy luôn bước tiếp theo; kết quả mới vẫn mở đầu bằng Quyết định nhanh và giữ 9 nhận định đã kiểm |
+| 4:45–4:50 | Khung kết | Link app và repo |
+
+Ở đoạn 3:35–3:53, trang GitHub được quay trước khi nhận Change Request nên còn dòng "Change Request chưa được giao"; tài liệu hiện tại đã cập nhật phần này (mục 2, 3, 5, 7).
