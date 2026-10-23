@@ -16,8 +16,11 @@ def test_result_page_shows_trusted_uncertain_and_next_steps():
     at.run()
     assert not at.exception
     text = " ".join(m.value for m in at.markdown)
-    for heading in ("Kết luận", "Có thể tin", "Chưa chắc chắn", "Nên tìm hiểu tiếp ở đâu"):
+    for heading in ("Kết luận", "Nên làm gì tiếp", "Dựa trên bằng chứng nào", "Có thể tin", "Chưa chắc chắn",
+                    "Nên tìm hiểu tiếp ở đâu"):
         assert heading in text
+    # Change Request A4: the decision card comes before the long report
+    assert text.index("Nên làm gì tiếp") < text.index("Dựa trên bằng chứng nào") < text.index("Nên tìm hiểu tiếp ở đâu")
     assert at.text_input[0].label.startswith("Hỏi tiếp")
 
 

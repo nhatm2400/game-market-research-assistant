@@ -3577,7 +3577,87 @@
     "url": "https://investgame.net/wp-content/uploads/2025/06/2025_Southeast_Asia_Mobile_Game_Insights.pdf#page=19",
     "findings": []
    }
-  ]
+  ],
+  "next_action": "",
+  "card": {
+   "action": "Chưa đủ căn cứ để quyết định; bổ sung dữ liệu theo bước dưới đây.",
+   "next_step": {
+    "text": "Đối chiếu bản gốc của Sensor Tower trên sensortower.com",
+    "query": "Sensor Tower Southeast Asia mobile games MOBA revenue growth Q1 2025 vs Q4 2024",
+    "ask": "",
+    "url": "",
+    "findings": [
+     "F16",
+     "F17",
+     "F18"
+    ]
+   },
+   "evidence": [
+    {
+     "finding": "F16",
+     "label": "Tăng trưởng game mobile, MOBA, Đông Nam Á, Q1 2025 vs Q4 2024",
+     "values": "+20,1%",
+     "origins": [
+      "Sensor Tower"
+     ],
+     "tier": "B",
+     "status": "uncertain",
+     "claim_id": "C36",
+     "quote": "For revenue, 4X strategy games (+17.6% QoQ), MOBA (+20.1% QoQ), and MMORPG (-17.1% QoQ) are on top.",
+     "url": "https://gamedevreports.substack.com/p/sensor-tower-southeast-asia-mobile#:~:text=For%20revenue%2C%204X%20strategy%20games,%28%2D17.1%25%20QoQ%29%20are%20on%20top.",
+     "links": [
+      {
+       "origin": "Sensor Tower",
+       "claim_id": "C36",
+       "value": "+20.1% QoQ",
+       "url": "https://gamedevreports.substack.com/p/sensor-tower-southeast-asia-mobile#:~:text=For%20revenue%2C%204X%20strategy%20games,%28%2D17.1%25%20QoQ%29%20are%20on%20top."
+      }
+     ]
+    },
+    {
+     "finding": "F17",
+     "label": "Tăng trưởng game mobile, 4X strategy, Đông Nam Á, Q1 2025 vs Q4 2024",
+     "values": "+17,6%",
+     "origins": [
+      "Sensor Tower"
+     ],
+     "tier": "B",
+     "status": "uncertain",
+     "claim_id": "C37",
+     "quote": "For revenue, 4X strategy games (+17.6% QoQ), MOBA (+20.1% QoQ), and MMORPG (-17.1% QoQ) are on top.",
+     "url": "https://gamedevreports.substack.com/p/sensor-tower-southeast-asia-mobile#:~:text=For%20revenue%2C%204X%20strategy%20games,%28%2D17.1%25%20QoQ%29%20are%20on%20top.",
+     "links": [
+      {
+       "origin": "Sensor Tower",
+       "claim_id": "C37",
+       "value": "+17.6% QoQ",
+       "url": "https://gamedevreports.substack.com/p/sensor-tower-southeast-asia-mobile#:~:text=For%20revenue%2C%204X%20strategy%20games,%28%2D17.1%25%20QoQ%29%20are%20on%20top."
+      }
+     ]
+    },
+    {
+     "finding": "F18",
+     "label": "Tăng trưởng game mobile, MMORPG, Đông Nam Á, Q1 2025 vs Q4 2024",
+     "values": "-17,1%",
+     "origins": [
+      "Sensor Tower"
+     ],
+     "tier": "B",
+     "status": "uncertain",
+     "claim_id": "C38",
+     "quote": "For revenue, 4X strategy games (+17.6% QoQ), MOBA (+20.1% QoQ), and MMORPG (-17.1% QoQ) are on top.",
+     "url": "https://gamedevreports.substack.com/p/sensor-tower-southeast-asia-mobile#:~:text=For%20revenue%2C%204X%20strategy%20games,%28%2D17.1%25%20QoQ%29%20are%20on%20top.",
+     "links": [
+      {
+       "origin": "Sensor Tower",
+       "claim_id": "C38",
+       "value": "-17.1% QoQ",
+       "url": "https://gamedevreports.substack.com/p/sensor-tower-southeast-asia-mobile#:~:text=For%20revenue%2C%204X%20strategy%20games,%28%2D17.1%25%20QoQ%29%20are%20on%20top."
+      }
+     ]
+    }
+   ]
+  }
  },
  "stats": {
   "sources_read": 5,

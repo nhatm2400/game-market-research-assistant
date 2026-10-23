@@ -6,6 +6,15 @@
 
 Hiện chưa có đủ dữ liệu tổng hợp cho toàn khu vực Đông Nam Á trong báo cáo Sensor Tower 2025 để xác định phân nhánh game mobile có doanh thu tăng nhanh nhất. Các dữ liệu hiện có chỉ giới hạn ở một số thị trường riêng lẻ như Indonesia và Thái Lan.
 
+## Quyết định nhanh
+
+**Nên làm gì tiếp:** Chưa đủ căn cứ để quyết định; bổ sung dữ liệu theo bước dưới đây.
+Bước tiếp theo: Mới có số của thị trường khác, tìm số riêng cho Đông Nam Á. Truy vấn gợi ý: `Southeast Asia mobile games Shooter / Battle Royale revenue growth Q1 2025 vs Q4 2024`.
+
+**Dựa trên bằng chứng nào:**
+
+- Chưa có nhận định nào đã kiểm.
+
 Khung thời gian dữ liệu: 10/2024 đến 12/2025. Ngày chạy: 2026-10-22.
 
 ## Lý do chính

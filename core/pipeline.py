@@ -249,7 +249,7 @@ def rescore(result: dict) -> dict:
     first = re.search(r'Đổi kết luận "(.+?)"', " ".join(old["guard_log"]))   # the AI's own label, before the guard
     out = {"decision": first.group(1) if first else old["decision"], "summary": old["summary"],
            "reasons": [{"text": x["text"], "claim_ids": x["claim_ids"]} for x in old["reasons"]],
-           "what_would_change": old["what_would_change"]}
+           "what_would_change": old["what_would_change"], "next_action": old.get("next_action", "")}
     brief = write_brief(_Replay(out) if any(c.verified for c in claims) else None, result["question"],
                         result["plan"]["criteria"], claims, findings,
                         definition_differences(findings, {c.id: c for c in claims}), window, sources, q_market)

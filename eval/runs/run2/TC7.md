@@ -8,6 +8,21 @@
 
 Quy mô doanh thu thị trường game Việt Nam năm 2024 dao động trong khoảng từ 0,46 tỷ USD đến 0,817 tỷ USD tùy theo nguồn, tuy nhiên các nguồn gốc độc lập lệch nhau tới 78% và chỉ dựa trên nguồn hạng C nên độ tin cậy còn thấp.
 
+## Quyết định nhanh
+
+**Nên làm gì tiếp:** Chưa nên dùng các con số này làm căn cứ chính; làm bước dưới đây trước.
+Bước tiếp theo: So sánh cách đo của Newzoo, Statista (phạm vi, quốc gia tính vào, loại doanh thu) rồi chọn số hợp với câu hỏi. Truy vấn gợi ý: `Vietnam games market revenue 2024 Newzoo Statista methodology`.
+
+**Dựa trên bằng chứng nào:**
+
+- 0.46 đến 0.817: Doanh thu toàn ngành game, Việt Nam, 2024 (hạng C, chưa chắc chắn).
+  - Newzoo: N-0.817 [C32] https://allcorrectgames.com/insights/the-gaming-market-in-southeast-asia-2/#:~:text=Vietnam%20S%2D0.37%20N%2D0.764%20S%2D0.41%20N%2D0.776,N%2D0.817%20S%2D0.5%20N%2D0.885%20S%2D0.55%20S%2D0.59
+  - Statista: S-0.46 [C31] https://allcorrectgames.com/insights/the-gaming-market-in-southeast-asia-2/#:~:text=Vietnam%20S%2D0.37%20N%2D0.764%20S%2D0.41%20N%2D0.776,N%2D0.817%20S%2D0.5%20N%2D0.885%20S%2D0.55%20S%2D0.59
+- 5.28: Tăng trưởng toàn ngành game, Việt Nam, 2023-2024 (hạng C, chưa chắc chắn).
+  - Newzoo: +5.28 [C34] https://allcorrectgames.com/insights/the-gaming-market-in-southeast-asia-2/#:~:text=Vietnam%200.776%200.817%20%2B5.28%20429%2C716
+- 58.5: Số người chơi toàn ngành game, Việt Nam, 2024 (hạng C, chưa chắc chắn).
+  - Newzoo: 58.5 [C35] https://allcorrectgames.com/insights/the-gaming-market-in-southeast-asia-2/#:~:text=Vietnam%20101%2C338%2C073%2033.4%2078.44%2058.5
+
 Khung thời gian dữ liệu: 01/2024 đến 12/2024. Ngày chạy: 2026-10-22.
 
 ## Lý do chính

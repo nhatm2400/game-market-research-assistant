@@ -1082,7 +1082,71 @@
     "url": "",
     "findings": []
    }
-  ]
+  ],
+  "next_action": "",
+  "card": {
+   "action": "Chưa nên dùng các con số này làm căn cứ chính; làm bước dưới đây trước.",
+   "next_step": {
+    "text": "So sánh cách đo của Newzoo, Statista (phạm vi, quốc gia tính vào, loại doanh thu) rồi chọn số hợp với câu hỏi",
+    "query": "Vietnam games market revenue 2024 Newzoo Statista methodology",
+    "ask": "",
+    "url": "",
+    "findings": [
+     "F8"
+    ]
+   },
+   "evidence": [
+    {
+     "finding": "F8",
+     "label": "Doanh thu toàn ngành game, Việt Nam, 2024",
+     "values": "460 triệu USD đến 817 triệu USD",
+     "origins": [
+      "Newzoo",
+      "Statista"
+     ],
+     "tier": "C",
+     "status": "uncertain",
+     "claim_id": "C12",
+     "quote": "| Vietnam | 0.776 | 0.817 | +5.28 | 429,716 |",
+     "url": "https://allcorrectgames.com/insights/the-gaming-market-in-southeast-asia-2/#:~:text=Vietnam%200.776%200.817%20%2B5.28%20429%2C716",
+     "links": [
+      {
+       "origin": "Newzoo",
+       "claim_id": "C12",
+       "value": "0.817 billion USD",
+       "url": "https://allcorrectgames.com/insights/the-gaming-market-in-southeast-asia-2/#:~:text=Vietnam%200.776%200.817%20%2B5.28%20429%2C716"
+      },
+      {
+       "origin": "Statista",
+       "claim_id": "C14",
+       "value": "0.46 billion USD",
+       "url": "https://allcorrectgames.com/insights/the-gaming-market-in-southeast-asia-2/#:~:text=Vietnam%20S%2D0.37%20N%2D0.764%20S%2D0.41%20N%2D0.776,N%2D0.817%20S%2D0.5%20N%2D0.885%20S%2D0.55%20S%2D0.59"
+      }
+     ]
+    },
+    {
+     "finding": "F10",
+     "label": "Tăng trưởng phạm vi chưa rõ, Việt Nam, 2023-2024",
+     "values": "+5,3%",
+     "origins": [
+      "Newzoo"
+     ],
+     "tier": "C",
+     "status": "uncertain",
+     "claim_id": "C17",
+     "quote": "| Vietnam | 0.776 | 0.817 | +5.28 | 429,716 |",
+     "url": "https://allcorrectgames.com/insights/the-gaming-market-in-southeast-asia-2/#:~:text=Vietnam%200.776%200.817%20%2B5.28%20429%2C716",
+     "links": [
+      {
+       "origin": "Newzoo",
+       "claim_id": "C17",
+       "value": "+5.28%",
+       "url": "https://allcorrectgames.com/insights/the-gaming-market-in-southeast-asia-2/#:~:text=Vietnam%200.776%200.817%20%2B5.28%20429%2C716"
+      }
+     ]
+    }
+   ]
+  }
  },
  "stats": {
   "sources_read": 3,

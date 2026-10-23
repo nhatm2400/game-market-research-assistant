@@ -20,6 +20,8 @@ Nhưng bản tóm tắt M2 chỉ có **một** mức tin cậy chung cho cả c�
 
 Người ra quyết định cần biết: **điều gì có thể tin, điều gì còn chưa chắc chắn và nên tìm hiểu tiếp ở đâu**, khi cùng một câu hỏi có nhiều nguồn khác nhau về thời điểm, độ tin cậy và kết luận.
 
+**Change Request A4: Hỗ trợ quyết định.** Người dùng không muốn đọc một báo cáo dài. Họ muốn biết **nên làm gì tiếp theo và quyết định đó dựa trên bằng chứng nào**. Bản M3 trước khi nhận Change Request vẫn bắt người dùng đọc lý do, hai cột số liệu và danh sách bước mới thấy được việc cần làm.
+
 ## 3. Quyết định: thay đổi gì, không thay đổi gì
 
 **Ưu tiên thay đổi** (theo thứ tự):
@@ -29,8 +31,12 @@ Người ra quyết định cần biết: **điều gì có thể tin, điều g
 3. **Kiểm chứng một cú nhấp**: link mở đúng câu trích hoặc đúng trang PDF.
 4. **Nguồn cũ và dự báo**: cờ cho số của kỳ chưa kết thúc lúc đăng bài, kỳ kéo dài tới tương lai, số đã có bản mới hơn; số của thị trường hoặc kỳ khác được để riêng.
 5. **Sửa các lỗi M2 đã ghi**.
+6. **Change Request A4: khối "Quyết định nhanh"** ở ngay đầu kết quả, đọc trong vài giây: kết luận và mức tin cậy, **nên làm gì tiếp** (một câu hành động và bước tiếp theo, có nút làm luôn), **dựa trên bằng chứng nào** (tối đa 3 dòng, mỗi dòng có con số, hạng nguồn, trạng thái có thể tin hay chưa chắc chắn và link mở đúng câu trích của từng hãng). Bằng chứng do code chọn: các nhóm số mà lý do chính dẫn, có thể tin xếp trước, không bao giờ lấy số ngoài phạm vi câu hỏi. Câu hành động cụ thể do AI viết chỉ được hiện khi code đã để kết luận chắc chắn đứng; nếu code hạ kết luận, khối dùng câu của code. Báo cáo chi tiết vẫn ở bên dưới cho ai cần kiểm.
 
 **Chủ động chưa làm**:
+
+- **Không để AI chọn bằng chứng cho khối quyết định, không gọi thêm AI**. Khối được dựng lại từ những gì đã kiểm, nên cùng kết quả luôn ra cùng khối và không tốn thêm lượt gọi.
+- **Không bỏ báo cáo chi tiết**. Change Request cần bản ngắn, nhưng người muốn kiểm vẫn phải xem được toàn bộ số liệu và câu trích.
 
 - **Không cho AI chấm độ tin cậy hay xếp "có thể tin"**. Nếu AI xếp, cùng bằng chứng có thể ra kết quả khác nhau giữa các lần chạy và không giải thích được.
 - **Không hạ chuẩn kiểm câu trích**. Câu trích chỉ có con số (thường lấy từ biểu đồ PDF) vẫn bị loại; thay vào đó hệ thống chỉ tới đúng trang biểu đồ để người dùng tự đọc. Cho qua thì sẽ lọt số bị ghép nhầm nhãn như TC6 ở M2.
@@ -43,7 +49,7 @@ Người ra quyết định cần biết: **điều gì có thể tin, điều g
 Luồng mới trên giao diện:
 
 1. Chạy câu hỏi như M2.
-2. Đầu bản tóm tắt: kết luận, mức tin cậy, số mục có thể tin / chưa chắc chắn. Kết luận chắc chắn ("Đã có câu trả lời", "Nên ưu tiên") chỉ được giữ khi có ít nhất một lý do dựa trên nhận định có thể tin; nếu không, code đổi thành "Có số liệu nhưng chưa chắc chắn" hoặc "Cần thêm dữ liệu".
+2. **Quyết định nhanh** (Change Request A4) ở đầu trang: kết luận, mức tin cậy, câu tóm tắt, **Nên làm gì tiếp** (kèm nút "Làm bước này"), **Dựa trên bằng chứng nào** (tối đa 3 dòng có link câu trích). Kết luận chắc chắn ("Đã có câu trả lời", "Nên ưu tiên") chỉ được giữ khi ít nhất một nửa lý do dựa trên nhận định có thể tin; nếu không, code đổi thành "Có số liệu nhưng chưa chắc chắn" hoặc "Cần thêm dữ liệu". Bản Markdown tải về cũng mở đầu bằng khối này.
 3. Hai cột: **Có thể tin** (mỗi mục có giá trị, nguồn gốc, lưu ý nếu là số dẫn lại) và **Chưa chắc chắn** (mỗi mục có lý do cụ thể).
 4. **Nên tìm hiểu tiếp ở đâu**: các bước đã gộp trùng, mỗi bước có nút "Tìm thêm" hoặc "Mở nguồn".
 5. Ô **Hỏi tiếp**: câu hỏi tiếp được viết lại thành câu hỏi đầy đủ; chuỗi nghiên cứu hiện ở đầu trang.
@@ -55,9 +61,10 @@ Luồng mới trên giao diện:
 
 | | Bản M2 | Bản M3 |
 |---|---|---|
-| Điều kiện cũ của M2 (regression) | 18/19 | 20/21 |
+| Điều kiện cũ của M2 (regression) | 18/19 | 21/22 |
 | Điều kiện mới của M3 | 3/14 | 23/24 |
-| Số case đạt | 5/6 | 7/8 |
+| Điều kiện Change Request A4 (khối quyết định nhanh) | 0/6 | 11/11 |
+| Số case đạt | 5/6 | 8/9 |
 
 Cách đọc con số 3/14: 8 trong 11 điều kiện M3 mà bản M2 không đạt là điều kiện về ba phần mới (có thể tin, chưa chắc chắn, bước tìm tiếp), M2 chưa có các phần này nên không đạt là đương nhiên; con số đó chỉ cho thấy phần mới có mặt và đúng trên các case. Trên 6 điều kiện chấm được cho cả hai bản, M2 đạt 3 (2 trong đó đạt vì M2 không có mục "có thể tin" để xếp sai), M3 đạt 5. Điều kiện còn trượt là của TC6.
 
@@ -75,8 +82,9 @@ Mọi điều kiện chưa đạt đều ở TC6 (số nằm trong biểu đồ 
 | TC6 số trong biểu đồ | 0/3 | Cần thêm dữ liệu (3) |
 | TC7 hỏi tiếp | 3/3 | Có số liệu nhưng chưa chắc chắn (3) |
 | TC8 số dự báo cũ | 3/3 | Có số liệu nhưng chưa chắc chắn (3) |
+| TC9 Change Request A4 | 3/3 | Nên ưu tiên (2), Cần thêm dữ liệu (1) |
 
-Chỉ có hai điều kiện từng không đạt, cả hai đều của TC6 và không đạt ở cả 3 lần. Ba phần do code xếp cho cùng kết quả ở các điểm chính: TC2 cả 3 lần gom Niko 5,37 / Statista 5,89 / Newzoo 6,51 tỷ USD thành một mâu thuẫn lệch 21%; TC7 cả 3 lần tìm ra 0,46 và 0,817 tỷ USD lệch 78%; TC8 cả 3 lần xếp 5,47 tỷ USD vào chưa chắc chắn. Nhãn kết luận chỉ còn dao động ở TC3.
+Chỉ có hai điều kiện từng không đạt, cả hai đều của TC6 và không đạt ở cả 3 lần. Ba phần do code xếp cho cùng kết quả ở các điểm chính: TC2 cả 3 lần gom Niko 5,37 / Statista 5,89 / Newzoo 6,51 tỷ USD thành một mâu thuẫn lệch 21%; TC7 cả 3 lần tìm ra 0,46 và 0,817 tỷ USD lệch 78%; TC8 cả 3 lần xếp 5,47 tỷ USD vào chưa chắc chắn. Nhãn kết luận còn dao động ở TC3 và TC9; ở TC9, khối quyết định nhanh cả 3 lần đều có đúng 3 bằng chứng đã kiểm có link câu trích (625 triệu USD, MOBA +20,1%, 4X +17,6%).
 
 **Từng thay đổi và case chứng minh nó** (chi tiết trong `eval/ket-qua-kiem-thu.md`):
 
@@ -88,8 +96,9 @@ Chỉ có hai điều kiện từng không đạt, cả hai đều của TC6 và
 | Kết luận hợp loại câu hỏi | TC1: "Cần thêm dữ liệu" dù đã có 625 triệu USD | TC1: "Đã có câu trả lời" cả 3 lần, 625 triệu USD ở "có thể tin" |
 | Không đạt nhầm | TC6: "top_growth_genre" đạt nhờ số +50% của Indonesia | TC6: điều kiện mới báo đúng là chưa đạt; có bước mở thẳng tới biểu đồ chưa đọc được |
 | Lỗi M2 | TC3 rỗng tóm tắt; "0.817" đọc thành 817 | TC3 có tóm tắt cả 3 lần; 0,817 đọc đúng (TC7) |
+| Change Request A4: nên làm gì tiếp, dựa trên gì | Không có; phải đọc cả báo cáo | TC9 ("Nên ưu tiên MOBA hay 4X?"): đầu trang là "Ưu tiên phát hành game MOBA; cần đối chiếu thêm báo cáo gốc của Sensor Tower trước khi chốt đầu tư", bước tiếp theo bấm được, và 3 bằng chứng có link câu trích. TC2: "Chưa nên dùng các con số này làm căn cứ chính" kèm bước so sánh cách đo của các hãng và link câu trích của từng hãng |
 
-**Test offline**: 69 bài, gồm 32 bài M2 (regression; một bài đổi điều kiện kiểm vì M3 thêm quy tắc kết luận), 34 bài mới cho M3 (32 trong `tests/test_m3.py`, 2 về lỗi hết lượt gọi AI) và 3 bài giao diện (Streamlit AppTest: ba phần hiển thị, chữ từ nguồn được escape trước khi chèn vào trang, kết quả có sẵn mở được không cần AI). Mỗi lỗi tìm ra trong lúc làm M3 đều có test riêng: đơn vị USD bị thiếu, số trong bảng không ghi đơn vị, ô bảng "S-5.89 N-6.51" bị đọc thành số âm, giá trị ghi hai con số, độ lệch "21%" do code tính bị bộ kiểm loại, nhãn bị ghép với số trong biểu đồ, kết luận chắc chắn khi không lý do nào dựa trên nhận định có thể tin.
+**Test offline**: 74 bài, gồm 32 bài M2 (regression; một bài đổi điều kiện kiểm vì M3 thêm quy tắc kết luận), 34 bài mới cho M3 (32 trong `tests/test_m3.py`, 2 về lỗi hết lượt gọi AI), 5 bài cho Change Request A4 trong `tests/test_cr.py` và 3 bài giao diện (Streamlit AppTest: khối quyết định nhanh đứng trước báo cáo dài, chữ từ nguồn được escape trước khi chèn vào trang, kết quả có sẵn mở được không cần AI). Mỗi lỗi tìm ra trong lúc làm M3 đều có test riêng: đơn vị USD bị thiếu, số trong bảng không ghi đơn vị, ô bảng "S-5.89 N-6.51" bị đọc thành số âm, giá trị ghi hai con số, độ lệch "21%" do code tính bị bộ kiểm loại, nhãn bị ghép với số trong biểu đồ, kết luận chắc chắn khi không lý do nào dựa trên nhận định có thể tin.
 
 **Về độ ổn định**: câu tóm tắt và nhãn kết luận do AI viết nên có thể khác nhau giữa các lần chạy. Code chặn một chiều: không lý do nào dựa trên nhận định có thể tin thì không được ghi là "Đã có câu trả lời" hay "Nên ưu tiên". AI trích ra nhận định nào từ nguồn cũng khác nhau giữa các lần, nên số mục trong ba phần thay đổi (ví dụ TC4). Bảng kết quả chính (`eval/ket-qua-kiem-thu.md`) là lần chạy thứ 3. Ba lần chạy là chạy thật; sau đó các quy tắc mới (kết luận chắc chắn cần đa số lý do có thể tin, giá trị phải khớp con số trong câu trích cả về dấu, bậc và đơn vị) được áp lên chính các lần chạy đó bằng `python -m eval.run_eval --stability --rescore`, không gọi lại AI.
 ## 6. Giới hạn còn lại
@@ -99,50 +108,58 @@ Chỉ có hai điều kiện từng không đạt, cả hai đều của TC6 và
 - **Số trong biểu đồ** (TC6): hệ thống chỉ tới đúng chỗ để người dùng tự đọc, chưa tự đọc được.
 - **Kết luận và tóm tắt do AI viết** có thể khác nhau giữa các lần chạy (xem mục 5).
 - **Nguồn miễn phí phần lớn là bài dẫn lại**: hầu hết số liệu mang lưu ý "chưa đối chiếu bản gốc", vì báo cáo gốc của hãng dữ liệu thường phải trả phí. Người dùng có thể tải báo cáo đã mua lên.
-- **Change Request chưa được giao**: khi có sẽ thêm TC9 và test riêng.
-- **Bộ kiểm thử thật mới có 8 tình huống**: chưa đủ để đo tỷ lệ sai của mục "có thể tin".
+- **Khối quyết định nhanh dựa trên lý do AI trích**: code chọn bằng chứng từ các nhóm số mà lý do chính dẫn, nên nếu AI bỏ sót một số quan trọng trong lý do thì khối cũng không có số đó (vẫn xem được ở báo cáo chi tiết).
+- **Bộ kiểm thử thật mới có 9 tình huống**: chưa đủ để đo tỷ lệ sai của mục "có thể tin" hay của câu nên làm gì tiếp.
 
 ## 7. Bộ kiểm thử Mission 3
 
 | Yêu cầu của đề | Ở đâu |
 |---|---|
 | Chạy lại test quan trọng của M2 để kiểm regression | 32 test offline của M2 giữ nguyên; `checks` của TC1 đến TC6 giữ nguyên và chạy lại trên bản M3 |
-| Test cho Change Request | Chưa có Change Request; sẽ là TC9 |
+| Test cho Change Request (A4: hỗ trợ quyết định) | `tests/test_cr.py` (5 test: có câu trả lời, nguồn mâu thuẫn, thiếu dữ liệu, câu hành động chỉ hiện khi kết luận đứng được, khối ngắn và không lấy số ngoài phạm vi); `tests/test_app.py` (khối đứng trước báo cáo dài); TC9 chạy thật 3/3 lần; điều kiện `checks_cr` trên TC1, TC2, TC4, TC5, TC8, TC9 (11/11) |
 | Edge case / tình huống khó | TC8 (số dự báo trong bài cũ), TC7 (câu hỏi tiếp cụt ngủn cần bối cảnh), TC2 (ba nguồn mâu thuẫn), TC6 (biểu đồ); test offline: nhãn ghép với số, ô "N-6.51", số không ghi đơn vị |
 | Regression test cho chức năng cũ | `checks` M2 của TC1 đến TC6; test offline `test_numbers_from_the_question_are_allowed...` (lỗi TC3), `test_decimal_with_leading_zero...` (lỗi 0.817), cùng 32 test M2 |
 
-## 8. Ba câu hỏi bắt buộc (bản soạn)
+## 8. Ba câu hỏi bắt buộc
 
 **Câu 1. Sau khi nhận yêu cầu mới, bạn đã ưu tiên thay đổi điều gì và chủ động chưa làm điều gì? Vì sao?**
 
-Em ưu tiên đúng câu người ra quyết định hỏi: điều gì có thể tin, điều gì chưa chắc chắn, nên tìm tiếp ở đâu. Bản M2 gộp mọi số liệu dưới một mức tin cậy chung, nên em làm theo thứ tự:
-1. Chia bản tóm tắt thành ba phần do code xếp theo quy tắc. Mỗi điểm chưa chắc chắn ghi rõ lý do (mâu thuẫn, chỉ có bài dẫn lại từ nguồn hạng C, số cũ, số dự báo khi kỳ đo chưa kết thúc) và kèm một bước tìm tiếp bấm được.
-2. Cho hỏi tiếp mà vẫn giữ bối cảnh: câu hỏi tiếp được viết lại thành câu hỏi đầy đủ, giữ các nhận định đã kiểm và các nhận định người dùng đã loại.
-3. Kiểm chứng một cú nhấp tới đúng câu trích hoặc đúng trang PDF.
-4. Sửa các lỗi M2 đã ghi lại.
+Em nhận hai yêu cầu: yêu cầu chung (cho biết điều gì có thể tin, điều gì chưa chắc chắn, nên tìm tiếp ở đâu) và Change Request A4 (người dùng không đọc báo cáo dài, muốn biết nên làm gì tiếp và quyết định đó dựa trên bằng chứng nào). Bản M2 gộp mọi số liệu dưới một mức tin cậy chung và bắt người dùng đọc hết báo cáo, nên em làm theo thứ tự:
+1. Khối "Quyết định nhanh" ở đầu trang (Change Request A4): kết luận, mức tin cậy, nên làm gì tiếp (một câu hành động và bước tiếp theo bấm được), dựa trên bằng chứng nào (tối đa 3 dòng, mỗi dòng mở được đúng câu trích của từng hãng). Bằng chứng do code chọn từ những gì đã kiểm; câu hành động cụ thể của AI chỉ hiện khi code để kết luận chắc chắn đứng.
+2. Chia bằng chứng thành ba phần do code xếp theo quy tắc: có thể tin; chưa chắc chắn, kèm lý do (mâu thuẫn, chỉ có bài dẫn lại từ nguồn hạng C, số cũ, số dự báo khi kỳ đo chưa kết thúc); nên tìm hiểu tiếp ở đâu, kèm bước bấm được.
+3. Cho hỏi tiếp mà vẫn giữ bối cảnh: câu hỏi tiếp được viết lại thành câu hỏi đầy đủ, giữ các nhận định đã kiểm và các nhận định người dùng đã loại.
+4. Kiểm chứng một cú nhấp tới đúng câu trích hoặc đúng trang PDF.
+5. Sửa các lỗi M2 đã ghi lại.
 
-Em chủ động chưa làm bốn việc:
-- Không cho AI chấm độ tin cậy, vì kết quả không lặp lại được và không giải thích được.
+Em chủ động chưa làm năm việc:
+- Không cho AI chấm độ tin cậy hay chọn bằng chứng cho khối quyết định, vì kết quả không lặp lại được và không giải thích được.
+- Không bỏ báo cáo chi tiết: Change Request cần bản ngắn, nhưng người muốn kiểm vẫn phải xem được toàn bộ số liệu và câu trích, nên báo cáo nằm ngay dưới khối quyết định.
 - Không hạ chuẩn kiểm câu trích cho số trong biểu đồ. Trong lúc chạy, AI từng ghép +37,6% với Match Swap, trong khi đúng là Battle Royale; nới chuẩn thì số ghép sai sẽ lọt.
 - Chưa dùng mô hình đọc ảnh cho biểu đồ, vì code chưa kiểm được kết quả và gói miễn phí giới hạn số lượt gọi.
-- Không đổi quy tắc tin cậy của M2, để kết quả hai phiên bản so sánh được với nhau.
+- Giữ nguyên các ngưỡng và cách chấm Cao / Trung bình / Thấp của M2, chỉ thêm cờ cảnh báo mới, để kết quả hai phiên bản so sánh được với nhau.
 
 **Câu 2. Thay đổi nào tạo ra khác biệt lớn nhất giữa sản phẩm Mission 2 và Mission 3? Bạn dùng bằng chứng nào để kết luận phiên bản mới tốt hơn?**
 
-Khác biệt lớn nhất là ba phần có thể tin / chưa chắc chắn / tìm hiểu tiếp do code xếp, cùng với khả năng hỏi tiếp từ chính các bước đó. Em áp cùng một bộ điều kiện chấm lên kết quả chạy thật của hai phiên bản. Bản M3 đạt 23/24 điều kiện mới, bản M2 đạt 3/14; phần lớn điều kiện M2 trượt vì chưa có ba phần mới, còn trên 6 điều kiện chấm được cho cả hai bản thì M2 đạt 3, M3 đạt 5; các điều kiện cũ của M2 vẫn đạt (18/19 ở M2, 20/21 ở M3), nghĩa là không có regression. Em chạy lại cả bộ kiểm thử 3 lần: 7/8 case đạt đủ cả 3 lần, chỉ TC6 (số trong biểu đồ) không đạt, đúng như dự đoán từ M2. Bằng chứng cụ thể:
-- TC2: cả 3 lần, ba nguồn gốc Niko 5,37 / Statista 5,89 / Newzoo 6,51 tỷ USD được gom thành một mâu thuẫn lệch 21% và không con số quy mô nào bị đưa vào phần có thể tin.
+Khác biệt lớn nhất là người dùng không còn phải đọc cả báo cáo: đầu trang cho biết nên làm gì tiếp và dựa trên bằng chứng nào; ngay dưới là ba phần có thể tin / chưa chắc chắn / tìm hiểu tiếp do code xếp, và có thể hỏi tiếp từ chính các bước đó. Em áp cùng một bộ điều kiện chấm lên kết quả chạy thật của hai phiên bản:
+- Điều kiện cũ của M2 vẫn đạt (18/19 ở M2, 21/22 ở M3), nghĩa là không có regression.
+- Điều kiện mới của M3: M2 đạt 3/14, M3 đạt 23/24.
+- Điều kiện của Change Request A4: M2 đạt 0/6, M3 đạt 11/11.
+
+Em chạy lại cả bộ kiểm thử 3 lần: 8/9 case đạt đủ cả 3 lần; chỉ TC6 (số trong biểu đồ) không đạt, đúng như dự đoán từ M2. Bằng chứng cụ thể:
+- TC9 (Change Request, "Nên ưu tiên MOBA hay 4X?"): cả 3 lần, đầu trang có câu nên làm gì tiếp và 3 bằng chứng có link câu trích (625 triệu USD, MOBA +20,1%, 4X +17,6%), ví dụ "Ưu tiên phát hành game MOBA; cần đối chiếu thêm báo cáo gốc của Sensor Tower trước khi chốt đầu tư".
+- TC2: cả 3 lần, Niko 5,37 / Statista 5,89 / Newzoo 6,51 tỷ USD được gom thành một mâu thuẫn lệch 21%, không số nào vào phần có thể tin; khối quyết định nói "chưa nên dùng các con số này làm căn cứ chính" và chỉ bước so sánh cách đo của các hãng.
 - TC8: số 5,47 tỷ USD cho năm 2025 trong bài đăng tháng 9/2025 được nhận ra là số dự báo.
 - TC7: câu "Còn riêng Việt Nam thì sao?" giữ đủ bối cảnh và tìm ra hai con số lệch nhau 78%.
-- TC1: kết luận đổi từ "Cần thêm dữ liệu" sang "Đã có câu trả lời".
+- TC1: kết luận đổi từ "Cần thêm dữ liệu" sang "Đã có câu trả lời", cả 3 lần.
 
-Toàn bộ có 69 test offline, 8 tình huống chạy thật và kết quả 3 lần chạy lưu trong repo.
+Toàn bộ có 74 test offline (5 test riêng cho Change Request), 9 tình huống chạy thật và kết quả 3 lần chạy lưu trong repo.
 
 **Câu 3. Nếu sản phẩm này được đưa cho người dùng thật vào ngày mai, rủi ro hoặc giới hạn lớn nhất còn lại là gì? Bạn sẽ ưu tiên xử lý nó như thế nào?**
 
-Rủi ro lớn nhất là người dùng hiểu "có thể tin" là "đúng". Thực ra nó chỉ có nghĩa là số đạt quy tắc về nguồn, kỳ đo và thị trường. Thêm nữa, các trường như thị trường, kỳ đo hay đơn vị lấy từ tiêu đề bảng vẫn do AI điền, và nhãn kết luận vẫn có thể dao động giữa các lần chạy. Em sẽ ưu tiên ba việc:
-1. Mở rộng bộ kiểm thử lên khoảng 20 đến 30 câu hỏi có đáp án đã biết, để đo tỷ lệ "có thể tin nhưng sai" và tỷ lệ kết luận dao động giữa các lần chạy.
-2. Để người dùng báo nhận định sai ngay trên giao diện, rồi đưa các ca đó vào bộ kiểm thử.
-3. Kiểm thêm bằng code những trường AI điền, ví dụ tìm tiêu đề cột trong nguồn để xác nhận đơn vị, và tính nhãn kết luận bằng quy tắc từ ba phần thay vì để AI chọn.
+Rủi ro lớn nhất là người dùng làm theo ngay câu "nên làm gì tiếp" và hiểu "có thể tin" là "đúng". Thực ra "có thể tin" chỉ có nghĩa là số đạt quy tắc về nguồn, kỳ đo và thị trường. Câu hành động cụ thể vẫn do AI viết (chỉ hiện khi kết luận đứng được), các trường như thị trường, kỳ đo hay đơn vị lấy từ tiêu đề bảng vẫn do AI điền, và nhãn kết luận còn dao động giữa các lần chạy; code hiện mới chặn một chiều: không đủ căn cứ có thể tin thì không được ghi kết luận chắc chắn. Em sẽ ưu tiên ba việc:
+1. Mở rộng bộ kiểm thử lên khoảng 20 đến 30 câu hỏi có đáp án đã biết, để đo tỷ lệ "có thể tin nhưng sai", tỷ lệ câu nên làm gì tiếp sai, và tỷ lệ kết luận dao động giữa các lần chạy.
+2. Để người dùng báo nhận định hoặc câu hành động sai ngay trên giao diện, rồi đưa các ca đó vào bộ kiểm thử.
+3. Kiểm thêm bằng code những trường AI điền, ví dụ tìm tiêu đề cột trong nguồn để xác nhận đơn vị, và tính nhãn kết luận hoàn toàn bằng quy tắc từ ba phần thay vì để AI chọn.
 
 Số trong biểu đồ để sau ba việc trên. Khi làm, kết quả đọc bằng mô hình nhìn ảnh mặc định chỉ được vào phần chưa chắc chắn.
 
@@ -160,5 +177,6 @@ Quay im lặng, chèn chữ khi dựng. Trước khi quay: mở app, bỏ chọn
 | 2:20–2:45 | Bấm một nhận định, "Mở nguồn tại câu trích" | Kiểm chứng một cú nhấp: trang mở đúng câu trích, câu được tô sáng |
 | 2:45–3:30 | Ô "Hỏi tiếp": gõ "Còn riêng Việt Nam thì sao?" | Hỏi tiếp giữ bối cảnh: hiểu thành Việt Nam năm 2024, giữ nhận định cũ, tìm ra 0,817 và 0,46 tỷ USD lệch 78% |
 | 3:30–4:05 | GitHub: `eval/so-sanh-m2-m3.md`, terminal chạy pytest | Bằng chứng: điều kiện M3 từ 3/14 lên 23/24, điều kiện M2 không giảm, 7/8 case đạt cả 3 lần chạy, 69 test qua |
-| 4:05–4:35 | `docs/mission-3.md` mục 6 | Giới hạn: "có thể tin" không có nghĩa là đúng; số trong biểu đồ chưa tự đọc được; Change Request đang chờ |
+| 4:05–4:35 | `docs/mission-3.md` mục 6 | Giới hạn: "có thể tin" không có nghĩa là đúng; số trong biểu đồ chưa tự đọc được |
+| Thêm (Change Request A4) | App: bấm "Kết quả mẫu đã chạy thật" TC9, rồi TC2 | Quyết định nhanh: nên làm gì tiếp và dựa trên bằng chứng nào, mỗi bằng chứng mở được câu trích |
 | 4:35–4:45 | Khung kết | Link app và repo |

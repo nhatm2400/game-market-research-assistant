@@ -124,6 +124,47 @@ def judge(f: Finding, claims: dict[str, Claim], sources: dict[str, Source], wind
     return why, steps, notes
 
 
+ACTION = {
+    "Nên ưu tiên": "Nên làm: ưu tiên phương án trong câu hỏi.",
+    "Chưa nên": "Chưa nên làm lúc này.",
+    "Đã có câu trả lời": "Có thể dùng câu trả lời này làm căn cứ.",
+    "Có số liệu nhưng chưa chắc chắn": "Chưa nên dùng các con số này làm căn cứ chính; làm bước dưới đây trước.",
+    "Cần thêm dữ liệu": "Chưa đủ căn cứ để quyết định; bổ sung dữ liệu theo bước dưới đây.",
+}
+CARD_EVIDENCE = 3       # a decision card is read in seconds, not a report
+
+
+def decision_card(brief: dict, findings: list[Finding], claims: list[Claim], sources: dict[str, Source]) -> dict:
+    """Change Request A4: what to do next and which evidence that rests on, picked by code from the brief.
+    Evidence is what the kept reasons cite, trusted first, never a figure outside the question's scope."""
+    by_id = {c.id: c for c in claims}
+    finding = {f.key: f for f in findings}
+    status = {x["finding"]: "trusted" for x in brief.get("trusted", [])}
+    status.update({x["finding"]: "uncertain" for x in brief.get("uncertain", [])})
+    of_claim = {cid: f.key for f in findings for cid in f.claim_ids}
+    keys = list(dict.fromkeys(of_claim[i] for x in brief["reasons"] for i in x["claim_ids"] if i in of_claim))
+    keys = [k for k in keys if k in status] or list(status)
+    keys.sort(key=lambda k: status[k] != "trusted")
+    evidence = []
+    for k in keys[:CARD_EVIDENCE]:
+        f = finding[k]
+        # the copy a reader should open: best tier, and the data firm's own page before an article quoting it
+        def best(cs):
+            return min(cs, key=lambda c: (c.tier, any(RELAYED in fl for fl in c.flags)))
+        c = best([by_id[i] for i in f.claim_ids])
+        # one quote per data firm, so a conflict can be checked figure by figure
+        links = [{"origin": o, "claim_id": x.id, "value": x.value_text, "url": claim_link(x, sources.get(x.source_id))}
+                 for o in f.origins for x in [best([by_id[i] for i in f.claim_ids if by_id[i].origin == o])]]
+        evidence.append({"finding": k, "label": f.label, "values": _values(f), "origins": f.origins, "tier": c.tier,
+                         "status": status[k], "claim_id": c.id, "quote": c.quote,
+                         "url": claim_link(c, sources.get(c.source_id)), "links": links})
+    steps = brief.get("next_steps", [])
+    # the AI's own wording only for a conclusion the code let stand as firm; otherwise the code's instruction
+    firm = brief["decision"] in ("Nên ưu tiên", "Chưa nên", "Đã có câu trả lời")
+    action = (brief.get("next_action") if firm else "") or ACTION.get(brief["decision"], ACTION["Cần thêm dữ liệu"])
+    return {"action": action, "next_step": steps[0] if steps else None, "evidence": evidence}
+
+
 def sort_evidence(findings: list[Finding], claims: list[Claim], sources: dict[str, Source], window: Window,
                   question_market: str, gaps: list[str]) -> dict:
     """trusted: answers the question and passes every rule; uncertain: answers it but something is off;

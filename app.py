@@ -57,6 +57,14 @@ CSS = """
 .meter.l1 i:nth-child(-n+1), .meter.l2 i:nth-child(-n+2), .meter.l3 i:nth-child(-n+3) { background:var(--indigo); }
 .v-summary { font-size:1.08rem; line-height:1.6; max-width:72ch; margin:0 0 .6rem; }
 .v-meta { color:var(--muted); font-size:.9rem; max-width:80ch; margin:0; }
+.card-h { font-weight:700; font-size:1.02rem; margin:1rem 0 .3rem; }
+.card-next { border-left:3px solid var(--indigo); padding:.3rem 0 .35rem .9rem; max-width:80ch; line-height:1.5; }
+.card-next small { display:block; color:var(--muted); }
+.card-ev { display:flex; align-items:center; flex-wrap:wrap; gap:.15rem .5rem; margin:.4rem 0; max-width:90ch; }
+.card-ev .val { font-weight:600; font-variant-numeric:tabular-nums; }
+.card-ev .what { color:var(--muted); font-size:.9rem; }
+.card-ev a { color:var(--indigo); font-size:.88rem; }
+.details { color:var(--muted); font-size:.9rem; border-top:1px solid var(--line); padding-top:.7rem; margin:1.2rem 0 .4rem; }
 .reason { display:flex; gap:.65rem; margin:.45rem 0; max-width:80ch; line-height:1.5; }
 .dot { flex:none; width:.6rem; height:.6rem; border-radius:50%; margin-top:.45rem; }
 .dot.trusted { background:var(--jade); } .dot.uncertain { border:2px solid var(--ochre); }
@@ -250,13 +258,41 @@ if r:
             f"Khung thời gian dữ liệu: {r['window']['label']}.")
     if r["stats"].get("carried"):
         meta += f" Giữ lại {r['stats']['carried']} nhận định đã kiểm từ lần trước."
+    card = b.get("card")
+    nxt = card["next_step"] if card else None
     st.markdown(
         f'<section class="verdict"><div class="v-label">Kết luận</div>'
         f'<div class="v-answer {kind}">{h(b["decision"])}</div>'
         f'<div class="v-conf"><span class="meter l{level}" aria-hidden="true"><i></i><i></i><i></i></span>'
         f'Tin cậy {h(b["confidence"].lower() if level else b["confidence"])}</div>'
         + (f'<p class="v-summary">{h(b["summary"])}</p>' if b["summary"] else "")
-        + f'<p class="v-meta">{h(meta)}</p></section>', unsafe_allow_html=True)
+        + (f'<div class="card-h">Nên làm gì tiếp</div><div class="card-next">{h(card["action"])}'
+           + (f'<small>Bước tiếp theo: {h(nxt["text"])}</small>' if nxt else "") + "</div>" if card else "")
+        + "</section>", unsafe_allow_html=True)
+    if nxt:     # the card's step runs from here, like the full list further down
+        if nxt["url"]:
+            st.link_button("Mở nguồn", nxt["url"])
+        elif nxt["query"] and st.button("Làm bước này", key=f"card{r['id']}", disabled=llm is None or not use_search):
+            research_further(r, queries=[nxt["query"]])
+        elif nxt["ask"] and st.button("Làm bước này", key=f"card{r['id']}", disabled=llm is None):
+            research_further(r, follow_question=nxt["ask"])
+    if card:
+        said = {"trusted": "Có thể tin", "uncertain": "Chưa chắc chắn"}
+        rows = "".join(
+            f'<div class="card-ev"><span class="dot {h(e["status"])}" title="{said[e["status"]]}"></span>'
+            f'<span class="sr">{said[e["status"]]}: </span><span class="val">{h(e["values"])}</span>'
+            f'<span class="what">{h(e["label"])}</span>'
+            f'<span class="seal {h(e["tier"])}" title="Hạng nguồn {h(e["tier"])}">{h(e["tier"])}</span>'
+            + ", ".join(f'<a href="{h(x["url"])}" target="_blank" rel="noopener" title="Mở câu trích">{h(x["origin"])}</a>'
+                        if x["url"] else h(x["origin"]) for x in e.get("links") or [{"origin": o, "url": ""} for o in e["origins"]])
+            + "</div>" for e in card["evidence"])
+        st.markdown(f'<div class="card-h">Dựa trên bằng chứng nào</div>'
+                    + (rows or '<p class="col-note">Chưa có nhận định nào đã kiểm để làm căn cứ.</p>')
+                    + f'<p class="v-meta">{h(meta)}</p>'
+                    '<p class="details">Chi tiết bên dưới: lý do, toàn bộ số liệu đã kiểm, các bước khác và nguồn. '
+                    'Chỉ cần đọc khi muốn kiểm lại.</p>', unsafe_allow_html=True)
+    else:
+        st.markdown(f'<p class="v-meta">{h(meta)}</p>', unsafe_allow_html=True)
     if r["stats"]["sources_failed"]:
         st.warning(f"{r['stats']['sources_failed']} nguồn bị lỗi khi đọc hoặc khi trích nhận định. "
                    "Xem lý do ở tab Nguồn.")

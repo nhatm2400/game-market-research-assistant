@@ -6,6 +6,18 @@
 
 Quy mô thị trường game Đông Nam Á năm 2024 dao động tùy theo nguồn công bố, với mức 5,37 tỷ USD từ Niko Partners, 5,89 tỷ USD từ Statista và 6,51 tỷ USD từ Newzoo. Các số liệu này có độ lệch lớn và đều chưa được đối chiếu bản gốc.
 
+## Quyết định nhanh
+
+**Nên làm gì tiếp:** Chưa nên dùng các con số này làm căn cứ chính; làm bước dưới đây trước.
+Bước tiếp theo: So sánh cách đo của Newzoo, Niko Partners, Statista (phạm vi, quốc gia tính vào, loại doanh thu) rồi chọn số hợp với câu hỏi. Truy vấn gợi ý: `Southeast Asia games market revenue 2024 Newzoo Niko Partners Statista methodology`.
+
+**Dựa trên bằng chứng nào:**
+
+- 5,37 tỷ USD đến 5,89 tỷ USD đến 6,51 tỷ USD: Doanh thu toàn ngành game, Đông Nam Á, 2024 (hạng B, chưa chắc chắn).
+  - Newzoo: 6.51 billion USD [C20] https://allcorrectgames.com/insights/the-gaming-market-in-southeast-asia-2/#:~:text=Total%20revenue%20S%2D4.85%20N%2D6.14%20S%2D5.35,N%2D6.51%20S%2D6.39%20N%2D6.89%20S%2D6.88%20S%2D7.37
+  - Niko Partners: $5.37 billion [C1] https://gamesbeat.com/southeast-asia-to-reach-6-47-billion-in-revenues-by-2029-niko-partners/#:~:text=According%20to%20Niko%E2%80%99s%20Southeast%20Asia,2024%2C%20up%205.2%25%20year%2Dover%2Dyear%20%28YoY%29.
+  - Statista: 5.89 billion USD [C19] https://allcorrectgames.com/insights/the-gaming-market-in-southeast-asia-2/#:~:text=Total%20revenue%20S%2D4.85%20N%2D6.14%20S%2D5.35,N%2D6.51%20S%2D6.39%20N%2D6.89%20S%2D6.88%20S%2D7.37
+
 Khung thời gian dữ liệu: 01/2024 đến 12/2024. Ngày chạy: 2026-10-22.
 
 ## Lý do chính

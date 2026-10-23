@@ -13,6 +13,7 @@ lưu trong `eval/runs/`. Câu trả lời của AI thay đổi giữa các lần
 | TC6 | Dự đoán chưa xử lý tốt | 0/3 | Cần thêm dữ liệu (3) |
 | TC7 | Nghiên cứu tiếp, giữ bối cảnh | 3/3 | Có số liệu nhưng chưa chắc chắn (3) |
 | TC8 | Nguồn cũ, số dự báo | 3/3 | Có số liệu nhưng chưa chắc chắn (3) |
+| TC9 | Change Request A4: hỗ trợ quyết định | 3/3 | Cần thêm dữ liệu (1), Nên ưu tiên (2) |
 
 Điều kiện không đạt ở ít nhất một lần chạy:
 

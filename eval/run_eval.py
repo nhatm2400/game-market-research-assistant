@@ -33,7 +33,7 @@ OUT = HERE / "results"
 OUT_M2 = HERE / "results_m2"
 LOAI = {"tot": "Làm tốt", "kho": "Khó, dữ liệu không rõ ràng", "thieu": "Thiếu dữ liệu",
         "that_bai": "Dự đoán chưa xử lý tốt", "tiep": "Nghiên cứu tiếp, giữ bối cảnh",
-        "cu": "Nguồn cũ, số dự báo"}
+        "cu": "Nguồn cũ, số dự báo", "cr": "Change Request A4: hỗ trợ quyết định"}
 
 
 def _verified(r):
@@ -111,6 +111,35 @@ def check(r: dict, checks: dict, parent: dict | None = None, always: bool = True
             hit = [s for s in b.get("next_steps", []) if s["url"] and "chỉ có con số" in s["text"]]
             res.append((name, bool(hit) == arg, f"có bước mở biểu đồ: {hit[0]['url']}" if hit
                         else "không có bước chỉ tới biểu đồ chưa đọc được"))
+        # ---- Change Request A4: decision card ----
+        elif name == "card":
+            card = b.get("card")
+            ok_ids = {c["id"] for c in vc}
+            srcs = {s["id"]: s for s in r["sources"]}
+            problems = []
+            if not card or not card.get("action"):
+                problems.append("không có khối quyết định nhanh")
+            else:
+                if len(card["evidence"]) > 3:
+                    problems.append(f"{len(card['evidence'])} bằng chứng, quá 3")
+                for e in card["evidence"]:
+                    for x in e.get("links", []):
+                        web = srcs[claims_of(r)[x["claim_id"]]["source_id"]]["url"].startswith("http")
+                        if x["claim_id"] not in ok_ids or (web and not x["url"]):
+                            problems.append(f"{x['claim_id']} không phải nhận định đã kiểm hoặc không mở được câu trích")
+                if b["decision"] not in ("Nên ưu tiên", "Chưa nên", "Đã có câu trả lời") and not card["next_step"]:
+                    problems.append("kết luận chưa chắc mà không có bước tiếp theo")
+            res.append((name, bool(card) and not problems,
+                        "; ".join(problems) if problems else
+                        f"hành động: \"{card['action']}\"; {len(card['evidence'])} bằng chứng có link câu trích"))
+        elif name == "card_evidence_min":
+            n = len((b.get("card") or {}).get("evidence", []))
+            res.append((name, n >= arg, f"{n} bằng chứng trong khối quyết định nhanh"))
+        elif name == "card_evidence_numbers_any":
+            toks = {t for e in (b.get("card") or {}).get("evidence", []) for x in e.get("links", [])
+                    for t in number_tokens(x["value"])}
+            hit = [n for n in arg if normalize(n) in toks]
+            res.append((name, bool(hit), f"bằng chứng có {hit}" if hit else f"bằng chứng không có số nào trong {arg}"))
         elif name == "window_label":
             res.append((name, r["window"]["label"] == arg, f"khung thời gian: {r['window']['label']}"))
         elif name == "summary_not_empty":
@@ -134,6 +163,10 @@ def check(r: dict, checks: dict, parent: dict | None = None, always: bool = True
         bad = [x for x in b["reasons"] if not set(x["claim_ids"]) <= ids]
         res.append(("ly_do_co_can_cu", not bad, "mọi lý do gắn nhận định đã kiểm" if not bad else f"{len(bad)} lý do sai"))
     return res
+
+
+def claims_of(r: dict) -> dict:
+    return {c["id"]: c for c in r["claims"]}
 
 
 def summarize(r: dict, results) -> str:
@@ -168,8 +201,9 @@ def run_case(case: dict, llm: LLM, done: dict) -> tuple[dict, dict | None]:
 
 
 def all_checks(r: dict, case: dict, parent: dict | None) -> list:
-    return check(r, case.get("checks", {}), parent) + [(f"[M3] {n}", ok, m) for n, ok, m in
-                                                       check(r, case.get("checks_m3", {}), parent, always=False)]
+    return (check(r, case.get("checks", {}), parent)
+            + [(f"[M3] {n}", ok, m) for n, ok, m in check(r, case.get("checks_m3", {}), parent, always=False)]
+            + [(f"[CR] {n}", ok, m) for n, ok, m in check(r, case.get("checks_cr", {}), parent, always=False)])
 
 
 def compare(cases: list[dict]) -> None:
@@ -184,13 +218,14 @@ def compare(cases: list[dict]) -> None:
     def fmt(x):
         return "chưa có" if x is None else f"{x[0]}/{x[1]}"
 
-    rows, tot = [], {"m2_old": [0, 0], "m3_old": [0, 0], "m2_new": [0, 0], "m3_new": [0, 0]}
+    rows, tot = [], {k: [0, 0] for k in ("m2_old", "m3_old", "m2_new", "m3_new", "m2_cr", "m3_cr")}
     for case in cases:
         m2, m3 = _load(OUT_M2, case["id"]), _load(OUT, case["id"])
         if m2:
             m2["_m2"] = True
         cells = {k: stat(r, case, chk) for k, r, chk in
-                 (("m2_old", m2, "checks"), ("m3_old", m3, "checks"), ("m2_new", m2, "checks_m3"), ("m3_new", m3, "checks_m3"))}
+                 (("m2_old", m2, "checks"), ("m3_old", m3, "checks"), ("m2_new", m2, "checks_m3"), ("m3_new", m3, "checks_m3"),
+                  ("m2_cr", m2, "checks_cr"), ("m3_cr", m3, "checks_cr"))}
         for k, v in cells.items():
             if v and v[1]:
                 tot[k][0] += v[0]
@@ -201,16 +236,20 @@ def compare(cases: list[dict]) -> None:
                    if "trusted" in b3 else "-")
         empty = lambda b: "rỗng" if b and not b.get("summary", "").strip() else ("có" if b else "-")  # noqa: E731
         rows.append(f"| {case['id']} | {LOAI.get(case['loai'], case['loai'])} | {fmt(cells['m2_old'])} → {fmt(cells['m3_old'])} "
-                    f"| {fmt(cells['m2_new'])} → {fmt(cells['m3_new'])} | {dec} | {empty(b2)} → {empty(b3)} | {buckets} |")
+                    f"| {fmt(cells['m2_new'])} → {fmt(cells['m3_new'])} | {fmt(cells['m2_cr'])} → {fmt(cells['m3_cr'])} "
+                    f"| {dec} | {empty(b2)} → {empty(b3)} | {buckets} |")
     md = ["# So sánh Mission 2 và Mission 3", "",
           "Bảng do `python -m eval.run_eval --compare` sinh ra: cùng một bộ điều kiện chấm được áp lên kết quả chạy thật",
           "của phiên bản M2 (`eval/results_m2/`) và M3 (`eval/results/`). \"Điều kiện M2\" là các điều kiện cũ, giữ nguyên để",
           "kiểm regression. \"Điều kiện M3\" là các điều kiện mới cho yêu cầu cải tiến; M2 không có các tính năng này nên",
           "không đạt là đúng. Cột cuối chỉ có ở M3: số mục có thể tin / chưa chắc chắn / ngoài phạm vi / bước tìm hiểu tiếp.", "",
-          "| Mã | Loại | Điều kiện M2: M2 → M3 | Điều kiện M3: M2 → M3 | Kết luận / tin cậy: M2 → M3 | Tóm tắt | M3: tin / chưa chắc / ngoài / bước |",
-          "|---|---|---|---|---|---|---|"] + rows
+          "| Mã | Loại | Điều kiện M2: M2 → M3 | Điều kiện M3: M2 → M3 | Điều kiện Change Request: M2 → M3 "
+          "| Kết luận / tin cậy: M2 → M3 | Tóm tắt | M3: tin / chưa chắc / ngoài / bước |",
+          "|---|---|---|---|---|---|---|---|"] + rows
     md += ["", f"Tổng điều kiện M2 đạt: M2 {tot['m2_old'][0]}/{tot['m2_old'][1]}, M3 {tot['m3_old'][0]}/{tot['m3_old'][1]}. "
-               f"Tổng điều kiện M3 đạt: M2 {tot['m2_new'][0]}/{tot['m2_new'][1]}, M3 {tot['m3_new'][0]}/{tot['m3_new'][1]}."]
+               f"Tổng điều kiện M3 đạt: M2 {tot['m2_new'][0]}/{tot['m2_new'][1]}, M3 {tot['m3_new'][0]}/{tot['m3_new'][1]}. "
+               f"Tổng điều kiện Change Request A4 (khối quyết định nhanh) đạt: M2 {tot['m2_cr'][0]}/{tot['m2_cr'][1]}, "
+               f"M3 {tot['m3_cr'][0]}/{tot['m3_cr'][1]}."]
     (HERE / "so-sanh-m2-m3.md").write_text("\n".join(md) + "\n", encoding="utf-8")
     print("Đã ghi eval/so-sanh-m2-m3.md")
 

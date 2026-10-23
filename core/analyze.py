@@ -92,6 +92,8 @@ def context_flags(claim: Claim, window: Window, question_market: str, today: dat
 
 def enrich_claim(claim: Claim, window: Window, question_market: str, today: date,
                  published: str | None = None) -> Claim:
+    if (claim.genre or "").strip().lower() in ("all", "tất cả", "none", "n/a"):   # "no genre", not a genre
+        claim.genre = ""
     claim.value, claim.unit = parse_value(claim.value_text)
     if claim.metric != "growth":   # "Q1 2025 vs Q4 2024" on a revenue figure is the quarter it measures
         claim.period = re.split(r"\s+(?:vs\.?|so với)\s+", claim.period or "", maxsplit=1)[0]

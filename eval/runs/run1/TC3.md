@@ -6,6 +6,20 @@
 
 Dữ liệu hiện có cung cấp thông tin về tăng trưởng doanh thu theo quý (Q1 2025 so với Q4 2024) của một số thể loại tại Đông Nam Á như MOBA tăng 20,1% và 4X strategy tăng 17,6%, tuy nhiên các số liệu này đều nằm ngoài khung thời gian 12 tháng gần nhất và có độ tin cậy thấp.
 
+## Quyết định nhanh
+
+**Nên làm gì tiếp:** Chưa nên dùng các con số này làm căn cứ chính; làm bước dưới đây trước.
+Bước tiếp theo: Tìm số đúng khung thời gian của câu hỏi (12 tháng gần nhất). Truy vấn gợi ý: `Southeast Asia mobile games in-app purchase revenue 2026`.
+
+**Dựa trên bằng chứng nào:**
+
+- +20,1%: Tăng trưởng game mobile, MOBA, Đông Nam Á, Q1 2025 vs Q4 2024 (hạng B, chưa chắc chắn).
+  - Sensor Tower: +20.1% QoQ [C39] https://gamedevreports.substack.com/p/sensor-tower-southeast-asia-mobile#:~:text=For%20revenue%2C%204X%20strategy%20games,%28%2D17.1%25%20QoQ%29%20are%20on%20top.
+- +17,6%: Tăng trưởng game mobile, 4X strategy, Đông Nam Á, Q1 2025 vs Q4 2024 (hạng B, chưa chắc chắn).
+  - Sensor Tower: +17.6% QoQ [C38] https://gamedevreports.substack.com/p/sensor-tower-southeast-asia-mobile#:~:text=For%20revenue%2C%204X%20strategy%20games,%28%2D17.1%25%20QoQ%29%20are%20on%20top.
+- -17,1%: Tăng trưởng game mobile, MMORPG, Đông Nam Á, Q1 2025 vs Q4 2024 (hạng B, chưa chắc chắn).
+  - Sensor Tower: -17.1% QoQ [C40] https://gamedevreports.substack.com/p/sensor-tower-southeast-asia-mobile#:~:text=For%20revenue%2C%204X%20strategy%20games,%28%2D17.1%25%20QoQ%29%20are%20on%20top.
+
 Khung thời gian dữ liệu: 12 tháng gần nhất. Ngày chạy: 2026-10-22.
 
 ## Lý do chính

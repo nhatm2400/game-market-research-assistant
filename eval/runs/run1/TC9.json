@@ -1,0 +1,827 @@
+{
+ "id": "9ea14fe618",
+ "created_at": "2026-10-23T12:57:16",
+ "question": "Nên ưu tiên phát hành game MOBA hay game chiến thuật 4X tại Đông Nam Á, dựa trên tăng trưởng doanh thu quý 1/2025?",
+ "parent_id": null,
+ "thread": [
+  {
+   "id": "9ea14fe618",
+   "question": "Nên ưu tiên phát hành game MOBA hay game chiến thuật 4X tại Đông Nam Á, dựa trên tăng trưởng doanh thu quý 1/2025?"
+  }
+ ],
+ "today": "2026-10-23",
+ "plan": {
+  "criteria": [
+   "Quy mô doanh thu quý 1/2025",
+   "Tốc độ tăng trưởng doanh thu quý 1/2025",
+   "Thị phần dòng game tại Đông Nam Á"
+  ],
+  "queries": [
+   "Sensor Tower Southeast Asia mobile game revenue Q1 2025 MOBA 4X strategy",
+   "Newzoo Southeast Asia gaming market report Q1 2025 MOBA strategy genre growth",
+   "data.ai mobile strategy 4X vs MOBA revenue Southeast Asia 2025",
+   "Niko Partners Southeast Asia games market Q1 2025 revenue growth by genre"
+  ],
+  "market": "Đông Nam Á",
+  "genre": "MOBA và chiến thuật 4X"
+ },
+ "window": {
+  "start": "2025-01-01",
+  "end": "2025-03-31",
+  "kind": "specific",
+  "label": "01/2025 đến 03/2025"
+ },
+ "question_market": "Đông Nam Á",
+ "search_log": [],
+ "skipped": [],
+ "sources": [
+  {
+   "id": "Sb4dc9f66",
+   "url": "https://sensortower.com/blog/southeast-asia-mobile-gaming-2025",
+   "title": "Sensor Tower Southeast Asia Mobile Game Market Insights 2025",
+   "domain": "sensortower.com",
+   "published": "2025-05-21",
+   "kind": "html",
+   "text": "<5366 ký tự>",
+   "error": null,
+   "tier": "A",
+   "base_tier": "A",
+   "tier_notes": [
+    "sensortower.com nằm trong danh sách hạng A",
+    "Đăng cách đây 17 tháng (12 đến 24 tháng)"
+   ],
+   "publisher": "Sensor Tower"
+  },
+  {
+   "id": "S80418131",
+   "url": "https://gamedevreports.substack.com/p/sensor-tower-southeast-asia-mobile",
+   "title": "Sensor Tower: Southeast Asia Mobile Game Market in 2025",
+   "domain": "gamedevreports.substack.com",
+   "published": "2025-06-13",
+   "kind": "html",
+   "text": "<5560 ký tự>",
+   "error": null,
+   "tier": "B",
+   "base_tier": "B",
+   "tier_notes": [
+    "gamedevreports.substack.com nằm trong danh sách hạng B",
+    "Đăng cách đây 16 tháng (12 đến 24 tháng)"
+   ],
+   "publisher": "gamedevreports.substack.com"
+  }
+ ],
+ "claims": [
+  {
+   "id": "C1",
+   "source_id": "Sb4dc9f66",
+   "claim_text": "Thị trường Đông Nam Á đạt doanh thu mua trong ứng dụng di động là 625 triệu USD trong quý 1/2025.",
+   "metric": "revenue",
+   "value_text": "$625 million",
+   "market": "Đông Nam Á",
+   "period": "Q1 2025",
+   "scope": "mobile_iap",
+   "genre": "",
+   "genre_level": "all",
+   "quote": "While SEA currently ranks seventh globally in in-app purchase (IAP) revenue at $625 million in Q1 2025, this figure signals significant untapped monetization potential.",
+   "section_title": "",
+   "attributed_to": "",
+   "criterion": 0,
+   "value": 625000000.0,
+   "unit": "USD",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "as a pivotal growth region in the global mobile gaming industry, presenting significant opportunities for developers and publishers. With a steadily expanding player base and increasing monetization potential, SEA is a dynamic and exciting landscape for the mobile gaming industry.\nIn the first quarter of 2025, Southeast Asia ranked as the second-largest global market for mobile game downloads, hitting an impressive 1.93 billion new installs. This represents a 3% increase from the previous quarter, highlighting the region's highly engaged and growing audience hungry for new gaming experiences. While SEA currently ranks seventh globally in in-app purchase (IAP) revenue at $625 million in Q1 2025, this figure signals significant untapped monetization potential. Factors like a large gaming community, improving digital payment infrastructure, and rising smartphone adoption are key drivers that suggest future revenue growth.\nNote: The download data in this re",
+   "origin": "Sensor Tower",
+   "tier": "A",
+   "flags": [],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C2",
+   "source_id": "S80418131",
+   "claim_text": "Doanh thu dòng game 4X strategy tại Đông Nam Á tăng trưởng 17.6% QoQ trong Q1 2025.",
+   "metric": "growth",
+   "value_text": "+17.6% QoQ",
+   "market": "Đông Nam Á",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile_iap",
+   "genre": "4X strategy",
+   "genre_level": "genre",
+   "quote": "For revenue, 4X strategy games (+17.6% QoQ), MOBA (+20.1% QoQ), and MMORPG (-17.1% QoQ) are on top.",
+   "section_title": "General Market Overview",
+   "attributed_to": "Sensor Tower",
+   "criterion": 1,
+   "value": 17.6,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "es (+9% QoQ). The Philippines is second with 366 million installs (-1% QoQ), and Vietnam is third with 329 million installs (+2% QoQ).\n- In terms of revenue, Thailand leads with $162 million (-6% QoQ). Indonesia is second with $118 million (+1% QoQ), and Malaysia is third with $103 million (+7% QoQ).\n❗️Note that this is only about IAP purchases. D2C payments, which are quite common in Southeast Asia, aren’t reflected in these stats.\n- Looking at the most popular genres in Southeast Asia, platformers/runners (+16% QoQ), simulators (+0.1% QoQ), and arcade games (+12.2% QoQ) lead in downloads.\n- For revenue, 4X strategy games (+17.6% QoQ), MOBA (+20.1% QoQ), and MMORPG (-17.1% QoQ) are on top.\nConsider subscribing to the GameDev Reports Premium tier to support the newsletter. Get access to the list of curated articles & archive of Gaming Reports that I’ve been collecting since 2020.\n- Top",
+   "origin": "Sensor Tower",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Sensor Tower, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C3",
+   "source_id": "S80418131",
+   "claim_text": "Doanh thu dòng game MOBA tại Đông Nam Á tăng trưởng 20.1% QoQ trong Q1 2025.",
+   "metric": "growth",
+   "value_text": "+20.1% QoQ",
+   "market": "Đông Nam Á",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile_iap",
+   "genre": "MOBA",
+   "genre_level": "genre",
+   "quote": "For revenue, 4X strategy games (+17.6% QoQ), MOBA (+20.1% QoQ), and MMORPG (-17.1% QoQ) are on top.",
+   "section_title": "General Market Overview",
+   "attributed_to": "Sensor Tower",
+   "criterion": 1,
+   "value": 20.1,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "es (+9% QoQ). The Philippines is second with 366 million installs (-1% QoQ), and Vietnam is third with 329 million installs (+2% QoQ).\n- In terms of revenue, Thailand leads with $162 million (-6% QoQ). Indonesia is second with $118 million (+1% QoQ), and Malaysia is third with $103 million (+7% QoQ).\n❗️Note that this is only about IAP purchases. D2C payments, which are quite common in Southeast Asia, aren’t reflected in these stats.\n- Looking at the most popular genres in Southeast Asia, platformers/runners (+16% QoQ), simulators (+0.1% QoQ), and arcade games (+12.2% QoQ) lead in downloads.\n- For revenue, 4X strategy games (+17.6% QoQ), MOBA (+20.1% QoQ), and MMORPG (-17.1% QoQ) are on top.\nConsider subscribing to the GameDev Reports Premium tier to support the newsletter. Get access to the list of curated articles & archive of Gaming Reports that I’ve been collecting since 2020.\n- Top",
+   "origin": "Sensor Tower",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Sensor Tower, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C4",
+   "source_id": "S80418131",
+   "claim_text": "Doanh thu dòng game MOBA tại Indonesia tăng trưởng 32.7% QoQ trong Q1 2025.",
+   "metric": "growth",
+   "value_text": "+32.7% QoQ",
+   "market": "Indonesia",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile_iap",
+   "genre": "MOBA",
+   "genre_level": "genre",
+   "quote": "For revenue, MOBA (+32.7% QoQ), 4X strategy (+21.1% QoQ), and sports games (-22.6% QoQ) lead.",
+   "section_title": "Indonesia",
+   "attributed_to": "Sensor Tower",
+   "criterion": 1,
+   "value": 32.7,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": " the top 10 games are either developed by Chinese companies or owned by them. 9 out of 10 in the top 10 are Asian companies, with the exception being Coin Master from Moon Active.\n❗️Western companies face a cultural barrier when entering the Southeast Asian market. For Asian companies, business in the region is more familiar and accessible. Business relationships in the region are also heavily based on personal connections.\nMajor Southeast Asian Markets\nIndonesia\n- Top genres by downloads in Indonesia: simulators (+4.9% QoQ), platformers/runners (+38.2% QoQ), and arcade projects (+18% QoQ).\n- For revenue, MOBA (+32.7% QoQ), 4X strategy (+21.1% QoQ), and sports games (-22.6% QoQ) lead. Battle Royale shows significant growth (+50% QoQ).\n- New projects in Indonesia in Q1'25: Magic Chess: Go Go entered the download rankings, and Ragnarok M: Classic led in revenue.\nThailand\n- Top genr",
+   "origin": "Sensor Tower",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Sensor Tower, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc",
+    "Số của thị trường Indonesia, câu hỏi hỏi về Đông Nam Á"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C5",
+   "source_id": "S80418131",
+   "claim_text": "Doanh thu dòng game 4X strategy tại Indonesia tăng trưởng 21.1% QoQ trong Q1 2025.",
+   "metric": "growth",
+   "value_text": "+21.1% QoQ",
+   "market": "Indonesia",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile_iap",
+   "genre": "4X strategy",
+   "genre_level": "genre",
+   "quote": "For revenue, MOBA (+32.7% QoQ), 4X strategy (+21.1% QoQ), and sports games (-22.6% QoQ) lead.",
+   "section_title": "Indonesia",
+   "attributed_to": "Sensor Tower",
+   "criterion": 1,
+   "value": 21.1,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": " the top 10 games are either developed by Chinese companies or owned by them. 9 out of 10 in the top 10 are Asian companies, with the exception being Coin Master from Moon Active.\n❗️Western companies face a cultural barrier when entering the Southeast Asian market. For Asian companies, business in the region is more familiar and accessible. Business relationships in the region are also heavily based on personal connections.\nMajor Southeast Asian Markets\nIndonesia\n- Top genres by downloads in Indonesia: simulators (+4.9% QoQ), platformers/runners (+38.2% QoQ), and arcade projects (+18% QoQ).\n- For revenue, MOBA (+32.7% QoQ), 4X strategy (+21.1% QoQ), and sports games (-22.6% QoQ) lead. Battle Royale shows significant growth (+50% QoQ).\n- New projects in Indonesia in Q1'25: Magic Chess: Go Go entered the download rankings, and Ragnarok M: Classic led in revenue.\nThailand\n- Top genr",
+   "origin": "Sensor Tower",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Sensor Tower, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc",
+    "Số của thị trường Indonesia, câu hỏi hỏi về Đông Nam Á"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C6",
+   "source_id": "S80418131",
+   "claim_text": "Doanh thu dòng game 4X strategies tại Thái Lan giảm 5.6% QoQ trong Q1 2025.",
+   "metric": "growth",
+   "value_text": "-5.6% QoQ",
+   "market": "Thái Lan",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile_iap",
+   "genre": "4X strategy",
+   "genre_level": "genre",
+   "quote": "For revenue, realistic sports games (-7.8% QoQ), MMORPG (-27.4% QoQ), and 4X strategies (-5.6% QoQ) lead in Thailand.",
+   "section_title": "Thailand",
+   "attributed_to": "Sensor Tower",
+   "criterion": 1,
+   "value": -5.6,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": " personal connections.\nMajor Southeast Asian Markets\nIndonesia\n- Top genres by downloads in Indonesia: simulators (+4.9% QoQ), platformers/runners (+38.2% QoQ), and arcade projects (+18% QoQ).\n- For revenue, MOBA (+32.7% QoQ), 4X strategy (+21.1% QoQ), and sports games (-22.6% QoQ) lead. Battle Royale shows significant growth (+50% QoQ).\n- New projects in Indonesia in Q1'25: Magic Chess: Go Go entered the download rankings, and Ragnarok M: Classic led in revenue.\nThailand\n- Top genres by downloads: simulators (-14.1% QoQ), platformers/runners (-18.6% QoQ), and sandbox projects (-17.5% QoQ).\n- For revenue, realistic sports games (-7.8% QoQ), MMORPG (-27.4% QoQ), and 4X strategies (-5.6% QoQ) lead in Thailand.\n- In Q1'25, Go Go Samkok and Papa Restaurant (casual simulators), as well as Ragnarok M: Classic, entered the download charts. For revenue, new entries include Ragnarok M: Classic and Dragoon Academ",
+   "origin": "Sensor Tower",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Sensor Tower, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc",
+    "Số của thị trường Thái Lan, câu hỏi hỏi về Đông Nam Á"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C7",
+   "source_id": "S80418131",
+   "claim_text": "Doanh thu dòng game 4X strategies tại Việt Nam tăng trưởng 51.5% QoQ trong Q1 2025.",
+   "metric": "growth",
+   "value_text": "+51.5% QoQ",
+   "market": "Việt Nam",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile_iap",
+   "genre": "4X strategy",
+   "genre_level": "genre",
+   "quote": "For revenue, 4X strategies (+51.5% QoQ), MMORPG (+8.2% QoQ), and Squad RPG (-1.8% QoQ) are on top.",
+   "section_title": "Vietnam",
+   "attributed_to": "Sensor Tower",
+   "criterion": 1,
+   "value": 51.5,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "iland\n- Top genres by downloads: simulators (-14.1% QoQ), platformers/runners (-18.6% QoQ), and sandbox projects (-17.5% QoQ).\n- For revenue, realistic sports games (-7.8% QoQ), MMORPG (-27.4% QoQ), and 4X strategies (-5.6% QoQ) lead in Thailand.\n- In Q1'25, Go Go Samkok and Papa Restaurant (casual simulators), as well as Ragnarok M: Classic, entered the download charts. For revenue, new entries include Ragnarok M: Classic and Dragoon Academy from Korea’s NewCube Games.\nVietnam\n- Platformers and runners (+3.2% QoQ), simulators (-6.7% QoQ), and other arcade games (+9.1% QoQ) lead in downloads. For revenue, 4X strategies (+51.5% QoQ), MMORPG (+8.2% QoQ), and Squad RPG (-1.8% QoQ) are on top.\n- Vietnam is a unique market for downloads. Roblox leads, and Trò Vẽ Vui Tuổi Thơ—a local casual game—leads download growth. Last War: Survival is also rapidly growing in downloads.\n- For revenue, L",
+   "origin": "Sensor Tower",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Sensor Tower, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc",
+    "Số của thị trường Việt Nam, câu hỏi hỏi về Đông Nam Á"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C8",
+   "source_id": "S80418131",
+   "claim_text": "Doanh thu dòng game 4X strategies tại Philippines tăng trưởng 18.7% QoQ trong Q1 2025.",
+   "metric": "growth",
+   "value_text": "+18.7% QoQ",
+   "market": "Philippines",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile_iap",
+   "genre": "4X strategy",
+   "genre_level": "genre",
+   "quote": "For revenue, MMORPG (-19.7% QoQ), 4X strategies (+18.7% QoQ), and MOBA games (+19% QoQ) lead.",
+   "section_title": "Philippines",
+   "attributed_to": "Sensor Tower",
+   "criterion": 1,
+   "value": 18.7,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "s (+3.2% QoQ), simulators (-6.7% QoQ), and other arcade games (+9.1% QoQ) lead in downloads. For revenue, 4X strategies (+51.5% QoQ), MMORPG (+8.2% QoQ), and Squad RPG (-1.8% QoQ) are on top.\n- Vietnam is a unique market for downloads. Roblox leads, and Trò Vẽ Vui Tuổi Thơ—a local casual game—leads download growth. Last War: Survival is also rapidly growing in downloads.\n- For revenue, Last War: Survival and local RPG Big Bang Thời Không are leaders.\nPhilippines\n- Top genres by downloads remain platformers/runners (+6.8% QoQ), simulators (+0.7% QoQ), and various arcade projects (+9.6% QoQ).\n- For revenue, MMORPG (-19.7% QoQ), 4X strategies (+18.7% QoQ), and MOBA games (+19% QoQ) lead.\n- The Philippine market is more dynamic than others. Five new projects entered the download rankings (Magic Chess: Go Go, Hapunan Horror Game, I Am Security, Good Coffee, Great Coffee, Color Game-co",
+   "origin": "Sensor Tower",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Sensor Tower, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc",
+    "Số của thị trường Philippines, câu hỏi hỏi về Đông Nam Á"
+   ],
+   "excluded_by_user": false
+  },
+  {
+   "id": "C9",
+   "source_id": "S80418131",
+   "claim_text": "Doanh thu dòng game MOBA games tại Philippines tăng trưởng 19% QoQ trong Q1 2025.",
+   "metric": "growth",
+   "value_text": "+19% QoQ",
+   "market": "Philippines",
+   "period": "Q1 2025 vs Q4 2024",
+   "scope": "mobile_iap",
+   "genre": "MOBA",
+   "genre_level": "genre",
+   "quote": "For revenue, MMORPG (-19.7% QoQ), 4X strategies (+18.7% QoQ), and MOBA games (+19% QoQ) lead.",
+   "section_title": "Philippines",
+   "attributed_to": "Sensor Tower",
+   "criterion": 1,
+   "value": 19.0,
+   "unit": "%",
+   "verified": true,
+   "verify_note": "Đã tìm thấy câu trích trong nguồn",
+   "match_score": 100.0,
+   "page": null,
+   "context": "s (+3.2% QoQ), simulators (-6.7% QoQ), and other arcade games (+9.1% QoQ) lead in downloads. For revenue, 4X strategies (+51.5% QoQ), MMORPG (+8.2% QoQ), and Squad RPG (-1.8% QoQ) are on top.\n- Vietnam is a unique market for downloads. Roblox leads, and Trò Vẽ Vui Tuổi Thơ—a local casual game—leads download growth. Last War: Survival is also rapidly growing in downloads.\n- For revenue, Last War: Survival and local RPG Big Bang Thời Không are leaders.\nPhilippines\n- Top genres by downloads remain platformers/runners (+6.8% QoQ), simulators (+0.7% QoQ), and various arcade projects (+9.6% QoQ).\n- For revenue, MMORPG (-19.7% QoQ), 4X strategies (+18.7% QoQ), and MOBA games (+19% QoQ) lead.\n- The Philippine market is more dynamic than others. Five new projects entered the download rankings (Magic Chess: Go Go, Hapunan Horror Game, I Am Security, Good Coffee, Great Coffee, Color Game-co",
+   "origin": "Sensor Tower",
+   "tier": "B",
+   "flags": [
+    "Số liệu của Sensor Tower, dẫn lại qua gamedevreports.substack.com; chưa đối chiếu bản gốc",
+    "Số của thị trường Philippines, câu hỏi hỏi về Đông Nam Á"
+   ],
+   "excluded_by_user": false
+  }
+ ],
+ "findings": [
+  {
+   "key": "F1",
+   "label": "Doanh thu IAP game mobile, Đông Nam Á, Q1 2025",
+   "claim_ids": [
+    "C1"
+   ],
+   "origins": [
+    "Sensor Tower"
+   ],
+   "values": [
+    625000000.0
+   ],
+   "unit": "USD",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Trung bình",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Sensor Tower, hạng A)"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F2",
+   "label": "Tăng trưởng IAP game mobile, 4X strategy, Đông Nam Á, Q1 2025 vs Q4 2024",
+   "claim_ids": [
+    "C2"
+   ],
+   "origins": [
+    "Sensor Tower"
+   ],
+   "values": [
+    17.6
+   ],
+   "unit": "%",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Trung bình",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Sensor Tower, hạng B)"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F3",
+   "label": "Tăng trưởng IAP game mobile, MOBA, Đông Nam Á, Q1 2025 vs Q4 2024",
+   "claim_ids": [
+    "C3"
+   ],
+   "origins": [
+    "Sensor Tower"
+   ],
+   "values": [
+    20.1
+   ],
+   "unit": "%",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Trung bình",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Sensor Tower, hạng B)"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F4",
+   "label": "Tăng trưởng IAP game mobile, MOBA, Indonesia, Q1 2025 vs Q4 2024",
+   "claim_ids": [
+    "C4"
+   ],
+   "origins": [
+    "Sensor Tower"
+   ],
+   "values": [
+    32.7
+   ],
+   "unit": "%",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Trung bình",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Sensor Tower, hạng B)"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F5",
+   "label": "Tăng trưởng IAP game mobile, 4X strategy, Indonesia, Q1 2025 vs Q4 2024",
+   "claim_ids": [
+    "C5"
+   ],
+   "origins": [
+    "Sensor Tower"
+   ],
+   "values": [
+    21.1
+   ],
+   "unit": "%",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Trung bình",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Sensor Tower, hạng B)"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F6",
+   "label": "Tăng trưởng IAP game mobile, 4X strategy, Thái Lan, Q1 2025 vs Q4 2024",
+   "claim_ids": [
+    "C6"
+   ],
+   "origins": [
+    "Sensor Tower"
+   ],
+   "values": [
+    -5.6
+   ],
+   "unit": "%",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Trung bình",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Sensor Tower, hạng B)"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F7",
+   "label": "Tăng trưởng IAP game mobile, 4X strategy, Việt Nam, Q1 2025 vs Q4 2024",
+   "claim_ids": [
+    "C7"
+   ],
+   "origins": [
+    "Sensor Tower"
+   ],
+   "values": [
+    51.5
+   ],
+   "unit": "%",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Trung bình",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Sensor Tower, hạng B)"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F8",
+   "label": "Tăng trưởng IAP game mobile, 4X strategy, Philippines, Q1 2025 vs Q4 2024",
+   "claim_ids": [
+    "C8"
+   ],
+   "origins": [
+    "Sensor Tower"
+   ],
+   "values": [
+    18.7
+   ],
+   "unit": "%",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Trung bình",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Sensor Tower, hạng B)"
+   ],
+   "newer": ""
+  },
+  {
+   "key": "F9",
+   "label": "Tăng trưởng IAP game mobile, MOBA, Philippines, Q1 2025 vs Q4 2024",
+   "claim_ids": [
+    "C9"
+   ],
+   "origins": [
+    "Sensor Tower"
+   ],
+   "values": [
+    19.0
+   ],
+   "unit": "%",
+   "status": "single",
+   "spread_pct": 0.0,
+   "confidence": "Trung bình",
+   "reasons": [
+    "Chỉ có một nguồn gốc (Sensor Tower, hạng B)"
+   ],
+   "newer": ""
+  }
+ ],
+ "brief": {
+  "decision": "Cần thêm dữ liệu",
+  "summary": "Chưa đủ bằng chứng để quyết định ưu tiên game MOBA hay 4X tại Đông Nam Á trong quý 1/2025 do thiếu tiêu chí quan trọng về thị phần dòng game, mặc dù dữ liệu tăng trưởng doanh thu đã có thể tin cậy từ Sensor Tower.",
+  "reasons": [
+   {
+    "text": "Thị trường Đông Nam Á đạt doanh thu mua trong ứng dụng di động là 625 triệu USD trong quý 1/2025 theo nguồn Sensor Tower.",
+    "claim_ids": [
+     "C1"
+    ],
+    "status": "trusted"
+   },
+   {
+    "text": "Doanh thu dòng game 4X strategy tại Đông Nam Á tăng trưởng 17.6% QoQ trong Q1 2025 (số liệu chưa đối chiếu bản gốc từ gamedevreports.substack.com).",
+    "claim_ids": [
+     "C2"
+    ],
+    "status": "trusted"
+   },
+   {
+    "text": "Doanh thu dòng game MOBA tại Đông Nam Á tăng trưởng 20.1% QoQ trong Q1 2025 (số liệu chưa đối chiếu bản gốc từ gamedevreports.substack.com).",
+    "claim_ids": [
+     "C3"
+    ],
+    "status": "trusted"
+   }
+  ],
+  "what_would_change": [
+   "Có số liệu chính thức về thị phần cụ thể của từng dòng game MOBA và 4X tại khu vực Đông Nam Á.",
+   "Đối chiếu thành công dữ liệu gốc của Sensor Tower từ các báo cáo chuyên ngành."
+  ],
+  "confidence": "Trung bình",
+  "gaps": [
+   "Thị phần dòng game tại Đông Nam Á"
+  ],
+  "conflicts": [],
+  "definition_notes": [],
+  "guard_log": [
+   "Bỏ lý do không gắn mã nhận định hợp lệ: \"Tiêu chí thị phần dòng game tại Đông Nam Á hiện vẫn chưa có dữ liệu để đánh giá.\""
+  ],
+  "trusted": [
+   {
+    "finding": "F1",
+    "label": "Doanh thu IAP game mobile, Đông Nam Á, Q1 2025",
+    "values": "625 triệu USD",
+    "origins": [
+     "Sensor Tower"
+    ],
+    "confidence": "Trung bình",
+    "claim_ids": [
+     "C1"
+    ],
+    "why": [
+     "Chỉ có một nguồn gốc (Sensor Tower, hạng A)"
+    ],
+    "notes": []
+   },
+   {
+    "finding": "F2",
+    "label": "Tăng trưởng IAP game mobile, 4X strategy, Đông Nam Á, Q1 2025 vs Q4 2024",
+    "values": "+17,6%",
+    "origins": [
+     "Sensor Tower"
+    ],
+    "confidence": "Trung bình",
+    "claim_ids": [
+     "C2"
+    ],
+    "why": [
+     "Chỉ có một nguồn gốc (Sensor Tower, hạng B)"
+    ],
+    "notes": [
+     "Số của Sensor Tower dẫn lại qua bài viết, chưa đối chiếu bản gốc"
+    ]
+   },
+   {
+    "finding": "F3",
+    "label": "Tăng trưởng IAP game mobile, MOBA, Đông Nam Á, Q1 2025 vs Q4 2024",
+    "values": "+20,1%",
+    "origins": [
+     "Sensor Tower"
+    ],
+    "confidence": "Trung bình",
+    "claim_ids": [
+     "C3"
+    ],
+    "why": [
+     "Chỉ có một nguồn gốc (Sensor Tower, hạng B)"
+    ],
+    "notes": [
+     "Số của Sensor Tower dẫn lại qua bài viết, chưa đối chiếu bản gốc"
+    ]
+   }
+  ],
+  "uncertain": [],
+  "other": [
+   {
+    "finding": "F4",
+    "label": "Tăng trưởng IAP game mobile, MOBA, Indonesia, Q1 2025 vs Q4 2024",
+    "values": "+32,7%",
+    "origins": [
+     "Sensor Tower"
+    ],
+    "confidence": "Trung bình",
+    "claim_ids": [
+     "C4"
+    ],
+    "why": [
+     "Số của thị trường Indonesia, câu hỏi hỏi về Đông Nam Á"
+    ]
+   },
+   {
+    "finding": "F5",
+    "label": "Tăng trưởng IAP game mobile, 4X strategy, Indonesia, Q1 2025 vs Q4 2024",
+    "values": "+21,1%",
+    "origins": [
+     "Sensor Tower"
+    ],
+    "confidence": "Trung bình",
+    "claim_ids": [
+     "C5"
+    ],
+    "why": [
+     "Số của thị trường Indonesia, câu hỏi hỏi về Đông Nam Á"
+    ]
+   },
+   {
+    "finding": "F6",
+    "label": "Tăng trưởng IAP game mobile, 4X strategy, Thái Lan, Q1 2025 vs Q4 2024",
+    "values": "-5,6%",
+    "origins": [
+     "Sensor Tower"
+    ],
+    "confidence": "Trung bình",
+    "claim_ids": [
+     "C6"
+    ],
+    "why": [
+     "Số của thị trường Thái Lan, câu hỏi hỏi về Đông Nam Á"
+    ]
+   },
+   {
+    "finding": "F7",
+    "label": "Tăng trưởng IAP game mobile, 4X strategy, Việt Nam, Q1 2025 vs Q4 2024",
+    "values": "+51,5%",
+    "origins": [
+     "Sensor Tower"
+    ],
+    "confidence": "Trung bình",
+    "claim_ids": [
+     "C7"
+    ],
+    "why": [
+     "Số của thị trường Việt Nam, câu hỏi hỏi về Đông Nam Á"
+    ]
+   },
+   {
+    "finding": "F8",
+    "label": "Tăng trưởng IAP game mobile, 4X strategy, Philippines, Q1 2025 vs Q4 2024",
+    "values": "+18,7%",
+    "origins": [
+     "Sensor Tower"
+    ],
+    "confidence": "Trung bình",
+    "claim_ids": [
+     "C8"
+    ],
+    "why": [
+     "Số của thị trường Philippines, câu hỏi hỏi về Đông Nam Á"
+    ]
+   },
+   {
+    "finding": "F9",
+    "label": "Tăng trưởng IAP game mobile, MOBA, Philippines, Q1 2025 vs Q4 2024",
+    "values": "+19,0%",
+    "origins": [
+     "Sensor Tower"
+    ],
+    "confidence": "Trung bình",
+    "claim_ids": [
+     "C9"
+    ],
+    "why": [
+     "Số của thị trường Philippines, câu hỏi hỏi về Đông Nam Á"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "text": "Chưa có dữ liệu đã kiểm cho tiêu chí \"Thị phần dòng game tại Đông Nam Á\"",
+    "query": "",
+    "ask": "Tìm số liệu cho tiêu chí: Thị phần dòng game tại Đông Nam Á",
+    "url": "",
+    "findings": []
+   },
+   {
+    "text": "Đối chiếu bản gốc của Sensor Tower trên sensortower.com",
+    "query": "Sensor Tower Southeast Asia mobile games in-app purchase 4X strategy revenue growth Q1 2025 vs Q4 2024",
+    "ask": "",
+    "url": "",
+    "findings": [
+     "F2",
+     "F3"
+    ]
+   }
+  ],
+  "next_action": "Bổ sung dữ liệu thị phần dòng game trước khi quyết định ưu tiên.",
+  "card": {
+   "action": "Chưa đủ căn cứ để quyết định; bổ sung dữ liệu theo bước dưới đây.",
+   "next_step": {
+    "text": "Chưa có dữ liệu đã kiểm cho tiêu chí \"Thị phần dòng game tại Đông Nam Á\"",
+    "query": "",
+    "ask": "Tìm số liệu cho tiêu chí: Thị phần dòng game tại Đông Nam Á",
+    "url": "",
+    "findings": []
+   },
+   "evidence": [
+    {
+     "finding": "F1",
+     "label": "Doanh thu IAP game mobile, Đông Nam Á, Q1 2025",
+     "values": "625 triệu USD",
+     "origins": [
+      "Sensor Tower"
+     ],
+     "tier": "A",
+     "status": "trusted",
+     "claim_id": "C1",
+     "quote": "While SEA currently ranks seventh globally in in-app purchase (IAP) revenue at $625 million in Q1 2025, this figure signals significant untapped monetization potential.",
+     "url": "https://sensortower.com/blog/southeast-asia-mobile-gaming-2025#:~:text=While%20SEA%20currently%20ranks%20seventh,signals%20significant%20untapped%20monetization%20potential.",
+     "links": [
+      {
+       "origin": "Sensor Tower",
+       "claim_id": "C1",
+       "value": "$625 million",
+       "url": "https://sensortower.com/blog/southeast-asia-mobile-gaming-2025#:~:text=While%20SEA%20currently%20ranks%20seventh,signals%20significant%20untapped%20monetization%20potential."
+      }
+     ]
+    },
+    {
+     "finding": "F2",
+     "label": "Tăng trưởng IAP game mobile, 4X strategy, Đông Nam Á, Q1 2025 vs Q4 2024",
+     "values": "+17,6%",
+     "origins": [
+      "Sensor Tower"
+     ],
+     "tier": "B",
+     "status": "trusted",
+     "claim_id": "C2",
+     "quote": "For revenue, 4X strategy games (+17.6% QoQ), MOBA (+20.1% QoQ), and MMORPG (-17.1% QoQ) are on top.",
+     "url": "https://gamedevreports.substack.com/p/sensor-tower-southeast-asia-mobile#:~:text=For%20revenue%2C%204X%20strategy%20games,%28%2D17.1%25%20QoQ%29%20are%20on%20top.",
+     "links": [
+      {
+       "origin": "Sensor Tower",
+       "claim_id": "C2",
+       "value": "+17.6% QoQ",
+       "url": "https://gamedevreports.substack.com/p/sensor-tower-southeast-asia-mobile#:~:text=For%20revenue%2C%204X%20strategy%20games,%28%2D17.1%25%20QoQ%29%20are%20on%20top."
+      }
+     ]
+    },
+    {
+     "finding": "F3",
+     "label": "Tăng trưởng IAP game mobile, MOBA, Đông Nam Á, Q1 2025 vs Q4 2024",
+     "values": "+20,1%",
+     "origins": [
+      "Sensor Tower"
+     ],
+     "tier": "B",
+     "status": "trusted",
+     "claim_id": "C3",
+     "quote": "For revenue, 4X strategy games (+17.6% QoQ), MOBA (+20.1% QoQ), and MMORPG (-17.1% QoQ) are on top.",
+     "url": "https://gamedevreports.substack.com/p/sensor-tower-southeast-asia-mobile#:~:text=For%20revenue%2C%204X%20strategy%20games,%28%2D17.1%25%20QoQ%29%20are%20on%20top.",
+     "links": [
+      {
+       "origin": "Sensor Tower",
+       "claim_id": "C3",
+       "value": "+20.1% QoQ",
+       "url": "https://gamedevreports.substack.com/p/sensor-tower-southeast-asia-mobile#:~:text=For%20revenue%2C%204X%20strategy%20games,%28%2D17.1%25%20QoQ%29%20are%20on%20top."
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "stats": {
+  "sources_read": 2,
+  "sources_failed": 0,
+  "claims": 9,
+  "verified": 9,
+  "rejected": 0,
+  "carried": 0,
+  "llm_calls": 4,
+  "seconds": 9.9,
+  "model": "gemini/gemini-3.5-flash-lite",
+  "search": "tắt",
+  "llm_error": "",
+  "rescored": "Phần do code tính đã được tính lại bằng code hiện tại trên lần chạy thật này, không gọi lại AI"
+ }
+}
